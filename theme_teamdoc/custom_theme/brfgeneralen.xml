@@ -1,0 +1,80 @@
+<!-- home site -->
+<t t-name="website.hem">
+  <t t-call="website.layout">
+    <div id="wrap" class="oe_structure oe_empty">
+      <section class="fw_categories mt16 mb16">
+        <div class="container">
+          <div class="row-fluid">
+            <div class="span6 offset3">
+              <div class="carousel slide vertical" id="myCarousel0" style="">
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img alt="First slide" src="/theme_teamdoc/static/src/img/brfgeneralen/startgalleri/002small300x298.JPG"/>
+                  </div>
+                  <div class="item img-responsive">
+                    <img alt="Second slide" src="/theme_teamdoc/static/src/img/brfgeneralen/startgalleri/003small300x290.JPG"/>
+                  </div>
+                  <div class="item img-responsive">
+                    <img alt="Third slide" src="/theme_teamdoc/static/src/img/brfgeneralen/startgalleri/004small300x238.JPG"/>
+                  </div>
+                  <div class="item img-responsive">
+                    <img alt="Forth slide" src="/theme_teamdoc/static/src/img/brfgeneralen/startgalleri/005small300x235.JPG"/>
+                  </div>
+                  <div class="item img-responsive">
+                    <img alt="Fifth slide" src="/theme_teamdoc/static/src/img/brfgeneralen/startgalleri/006small300x225.JPG"/>
+                  </div>
+                  <div class="item img-responsive">
+                    <img alt="Sixth slide" src="/theme_teamdoc/static/src/img/brfgeneralen/startgalleri/007small300x225.JPG"/>
+                  </div>
+                  <div class="item img-responsive">
+                    <img alt="Seventh slide" src="/theme_teamdoc/static/src/img/brfgeneralen/startgalleri/008small300x199.JPG"/>
+                  </div>
+                  <div class="item img-responsive">
+                    <img alt="Eighth slide" src="/theme_teamdoc/static/src/img/brfgeneralen/startgalleri/009small300x182.JPG"/>
+                  </div>
+                  <div class="item img-responsive">
+                    <img alt="Ninth slide" src="/theme_teamdoc/static/src/img/brfgeneralen/startgalleri/010small300x198.JPG"/>
+                  </div>
+                  <div class="item img-responsive">
+                    <img alt="Tenth slide" src="/theme_teamdoc/static/src/img/brfgeneralen/startgalleri/011small300x225.JPG"/>
+                  </div>
+                </div>
+                <div class="carousel-control left" data-slide="prev" data-target="#myCarousel0" href="#myCarousel4" style="height: 100%">
+                  <i class="fa fa-chevron-up"/>
+                </div>
+                <div class="carousel-control right" data-slide="next" data-target="#myCarousel0" href="#myCarousel4" style="height: 100%">
+                  <i class="fa fa-chevron-down"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </t>
+</t>
+
+<!-- om oss -->
+<t t-name="website.omoss">
+    <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty">
+            <section class="mt16 mb16">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p><font size="4" style="color:#fff">
+                            Bostadsrättsföreningen Generalen ligger i stadsdelen Hagaberg, belägen på Garnisonsområdet i Linköping. Föreningens hus byggdes av JM AB och stod färdigt våren 2006. Gatuadresserna är Kompanigatan 24-34.
+                                    <br/>
+Garnisonsområdet stod inflyttningsfärdigt 1922 och flera olika militära regementen, t.ex. I4, I5, Lv2 och A1, har funnits på området. Det sista regementet lades ned 1997 och sedan dess har myndigheter och företag flyttat in och bostadsområden vuxit upp.
+                                    <br/>
+I området finns bl.a. polis, domstolar, SKL, kommunala och landstingsägda vårdinrättningar och för- och grundskola med internationell inriktning. Det finns även en lunchrestaurang med konferensmöjligheter samt en matservering och en kiosk.
+                                    <br/>
+På Karlbergsplan spelar Karle IF sina fotbollsmatcher i division 5 och på Grenadjärvallen har BK Derby sin ungdomsverksamhet. För den historieintresserade finns Garnisonsmuséet där man kan lära sig mer om området och Linköpings regementen. Endast en kort promenad över Haningeleden leder till Tinnerö Eklandskap.
+                            </font></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </t>
+</t>

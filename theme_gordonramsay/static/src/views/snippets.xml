@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+    <template id="theme_gordonramsay.css" inherit_id="website_less.theme" customize_show="True" name="Snippet CSS"> 
+    <xpath expr="//link[@href='/website/static/src/css/website.css']" position="after">
+        <link rel="stylesheet" href="/website_less/static/src/less/website.less" t-ignore="true"/>        
+        <link rel="stylesheet" href="/theme_gordonramsay/static/src/css/snippets.css" t-ignore="true"/>
+        <link rel="stylesheet" href="/theme_gordonramsay/static/src/css/hover.css" t-ignore="true"/>
+        <link rel="stylesheet" href="/theme_gordonramsay/static/src/css/navbar.css" t-ignore="true"/>
+<!--
+        <link rel="stylesheet" href="/theme_gordonramsay/static/src/css/hover2.css" t-ignore="true"/>        
+-->
+    </xpath>  
+    </template>
+    
+    <template id="theme_gordonramsay.js" inherit_id="website_less.assets_frontend" customize_show="True" name="Snippet js"> 
+    <xpath expr="//script[@src='/website/static/src/js/website.js']" position="after"> 
+        <script type="text/javascript" src="/theme_gordonramsay/static/src/js/hover.js"></script>
+        <script type="text/javascript" src="/theme_gordonramsay/static/src/js/image.js"></script>
+    </xpath>
+    </template>
+    
+<template id="gordonramsay_snippet_id" inherit_id="website_less.snippets" name="Gordonramsay snippet">
+    <xpath expr="//ul[@class='nav navbar-nav nav-tabs']" position="inside">
+         <li class=""><a href="#snippet_gordonramsay" data-toggle="tab">Gordon Ramsay</a></li>
+    </xpath>
+    <xpath expr="//div[@class='tab-content']">
+        <div id="snippet_gordonramsay" class="tab-pane">
+
+
+<!-- content goes here -->
+
+<!--main row layout-->
+    <div>
+        <div class="oe_snippet_thumbnail">
+            <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_title.png"/>
+            <span class="oe_snippet_thumbnail_title">main page layout</span>
+        </div>
+        <section class="oe_snippet_body mb32 mt16">        
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center mt16 mb32">
+        </div>
+        <div class="col-md-8">
+            <div id="wrap" class="oe_structure oe_empty"/>
+        </div>
+        <div class="col-md-4">
+            <div id="wrap" class="oe_structure oe_empty"/>
+        </div>
+        <div class="col-md-4">
+            <div id="wrap" class="oe_structure oe_empty"/>
+        </div>
+        <div class="col-md-8">
+            <div id="wrap" class="oe_structure oe_empty"/>
+        </div>
+    </div>
+</div>
+</section>
+</div>
+
+
+<!--sub row layout-->
+    <div>
+        <div class="oe_snippet_thumbnail">
+            <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_title.png"/>
+            <span class="oe_snippet_thumbnail_title">sub page layout</span>
+        </div>
+        <section class="oe_snippet_body mb32 mt16">        
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center mt16 mb32">
+        </div>
+        <div class="col-md-12">
+            <div id="wrap" class="oe_structure oe_empty"/>
+        </div>
+        <div class="col-md-6">
+            <div id="wrap" class="oe_structure oe_empty"/>
+        </div>
+        <div class="col-md-3    ">
+            <div id="wrap" class="oe_structure oe_empty"/>
+        </div>
+        <div class="col-md-3">
+            <div id="wrap" class="oe_structure oe_empty"/>
+        </div>
+    </div>
+</div>
+</section>
+</div>
+
+<!--footer-->
+    <div>
+        <div class="oe_snippet_thumbnail">
+            <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_title.png"/>
+            <span class="oe_snippet_thumbnail_title">Footer</span>
+        </div>
+        <section class="oe_snippet_body mb32 mt16">        
+<div class="container">
+<div class="container text-center">
+    <hr />
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="col-md-3">
+        <ul class="nav nav-pills nav-stacked">
+          <li></li>
+          <li><a href="#">Input name</a></li>          
+          <li><a href="#">Input name</a></li>
+          <li><a href="#">Input name</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <ul class="nav nav-pills nav-stacked">
+          <li></li>
+            <li><a href="#">Input name</a></li>
+            <li><a href="#">Input name</a></li>
+            <li><a href="#">Input name</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <ul class="nav nav-pills nav-stacked">
+            <li></li>
+            <li><a href="#">Input name</a></li>
+            <li><a href="#">Input name</a></li>
+            <li><a href="#">Input name</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <hr>
+    <div class="row">
+        <div class="col-lg-12">
+            <ul class="nav nav-pills nav-justified">
+                <li><a href="/">© 2015 Your Company.</a></li>
+<!--
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy</a></li>
+-->
+            </ul>
+        </div>
+    </div>
+    </hr>
+</div>
+</div>
+</section>
+</div>
+
+<!--image hover-->
+
+    <div>
+        <div class="oe_snippet_thumbnail">
+            <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_title.png"/>
+            <span class="oe_snippet_thumbnail_title">image hover</span>
+        </div>
+        <section class="oe_snippet_body mb32 mt16">        
+<div class="container"> 
+    <div class="span4">
+         <div class="thumbnail">
+                <div class="caption">
+                    <h4 class="mt16">Thumbnail Heaadline</h4>
+                    <p>Add text</p>
+                    <p><a href="#" class="label label-default" rel="tooltip" title="Go There">Go There</a></p>
+                </div>
+                <img class="img" src="http://lorempixel.com/400/300/sports/1/" alt="..."/>
+            </div>
+      </div> 
+</div> 
+</section>
+</div>
+
+<!--navbar-->
+    <div>
+        <div class="oe_snippet_thumbnail">
+            <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_title.png"/>
+            <span class="oe_snippet_thumbnail_title">Navbar</span>
+        </div>
+        <section class="oe_snippet_body mb32 mt16">        
+<div class="container-fluid">    
+    <!-- Second navbar for profile settings -->
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-4">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-4">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Main</a></li>
+            <li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> Media <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Bilder</a></li>
+                <li><a href="#">Video</a></li>
+              </ul>
+            </li>
+            </li>
+            <li><a href="#">Kurser</a></li>
+            <li><a href="#">Webshop</a></li>
+            <li><a href="#">Kontakt</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+</div><!-- /.container-fluid -->
+</section>
+</div>
+
+<!-- dont do changes efter this -->            
+       
+        </div>   
+    </xpath>
+</template>
+</data>
+</openerp>
+
+<!-- add before snippts-->
+<!--
+    <div>
+        <div class="oe_snippet_thumbnail">
+            <img class="oe_snippet_thumbnail_img" src="add_your_dir_with.png"/>
+            <span class="oe_snippet_thumbnail_title">NAME</span>
+        </div>
+        <section class="oe_snippet_body mb32 mt16">        
+<div class="container">
+-->
+<!--add after snippets-->
+<!--
+</section>
+</div>
+-->

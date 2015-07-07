@@ -1,0 +1,13 @@
+/*!
+Mia's sushi
+ */
+
+body {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    background: url('/theme_teamdoc/static/src/img/mias_sushi/1381485_34204061.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    list-style: none;
+}

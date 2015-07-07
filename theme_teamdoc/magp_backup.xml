@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<openerp>
+    <data>
+        <!-- Bloginlägg #1 -->
+        <template id="magp_home_layout" name="MAGP Home Layout">
+            <div id="wrap" class="oe_structure oe_empty">
+                <t t-set="news" t-value="request.env['blog.post'].search([('website_published','=',True)],order='write_date desc')"/>
+                <div class="grid-box-g" t-if="len(news)&gt;0">
+                    <t t-set="post_0" t-value="news[0]"/>
+                    <p class="overlay-title">
+                        <t t-esc="post_0.name"/> 
+                    </p>
+                    <t t-esc="post_0.write_date"/>
+                    <img t-att-src="post_0.background_image" class="img-responsive" style=""/>
+                    <div class="grid-box-overlay">
+                        <div class="overlay-row">
+                        <h4><t t-esc="post_0.subtitle"/></h4>
+                        
+                        <t t-set="text" t-value="website.get_news(post_0.content)"/>
+                        <t t-set="text_length" t-value="150 if len(text)>150 else len(text)"/>
+                            <t t-raw="text[:text_length]"/> ...
+                        </div>
+                        <div class="overlay-info">
+                            
+                            <a class="btn btn-primary" t-attf-href="/blog/#{slug(post_0.blog_id)}/post/#{slug(post_0)}">Läs mer</a>
+                        </div>
+                    </div>
+                </div>
+                <hr/>
+
+                <div class="row">
+                    <!--Bloginlägg #2 -->
+                    <div class="col-md-6">
+                        <t t-if="len(news)>1">
+                            <t t-set="post_1" t-value="news[1]"/>
+                            <b><t t-esc="post_1.name" /></b><br/>
+                            <font size="0.9"><t t-esc="post_1.write_date"/></font><br/>
+                            
+                            <div class="overlay-row">
+                                <h5 style="color:#585858"><b><t t-esc="post_1.subtitle"/></b></h5>
+                                
+                                <t t-set="text" t-value="website.get_news(post_1.content)"/>
+                                <t t-set="text_length" t-value="150 if len(text)>150 else len(text)"/>
+                                    <t t-raw="text[:text_length]"/> ...
+                            </div>
+                            
+                            <a class="btn btn-sm btn-primary" t-attf-href="/blog/#{slug(post_1.blog_id)}/post/#{slug(post_1)}">Läs mer</a>
+                        </t>
+                    </div>
+                
+                    <!--Bloginlägg #3 -->
+                    <div class="col-md-6">
+                        <t t-if="len(news)>2">
+                            <t t-set="post_2" t-value="news[2]"/>
+                            <b><t t-esc="post_2.name"/></b><br/>
+                            <font size="0.9"><t t-esc="post_2.write_date"/></font><br/>
+                            
+                            <div class="overlay-row">
+                                <h5 style="color:#585858"><b><t t-esc="post_2.subtitle"/></b></h5>
+                                
+                                <t t-set="text" t-value="website.get_news(post_2.content)"/>
+                                <t t-set="text_length" t-value="150 if len(text)>150 else len(text)"/>
+                                    <t t-raw="text[:text_length]"/> ...
+                            </div>
+                            
+                            
+                            <a class="btn btn-sm btn-primary" t-attf-href="/blog/#{slug(post_2.blog_id)}/post/#{slug(post_2)}">Läs mer</a>
+                        </t> 
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </template>
+
+    </data>
+</openerp>

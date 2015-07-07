@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+<!-- http://startbootstrap.com/template-overviews/business-casual/ -->
+
+        <template id="theme_business_casual" inherit_id="website.layout" customize_show="True" active="False" name="Business Casual" priority="99">
+            
+            <xpath expr="//head" position="inside">
+                <!-- Custom CSS -->
+                <link href="/theme_teamdoc/static/src/css/business-casual.css" rel="stylesheet"/>
+                <link href="/theme_teamdoc/static/src/css/custom.css" rel="stylesheet"/>
+                <style>
+                    body {
+                        background: url('/theme_teamdoc/static/src/img/brickwall.jpeg') no-repeat center center fixed;
+                        background-size: cover;
+                        font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+                    }
+                    h1,h2,h3,h4,h5,h6 {
+                            text-transform: uppercase;
+                            font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+                            font-weight: 700;
+                            letter-spacing: 1px;
+                    }
+                </style>
+                <!-- Fonts -->
+                <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+                <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css"/>
+            </xpath>
+
+           <xpath expr="//body/div" position="before">
+                <div class="brand" id="brand" t-field="res_company.name"/>
+                <div class="address-bar"><t t-esc="res_company.street"/> | <t t-esc="res_company.partner_id.zip"/> <t t-esc="res_company.city"/> | <t t-esc="res_company.phone"/> | <t t-esc="res_company.partner_id.mobile"/></div> 
+           </xpath>
+                   
+            <xpath expr="//header//a[@class='navbar-brand logo'] | //header//a[@class='navbar-brand'] | //header//a[@class='navbar-brand logo hidden']" position="replace">
+                <a href="/" class="navbar-brand"/>
+            </xpath>
+            
+            <xpath expr="//header//ul" position="attributes">
+                 <attribute name="class">nav navbar-nav</attribute>
+            </xpath>
+
+            <xpath expr="//ul[@id='top_menu']/li[1]" position="attributes">
+                <attribute name="class">divider hidden</attribute>
+            </xpath>
+
+            <xpath expr="//ul[@id='top_menu']/li[2]" position="attributes">
+                <attribute name="class">dropdown hidden</attribute>
+            </xpath>
+            
+            <!-- <xpath expr="//header//div" position="attributes">
+                 <attribute name="class">collapse navbar-collapse navbar-top-collapse custom</attribute>
+            </xpath> -->
+        </template>
+
+        <template id="business_casual_footer" inherit_id="website.layout" customize_show="True" active="False" name="Business Casual Footer" priority="99">
+            <xpath expr="//footer/div" position="replace">
+                <div class="container hidden-print">
+                    <div class="row">
+                        <div class="col-md-8">
+                        </div>
+                        <div class="col-md-4" id="info">
+                            <h4><span t-field="res_company.name"/></h4>
+                            <ul class="list-unstyled">
+                                <li><a href="/page/website.contactus">Contact us</a></li>
+                            </ul>
+                            <ul class="list-unstyled">
+                                <li t-ignore="true"><i class="fa fa-phone"></i> <span t-field="res_company.phone"></span></li>
+                                <li t-ignore="true"><i class="fa fa-mobile"></i> <span t-field="res_company.partner_id.mobile"></span></li>
+                                <li t-ignore="true"><i class="fa fa-envelope"></i>  <span t-field="res_company.email"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </template>
+        
+        <template id="logo_show_business_casual" inherit_id="website.layout" customize_show="True" active="False" name="Business Casual Show Logo" priority="99">
+            <xpath expr="//body/div" position="replace">
+                <a href="/" class="brand logo">
+                    <img src="/logo1024.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
+                </a>
+            </xpath>
+        </template>
+        
+<!--
+SNIPPETS        
+-->
+  
+<template id="snippets_business_casual" inherit_id="website.snippets" name="Snippets Business Casual">
+            <xpath expr="//div[@id='snippet_structure']" position="inside">
+            <div>
+                <div class="oe_snippet_thumbnail">
+                    <img class="oe_snippet_thumbnail_img" src="/theme_teamdoc/static/src/img/structure_box.png"/>
+                    <span class="oe_snippet_thumbnail_title">Box</span>
+                </div>
+                <div id="wrap" class="oe_structure oe_empty"/>
+                <section class="oe_snippet_body fw_categories mt16">
+                    <div class="container">
+                        <div class="row">
+                            <div class="box">
+                                <div class="col-lg-12">
+                                    <hr/>
+                                    <h2 class="intro-text text-center">This is my heading</h2>
+                                    <hr/>
+                                </div>
+                                <div id="wrap" class="oe_structure oe_empty"/>
+                                <div>
+                                <p/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </xpath>
+
+        
+</template>
+
+
+    </data>
+</openerp>

@@ -1,0 +1,106 @@
+<!-- hem -->
+<?xml version="1.0"?>
+<t t-name="website.hem">
+    <t t-call="website.layout">
+        <div class="oe_structure oe_empty" id="wrap">
+            <section class="mt0" style="height: 472px; overflow: hidden;">
+                <div class="container" id="carousel_slide">
+                    <div class="carousel slide mb32" id="myCarousel0" style="">
+                        <ol class="carousel-indicators">
+                            <li class="active" data-slide-to="0" data-target="#myCarousel0"/>
+                            <li data-slide-to="1" data-target="#myCarousel0"/>
+                            <li data-slide-to="2" data-target="#myCarousel0"/>
+                            <li data-slide-to="3" data-target="#myCarousel0"/>
+                            <li data-slide-to="4" data-target="#myCarousel0"/>
+                            <li data-slide-to="5" data-target="#myCarousel0"/>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img alt="First slide" src="/theme_teamdoc/static/src/img/masterari/bildgalleri/bild1.jpg" style=""/>
+                            </div>
+                            <div class="item img-responsive">
+                                <img alt="Second slide" src="/theme_teamdoc/static/src/img/masterari/bildgalleri/bild2.jpg"/>
+                            </div>
+                            <div class="item img-responsive">
+                                <img alt="Third slide" src="/theme_teamdoc/static/src/img/masterari/bildgalleri/bild3.jpg"/>
+                            </div>
+                            <div class="item img-responsive">
+                                <img alt="Forth slide" src="/theme_teamdoc/static/src/img/masterari/bildgalleri/bild4.jpg"/>
+                            </div>
+                            <div class="item img-responsive">
+                                <img alt="Fifth slide" src="/theme_teamdoc/static/src/img/masterari/bildgalleri/bild6.jpg"/>
+                            </div>
+                            <div class="item img-responsive">
+                                <img alt="Sixth slide" src="/theme_teamdoc/static/src/img/masterari/bildgalleri/bild9.jpg"/>
+                            </div>
+                        </div>
+                        <div class="carousel-control left" data-slide="prev" data-target="#myCarousel0" href="#myCarousel0" style="width: 10%">
+                            <i class="fa fa-chevron-left"/>
+                        </div>
+                        <div class="carousel-control right" data-slide="next" data-target="#myCarousel0" href="#myCarousel0" style="width: 10%">
+                            <i class="fa fa-chevron-right"/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </t>
+</t>
+
+<!-- auto footer -->
+<?xml version="1.0"?>
+<data inherit_id="website.footer_custom" customize_show="True" name="Automatic Footer">
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div class="container hidden-print">
+            <div class="row">
+                <div class="col-md-4" id="info">
+                    <h4><a href="/page/website.contactus">Kontakta oss</a></h4>
+                    Öppet: Vardagar 8.00-16.30
+                    <ul class="list-unstyled">
+                        <li t-ignore="true"><i class="fa fa-phone"/> <span t-field="res_company.phone"/></li>
+                        <li t-ignore="true"><i class="fa fa-fax"/>  <span t-field="res_company.fax"/></li>
+                        <li t-ignore="true"><i class="fa fa-envelope"/>  <span t-field="res_company.email"/></li>
+                        <li t-ignore="true"><i class="fa fa-home"/>  <span t-field="res_company.street"/><br/><span t-field="res_company.zip"/> <span t-field="res_company.city"/></li>
+                    </ul>
+                    <h2>
+                        <a t-att-href="website.social_facebook" t-if="website.social_facebook"><i class="fa fa-facebook-square"/></a>
+                        <a t-att-href="website.social_twitter" t-if="website.social_twitter"><i class="fa fa-twitter"/></a>
+                        <a t-att-href="website.social_linkedin" t-if="website.social_linkedin"><i class="fa fa-linkedin"/></a>
+                        <a t-att-href="website.social_youtube" t-if="website.social_youtube"><i class="fa fa-youtube-play"/></a>
+                        <a t-att-href="website.social_googleplus" t-if="website.social_googleplus" rel="publisher"><i class="fa fa-google-plus-square"/></a>
+                        <a t-att-href="website.social_github" t-if="website.social_github"><i class="fa fa-github"/></a>
+                    </h2>
+                </div>
+                <div class="col-md-8">
+                    <div>
+                        <h4>
+                            <a href="/page/website.omoss"><span t-field="res_company.name"/></a>
+                        </h4>
+                        <font size="3">
+                            Masterari grundades 1993 och ombildades 1998-99 till aktiebolag på ny adress och har varit här sedan dess. Vi har varit 17 år i branschen, och inte bara i branschen utan jobbat enbart med brodyr sedan starten -93. Har alltså mycket god erfarenhet av brodyr och materialen som skall broderas.<br/>
+                            <a href="/page/website.omoss">Läs mer...</a>
+                        </font>
+                    </div>
+                    <ul class="list-inline js_language_selector mt16" t-if="(request.website_multilang and len(languages) &gt; 1) or editable">
+                        <li t-foreach="languages" t-as="lg">
+                            <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang=lg[0])" t-att-data-default-lang="editable and 'true' if lg[0] == website.default_lang_code else None" t-att-data-lang="lg[0]" class="js_change_lang">
+                              <t t-esc="lg[1].split('/').pop()"/>
+                            </a>
+                        </li>
+                        <li groups="base.group_website_publisher">
+                            <t t-set="url_return" t-value="url_for('', '[lang]') + '?' + keep_query()"/>
+                            <a t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id}&amp;url_return=#{url_return}">
+                            <i class="fa fa-plus-circle"/>
+                            Add a language...
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    
+                </div>
+            </div>
+        </div>
+    </xpath>
+</data>
+

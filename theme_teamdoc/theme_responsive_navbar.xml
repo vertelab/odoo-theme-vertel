@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <openerp>
+        <data>
+            <!-- Big Logo -->
+            <template id="theme_responsive_navbar" inherit_id="website.layout" customize_show="True" active="False" name="Theme Responsive Navbar">
+                <xpath expr="//head" position="inside">
+                    <link href="/theme_teamdoc/static/src/css/mssgrupp.css" rel="stylesheet"/>
+                    <style>
+                        body{
+                            background: url('http://www.freeimages.com/pic/l/m/mi/midnighta/1354425_48319487.jpg') no-repeat center center fixed;
+                            background-size: cover;
+                        }
+                    </style>
+                </xpath>
+                
+                <xpath expr="//body" position="inside">
+                    <script src="/theme_teamdoc/static/src/js/navbar.js"></script>
+                </xpath>
+                
+                <xpath expr="//head" position="inside">
+                    <style>
+                        #big_logo_column{
+                            padding-top:40px;
+                            padding-bottom:20px;
+                        }
+                    </style>
+<!--
+                    <script>
+                    $(document).on("scroll",function(){
+                            //After Scroll
+                            if ($(document).scrollTop()>120) {
+                                $(".navbar-fixed-top").addClass("top-nav-collapse");
+                                $("#big_logo_column").addClass("hidden");
+                                $(".navbar-brand").removeClass("hidden");
+                            } 
+                            //Before Scroll
+                            else {
+                                $(".navbar-fixed-top").removeClass("top-nav-collapse");  
+                                $("#big_logo_column").removeClass("hidden");
+                                $(".navbar-brand").addClass("hidden");
+                            }                        
+                        });
+                    </script>
+-->
+               </xpath>
+
+                <xpath expr="//header//div//div[@class='container']" position="before">
+                    <div class="collapse navbar-collapse col-md-12" align="center" id="big_logo_column">
+                        <img src="/logo1024.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
+                    </div>
+                </xpath>
+                        
+                    
+                <xpath expr="//header//a[@class='navbar-brand'] | //header//a[@class='navbar-brand logo'] | //header//a[@class='navbar-brand hidden'] | //header//a[@class='navbar-brand logo hidden']" position="attributes">
+                     <attribute name="class">navbar-brand logo hidden</attribute>
+                </xpath>
+
+                <!-- TRANSPARENT NAVBAR -->        
+                <xpath expr="//head" position="inside">
+                    <!-- Custom CSS -->
+                    <link href="/theme_teamdoc/static/src/css/mssgrupp.css" rel="stylesheet"/>
+
+                    <script>
+                        $(document).on("scroll",function(){
+                            //After Scroll
+                            if ($(document).scrollTop()>50) {
+                                $('#custom-nav').addClass('affix');
+                                $('#big_logo_column').addClass('affix');
+                            } 
+                            //Before Scroll
+                            else {
+                                $('#custom-nav').removeClass('affix');
+                                $('#big_logo_column').removeClass('affix');
+                            }                        
+                        });
+                    </script>
+                    
+                    <!-- Fonts -->
+                    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+                    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css"/>
+                </xpath>
+
+               <xpath expr="//body/div/header/div" position="attributes">
+                    <attribute name="id">custom-nav</attribute>
+                </xpath> 
+                
+
+        
+                <xpath expr="//header//ul" position="attributes">
+                     <attribute name="class">nav navbar-nav</attribute>
+                </xpath>
+            </template>
+        </data>
+    </openerp>

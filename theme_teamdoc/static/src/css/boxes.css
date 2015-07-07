@@ -1,0 +1,39 @@
+img {max-width: 100%}
+
+a {
+    -webkit-transition: all 150ms ease;
+    -moz-transition: all 150ms ease;
+    -ms-transition: all 150ms ease;
+    -o-transition: all 150ms ease;
+    transition: all 150ms ease;
+    
+    }
+    
+    a:hover{
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /*IE 8 */
+        filter: alpha(opacity=50);
+        opacity: 0.6s;
+        text-decoration: none;
+    }
+
+body{border-top:0; }
+
+/*Thumbnail Box */
+.caption h4{
+    color: #444;
+    }
+    .caption p{
+        color: #999;
+        }
+        
+/*Mobile Only*/
+@media (max-width:479px){
+    .caption{
+        word-break: break-all;
+        }
+}
+
+li {list-style-type:none;}
+
+:: selection{background: #ff5e99; color: #FFFFFF; text-shadow:0;}
+:: -moz-selection{background:#ff5e99; color: #FFFFFF;}

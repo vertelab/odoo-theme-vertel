@@ -1,0 +1,140 @@
+@media screen and (min-width: 768px){
+
+
+	
+	#big_logo_column{
+	    padding-top:40px;
+	    padding-bottom:20px;
+	}
+
+	/* Styles before scroll */ 
+	#custom-nav {
+	    background: transparent;
+	    border: 0;
+	    box-shadow: none;
+	    z-index: 999;
+	    -webkit-font-smoothing: antialiased;
+	    -moz-osx-font-smoothing: grayscale;
+	    -webkit-transition: background .5s ease-in-out, opacity .5s ease;
+	    -moz-transition: background .5s ease-in-out, opacity .5s ease;
+	    transition: background .5s ease-in-out, opacity .5s ease;
+	    
+	}
+	
+	#custom-nav a {
+	    background: transparent;
+	    color: black;
+	    font-weight: bold;
+	}
+	
+	#custom-nav .dropdown-menu {
+	    border-radius: 0;
+	    border: none;
+	    border-top: 5px solid transparent;
+	    background-color: #819FF7;
+	    -webkit-box-shadow: none;
+	    box-shadow: none;
+	    padding-top: 0;
+	}
+	
+	#custom-nav .dropdown-menu li {
+	    border-top: 1px solid white;
+	}
+	
+	#custom-nav .dropdown-menu li:last-child {
+	    border-bottom: 1px solid white;
+	}
+	
+	#custom-nav .container {
+	    padding-top: 45px;
+	    padding-bottom: 20px;
+	    -webkit-transition: padding-top .5s ease, padding-bottom .5s ease;
+	    -moz-transition: padding-top .5s ease, padding-bottom .5s ease;
+	    transition: padding-top .5s ease, padding-top .5s ease, padding-bottom .5s ease;
+	}
+
+	/* Styles after scroll */ 
+	#custom-nav.affix {
+	    top: 0;
+	    min-width: 100%;
+	    background: url('http://www.freeimages.com/pic/l/e/ev/evobrained/1442454_15613041.jpg') no-repeat center center fixed;
+	    opacity: 0.9;
+	    -webkit-transition: background .5s ease-in-out, opacity .5s ease;
+	    -moz-transition: background .5s ease-in-out, opacity .5s ease;
+	    transition: background .5s ease-in-out, opacity .5s ease;
+	}
+	
+	#custom-nav.affix a {
+	    color: #1C1C1C;
+	}
+	
+	#custom-nav.affix .container {
+	    -webkit-transition: padding-top .5s ease, padding-bottom .5s ease;
+	    -moz-transition: padding-top .5s ease, padding-bottom .5s ease;
+	    transition: padding-top .5s ease, padding-top .5s ease, padding-bottom .5s ease;
+	    padding-top: 8px;
+	    padding-bottom: 8px;
+	}
+	
+	#custom-nav.affix .dropdown-menu {
+	    -webkit-transition: background .5s ease-in-out;
+	    -moz-transition: background .5s ease-in-out;
+	    transition: background .5s ease-in-out;
+	    border-top: 9px solid transparent;
+	    background: url('http://www.freeimages.com/pic/l/e/ev/evobrained/1442454_15613041.jpg') no-repeat center center fixed;
+	}
+	
+}
+
+
+@media screen and (max-width: 767px){
+	#wrapwrap {
+	    padding-top: 50px;
+	}
+	body{
+	    background: url('http://www.freeimages.com/pic/l/m/mi/midnighta/1354425_48319487.jpg') no-repeat center center fixed;
+	    background-size: cover;
+	}
+
+	.navbar-fixed-top {
+		z-index: 999;
+	}
+	
+	#custom-nav.affix a {
+	    color: black;
+	}
+	
+	#custom-nav.affix {
+	    top: 0;
+	    min-width: 100%;
+	    background: url('http://www.freeimages.com/pic/l/e/ev/evobrained/1442454_15613041.jpg') no-repeat center center fixed;
+	    opacity: 0.9;
+	    -webkit-transition: background .5s ease-in-out, opacity .5s ease;
+	    -moz-transition: background .5s ease-in-out, opacity .5s ease;
+	    transition: background .5s ease-in-out, opacity .5s ease;
+	}
+	
+	#custom-nav.affix .dropdown-menu {
+	    -webkit-transition: background .5s ease-in-out;
+	    -moz-transition: background .5s ease-in-out;
+	    transition: background .5s ease-in-out;
+	    border-top: 9px solid transparent;
+	    background: url('http://www.freeimages.com/pic/l/e/ev/evobrained/1442454_15613041.jpg') no-repeat center center fixed;
+	}
+	
+	#big_logo_column {
+	   visibility: hidden;
+	}
+	
+	#custom-nav {
+	    background: transparent;
+	    border:none;
+
+	    }
+	    
+	#custom-nav a {
+	    background: transparent;
+	    color: black;
+	    font-weight: bold;
+	}
+}

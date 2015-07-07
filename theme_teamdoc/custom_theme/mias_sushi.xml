@@ -1,0 +1,1258 @@
+<!-- home side -->
+<t t-name="website.hem">
+    <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty">
+            <section class="fw_categories mt16">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="intro-text text-center">Välkommen till Vallathai!</h1>
+                            <p/>
+                            <h4 class="intro-text text-center">Vallathai erbjuder thailändsk mat som den smakar och äts i Thailand – gott, sunt och prisvärt.</h4>
+                        </div>
+                        <div>
+                            <p/>
+                        </div>
+                        <div class="col-md-12">
+                            <img alt="Odoo - Sample 2 for three columns" class="img img-rounded" src="/theme_teamdoc/static/src/img/mias_sushi/start_img.jpg" style="width:100%"/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <p/>
+            <section class="mt16 mb16">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-1"/>
+                        <div class="col-md-5">
+                        <a href="/page/veckans-lunch">
+                            <img alt="Odoo - Sample 1 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/mias_sushi/1437467_71634196.jpg" style="width:100%; height:200px;"/>
+                                <h4 class="mt16" style="text-align: center;">Veckans Lunch</h4>
+                            </a>
+                        </div>
+                        <div class="col-md-5">
+                        <a href="/page/meny">
+                            <img alt="Odoo - Sample 2 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/mias_sushi/240761_9420.jpg" style="width:100%; height:200px;"/>
+                                <h4 class="mt16" style="text-align: center;">Meny</h4>
+                            </a>
+                        </div>
+                        <div class="col-md-1"/></div>
+                </div>
+            </section>
+        </div>
+    </t>
+</t>
+
+
+<!-- footer -->
+<data inherit_id="website.footer_custom" customize_show="True" name="Automatic Footer">
+  <xpath expr="//div[@id='footer']" position="replace">
+    <div class="container hidden-print">
+      <div class="row">
+        <div class="col-md-2">
+          <h4>Vårt Meny</h4>
+          <ul class="list-unstyled" id="products">
+            <li>
+              <a href="/page/meny-sushi">Sushi</a>
+            </li>
+            <li>
+              <a href="/page/meny-forratt">Förrätt</a>
+            </li>
+            <li>
+              <a href="/page/meny-curry-och-kokosmjolk">Curry och kokosmjölk</a>
+            </li>
+            <li>
+              <a href="/page/meny-grillade-och-friterade-ratter">Grillade och Friterade rätter</a>
+            </li>
+            <li>
+              <a href="/page/meny-wokade-ratter">Wokade rätter</a>
+            </li>
+            <li>
+              <a href="/page/meny-nudlar-ris">Nudlar/ ris</a>
+            </li>
+            <li>
+              <a href="/page/meny-vegetariskt">Vegetariskt</a>
+            </li>
+            <li>
+              <a href="/page/meny-efterratt">Efterrätt</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <div>
+            <h4 style="text-align: center;">Om Oss</h4>
+            <div class="box">
+              <font style="color:white;" size="3"><b>Naturligt fräscht och gott</b> Vår mat tillagas av färska och fräscha thailändska råvaror. Det garanterar den genuina smaken. Thailändsk mat är naturligt näringsrik och fettsnål. Den breda variationen av rätter med både starka och milda smaker erbjuder något för alla – barn som vuxna.<br/>
+<b>Snabbt och prisvärt</b> Hos oss får du din beställning inom några få minuter, alltid till samma låga pris.<br/>
+<b>Thaiköket</b> Med influenser från öst och väst har det unika thailändska köket växt fram. Thailändarna har alltid varit skickliga på att anpassa utländska matlagningsmetoder till det thailändska köket och byta ut ingredienser till sådana som är lättillgängliga i Thailand. </font>
+              <br/>
+              <br/>
+              <a href="/page/thailandska-koket">Läs mer om det Thailändska köket</a>
+              <div>
+                <p/>
+              </div>
+            </div>
+          </div>
+          <ul class="list-inline js_language_selector mt16" t-if="(request.website_multilang and len(languages) &gt; 1) or editable">
+            <li t-foreach="languages" t-as="lg">
+              <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang=lg[0])" t-att-data-default-lang="editable and 'true' if lg[0] == website.default_lang_code else None" t-att-data-lang="lg[0]" class="js_change_lang">
+                <t t-esc="lg[1].split('/').pop()"/>
+              </a>
+            </li>
+            <li groups="base.group_website_publisher">
+              <t t-set="url_return" t-value="url_for('', '[lang]') + '?' + keep_query()"/>
+              <a t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id}&amp;url_return=#{url_return}"><i class="fa fa-plus-circle"/>
+                            Add a language...
+
+                            </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-1"/>
+        <div class="col-md-3" id="info" style="color: white;">
+          <a href="/page/website.contactus"><h4>Kontakta oss</h4></a>
+
+          <ul class="list-unstyled">
+            <li t-ignore="true">
+              <i class="fa fa-phone"/>
+              <span t-field="res_company.phone"/>
+            </li>
+            <li t-ignore="true">
+              <i class="fa fa-mobile"/>
+              <span t-field="res_company.partner_id.mobile"/>
+            </li>
+            <li t-ignore="true">
+              <i class="fa fa-envelope"/>
+              <span t-field="res_company.email"/>
+            </li>
+            <br/>
+            <h4>Våra öppettider:</h4>
+            <li>
+              <span>Måndag - Fredag   11.00 - 21.00</span>
+            </li>
+            <li t-ignore="true">
+              <span>Lördag - Söndag   12.00 - 21.00</span>
+            </li>
+          </ul>
+          
+          <h2>
+            <a t-att-href="website.social_facebook" t-if="website.social_facebook">
+              <i class="fa fa-facebook-square"/>
+            </a>
+            <a t-att-href="website.social_twitter" t-if="website.social_twitter">
+              <i class="fa fa-twitter"/>
+            </a>
+            <a t-att-href="website.social_linkedin" t-if="website.social_linkedin">
+              <i class="fa fa-linkedin"/>
+            </a>
+            <a t-att-href="website.social_youtube" t-if="website.social_youtube">
+              <i class="fa fa-youtube-play"/>
+            </a>
+            <a t-att-href="website.social_googleplus" t-if="website.social_googleplus" rel="publisher">
+              <i class="fa fa-google-plus-square"/>
+            </a>
+            <a t-att-href="website.social_github" t-if="website.social_github">
+              <i class="fa fa-github"/>
+            </a>
+          </h2>
+        </div>
+      </div>
+    </div>
+  </xpath>
+</data>
+
+
+<!-- thai köket -->
+<t t-name="website.thailandska-koket">
+  <t t-call="website.layout">
+    <div id="wrap" class="oe_structure oe_empty">
+      <section class="fw_categories mt16">
+        <div class="container">
+          <div class="row">
+            <div class="box">
+              <div class="col-lg-12">
+
+                <h1 class="intro-text text-center">Thailändska köket</h1>
+                    <br/><br/>
+              </div>
+             </div>
+            </div>
+            <div class="row">
+            <div class="box">
+              <div style="background-color:black;">
+                <font size="3" style="color:white">
+Med influenser från öst och väst har det unika thailändska köket växt fram. Thailändarna har alltid varit skickliga på att anpassa utländska matlagningsmetoder till det thailändska köket och byta ut ingredienser till sådana som är lättillgängliga i Thailand.
+<br/><br/>
+Till exempel byts ingrediensen ”ghee” som används i det indiska köket mot kokosmjölk som är mer vanligt i Thailand. Smakrika kryddor som karaktäriserar den utländska maten byts ut till färska thailändska kryddor som till exempel citrongräs. Principen i thailändsk matlagning är att oavsett om rätten är stark eller inte ska det finnas en harmoni bland smakerna i varje rätt.
+<br/><br/>
+I Thailand äter man vanligtvis inte en rätt per person. All mat serveras samtidigt och utan någon speciell ordning. Sedan delar gästerna på alla rätter. Detta gör att matgästen får avnjuta en variation av rätter och smaker som kompletterar varandra. Storleken på kött och grönsaker är anpassad att ätas med sked och gaffel.
+Matnyttigt om kryddor!
+<br/><br/>
+Kryddor, örter och smaksättare är ofrånkomligt kopplade till den Asiatiska historien och maten. Rötter, stjälkar, frön eller blad bör användas så färska som möjligt för att de rika smakerna bäst skall komma till sin rätt. Vissa finns att tillgå färska i Asiatiska affärer runt om i världen. Vissa, såsom basilika, koriander och till och med chili eller citrongräs kan odlas i växthus i trädgården eller på en balkong. Andra - gurkmeja, kardemumma - kanske måste köpas torkad eller i pulverform.
+<br/><br/>
+<b>BAMBUSKOTT</b> (Nor mai): Bambuskott skördas när de är c:a 15 cm. De behöver skalas och den inre vita delen kokas i vatten i 30 minuter. Den konserverade varianten behöver bara kokas i 10 minuter och kan omedelbart användas i soppor och curryrätter. Konserverad bambu kan förvaras, efter öppnandet, upp till en vecka i kylen, om vattnet byts ut dagligen.
+<b>BERGAMOTT</b> (Makroud): Även känt som kaffer lime, denna växt finns överallt i Thailand och människor odlar den ofta hemma. Bladen har en delikat smak, lätt citronaktig, som passar lika bra till curryrätter som skaldjursrätter. Frukten har ett knöligt mörkgrönt skal med en koncentration av aromatiska oljor och en doft av citron. Ibland används juicen från denna frukt i Thaimat istället för lime. Skalet används också ofta i Thairätter, speciellt i curryrätter.
+<b>BASILIKA</b> (Horapa): Hinduerna anser att basilikan är helig och planterar den ofta på heliga platser. Den variant av basilika de använder kallas Helig Basilika och har en kryddig smak. Denna är mycket svårare att få tag på i västerlandet än den söta basilikan, men peppar eller fint hackad chili kan tillsättas till den söta varianten som kompensation.
+Båda typerna av basilika används flitigt i det Thailändska köket. Basilika används dessutom som medicinalväxt, för att motverka dålig matsmältning och för att öka aptiten.
+<br/><br/>
+<b>KARDEMUMMA</b> (Krawan): Drottningen bland kryddor, kardemumma har används sedan urminnes tider. Produceras huvudsakligen i Indien och Sri Lanka, den växer även i sydöstra Thailand nära gränsen till Kambodja. Kardemumma kräver ett fuktigt klimat för att växa. De aromatiska fröskidorna kan vara gröna, vita eller svarta och kan innehålla olika många frön. Skidorna och fröna används i olika typer av söta eller väldoftande Thairätter, speciellt curryrätter.
+Européerna har känt till Siamesisk kardemumma sedan 1600-talet. Det var en av de första kryddorna som exporterades till England, Kina och Japan. Medicinskt sett, kan kardemumma användas som ett laxermedel för att lätta på väderspänningar.
+<br/><br/>
+<b>SELLERI</b> (Khuen chai): Thaiselleri är mycket mindre än varianten som finns i väst. Den är även grönare, tunnare och har fler blad, med en starkare sellerismak. Men man kan använda den västerländska varianten lika väl som den Thailändska vid matlagning.
+CHILI (Prik): Thailändarna tillsätter generösa mängder av chili i de flesta av sina maträtter. Ingen särskild region kan betecknas som den glödheta matens mecca, eftersom varje region har sina egna varianter av "het" mat. Många olika varianter av chili används i Thailand, men den vanligast förekommande är c:a 7½-10 cm lång och kan vara röd, grön eller gul som färsk. Torkad är den alltid röd. En annan populär chili i det Thailändska köket är liten, grön och är extremt stark. Fröna är den starkaste delen av chilin, så om du vill ha smaken, men undvika det allra hetaste, kan du avlägsna fröna.
+<br/><br/>
+Torkad chili bör blötläggas i hett vatten i 10 minuter innan de mals. Thailändarna använder chili på alla tänkbara vis, färsk, torkad, hela, hackade, krossade eller skivade. Ett försiktighetsråd, tvätta alltid händerna efter att ha arbetat med chili och rör ej ögon eller mun, det bränns rejält.
+Bortsett från smaken, så är chili även bra för hälsan. Anhängare till traditionell Thailändsk läkekonst, menar att chili hjälper till med att bli av med väderspänningar och magkramper. Detta beroende på att chilin tar död på alla bakterier i magen och andra invärtes organ. Med chili i magen, ökar nivån av saltsyra som i sin tur ökar blodcirkulationen i magens vävnader. Detta hjälper till att öka graden av matsmältning. Blodtrycket ökar också eftersom hjärtat slår fortare. Detta medför att de som svettas rikligt efter att ha ätit chili, på så vis gör sig av med giftiga substanser i kroppen.
+<br/><br/>
+<b>CHILIPASTOR</b> (Nam prik phao): Dessa kan köpas i asiatiska affärer. En speciellt populär sådan i det Thailändska köket,
+<br/><br/>
+<b>KINESISKA CHAMPINJONER</b> (Hed hom): Dessa torkade, hela champinjoner har en distinkt smak. De bör alltid blötläggas i varmt vatten i 30 minuter innan de tillsätts till övriga ingredienser. Foten äts sällan eftersom den är väldigt seg.
+Kinesiska champinjoner är särskild rika på kalcium, fosfor och kalium. Proteinhalten är speciellt hög i torkade champinjoner. Medicinskt sett, har det visat sig att Kinesiska champinjoner minskar kolesterolhalten i blodet.
+<br/><br/>
+<b>KANEL</b> (Ob Cheuy): I södra Asien finns det många varianter av kanel, den torkade, aromatiska barken från en medlem av lauraceae-familjen. I Thailand är "batavia"-varianten vanligen använd för att ge en behaglig arom till nöt- och kycklingrätter. Medicinskt sett, anser Thailändarna att den är syrahämmande och att den kan minska överproduktionen av en ammande kvinnas modersmjölk. Kanel finns som mald eller i bitar.
+<br/><br/>
+<b>MYRTEN</b> (Kan Plou) Marco Polo trodde att myrten kom från Java, men Conti upptäckte att den i själva verket härstammar från Moluckerna. Därifrån spreds användandet av myrten till andra delar av Sydostasien och till Europa. Myrten är de torkade blomknopparna från myrtenfamiljen och kan användas hel eller i pulverform. I det Thailändska köket tillsätts myrten i curryrätter och de passar även bra till tomater och salta grönsaker med skinka. I Thailand tuggas de, av tradition, tillsammans med betellöv. Vad medicinska ändamål beträffar, så anser Thailändarna att myrten är bakteriedödande och även fungerar mot kramper. Myrten kan tuggas efter måltiden, på Thaivis, för att hjälpa matsmältningen.
+<br/><br/>
+<b>KOKOSNÖTMJÖLK OCH GRÄDDE (Kathi):</b> Dessa två mycket viktiga ingredienser används i curryrätter likväl som i efterrätter och drycker. Kokosnötmjölk är den vätska som pressats ur det rivna köttet från en mogen kokosnöt efter det att köttet blivit blötlagd i ljummet vatten. Kokosnötgrädde är en fylligare variant. För att få kokosnötmjölk, tag 7½ dl riven kokos till 1,2 liter vatten. Blötlägg kokosen i vattnet i c:a 15 minuter. Blanda väl med händerna och häll över allt i en silduk, placerad över en skål. Pressa ur all vätska ur silduken. Man kan sila mjölken genom silduken flera gånger, för att få en tunnare mjölk, som kan användas i soppor. Detta arbete är mycket tidsödande och att avlägsna köttet från kokosnöten utan de rätta verktygen är svårt. Men lyckligtvis finns det konserverad kokosnötmjölk att köpa. Rör om innehållet i burken om du vill ha kokosnötmjölk eller skumma av grädden från toppen om du vill ha kokosnötgrädde.
+<br/><br/>
+<b>KORIANDER</b> (Phakchee): Denna medlem av familjen morot har delikata blad och djupa rötter. När en planta når mognad, så producerar den en riklig mängd vita blommor. Bladen och fröna används i många kök världen över, men Thaiköket använder även rötterna.
+De runda, beigea fröna används i curryrätter och till grönsaker. Rötterna krossas tillsammans med vitlök för att smaksätta kött och används fta i soppor, speciellt i köttsoppor. Bladen används i stor utsträckning till garnering.
+<br/><br/>
+<b>KUMMIN</b> (Yira): Enbart fröna används, torkade och malda. I det Thailändska köket används kummin i såser och på grillat kött. Kummin kan köpas färdigmald, men hela frön behåller sin smak bättre och det är enkelt att mala hemma.
+<br/><br/>
+<b>TORKADE SALLADSBLAD</b> (Tang Chai): En ganska ovanlig ingrediens i Thailändsk matlagning, säljs på flaska i Asiatiska affärer.
+<br/><br/>
+<b>TORKADRÄKORE</b> (Kung haeng): Detta är små salta räkor som torkats i solen. Säljs vanligtvis i pulverform i flaskor.
+<br/><br/>
+<b>JÄSTA SOJABÖNOR</b> (Tao jiaw): Hela jästa gula eller svarta sojabönor kan ha etiketten "Dow See" i tjing-tjong butikerna. De säljs i flaskor och på den Engelska etiketten står det antagligen "Yellow Bean Sauce". Jästa sojabönor är näringsrika, har stark smak och är salta. De ersätter salt helt och hållet i vissa Thairätter.
+<br/><br/>
+<b>FISKSÅS</b> (Nam pla): Denna tunna, salta ljusbruna sås bereds genom att filtrera vätska från jäst salt fisk. Rik på B-vitamin och protein om den är, fungerar den som ett bra substitut för salt. För att bli en bra Thaikock, bör du alltid ha en flaska fisksås till hands.
+Såväl som att användas i matlagning, kan man använda såsen som den är eller blandad med lime och chili. Du kan använda din fantasi för att smaksätta olika såser, precis som Thailändarna gör. Fisksås är exklusivt en sydostasiatisk produkt. Thailands superba sås är världsberömd och säljs i tjing-tjong butiker över hela planeten.
+<br/><br/>
+<b>GALANGA</b> (Kha): Både större och mindre galanga är släkt med ingefära. I Thailand används vanligen den större, dess arom är mer utsökt än den mindre. Dess insida är mjölkvit. Den ingår ofta i curryrätter och soppor. Den används färsk i Asien men annorstädes är den torkad. Den torkade roten blötläggs i hett vatten i 1 timme innan användning och tas ur rätten innan den serveras. Galanga i pulverform finns också att tillgå.
+Medicinskt klassas galanga som matsmältningsstimuli och Thailändarna blandar den rivna roten med limejuice för att behandla magont. Thailändarna anser också att galanga hjälper mot andningssvårigheter.
+I ett svenskt uppslagsverk finns att läsa: Galangarot eller galangantrot kallas rotstocken av ingefärsväxten alpinia officinarum från södra Kina. (särskilt ön Hainan).
+<br/><br/>
+Den användes tidigare medicinskt men numera bara som likörkrydda. Släktingen A. galanga döljer sig ofta bakom etiketten syltad ingefära.
+<br/><br/>
+<b>VITLÖK</b> (Krathiem): Denna medlem av familjen lilja tros härröra från Asien. Thailändsk vitlök har mindre klyftor än den västerländska varianten. Den används i rikliga mått i det Thailändska köket.
+<br/><br/>
+<b>INGEFÄRA</b> (Khing): Kommer från Indien och Kina. Den aromatiska roten är en viktig ingrediens i Thailändska huvud- och efterrätter. Den måste skalas innan den kan hackas, rivas eller krossas. Färsk ingefära är att föredra, men mald ingefära kan användas som substitut.
+<br/><br/>
+<b>CITRONGRÄS</b> (Takrai): Detta är en av de vanligast förekommande örterna i Thailändsk matlagning, den har långa, citrondoftande blad, men bara den nedre delen, som är vit och lökformig, används. Den ger en unik smak åt curryrätter och soppor. Om man inte har tillgång till färskt citrongräs, kan man ersätta detta med torkade stjälkar (som tas ur maträtten innan den serveras), eller citrongräs i pulverform. Även tunt skalade citronskal kan användas.
+I traditionell Thailändsk läkekonst, har citrongräs länge använts för att behandla förkylningar och magont. Det kan även användas för att behandla gallsten genom att man dricker avkok på citrongräs.
+<br/><br/>
+<b>MINT</b> (Bai saranae): Bladen från trädgårdsmynta används ofta i Thaisallader, fiskrätter och soppor. Bladen från söt basilika kan användas som substitut.
+<br/><br/>
+<b>NUDLAR:</b> Kinesiska nudlar finns i många varianter gjorda av olika sorters mjöl; mungbönor, vete eller ris, och de finns i en mängd olika former och storlekar, en del färska andra torkade. Färska nudlar kan man hitta i en del tjing-tjong affärer, men vanligast förekommande är den torkade varianten. Dessa bör blötläggas i varmt vatten; tillredningsinstruktioner finns vanligtvis på förpackningen.
+<br/><br/>
+Bean thread vermicelli (Woon sen): Denna typ av nudlar tillverkas av mungbönor. De köps i långa flätor och är hårda och halvt transparenta. "Woon sen" används bl a i soppor där de blir transparenta och gelatinaktiga. De bör blötläggas i varmt vatten innan de tillreds om de inte skall friteras för att bli lätt krispiga som rice vermicelli.
+<br/><br/>
+Rice vermicelli (Gwaytio sen mee): "Sen mee" är tunna, spröda, halvt transparenta nudlar som säljs i torkat skick. De kan användas direkt från paketet om de skall friteras. För att använda dem i soppor bör de blötläggas i varmt vatten.
+<br/><br/>
+Rice noodles (Gwaytio sen lek): "Sen lek" är snarlik "sen mee", bara lite bredare och tjockare.
+<br/><br/>
+Rice noodles (Gwaytio sen yai): Detta är den enda typ av nudlar som förpackas våt. Vanligtvis använd i soppor, formen är mycket bredare och något tjockare än "sen mee" och "sen lek" varianterna.
+<br/><br/>
+Egg noodles (Ba mee): Dessa tillverkas av vetemjöl med tillsats av ägg. Används i soppor. De finns i olika bredder och vissa varianter säljs färska, andra enbart som torkade.
+<br/><br/>
+<b>OSTRONSÅS</b> (Nam man hoy): Denna delikata sås tillverkas av ostron blandat med soja och salt. Den säljs i flaskor och serveras vanligtvis tillsammans med sauterade grönsaker.
+<br/><br/>
+<b>PALMSOCKER</b> (Nam tarn puk): Detta smakrika bruna socker är ett extrakt från palmsav. Det kan ersättas med andra bruna sockerarter.
+<br/><br/>
+<b>SESAMOLJA</b> (Nam man nga): Denna koncentrerade, dyrbara olja tillverkas av rostade sesamfrön och används endast i små kvantiteter, huvudsakligen för smaksättning.
+<br/><br/>
+<b>RÄKHUVUDEN</b> (Hua kung): Säljs i flaskor, blandat med olja och har ofta etiketten "Shrimp Paste with Bean Oil".
+<br/><br/>
+<b>RÄKPASTA</b> (Kapi): Fordomdags, var Thailand ett vattenrikt samhälle. Vatten strömmade i närheten av de flesta hushåll och i dessa vatten fanns många marina skaldjur, inkluderande räkor. Kanske detta förklarar varför "kapi" är så älskat av Thailändarna. Räkpasta, som är rik på B-vitamin, är också en av de huvudsakliga proteinkällorna i Asiatisk kost. Om man besöker en Thailändsk marknad, kan man se många olika kapistånd där räkpasta säljs i många olika varianter och färger. Färgerna går från ljust rosa till mörkt brunt, medan onsistensen varierar från mjukt och krämigt till torrt och hårt. Räkpasta har en väldigt skarp lukt så den bör köpas i små kvantiteter eller förvaras i en lufttät behållare. Den bör alltid stekas eller grillas innan den äts. Den kan blandas med andra ingredienser eller tillagas separat.
+Thailändsk kapi exporteras över hela världen och säljs ofta i små plastförpackningar. Ett recept på hemgjord Räkpasta (Kapi) finns att tillgå.
+<br/><br/>
+<b>SOJASÅS</b> (See iew): Tillverkas av sojabönor, känt över hela världen från Hundaschelbuan till Ouagadougou. Det finns tre huvudtyper som används i det Thailändska köket. Var noga med att välja rätt sort eftersom de smakar väldigt olika. Ljus soja används mest och är tunnare och lättare än de andra. Mörk soja är svart och tjockare, med en kraftigt aromatisk smak och används mest i stuvningar. Söt soja är tjock, svart och söt.
+<br/><br/>
+De finns alla att köpa i Kinesbutiker överallt och kan förvaras nästan hur länge som helst utan att behöva stå i kylskåp.
+<br/><br/>
+<b>STJÄRNANIS</b> (Poy kak): En åttauddig stjärnformig fröskida, som härrör från Kina. Den har en stark anissmak och Europeisk anis eller fänkålsfrön kan användas som ersättning.
+<br/><br/>
+<b>KLIBBIGT RIS</b> (Khao niaw): Finns som lång- eller kortkornigt. När det tillagas blir det som en klibbig massa och används ofta till desserter.
+<br/><br/>
+<b>CHAMPINJON</b> (Hed fang): Dessa lökformiga svampar har ett grå-svart skinn och är crèmefärgade inuti. De säljs vanligtvis konserverade i vatten. Färska champinjoner har kort hållbarhet.
+<br/><br/>
+<b>TAMARIND</b> (Makham): Tamarindträdet härrörande från Asien har ormbunkslika blad och producerar en bönlik frukt. Innan den mognar, är skidan grön och äts som ett välsmakande snacks. När den mognar är skidan brun och spröd på utsidan, men fruktköttet inuti är mjukt och aftigt. Fruktköttet pressas och säljs i paket. Den ger en intressant syrlighet till många Thairätter och används oftast i form av tamarindjuice. För att få tamarindjuice, tar man och blötlägger 1 matsked fruktkött i 4 matskedar varmt vatten i 5 minuter. Pressa och knåda sedan amarinden till det är upplöst och avlägsna frön och fibrer. Tamarind är vida tillgängligt, ibland torkad, men kan ersättas av citronjuice eller av en mindre mängd vinäger som en sista utväg. Tamarindjuice är även ett välkänt laxermedel.
+<br/><br/>
+<b>GURKMEJA</b> (Khamin): Härrör från sydostasien. Roten, som liknar ingefära men är ljusgul inuti, krossas och steks tillsammans med curry för att ge färg åt rätten. Mald gurkmeja är ett godtagbart substitut om man inte får tag i färsk eller torkad rot. De medicinska egenskaperna hos gurkmejan sägs vara många. Det hävdas att den lättar på muskelspänningar, botar diarré, hjälper till att reglera kvinnans menstruationscykel och förebygger hepatit samt olika ögonsjukdomar. Slutligen, gurkmejapulver blandat med palmolja sägs vara bra för huden.
+                </font>
+              </div>
+              <div>
+                <p/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </t>
+</t>
+
+
+<!-- sushi -->
+<t t-name="website.meny-sushi">
+    <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty">
+            <section class="fw_categories mt16">
+                <div class="container">
+                    <div class="row">
+                        <div class="box">
+                            <div class="col-lg-12">
+                                <h2 class="intro-text text-center">Sushi</h2>
+                            </div>
+                            
+                            <div class="col-lg-12">
+                                <table class="table table-bordered table-responsive">
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>
+                                                <b>Dagens sushi 8 bitar</b> (3 lax, 1 räka, 1 avokado, 3 rullar)
+                                            </td>
+                                            <td>75:-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>
+                                                <b>Mellan sushi 10 bitar</b> (3 lax, 1 räka, 1 tonfisk, 1 avokado, 4 rullar)
+                                            </td>
+                                            <td>90:-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>
+                                                <b>Stor sushi 12 bitar</b> (4 lax, 2 räkor, 1 tonfisk, 1 avokado, 4 rullar)
+                                            </td>
+                                            <td>105:-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>
+                                                <b>Stor sushi 15 bitar</b> (4 lax, 3 räkor, 1 tonfisk, 1 bläckfisk, 1 avokado, 1 ägg, 4 rullar)
+                                            </td>
+                                            <td>120:-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>
+                                                <b>Lax och rullar 10 bitar</b> (5 lax och 5 rullar)
+                                            </td>
+                                            <td>85:-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>
+                                                <b>Lax och avokado 10 bitar</b> (5 lax och 5 avokado)
+                                            </td>
+                                            <td>95:-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>
+                                                <b>Lax och räkor 10 bitar</b> (5 lax och 5 räkor)
+                                            </td>
+                                            <td>95:-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>
+                                                <b>Lax sushi 10 bitar</b>
+                                            </td>
+                                            <td>100:-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>
+                                                <b>     Vegetarisk sushu 10 bitar</b> (3 avokado, 3 tofu, 4 vegetariska rullar)
+                                            </td>
+                                            <td>85:-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>
+                                                <b>Mamma sushi 10 bitar</b> (3 räkor, 2 avokado, 2 tofu, 3 ägg)
+                                            </td>
+                                            <td>90:-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>
+                                                <b>Familje sushi 30 bitar</b> (6 lax, 4 räkor, 3 tonfisk, 3 avokado, 3 ägg, 2 tofu, 2 bläckfisk, 2 tonfisk, 5 rullar)
+                                            </td>
+                                            <td>255:-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>
+                                                <b>Sushu och yakiniku</b> (3 lax, 2 rullar, 1 räka, yakiniku med ris)
+                                            </td>
+                                            <td>95:-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>13</td>
+                                            <td>
+                                                <b>Sushi och yakitori</b> (3 lax, 2 rullar, 1 räka, yakitori spett med ris)
+                                            </td>
+                                            <td>95:-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>14</td>
+                                            <td>
+                                                <b>Yakitori spett</b> (Grillade kycklingspett med teriyakisås och ris)
+                                            </td>
+                                            <td>90:-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>15</td>
+                                            <td>
+                                                <b>Yakiniku</b> (Skivad entrecote med yakinikusås och ris)
+                                            </td>
+                                            <td>90:-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>16</td>
+                                            <td>
+                                                <b>Bento låda</b> (Japansk 4 små rätter)
+                                            </td>
+                                            <td>125:-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>17</td>
+                                            <td>
+                                                <b>Futomaki roll</b> (Lax, ägg, krabbstick, gurka)
+                                            </td>
+                                            <td>80:-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>18</td>
+                                            <td>
+                                                <b>California roll</b> (Avokado, krabbstick, gurka, majonäs, sesamfrön)
+                                            </td>
+                                            <td>90:-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>19</td>
+                                            <td>
+                                                <b>Sashimi</b> (Rå fisk med ris)
+                                            </td>
+                                            <td>165:-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>20</td>
+                                            <td>
+                                                <b>Dumplings 10 bitar</b> (Kyckling / Fläskkött / Lax)
+                                            </td>
+                                            <td>100:-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div>
+                                <p/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </t>
+</t>
+
+
+<!-- förrätt -->
+
+<?xml version="1.0"?>
+<t t-name="website.meny-forratt">
+    <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty">
+            <section class="fw_categories mt16">
+                <div class="container">
+                    <div class="row">
+                        <div class="box">
+                            <div class="col-lg-12">
+                                <h2 class="intro-text text-center">Meny</h2>
+                            </div>
+
+                              <ul class="nav nav-tabs">
+                                <li><a href="/page/meny-sushi">Sushi</a></li>
+                                <li class="active"><a href="/page/meny-forratt">Förrätt</a></li>
+                                <li><a href="/page/meny-curry-och-kokosmjolk">Curry och kokosmjölk</a></li>
+                                <li><a href="/page/meny-grillade-och-friterade-ratter">Grillade och Friterade rätter</a></li>
+                                <li><a href="/page/meny-wokade-ratter">Wokade rätter</a></li>
+                                <li><a href="/page/meny-nudlar-ris">Nudlar/ ris</a></li>
+                                <li><a href="/page/meny-vegetariskt">Vegetariskt</a></li>
+                                <li><a href="/page/meny-efterratt">Efterrätt</a></li>
+                              </ul>
+                            
+                            <div class="col-lg-12">
+                                <table class="table table-bordered table-responsive">
+                                    <tbody>
+                                        <tr>
+                                            <td>21</td>
+                                            <td>
+                                                <b>Tom Kha Gai</b> (Kyckling i kokosmjölk, citrongräs och lime)
+                                            </td>
+                                            <td>65:-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>22</td>
+                                            <td>
+                                                <b>Tom Yam Goong</b> (Tigerräkor med färsk chili, limeblad, citrongräs, tamarind)
+                                            </td>
+                                            <td>69:-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23</td>
+                                            <td>
+                                                <b>Tom Yam Poh Taek</b> (Skaldjurssoppa (räkor, musslor och bläckfisk) med räkchilipuré, champinjoner och limejuice)
+                                            </td>
+                                            <td>79:-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>24</td>
+                                            <td>
+                                                <b>Tom Kha Goong</b> (Tigerräkor i kokosmjölk, citrongräs, thailändsk ingefära och lime)
+                                            </td>
+                                            <td>69:-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>25</td>
+                                            <td>
+                                                <b>Popia Tood</b> (Friterad vegetariska vårrullar med sweet chilisås)
+                                            </td>
+                                            <td>45:-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>26</td>
+                                            <td>
+                                                <b>Popia Tood Gai</b> (Friterad kyckling vårrullar med sweet chilisås)
+                                            </td>
+                                            <td>55:-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>27</td>
+                                            <td>
+                                                <b>Tod Man Pla</b> (Friterade fiskkakor med thaigrönsaker som serveras med inlagd gurka, sweet chilisås och hackade jordnötter)
+                                            </td>
+                                            <td>49:-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>28</td>
+                                            <td>
+                                                <b>Goong Hom Paah</b> (Friterade räkor inlindade i vårrullsdeg som serveras med sweet chilisås)
+                                            </td>
+                                            <td>55:-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>29</td>
+                                            <td>
+                                                <b>Mixtallrik</b> (Friterade vårrullar, fiskkaka, räkor med sweet chilisås och kycklingspett med jordnötssås)
+                                            </td>
+                                            <td>65:-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div>
+                                <p/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </t>
+</t>
+
+
+<!-- curry -->
+<t t-name="website.meny-curry-och-kokosmjolk">
+  <t t-call="website.layout">
+    <div id="wrap" class="oe_structure oe_empty">
+      <section class="fw_categories mt16">
+        <div class="container">
+          <div class="row">
+            <div class="box">
+              <div class="col-lg-12">
+                <h2 class="intro-text text-center">Meny</h2>
+              </div>
+              <ul class="nav nav-tabs">
+                <li>
+                  <a href="/page/meny-sushi">Sushi</a>
+                </li>
+                <li>
+                  <a href="/page/meny-forratt">Förrätt</a>
+                </li>
+                <li class="active">
+                  <a href="/page/meny-curry-och-kokosmjolk">Curry och kokosmjölk</a>
+                </li>
+                <li>
+                  <a href="/page/meny-grillade-och-friterade-ratter">Grillade och Friterade rätter</a>
+                </li>
+                <li>
+                  <a href="/page/meny-wokade-ratter">Wokade rätter</a>
+                </li>
+                <li>
+                  <a href="/page/meny-nudlar-ris">Nudlar/ ris</a>
+                </li>
+                <li>
+                  <a href="/page/meny-vegetariskt">Vegetariskt</a>
+                </li>
+                <li>
+                  <a href="/page/meny-efterratt">Efterrätt</a>
+                </li>
+              </ul>
+              <div class="col-lg-12">
+                <table class="table table-bordered table-responsive">
+                  <tbody>
+                    <tr>
+                      <td>30</td>
+                      <td><b>Gaeng Kheow Whan - Gai / Nua / Goong</b><br/>
+			(Grön curry i kokosmjölk med kyckling / fläskkött / biff (<span style="color:#FFFF00;">tigerräkor</span>). Söt basilika, grönsaker. Serveras med ris)</td>
+                      <td>89:-<br/>
+			(<span style="color:#FFFF00;">99:-</span>)</td>
+                    </tr>
+                    <tr>
+                      <td>31</td>
+                      <td><b>Gaeng Gari Gai</b><br/>
+			(Gul curry i kokosmjölk, lök med kyckling / fläskkött / biff (<span style="color:#FFFF00;">tigerräkor</span>). Serveras med ris)</td>
+                      <td>89:-<br/>
+			(<span style="color:#FFFF00;">99:-</span>)</td>
+                    </tr>
+                    <tr>
+                      <td>32</td>
+                      <td><b>Gaeng Panaeng</b><br/>
+			(Panaeng curry, kokosmjölk, strimlade limeblad med kyckling / fläskkött / biff (<span style="color:#FFFF00;">tigerräkor</span>). Serveras med ris)</td>
+                      <td>89:-<br/>
+			(<span style="color:#FFFF00;">99:-</span>)</td>
+                    </tr>
+                    <tr>
+                      <td>33</td>
+                      <td><b>Gaeng Phed</b><br/>
+			(Röd curry, kokosmjölk med kyckling / fläskkött / biff (<span style="color:#FFFF00;">tigerräkor</span>), söt basilika och blandade grönsaker. Serveras med ris)</td>
+                      <td>89:-<br/>
+			(<span style="color:#FFFF00;">99:-</span>)</td>
+                    </tr>
+                    <tr>
+                      <td>34</td>
+                      <td><b>Pla Sam Rood</b><br/>
+			(Fiskfilé i röd curry, kokosmjölk, söt basilika med grönsaker och ris)</td>
+                      <td>89:-</td>
+                    </tr>
+                    <tr>
+                      <td>35</td>
+                      <td><b>Gaeng Chu Chi Talay</b><br/>
+			(Skaldjur i röd curry, kokosmjölk, söt basilika med grönsaker och ris)</td>
+                      <td>109:-</td>
+                    </tr>
+                    <tr>
+                      <td>36</td>
+                      <td><b>Gaeng Massaman</b><br/>
+			(Massaman curry med kyckling / fläskkött / biff (<span style="color:#FFFF00;">tigerräkor</span>), potatis, gul lök, grönsaker, jordnötter, rostad lök)</td>
+                      <td>89:-<br/>
+			(<span style="color:#FFFF00;">99:-</span>)</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div>
+                <p/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </t>
+</t>
+
+
+<!-- grilla -->
+<t t-name="website.meny-grillade-och-friterade-ratter">
+    <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty">
+            <section class="fw_categories mt16">
+                <div class="container">
+                    <div class="row">
+                        <div class="box">
+                            <div class="col-lg-12">
+                                <h2 class="intro-text text-center">Meny</h2>
+                            </div>
+
+                              <ul class="nav nav-tabs">
+                                <li><a href="/page/meny-sushi">Sushi</a></li>
+                                <li><a href="/page/meny-forratt">Förrätt</a></li>
+                                <li><a href="/page/meny-curry-och-kokosmjolk">Curry och kokosmjölk</a></li>
+                                <li class="active"><a href="/page/meny-grillade-och-friterade-ratter">Grillade och Friterade rätter</a></li>
+                                <li><a href="/page/meny-wokade-ratter">Wokade rätter</a></li>
+                                <li><a href="/page/meny-nudlar-ris">Nudlar/ ris</a></li>
+                                <li><a href="/page/meny-vegetariskt">Vegetariskt</a></li>
+                                <li><a href="/page/meny-efterratt">Efterrätt</a></li>
+                              </ul>
+                              
+                            <div class="col-lg-12">
+                                <table class="table table-bordered table-responsive">
+                                    <tbody>
+                                        <tr>
+                                            <td>37</td>
+                                            <td>
+                                                <b>Satay Gai</b> (Curry marinerade grillspett av kycklingfilé. Serveras med jordnötssås, inlagd gurka och ris)
+                                            </td>
+                                            <td>79:-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>38</td>
+                                            <td>
+                                                <b>Satay Goong</b> (Curry marinerade grillspett av tigerräkor. Serveras med jordnötssås, inlagd gurka och ris)
+                                            </td>
+                                            <td>79:-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>39</td>
+                                            <td>
+                                                <b>Goong Chup Pheng Tod</b> (Friterade tigerräkor med sweet chilisås och ris)
+                                            </td>
+                                            <td>89:-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>40</td>
+                                            <td>
+                                                <b>Gai Chup Pheng Tod</b> (Friterad kyckling med sweet chilisås och ris)
+                                            </td>
+                                            <td>85:-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div>
+                                <p/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </t>
+</t>
+
+
+<!-- wodade -->
+<t t-name="website.meny-wokade-ratter">
+  <t t-call="website.layout">
+    <div id="wrap" class="oe_structure oe_empty">
+      <section class="fw_categories mt16">
+        <div class="container">
+          <div class="row">
+            <div class="box">
+              <div class="col-lg-12">
+                <h2 class="intro-text text-center">Meny</h2>
+              </div>
+              <ul class="nav nav-tabs">
+                <li>
+                  <a href="/page/meny-sushi">Sushi</a>
+                </li>
+                <li>
+                  <a href="/page/meny-forratt">Förrätt</a>
+                </li>
+                <li>
+                  <a href="/page/meny-curry-och-kokosmjolk">Curry och kokosmjölk</a>
+                </li>
+                <li>
+                  <a href="/page/meny-grillade-och-friterade-ratter">Grillade och Friterade rätter</a>
+                </li>
+                <li class="active">
+                  <a href="/page/meny-wokade-ratter">Wokade rätter</a>
+                </li>
+                <li>
+                  <a href="/page/meny-nudlar-ris">Nudlar/ ris</a>
+                </li>
+                <li>
+                  <a href="/page/meny-vegetariskt">Vegetariskt</a>
+                </li>
+                <li>
+                  <a href="/page/meny-efterratt">Efterrätt</a>
+                </li>
+              </ul>
+              <div class="col-lg-12">
+                <table class="table table-bordered table-responsive">
+                  <tbody>
+                    <tr>
+                      <td>41</td>
+                      <td><b>Gratiem Prik Thai</b><br/>
+			(Wokad kyckling / fläskkött / biff (<span style="color:#FFFF00;">tigerräkor</span>) och grönsaker i ostronsås med vitlök. Serveras med ris)</td>
+                      <td>89:-<br/>
+			(<span style="color:#FFFF00;">99:-</span>)</td>
+                    </tr>
+                    <tr>
+                      <td>42</td>
+                      <td><b>Gai Phad Med Mauang</b><br/>
+			(Wokad kyckling, chilipaste med cashewnötter, grönsaker och vitlök. Serveras med ris)</td>
+                      <td>89:-</td>
+                    </tr>
+                    <tr>
+                      <td>43</td>
+                      <td><b>Phad Khing</b><br/>
+			(Wokad kyckling / fläskkött / biff (<span style="color:#FFFF00;">tigerräkor</span>) och grönsaker, lök, vitlök och färsk ingefära i ostronsås. Serveras med ris)</td>
+                      <td>89:-<br/>
+			(<span style="color:#FFFF00;">99:-</span>)</td>
+                    </tr>
+                    <tr>
+                      <td>44</td>
+                      <td><b>Phad Grapraow</b> (Wokad kyckling / fläskkött / biff med färsk chili, het basilika och grönsaker. Serveras med ris)</td>
+                      <td>89:-</td>
+                    </tr>
+                    <tr>
+                      <td>45</td>
+                      <td><b>Phad Grapraow Goong</b><br/>
+			(Wokade tigerräkor och grönsaker, lök, vitlök, chili, het basilika och grönsaker i ostronsås. Serveras med ris)</td>
+                      <td>99:-</td>
+                    </tr>
+                    <tr>
+                      <td>46</td>
+                      <td><b>Phad Grapraow Talay</b> (Wokade skaldjur i färsk chili, het basilika med grönsaker och ris)</td>
+                      <td>109:-</td>
+                    </tr>
+                    <tr>
+                      <td>47</td>
+                      <td><b>Phad Prik Saparod</b> (Wokad kyckling / fläskkött / biff med ananas, chili, vitlök och söt basilika. Serveras med ris)</td>
+                      <td>89:-</td>
+                    </tr>
+                    <tr>
+                      <td>48</td>
+                      <td><b>Phad Goong Gai</b><br/>
+			(Wokad kyckling (<span style="color:#FFFF00;">tigerräkor</span>) med lök, chilipaste, ananas, chili, vitlök, söt basilika. Serveras med ris)</td>
+                      <td>89:-<br/>
+			(<span style="color:#FFFF00;">99:-</span>)</td>
+                    </tr>
+                    <tr>
+                      <td>49</td>
+                      <td><b>Sweet and Sour</b><br/>
+			(Wokad kyckling / fläskkött (<span style="color:#FFFF00;">tigerräkor</span>) i sötsursås med ananas, grönsaker. Serveras med ris)</td>
+                      <td>89:-<br/>
+			(<span style="color:#FFFF00;">99:-</span>)</td>
+                    </tr>
+                    <tr>
+                      <td>50</td>
+                      <td><b>Phad Namprick Pao</b><br/>
+			(Wokad kyckling / fläskkött / biff (<span style="color:#FFFF00;">skaldjur</span>) i chilipaste med söt basilika, grönsaker och ris)</td>
+                      <td>89:-<br/>
+			(<span style="color:#FFFF00;">109:-</span>)</td>
+                    </tr>
+                    <tr>
+                      <td>51</td>
+                      <td><b>Phad Namman Hoi</b> (Wokad kyckling / fläskkött / biff i ostronsås med grönsaker och ris)</td>
+                      <td>89:-</td>
+                    </tr>
+                    <tr>
+                      <td>52</td>
+                      <td><b>Phad Pet</b><br/>
+			(Wokad kyckling / fläskkött / biff (<span style="color:#FFFF00;">skaldjur</span>) i röd curry, limeblad, söt basilika med grönsaker och ris)</td>
+                      <td>89:-<br/>
+			(<span style="color:#FFFF00;">109:-</span>)</td>
+                    </tr>
+                    <tr>
+                      <td>53</td>
+                      <td><b>Phad Phed Catchai</b><br/>
+			(Wokad kyckling / fläskkött / biff (<span style="color:#FFFF00;">skaldjur</span>) i röd curry galangale, limeblad, söt basilika med grönsaker och ris)</td>
+                      <td>89:-<br/>
+			(<span style="color:#FFFF00;">109:-</span>)</td>
+                    </tr>
+                    <tr>
+                      <td>54</td>
+                      <td><b>LaabGai / Nua / Moo</b><br/>
+			(Kryddad kyckling / fläskkött / biff på thailändskt vis. Krossad färsk vitlökschili, limejuice, citrongräs och toppas med färsk koriander)</td>
+                      <td>95:-</td>
+                    </tr>
+                    <tr>
+                      <td>55</td>
+                      <td><b>Pla Rad Prick</b> (Fiskfilé i sötsurssås med grönsaker och ris.)</td>
+                      <td>89:-</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div>
+                <p/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </t>
+</t>
+
+
+<!-- nudlar -->
+<t t-name="website.meny-nudlar-ris">
+  <t t-call="website.layout">
+    <div id="wrap" class="oe_structure oe_empty">
+      <section class="fw_categories mt16">
+        <div class="container">
+          <div class="row">
+            <div class="box">
+              <div class="col-lg-12">
+                <h2 class="intro-text text-center">Meny</h2>
+              </div>
+              <ul class="nav nav-tabs">
+                <li>
+                  <a href="/page/meny-sushi">Sushi</a>
+                </li>
+                <li>
+                  <a href="/page/meny-forratt">Förrätt</a>
+                </li>
+                <li>
+                  <a href="/page/meny-curry-och-kokosmjolk">Curry och kokosmjölk</a>
+                </li>
+                <li>
+                  <a href="/page/meny-grillade-och-friterade-ratter">Grillade och Friterade rätter</a>
+                </li>
+                <li>
+                  <a href="/page/meny-wokade-ratter">Wokade rätter</a>
+                </li>
+                <li class="active">
+                  <a href="/page/meny-nudlar-ris">Nudlar/ ris</a>
+                </li>
+                <li>
+                  <a href="/page/meny-vegetariskt">Vegetariskt</a>
+                </li>
+                <li>
+                  <a href="/page/meny-efterratt">Efterrätt</a>
+                </li>
+              </ul>
+              <div class="col-lg-12">
+                <table class="table table-bordered table-responsive">
+                  <tbody>
+                    <tr>
+                      <td>56</td>
+                      <td><b>Phad Thai</b><br/>
+			(Wokade risnudlar i tamarindsås med ägg, krossade jordnötter, böngroddar. Kyckling / fläskkött / biff (<span style="color:#FFFF00;">tigerräkor</span>))</td>
+                      <td>89:-<br/>
+			(<span style="color:#FFFF00;">99:-</span>)</td>
+                    </tr>
+                    <tr>
+                      <td>57</td>
+                      <td><b>Phad Si-ew</b><br/>
+			(Wokade risnudlar med kyckling / fläskkött / biff (<span style="color:#FFFF00;">tigerräkor</span>) med grönsaker i honungsolja)</td>
+                      <td>89:-<br/>
+			(<span style="color:#FFFF00;">99:-</span>)</td>
+                    </tr>
+                    <tr>
+                      <td>58</td>
+                      <td><b>Sen Phan Kimao</b><br/>
+			(Wokade risnudlar i chilipaste, söt basilika, grönsaker med kyckling / fläskkött / biff (<span style="color:#FFFF00;">skaldjur</span>))</td>
+                      <td>89:-<br/>
+			(<span style="color:#FFFF00;">109:-</span>)</td>
+                    </tr>
+                    <tr>
+                      <td>59</td>
+                      <td><b>Khow Phad Phark</b> (Wokat ris med grönsaker, ananas, tomat, tofu, ägg. Kyckling / fläskkött / biff (<span style="color:#FFFF00;">tigerräkor</span>))</td>
+                      <td>89:-<br/>
+			(<span style="color:#FFFF00;">99:-</span>)</td>
+                    </tr>
+                    <tr>
+                      <td>60</td>
+                      <td><b>Kaow Pad Goong</b> (Wokat ris med tigerräkor, ägg, gul lök, tomat, gräslök och koriander)</td>
+                      <td>95:-</td>
+                    </tr>
+                    <tr>
+                      <td>61</td>
+                      <td><b>Goy Tiw Phad Gaeng Panaeng Phaki</b><br/>
+			(Wokade äggnudlar i panaengsås med kyckling / fläskkött / biff (<span style="color:#FFFF00;">tigerräkor</span>), söt basilika, limeblad och grönsaker)</td>
+                      <td>89:-<br/>
+			(<span style="color:#FFFF00;">99:-</span>)</td>
+                    </tr>
+                    <tr>
+                      <td>62</td>
+                      <td><b>Phad Bamee</b><br/>
+			(Wokade äggnudlar i ostronsås med grönsaker och kyckling / fläskkött / biff (<span style="color:#FFFF00;">skaldjur</span>))</td>
+                      <td>89:-<br/>
+			(<span style="color:#FFFF00;">109:-</span>)</td>
+                    </tr>
+                    <tr>
+                      <td>63</td>
+                      <td><b>Yam Woonsen</b> (Glasnudel sallad med skaldjur, chili, selleri, rödlök, paprika, limejuice och strimlad morot)</td>
+                      <td>109:-</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div>
+                <p/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </t>
+</t>
+
+
+<!-- vege -->
+<?xml version="1.0"?>
+<t t-name="website.meny-vegetariskt">
+  <t t-call="website.layout">
+    <div id="wrap" class="oe_structure oe_empty">
+      <section class="fw_categories mt16">
+        <div class="container">
+          <div class="row">
+            <div class="box">
+              <div class="col-lg-12">
+                <h2 class="intro-text text-center">Meny</h2>
+              </div>
+              <ul class="nav nav-tabs">
+                <li>
+                  <a href="/page/meny-sushi">Sushi</a>
+                </li>
+                <li>
+                  <a href="/page/meny-forratt">Förrätt</a>
+                </li>
+                <li>
+                  <a href="/page/meny-curry-och-kokosmjolk">Curry och kokosmjölk</a>
+                </li>
+                <li>
+                  <a href="/page/meny-grillade-och-friterade-ratter">Grillade och Friterade rätter</a>
+                </li>
+                <li>
+                  <a href="/page/meny-wokade-ratter">Wokade rätter</a>
+                </li>
+                <li>
+                  <a href="/page/meny-nudlar-ris">Nudlar/ ris</a>
+                </li>
+                <li class="active">
+                  <a href="/page/meny-vegetariskt">Vegetariskt</a>
+                </li>
+                <li>
+                  <a href="/page/meny-efterratt">Efterrätt</a>
+                </li>
+              </ul>
+              
+              <div class="col-lg-12">
+                <table class="table table-bordered table-responsive">
+                  <tbody>
+                    <tr>
+                      <td>64</td>
+                      <td><b>Gaeng Kheow Whan Phak</b> (Grönsaker i grön curry, kokosmjölk, söt basilika. Serveras med ris)</td>
+                      <td>80:-</td>
+                    </tr>
+                    <tr>
+                      <td>65</td>
+                      <td><b>Phad Phak Roam</b> (Wokade blandade grönsaker i ostronsås. Serveras med ris)</td>
+                      <td>80:-</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div>
+                <p/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </t>
+</t>
+
+<!-- efterrätter -->
+<?xml version="1.0"?>
+<t t-name="website.meny-efterratt">
+  <t t-call="website.layout">
+    <div id="wrap" class="oe_structure oe_empty">
+      <section class="fw_categories mt16">
+        <div class="container">
+          <div class="row">
+            <div class="box">
+              <div class="col-lg-12">
+                <h2 class="intro-text text-center">Meny</h2>
+              </div>
+              <ul class="nav nav-tabs">
+                <li>
+                  <a href="/page/meny-sushi">Sushi</a>
+                </li>
+                <li>
+                  <a href="/page/meny-forratt">Förrätt</a>
+                </li>
+                <li>
+                  <a href="/page/meny-curry-och-kokosmjolk">Curry och kokosmjölk</a>
+                </li>
+                <li>
+                  <a href="/page/meny-grillade-och-friterade-ratter">Grillade och Friterade rätter</a>
+                </li>
+                <li>
+                  <a href="/page/meny-wokade-ratter">Wokade rätter</a>
+                </li>
+                <li>
+                  <a href="/page/meny-nudlar-ris">Nudlar/ ris</a>
+                </li>
+                <li>
+                  <a href="/page/meny-vegetariskt">Vegetariskt</a>
+                </li>
+                <li class="active">
+                  <a href="/page/meny-efterratt">Efterrätt</a>
+                </li>
+              </ul>
+              
+              <div class="col-lg-12">
+                <table class="table table-bordered table-responsive">
+                  <tbody>
+                    <tr>
+                      <td>66</td>
+                      <td><b>Vaniljglass</b> (Med chokladsås / jordgubbssås eller kolasås)</td>
+                      <td>30:-</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div>
+                <p/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </t>
+</t>
+
+<!-- veckans meny -->
+<?xml version="1.0"?>
+<t t-name="website.veckans-lunch">
+    <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty">
+            <section class="fw_categories mt16">
+                <div class="container">
+                    <div class="row">
+                        <div class="box">
+                            <div class="intro-text text-center">
+                                <h2>Veckans Lunch 
+                                    <span style="color:#FFFF00;">75kr</span><br/>
+                                    <h3>Servering &amp; avhämtning Mån - Fre 11.00 - 14.30.  inkl. kaffe &amp; misosoppa</h3>
+                                </h2><br/>
+                            </div>
+                            <div class="col-lg-12">
+                                <table class="table table-bordered table-responsive">
+                                    <tbody>
+                                        <tr>
+                                            <td>Måndag</td>
+                                            <td>
+                                                <b>A. Gratiem Prik Thai Gai</b> (Wokad kyckling med vitlök, grönsaker i ostronsås. Serveras med ris)
+                                                <br/>
+                                                <b>B. Gaeng Panaeng Moo</b> (Panaeng curry, kokosmjölk med biff, strimlade limeblad och grönsaker. Serveras med ris)
+                                                <br/>
+                                                <b>C. Phad Bamee Nua</b> (Wokad äggnudlar i ostronsås med fläskkött och grönsaker)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tisdag</td>
+                                            <td>
+                                                <b>A. Phad Med Mauang Moo</b> (Wokad biff med chilipaste, vitlök, grönsaker och cashewnötter. Serveras med ris)
+                                                <br/>
+                                                <b>B. Gaeng Kheow Whan Nua</b> (Grön curry, kokosmjölk med fläskkött, söt basilika och grönsaker. Serveras med ris)
+                                                <br/>
+                                                <b>C. Goy Tiw Phad Gaeng panaeng Phaki Gai</b> (Wokade äggnudlar i panaengsås med kyckling, söt basilika, limeblad och grönsaker)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Onsdag</td>
+                                            <td>
+                                                <b>A. Phad Goong Gai Nua</b> (Wokad fläskkött med chilipaste, lök, vitlök, färsk chili, söt basilika, ananas och grönsaker. Serveras med ris)
+                                                <br/>
+                                                <b>B. Gaeng Massaman Gai</b> (Massaman curry med kyckling, potatis och grönsaker, jordnötter, rostad lök. Serveras med ris)
+                                                <br/>
+                                                <b>C. Sen Phad Kimao Moo</b> (Wokade risnudlar i chilipaste med biff, söt basilika och grönsaker)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Torsdag</td>
+                                            <td>
+                                                <b>A. Phad Namprick Pao Gai</b> (Wokad kyckling i chilipaste, söt basilika och grönsaker. Serveras med ris)
+                                                <br/>
+                                                <b>B. Gaeng Gari Moo</b> (Gul curry, kokosmjölk med biff, grönsaker och rostad lök. Serveras med ris)
+                                                <br/>
+                                                <b>C. Phad Si-ew Nua</b> (Wokade risnudlar i honungssoja med ägg, fläskkött och grönsaker)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fredag </td>
+                                            <td>
+                                                <b>A. Phad Namman Hoi Moo</b> (Wokad biff i ostronsås och grönsaker. Serveras med ris)
+                                                <br/>
+                                                <b>B. Gaeng Phed Nua</b> (Röd curry, kokosmjölk med fläskkött, söt basilika och grönsaker. Serveras med ris)
+                                                <br/>
+                                                <b>C. Phad Thai Gai</b> (Wokade risnudlar i tamarindsås med ägg, kyckling, vitkål, morot, purjolök, krossade jordnötter)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Dagens sushi 9 bitar</td>
+                                            <td><b>A: 3Lax 1räk 1ägg 1avocado &amp; 3rullar</b>
+                                                <br/>
+                      <b>B: 3Lax 2räk &amp; 4rullar</b>
+                                                <br/>
+                      <b>C: 3Lax 2avocado &amp; 4rullar</b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Veckanstips</td>
+                                            <td><b>D: Friterade kyckling m jordnöttsås och ris</b>
+                                                <span style="color:#FFFF00;">75kr</span>
+                                                <br/>
+<b>E: Wokad scampi i rödcurry med grönsaker, cocosmjölk och ris</b>
+                                                <span style="color:#FFFF00;">90kr</span>
+                                                <br/>
+<b>F: Wokad ankfileer m Szechuansås, grönsaker och ris</b>
+                                                <span style="color:#FFFF00;">100kr</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div>
+                                <p/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </t>
+</t>
+
+<!-- näringstabell -->
+<?xml version="1.0"?>
+<t t-name="website.naringstabell">
+    <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty">
+            <section class="fw_categories mt16">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="intro-text text-center">Näringstabell</h1>
+                        </div>
+                        <div>
+                            <p/>
+                        </div>
+                        <div class="col-md-12">
+                            <img alt="Odoo - Sample 2 for three columns" class="img img-rounded" src="/theme_teamdoc/static/src/img/mias_sushi/allergifakta.jpg" style="width:100%"/>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img alt="Odoo - Sample 2 for three columns" class="img img-rounded" src="/theme_teamdoc/static/src/img/mias_sushi/naringsfakta.jpg" style="width:100%"/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </t>
+</t>
+

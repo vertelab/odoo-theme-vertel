@@ -1,0 +1,22 @@
+<!-- huvudsidan -->
+<t t-name="website.huvudsidan">
+    <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty">
+            <section class="mt16 mb16">
+                <div class="container">
+                    <div class="row">
+                    	<t t-set="title" t-value="'Aktuellt på Ankan'"/>
+                    	<t t-set="blog" t-value="request.env['blog.blog'].search([('name','=','Aktuellt')])"/>
+                        <t t-set="news" t-value="request.env['blog.post'].search([('website_published','=',True), ('blog_id','=',blog.id)], order='write_date desc')"/>
+                        <t t-call="theme_teamdoc.news_block_md_6"/>
+
+                        <t t-set="title" t-value="'Ankan Kvackar'"/>
+                    	<t t-set="blog" t-value="request.env['blog.blog'].search([('name','=','Kvackar')])"/>
+                        <t t-set="news" t-value="request.env['blog.post'].search([('website_published','=',True), ('blog_id','=',blog.id)], order='write_date desc')"/>
+                        <t t-call="theme_teamdoc.news_block_md_6"/>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </t>
+</t>

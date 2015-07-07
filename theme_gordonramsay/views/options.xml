@@ -1,0 +1,19 @@
+<openerp>
+<data>
+<template id="theme_gordonramsay_options" inherit_id="website.snippet_options">
+    <xpath expr="//div[@data-option='gordonramsay_options']" position="after">
+    </xpath>
+    
+<xpath expr="//div[@data-option='gordonramsay_options']" position="attributes">
+    <attribute name="data-selector">option</attribute>
+</xpath>
+
+    <div data-snippet-option-id='caption'
+        data-selector="blockquote, .well, .panel, .oe_share, .o_image_floating"
+        data-selector-siblings="p, h1, h2, h3, h4, blockquote, .well, .panel, .oe_share"
+        data-selector-children=".caption">
+    </div>
+    
+</template>
+</data>
+</openerp>

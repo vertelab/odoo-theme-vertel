@@ -1,0 +1,56 @@
+<!-- theme -->
+<?xml version="1.0"?>
+<data inherit_id="website.layout" customize_show="True" active="False" name="Business Casual" priority="99">
+    <xpath expr="//head" position="inside">
+        <!-- Custom CSS -->
+        <link href="/theme_teamdoc/static/src/css/business-casual.css" rel="stylesheet"/>
+        <link href="/theme_teamdoc/static/src/css/custom.css" rel="stylesheet"/>
+        <style>
+                    body {
+                        background: url('/theme_teamdoc/static/src/img/skurat_och_klart/1439802_13256694.jpg') no-repeat center center fixed;
+                        background-size: cover;
+                        font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+                    }
+                    h1,h2,h3,h4,h5,h6 {
+                            text-transform: uppercase;
+                            font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+                            font-weight: 700;
+                            letter-spacing: 1px;
+                            color: #EE82EE;
+                    }
+                    .navbar-nav>li>a {
+                        line-height: normal;
+                        color: #EE82EE;
+                    }
+                    .dropdown-menu > li > a {
+                        color: #EE82EE;
+                    }
+                </style>
+        <!-- Fonts -->
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+        <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css"/>
+    </xpath>
+    <xpath expr="//body/div" position="before">
+        <div class="brand" id="brand" t-field="res_company.name"/>
+        <div class="address-bar">
+            <t t-esc="res_company.street"/> | 
+            <t t-esc="res_company.partner_id.zip"/>
+            <t t-esc="res_company.city"/> | 
+            <t t-esc="res_company.phone"/> | 
+            <t t-esc="res_company.partner_id.mobile"/>
+        </div>
+    </xpath>
+    <xpath expr="//header//a[@class='navbar-brand logo'] | //header//a[@class='navbar-brand'] | //header//a[@class='navbar-brand logo hidden']" position="replace">
+        <a href="/" class="navbar-brand"/>
+    </xpath>
+    <xpath expr="//header//ul" position="attributes">
+        <attribute name="class">nav navbar-nav</attribute>
+    </xpath>
+    <xpath expr="//ul[@id='top_menu']/li[1]" position="replace">
+        <!-- remove log in -->
+    </xpath>
+    <xpath expr="//ul[@id='top_menu']/li[1]" position="replace">
+        <!-- remove log in -->
+    </xpath>
+    <!-- <xpath expr="//header//div" position="attributes"><attribute name="class">collapse navbar-collapse navbar-top-collapse custom</attribute></xpath> -->
+</data>

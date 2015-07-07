@@ -1,0 +1,138 @@
+<!-- theme -->
+<?xml version="1.0"?>
+<data inherit_id="website.layout" customize_show="True" active="False" name="Business Casual" priority="99">
+    <xpath expr="//head" position="inside">
+        <!-- Custom CSS -->
+        <link href="/theme_teamdoc/static/src/css/trivsamma_hem.css" rel="stylesheet"/>
+        <link href="/theme_teamdoc/static/src/css/custom.css" rel="stylesheet"/>
+        <!-- Fonts -->
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+        <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css"/>
+    </xpath>
+    <xpath expr="//body/div" position="before">
+        <div class="brand" id="brand" t-field="res_company.name"/>
+        <div class="address-bar">
+            <t t-esc="res_company.street"/> | 
+            <t t-esc="res_company.partner_id.zip"/>
+            <t t-esc="res_company.city"/> | 
+            <t t-esc="res_company.phone"/> | 
+            <t t-esc="res_company.partner_id.mobile"/>
+        </div>
+    </xpath>
+    <xpath expr="//header//a[@class='navbar-brand logo'] | //header//a[@class='navbar-brand'] | //header//a[@class='navbar-brand logo hidden']" position="replace">
+        <a href="/" class="navbar-brand"/>
+    </xpath>
+    <xpath expr="//header//ul" position="attributes">
+        <attribute name="class">nav navbar-nav</attribute>
+    </xpath>
+    <xpath expr="//ul[@id='top_menu']/li[1]" position="replace">
+        <!-- remove log in -->
+    </xpath>
+    <xpath expr="//ul[@id='top_menu']/li[1]" position="replace">
+        <!-- remove log in -->
+    </xpath>
+    <!-- <xpath expr="//header//div" position="attributes"><attribute name="class">collapse navbar-collapse navbar-top-collapse custom</attribute></xpath> -->
+</data>
+
+<!-- auto footer -->
+<data inherit_id="website.footer_custom" customize_show="True" name="Automatic Footer">
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div class="container hidden-print">
+            <div class="row">
+                <div class="col-md-2">
+                    <h4>Våra Tjänster</h4>
+                    <ul class="list-unstyled" id="products">
+                        <li>
+                            <a href="/page/hemstadning">Hemstädning</a>
+                            <br/>
+                            <a href="/page/kladvard">Klädvård</a>
+                            <br/>
+                            <a href="/page/matlagning">Matlagning</a>
+                            <br/>
+                            <a href="/page/barnpassning">Barnpassning</a>
+                            <br/>
+                            <a href="/page/servering">Servering</a>
+                            <br/>
+                            <a href="/page/ovrig-hemservice">Övrig Hemservice</a>
+                            <br/>
+                            <a href="/page/kontorstadning">Kontorstädning</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-5 col-lg-offset-1">
+                    <div>
+                        <h4>
+                            <h4>Om Oss</h4>
+                        </h4>
+                        <font size="2">
+                            <b>Trivsamma Hem AB</b> är ett företag vars syfte är att hjälpa Dig att hinna mer, öka Din livskvalité och ge Dig mer fritid. Vi riktar oss till privatpersoner och även till företag...
+                            </font><br/>
+                            <a href="/page/om-oss"><font size="2">Läs mer</font></a>
+                    </div>
+                    <ul class="list-inline js_language_selector mt16" t-if="(request.website_multilang and len(languages) &gt; 1) or editable">
+                        <li t-foreach="languages" t-as="lg">
+                            <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang=lg[0])" t-att-data-default-lang="editable and 'true' if lg[0] == website.default_lang_code else None" t-att-data-lang="lg[0]" class="js_change_lang">
+                                <t t-esc="lg[1].split('/').pop()"/>
+                            </a>
+                        </li>
+                        <li groups="base.group_website_publisher">
+                            <t t-set="url_return" t-value="url_for('', '[lang]') + '?' + keep_query()"/>
+                            <a t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id}&amp;url_return=#{url_return}">
+                                <i class="fa fa-plus-circle"/>
+                            Add a language...
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3" id="info">
+                    <ul class="list-unstyled">
+                        <li>
+                            <h4>
+                                <a href="/page/website.contactus">Kontakt Oss</a>
+                            </h4>
+                            <h4>
+                                <a href="/page/jobba-hos-oss">Jobba Hos Oss</a>
+                            </h4>
+                        </li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li t-ignore="true">
+                            <i class="fa fa-phone"/>
+                            <span t-field="res_company.phone"/>
+                        </li>
+                        <li t-ignore="true">
+                            <i class="fa fa-mobile"/>
+                            <span t-field="res_company.partner_id.mobile"/>
+                        </li>
+                        <li t-ignore="true">
+                            <i class="fa fa-envelope"/>
+                            <span t-field="res_company.email"/>
+                        </li>
+                    </ul>
+                    <h2>
+                        <a t-att-href="website.social_facebook" t-if="website.social_facebook">
+                            <i class="fa fa-facebook-square"/>
+                        </a>
+                        <a t-att-href="website.social_twitter" t-if="website.social_twitter">
+                            <i class="fa fa-twitter"/>
+                        </a>
+                        <a t-att-href="website.social_linkedin" t-if="website.social_linkedin">
+                            <i class="fa fa-linkedin"/>
+                        </a>
+                        <a t-att-href="website.social_youtube" t-if="website.social_youtube">
+                            <i class="fa fa-youtube-play"/>
+                        </a>
+                        <a t-att-href="website.social_googleplus" t-if="website.social_googleplus" rel="publisher">
+                            <i class="fa fa-google-plus-square"/>
+                        </a>
+                        <a t-att-href="website.social_github" t-if="website.social_github">
+                            <i class="fa fa-github"/>
+                        </a>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </xpath>
+</data>

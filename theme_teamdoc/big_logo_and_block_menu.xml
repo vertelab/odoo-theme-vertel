@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+<!-- theme big logo and block menu by Haojun -->
+        <template id="theme_big_logo_and_block_menu" inherit_id="website.layout" customize_show="True" active="False" name="Big Logo and Block Menu" priority="99">
+            
+            <xpath expr="//head" position="inside">
+                <!-- Custom CSS -->
+                <link href="/theme_teamdoc/static/src/css/brfgeneralen.css" rel="stylesheet"/>
+            </xpath>
+
+            <xpath expr="//div[@class='navbar navbar-default navbar-static-top'] | //div[@class='navbar navbar-default navbar-static-top hidden-lg hidden-md hidden-sm']" position="before">
+                <div class="container text-center">
+                    <img class="img-responsive center-block hidden-xs mt2 mb2" src="/theme_teamdoc/static/src/img/brfgeneralen/header_950.gif"/>
+                </div>
+            </xpath>
+            
+            <xpath expr="//header//ul" position="attributes">
+                 <attribute name="class">nav navbar-nav</attribute>
+            </xpath>
+
+            <xpath expr="//ul[@id='top_menu']/li[1]" position="attributes">
+                <attribute name="class">divider hidden</attribute>
+            </xpath>
+
+            <xpath expr="//ul[@id='top_menu']/li[2]" position="attributes">
+                <attribute name="class">dropdown hidden</attribute>
+            </xpath>
+
+        </template>
+
+    </data>
+</openerp>

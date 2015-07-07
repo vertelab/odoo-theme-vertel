@@ -1,0 +1,87 @@
+@media screen and (min-width: 768px){
+
+	/* Styles before scroll */ 
+	#custom-nav {
+		background-color: rgba(0,0,0,0);
+	    border: 0;
+	    box-shadow: none;
+	    z-index: 999;
+	    -webkit-font-smoothing: antialiased;
+	    -moz-osx-font-smoothing: grayscale;
+	    -webkit-transition: background .5s ease-in-out, opacity .5s ease;
+	    -moz-transition: background .5s ease-in-out, opacity .5s ease;
+	    transition: background .5s ease-in-out, opacity .5s ease;
+	}
+	
+	#custom-nav a {
+		background: transparent;
+		color: white;
+	}
+	
+	#custom-nav .dropdown-menu {
+		border-radius: 0;
+		border: none;
+		border-top: 5px solid transparent;
+		background-color: transparent;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		padding-top: 0;
+	}
+	
+	#custom-nav .dropdown-menu li {
+		border-top: 1px solid white;
+	}
+	
+	#custom-nav .dropdown-menu li:last-child {
+		border-bottom: 1px solid white;
+	}
+	
+	#custom-nav .container {
+	    padding-top: 25px;
+	   	padding-bottom: 25px;
+	   	-webkit-transition: padding-top .5s ease, padding-bottom .5s ease;
+	    -moz-transition: padding-top .5s ease, padding-bottom .5s ease;
+	    transition: padding-top .5s ease, padding-top .5s ease, padding-bottom .5s ease;
+	}
+
+	/* Styles after scroll */ 
+	#custom-nav.affix {
+	    top: 0;
+	    min-width: 100%;
+		background-color: #f8f8f8;
+	    opacity: 0.9;
+	    -webkit-transition: background .5s ease-in-out, opacity .5s ease;
+	    -moz-transition: background .5s ease-in-out, opacity .5s ease;
+	    transition: background .5s ease-in-out, opacity .5s ease;
+	}
+	
+	#custom-nav.affix a {
+		color: black;
+	}
+	
+	#custom-nav.affix .container {
+	    -webkit-transition: padding-top .5s ease, padding-bottom .5s ease;
+	    -moz-transition: padding-top .5s ease, padding-bottom .5s ease;
+	    transition: padding-top .5s ease, padding-top .5s ease, padding-bottom .5s ease;
+	    padding-top: 8px;
+	    padding-bottom: 8px;
+	}
+	
+	#custom-nav.affix .dropdown-menu {
+		-webkit-transition: background .5s ease-in-out;
+	    -moz-transition: background .5s ease-in-out;
+	    transition: background .5s ease-in-out;
+	    border-top: 9px solid transparent;
+	    background: #f8f8f8;
+	}
+}
+
+@media screen and (max-width: 767px){
+	#wrapwrap {
+		padding-top: 50px;
+	}
+
+	.navbar-fixed-top {
+		z-index: 999;
+	}
+}

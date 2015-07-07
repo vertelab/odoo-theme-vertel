@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+         <template id="main" name="Gordonramsay main">
+            <head>
+            </head>
+            <body>
+                <t t-name="website.main">
+                    <t t-call="website.layout">
+                      <div id="wrap" class="oe_structure oe_empty"/>
+                    </t>
+                </t>
+            </body>
+        </template>
+        
+        
+        
+        
+        
+        
+<!--
+SNIPPETS        
+-->
+        
+        
+        
+<template id="snippets" inherit_id="website.snippets" name="Theme Gordon snippets">
+            <xpath expr="//div[@id='snippet_structure']" position="inside">
+            <div>
+                <div class="oe_snippet_thumbnail">
+                    <img class="oe_snippet_thumbnail_img" src="/theme_gordon/static/src/img/block_panel.png"/>
+                    <span class="oe_snippet_thumbnail_title">Image texthover grid</span>
+                </div>
+                <section class="oe_snippet_body fw_categories">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="grid-box-g">
+                                    <img src="/website/static/src/img/library/school_kids.jpg" style="-webkit-animation-play-state: paused; -webkit-transition: none; transition: none"/>
+                                    <div class="grid-box-overlay">
+                                        <div class="overlay-row">
+                                        <p class="overlay-title">Lorem ipsum 
+                                            <span class="glyphicon glyphicon-chevron-down arrow-transform"></span>
+                                        </p>
+                                        </div>
+                                        <div class="overlay-info">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            <a class="btn btn-danger" href="#">Lorem ipsum </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="grid-box-g">
+                                    <img src="/website/static/src/img/library/flight.jpg" style=""/>
+                                    <div class="grid-box-overlay">
+                                        <div class="overlay-row">
+                                        <p class="overlay-title">Lorem ipsum 
+                                            <span class="glyphicon glyphicon-chevron-down arrow-transform"></span>
+                                        </p>
+                                        </div>
+                                        <div class="overlay-info">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            <a class="btn btn-danger" href="#">Lorem ipsum </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="grid-box-g">
+                                    <img src="/website/static/src/img/library/manufacturing.jpg" style="-webkit-animation-play-state: paused; -webkit-transition: none; transition: none"/>
+                                    <div class="grid-box-overlay">
+                                      <div class="overlay-row">
+                                        <p class="overlay-title">Lorem ipsum 
+                                            <span class="glyphicon glyphicon-chevron-down arrow-transform"></span>
+                                        </p>
+                                        </div>
+                                        <div class="overlay-info">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            <a class="btn btn-danger" href="#">Lorem ipsum </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+<!-- Snippet empty -->
+            <div>
+                <div class="oe_snippet_thumbnail">
+                    <img class="oe_snippet_thumbnail_img" src="/theme_gordon/static/src/img/block_panel_empty.png"/>
+                    <span class="oe_snippet_thumbnail_title">Image texthover grid one landing</span>
+                </div>
+                <section class="oe_snippet_body fw_categories">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div id="wrap" class="oe_structure oe_empty"/>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="grid-box-g">
+                                    <img src="/website/static/src/img/library/flight.jpg" style=""/>
+                                    <div class="grid-box-overlay">
+                                        <div class="overlay-row">
+                                        <p class="overlay-title">Lorem ipsum 
+                                            <span class="glyphicon glyphicon-chevron-down arrow-transform"></span>
+                                        </p>
+                                        </div>
+                                        <div class="overlay-info">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            <a class="btn btn-danger" href="#">Lorem ipsum </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="grid-box-g">
+                                    <img src="/website/static/src/img/library/manufacturing.jpg" style="-webkit-animation-play-state: paused; -webkit-transition: none; transition: none"/>
+                                    <div class="grid-box-overlay">
+                                      <div class="overlay-row">
+                                        <p class="overlay-title">Lorem ipsum 
+                                            <span class="glyphicon glyphicon-chevron-down arrow-transform"></span>
+                                        </p>
+                                        </div>
+                                        <div class="overlay-info">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            <a class="btn btn-danger" href="#">Lorem ipsum </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+<!-- Snippet dual empty -->
+            <div>
+                <div class="oe_snippet_thumbnail">
+                    <img class="oe_snippet_thumbnail_img" src="/theme_gordon/static/src/img/block_panel_dual_empty.png"/>
+                    <span class="oe_snippet_thumbnail_title">Image texthover grid</span>
+                </div>
+                <section class="oe_snippet_body fw_categories oe_structure">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 oe_snippet_body">
+                                 <div id="wrap" class="oe_structure oe_empty">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="grid-box-g">
+                                    <img src="/website/static/src/img/library/flight.jpg" style=""/>
+                                    <div class="grid-box-overlay">
+                                        <div class="overlay-row">
+                                        <p class="overlay-title">Lorem ipsum 
+                                            <span class="glyphicon glyphicon-chevron-down arrow-transform"></span>
+                                        </p>
+                                        </div>
+                                        <div class="overlay-info">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            <a class="btn btn-danger" href="#">Lorem ipsum </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 oe_snippet_body">
+                                 <div id="wrap" class="oe_structure oe_empty"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </xpath>
+        
+        <xpath expr="//div[@id='snippet_content']" position="inside">
+            <div>
+                <div class="oe_snippet_thumbnail">
+                    <img class="oe_snippet_thumbnail_img" src="/theme_gordon/static/src/img/block_panel_dual_empty.png"/>
+                    <span class="oe_snippet_thumbnail_title">News texthover grid</span>
+                </div>
+<!--
+                  <t t-set="news" t-value="request.env['blog.post'].search([('website_published','=',True)],order='create_date')"/>
+                  <div class="col-md-6"  t-if="len(news)>0">
+                    <t t-set="post" t-value="news[0]"/>
+                    <div class="grid-box-g">
+                      <img t-att-src="post.background_image" style=""/>
+                      <div class="grid-box-overlay">
+                        <div class="overlay-row">
+                          <p class="overlay-title" ><t t-esc="post.name"/></p>
+                          <span class="glyphicon glyphicon-chevron-down arrow-transform"/>
+                        </div>
+                        <div class="overlay-info">
+                            
+                         <h2><t t-esc="post.name"/></h2>
+                         <h3><t t-esc="post.subtitle"/></h3>
+                         
+                         <a class="btn btn-primary" t-attf-href="/blog/#{ slug(post.blog_id) }/post/#{ slug(post) }">Läs mer</a>
+                         
+                        </div>
+                      </div>
+                    </div>
+                </div>
+-->
+            </div>
+            
+            
+                        <div name="News block" >
+                <div class="oe_snippet_thumbnail">
+                    <img class="oe_snippet_thumbnail_img" src="/theme_gordon/static/src/img/block_panel_dual_empty.png"/>
+                    <span class="oe_snippet_thumbnail_title">News texthover grid</span>
+                </div>
+
+                 <section class="jumbotron">
+                 
+                 
+                 
+                 <div class="oe_snippet_body o_image_floating o_margin_l pull-right container">
+                                <div class="grid-box-g">
+                                    <img src="/website/static/src/img/library/flight.jpg" style=""/>
+                                    <div class="grid-box-overlay">
+                                        <div class="overlay-row">
+                                        <p class="overlay-title">Lorem ipsum 
+                                            <span class="glyphicon glyphicon-chevron-down arrow-transform"></span>
+                                        </p>
+                                        </div>
+                                        <div class="overlay-info">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            <a class="btn btn-danger" href="#">Läs mer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+
+        </section>
+</div>
+
+<!--
+
+ <div>
+        <div class="oe_snippet_thumbnail">
+            <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_button.png"/>
+            <span class="oe_snippet_thumbnail_title">Button II</span>
+        </div>
+        <section class="oe_snippet_body jumbotron">
+            <div class="container">
+                <div class="row">
+                    
+                     <t t-set="news" t-value="request.env['blog.post'].search([('website_published','=',True)])"/>
+                     <div t-if="request"><t t-set="news" t-value="request.env['blog.post'].search([])"/></div>
+                     
+                    <div class="col-md-9 text-muted">
+                        <p class="mb0">
+                            <strong>50,000+ companies run Odoo to grow their businesses.</strong>
+                        </p><p class="mb0">
+                            Join us and make your company a better place.
+                        </p>
+                    </div>
+                    
+                    
+                    <div class="col-md-3">
+                        <a href="/page/website.contactus" class="btn btn-primary btn-lg pull-right mt8">
+                            <i class="fa fa-arrow-right"></i>
+                            Contact Us Now
+                        </a>
+                    </div>
+                    
+                    
+                    
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+            
+-->
+            
+ 
+            
+        </xpath>
+        
+</template>
+        
+        
+
+
+<template id="theme_gordon_css" inherit_id="website.theme" customize_show="True" name="Snippet CSS"> 
+    <xpath expr="//link[@href='/website/static/src/css/website.css']" position="after">
+
+        <link rel="stylesheet" href="/theme_gordon/static/src/css/snippets.css" t-ignore="true"/>
+        <link rel="stylesheet" href="/theme_gordon/static/src/css/custom.css" t-ignore="true"/>
+        <link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css' />
+        <link href='http://fonts.googleapis.com/css?family=Cabin:400,400italic' rel='stylesheet' type='text/css' />
+    </xpath>  
+</template>
+
+
+<template id="theme_gordon_header" inherit_id="website.layout" customize_show="True" name="Header"> 
+    <xpath expr="//header" position="replace">
+                <header class="main-header">
+                    <div class="container full-wrapper">
+                        <a href="/" class="navbar-brand" t-field="res_company.name" ></a>
+                        <a href="javascript:void(0);" class="toggle-menu" data-toggle="collapse" data-target=".main-menu" >
+                            <img src="/theme_gordon/static/src/img/hamburger.png" />
+<!--
+                            <span class="glyphicon glyphicon-menu-hamburger"></span>
+-->
+                        </a>
+                        
+                        <ul class="main-menu" role="navigation" id="top_menu">
+                            <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                                <t t-call="website.submenu"/></t>
+                            <li class="divider" t-ignore="true" t-if="website.user_id != user_id"/>
+                            <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <b>
+                                        <span t-esc="user_id.name"/>
+                                        <span class="caret"/>
+                                    </b>
+                                </a>
+                                <ul class="dropdown-menu js_usermenu" role="menu">
+                                    <li>
+                                        <a href="/web" role="menuitem">My Account</a>
+                                    </li>
+                                    <li class="divider"/>
+                                    <li>
+                                        <a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+              
+                
+                
+                </header>
+                
+    </xpath>  
+</template>
+
+
+
+<template id="news_block"  name="News Block">         
+                  <t t-set="news" t-value="request.env['blog.post'].search([('website_published','=',True)],order='write_date asc')"/>
+                  
+                  
+                    <div class="grid-box-g" t-if="len(news)>0">
+                      <t t-set="post" t-value="news[0]"/>
+                      <img t-att-src="post.background_image" style=""/>
+                      <div class="grid-box-overlay">
+                        <div class="overlay-row">
+                          <p class="overlay-title" ><t t-esc="post.name"/></p>
+                          <span class="glyphicon glyphicon-chevron-down arrow-transform"/>
+                        </div>
+                        <div class="overlay-info">
+                            
+<!--
+                         <h2><t t-esc="post.name"/></h2>
+-->
+                         <h2><t t-esc="post.subtitle"/></h2>
+                         
+                         <a class="btn btn-primary" t-attf-href="/blog/#{ slug(post.blog_id) }/post/#{ slug(post) }">Läs mer</a>
+                         
+                        </div>
+                      </div>
+                    
+                </div>                
+</template>
+
+<template id="product_block"  name="Product Block">         
+        
+                  <t t-set="products" t-value="request.env['product.template'].search([('website_published','=',True)],order='website_sequence')"/>
+                  
+                    <div class="grid-box-g"  t-if="len(products)>0">
+                      <t t-set="product" t-value="products[0]"/>
+                      <img itemprop="image" class="img img-responsive" t-att-src="website.image_url(product, 'image', None if product_image_big else '300x300')"/>
+                      <div class="grid-box-overlay">
+                        <div class="overlay-row">
+                          <p class="overlay-title" ><t t-esc="product.name"/></p>
+                          <span class="glyphicon glyphicon-chevron-down arrow-transform"/>
+                        </div>
+                        <div class="overlay-info">
+                            
+                         <h2><t t-esc="product.description_sale"/></h2>
+                         
+                         <a class="btn btn-primary" t-attf-href="/shop/product/#{ product.id }">Läs mer</a>
+                         
+                        </div>
+                      </div>
+                    </div>
+                
+</template>
+
+        
+        
+
+<template id="intro_block"  name="Introblock">
+    
+   <div class="col-sm-3">
+    <div class="media_iframe_video" data-src="//www.youtube.com/embed/c60_av03gZw?autoplay=0" style="-webkit-animation-play-state: paused; -webkit-transition: none; transition: none">
+      <div class="css_editable_mode_display"> </div>
+      <iframe allowfullscreen="allowfullscreen" src="//www.youtube.com/embed/c60_av03gZw?autoplay=0" frameborder="0"/>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <h1 style="color:#FFFFFF;">
+      <u>
+        <span >Henriks Matbod</span>
+      </u>
+    </h1>
+    <p class="jumbo-desc">Vi erbjuder nu matlagningskurser, öl och vinprovningar, uthyrning av kockar och demonstratörer och mycket mer inom mat.</p>
+  </div>
+
+</template>
+
+    </data>
+</openerp>

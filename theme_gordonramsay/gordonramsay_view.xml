@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+         <template id="main" name="Gordonramsay main">
+            <head>
+            </head>
+            <body>
+                <t t-name="website.main">
+                    <t t-call="website.layout">
+                      <div id="wrap" class="oe_structure oe_empty"/>
+                    </t>
+                </t>
+            </body>
+        </template>
+    </data>
+</openerp>

@@ -1,0 +1,128 @@
+<!-- hem -->
+<t t-name="website.hem">
+    <t t-call="website.layout">
+        <div class="oe_structure oe_empty" id="wrap">
+            <section>
+                <div class="container" id="carousel_slide">
+                    <div class="carousel slide mb32" id="myCarousel0" style="">
+                        <ol class="carousel-indicators">
+                            <li class="active" data-slide-to="0" data-target="#myCarousel0"/>
+                            <li data-slide-to="1" data-target="#myCarousel0"/>
+                            <li data-slide-to="2" data-target="#myCarousel0"/>
+                            <li data-slide-to="3" data-target="#myCarousel0"/>
+                            <li data-slide-to="4" data-target="#myCarousel0"/>
+                            <li data-slide-to="5" data-target="#myCarousel0"/>
+                            <li data-slide-to="6" data-target="#myCarousel0"/>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img alt="First slide" src="/theme_teamdoc/static/src/img/sikargarden/g1.jpg"/>
+                            </div>
+                            <div class="item img-responsive">
+                                <img alt="Second slide" src="/theme_teamdoc/static/src/img/sikargarden/g2.jpg"/>
+                            </div>
+                            <div class="item img-responsive">
+                                <img alt="Third slide" src="/theme_teamdoc/static/src/img/sikargarden/g3.jpg"/>
+                            </div>
+                            <div class="item img-responsive">
+                                <img alt="Forth slide" src="/theme_teamdoc/static/src/img/sikargarden/g4.jpg"/>
+                            </div>
+                            <div class="item img-responsive">
+                                <img alt="Fifth slide" src="/theme_teamdoc/static/src/img/sikargarden/g5.jpg"/>
+                            </div>
+                            <div class="item img-responsive">
+                                <img alt="Sixth slide" src="/theme_teamdoc/static/src/img/sikargarden/g6.jpg"/>
+                            </div>
+                            <div class="item img-responsive">
+                                <img alt="Seventh slide" src="/theme_teamdoc/static/src/img/sikargarden/g7.jpg"/>
+                            </div>
+                        </div>
+                        <div class="carousel-control left" data-slide="prev" data-target="#myCarousel0" href="#myCarousel0" style="width: 10%">
+                            <i class="fa fa-chevron-left"/>
+                        </div>
+                        <div class="carousel-control right" data-slide="next" data-target="#myCarousel0" href="#myCarousel0" style="width: 10%">
+                            <i class="fa fa-chevron-right"/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </t>
+</t>
+
+<!-- theme -->
+<?xml version="1.0"?>
+<data inherit_id="website.layout" customize_show="True" active="False" name="Big Logo and Block Menu" priority="99">
+    <xpath expr="//head" position="inside">
+        <!-- Custom CSS -->
+        <link href="/theme_teamdoc/static/src/css/sikargarden.css" rel="stylesheet"/>
+    </xpath>
+    <xpath expr="//div[@class='navbar navbar-default navbar-static-top'] | //div[@class='navbar navbar-default navbar-static-top hidden-lg hidden-md hidden-sm']" position="before">
+        <div class="container text-center">
+            <h1>Sikargården i Simonstorp</h1>
+        </div>
+    </xpath>
+    <xpath expr="//header//ul" position="attributes">
+        <attribute name="class">nav navbar-nav</attribute>
+    </xpath>
+    <xpath expr="//ul[@id='top_menu']/li[1]" position="attributes">
+        <attribute name="class">divider hidden</attribute>
+    </xpath>
+    <xpath expr="//ul[@id='top_menu']/li[2]" position="attributes">
+        <attribute name="class">dropdown hidden</attribute>
+    </xpath>
+</data>
+
+<!-- footer -->
+<?xml version="1.0"?>
+<data inherit_id="website.footer_custom" customize_show="True" name="Automatic Footer">
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div class="container hidden-print">
+            <div class="row">
+                <div class="col-md-4" id="info">
+                    <h4>Kontakta med oss</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="/page/website.contactus">Kontakta oss</a></li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li t-ignore="true"><i class="fa fa-phone"/> <span t-field="res_company.phone"/></li>
+                        <li t-ignore="true"><i class="fa fa-phone"/> <span>01188060</span></li>
+                        <li t-ignore="true"><i class="fa fa-envelope"/>  <span t-field="res_company.email"/></li>
+                    </ul>
+                    <h2>
+                        <a t-att-href="website.social_facebook" t-if="website.social_facebook"><i class="fa fa-facebook-square"/></a>
+                        <a t-att-href="website.social_twitter" t-if="website.social_twitter"><i class="fa fa-twitter"/></a>
+                        <a t-att-href="website.social_linkedin" t-if="website.social_linkedin"><i class="fa fa-linkedin"/></a>
+                        <a t-att-href="website.social_youtube" t-if="website.social_youtube"><i class="fa fa-youtube-play"/></a>
+                        <a t-att-href="website.social_googleplus" t-if="website.social_googleplus" rel="publisher"><i class="fa fa-google-plus-square"/></a>
+                        <a t-att-href="website.social_github" t-if="website.social_github"><i class="fa fa-github"/></a>
+                    </h2>
+                </div>
+                <div class="col-md-8">
+                    <div>
+                        <h4>
+                            <span t-field="res_company.name"/>
+                            <small> - <a href="/page/website.aboutus">Om oss</a></small>
+                        </h4>
+                        I Kolmårdsskogen i Östergötland, vid Simonstorps samhälle ligger Sikargården vackert beläget vid insjön Fläten. Här kan man bedriva läger- och kursverksamhet men också ha konferenser och fira högtider. Sikargården går att hyra för självhushåll, men det finns också möjlighet att få hel- eller halvpension. Sjön Fläten ger sommartid rika möjligheter till både bad, fiske och camping och vintertid väntar härliga upplevelser för både vintermetare och långfärdsskridskoåkare.
+                    </div>
+                    <ul class="list-inline js_language_selector mt16" t-if="(request.website_multilang and len(languages) &gt; 1) or editable">
+                        <li t-foreach="languages" t-as="lg">
+                            <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang=lg[0])" t-att-data-default-lang="editable and 'true' if lg[0] == website.default_lang_code else None" t-att-data-lang="lg[0]" class="js_change_lang">
+                              <t t-esc="lg[1].split('/').pop()"/>
+                            </a>
+                        </li>
+                        <li groups="base.group_website_publisher">
+                            <t t-set="url_return" t-value="url_for('', '[lang]') + '?' + keep_query()"/>
+                            <a t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id}&amp;url_return=#{url_return}">
+                            <i class="fa fa-plus-circle"/>
+                            Add a language...
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </xpath>
+</data>
+

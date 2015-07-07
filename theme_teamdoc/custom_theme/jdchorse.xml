@@ -1,0 +1,120 @@
+<!-- hem -->
+<t t-name="website.hem">
+    <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty">
+            <section class="mt16 mb16">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img alt="Odoo CMS - a big picture" class="img img-responsive" src="/theme_teamdoc/static/src/img/jdchorse/2068451 (Medium).jpg" style="width: 100%; margin: 0 auto;"/>
+                        </div>
+                        <div class="col-md-8 col-md-offset-2 mb16 mt16">
+                            <p class="text-center">
+                                <b>Head Over Hills och Jonas Rinnè vnnare av fyra års championatet 2012</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr/>
+        </div>
+    </t>
+</t>
+
+<!-- theme -->
+<?xml version="1.0"?>
+<data inherit_id="website.layout" customize_show="True" active="False" name="Business Casual" priority="99">
+    <xpath expr="//head" position="inside">
+        <!-- Custom CSS -->
+        <link href="/theme_teamdoc/static/src/css/jdchorse.css" rel="stylesheet"/>
+        <link href="/theme_teamdoc/static/src/css/custom.css" rel="stylesheet"/>
+        <!-- Fonts -->
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+        <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css"/>
+    </xpath>
+    <xpath expr="//body/div" position="before">
+        <div class="brand" id="brand" t-field="res_company.name"/>
+        <div class="address-bar">
+            <t t-esc="res_company.street"/> | 
+            <t t-esc="res_company.partner_id.zip"/>
+            <t t-esc="res_company.city"/> | 
+            <t t-esc="res_company.phone"/> | 
+            <t t-esc="res_company.partner_id.mobile"/>
+        </div>
+    </xpath>
+    <xpath expr="//header//a[@class='navbar-brand logo'] | //header//a[@class='navbar-brand'] | //header//a[@class='navbar-brand logo hidden']" position="replace">
+        <a href="/" class="navbar-brand"/>
+    </xpath>
+    <xpath expr="//header//ul" position="attributes">
+        <attribute name="class">nav navbar-nav</attribute>
+    </xpath>
+    <xpath expr="//ul[@id='top_menu']/li[1]" position="attributes">
+        <attribute name="class">divider hidden</attribute>
+    </xpath>
+    <xpath expr="//ul[@id='top_menu']/li[2]" position="attributes">
+        <attribute name="class">dropdown hidden</attribute>
+    </xpath>
+    <!-- <xpath expr="//header//div" position="attributes"><attribute name="class">collapse navbar-collapse navbar-top-collapse custom</attribute></xpath> -->
+</data>
+
+<!-- autofooter -->
+<?xml version="1.0"?>
+<data inherit_id="website.footer_custom" customize_show="True" name="Automatic Footer">
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div class="container hidden-print">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>Våra hästar</h4>
+                    <ul class="list-unstyled" id="products">
+                        <li><a href="/">Aviator</a></li>
+                        <li><a href="/">Kan Way</a></li>
+                        <li><a href="/">Sakke</a></li>
+                        <li><a href="/">Sol way</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-5">
+                    <div>
+                        <h4>
+                            <span t-field="res_company.name"/>
+                        </h4>
+                        JDC Horse verksamhet är inriktat på utbildning/träning och tävling samt försäljning av hästar. Verksamheten bedrivs på Höga Gård som är en modern anläggning under uppbyggnad ca 6 km från Linköpings City.
+                        <a href="/">Läs mer...</a>
+                    </div>
+                    <ul class="list-inline js_language_selector mt16" t-if="(request.website_multilang and len(languages) &gt; 1) or editable">
+                        <li t-foreach="languages" t-as="lg">
+                            <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang=lg[0])" t-att-data-default-lang="editable and 'true' if lg[0] == website.default_lang_code else None" t-att-data-lang="lg[0]" class="js_change_lang">
+                              <t t-esc="lg[1].split('/').pop()"/>
+                            </a>
+                        </li>
+                        <li groups="base.group_website_publisher">
+                            <t t-set="url_return" t-value="url_for('', '[lang]') + '?' + keep_query()"/>
+                            <a t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id}&amp;url_return=#{url_return}">
+                            <i class="fa fa-plus-circle"/>
+                            Add a language...
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-lg-offset-1" id="info">
+                    <h4>Kontakta oss</h4>För info gällande aktuella försäljningar och tävlingsresultat vänligen <a href="/page/website.contactus">kontakta oss</a>!
+                    <ul class="list-unstyled">
+                        <li t-ignore="true"><i class="fa fa-phone"/> <span t-field="res_company.phone"/></li>
+                        <li t-ignore="true"><i class="fa fa-mobile"/>  <span t-field="res_company.partner_id.mobile"/></li>
+                        <li t-ignore="true"><i class="fa fa-envelope"/>  <span>bernt.johansson@jdchorse.se</span></li>
+                        <li t-ignore="true"><i class="fa fa-envelope"/>  <span>maria.johansson@jdchorse.se</span></li>
+                    </ul>
+                    <h2>
+                        <a t-att-href="website.social_facebook" t-if="website.social_facebook"><i class="fa fa-facebook-square"/></a>
+                        <a t-att-href="website.social_twitter" t-if="website.social_twitter"><i class="fa fa-twitter"/></a>
+                        <a t-att-href="website.social_linkedin" t-if="website.social_linkedin"><i class="fa fa-linkedin"/></a>
+                        <a t-att-href="website.social_youtube" t-if="website.social_youtube"><i class="fa fa-youtube-play"/></a>
+                        <a t-att-href="website.social_googleplus" t-if="website.social_googleplus" rel="publisher"><i class="fa fa-google-plus-square"/></a>
+                        <a t-att-href="website.social_github" t-if="website.social_github"><i class="fa fa-github"/></a>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </xpath>
+</data>
+

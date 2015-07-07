@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+		<template id="assets_frontend" inherit_id="website.assets_frontend" name="Odoo-transparent-navbar">
+            <xpath expr="." position="inside">
+                <link href="/Odoo-transparent-navbar/static/src/css/navbar.css" rel="stylesheet"/>
+                <script type="text/javascript" src="/Odoo-transparent-navbar/static/src/js/navbar.js"></script>
+            </xpath>
+        </template>
+
+		<template id="transparent navbar" inherit_id="website.layout">
+			<xpath expr="//header" position="replace">
+				<header>
+					<div id="custom-nav" class="navbar navbar-default navbar-fixed-top">
+						<div class="container">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-top-collapse">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<a class="navbar-brand" href="/" t-field="res_company.name" />
+							</div>
+							<div class="collapse navbar-collapse navbar-top-collapse">
+								<ul class="nav navbar-nav navbar-right" id="top_menu">
+									<t t-foreach="website.menu_id.child_id" t-as="submenu">
+										<t t-call="website.submenu" />
+									</t>
+									<li class="divider" t-ignore="true" t-if="website.user_id != user_id" />
+									<li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+											<b>
+												<span t-esc="user_id.name" />
+												<span class="caret"></span>
+											</b>
+										</a>
+										<ul class="dropdown-menu js_usermenu" role="menu">
+											<li>
+												<a href="/web" role="menuitem">My Account</a>
+											</li>
+											<li>
+												<a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</header>
+			</xpath>
+			<xpath expr="//t[@name='layout_head']" position="after">
+				<meta name="google-site-verification" content="SjmE_95P0V7hJUN8k7CZalrJkkvKfHvqswlpxOOLZEk" />
+			</xpath>
+		</template>
+
+	</data>
+</openerp>
