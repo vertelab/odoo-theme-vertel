@@ -33,8 +33,13 @@ import werkzeug
 class website(models.Model):
     _inherit = 'website'
        
-    def get_news(self, text):
-        return ' '.join(html.fromstring(text).text_content().split())
+    def get_news(self, text, length=0):
+        if text:
+            result_text = ' '.join(html.fromstring(text).text_content().split())
+            if 0 < length < len(result_text):
+                return result_text[:length]
+            return result_text
+        return ''
        
 class Teamdoc(http.Controller):
 

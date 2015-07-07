@@ -41,25 +41,25 @@
                 <div>
                     <h3 t-esc="title"/>
                     <br/>
-                    <font size="2">
-                        <!--List with news-->
-                        <t t-set="nbr" t-value="0"/>
-                        <t t-foreach="news" t-as="n">
-                            <t t-if="nbr&lt;5">
-                                <a t-att-href="'/blog/%s/post/%s' % (n.blog_id.id, n.id)" style="color:black;">
-                                    <t t-raw="n.name"/>
-                                </a>
-                                <br/>
-                                <t t-esc="website.get_news(n.content)"/>
-                                <t t-esc="n.write_date"/>
-                                <br/>
-                            </t>
-                            <t t-set="nbr" t-value="nbr+1"/>
+                    <!--List with news-->
+                    <t t-set="nbr" t-value="0"/>
+                    <t t-foreach="news" t-as="n">
+                        <t t-if="nbr&lt;5">
+                            <h4><a t-att-href="'/blog/%s/post/%s' % (n.blog_id.id, n.id)" style="color:blue;">
+                                <t t-raw="n.name"/>
+                            </a></h4>
+                            <t t-esc="n.write_date"/>
+                            <br/>
+                            <font size="3"><t t-esc="website.get_news(n.content, 200)"/>...</font>
+                            <br/>
+                            <font size="2">views: <t t-esc="n.visits"/></font>
+                            <br/>
                         </t>
-                    </font>
+                        <t t-set="nbr" t-value="nbr+1"/>
+                    </t>
                     <br/>
                     <a t-att-href="'/blog/%s' % blog.id">
-                        <b style="color:black">Läs alla...</b>
+                        <b style="color:orange">Läs alla...</b>
                     </a>
                 </div>
             </div>
