@@ -36,24 +36,94 @@
             </t> 
         </template>
 
-        <template id="news_block_md_6" name="News Block">
+        <!-- news block with title, subtitle, date, 200 first text and views -->
+        <template id="news_block_til_sub_dat_txt_vie" name="News Block with Title Subtitle Date 200 Text Views">
             <div class="col-md-6">
                 <div>
-                    <h3 t-esc="title"/>
+                    <h4 t-esc="title"/>
                     <br/>
-                    <!--List with news-->
+                    <!--List of news-->
                     <t t-set="nbr" t-value="0"/>
                     <t t-foreach="news" t-as="n">
                         <t t-if="nbr&lt;5">
-                            <h4><a t-att-href="'/blog/%s/post/%s' % (n.blog_id.id, n.id)" style="color:blue;">
-                                <t t-raw="n.name"/>
-                            </a></h4>
-                            <t t-esc="n.write_date"/>
-                            <br/>
-                            <font size="3"><t t-esc="website.get_news(n.content, 200)"/>...</font>
-                            <br/>
-                            <font size="2">views: <t t-esc="n.visits"/></font>
-                            <br/>
+                            <a t-att-href="'/blog/%s/post/%s' % (n.blog_id.id, n.id)">
+                            <b style="color:blue;"><t t-esc="n.name"/></b></a><br/>
+                            <b><t t-esc="website.get_news(n.subtitle)"/></b><br/>
+                            <font size="1"><t t-esc="n.write_date"/></font><br/>
+                            <t t-esc="website.get_news(n.content, 200)"/>...<br/>
+                            views: <t t-esc="n.visits"/><br/>
+                        </t>
+                        <t t-set="nbr" t-value="nbr+1"/>
+                    </t>
+                    <br/>
+                    <a t-att-href="'/blog/%s' % blog.id">
+                        <b style="color:orange">Läs alla...</b>
+                    </a>
+                </div>
+            </div>
+        </template>
+
+        <!-- news block with title, subtitle, date -->
+        <template id="news_block_til_sub_dat" name="News Block with Title Subtitle Date">
+            <div class="col-md-6">
+                <div>
+                    <h4 t-esc="title"/>
+                    <br/>
+                    <!--List of news-->
+                    <t t-set="nbr" t-value="0"/>
+                    <t t-foreach="news" t-as="n">
+                        <t t-if="nbr&lt;5">
+                            <a t-att-href="'/blog/%s/post/%s' % (n.blog_id.id, n.id)">
+                            <b style="color:blue;"><t t-esc="n.name"/></b></a><br/>
+                            <b><t t-esc="website.get_news(n.subtitle)"/></b><br/>
+                            <font size="1"><t t-esc="n.write_date"/></font><br/>
+                        </t>
+                        <t t-set="nbr" t-value="nbr+1"/>
+                    </t>
+                    <br/>
+                    <a t-att-href="'/blog/%s' % blog.id">
+                        <b style="color:orange">Läs alla...</b>
+                    </a>
+                </div>
+            </div>
+        </template>
+
+        <!-- news block with title, date -->
+        <template id="news_block_til_dat" name="News Block with Title Date">
+            <div class="col-md-6">
+                <div>
+                    <h4 t-esc="title"/>
+                    <br/>
+                    <!--List of news-->
+                    <t t-set="nbr" t-value="0"/>
+                    <t t-foreach="news" t-as="n">
+                        <t t-if="nbr&lt;5">
+                            <a t-att-href="'/blog/%s/post/%s' % (n.blog_id.id, n.id)">
+                            <b style="color:blue;"><t t-esc="n.name"/></b></a><br/>
+                            <font size="1"><t t-esc="n.write_date"/></font><br/>
+                        </t>
+                        <t t-set="nbr" t-value="nbr+1"/>
+                    </t>
+                    <br/>
+                    <a t-att-href="'/blog/%s' % blog.id">
+                        <b style="color:orange">Läs alla...</b>
+                    </a>
+                </div>
+            </div>
+        </template>
+
+        <!-- news block with title -->
+        <template id="news_block_til" name="News Block with Title">
+            <div class="col-md-6">
+                <div>
+                    <h4 t-esc="title"/>
+                    <br/>
+                    <!--List of news-->
+                    <t t-set="nbr" t-value="0"/>
+                    <t t-foreach="news" t-as="n">
+                        <t t-if="nbr&lt;5">
+                            <a t-att-href="'/blog/%s/post/%s' % (n.blog_id.id, n.id)">
+                            <b style="color:blue;"><t t-esc="n.name"/></b></a><br/>
                         </t>
                         <t t-set="nbr" t-value="nbr+1"/>
                     </t>
@@ -204,7 +274,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <b>
                                 <span t-esc="user_id.name"/>
-                                <span class="caret"></span>
+                                <span class="caret"/>
                             </b>
                         </a>
                         <ul class="dropdown-menu js_usermenu" role="menu">
@@ -228,11 +298,12 @@
     <!-- SNIPPETS -->
     <template id="custom_snippets" inherit_id="website.snippets" name="Custom Snippets">
         <!-- custom structure snippets -->
+        <!-- Structure -->
         <xpath expr="//div[@id='snippet_structure']" position="inside">
             <!-- vertical slide -->
             <div id="vetical_slide_snippet">
                 <div class="oe_snippet_thumbnail">
-                    <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/banner/business_guy.jpg"/>
+                    <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_banner.png"/>
                     <span class="oe_snippet_thumbnail_title">Vertical Slide</span>
                 </div>
                 <div id="wrap" class="oe_structure oe_empty"/>
@@ -261,8 +332,8 @@
                                         </div>
                                     </div>
                                     <!-- Carousel nav -->
-                                    <div class="carousel-control left hidden" data-target="#carousel_vertical" data-slide="prev" style="height: 100%"><i class="fa fa-chevron-up"></i></div>
-                                    <div class="carousel-control right hidden" data-target="#carousel_vertical" data-slide="next" style="height: 100%"><i class="fa fa-chevron-down"></i></div>
+                                    <div class="carousel-control left hidden" data-target="#carousel_vertical" data-slide="prev" style="height: 100%"><i class="fa fa-chevron-up"/></div>
+                                    <div class="carousel-control right hidden" data-target="#carousel_vertical" data-slide="next" style="height: 100%"><i class="fa fa-chevron-down"/></div>
                                 </div>
                             </div>
                         </div>
@@ -270,17 +341,25 @@
                 </section>
             </div>
 
+        </xpath>
+
+        <!-- Features -->
+        <xpath expr="//div[@id='snippet_feature']" position="inside">
             <!-- Swedish clock with week day and name of the day -->
             <div id="swedish_clock_snippet">
                 <div class="oe_snippet_thumbnail">
-                    <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/parallax/parallax_photo1.jpg"/>
+                    <img class="oe_snippet_thumbnail_img" src="/theme_teamdoc/static/src/img/block_clock.png"/>
                     <span class="oe_snippet_thumbnail_title">Swedish Clock</span>
                 </div>
-                <section class="oe_snippet_body fw_categories mt16 mb16">
-                    <div class="text-center">
-                        <p><font size="3" style="color:#92BDE5">
-                            <span id="clock"></span>
-                        </font></p>
+                <section class="oe_snippet_body jumbotron">
+                    <div class="container">
+                        <div class="row">
+                            <div class="text-center">
+                                <p><font size="3" style="color:#92BDE5">
+                                    <span id="clock"/>
+                                </font></p>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </div>
