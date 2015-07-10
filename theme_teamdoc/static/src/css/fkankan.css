@@ -29,35 +29,10 @@ p {
     color: #000;
 }
 
-hr {
-    max-width: 400px;
-    border-color: #999999;
-}
-
-#oe_main_menu_navbar {
-    background: black;
-}
-
-.brand,
-.address-bar {
-    display: none;
-}
-
-.navbar-nav {
-    font-family: "Indie Flower";
-    font-weight: 120;
-    letter-spacing: 0px;
-}
-
 .navbar.navbar-static-top ul.nav > li.divider {
     margin-top: 35px;
     padding-top: 25px;
     border-right: 1px solid #808080;
-}
-
-header a.navbar-brand img {
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
@@ -87,39 +62,6 @@ header a.navbar-brand img {
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #917FE3;
     background-color: #D0E27E;
-}
-
-.carousel-inner > .item > img {
-    max-width: 600px;
-    max-height: 450px;
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    vertical-align: center
-}
-
-.img-full {
-    min-width: 100%;
-}
-
-.brand-before,
-.brand-name {
-    text-transform: capitalize;
-}
-
-.brand-before {
-    margin: 15px 0;
-}
-
-.brand-name {
-    margin: 0;
-    font-size: 4em;
-}
-
-.tagline-divider {
-    margin: 15px auto 3px;
-    max-width: 250px;
-    border-color: #999999;
 }
 
 .oe_website_login_container, .container {
@@ -163,51 +105,8 @@ footer p {
 }
 
 @media screen and (min-width:768px) {
-    .brand {
-        display: inherit;
-        margin: 0;
-        padding: 30px 0 10px;
-        text-align: center;
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-        font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 5em;
-        font-weight: 700;
-        line-height: normal;
-        color: #fff;
-    }
-
-    .top-divider {
-        margin-top: 0;
-    }
-
-    .img-left {
-        float: left;
-        margin-right: 25px;
-    }
-
-    .address-bar {
-        display: inherit;
-        margin: 0;
-        padding: 0 0 40px;
-        text-align: center;
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-        text-transform: uppercase;
-        font-size: 1.25em;
-        font-weight: 400;
-        letter-spacing: 3px;
-        color: #fff;
-    }
-
-    .navbar {
-        border-radius: 0;
-    }
-
     .navbar-header {
         display: none;
-    }
-
-    .navbar {
-        min-height: 0;
     }
 
     .navbar-default {
@@ -216,29 +115,15 @@ footer p {
         background: none;
     }
 
-    .nav>li>a {
-        padding: 15px;
-    }
-
-    .navbar-nav>li>a {
-        line-height: normal;
-        color: #343434;
-    }
-
     .navbar-nav {
         display: table;
         float: none;
         margin: 0 auto;
         table-layout: fixed;
         font-size: 1.25em;
-    }
-}
-
-@media screen and (min-width:1200px) {
-    .box:after {
-        content: '';
-        display: table;
-        clear: both;
+        font-family: "Indie Flower";
+        font-weight: 120;
+        letter-spacing: 0px;
     }
 }
 
