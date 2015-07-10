@@ -2,21 +2,340 @@
 <t t-name="website.huvudsidan">
     <t t-call="website.layout">
         <div id="wrap" class="oe_structure oe_empty">
-            <section class="mt16 mb16">
-                <div class="container">
-                    <div class="row">
-                    	<t t-set="title" t-value="'Aktuellt på Ankan'"/>
-                    	<t t-set="blog" t-value="request.env['blog.blog'].search([('name','=','Aktuellt')])"/>
-                        <t t-set="news" t-value="request.env['blog.post'].search([('website_published','=',True), ('blog_id','=',blog.id)], order='write_date desc')"/>
-                        <t t-call="theme_teamdoc.news_block_til_sub_dat_txt_vie"/>
+            <section class="">
+                <div class="oe_structure oe_empty">
+                    <section class="fw_categories">
+                        <div><t t-call="theme_teamdoc.season_effect"/></div>
+                        <div class="oe_structure oe_empty">
+                            <section>
+                                <div class="container" id="intro-board">
+                                    <div class="row mb16">
+                                        <div class="col-md-6">
+                                            <h2 style="text-align: center">
+                                                <span style="color: rgb(51, 153, 102);">Förskolan Ankan<br/>
+                                                    där äventyr blir till kunskap </span>
+                                            </h2>
+                                            <img alt="Odoo image and text block" class="img img-responsive shadow mb16" src="/website/image/ir.attachment/62_75ff286/datas" style="width:100%;"/>
+                                        </div>
+                                        <div class="col-md-6 mt32"><h4>Letar du efter ett riktigt bra föräldrakooperativ?<br/>
+                                            <b style="color:#339966;">Då är det Ankan som gäller!</b></h4>
+                                            Vi ger dig och ditt barn:
 
-                        <t t-set="title" t-value="'Ankan Kvackar'"/>
-                    	<t t-set="blog" t-value="request.env['blog.blog'].search([('name','=','Kvackar')])"/>
-                        <t t-set="news" t-value="request.env['blog.post'].search([('website_published','=',True), ('blog_id','=',blog.id)], order='write_date desc')"/>
-                        <t t-call="theme_teamdoc.news_block_til_sub_dat"/>
-                    </div>
+                                            <ul><li>en trygg vardag med stimulerande aktiviteter</li><li>Äventyrspedagogik</li><li>ett samarbete med Friluftsfrämjandet (Knopp, Knytte &amp; Mulle)</li><li>en god pedagogisk verksamhet, både ute och inne</li><li>en gemenskap, delaktighet och inflytande att påverka</li><li>utbildad och engagerad personal</li><li>hemlagad mat från vår egna kock</li></ul>
+                                            Allt i en hemtrevlig och inbjudande miljö!<br/>
+                                            Detta tycker vi att just ditt barn är värd, vad tycker du?<br/>
+                                            <b style="color:blue;">Ring oss först innan du ansöker om förskoleplats!</b><br/>
+                                            Läs mer om hur du söker <a href="/">förskoleplats</a> hos oss.</div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="container" id="info-board">
+                            <div class="row mt16">
+                                <div class="col-md-4" id="kvackar">
+                                    <div class="panel">
+                                        <div class="panel-heading text-center">
+                                            <h4 style="margin: 0">
+                                                <span style="color:#FFFFFF;">Ankan Kvackar</span>
+                                            </h4>
+                                        </div>
+                                        <div class="panel-body">
+                                            <div class="pull-right mt16 mb16">
+                                                <img width="78px" height="100px" src="/theme_teamdoc/static/src/img/fkankan/kvackar_ankan.gif"/>
+                                            </div>
+                                            <div>
+                                                <t t-set="blog" t-value="request.env['blog.blog'].search([('name','=','Kvackar')])"/>
+                                                <t t-set="news" t-value="request.env['blog.post'].search([('website_published','=',True), ('blog_id','=',blog.id)], order='write_date desc')"/>
+                                                <t t-call="theme_teamdoc.news_block_til_dat"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4" id="matsedel">
+                                    <div class="panel">
+                                        <div class="panel-heading text-center">
+                                            <h4 style="margin: 0">
+                                                <span style="color:#FFFFFF;">Matsedel</span>
+                                            </h4>
+                                        </div>
+                                        <div class="panel-body">
+                                            <div class="text-center">
+                                                <p>Meny vecka 26</p>
+                                                <img class="img img-responsive" src="/theme_teamdoc/static/src/img/fkankan/kottbiffar.jpg" style="width:100%; max-width:286px; margin:auto;"/>
+                                            </div>
+                                            <table class="table table-bordered table-responsive">
+                                                <tbody>
+                                                    <tr>
+                                                        <td><strong>Måndag</strong>​</td>
+                                                        <td>Pasta med krämig paprika</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <strong>Tisdag</strong>
+                                                        </td>
+                                                        <td>Fisk med sparris och kokt potatis</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <strong>Onsdag</strong>
+                                                        </td>
+                                                        <td>Pannbiff med potatis</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <strong>Torsdag</strong>
+                                                        </td>
+                                                        <td>Broccoli- och blomkålssoppa</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <strong>Fredag</strong>
+                                                        </td>
+                                                        <td>Kycklingspett med klyftpotatis och tzatziki</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4" id="aktuellt">
+                                    <div class="panel">
+                                        <div class="panel-heading text-center">
+                                            <h4 style="margin: 0">
+                                                <span style="color:#FFFFFF;">Aktuellt på Ankan</span>
+                                            </h4>
+                                        </div>
+                                        <div class="panel-body">
+                                            <div>
+                                                <t t-set="blog" t-value="request.env['blog.blog'].search([('name','=','Aktuellt')])"/>
+                                                <t t-set="news" t-value="request.env['blog.post'].search([('website_published','=',True), ('blog_id','=',blog.id)], order='write_date desc')"/>
+                                                <t t-call="theme_teamdoc.news_block_til_sub_dat_txt_vie"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
+            </section>
+            <section class="mt16">
+                <t t-call="theme_teamdoc.season_footer"/>
             </section>
         </div>
     </t>
 </t>
+
+
+<!-- theme -->
+<data inherit_id="website.layout" customize_show="True" active="False" name="Big Logo and Block Menu" priority="99">
+<xpath expr="//head" position="inside">
+    <!-- Custom CSS -->
+    <link href="/theme_teamdoc/static/src/css/fkankan.css" rel="stylesheet"/>
+    <link href="http://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet" type="text/css"/>
+</xpath>
+<xpath expr="//div[@class='navbar navbar-default navbar-static-top'] | //div[@class='navbar navbar-default navbar-static-top hidden-lg hidden-md hidden-sm']" position="before">
+    <div class="oe_structure oe_empty">
+        <div class="carousel slide text-center hidden-sm hidden-xs" id="myCarousel0" style="width: 905px; height: 140px; margin: 0px auto;">
+            <ol class="carousel-indicators">
+                <li class="active" data-slide-to="0" data-target="#myCarousel0"/>
+                <li data-slide-to="1" data-target="#myCarousel0"/>
+                <li data-slide-to="2" data-target="#myCarousel0"/>
+                <li data-slide-to="3" data-target="#myCarousel0"/>
+                <li data-slide-to="4" data-target="#myCarousel0"/>
+                <li data-slide-to="5" data-target="#myCarousel0"/>
+                <li data-slide-to="6" data-target="#myCarousel0"/>
+                <li data-slide-to="7" data-target="#myCarousel0"/>
+                <li data-slide-to="8" data-target="#myCarousel0"/>
+                <li data-slide-to="9" data-target="#myCarousel0"/>
+                <li data-slide-to="10" data-target="#myCarousel0"/>
+                <li data-slide-to="11" data-target="#myCarousel0"/>
+                <li data-slide-to="12" data-target="#myCarousel0"/>
+                <li data-slide-to="13" data-target="#myCarousel0"/>
+                <li data-slide-to="14" data-target="#myCarousel0"/>
+                <li data-slide-to="15" data-target="#myCarousel0"/>
+                <li data-slide-to="16" data-target="#myCarousel0"/>
+                <li data-slide-to="17" data-target="#myCarousel0"/>
+                <li data-slide-to="18" data-target="#myCarousel0"/>
+                <li data-slide-to="19" data-target="#myCarousel0"/>
+                <li data-slide-to="20" data-target="#myCarousel0"/>
+                <li data-slide-to="21" data-target="#myCarousel0"/>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/01.jpg')">
+                    <div class="container">
+                        <div class="row content">
+                            <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/02.jpg');">
+                    <div class="container">
+                        <div class="row content">
+                            <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/03.jpg');">
+                    <div class="container">
+                        <div class="row content">
+                            <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/04.jpg');">
+                    <div class="container">
+                        <div class="row content">
+                            <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/05.jpg');">
+                    <div class="container">
+                        <div class="row content">
+                            <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/06.jpg');">
+                    <div class="container">
+                        <div class="row content">
+                            <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/07.jpg');">
+                    <div class="container">
+                        <div class="row content">
+                            <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/08.jpg');">
+                    <div class="container">
+                        <div class="row content">
+                            <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/09.jpg');">
+                    <div class="container">
+                        <div class="row content">
+                            <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/10.jpg');">
+                    <div class="container">
+                        <div class="row content">
+                            <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/11.jpg');">
+                    <div class="container">
+                        <div class="row content">
+                            <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/12.jpg');">
+                    <div class="container">
+                        <div class="row content">
+                            <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/13.jpg');">
+                    <div class="container">
+                        <div class="row content">
+                            <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/14.jpg');">
+                    <div class="container">
+                        <div class="row content">
+                            <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/15.jpg');">
+                    <div class="container">
+                        <div class="row content">
+                            <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/16.jpg');">
+                    <div class="container">
+                        <div class="row content">
+                            <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/17.jpg');">
+                    <div class="container">
+                        <div class="row content">
+                            <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/18.jpg');">
+                    <div class="container">
+                        <div class="row content">
+                            <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/19.jpg');">
+                    <div class="container">
+                        <div class="row content">
+                            <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/20.jpg');">
+                    <div class="container">
+                        <div class="row content">
+                            <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/21.jpg');">
+                    <div class="container">
+                        <div class="row content">
+                            <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/22.jpg');">
+                    <div class="container">
+                        <div class="row content">
+                            <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-control left" data-slide="prev" data-target="#myCarousel0" href="#myCarousel0" style="width: 10%">
+                <i class="fa fa-chevron-left"/>
+            </div>
+            <div class="carousel-control right" data-slide="next" data-target="#myCarousel0" href="#myCarousel0" style="width: 10%">
+                <i class="fa fa-chevron-right"/>
+            </div>
+        </div>
+    </div>
+</xpath>
+<xpath expr="//header//ul" position="attributes">
+    <attribute name="class">nav navbar-nav</attribute>
+</xpath>
+<xpath expr="//ul[@id='top_menu']/li[1]" position="attributes">
+    <attribute name="class">divider hidden</attribute>
+</xpath>
+<xpath expr="//ul[@id='top_menu']/li[2]" position="attributes">
+    <attribute name="class">dropdown hidden</attribute>
+</xpath>
+</data>
+

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
     <data>
+
          <template id="main" name="Teamdoc main">
             <head>
             </head>
@@ -19,8 +20,8 @@
                 <link href="/theme_teamdoc/static/src/css/vertical_slide.css" rel="stylesheet"/>
             </xpath>
             <xpath expr="//body" position="inside">
-                <script type="text/javascript" src="/theme_teamdoc/static/src/js/vertical_slide.js"></script>
-                <script type="text/javascript" src="/theme_teamdoc/static/src/js/swedish_clock.js"></script>
+                <script type="text/javascript" src="/theme_teamdoc/static/src/js/vertical_slide.js"/>
+                <script type="text/javascript" src="/theme_teamdoc/static/src/js/swedish_clock.js"/>
                 <script type="text/javascript">swedish_clock();</script>
             </xpath>
         </template>
@@ -38,106 +39,112 @@
 
         <!-- news block with title, subtitle, date, 200 first text and views -->
         <template id="news_block_til_sub_dat_txt_vie" name="News Block with Title Subtitle Date 200 Text Views">
-            <div class="col-md-6">
-                <div>
-                    <h4 t-esc="title"/>
-                    <br/>
-                    <!--List of news-->
-                    <t t-set="nbr" t-value="0"/>
-                    <t t-foreach="news" t-as="n">
-                        <t t-if="nbr&lt;5">
-                            <a t-att-href="'/blog/%s/post/%s' % (n.blog_id.id, n.id)">
-                            <b style="color:blue;"><t t-esc="n.name"/></b></a><br/>
-                            <b><t t-esc="website.get_news(n.subtitle)"/></b><br/>
-                            <font size="1"><t t-esc="n.write_date"/></font><br/>
-                            <t t-esc="website.get_news(n.content, 200)"/>...<br/>
-                            views: <t t-esc="n.visits"/><br/>
-                        </t>
-                        <t t-set="nbr" t-value="nbr+1"/>
+            <div>
+                <h4 t-esc="title"/>
+                <br/>
+                <!--List of news-->
+                <t t-set="nbr" t-value="0"/>
+                <t t-foreach="news" t-as="n">
+                    <t t-if="nbr&lt;2">
+                        <a t-att-href="'/blog/%s/post/%s' % (n.blog_id.id, n.id)">
+                        <b style="color:blue;"><t t-esc="n.name"/></b></a><br/>
+                        <b><t t-esc="website.get_news(n.subtitle)"/></b><br/>
+                        <font size="1"><t t-esc="n.write_date"/></font><br/>
+                        <t t-esc="website.get_news(n.content, 200)"/>...<br/>
+                        <font size="1">views: <t t-esc="n.visits"/></font><br/>
                     </t>
-                    <br/>
-                    <a t-att-href="'/blog/%s' % blog.id">
-                        <b style="color:orange">Läs alla...</b>
-                    </a>
-                </div>
+                    <t t-set="nbr" t-value="nbr+1"/>
+                </t>
+                <br/>
+                <a t-att-href="'/blog/%s' % blog.id">
+                    <b style="color:orange">Läs alla...</b>
+                </a>
             </div>
         </template>
 
         <!-- news block with title, subtitle, date -->
         <template id="news_block_til_sub_dat" name="News Block with Title Subtitle Date">
-            <div class="col-md-6">
-                <div>
-                    <h4 t-esc="title"/>
-                    <br/>
-                    <!--List of news-->
-                    <t t-set="nbr" t-value="0"/>
-                    <t t-foreach="news" t-as="n">
-                        <t t-if="nbr&lt;5">
-                            <a t-att-href="'/blog/%s/post/%s' % (n.blog_id.id, n.id)">
-                            <b style="color:blue;"><t t-esc="n.name"/></b></a><br/>
-                            <b><t t-esc="website.get_news(n.subtitle)"/></b><br/>
-                            <font size="1"><t t-esc="n.write_date"/></font><br/>
-                        </t>
-                        <t t-set="nbr" t-value="nbr+1"/>
+            <div>
+                <h4 t-esc="title"/>
+                <br/>
+                <!--List of news-->
+                <t t-set="nbr" t-value="0"/>
+                <t t-foreach="news" t-as="n">
+                    <t t-if="nbr&lt;5">
+                        <a t-att-href="'/blog/%s/post/%s' % (n.blog_id.id, n.id)">
+                        <b style="color:blue;"><t t-esc="n.name"/></b></a><br/>
+                        <b><t t-esc="website.get_news(n.subtitle)"/></b><br/>
+                        <font size="1"><t t-esc="n.write_date"/></font><br/>
                     </t>
-                    <br/>
-                    <a t-att-href="'/blog/%s' % blog.id">
-                        <b style="color:orange">Läs alla...</b>
-                    </a>
-                </div>
+                    <t t-set="nbr" t-value="nbr+1"/>
+                </t>
+                <br/>
+                <a t-att-href="'/blog/%s' % blog.id">
+                    <b style="color:orange">Läs alla...</b>
+                </a>
             </div>
         </template>
 
         <!-- news block with title, date -->
         <template id="news_block_til_dat" name="News Block with Title Date">
-            <div class="col-md-6">
-                <div>
-                    <h4 t-esc="title"/>
-                    <br/>
-                    <!--List of news-->
-                    <t t-set="nbr" t-value="0"/>
-                    <t t-foreach="news" t-as="n">
-                        <t t-if="nbr&lt;5">
-                            <a t-att-href="'/blog/%s/post/%s' % (n.blog_id.id, n.id)">
-                            <b style="color:blue;"><t t-esc="n.name"/></b></a><br/>
-                            <font size="1"><t t-esc="n.write_date"/></font><br/>
-                        </t>
-                        <t t-set="nbr" t-value="nbr+1"/>
+            <div>
+                <h4 t-esc="title"/>
+                <br/>
+                <!--List of news-->
+                <t t-set="nbr" t-value="0"/>
+                <t t-foreach="news" t-as="n">
+                    <t t-if="nbr&lt;7">
+                        <a t-att-href="'/blog/%s/post/%s' % (n.blog_id.id, n.id)">
+                        <b style="color:blue;"><t t-esc="n.name"/></b></a><br/>
+                        <font size="1"><t t-esc="n.write_date"/></font><br/>
                     </t>
-                    <br/>
-                    <a t-att-href="'/blog/%s' % blog.id">
-                        <b style="color:orange">Läs alla...</b>
-                    </a>
-                </div>
+                    <t t-set="nbr" t-value="nbr+1"/>
+                </t>
+                <br/>
+                <a t-att-href="'/blog/%s' % blog.id">
+                    <b style="color:orange">Läs alla...</b>
+                </a>
             </div>
         </template>
 
         <!-- news block with title -->
         <template id="news_block_til" name="News Block with Title">
-            <div class="col-md-6">
-                <div>
-                    <h4 t-esc="title"/>
-                    <br/>
-                    <!--List of news-->
-                    <t t-set="nbr" t-value="0"/>
-                    <t t-foreach="news" t-as="n">
-                        <t t-if="nbr&lt;5">
-                            <a t-att-href="'/blog/%s/post/%s' % (n.blog_id.id, n.id)">
-                            <b style="color:blue;"><t t-esc="n.name"/></b></a><br/>
-                        </t>
-                        <t t-set="nbr" t-value="nbr+1"/>
+            <div>
+                <h4 t-esc="title"/>
+                <br/>
+                <!--List of news-->
+                <t t-set="nbr" t-value="0"/>
+                <t t-foreach="news" t-as="n">
+                    <t t-if="nbr&lt;10">
+                        <a t-att-href="'/blog/%s/post/%s' % (n.blog_id.id, n.id)">
+                        <b style="color:blue;"><t t-esc="n.name"/></b></a><br/>
                     </t>
-                    <br/>
-                    <a t-att-href="'/blog/%s' % blog.id">
-                        <b style="color:orange">Läs alla...</b>
-                    </a>
+                    <t t-set="nbr" t-value="nbr+1"/>
+                </t>
+                <br/>
+                <a t-att-href="'/blog/%s' % blog.id">
+                    <b style="color:orange">Läs alla...</b>
+                </a>
+            </div>
+        </template>
+        
+        <template id="season_footer" name="Season Footer">
+            <div t-attf-id="footer_{{website.get_season()}}"/>
+        </template>
+
+        <template id="season_effect" name="Season Effect">
+            <div class="hidden-xs">
+                <div t-attf-id="{{website.get_season()}}_effect_1">
+                </div>
+                <div t-attf-id="{{website.get_season()}}_effect_2">
+                </div>
+                <div t-attf-id="{{website.get_season()}}_effect_3">
                 </div>
             </div>
         </template>
 
         <template id="news-block-three" customize_show="True" active="False" name="News block three">
             <t t-if="not news" t-set="news" t-value="request.env['blog.post'].search([('website_published','=',True)],order='write_date asc')"/>
-            
             <div class="row md-cols-6">
                 <t t-if="news[0].name">
                     <img t-att-src="news[0].background_image" style=""/>
