@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <template id="theme_vertel_custom_snippets" inherit_id="website.snippets" name="Theme Vertel Custom Snippets">
+            <!-- Customize Content -->
+            <xpath expr="//div[@id='snippet_content']" position="inside">
+
+                <div>
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img" src="/theme_teamdoc/static/src/img/block_button_hover.png"/>
+                        <span class="oe_snippet_thumbnail_title">Hover Button</span>
+                    </div>
+                    <div class="oe_snippet_body oe_share">
+                        <a class="btn btn-default hover" href="#">Button with hover effect</a>
+                    </div>
+                </div>
+
+            </xpath>
+        </template>
+
+        <template id="more_snippet_option" name="More Snippet Options" inherit_id="website.snippet_options">
+
+            <xpath expr="//div[@data-snippet-option-id='transform']" position="after">
+                <div data-snippet-option-id='haojuns_button' data-selector="a, .btn, .btn-default, .hover">
+                    <li class="dropdown-submenu">
+                        <!-- 2D Transitions -->
+                        <a tabindex="-1" href="#">2D Transitions</a>
+                        <ul class="dropdown-menu">
+                            <!-- Options list -->
+                            <li data-value="hvr-grow"><a>Grow</a></li>
+                            <li data-value="hvr-skew-forward"><a>Skew Forward</a></li>
+                            <li data-value="hvr-skew-backward"><a>Skew Backward</a></li>
+                            <li data-value="hvr-wobble-horizontal"><a>Wobble Horizontal</a></li>
+                            <li data-value="hvr-wobble-vertical"><a>Wobble Vertical</a></li>
+                            <li data-value="hvr-wobble-to-bottom-right"><a>Wobble To Bottom Right</a></li>
+                            <li data-value="hvr-wobble-to-top-right"><a>Wobble To Top Right</a></li>
+                            <li data-value="hvr-wobble-top"><a>Wobble Top</a></li>
+                            <li data-value="hvr-wobble-bottom"><a>Wobble Bottom</a></li>
+                            <li data-value="hvr-wobble-skew"><a>Wobble Skew</a></li>
+                            <li data-value="hvr-buzz"><a>Buzz</a></li>
+                            <li data-value="hvr-buzz-out"><a>Buzz Out</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <!-- Background Transitions -->
+                        <a tabindex="-1" href="#">Background Transitions</a>
+                        <ul class="dropdown-menu">
+                            <!-- Options list -->
+                            <li data-value="hvr-fade"><a>Fade</a></li>
+                            <li data-value="hvr-back-pulse"><a>Back Pulse</a></li>
+                            <li data-value="hvr-sweep-to-right"><a>Sweep To Right</a></li>
+                            <li data-value="hvr-sweep-to-left"><a>Sweep To Left</a></li>
+                            <li data-value="hvr-sweep-to-bottom"><a>Sweep To Bottom</a></li>
+                            <li data-value="hvr-sweep-to-top"><a>Sweep To Top</a></li>
+                            <li data-value="hvr-bounce-to-right"><a>Bounce To Right</a></li>
+                            <li data-value="hvr-bounce-to-left"><a>Bounce To Left</a></li>
+                            <li data-value="hvr-bounce-to-bottom"><a>Bounce To Bottom</a></li>
+                            <li data-value="hvr-bounce-to-top"><a>Bounce To Top</a></li>
+                            <li data-value="hvr-radial-out"><a>Radial Out</a></li>
+                            <li data-value="hvr-radial-in"><a>Radial In</a></li>
+                            <li data-value="hvr-rectangle-in"><a>Rectangle In</a></li>
+                            <li data-value="hvr-rectangle-out"><a>Rectangle Out</a></li>
+                            <li data-value="hvr-shutter-in-horizontal"><a>Shutter In Horizontal</a></li>
+                            <li data-value="hvr-shutter-out-horizontal"><a>Shutter Out Horizontal</a></li>
+                            <li data-value="hvr-shutter-in-vertical"><a>Shutter In Vertical</a></li>
+                            <li data-value="hvr-shutter-out-vertical"><a>Shutter Out Vertical</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <!-- Icons -->
+                        <a tabindex="-1" href="#">Icons</a>
+                        <ul class="dropdown-menu">
+                            <!-- Options list -->
+                            <li data-value="hvr-icon-back"><a>Icon Back</a></li>
+                            <li data-value="hvr-icon-forward"><a>Icon Forward</a></li>
+                            <li data-value="hvr-icon-down"><a>Icon Down</a></li>
+                            <li data-value="hvr-icon-up"><a>Icon Up</a></li>
+                            <li data-value="hvr-icon-spin"><a>Icon Spin</a></li>
+                            <li data-value="hvr-icon-drop"><a>Icon Drop</a></li>
+                            <li data-value="hvr-icon-fade"><a>Icon Fade</a></li>
+                            <li data-value="hvr-icon-float-away"><a>Icon Float Away</a></li>
+                            <li data-value="hvr-icon-sink-away"><a>Icon Sink Away</a></li>
+                            <li data-value="hvr-icon-grow"><a>Icon Grow</a></li>
+                            <li data-value="hvr-icon-shrink"><a>Icon Shrink</a></li>
+                            <li data-value="hvr-icon-pulse"><a>Icon Pulse</a></li>
+                            <li data-value="hvr-icon-pulse-grow"><a>Icon Pulse Grow</a></li>
+                            <li data-value="hvr-icon-pulse-shrink"><a>Icon Pulse Shrink</a></li>
+                            <li data-value="hvr-icon-push"><a>Icon Push</a></li>
+                            <li data-value="hvr-icon-pop"><a>Icon Pop</a></li>
+                            <li data-value="hvr-icon-bounce"><a>Icon Bounce</a></li>
+                            <li data-value="hvr-icon-rotate"><a>Icon Rotate</a></li>
+                            <li data-value="hvr-icon-grow-rotate"><a>Icon Grow Rotate</a></li>
+                            <li data-value="hvr-icon-float"><a>Icon Float</a></li>
+                            <li data-value="hvr-icon-sink"><a>hvr Icon Sink</a></li>
+                            <li data-value="hvr-icon-bob"><a>Icon Bob</a></li>
+                            <li data-value="hvr-icon-hang"><a>Icon Hang</a></li>
+                            <li data-value="hvr-icon-wobble-horizontal"><a>Icon Wobble Horizontal</a></li>
+                            <li data-value="hvr-icon-wobble-vertical"><a>Icon Wobble Vertical</a></li>
+                            <li data-value="hvr-icon-buzz"><a>Icon Buzz</a></li>
+                            <li data-value="hvr-icon-buzz-out"><a>Icon Buzz Out</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <!-- Border Transitions -->
+                        <a tabindex="-1" href="#">Border Transitions</a>
+                        <ul class="dropdown-menu">
+                            <!-- Options list -->
+                            <li data-value="hvr-border-fade"><a>Border Fade</a></li>
+                            <li data-value="hvr-hollow"><a>Hollow</a></li>
+                            <li data-value="hvr-trim"><a>Trim</a></li>
+                            <li data-value="hvr-ripple-out"><a>Ripple Out</a></li>
+                            <li data-value="hvr-ripple-in"><a>Ripple In</a></li>
+                            <li data-value="hvr-outline-out"><a>Outline Out</a></li>
+                            <li data-value="hvr-outline-in"><a>Outline In</a></li>
+                            <li data-value="hvr-round-corners"><a>Round Corners</a></li>
+                            <li data-value="hvr-underline-from-left"><a>Underline From Left</a></li>
+                            <li data-value="hvr-underline-from-center"><a>Underline From Center</a></li>
+                            <li data-value="hvr-underline-from-right"><a>Underline From Right</a></li>
+                            <li data-value="hvr-reveal"><a>Reveal</a></li>
+                            <li data-value="hvr-underline-reveal"><a>Underline Reveal</a></li>
+                            <li data-value="hvr-overline-reveal"><a>Overline Reveal</a></li>
+                            <li data-value="hvr-overline-from-left"><a>Overline From Left</a></li>
+                            <li data-value="hvr-overline-from-center"><a>Overline From Center</a></li>
+                            <li data-value="hvr-overline-from-right"><a>Overline From right</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <!-- Shadow and Glow Transitions -->
+                        <a tabindex="-1" href="#">Shadow and Glow Transitions</a>
+                        <ul class="dropdown-menu">
+                            <!-- Options list -->
+                            <li data-value="hvr-shadow"><a>Shadow</a></li>
+                            <li data-value="hvr-grow-shadow"><a>Grow Shadow</a></li>
+                            <li data-value="hvr-float-shadow"><a>Float Shadow</a></li>
+                            <li data-value="hvr-glow"><a>Glow</a></li>
+                            <li data-value="hvr-shadow-radial"><a>Shadow Radial</a></li>
+                            <li data-value="hvr-box-shadow-outset"><a>Box Shadow Outset</a></li>
+                            <li data-value="hvr-box-shadow-inset"><a>Box Shadow Inset</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <!-- Speech Bubbles -->
+                        <a tabindex="-1" href="#">Speech Bubbles</a>
+                        <ul class="dropdown-menu">
+                            <!-- Options list -->
+                            <li data-value="hvr-bubble-top"><a>Bubble Top</a></li>
+                            <li data-value="hvr-bubble-right"><a>Bubble Right</a></li>
+                            <li data-value="hvr-bubble-bottom"><a>Bubble Bottom</a></li>
+                            <li data-value="hvr-bubble-left"><a>Bubble Left</a></li>
+                            <li data-value="hvr-bubble-float-top"><a>Bubble Float Top</a></li>
+                            <li data-value="hvr-bubble-float-right"><a>Bubble Float Right</a></li>
+                            <li data-value="hvr-bubble-float-bottom"><a>Bubble Float Bottom</a></li>
+                            <li data-value="hvr-bubble-float-left"><a>Bubble Float Left</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                        <!-- Curls -->
+                        <a tabindex="-1" href="#">Curls</a>
+                        <ul class="dropdown-menu">
+                            <!-- Options list -->
+                            <li data-value="hvr-curl-top-left"><a>Curl Top Left</a></li>
+                            <li data-value="hvr-curl-top-right"><a>Curl Top Right</a></li>
+                            <li data-value="hvr-curl-bottom-right"><a>Curl Bottom Right</a></li>
+                            <li data-value="hvr-curl-bottom-left"><a>Curl Bottom Left</a></li>
+                        </ul>
+                    </li>
+                </div>
+            </xpath>
+
+        </template>
+
+    </data>
+</openerp>
+
+

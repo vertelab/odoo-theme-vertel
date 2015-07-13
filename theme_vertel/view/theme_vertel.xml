@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <!-- theme menu, parallax, column, parallax -->
+        <template id="theme_parallax_column_parallax" inherit_id="website.layout" customize_show="True" active="False" name="Menu-Parallax-Column-Parallax" priority="99">
+
+            <xpath expr="//head" position="inside">
+                <!-- Custom CSS -->
+                <link href="/theme_vertel/static/src/css/theme_vertel.css" rel="stylesheet"/>
+            </xpath>
+
+            <xpath expr="//main" position="inside">
+                <section id="three_column">
+                    <div class="three_column">
+                        <div class="col-md-4">
+                            <div id="column-left" class="oe_structure oe_empty"/>
+                        </div>
+                        <div class="col-md-4">
+                            <div id="column-middle" class="oe_structure oe_empty"/>
+                        </div>
+                        <div class="col-md-4">
+                            <div id="column-right" class="oe_structure oe_empty"/>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="parallax">
+                        <div class="oe_structure oe_empty"/>
+                    </div>
+                </section>
+            </xpath>
+
+            <!--<xpath expr="//header//ul" position="attributes">-->
+            <!--<attribute name="class">nav navbar-nav</attribute>-->
+            <!--</xpath>-->
+
+            <!--<xpath expr="//ul[@id='top_menu']/li[1]" position="attributes">-->
+            <!--<attribute name="class">divider hidden</attribute>-->
+            <!--</xpath>-->
+
+            <!--<xpath expr="//ul[@id='top_menu']/li[2]" position="attributes">-->
+            <!--<attribute name="class">dropdown hidden</attribute>-->
+            <!--</xpath>-->
+
+        </template>
+
+    </data>
+</openerp>

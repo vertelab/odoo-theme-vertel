@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <!-- custom css and javascript -->
+        <template id="theme_vertel_custom_css_and_js" inherit_id="website.layout" name="Theme Vertel Custom CSS and JS">
+
+        </template>
+
+        <template id="hover_css" inherit_id="website.theme" name="Hover CSS">
+            <xpath expr="link[last()]" position="after">
+                <link href="/theme_vertel/static/src/css/hover_effect.css" rel="stylesheet"/>
+            </xpath>
+        </template>
+    </data>
+</openerp>
