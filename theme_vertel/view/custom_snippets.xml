@@ -2,12 +2,12 @@
 <openerp>
     <data>
 
-<!-- customize snippets -->
+<!-- Customize snippets -->
         <template id="theme_vertel_custom_snippets" inherit_id="website.snippets" name="Theme Vertel Custom Snippets">
             <!-- Customize Structure -->
             <xpath expr="//div[@id='snippet_structure']" position="inside">
                 <!-- Vertical slide -->
-                <div id="vertical_slide_snippet">
+                <div id="vertical_slide">
                     <div class="oe_snippet_thumbnail">
                         <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_banner.png"/>
                         <span class="oe_snippet_thumbnail_title">Vertical Slide</span>
@@ -89,7 +89,7 @@
 
         </template>
 
-<!-- snippet options -->
+<!-- Snippet options -->
         <template id="more_snippet_option" name="More Snippet Options" inherit_id="website.snippet_options">
 
             <xpath expr="//div[@data-snippet-option-id='transform']" position="after">

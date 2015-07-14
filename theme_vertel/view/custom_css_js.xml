@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
     <data>
-        <!-- custom css and javascript -->
+<!-- Custom CSS and javascript -->
         <template id="theme_vertel_custom_css_and_js" inherit_id="website.layout" name="Theme Vertel Custom CSS and JS">
+            <!-- Customize javascript -->
             <xpath expr="//body" position="after">
                 <script type="text/javascript" src="/theme_vertel/static/src/js/vertical_slide.js"/>
                 <script type="text/javascript" src="/theme_vertel/static/src/js/swedish_clock.js"/>
                 <script type="text/javascript">swedish_clock();</script>
             </xpath>
+            <!-- Customize CSS -->
             <xpath expr="//head" position="after">
                 <link href="/theme_vertel/static/src/css/vertical_slide.css" rel="stylesheet"/>
             </xpath>
         </template>
 
-        <template id="hover_css" inherit_id="website.theme" name="Hover CSS">
-            <xpath expr="link[last()]" position="after">
-                <link href="/theme_vertel/static/src/css/hover_effect.css" rel="stylesheet"/>
-            </xpath>
-
+<!-- Customize theme CSS -->
+        <template id="custom_theme_css" inherit_id="website.theme" name="Custom Theme CSS">
             <xpath expr="link[last()]" position="after">
                 <link href="/theme_vertel/static/src/css/hover_effect.css" rel="stylesheet"/>
             </xpath>
