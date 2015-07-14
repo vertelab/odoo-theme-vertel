@@ -4,12 +4,6 @@
 
         <!-- theme menu, parallax, column, parallax -->
         <template id="theme_parallax_column_parallax" inherit_id="website.layout" customize_show="True" active="False" name="Menu-Parallax-Column-Parallax" priority="99">
-
-            <xpath expr="//head" position="inside">
-                <!-- Custom CSS -->
-                <link href="/theme_vertel/static/src/css/theme_vertel.css" rel="stylesheet"/>
-            </xpath>
-
             <xpath expr="//main" position="inside">
                 <section id="three_column">
                     <div class="three_column">
@@ -30,7 +24,6 @@
                     </div>
                 </section>
             </xpath>
-
             <!--<xpath expr="//header//ul" position="attributes">-->
             <!--<attribute name="class">nav navbar-nav</attribute>-->
             <!--</xpath>-->

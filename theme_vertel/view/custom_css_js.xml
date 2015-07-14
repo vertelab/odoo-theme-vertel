@@ -12,6 +12,7 @@
             <!-- Customize CSS -->
             <xpath expr="//head" position="after">
                 <link href="/theme_vertel/static/src/css/vertical_slide.css" rel="stylesheet"/>
+                <link href="/theme_vertel/static/src/css/theme_vertel.css" rel="stylesheet"/>
             </xpath>
         </template>
 
