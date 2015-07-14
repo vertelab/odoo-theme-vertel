@@ -13,18 +13,6 @@
                 </t>
             </body>
         </template>
-
-        <!-- custom css and javascript -->
-        <template id="custom_css_and_js" inherit_id="website.layout" name="Custom CSS and JS">
-            <xpath expr="//head" position="inside">
-                <link href="/theme_teamdoc/static/src/css/vertical_slide.css" rel="stylesheet"/>
-            </xpath>
-            <xpath expr="//body" position="inside">
-                <script type="text/javascript" src="/theme_teamdoc/static/src/js/vertical_slide.js"/>
-                <script type="text/javascript" src="/theme_teamdoc/static/src/js/swedish_clock.js"/>
-                <script type="text/javascript">swedish_clock();</script>
-            </xpath>
-        </template>
         
         <template id="news-listing" name="News listing">
             <t t-if="not news" t-set="news" t-value="request.env['blog.post'].search([('website_published','=',True)],order='write_date asc')"/>
@@ -301,79 +289,6 @@
             </div>
         </xpath>
     </template>
-
-    <!-- SNIPPETS -->
-    <template id="custom_snippets" inherit_id="website.snippets" name="Custom Snippets">
-        <!-- custom structure snippets -->
-        <!-- Structure -->
-        <xpath expr="//div[@id='snippet_structure']" position="inside">
-            <!-- vertical slide -->
-            <div id="vetical_slide_snippet">
-                <div class="oe_snippet_thumbnail">
-                    <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_banner.png"/>
-                    <span class="oe_snippet_thumbnail_title">Vertical Slide</span>
-                </div>
-                <div id="wrap" class="oe_structure oe_empty"/>
-                <section class="oe_snippet_body fw_categories mt16 mb16">
-                    <div class="container">
-                        <div class="row-fluid">
-                            <div class="span6 offset3">
-                                <div id="carousel_vertical" class="carousel slide vertical">
-                                    <!-- Carousel items -->
-                                    <div class="carousel-inner">
-                                        <div class="item active" style="background-image: url('/website/static/src/img/banner/color_splash.jpg')">
-                                            <div class="container">
-                                                <div class="row content">
-                                                    <div class="carousel-content col-md-6 col-sm-12">
-                                                            <h2>Your Banner Title</h2>
-                                                            <h3>Click to customize this text</h3>
-                                                            <p>
-                                                                <a href="/page/website.contactus" class="btn btn-success btn-large">Contact us</a>
-                                                            </p>
-                                                    </div>
-                                                    <div class="carousel-img col-md-6 hidden-sm hidden-xs">
-                                                        <img class="img-responsive" src="/website/static/src/img/banner/banner_picture.png" alt="Banner Odoo Image"/>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Carousel nav -->
-                                    <div class="carousel-control left hidden" data-target="#carousel_vertical" data-slide="prev" style="height: 100%"><i class="fa fa-chevron-up"/></div>
-                                    <div class="carousel-control right hidden" data-target="#carousel_vertical" data-slide="next" style="height: 100%"><i class="fa fa-chevron-down"/></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-
-        </xpath>
-
-        <!-- Features -->
-        <xpath expr="//div[@id='snippet_feature']" position="inside">
-            <!-- Swedish clock with week day and name of the day -->
-            <div id="swedish_clock_snippet">
-                <div class="oe_snippet_thumbnail">
-                    <img class="oe_snippet_thumbnail_img" src="/theme_teamdoc/static/src/img/block_clock.png"/>
-                    <span class="oe_snippet_thumbnail_title">Swedish Clock</span>
-                </div>
-                <section class="oe_snippet_body jumbotron">
-                    <div class="container">
-                        <div class="row">
-                            <div class="text-center">
-                                <p><font size="3" style="color:#92BDE5">
-                                    <span id="clock"/>
-                                </font></p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </xpath>
-
-    </template>
-
 
 <!--
         <template id="news-block-one" name="Latest news for a block">

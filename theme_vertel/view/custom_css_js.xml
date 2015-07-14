@@ -3,13 +3,25 @@
     <data>
         <!-- custom css and javascript -->
         <template id="theme_vertel_custom_css_and_js" inherit_id="website.layout" name="Theme Vertel Custom CSS and JS">
-
+            <xpath expr="//body" position="after">
+                <script type="text/javascript" src="/theme_vertel/static/src/js/vertical_slide.js"/>
+                <script type="text/javascript" src="/theme_vertel/static/src/js/swedish_clock.js"/>
+                <script type="text/javascript">swedish_clock();</script>
+            </xpath>
+            <xpath expr="//head" position="after">
+                <link href="/theme_vertel/static/src/css/vertical_slide.css" rel="stylesheet"/>
+            </xpath>
         </template>
 
         <template id="hover_css" inherit_id="website.theme" name="Hover CSS">
             <xpath expr="link[last()]" position="after">
                 <link href="/theme_vertel/static/src/css/hover_effect.css" rel="stylesheet"/>
             </xpath>
+
+            <xpath expr="link[last()]" position="after">
+                <link href="/theme_vertel/static/src/css/hover_effect.css" rel="stylesheet"/>
+            </xpath>
         </template>
+
     </data>
 </openerp>

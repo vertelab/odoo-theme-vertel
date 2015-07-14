@@ -1,26 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
     <data>
+
+<!-- customize snippets -->
         <template id="theme_vertel_custom_snippets" inherit_id="website.snippets" name="Theme Vertel Custom Snippets">
+            <!-- Customize Structure -->
+            <xpath expr="//div[@id='snippet_structure']" position="inside">
+                <!-- Vertical slide -->
+                <div id="vertical_slide_snippet">
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_banner.png"/>
+                        <span class="oe_snippet_thumbnail_title">Vertical Slide</span>
+                    </div>
+                    <div id="wrap" class="oe_structure oe_empty"/>
+                    <section class="oe_snippet_body fw_categories mt16 mb16">
+                        <div class="container">
+                            <div class="row-fluid">
+                                <div class="span6 offset3">
+                                    <div id="carousel_vertical" class="carousel slide vertical">
+                                        <!-- Carousel items -->
+                                        <div class="carousel-inner">
+                                            <div class="item active" style="background-image: url('/website/static/src/img/banner/color_splash.jpg')">
+                                                <div class="container">
+                                                    <div class="row content">
+                                                        <div class="carousel-content col-md-6 col-sm-12">
+                                                                <h2>Your Banner Title</h2>
+                                                                <h3>Click to customize this text</h3>
+                                                                <p>
+                                                                    <a href="/page/website.contactus" class="btn btn-success btn-large">Contact us</a>
+                                                                </p>
+                                                        </div>
+                                                        <div class="carousel-img col-md-6 hidden-sm hidden-xs">
+                                                            <img class="img-responsive" src="/website/static/src/img/banner/banner_picture.png" alt="Banner Odoo Image"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Carousel nav -->
+                                        <div class="carousel-control left hidden" data-target="#carousel_vertical" data-slide="prev" style="height: 100%"><i class="fa fa-chevron-up"/></div>
+                                        <div class="carousel-control right hidden" data-target="#carousel_vertical" data-slide="next" style="height: 100%"><i class="fa fa-chevron-down"/></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div><!-- End of vertical slide -->
+
+            </xpath>
+
             <!-- Customize Content -->
             <xpath expr="//div[@id='snippet_content']" position="inside">
-
-                <div>
+                <!-- Hover button -->
+                <div id="hover_button">
                     <div class="oe_snippet_thumbnail">
-                        <img class="oe_snippet_thumbnail_img" src="/theme_teamdoc/static/src/img/block_button_hover.png"/>
+                        <img class="oe_snippet_thumbnail_img" src="/theme_vertel/static/src/img/block_button_hover.png"/>
                         <span class="oe_snippet_thumbnail_title">Hover Button</span>
                     </div>
                     <div class="oe_snippet_body oe_share">
                         <a class="btn btn-default hover" href="#">Button with hover effect</a>
                     </div>
-                </div>
+                </div><!-- End of hover button -->
 
             </xpath>
+
+            <!-- Customize Features -->
+            <xpath expr="//div[@id='snippet_feature']" position="inside">
+                <!-- Swedish clock with week day and name of the day -->
+                <div id="swedish_clock_snippet">
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img" src="/theme_vertel/static/src/img/block_clock.png"/>
+                        <span class="oe_snippet_thumbnail_title">Swedish Clock</span>
+                    </div>
+                    <section class="oe_snippet_body jumbotron">
+                        <div class="container">
+                            <div class="row">
+                                <div class="text-center">
+                                    <p><font size="3" id="sw_clock">
+                                        <span id="clock"/>
+                                    </font></p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div><!-- End of Swedish clock with week day and name of the day -->
+
+            </xpath>
+
         </template>
 
+<!-- snippet options -->
         <template id="more_snippet_option" name="More Snippet Options" inherit_id="website.snippet_options">
 
             <xpath expr="//div[@data-snippet-option-id='transform']" position="after">
+                <!-- Hover button options -->
                 <div data-snippet-option-id='haojuns_button' data-selector="a, .btn, .btn-default, .hover">
                     <li class="dropdown-submenu">
                         <!-- 2D Transitions -->
@@ -164,7 +237,8 @@
                             <li data-value="hvr-curl-bottom-left"><a>Curl Bottom Left</a></li>
                         </ul>
                     </li>
-                </div>
+                </div><!-- End of hover button options -->
+
             </xpath>
 
         </template>
