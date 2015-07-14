@@ -38,5 +38,59 @@
 
         </template>
 
+        <!-- Theme BS-Multipurpose-Ruma -->
+        <template id="bs_multipurpose_ruma" inherit_id="website.layout" customize_show="True" active="False" name="BS-Multipurpose-Ruma" priority="99">
+            <xpath expr="//body/div['id=wrawrap']/header/div" position="attributes">
+                <attribute name="class">navbar navbar-default navbar-static-top hidden</attribute>
+            </xpath>
+            <xpath expr="//body/div['id=wrawrap']/header" position="inside">
+                <div id="bs-menu" class="navbar navbar-inverse navbar-fixed-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"/>
+                                <span class="icon-bar"/>
+                                <span class="icon-bar"/>
+                            </button>
+                            <a class="navbar-brand" href="/" t-field="res_company.name"/>
+                        </div>
+                        <div class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav navbar-right">
+                                <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                                    <t t-call="website.submenu"/>
+                                </t>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+            <xpath expr="//footer" position="inside">
+                <div class="container" style="list-style: none; background: none;">
+                    <div class="pull-right">
+                        <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <b>
+                                    <span t-esc="user_id.name"/>
+                                    <span class="caret"/>
+                                </b>
+                            </a>
+                            <ul class="dropdown-menu js_usermenu" role="menu">
+                                <li><a href="/web" role="menuitem">My Account</a></li>
+                                <li class="divider"/>
+                                <li><a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                    <div class="pull-right">
+                        <li groups="base.group_public">
+                            <a t-attf-href="/web/login">
+                                <b>Sign in</b>
+                            </a>
+                        </li>
+                    </div>
+                </div>
+            </xpath>
+        </template>
+
     </data>
 </openerp>

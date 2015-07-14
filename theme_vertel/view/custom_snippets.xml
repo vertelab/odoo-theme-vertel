@@ -12,40 +12,59 @@
                         <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_banner.png"/>
                         <span class="oe_snippet_thumbnail_title">Vertical Slide</span>
                     </div>
-                    <div id="wrap" class="oe_structure oe_empty"/>
-                    <section class="oe_snippet_body fw_categories mt16 mb16">
-                        <div class="container">
-                            <div class="row-fluid">
-                                <div class="span6 offset3">
-                                    <div id="carousel_vertical" class="carousel slide vertical">
-                                        <!-- Carousel items -->
-                                        <div class="carousel-inner">
-                                            <div class="item active" style="background-image: url('/website/static/src/img/banner/color_splash.jpg')">
-                                                <div class="container">
-                                                    <div class="row content">
-                                                        <div class="carousel-content col-md-6 col-sm-12">
-                                                                <h2>Your Banner Title</h2>
-                                                                <h3>Click to customize this text</h3>
-                                                                <p>
-                                                                    <a href="/page/website.contactus" class="btn btn-success btn-large">Contact us</a>
-                                                                </p>
-                                                        </div>
-                                                        <div class="carousel-img col-md-6 hidden-sm hidden-xs">
-                                                            <img class="img-responsive" src="/website/static/src/img/banner/banner_picture.png" alt="Banner Odoo Image"/>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                    <div id="carousel_vertical" class="oe_snippet_body carousel slide mb32 vertical">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators hidden">
+                            <li data-target="#carousel_vertical" data-slide-to="0" class="active"/>
+                        </ol>
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item active" style="background-image: url('/website/static/src/img/banner/color_splash.jpg')">
+                                <div class="container">
+                                    <div class="row content">
+                                        <div class="carousel-content col-md-6 col-sm-12">
+                                                <h2>Your Banner Title</h2>
+                                                <h3>Click to customize this text</h3>
+                                                <p>
+                                                    <a href="/page/website.contactus" class="btn btn-success btn-large">Contact us</a>
+                                                </p>
                                         </div>
-                                        <!-- Carousel nav -->
-                                        <div class="carousel-control left hidden" data-target="#carousel_vertical" data-slide="prev" style="height: 100%"><i class="fa fa-chevron-up"/></div>
-                                        <div class="carousel-control right hidden" data-target="#carousel_vertical" data-slide="next" style="height: 100%"><i class="fa fa-chevron-down"/></div>
+                                        <div class="carousel-img col-md-6 hidden-sm hidden-xs">
+                                            <img class="img-responsive" src="/website/static/src/img/banner/banner_picture.png" alt="Banner Odoo Image"/>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </section>
+                        <!-- Carousel nav -->
+                        <div class="carousel-control left hidden" data-target="#carousel_vertical" data-slide="prev" style="height: 100%"><i class="fa fa-chevron-up"/></div>
+                        <div class="carousel-control right hidden" data-target="#carousel_vertical" data-slide="next" style="height: 100%"><i class="fa fa-chevron-down"/></div>
+                    </div>
                 </div><!-- End of vertical slide -->
+
+                <!-- Banner block -->
+                <div id="banner_block">
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/aqua.jpg"/>
+                        <span class="oe_snippet_thumbnail_title">Banner Block</span>
+                    </div>
+                    <section id="banner_block_section" class="oe_snippet_body" style="background-image: url('/website/static/src/img/banner/color_splash.jpg'); background-size: cover;">
+                        <div id="banner_block_content" class="content">
+                            <a class="col-md-3 col-xs-6 mb32 mr32" href="#">
+                                <img class="img-responsive md16 img-circle hover" src="/website/static/src/img/parallax/parallax_bg.jpg" alt="Odoo Image"/>
+                            </a>
+                            <a class="col-md-3 col-xs-6 mb32 mr32" href="#">
+                                <img class="img-responsive md16 img-circle hover" src="/website/static/src/img/parallax/parallax_photo1.jpg" alt="Odoo Image"/>
+                            </a>
+                            <a class="col-md-3 col-xs-6 mb32 mr32" href="#">
+                                <img class="img-responsive md16 img-circle hover" src="/website/static/src/img/parallax/parallax_bg.jpg" alt="Odoo Image"/>
+                            </a>
+                            <a class="col-md-3 col-xs-6 mb32 mr32" href="#">
+                                <img class="img-responsive md16 img-circle hover" src="/website/static/src/img/parallax/parallax_photo1.jpg" alt="Odoo Image"/>
+                            </a>
+                        </div>
+                    </section>
+                </div><!-- End of banner block -->
 
             </xpath>
 
@@ -94,7 +113,7 @@
 
             <xpath expr="//div[@data-snippet-option-id='transform']" position="after">
                 <!-- Hover button options -->
-                <div data-snippet-option-id='haojuns_button' data-selector="a, .btn, .btn-default, .hover">
+                <div data-snippet-option-id='hover_button' data-selector="a, .btn, .btn-default, .hover">
                     <li class="dropdown-submenu">
                         <!-- 2D Transitions -->
                         <a tabindex="-1" href="#">2D Transitions</a>
@@ -239,6 +258,7 @@
                     </li>
                 </div><!-- End of hover button options -->
 
+                <!-- Banner block -->
             </xpath>
 
         </template>

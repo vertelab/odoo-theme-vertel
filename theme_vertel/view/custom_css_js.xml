@@ -8,11 +8,13 @@
                 <script type="text/javascript" src="/theme_vertel/static/src/js/vertical_slide.js"/>
                 <script type="text/javascript" src="/theme_vertel/static/src/js/swedish_clock.js"/>
                 <script type="text/javascript">swedish_clock();</script>
+                <script type="text/javascript" src="/theme_vertel/static/src/js/bs_ruma.js"/>
             </xpath>
             <!-- Customize CSS -->
             <xpath expr="//head" position="after">
                 <link href="/theme_vertel/static/src/css/vertical_slide.css" rel="stylesheet"/>
                 <link href="/theme_vertel/static/src/css/theme_vertel.css" rel="stylesheet"/>
+                <link href="/theme_vertel/static/src/css/bs_ruma.css" rel="stylesheet" />
             </xpath>
         </template>
 
