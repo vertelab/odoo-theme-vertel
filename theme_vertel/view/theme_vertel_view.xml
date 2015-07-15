@@ -27,10 +27,16 @@
         </template>
 
         <!-- Theme BS-Multipurpose-Ruma -->
-        <template id="bs_multipurpose_ruma" inherit_id="website.layout" customize_show="True" active="False" name="Theme BS-Multipurpose-Ruma" priority="99">
+        <template id="theme_bs_multipurpose_ruma" inherit_id="website.layout" customize_show="True" active="False" name="Theme BS-Multipurpose-Ruma" priority="99">
+            <!-- Customize CSS -->
+            <xpath expr="//head" position="after">
+                <link href="/theme_vertel/static/src/css/theme_bs_ruma.css" rel="stylesheet" />
+            </xpath>
+            <!-- hide the original menu bar -->
             <xpath expr="//body/div['id=wrawrap']/header/div" position="attributes">
                 <attribute name="class">navbar navbar-default navbar-static-top hidden</attribute>
             </xpath>
+            <!-- add BS-Multipurpose-Ruma style menu -->
             <xpath expr="//body/div['id=wrawrap']/header" position="inside">
                 <div id="bs-menu" class="navbar navbar-inverse navbar-fixed-top">
                     <div class="container">
@@ -40,7 +46,7 @@
                                 <span class="icon-bar"/>
                                 <span class="icon-bar"/>
                             </button>
-                            <a class="navbar-brand" href="/" t-field="res_company.name"/>
+                            <img src="/logo.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
                         </div>
                         <div class="navbar-collapse collapse">
                             <ul class="nav navbar-nav navbar-right">
@@ -52,8 +58,17 @@
                     </div>
                 </div>
             </xpath>
+            <!-- define a class to body -->
+            <xpath expr="//body" position="attributes">
+                <attribute name="class">bs-body</attribute>
+            </xpath>
+            <!-- define a class to footer -->
+            <xpath expr="//footer" position="attributes">
+                <attribute name="class">bs-footer</attribute>
+            </xpath>
+            <!-- add log in/out in footer -->
             <xpath expr="//footer" position="inside">
-                <div class="container" style="list-style: none; background: none;">
+                <div class="container">
                     <div class="pull-right">
                         <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -77,6 +92,92 @@
                         </li>
                     </div>
                 </div>
+            </xpath>
+            <!-- Customize javascript -->
+            <xpath expr="//body" position="after">
+                <script type="text/javascript" src="/theme_vertel/static/src/js/theme_bs_ruma.js"/>
+            </xpath>
+        </template>
+
+        <!-- Theme Middle Logo -->
+        <template id="theme_middle_logo" inherit_id="website.layout" customize_show="True" active="False" name="Theme Middle Logo" priority="99">
+            <!-- Customize CSS -->
+            <xpath expr="//head" position="after">
+                <link href="/theme_vertel/static/src/css/theme_middle_logo.css" rel="stylesheet" />
+            </xpath>
+            <!-- hide the original menu bar -->
+            <xpath expr="//body/div['id=wrawrap']/header/div" position="attributes">
+                <attribute name="class">navbar navbar-default navbar-static-top hidden</attribute>
+            </xpath>
+            <!-- add Middle Logo style menu -->
+            <xpath expr="//body/div['id=wrawrap']/header" position="inside">
+                <div id="ml-menu" class="navbar navbar-inverse">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"/>
+                                <span class="icon-bar"/>
+                                <span class="icon-bar"/>
+                            </button>
+                        </div>
+                        <div class="navbar-collapse collapse">
+                            <t t-set="menu_left" t-value="website.menu_id.child_id[:len(website.menu_id.child_id)/2]"/>
+                            <t t-set="menu_right" t-value="website.menu_id.child_id[len(website.menu_id.child_id)/2:]"/>
+                            <ul class="row">
+                                <div id="menu_left" class="nav navbar-nav navbar-left col-md-5">
+                                    <t t-foreach="menu_left" t-as="submenu">
+                                        <t t-call="website.submenu"/>
+                                    </t>
+                                </div>
+                                <img class="col-md-2" src="/logo.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
+                                <div id="menu_right" class="nav navbar-nav navbar-right col-md-5">
+                                    <t t-foreach="menu_right" t-as="submenu">
+                                        <t t-call="website.submenu"/>
+                                    </t>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+            <!-- define a class to body -->
+            <xpath expr="//body" position="attributes">
+                <attribute name="class">ml-body</attribute>
+            </xpath>
+            <!-- define a class to footer -->
+            <xpath expr="//footer" position="attributes">
+                <attribute name="class">ml-footer</attribute>
+            </xpath>
+            <!-- add log in/out in footer -->
+            <xpath expr="//footer" position="inside">
+                <div class="container">
+                    <div class="pull-right">
+                        <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <b>
+                                    <span t-esc="user_id.name"/>
+                                    <span class="caret"/>
+                                </b>
+                            </a>
+                            <ul class="dropdown-menu js_usermenu" role="menu">
+                                <li><a href="/web" role="menuitem">My Account</a></li>
+                                <li class="divider"/>
+                                <li><a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                    <div class="pull-right">
+                        <li groups="base.group_public">
+                            <a t-attf-href="/web/login">
+                                <b>Sign in</b>
+                            </a>
+                        </li>
+                    </div>
+                </div>
+            </xpath>
+            <!-- Customize javascript -->
+            <xpath expr="//body" position="after">
+                <script type="text/javascript" src="/theme_vertel/static/src/js/theme_middle_logo.js"/>
             </xpath>
         </template>
 

@@ -1,0 +1,72 @@
+﻿/*=============================================================
+                       Middle Logo
+ ============================================================ */
+
+.ml-body {
+    background: #E6E6E6;
+    font-family: 'Ubuntu';
+    list-style: none;
+}
+
+/* MENU */
+#ml-menu {
+    z-index: 1;
+    margin-top: 50px;
+    background: none;
+    border-color: rgba(255, 255, 255, .4);
+}
+
+/* COMPANY LOGO */
+#ml-menu > div > div > a {
+
+}
+
+/* MENU TEXT */
+#ml-menu > div > div > ul > li > a {
+    background-color: none;
+    color: #343434;
+}
+
+#menu_left {
+    padding-top: 4%;
+}
+
+#menu_left > li > a > span {
+    font-size: 150%;
+}
+
+#menu_right {
+    padding-top: 4%;
+}
+
+#menu_right > li > a > span {
+    font-size: 150%;
+}
+
+.navbar {
+    border: 0px;
+}
+
+.navbar-nav {
+    margin: 7.5px -15px;
+}
+
+.navbar-inverse {
+    border-color: none;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #50A7D2;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #50A7D2;
+    background: none;
+}
+
+/* FOOTER STYLE*/
+.ml-footer {
+
+}
+
+

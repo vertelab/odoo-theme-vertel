@@ -12,7 +12,7 @@
                         <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_banner.png"/>
                         <span class="oe_snippet_thumbnail_title">Vertical Slide</span>
                     </div>
-                    <div id="carousel_vertical" class="oe_snippet_body carousel slide mb32 vertical">
+                    <div id="carousel_vertical" class="oe_snippet_body carousel slide vertical">
                         <!-- Indicators -->
                         <ol class="carousel-indicators hidden">
                             <li data-target="#carousel_vertical" data-slide-to="0" class="active"/>

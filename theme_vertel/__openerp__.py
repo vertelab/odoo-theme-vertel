@@ -33,7 +33,6 @@ Extra themes made by Haojun.
     'depends': ['website', 'website_less', 'snippet_addons'],
     'data': [
         'view/theme_vertel_view.xml',
-        'view/theme_vertel_css_js.xml',
 ],
     'application': True,
 }
