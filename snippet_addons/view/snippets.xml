@@ -73,7 +73,7 @@
                 <!-- Hover button -->
                 <div id="hover_button">
                     <div class="oe_snippet_thumbnail">
-                        <img class="oe_snippet_thumbnail_img" src="/theme_vertel/static/src/img/block_button_hover.png"/>
+                        <img class="oe_snippet_thumbnail_img" src="/snippet_addons/static/src/img/block_button_hover.png"/>
                         <span class="oe_snippet_thumbnail_title">Hover Button</span>
                     </div>
                     <div class="oe_snippet_body oe_share">
@@ -88,7 +88,7 @@
                 <!-- Swedish clock with week day and name of the day -->
                 <div id="swedish_clock_snippet">
                     <div class="oe_snippet_thumbnail">
-                        <img class="oe_snippet_thumbnail_img" src="/theme_vertel/static/src/img/block_clock.png"/>
+                        <img class="oe_snippet_thumbnail_img" src="/snippet_addons/static/src/img/block_clock.png"/>
                         <span class="oe_snippet_thumbnail_title">Swedish Clock</span>
                     </div>
                     <section class="oe_snippet_body jumbotron">
