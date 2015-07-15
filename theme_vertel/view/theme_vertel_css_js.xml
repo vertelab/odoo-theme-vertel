@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+<!-- Custom CSS and javascript -->
+        <template id="theme_vertel_custom_css_and_js" inherit_id="website.layout" name="Theme Vertel Custom CSS and JS">
+            <!-- Customize javascript -->
+            <xpath expr="//body" position="after">
+                <script type="text/javascript" src="/theme_vertel/static/src/js/theme_bs_ruma.js"/>
+            </xpath>
+            <!-- Customize CSS -->
+            <xpath expr="//head" position="after">
+                <link href="/theme_vertel/static/src/css/theme_bs_ruma.css" rel="stylesheet" />
+            </xpath>
+        </template>
+    </data>
+</openerp>

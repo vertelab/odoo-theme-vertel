@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+<!-- Custom Snippet CSS and javascript -->
+        <template id="custom_snippet_css_and_js" inherit_id="website.layout" name="Custom Snippet Custom CSS and JS">
+            <!-- Customize javascript -->
+            <xpath expr="//body" position="after">
+                <script type="text/javascript" src="/snippet_addons/static/src/js/vertical_slide.js"/>
+                <script type="text/javascript" src="/snippet_addons/static/src/js/swedish_clock.js"/>
+                <script type="text/javascript">swedish_clock();</script>
+            </xpath>
+            <!-- Customize CSS -->
+            <xpath expr="//head" position="after">
+                <link href="/snippet_addons/static/src/css/vertical_slide.css" rel="stylesheet"/>
+                <link href="/snippet_addons/static/src/css/theme_vertel.css" rel="stylesheet"/>
+            </xpath>
+        </template>
+
+<!-- Custom Snippet Options CSS -->
+        <template id="custom_snippet_options_css" inherit_id="website.theme" name="Custom Snippet Options CSS">
+            <xpath expr="link[last()]" position="after">
+                <link href="/snippet_addons/static/src/css/hover_effect.css" rel="stylesheet"/>
+            </xpath>
+        </template>
+
+    </data>
+</openerp>

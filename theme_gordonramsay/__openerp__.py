@@ -29,7 +29,7 @@ GordonRamsey style theme.
 """,
     'author': 'Vertel AB',
     'website': 'http://www.vertel.se',
-    'depends': ['website',],
+    'depends': ['website', 'snippet_addons'],
     'data': [
         'gordonramsay_view.xml',
         'static/src/views/theme.xml',

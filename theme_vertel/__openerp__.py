@@ -23,21 +23,18 @@
     'name': 'Theme Vertel',
     'version': '1.0',
     'category': 'Theme',
-    'summary': 'A theme style',
+    'summary': 'A Theme Style',
     'description': """
-Theme and snippets made by Haojun.
+Extra themes made by Haojun.
 ====================
 """,
     'author': 'Vertel AB',
     'website': 'http://www.vertel.se',
-    'depends': ['website', 'website_less'],
+    'depends': ['website', 'website_less', 'snippet_addons'],
     'data': [
-        'view/theme_vertel.xml',
-        'view/custom_css_js.xml',
-        'view/custom_snippets.xml',
+        'view/theme_vertel_view.xml',
+        'view/theme_vertel_css_js.xml',
 ],
     'application': True,
 }
-
-# vim:expandtab:smartindent:tabstop=4s:softtabstop=4:shiftwidth=4:
 

@@ -20,29 +20,20 @@
 ##############################################################################
 
 {
-    'name': 'Theme Teamdoc',
-    'version': '0.3',
+    'name': 'Snippet Addons',
+    'version': '1.0',
     'category': 'Theme',
-    'summary': 'A teamdoc style theme',
+    'summary': 'A Snippet Library',
     'description': """
-Teamdoc style theme.
+Extra snippets made by Haojun.
 ====================
 """,
     'author': 'Vertel AB',
     'website': 'http://www.vertel.se',
-    'depends': ['website', 'snippet_addons'],
+    'depends': ['website', 'website_less'],
     'data': [
-        'theme_teamdoc_view.xml',
-        'theme_business_casual.xml',
-        'website_overwritten_templates.xml',
-        'big_logo_and_block_menu.xml',
-        'theme_responsive_navbar.xml',
-        'theme_magp.xml',
-        'magp_backup.xml',
-        'countdown_timer.xml',
+        'view/snippets_css_js.xml',
+        'view/snippets.xml',
 ],
     'application': True,
 }
-
-# vim:expandtab:smartindent:tabstop=4s:softtabstop=4:shiftwidth=4:
-

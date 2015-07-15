@@ -1,14 +1,6 @@
 /*!
-    theme_vertel
+    Banner Block
 */
-
-div.parallax {
-    width: 100%;
-}
-
-div.three_column {
-    width: 100%;
-}
 
 #banner_block_section {
     background-size: cover;

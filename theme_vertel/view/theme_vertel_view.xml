@@ -2,8 +2,8 @@
 <openerp>
     <data>
 
-        <!-- theme menu, parallax, column, parallax -->
-        <template id="theme_parallax_column_parallax" inherit_id="website.layout" customize_show="True" active="False" name="Menu-Parallax-Column-Parallax" priority="99">
+        <!-- Layout menu, parallax, column, parallax -->
+        <template id="layout_parallax_column_parallax" inherit_id="website.layout" customize_show="True" active="False" name="Layout Menu-Parallax-Column-Parallax" priority="99">
             <xpath expr="//main" position="inside">
                 <section id="three_column">
                     <div class="three_column">
@@ -24,22 +24,10 @@
                     </div>
                 </section>
             </xpath>
-            <!--<xpath expr="//header//ul" position="attributes">-->
-            <!--<attribute name="class">nav navbar-nav</attribute>-->
-            <!--</xpath>-->
-
-            <!--<xpath expr="//ul[@id='top_menu']/li[1]" position="attributes">-->
-            <!--<attribute name="class">divider hidden</attribute>-->
-            <!--</xpath>-->
-
-            <!--<xpath expr="//ul[@id='top_menu']/li[2]" position="attributes">-->
-            <!--<attribute name="class">dropdown hidden</attribute>-->
-            <!--</xpath>-->
-
         </template>
 
         <!-- Theme BS-Multipurpose-Ruma -->
-        <template id="bs_multipurpose_ruma" inherit_id="website.layout" customize_show="True" active="False" name="BS-Multipurpose-Ruma" priority="99">
+        <template id="bs_multipurpose_ruma" inherit_id="website.layout" customize_show="True" active="False" name="Theme BS-Multipurpose-Ruma" priority="99">
             <xpath expr="//body/div['id=wrawrap']/header/div" position="attributes">
                 <attribute name="class">navbar navbar-default navbar-static-top hidden</attribute>
             </xpath>
