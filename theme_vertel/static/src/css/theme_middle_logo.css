@@ -4,12 +4,12 @@
 
 .ml-body {
     background: #E6E6E6;
-    font-family: 'Ubuntu';
     list-style: none;
 }
 
 /* MENU */
 #ml-menu {
+    font-family: 'Cinzel Decorative', cursive;
     z-index: 1;
     margin-top: 50px;
     background: none;

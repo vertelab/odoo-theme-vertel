@@ -98,7 +98,8 @@
         <template id="theme_middle_logo" inherit_id="website.layout" customize_show="True" active="False" name="Theme Middle Logo" priority="99">
             <!-- Customize CSS -->
             <xpath expr="//head" position="after">
-                <link href="/theme_vertel/static/src/css/theme_middle_logo.css" rel="stylesheet" />
+                <link href="/theme_vertel/static/src/css/theme_middle_logo.css" rel="stylesheet"/>
+                <link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative' rel='stylesheet' type='text/css'/>
             </xpath>
             <!-- hide the original menu bar -->
             <xpath expr="//body/div['id=wrawrap']/header/div" position="attributes">
