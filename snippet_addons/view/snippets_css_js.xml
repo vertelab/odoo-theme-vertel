@@ -4,15 +4,15 @@
 <!-- Custom Snippet CSS and javascript -->
         <template id="custom_snippet_css_and_js" inherit_id="website.layout" name="Custom Snippet Custom CSS and JS">
             <!-- Customize javascript -->
-            <xpath expr="//body" position="after">
+            <xpath expr="//body" position="inside">
                 <script type="text/javascript" src="/snippet_addons/static/src/js/vertical_slide.js"/>
                 <script type="text/javascript" src="/snippet_addons/static/src/js/swedish_clock.js"/>
                 <script type="text/javascript">swedish_clock();</script>
             </xpath>
             <!-- Customize CSS -->
-            <xpath expr="//head" position="after">
+            <xpath expr="//head" position="inside">
                 <link href="/snippet_addons/static/src/css/vertical_slide.css" rel="stylesheet"/>
-                <link href="/snippet_addons/static/src/css/theme_vertel.css" rel="stylesheet"/>
+                <link href="/snippet_addons/static/src/css/banner_block.css" rel="stylesheet"/>
             </xpath>
         </template>
 
