@@ -34,26 +34,21 @@
             </xpath>
             <!-- hide the original menu bar -->
             <xpath expr="//body/div['id=wrawrap']/header/div" position="attributes">
-                <attribute name="class">navbar navbar-default navbar-static-top hidden</attribute>
+                <attribute name="class">navbar navbar-default navbar-static-top hidden-lg hidden-md hidden-sm</attribute>
             </xpath>
             <!-- add BS-Multipurpose-Ruma style menu -->
             <xpath expr="//body/div['id=wrawrap']/header" position="inside">
-                <div id="bs-menu" class="navbar navbar-inverse navbar-fixed-top">
+                <div id="bs-menu" class="navbar navbar-inverse navbar-fixed-top hidden-xs">
                     <div class="container">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                <span class="icon-bar"/>
-                                <span class="icon-bar"/>
-                                <span class="icon-bar"/>
-                            </button>
-                            <img src="/logo.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
-                        </div>
-                        <div class="navbar-collapse collapse">
-                            <ul class="nav navbar-nav navbar-right">
-                                <t t-foreach="website.menu_id.child_id" t-as="submenu">
-                                    <t t-call="website.submenu"/>
-                                </t>
-                            </ul>
+                        <div class="row">
+                            <img id="bs-logo" src="/logo.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
+                            <div class="pull-right">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                                        <t t-call="website.submenu"/>
+                                    </t>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -107,35 +102,36 @@
             </xpath>
             <!-- hide the original menu bar -->
             <xpath expr="//body/div['id=wrawrap']/header/div" position="attributes">
-                <attribute name="class">navbar navbar-default navbar-static-top hidden</attribute>
+                <attribute name="class">navbar navbar-default navbar-static-top hidden-lg hidden-md hidden-sm</attribute>
             </xpath>
             <!-- add Middle Logo style menu -->
             <xpath expr="//body/div['id=wrawrap']/header" position="inside">
-                <div id="ml-menu" class="navbar navbar-inverse">
-                    <div class="container">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                <span class="icon-bar"/>
-                                <span class="icon-bar"/>
-                                <span class="icon-bar"/>
-                            </button>
-                        </div>
-                        <div class="navbar-collapse collapse">
-                            <t t-set="menu_left" t-value="website.menu_id.child_id[:len(website.menu_id.child_id)/2]"/>
-                            <t t-set="menu_right" t-value="website.menu_id.child_id[len(website.menu_id.child_id)/2:]"/>
-                            <ul class="row">
-                                <div id="menu_left" class="nav navbar-nav navbar-left col-md-5">
-                                    <t t-foreach="menu_left" t-as="submenu">
-                                        <t t-call="website.submenu"/>
-                                    </t>
-                                </div>
-                                <img class="col-md-2" src="/logo.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
-                                <div id="menu_right" class="nav navbar-nav navbar-right col-md-5">
-                                    <t t-foreach="menu_right" t-as="submenu">
-                                        <t t-call="website.submenu"/>
-                                    </t>
-                                </div>
-                            </ul>
+                <div id="ml-menu" class="navbar navbar-inverse hidden-xs">
+                    <div id="ml-menu-bar" class="container">
+                        <div class="container">
+                            <div class="row">
+                                <t t-set="menu_left" t-value="website.menu_id.child_id[:len(website.menu_id.child_id)/2]"/>
+                                <t t-set="menu_right" t-value="website.menu_id.child_id[len(website.menu_id.child_id)/2:]"/>
+                                <ul class="row">
+                                    <div class="col-md-5">
+                                        <div id="menu-leftside" class="nav navbar-nav navbar-right">
+                                            <t t-foreach="menu_left" t-as="submenu">
+                                                <t t-call="website.submenu"/>
+                                            </t>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 hidden-xs">
+                                        <img id="ml-logo" src="/logo.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div id="menu-rightside" class="nav navbar-nav navbar-left">
+                                            <t t-foreach="menu_right" t-as="submenu">
+                                                <t t-call="website.submenu"/>
+                                            </t>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>

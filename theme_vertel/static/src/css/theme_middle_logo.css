@@ -14,11 +14,20 @@
     margin-top: 50px;
     background: none;
     border-color: rgba(255, 255, 255, .4);
+    width: 100%;
+}
+
+#ml-menu-bar {
+
 }
 
 /* COMPANY LOGO */
 #ml-menu > div > div > a {
 
+}
+
+#ml-logo {
+    width: 100%;
 }
 
 /* MENU TEXT */
@@ -27,28 +36,24 @@
     color: #343434;
 }
 
-#menu_left {
-    padding-top: 4%;
+#menu-leftside {
+    padding-top: 12%;
 }
 
-#menu_left > li > a > span {
-    font-size: 150%;
+#menu-leftside > li > a > span {
+    font-size: 120%;
 }
 
-#menu_right {
-    padding-top: 4%;
+#menu-rightside {
+    padding-top: 12%;
 }
 
-#menu_right > li > a > span {
-    font-size: 150%;
+#menu-rightside > li > a > span {
+    font-size: 120%;
 }
 
 .navbar {
     border: 0px;
-}
-
-.navbar-nav {
-    margin: 7.5px -15px;
 }
 
 .navbar-inverse {

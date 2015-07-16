@@ -19,8 +19,16 @@
     color: #FFF;
 }
 
+#bs-logo {
+    max-width: 50px;
+}
+
 /* MENU TEXT */
 #bs-menu > div > div > ul > li > a {
+    color: #FFF;
+}
+
+.navbar-inverse .navbar-nav > li > a {
     color: #FFF;
 }
 
