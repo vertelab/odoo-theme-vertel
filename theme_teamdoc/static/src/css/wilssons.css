@@ -49,8 +49,12 @@
     height: 320px;
 }
 
-#banner_block_content > a {
-    max-width: 300px;
+#banner_block_content > div > div > a > img{
+    width: 100%;
+}
+
+.parallax {
+    height: 100px;
 }
 
 /* FOOTER STYLE*/

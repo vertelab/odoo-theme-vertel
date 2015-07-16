@@ -51,18 +51,20 @@
                     <section id="banner_block_section" class="oe_snippet_body" style="background-image: url('/website/static/src/img/banner/color_splash.jpg'); background-size: cover;">
                         <div id="banner_block_content" class="content">
                             <div class="container">
-                                <a class="col-md-3 col-xs-6 mb32 mr32" href="#">
-                                    <img class="img-responsive md16 img-circle hover" src="/website/static/src/img/parallax/parallax_bg.jpg" alt="Odoo Image"/>
-                                </a>
-                                <a class="col-md-3 col-xs-6 mb32 mr32" href="#">
-                                    <img class="img-responsive md16 img-circle hover" src="/website/static/src/img/parallax/parallax_photo1.jpg" alt="Odoo Image"/>
-                                </a>
-                                <a class="col-md-3 col-xs-6 mb32 mr32" href="#">
-                                    <img class="img-responsive md16 img-circle hover" src="/website/static/src/img/parallax/parallax_bg.jpg" alt="Odoo Image"/>
-                                </a>
-                                <a class="col-md-3 col-xs-6 mb32 mr32" href="#">
-                                    <img class="img-responsive md16 img-circle hover" src="/website/static/src/img/parallax/parallax_photo1.jpg" alt="Odoo Image"/>
-                                </a>
+                                <div class="row">
+                                    <a class="col-md-3 col-xs-6 mt16 mb16" href="#">
+                                        <img class="img-responsive md16 img-circle hover" src="/website/static/src/img/parallax/parallax_bg.jpg" alt="Odoo Image"/>
+                                    </a>
+                                    <a class="col-md-3 col-xs-6 mt16 mb16" href="#">
+                                        <img class="img-responsive md16 img-circle hover" src="/website/static/src/img/parallax/parallax_photo1.jpg" alt="Odoo Image"/>
+                                    </a>
+                                    <a class="col-md-3 col-xs-6 mt16 mb16" href="#">
+                                        <img class="img-responsive md16 img-circle hover" src="/website/static/src/img/parallax/parallax_bg.jpg" alt="Odoo Image"/>
+                                    </a>
+                                    <a class="col-md-3 col-xs-6 mt16 mb16" href="#">
+                                        <img class="img-responsive md16 img-circle hover" src="/website/static/src/img/parallax/parallax_photo1.jpg" alt="Odoo Image"/>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </section>
