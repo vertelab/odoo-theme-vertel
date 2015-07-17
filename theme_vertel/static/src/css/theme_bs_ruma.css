@@ -14,24 +14,6 @@
     background: #000;
 }
 
-/* COMPANY LOGO */
-#bs-menu > div > div > a {
-    color: #FFF;
-}
-
-#bs-logo {
-    max-width: 50px;
-}
-
-/* MENU TEXT */
-#bs-menu > div > div > ul > li > a {
-    color: #FFF;
-}
-
-.navbar-inverse .navbar-nav > li > a {
-    color: #FFF;
-}
-
 /* ADDED PADDING IN NAVBAR */
 .navbar {
     padding: 15px;
@@ -42,7 +24,34 @@
 
 /* CLASS FOR REMOVING PADDING IN NAVBAR*/
 .navbar-pad-original {
-    padding:0px;
+    padding: 0px;
+}
+
+/* COMPANY LOGO */
+#bs-menu > div > div > a {
+    color: #FFF;
+}
+
+#bs-logo {
+    max-width: 50px;
+}
+
+/* MENU TEXT */
+#bs-menu > div > div > div > ul > li > a {
+    color: #FFF;
+}
+
+/* STYLE WHEN MOUSE HOVER */
+#bs-menu > div > div > div > ul > li > a:hover,
+#bs-menu > div > div > div > ul > li > a:focus {
+    color: #000;
+    background-color: #fff;
+}
+
+/* STYLE WHEN PAGE ACTIVE */
+#bs-menu > div > div > div > ul > .active > a {
+    color: #000;
+    background-color: #fff;
 }
 
 /* FOOTER STYLE*/

@@ -1,0 +1,144 @@
+<!-- hem -->
+<t t-name="website.hem">
+    <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty">
+            <section class="parallax s_parallax" data-scroll-background-offset="0" data-scroll-background-ratio="0.3" style="background: transparent none repeat fixed 0px 136.8px;">
+                <div>
+                    <div class="oe_structure">
+                        <div class="mt128">
+                            <h1 style="color: #fff; text-align: center;">Välkommen till</h1>
+                            <h1 style="color: #fff; text-align: center;">Wilssons Åkeri och Wilsson Relining</h1>
+                            <h3 style="color: #fff; text-align: center;">Kontorstid: Mån-Fre 07:00-16:00</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="banner_block_section" style="background: #343434; background-size: cover;">
+                <div class="content" id="banner_block_content">
+                    <div class="container">
+                        <div class="row">
+                            <a class="col-md-3 col-xs-6 mt16 mb16" href="#">
+                                <img alt="Odoo Image" class="img-responsive md16 hover img-rounded" src="/theme_teamdoc/static/src/img/wilssons/slam_spol_ruta.jpg" style=""/>
+                            </a>
+                            <a class="col-md-3 col-xs-6 mt16 mb16" href="#">
+                                <img alt="Odoo Image" class="img-responsive md16 hover img-rounded" src="/theme_teamdoc/static/src/img/wilssons/spol_ruta.jpg" style=""/>
+                            </a>
+                            <a class="col-md-3 col-xs-6 mt16 mb16" href="#">
+                                <img alt="Odoo Image" class="img-responsive md16 hover img-rounded" src="/theme_teamdoc/static/src/img/wilssons/insp_ruta.jpg" style=""/>
+                            </a>
+                            <a class="col-md-3 col-xs-6 mt16 mb16" href="#">
+                                <img alt="Odoo Image" class="img-responsive md16 hover img-rounded" src="/theme_teamdoc/static/src/img/wilssons/relining_ruta.jpg" style=""/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="parallax s_parallax" data-scroll-background-offset="0" data-scroll-background-ratio="0.3" style="background-image: url(&quot;/theme_teamdoc/static/src/img/wilssons/metal-plate.png&quot;); background-attachment: scroll; background-position: 0px 136.8px;">
+                <div>
+                    <div class="oe_structure">
+                        <div class="mt64">
+                            <h2 style="color: #fff; text-align: center;">Jour 7 dagar i veckan, dygnet, året runt!!</h2>
+                            <div class="col-md-2"/>
+                            <div class="col-md-8">
+                                <h4 style="color: rgb(255, 255, 255);">
+                                    <b>Wilssons Åkeri AB och Wilsson Relining AB</b> är två mångsidiga företag som arbetar med slamsugning, avloppsspolning, tv-inspektion och relining. Många av våra medarbetare har jobbat i företaget sedan lång tid tillbaka och tillsammans har vi över 300 års erfarenhet. I januari 2014 förvärvades företaget av Alltransport koncernen. Ägarbytet innebär inga förändringar för dig som kund. Bolaget drivs även fortsättningsvis vidare på samma sätt som innan och de tidigare ägarna är fortsatt delaktiga i företaget och dess utveckling.
+                                    <br/>
+                                    <b>Wilsson Relining AB</b> finns sendan 2014 i både Örebro och Östergötland.
+                                    <br/>
+                                    <b>Wilsson Åkeri AB</b> utgår med både bilar och personal från Linköping och Norrköping.
+                                </h4>
+                            </div>
+                            <div class="col-md-2"/></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </t>
+</t>
+
+<!-- footer -->
+<data inherit_id="website.footer_custom" customize_show="True" name="Automatic Footer">
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div class="container hidden-print">
+            <div class="row">
+                <div class="col-md-9">
+                    <div>
+                        <h5>
+                            <a href="/page/om-foretaget">Om oss</a>
+                        </h5>
+                        <h3>Historik</h3>
+                        <p>- Vi var först i Östergötland med Tv- inspektion av rör.
+                            <br/>
+- Började 1979, och sedan dess har vi varit branschledande.
+                            <br/>
+- Vi har den modernaste utrustningen som finns på marknaden i dag.
+                            <br/>
+- Från och med 2003 utför vi relining av befintliga ledningar i vårt dotterbolag Wilsson Relining AB.
+                            <br/>
+- Under 2006 flyttade Wilssons Åkeri in i nya lokaler vid Kungsängen i Norrköping.
+                        </p>
+                        <span>
+                            <a href="/page/om-foretaget">Läs mer...</a>
+                        </span>
+                    </div>
+                    <ul class="list-inline js_language_selector mt16" t-if="(request.website_multilang and len(languages) &gt; 1) or editable">
+                        <li t-foreach="languages" t-as="lg">
+                            <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang=lg[0])" t-att-data-default-lang="editable and 'true' if lg[0] == website.default_lang_code else None" t-att-data-lang="lg[0]" class="js_change_lang">
+                                <t t-esc="lg[1].split('/').pop()"/>
+                            </a>
+                        </li>
+                        <li groups="base.group_website_publisher">
+                            <t t-set="url_return" t-value="url_for('', '[lang]') + '?' + keep_query()"/>
+                            <a t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id}&amp;url_return=#{url_return}">
+                                <i class="fa fa-plus-circle"/>
+                            Add a language...
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3" id="info">
+                    <h4>
+                        <a href="/page/website.contactus">Kontakta oss</a>
+                    </h4>
+                    <ul class="list-unstyled">
+                        <li t-ignore="true">
+                            <i class="fa fa-phone"/>
+                            <span t-field="res_company.phone"/>
+                        </li>
+                        <li t-ignore="true">
+                            <i class="fa fa-envelope"/>
+                            <span t-field="res_company.email"/>
+                        </li>
+                    </ul>
+                    <h2>
+                        <a t-att-href="website.social_facebook" t-if="website.social_facebook">
+                            <i class="fa fa-facebook-square"/>
+                        </a>
+                        <a t-att-href="website.social_twitter" t-if="website.social_twitter">
+                            <i class="fa fa-twitter"/>
+                        </a>
+                        <a t-att-href="website.social_linkedin" t-if="website.social_linkedin">
+                            <i class="fa fa-linkedin"/>
+                        </a>
+                        <a t-att-href="website.social_youtube" t-if="website.social_youtube">
+                            <i class="fa fa-youtube-play"/>
+                        </a>
+                        <a t-att-href="website.social_googleplus" t-if="website.social_googleplus" rel="publisher">
+                            <i class="fa fa-google-plus-square"/>
+                        </a>
+                        <a t-att-href="website.social_github" t-if="website.social_github">
+                            <i class="fa fa-github"/>
+                        </a>
+                    </h2>
+                    <img src="/theme_teamdoc/static/src/img/wilssons/AT-logo.jpg" class="img-responsive" style="max-width: 200px;"/>
+                </div>
+
+                <div class="container">
+                    <img class="img-responsive pull-right" src="/theme_teamdoc/static/src/img/wilssons/bottom_bkg.jpg"/>
+                </div>
+            </div>
+        </div>
+    </xpath>
+</data>
+

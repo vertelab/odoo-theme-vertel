@@ -4,6 +4,8 @@
 
 .bs-body {
     font-family: 'Open Sans', sans-serif;
+    background: url('/theme_teamdoc/static/src/img/wilssons/metal-plate.png') no-repeat center center;
+    background-size: cover;
     list-style: none;
 }
 
@@ -32,6 +34,18 @@
     color: #FFF;
 }
 
+/* STYLE WHEN MOUSE HOVER */
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    color: #2E3EA0;
+    background-color: #fff;
+}
+
+/* STYLE WHEN PAGE ACTIVE */
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+    color: #2E3EA0;
+    background-color: #fff;
+}
+
 /* ADDED PADDING IN NAVBAR */
 .navbar {
     padding: 15px;
@@ -54,13 +68,14 @@
 }
 
 .parallax {
-    height: 100px;
+    height: 400px;
 }
 
 /* FOOTER STYLE*/
 .bs-footer {
-    background: #000;
-    color: #fff;
+    background: #fff;
+    color: #000;
 }
+
 
 

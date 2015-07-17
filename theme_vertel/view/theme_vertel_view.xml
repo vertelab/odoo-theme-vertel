@@ -107,32 +107,30 @@
             </xpath>
             <!-- add Middle Logo style menu -->
             <xpath expr="//body/div['id=wrawrap']/header" position="inside">
-                <div id="ml-menu" class="navbar navbar-inverse hidden-xs">
+                <div id="ml-menu" class="ml-navbar hidden-xs">
                     <div id="ml-menu-bar" class="container">
-                        <div class="container">
-                            <div class="row">
-                                <t t-set="menu_left" t-value="website.menu_id.child_id[:len(website.menu_id.child_id)/2]"/>
-                                <t t-set="menu_right" t-value="website.menu_id.child_id[len(website.menu_id.child_id)/2:]"/>
-                                <ul class="row">
-                                    <div class="col-md-5">
-                                        <div id="menu-leftside" class="nav navbar-nav navbar-right">
-                                            <t t-foreach="menu_left" t-as="submenu">
-                                                <t t-call="website.submenu"/>
-                                            </t>
-                                        </div>
+                        <t t-set="menu_left" t-value="website.menu_id.child_id[:len(website.menu_id.child_id)/2]"/>
+                        <t t-set="menu_right" t-value="website.menu_id.child_id[len(website.menu_id.child_id)/2:]"/>
+                        <div class="row">
+                            <ul>
+                                <div id="menu-leftside" class="col-md-5">
+                                    <div class="nav navbar-nav navbar-right">
+                                        <t t-foreach="menu_left" t-as="submenu">
+                                            <t t-call="website.submenu"/>
+                                        </t>
                                     </div>
-                                    <div class="col-md-2 hidden-xs">
-                                        <img id="ml-logo" src="/logo.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
+                                </div>
+                                <div id="menu-center" class="col-md-2 hidden-xs">
+                                    <img id="ml-logo" src="/logo.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
+                                </div>
+                                <div id="menu-rightside" class="col-md-5">
+                                    <div class="nav navbar-nav navbar-left">
+                                        <t t-foreach="menu_right" t-as="submenu">
+                                            <t t-call="website.submenu"/>
+                                        </t>
                                     </div>
-                                    <div class="col-md-5">
-                                        <div id="menu-rightside" class="nav navbar-nav navbar-left">
-                                            <t t-foreach="menu_right" t-as="submenu">
-                                                <t t-call="website.submenu"/>
-                                            </t>
-                                        </div>
-                                    </div>
-                                </ul>
-                            </div>
+                                </div>
+                            </ul>
                         </div>
                     </div>
                 </div>
