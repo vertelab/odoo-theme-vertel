@@ -1,0 +1,89 @@
+/*=============================================================
+                       Block Logo
+ ============================================================ */
+
+.bl-body {
+    background: #fff;
+    list-style: none;
+}
+
+/* MENU */
+.bl-navbar {
+    font-family: 'Ubuntu';
+    font-size: 1.5em;
+    background: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bl-menu-bar > div > ul > li > a {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#bl-menu-bar > div {
+    width: 1024px;
+    margin: auto;
+}
+
+/* menu width depends on the width of the logo */
+#bl-menu-bar > div > ul{
+    padding-left: 25%;
+}
+
+.bl-navbar-fixed-top {
+    font-family: 'Ubuntu';
+    font-size: 1.5em;
+    z-index: 99;
+    margin-top: -216px;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+}
+
+/* COMPANY LOGO */
+#bl-logo {
+    width: 100%;
+    display:block;
+    margin:auto;
+}
+
+/* MENU TEXT */
+#bl-menu-bar > div > ul > li > a {
+    color: #343434;
+}
+
+/* STYLE WHEN MOUSE HOVER */
+#bl-menu-bar > div > ul > li > a:hover,
+#bl-menu-bar > div > ul > li > a:focus {
+    color: #ED4036;
+    background-color: #F3E6E6;
+}
+
+/* STYLE WHEN PAGE ACTIVE */
+#bl-menu-bar > div > ul > .active > a {
+    color: #ED4036;
+    background-color: #F3E6E6;
+}
+
+.navbar {
+    border: 0px;
+}
+
+.navbar-nav {
+    border-color: none;
+}
+
+#bl-menu-bar {
+    width: 100%;
+}
+
+#bl-menu-bar > .row {
+    width: 100%;
+}
+
+/* FOOTER STYLE*/
+.bl-footer {
+
+}
