@@ -1,0 +1,94 @@
+/*=============================================================
+                       Hudvårdsrummet
+ ============================================================ */
+
+.bl-body {
+    background: #fff;
+    list-style: none;
+}
+
+/* MENU */
+.bl-navbar {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 0.975em;
+    background: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bl-menu-bar > div > ul > li > a {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#bl-menu-bar > div {
+    width: 1024px;
+    margin: auto;
+}
+
+/* menu width depends on the width of the logo */
+#bl-menu-bar > div > ul{
+    padding-left: 0%;
+}
+
+.bl-navbar-fixed-top {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 0.975em;
+    z-index: 99;
+    margin-top: -216px;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+}
+
+/* COMPANY LOGO */
+#bl-logo {
+    width: 100%;
+    display:block;
+    margin:auto;
+}
+
+/* MENU TEXT */
+#bl-menu-bar > div > ul > li > a {
+    color: #343434;
+}
+
+/* STYLE WHEN MOUSE HOVER */
+#bl-menu-bar > div > ul > li > a:hover,
+#bl-menu-bar > div > ul > li > a:focus {
+    color: #000;
+    background-color: #EEE7D0;
+}
+
+/* STYLE WHEN PAGE ACTIVE */
+#bl-menu-bar > div > ul > .active > a {
+    color: #000;
+    background-color: #EEE7D0;
+}
+
+.navbar {
+    border: 0px;
+}
+
+.navbar-nav {
+    border-color: none;
+}
+
+#bl-menu-bar {
+    width: 100%;
+}
+
+#bl-menu-bar > .row {
+    width: 100%;
+}
+
+.block {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* FOOTER STYLE*/
+.bl-footer {
+    background-color: #EEE7D0;
+}
