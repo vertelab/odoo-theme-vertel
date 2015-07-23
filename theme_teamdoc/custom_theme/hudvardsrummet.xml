@@ -5,32 +5,40 @@
             <section>
                 <div class="container mb16">
                     <div class="block col-md-4">
-                        <div class="block col-md-12 hover">
+                        <div class="block col-md-12 hover hvr-float">
                             <div class="text-center" style="background-color: #B9A55A; color: #fff; height: 151px;">
-                                <br/><br/><br/>
+                                <br/>
+                                <br/>
+                                <br/>
                                 <font size="4">
                                     <strong>Nyheter</strong>
                                     <br/>
                                     <i class="fa fa-caret-down"/>
                                 </font>
                             </div>
-                            <a href="/"><img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/images_4ndrad_small.jpg"/></a>
+                            <a href="/">
+                                <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/images_4ndrad_small.jpg" style=""/>
+                            </a>
                         </div>
-                        <div class="block col-md-12 hover">
+                        <div class="block col-md-12 hover hvr-float">
                             <div class="text-center" style="background-color: #EEE7D0; color: #000; height: 150px;">
-                                <br/><br/><br/>
+                                <br/>
+                                <br/>
+                                <br/>
                                 <font size="4">
                                     <strong>Naglar</strong>
                                     <br/>
                                     <i class="fa fa-caret-down"/>
                                 </font>
                             </div>
-                            <a href="/"><img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/shellacbild.jpg"/></a>
+                            <a href="/">
+                                <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/shellacbild.jpg"/>
+                            </a>
                         </div>
                     </div>
                     <div class="block col-md-4">
-                        <div class="block col-md-12 hover">
-                        <a href="/"><div style="background: url('/theme_teamdoc/static/src/img/hudvardsrummet/behandlingar.jpg'); background-size: cover; height: 467px; margin: auto;"/></a>
+                        <div class="block col-md-12 hover hvr-float">
+                            <div style="background: url('/theme_teamdoc/static/src/img/hudvardsrummet/behandlingar.jpg'); background-size: cover; height: 467px; margin: auto;"/>
                             <div class="text-center" style="background-color: #000; color: #fff; height: 115px;">
                                 <br/>
                                 <font size="4">
@@ -42,18 +50,24 @@
                         </div>
                     </div>
                     <div class="block col-md-4">
-                        <div class="block col-md-12 hover">
-                            <a href="/"><img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/image-teoxane.jpg"/></a>
-                            <div class="text-center" style="background-color: #EEE7D0; color: #000; height: 63px;"><br/>
+                        <div class="block col-md-12 hover hvr-float">
+                            <a href="/">
+                                <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/image-teoxane.jpg" style=""/>
+                            </a>
+                            <div class="text-center" style="background-color: #EEE7D0; color: #000; height: 63px;">
+                                <br/>
                                 <font size="4">
                                     <i class="fa fa-caret-up"/>
                                     <strong>Webshop</strong>
                                 </font>
                             </div>
                         </div>
-                        <div class="block col-md-12 hover">
-                            <a href="/"><img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/personal.png"/></a>
-                            <div class="text-center" style="background-color: #B9A55A; color: #fff; height: 63px;"><br/>
+                        <div class="block col-md-12 hover hvr-float">
+                            <a href="/">
+                                <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/personal.png" style=""/>
+                            </a>
+                            <div class="text-center" style="background-color: #B9A55A; color: #fff; height: 63px;">
+                                <br/>
                                 <font size="4">
                                     <i class="fa fa-caret-up"/>
                                     <strong>Om oss</strong>
@@ -70,24 +84,36 @@
                         </div>
                         <div class="row">
                             <div class="block col-md-4 col-xs-12 hover">
-                                <a href="/"><img src="/theme_teamdoc/static/src/img/hudvardsrummet/clearstart.png" style="width: 380px;"/></a>
+                                <a href="/">
+                                    <img src="/theme_teamdoc/static/src/img/hudvardsrummet/clearstart.png" style="width: 380px;"/>
+                                </a>
                             </div>
                             <div class="block col-md-4 col-xs-12 hover">
-                                <a href="/"><img src="/theme_teamdoc/static/src/img/hudvardsrummet/kahina.jpg" style="width: 380px;"/></a>
+                                <a href="/">
+                                    <img src="/theme_teamdoc/static/src/img/hudvardsrummet/kahina.jpg" style="width: 380px;"/>
+                                </a>
                             </div>
                             <div class="block col-md-4 col-xs-12 hover">
-                                <a href="/"><img src="/theme_teamdoc/static/src/img/hudvardsrummet/Teosyal.jpg" style="width: 380px;"/></a>
+                                <a href="/">
+                                    <img src="/theme_teamdoc/static/src/img/hudvardsrummet/Teosyal.jpg" style="width: 380px;"/>
+                                </a>
                             </div>
                         </div>
                         <div class="row">
                             <div class="block col-md-4 col-xs-12 hover">
-                                <a href="/"><img src="/theme_teamdoc/static/src/img/hudvardsrummet/dermalogica.jpg" style="width: 380px;"/></a>
+                                <a href="/">
+                                    <img src="/theme_teamdoc/static/src/img/hudvardsrummet/dermalogica.jpg" style="width: 380px;"/>
+                                </a>
                             </div>
                             <div class="block col-md-4 col-xs-12 hover">
-                                <a href="/"><img src="/theme_teamdoc/static/src/img/hudvardsrummet/jane-iredale.jpg" style="width: 380px;"/></a>
+                                <a href="/">
+                                    <img src="/theme_teamdoc/static/src/img/hudvardsrummet/jane-iredale.jpg" style="width: 380px;"/>
+                                </a>
                             </div>
                             <div class="block col-md-4 col-xs-12 hover">
-                                <a href="/"><img src="/theme_teamdoc/static/src/img/hudvardsrummet/dermacuetic.jpg" style="width: 380px;"/></a>
+                                <a href="/">
+                                    <img src="/theme_teamdoc/static/src/img/hudvardsrummet/dermacuetic.jpg" style="width: 380px"/>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -96,10 +122,88 @@
                         <div class="col-md-2">
                             <img src="/theme_teamdoc/static/src/img/hudvardsrummet/sidfot.png" style="width: 100%;"/>
                         </div>
-                        <div class="col-md-5"/>
-                    </div>
+                        <div class="col-md-5"/></div>
                 </div>
             </section>
         </div>
     </t>
 </t>
+
+
+<!-- theme overwrite -->
+<?xml version="1.0"?>
+<data inherit_id="website.layout" customize_show="True" active="False" name="Theme Block Logo" priority="99">
+    <!-- Customize CSS -->
+    <xpath expr="//head" position="after">
+        <link href="/theme_teamdoc/static/src/css/hudvardsrummet.css" rel="stylesheet"/>
+        <link href="http://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet" type="text/css"/>
+    </xpath>
+    <!-- hide the original menu bar -->
+    <xpath expr="//body/div['id=wrawrap']/header/div" position="attributes">
+        <attribute name="class">navbar navbar-default navbar-static-top hidden-lg hidden-md hidden-sm</attribute>
+    </xpath>
+
+    <!-- add Block Logo style menu -->
+    <xpath expr="//body/div['id=wrawrap']/header" position="inside">
+        <div class="container">
+            <div class="block col-md-12 hidden-xs">
+                <img id="bl-logo" src="/theme_teamdoc/static/src/img/hudvardsrummet/sommar2013.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
+            </div>
+        </div>
+        <div id="bl-menu" class="bl-navbar hidden-xs">
+            <div class="container">
+                <div id="bl-menu-bar" class="block col-md-12">
+                    <div class="row">
+                        <ul class="nav navbar-nav">
+                            <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                                <t t-call="website.submenu"/>
+                            </t>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </xpath>
+
+    <!-- define a class to body -->
+    <xpath expr="//body" position="attributes">
+        <attribute name="class">bl-body</attribute>
+    </xpath>
+    <!-- define a class to footer -->
+    <xpath expr="//footer" position="attributes">
+        <attribute name="class">bl-footer</attribute>
+    </xpath>
+    <!-- add log in/out in footer -->
+    <xpath expr="//footer" position="inside">
+        <div class="container">
+            <div class="pull-right">
+                <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <b>
+                            <span t-esc="user_id.name"/>
+                            <span class="caret"/>
+                        </b>
+                    </a>
+                    <ul class="dropdown-menu js_usermenu" role="menu">
+                        <li><a href="/web" role="menuitem">My Account</a></li>
+                        <li class="divider"/>
+                        <li><a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a></li>
+                    </ul>
+                </li>
+            </div>
+            <div class="pull-right">
+                <li groups="base.group_public">
+                    <a t-attf-href="/web/login">
+                        <b>Sign in</b>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </xpath>
+    <!-- Customize javascript -->
+    <xpath expr="//body" position="after">
+        <script type="text/javascript" src="/theme_vertel/static/src/js/theme_block_logo.js"/>
+    </xpath>
+
+</data>
+

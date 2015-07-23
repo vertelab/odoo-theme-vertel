@@ -124,6 +124,21 @@
                         <ul class="dropdown-menu">
                             <!-- Options list -->
                             <li data-value="hvr-grow"><a>Grow</a></li>
+                            <li data-value="hvr-shrink"><a>Shrink</a></li>
+                            <li data-value="hvr-pulse"><a>Pulse</a></li>
+                            <li data-value="hvr-pulse-grow"><a>Pulse Grow</a></li>
+                            <li data-value="hvr-pulse-shrink"><a>Pulse Shrink</a></li>
+                            <li data-value="hvr-push"><a>Push</a></li>
+                            <li data-value="hvr-pop"><a>Pop</a></li>
+                            <li data-value="hvr-bounce-in"><a>Bounce In</a></li>
+                            <li data-value="hvr-bounce-out"><a>Bounce Out</a></li>
+                            <li data-value="hvr-rotate"><a>Rotate</a></li>
+                            <li data-value="hvr-grow-rotate"><a>Grow Rotate</a></li>
+                            <li data-value="hvr-float"><a>Float</a></li>
+                            <li data-value="hvr-sink"><a>Sink</a></li>
+                            <li data-value="hvr-bob"><a>Bob</a></li>
+                            <li data-value="hvr-hang"><a>Hang</a></li>
+                            <li data-value="hvr-skew"><a>Skew</a></li>
                             <li data-value="hvr-skew-forward"><a>Skew Forward</a></li>
                             <li data-value="hvr-skew-backward"><a>Skew Backward</a></li>
                             <li data-value="hvr-wobble-horizontal"><a>Wobble Horizontal</a></li>
