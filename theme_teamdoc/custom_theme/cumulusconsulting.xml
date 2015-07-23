@@ -1,0 +1,45 @@
+<!-- home -->
+<t t-name="website.hem">
+    <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty">
+            <div class="oe_structure oe_empty" id="wrap">
+                <div class="container">
+                    <div class="col-md-12">
+                        <img src="/theme_teamdoc/static/src/img/cumulusconsulting/start.jpg" class="img-responsive" usemap="#Map" height="600" width="900" border="0" style="display: block; margin: auto;"/>
+                        <map name="Map">
+                            <area coords="142,243,192,404" href="/page/our-business" shape="rect" target="_self"/>
+                            <area coords="297,243,335,370" href="/page/our-clients" shape="rect" target="_self"/>
+                            <area coords="441,241,473,435" href="/page/our-employees" shape="rect" target="_self"/>
+                            <area coords="561,239,597,371" href="/page/career" shape="rect" target="_self"/>
+                            <area coords="699,245,740,401" href="/page/website.contactus" shape="rect" target="_self"/>
+                        </map>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+</t>
+
+<!-- menu -->
+<?xml version="1.0"?>
+<t t-name="website.our-business">
+    <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty">
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="header_business">
+                        <img src="/theme_teamdoc/static/src/img/cumulusconsulting/menu.jpg" usemap="#Map" height="240" width="900" border="0" style="display: block; margin: auto;"/>
+                        <map name="Map">
+                            <area shape="rect" coords="148,13,205,180" href="/page/our-business" target="_self"/>
+                            <area shape="rect" coords="304,15,348,145" href="/page/our-clients" target="_self"/>
+                            <area shape="rect" coords="447,12,483,205" href="/page/our-employees" target="_self"/>
+                            <area shape="rect" coords="570,10,605,139" href="/page/career" target="_self"/>
+                            <area shape="rect" coords="704,16,751,172" href="/page/website.contactus" target="_self"/>
+                        </map>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+</t>
+
