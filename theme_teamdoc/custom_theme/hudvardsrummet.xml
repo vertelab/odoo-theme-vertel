@@ -5,114 +5,117 @@
             <section>
                 <div class="container mb16">
                     <div class="block col-md-4">
-                        <div class="block col-md-12 hover hvr-float">
-                            <div class="text-center" style="background-color: #B9A55A; color: #fff; height: 151px;">
-                                <br/>
-                                <br/>
-                                <br/>
-                                <font size="4">
-                                    <strong>Nyheter</strong>
+                        <a href="/">
+                            <div class="block col-md-12 hover hvr-float">
+                                <div class="text-center" style="background-color: #B9A55A; color: #fff; height: 151px;">
                                     <br/>
-                                    <i class="fa fa-caret-down"/>
-                                </font>
-                            </div>
-                            <a href="/">
+                                    <br/>
+                                    <br/>
+                                    <font size="4">
+                                        <strong>Nyheter</strong>
+                                        <br/>
+                                        <i class="fa fa-caret-down"/>
+                                    </font>
+                                </div>
                                 <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/images_4ndrad_small.jpg" style=""/>
-                            </a>
-                        </div>
-                        <div class="block col-md-12 hover hvr-float">
-                            <div class="text-center" style="background-color: #EEE7D0; color: #000; height: 150px;">
-                                <br/>
-                                <br/>
-                                <br/>
-                                <font size="4">
-                                    <strong>Naglar</strong>
-                                    <br/>
-                                    <i class="fa fa-caret-down"/>
-                                </font>
                             </div>
-                            <a href="/">
+                        </a>
+                        <a href="/">
+                            <div class="block col-md-12 hover hvr-float">
+                                <div class="text-center" style="background-color: #EEE7D0; color: #000; height: 150px;">
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                    <font size="4">
+                                        <strong>Naglar</strong>
+                                        <br/>
+                                        <i class="fa fa-caret-down"/>
+                                    </font>
+                                </div>
                                 <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/shellacbild.jpg"/>
-                            </a>
-                        </div>
+                            </div>
+                        </a>
                     </div>
                     <div class="block col-md-4">
-                        <div class="block col-md-12 hover hvr-float">
-                            <div style="background: url('/theme_teamdoc/static/src/img/hudvardsrummet/behandlingar.jpg'); background-size: cover; height: 467px; margin: auto;"/>
-                            <div class="text-center" style="background-color: #000; color: #fff; height: 115px;">
-                                <br/>
-                                <font size="4">
-                                    <i class="fa fa-caret-up"/>
+                        <a href="/">
+                            <div class="block col-md-12 hover hvr-float">
+                                <div style="background: url('/theme_teamdoc/static/src/img/hudvardsrummet/behandlingar.jpg'); background-size: cover; height: 467px; margin: auto;"/>
+                                <div class="text-center" style="background-color: #000; color: #fff; height: 115px;">
                                     <br/>
-                                    <strong>Behandlingar</strong>
-                                </font>
+                                    <font size="4">
+                                        <i class="fa fa-caret-up"/>
+                                        <br/>
+                                        <strong>Behandlingar</strong>
+                                    </font>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="block col-md-4">
-                        <div class="block col-md-12 hover hvr-float">
-                            <a href="/">
+                        <a href="/">
+                            <div class="block col-md-12 hover hvr-float">
                                 <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/image-teoxane.jpg" style=""/>
-                            </a>
-                            <div class="text-center" style="background-color: #EEE7D0; color: #000; height: 63px;">
-                                <br/>
-                                <font size="4">
-                                    <i class="fa fa-caret-up"/>
-                                    <strong>Webshop</strong>
-                                </font>
+                                <div class="text-center" style="background-color: #EEE7D0; color: #000; height: 63px;">
+                                    <br/>
+                                    <font size="4">
+                                        <i class="fa fa-caret-up"/>
+                                        <strong>Webshop</strong>
+                                    </font>
+                                </div>
                             </div>
-                        </div>
-                        <div class="block col-md-12 hover hvr-float">
-                            <a href="/">
+                        </a>
+                        <a href="/">
+                            <div class="block col-md-12 hover hvr-float">
                                 <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/personal.png" style=""/>
-                            </a>
-                            <div class="text-center" style="background-color: #B9A55A; color: #fff; height: 63px;">
-                                <br/>
-                                <font size="4">
-                                    <i class="fa fa-caret-up"/>
-                                    <strong>Om oss</strong>
-                                </font>
+                                <div class="text-center" style="background-color: #B9A55A; color: #fff; height: 63px;">
+                                    <br/>
+                                    <font size="4">
+                                        <i class="fa fa-caret-up"/>
+                                        <strong>Om oss</strong>
+                                    </font>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
-                    <div class="block col-md-12 mt16 hidden-xs">
-                        <div class="text-center" style="background-color: #E6E6E6; color: #000; height: 70px;">
+                    <div class="block col-md-12 mt16">
+                        <div class="col-md-12 col-xs-12 text-center" style="background-color: #E6E6E6; color: #000; height: 70px;">
+                            <br/>
                             <font size="4">
                                 <i class="fa fa-caret-down"/>
                                 <strong>Produkter</strong>
                             </font>
                         </div>
-                        <div class="row">
+                        <div class="col-md-12 row" style="display: block; margin: auto;">
                             <div class="block col-md-4 col-xs-12 hover">
                                 <a href="/">
-                                    <img src="/theme_teamdoc/static/src/img/hudvardsrummet/clearstart.png" style="width: 380px;"/>
+                                    <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/clearstart.png" style="width: 380px;"/>
                                 </a>
                             </div>
                             <div class="block col-md-4 col-xs-12 hover">
                                 <a href="/">
-                                    <img src="/theme_teamdoc/static/src/img/hudvardsrummet/kahina.jpg" style="width: 380px;"/>
+                                    <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/kahina.jpg" style="width: 380px;"/>
                                 </a>
                             </div>
                             <div class="block col-md-4 col-xs-12 hover">
                                 <a href="/">
-                                    <img src="/theme_teamdoc/static/src/img/hudvardsrummet/Teosyal.jpg" style="width: 380px;"/>
+                                    <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/Teosyal.jpg" style="width: 380px;"/>
                                 </a>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="col-md-12 row" style="display: block; margin: auto;">
                             <div class="block col-md-4 col-xs-12 hover">
                                 <a href="/">
-                                    <img src="/theme_teamdoc/static/src/img/hudvardsrummet/dermalogica.jpg" style="width: 380px;"/>
+                                    <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/dermalogica.jpg" style="width: 380px;"/>
                                 </a>
                             </div>
                             <div class="block col-md-4 col-xs-12 hover">
                                 <a href="/">
-                                    <img src="/theme_teamdoc/static/src/img/hudvardsrummet/jane-iredale.jpg" style="width: 380px;"/>
+                                    <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/jane-iredale.jpg" style="width: 380px;"/>
                                 </a>
                             </div>
                             <div class="block col-md-4 col-xs-12 hover">
                                 <a href="/">
-                                    <img src="/theme_teamdoc/static/src/img/hudvardsrummet/dermacuetic.jpg" style="width: 380px"/>
+                                    <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/dermacuetic.jpg" style="width: 380px"/>
                                 </a>
                             </div>
                         </div>
@@ -122,7 +125,8 @@
                         <div class="col-md-2">
                             <img src="/theme_teamdoc/static/src/img/hudvardsrummet/sidfot.png" style="width: 100%;"/>
                         </div>
-                        <div class="col-md-5"/></div>
+                        <div class="col-md-5"/>
+                    </div>
                 </div>
             </section>
         </div>

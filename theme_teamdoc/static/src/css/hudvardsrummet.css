@@ -57,13 +57,13 @@
 /* STYLE WHEN MOUSE HOVER */
 #bl-menu-bar > div > ul > li > a:hover,
 #bl-menu-bar > div > ul > li > a:focus {
-    color: #000;
+    color: #B9A55A;
     background-color: #EEE7D0;
 }
 
 /* STYLE WHEN PAGE ACTIVE */
 #bl-menu-bar > div > ul > .active > a {
-    color: #000;
+    color: #B9A55A;
     background-color: #EEE7D0;
 }
 
@@ -91,4 +91,8 @@
 /* FOOTER STYLE*/
 .bl-footer {
     background-color: #EEE7D0;
+}
+
+.bl-footer a {
+    color: #B9A55A;
 }

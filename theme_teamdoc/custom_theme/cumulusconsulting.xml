@@ -21,14 +21,14 @@
 </t>
 
 <!-- menu -->
-<?xml version="1.0"?>
 <t t-name="website.our-business">
     <t t-call="website.layout">
         <div id="wrap" class="oe_structure oe_empty">
             <div class="container">
-                <div class="col-md-12">
+                <div class="col-md-12 hidden-xs">
                     <div class="header_business">
-                        <img src="/theme_teamdoc/static/src/img/cumulusconsulting/menu.jpg" usemap="#Map" height="240" width="900" border="0" style="display: block; margin: auto;"/>
+                        <img class="img-responsive" src="/theme_teamdoc/static/src/img/cumulusconsulting/menu.jpg" usemap="#Map" height="240" width="900" border="0" style="display: block; margin: auto;"/>
+                        <hr style="color: #C10566;"/>
                         <map name="Map">
                             <area shape="rect" coords="148,13,205,180" href="/page/our-business" target="_self"/>
                             <area shape="rect" coords="304,15,348,145" href="/page/our-clients" target="_self"/>
@@ -37,6 +37,21 @@
                             <area shape="rect" coords="704,16,751,172" href="/page/website.contactus" target="_self"/>
                         </map>
                     </div>
+                </div>
+                <div class="col-md-12" style="display: block; margin: auto;">
+                    <div class="col-md-1"/>
+                    <div class="col-md-2 hidden-xs">
+                        <img src="/logo500.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
+                    </div>
+                    <div class="col-md-8 mt16">
+                        <img src="/theme_teamdoc/static/src/img/cumulusconsulting/business.gif"/><br/><br/>
+                        <span>We help our clients develop their business!
+Since 2007, Cumulus Consulting delivers professional services to clients in the financial market. Our speciality is to combine a thorough understanding of our clients' business with extensive experience from IT project management and development. Normally we participate by leading or paving the way for large and business critical IT ventures.
+The typical Cumulus professional has more than 10 years of business experience and a background from IT development and project management.
+Core business competencies within the company include global and sub custody, cash management, payments, asset management, compliance monitoring, international payments network (i.e. Visa, MasterCard), MiFID, S.W.I.F.T and marketplace infrastructure knowledge. Our consultants are proficient in project management, business process development, procurement and agreement negotiations.
+Cumulus Consulting helps banks and financial institutions to outline, buy and implement tomorrow's business support!</span>
+                    </div>
+                    <div class="col-md-1"/>
                 </div>
             </div>
         </div>
