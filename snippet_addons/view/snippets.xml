@@ -2,7 +2,7 @@
 <openerp>
     <data>
 
-<!-- Customize Snippets -->
+        <!-- Customize Snippets -->
         <template id="custom_snippets" inherit_id="website.snippets" name="Custom Snippets">
             <!-- Customize Structure -->
             <xpath expr="//div[@id='snippet_structure']" position="inside">
@@ -23,11 +23,11 @@
                                 <div class="container">
                                     <div class="row content">
                                         <div class="carousel-content col-md-6 col-sm-12">
-                                                <h2>Your Banner Title</h2>
-                                                <h3>Click to customize this text</h3>
-                                                <p>
-                                                    <a href="/page/website.contactus" class="btn btn-success btn-large">Contact us</a>
-                                                </p>
+                                            <h2>Your Banner Title</h2>
+                                            <h3>Click to customize this text</h3>
+                                            <p>
+                                                <a href="/page/website.contactus" class="btn btn-success btn-large">Contact us</a>
+                                            </p>
                                         </div>
                                         <div class="carousel-img col-md-6 hidden-sm hidden-xs">
                                             <img class="img-responsive" src="/website/static/src/img/banner/banner_picture.png" alt="Banner Odoo Image"/>
@@ -108,11 +108,74 @@
                     </section>
                 </div><!-- End of Swedish clock with week day and name of the day -->
 
+                <div id="image_gallery_with_hover_text">
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_image_gallery.png"/>
+                        <span class="oe_snippet_thumbnail_title">Image Gallery With Hover Text</span>
+                    </div>
+                    <section class="oe_snippet_body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6" style="padding-left: 0; padding-right: 0;">
+                                    <div class="text-center hover-image">
+                                        <img src="/website/static/src/img/desert.jpg" alt="" class="img-responsive"/>
+                                        <a href="/">
+                                            <div class="hover-text hidden">
+                                                <p>Hover Text</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3" style="padding-left: 0; padding-right: 0;">
+                                    <div class="text-center hover-image">
+                                        <img src="/website/static/src/img/china_thumb.jpg" alt="" class="img-responsive"/>
+                                        <a href="/">
+                                            <div class="hover-text hidden">
+                                                <p style="left: 30%;">Hover Text</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3" style="padding-left: 0; padding-right: 0;">
+                                    <div class="text-center hover-image">
+                                        <img src="/website/static/src/img/deers_thumb.jpg" alt="" class="img-responsive"/>
+                                        <a href="/">
+                                            <div class="hover-text hidden">
+                                                <p style="left: 30%;">Hover Text</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3" style="padding-left: 0; padding-right: 0;">
+                                    <div class="text-center hover-image">
+                                        <img src="/website/static/src/img/desert_thumb.jpg" alt="" class="img-responsive"/>
+                                        <a href="/">
+                                            <div class="hover-text hidden">
+                                                <p style="left: 30%;">Hover Text</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3" style="padding-left: 0; padding-right: 0;">
+                                    <div class="text-center hover-image">
+                                        <img src="/website/static/src/img/china_thumb.jpg" alt="" class="img-responsive"/>
+                                        <a href="/">
+                                            <div class="hover-text hidden">
+                                                <p style="left: 30%;">Hover Text</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
             </xpath>
 
         </template>
 
-<!-- Snippet options -->
+        <!-- Snippet options -->
         <template id="more_snippet_options" inherit_id="website.snippet_options" name="More Snippet Options">
 
             <xpath expr="//div[@data-snippet-option-id='transform']" position="after">
