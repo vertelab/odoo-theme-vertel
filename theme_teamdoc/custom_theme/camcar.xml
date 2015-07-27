@@ -1,0 +1,230 @@
+<!-- hem -->
+<?xml version="1.0"?>
+<t t-name="website.intro">
+  <t t-call="website.layout">
+    <style>
+        .navbar.navbar-static-top{
+            display:none;
+        }
+    </style>
+    <div id="wrap" class="oe_structure oe_empty">
+     <!-- <section class="mb16 para_large mt32">
+        <div class="container">
+          <div class="row">
+            <p style="text-align: center;">
+              <img class="img-rounded" src="/website/image/ir.attachment/38_6b75868/datas" style="transform: scaleX(1.51) scaleY(1.2); animation-play-state: paused; transition: none 0s ease 0s ;"/>
+            </p>
+            <div class="mt16 mb0 col-md-12">
+              <div/>
+            </div>
+          </div>
+        </div>
+      </section>-->
+      <section class="para_large mb16 mt0" style="">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center mb0 mt32">
+              <h3 class="text-muted">
+                <strong>Om Camcar</strong>
+              </h3>
+            </div>
+            <div class="col-md-12 mt16 mb0">
+              <div class="panel-body">
+                <p>
+                  <font face="Verdana">Det här är ett litet företag som arbetar med uthyrning av kamerabilar, trailer och diverse andra fordon och tillbehör som Ni kan komma att behöva under film- och</font>
+                  <font face="Verdana">TV-inspelningar. Vi kan även bistå med vissa specialeffekter och andra tekniska lösningar.</font>
+                </p>
+                <div>
+                  <font face="Verdana">Den stora kamerabilen är en ombyggd Dodge Crew Cab och trailern är byggd från grunden för att vara anpassad efter alla tänkbara regler och önskemål. Vi har även eftersträvat att ha så hög säkerhet som möjligt vad gäller både bil och trailer.</font>
+                </div>
+                <div>
+                  <font face="Verdana"> </font>
+                </div>
+                <div>
+                  <font face="Verdana">Nu finns även en mindre kamerabil - en Chevrolet S10 - att tillgå. Vi har även utökat verksamheten med en locationbuss.</font>
+                </div>
+                <div>
+                  <font face="Verdana"> </font>
+                </div>
+                <div>
+                  <font face="Verdana">Trots namnet (Göran Lundqvist i <strong>Stockholm</strong> AB) så är det här ett företag som arbetar över hela Norden - även i Europa vid behov. Vi finns där kunden vill ha oss.</font>
+                </div>
+                <div>
+                  <font face="Verdana"> </font>
+                </div>
+                <p>
+                  <font face="Verdana">Om ni har några frågor, funderingar eller synpunkter på priser eller produkter så är ni välkomna att höra av Er på telefon eller skicka oss ett mail.  </font>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr/>
+      <section class="mb48 mt48">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <a href="/page/uthyrning">
+                <img alt="Odoo - Sample 1 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/camcar/uthyrning.jpg"/>
+              </a>
+              <h4 class="mt16">Uthyrning</h4>
+              <p>Kolla in vårt stora utbud av bilar och fordon som du kan hyra hos oss.</p>
+            </div>
+            <div class="col-md-4">
+              <a href="/page/fotogalleri">
+                <img alt="Odoo - Sample 2 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/camcar/galleri.jpg"/>
+              </a>
+              <h4 class="mt16">Fotogalleri</h4>
+              <p>En fotogalleri som visar lite av de jobb som har utförts med hjälp av våra bilar och fordon.</p>
+            </div>
+            <div class="col-md-4">
+              <a href="/page/contactus">
+                <img alt="Odoo - Sample 3 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/GoKart/kontakt_.jpg"/>
+              </a>
+              <h4 class="mt16">Kontakta Oss</h4>
+              <p>Kontakta oss gärna om du har några frågor eller funderingar.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr/>
+    </div>
+  </t>
+
+
+</t>
+
+<!-- ut -->
+<t t-name="website.uthyrning">
+  <t t-call="website.layout">
+    <div id="wrap" class="oe_structure oe_empty">
+      <section style="height: 72px; overflow: hidden;">
+        <div class="container"> 
+<div class="col-md-1"/>
+
+<div><a href="/page/homepage"><button class="btn btn-default" type="button">Hem</button></a></div>
+</div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 mb16">
+              <h2 class="text-center">Uthyrning</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="mt0"/>
+      <section class="mb32 mt64">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <a href="/page/locationbuss"><img alt="Odoo - Sample 1 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/camcar/locationbuss1_.jpg"/></a>
+              <h4 class="mt16">Locationbuss</h4>
+            </div>
+            <div class="col-md-4">
+              <img alt="Odoo - Sample 2 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/camcar/kamerabil1_.jpg"/>
+              <h4 class="mt16">Kamerabilar &amp; Tillbehör</h4>
+            </div>
+            <div class="col-md-4">
+              <img alt="Odoo - Sample 3 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/camcar/ovrigafordon1_.jpg"/>
+              <h4 class="mt16">Övriga Fordon</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mb16 mt48">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <img alt="Odoo - Sample 1 for three columns" class="img img-responsive" src="/theme_teamdoc/static/src/img/camcar/Rokmaskin_.png" style=""/>
+              <h4 class="mt16">Rökmaskin Elverk &amp; Tillbehör</h4>
+            </div>
+            <div class="col-md-4">
+              <img alt="Odoo - Sample 2 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/camcar/question_.jpg"/>
+              <h4 class="mt16">Kranar &amp; Riggar</h4>
+              <p/>
+              <p>Sidan är under uppbyggnad - bilder och annan information kommer inom kort.</p>
+              <p/>
+            </div>
+            <div class="col-md-4">
+              <img alt="Odoo - Sample 3 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/camcar/question_.jpg"/>
+              <h4 class="mt16">Släp</h4>
+              <p>Sidan är under uppbyggnad - bilder och annan information kommer inom kort.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mb16 mt48">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2"/>
+            <div class="col-md-4">
+              <img alt="Odoo - Sample 3 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/camcar/ovrigt_.png"/>
+              <h4 class="mt16">Övrigt</h4>
+            </div>
+            <div class="col-md-4">
+              <img alt="Odoo - Sample 3 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/camcar/allafordon_.jpg" style=""/>
+              <h4 class="mt16">Alla Fordon</h4>
+            </div>
+            <div class="col-md-2"/>
+          </div>
+        </div>
+      </section>
+    </div>
+  </t>
+</t>
+
+
+<!-- locationbuss -->
+<t t-name="website.locationbuss">
+  <t t-call="website.layout">
+    <div id="wrap" class="oe_structure oe_empty">
+      <section class="mt48" style="height: 40px; overflow: hidden;">
+        <div class="container">
+          <div class="col-md-1"/>
+          <div>
+            <a href="/page/uthyrning"><button class="btn btn-default" type="button">Tillbaka</button></a>
+          </div>
+        </div>
+      </section>
+      <hr/>
+      <section class="mb16 mt48">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <img alt="Odoo - Sample 1 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/camcar/locationbuss1_.jpg" style=""/>
+            </div>
+            <div class="col-md-4">
+              <img alt="Odoo - Sample 2 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/camcar/Bussen 2.jpg"/>
+            </div>
+            <div class="col-md-4">
+              <img alt="Odoo - Sample 3 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/camcar/Bussen 3.jpg" style=""/>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mb16 mt0">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 mb16 mt16">
+              <div>
+                <p>
+                  <font face="Verdana">Locationbussen är byggd främst med tanke på arbetsförhållandena för smink- och kostymavdelningarna och att teamet har en stor och bra toalett med en separat ingång utifrån.</font>
+                </p>
+              </div>
+              <div>
+                <p>
+                  <font face="Verdana">Föraren, som alltid är på plats, tar under arbetspassen hand om kaffekokning och all service i bussen. Inköp av smörgåsar, läsk, godis mm kan givetvis ordnas.</font>
+                </p>
+              </div>
+              <div><p><font face="Verdana">Locationbussen är miljögodkänd och registrerad för 8 passagerare. I hyres- priset ingår bland annat strykjärn, strykbräda, sjukvårdslåda samt all städning.</font></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </t>
+</t>
