@@ -33,11 +33,11 @@
                 <link href="/theme_vertel/static/src/css/theme_bs_ruma.css" rel="stylesheet" />
             </xpath>
             <!-- hide the original menu bar -->
-            <xpath expr="//body/div['id=wrawrap']/header/div" position="attributes">
+            <xpath expr="//body/div[@id='wrapwrap']/header/div" position="attributes">
                 <attribute name="class">navbar navbar-default navbar-static-top hidden-lg hidden-md hidden-sm</attribute>
             </xpath>
             <!-- add BS-Multipurpose-Ruma style menu -->
-            <xpath expr="//body/div['id=wrawrap']/header" position="inside">
+            <xpath expr="//body/div[@id='wrapwrap']/header" position="inside">
                 <div id="bs-menu" class="navbar navbar-inverse navbar-fixed-top hidden-xs">
                     <div class="container">
                         <div class="row">
@@ -102,11 +102,11 @@
                 <link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative' rel='stylesheet' type='text/css'/>
             </xpath>
             <!-- hide the original menu bar -->
-            <xpath expr="//body/div['id=wrawrap']/header/div" position="attributes">
+            <xpath expr="//body/div[@id='wrapwrap']/header/div" position="attributes">
                 <attribute name="class">navbar navbar-default navbar-static-top hidden-lg hidden-md hidden-sm</attribute>
             </xpath>
             <!-- add Middle Logo style menu -->
-            <xpath expr="//body/div['id=wrawrap']/header" position="inside">
+            <xpath expr="//body/div[@id='wrapwrap']/header" position="inside">
                 <div id="ml-menu" class="ml-navbar hidden-xs">
                     <div id="ml-menu-bar" class="container">
                         <t t-set="menu_left" t-value="website.menu_id.child_id[:len(website.menu_id.child_id)/2]"/>
@@ -183,12 +183,12 @@
                 <link href="/theme_vertel/static/src/css/theme_block_logo.css" rel="stylesheet" />
             </xpath>
             <!-- hide the original menu bar -->
-            <xpath expr="//body/div['id=wrawrap']/header/div" position="attributes">
+            <xpath expr="//body/div[@id='wrapwrap']/header/div" position="attributes">
                 <attribute name="class">navbar navbar-default navbar-static-top hidden-lg hidden-md hidden-sm</attribute>
             </xpath>
 
             <!-- add Block Logo style menu -->
-            <xpath expr="//body/div['id=wrawrap']/header" position="inside">
+            <xpath expr="//body/div[@id='wrapwrap']/header" position="inside">
                 <div class="container">
                     <div class="col-md-12 hidden-xs">
                         <img id="bl-logo" src="/logo1024.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>

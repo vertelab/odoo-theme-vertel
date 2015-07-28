@@ -116,51 +116,51 @@
                     <section class="oe_snippet_body">
                         <div class="container">
                             <div class="row">
-                                <div class="col-md-6" style="padding-left: 0; padding-right: 0;">
+                                <div class="col-md-6 col-sm-6 col-xs-12" style="padding-left: 0; padding-right: 0;">
                                     <div class="text-center hover-image">
                                         <img src="/website/static/src/img/desert.jpg" alt="" class="img-responsive"/>
                                         <a href="/">
-                                            <div class="hover-text hidden">
+                                            <div class="col-md-6 col-xs-12 hover-text hidden">
                                                 <p>Hover Text</p>
                                             </div>
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-md-3" style="padding-left: 0; padding-right: 0;">
+                                <div class="col-md-3 col-sm-3 col-xs-6" style="padding-left: 0; padding-right: 0;">
                                     <div class="text-center hover-image">
                                         <img src="/website/static/src/img/china_thumb.jpg" alt="" class="img-responsive"/>
                                         <a href="/">
-                                            <div class="hover-text hidden">
+                                            <div class="col-md-3 col-sm-3 col-xs-6 hover-text hidden">
                                                 <p style="left: 30%;">Hover Text</p>
                                             </div>
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-md-3" style="padding-left: 0; padding-right: 0;">
+                                <div class="col-md-3 col-sm-3 col-xs-6" style="padding-left: 0; padding-right: 0;">
                                     <div class="text-center hover-image">
                                         <img src="/website/static/src/img/deers_thumb.jpg" alt="" class="img-responsive"/>
                                         <a href="/">
-                                            <div class="hover-text hidden">
+                                            <div class="col-md-3 col-sm-3 col-xs-6 hover-text hidden">
                                                 <p style="left: 30%;">Hover Text</p>
                                             </div>
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-md-3" style="padding-left: 0; padding-right: 0;">
+                                <div class="col-md-3 col-sm-3 col-xs-6" style="padding-left: 0; padding-right: 0;">
                                     <div class="text-center hover-image">
                                         <img src="/website/static/src/img/desert_thumb.jpg" alt="" class="img-responsive"/>
                                         <a href="/">
-                                            <div class="hover-text hidden">
+                                            <div class="col-md-3 col-sm-3 col-xs-6 hover-text hidden">
                                                 <p style="left: 30%;">Hover Text</p>
                                             </div>
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-md-3" style="padding-left: 0; padding-right: 0;">
+                                <div class="col-md-3 col-sm-3 col-xs-6" style="padding-left: 0; padding-right: 0;">
                                     <div class="text-center hover-image">
                                         <img src="/website/static/src/img/china_thumb.jpg" alt="" class="img-responsive"/>
                                         <a href="/">
-                                            <div class="hover-text hidden">
+                                            <div class="col-md-3 col-sm-3 col-xs-6 hover-text hidden">
                                                 <p style="left: 30%;">Hover Text</p>
                                             </div>
                                         </a>

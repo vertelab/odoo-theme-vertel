@@ -4,6 +4,10 @@
     position: relative;
 }
 
+.hover-image > img {
+    width: 100%;
+}
+
 .hover-text {
     background-color: #000;
     position: absolute;
