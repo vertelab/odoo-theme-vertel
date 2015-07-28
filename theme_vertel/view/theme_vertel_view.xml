@@ -248,6 +248,78 @@
             <xpath expr="//body" position="after">
                 <script type="text/javascript" src="/theme_vertel/static/src/js/theme_block_logo.js"/>
             </xpath>
+        </template>
+            
+            <!-- Left Side Menu Bottom -->
+        <template id="theme_left_side_menu_bottom" inherit_id="website.layout" customize_show="True" active="False" name="Theme Left Side Menu Bottom" priority="99">
+            <!-- Customize CSS -->
+            <xpath expr="//head" position="after">
+                <link href="/theme_vertel/static/src/css/theme_left_side_menu_bottom.css" rel="stylesheet" />
+            </xpath>
+            <!-- hide the original menu bar -->
+            <xpath expr="//body/div[@id='wrapwrap']/header/div" position="attributes">
+                <attribute name="class">navbar navbar-default navbar-static-top hidden-lg hidden-md hidden-sm</attribute>
+            </xpath>
+
+            <!-- add Left Side Menu Bottom style -->
+            <xpath expr="//body/div[@id='wrapwrap']/header" position="inside">
+                <div id="lsmb-menu" class="lsmb-navbar hidden-xs">
+                    <div class="container">
+                        <div id="lsmb-menu-bar" class="col-md-3">
+                            <ul class="nav nav-stacked nav-pills">
+                                <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                                    <li><t t-call="website.submenu"/></li>
+                                </t>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+
+            <!-- define a class to body -->
+            <xpath expr="//body" position="attributes">
+                <attribute name="class">lsmb-body</attribute>
+            </xpath>
+            <!-- define a class to footer -->
+            <xpath expr="//footer" position="attributes">
+                <attribute name="class">lsmb-footer</attribute>
+            </xpath>
+            <!-- add log in/out in footer -->
+            <xpath expr="//footer" position="inside">
+                <div class="container" id="lsmb-footer">
+                    <div class="pull-right">
+                        <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <b>
+                                    <span t-esc="user_id.name"/>
+                                    <span class="caret"/>
+                                </b>
+                            </a>
+                            <ul class="dropdown-menu js_usermenu" role="menu">
+                                <li><a href="/web" role="menuitem">My Account</a></li>
+                                <li class="divider"/>
+                                <li><a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                    <div class="pull-right">
+                        <li groups="base.group_public">
+                            <a t-attf-href="/web/login">
+                                <b>Sign in</b>
+                            </a>
+                        </li>
+                    </div>
+                </div>
+            </xpath>
+            <!-- Replace Main t-raw -->
+            <xpath expr="//main" position="replace">
+                <main>
+                    <div class="col-lg-3 col-md-3 col-sm-3"></div>
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+                        <t t-raw="0"/>
+                    </div>
+                </main>
+            </xpath>
 
         </template>
 

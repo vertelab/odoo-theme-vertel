@@ -1,9 +1,10 @@
-/* CAMCAR */
+/*=============================================================
+                       Left Side Menu Bottom
+ ============================================================ */
 
 .lsmb-body {
-    background: url('/theme_teamdoc/static/src/img/camcar/bg.jpg');
+    background: #fff;
     list-style: none;
-    font-family: 'Bowlby One SC', cursive;
 }
 
 /* MENU */
@@ -14,14 +15,13 @@
     position: fixed;
     left: 20px;
     bottom: 100px;
+    z-index: 999;
 }
 
 #lsmb-menu-bar > ul > li > a {
     padding-top: 10px;
     padding-bottom: 10px;
-    color: #fff;
-    font-family: 'Bowlby One SC', cursive;
-    text-shadow: 0px 0px 3px #fff;
+    color: #343434;
 }
 
 /* STYLE WHEN MOUSE HOVER */
@@ -35,7 +35,6 @@
 #lsmb-menu-bar > ul > .active > a {
     color: #D31940;
     background:none;
-    text-shadow: 0px 0px 3px #fff;
 }
 
 .navbar {
@@ -46,19 +45,13 @@
     border-color: none;
 }
 
-p{
-    color:#e6e6e6;
-}
 
 /* FOOTER STYLE*/
 .lsmb-footer > div > div > li > a{
     color:#fff;
 }
-
 #wrapwrap > footer{
     height:20px;
     background:#888;
-    opacity:0.8;
+    opacity:0.5;
 }
-
-

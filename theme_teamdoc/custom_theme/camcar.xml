@@ -1,225 +1,247 @@
 <!-- hem -->
-<?xml version="1.0"?>
-<t t-name="website.intro">
+<t t-name="website.hem">
   <t t-call="website.layout">
-    <style>
-        .navbar.navbar-static-top{
-            display:none;
-        }
-    </style>
+    <xpath expr="//body" position="inside">
+      <video autoplay="" style="z-index: -100;transform: translateX(-50%) translateY(-50%);transition: opacity 1s ease 0s;top: 50%;left: 50%; position: fixed; min-width: 100%;min-height: 100%; width: auto; height: auto; ">
+        <source type="video/mp4" src="/theme_teamdoc/static/camcar1.webm"/>
+      </video>
+    </xpath>
     <div id="wrap" class="oe_structure oe_empty">
-     <!-- <section class="mb16 para_large mt32">
+      <style type="text/css">#bl-logo {
+      display:none;
+      }
+</style>
+      <section class="s_big_picture automatic-color readable" style="">
         <div class="container">
           <div class="row">
-            <p style="text-align: center;">
-              <img class="img-rounded" src="/website/image/ir.attachment/38_6b75868/datas" style="transform: scaleX(1.51) scaleY(1.2); animation-play-state: paused; transition: none 0s ease 0s ;"/>
-            </p>
-            <div class="mt16 mb0 col-md-12">
-              <div/>
+            <div class="col-md-12 text-center mt32 mb32">
+              <h2/>
             </div>
           </div>
         </div>
-      </section>-->
-      <section class="para_large mb16 mt0" style="">
+      </section>
+    </div>
+  </t>
+</t>
+
+<!--Om Oss-->
+<t name="Homepage" priority="29" t-name="website.homepage">
+  <t t-call="website.layout">
+    <!-- <style>
+        .bl-navbar{
+            display:none;
+        }
+        .bl-navbar-fixed-top {
+            display:none;
+            }
+    </style>-->
+    <div id="wrap" class="oe_structure oe_empty">
+      <section class="" style=" height: 96px;margin-top:11%; margin-left:-5%;" >
         <div class="container">
           <div class="row">
-            <div class="col-md-12 text-center mb0 mt32">
-              <h3 class="text-muted">
-                <strong>Om Camcar</strong>
-              </h3>
+            <div class="col-md-10 text-center">
+              <h1 class="text-muted" style="color:#D31940">
+                Om Camcar
+              </h1>
             </div>
-            <div class="col-md-12 mt16 mb0">
-              <div class="panel-body">
-                <p>
-                  <font face="Verdana">Det här är ett litet företag som arbetar med uthyrning av kamerabilar, trailer och diverse andra fordon och tillbehör som Ni kan komma att behöva under film- och</font>
-                  <font face="Verdana">TV-inspelningar. Vi kan även bistå med vissa specialeffekter och andra tekniska lösningar.</font>
-                </p>
+            <div class="col-md-10 ">
+              <div class="panel-body" style="font-family: 'Bowlby One SC', cursive; font-size:1.2em;">
+                <p>Det här är ett litet företag som arbetar med uthyrning av kamerabilar, trailer och diverse andra fordon och tillbehör som Ni kan komma att behöva under film- och TV-inspelningar. Vi kan även bistå med vissa specialeffekter och andra tekniska lösningar.</p>
                 <div>
-                  <font face="Verdana">Den stora kamerabilen är en ombyggd Dodge Crew Cab och trailern är byggd från grunden för att vara anpassad efter alla tänkbara regler och önskemål. Vi har även eftersträvat att ha så hög säkerhet som möjligt vad gäller både bil och trailer.</font>
+                  <p>Den stora kamerabilen är en ombyggd Dodge Crew Cab och trailern är byggd från grunden för att vara anpassad efter alla tänkbara regler och önskemål. Vi har även eftersträvat att ha så hög säkerhet som möjligt vad gäller både bil och trailer.</p>
                 </div>
                 <div>
-                  <font face="Verdana"> </font>
+                  <p>Nu finns även en mindre kamerabil - en Chevrolet S10 - att tillgå. Vi har även utökat verksamheten med en locationbuss.</p>
                 </div>
                 <div>
-                  <font face="Verdana">Nu finns även en mindre kamerabil - en Chevrolet S10 - att tillgå. Vi har även utökat verksamheten med en locationbuss.</font>
+                  <p>Trots namnet (Göran Lundqvist i Stockholm AB) så är det här ett företag som arbetar över hela Norden - även i Europa vid behov. Vi finns där kunden vill ha oss.</p>
                 </div>
-                <div>
-                  <font face="Verdana"> </font>
-                </div>
-                <div>
-                  <font face="Verdana">Trots namnet (Göran Lundqvist i <strong>Stockholm</strong> AB) så är det här ett företag som arbetar över hela Norden - även i Europa vid behov. Vi finns där kunden vill ha oss.</font>
-                </div>
-                <div>
-                  <font face="Verdana"> </font>
-                </div>
-                <p>
-                  <font face="Verdana">Om ni har några frågor, funderingar eller synpunkter på priser eller produkter så är ni välkomna att höra av Er på telefon eller skicka oss ett mail.  </font>
-                </p>
+                <p>Om ni har några frågor, funderingar eller synpunkter på priser eller produkter så är ni välkomna att höra av Er på telefon eller skicka oss ett mail.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <hr/>
-      <section class="mb48 mt48">
+    </div>
+  </t>
+</t>
+
+
+<!-- Uthyrning -->
+<t t-name="website.uthyrning">
+    <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty">
+            <section style="margin-top:10%; margin-left:-15%;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 ">
+                            <h1 class="text-center" style="color:#D31940">Uthyrning</h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mb32 mt48">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a href="/page/locationbuss">
+                                <div class="hover-image">
+                                    <img alt="Odoo - Sample 1 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/camcar/locationbuss1_.jpg"/>
+                                    <div class="hover-text hidden img-rounded">
+                                        <p style="left: 30%;">
+                                            <font style="font-family: 'Bowlby One SC', cursive; color:#D31940; opacity:1;">Locationbuss</font>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- <div class="col-md-4"><a href="/page/locationbuss"><img alt="Odoo - Sample 1 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/camcar/locationbuss1_.jpg"/></a><h4 class="mt16" style="color:#D31940">Locationbuss</h4></div>-->
+                        <!--<div class="col-md-4"><img alt="Odoo - Sample 2 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/camcar/kamerabil1_.jpg"/><h4 class="mt16" style="color:#D31940">Kamerabilar &amp; Tillbehör</h4></div>-->
+                        <div class="col-md-3">
+                            <a href="/page/kamerabilotillbehor">
+                                <div class="hover-image ">
+                                    <img alt="Odoo - Sample 2 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/camcar/kamerabil1_.jpg"/>
+                                    <div class="hover-text hidden img-rounded">
+                                        <p style="left: 20%;">
+                                            <font style="font-family: 'Bowlby One SC', cursive; color:#D31940; opacity:1;">Kamerabilar &amp; Tillbehör</font>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!--<div class="col-md-4"><img alt="Odoo - Sample 3 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/camcar/ovrigafordon1_.jpg"/><h4 class="mt16" style="color:#D31940">Övriga Fordon</h4></div>-->
+                        <div class="col-md-3">
+                            <a href="/page/ovrigafordon">
+                                <div class="hover-image ">
+                                    <img alt="Odoo - Sample 3 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/camcar/ovrigafordon1_.jpg"/>
+                                    <div class="hover-text hidden img-rounded">
+                                        <p style="left: 20%;">
+                                            <font style="font-family: 'Bowlby One SC', cursive; color:#D31940; opacity:1;">Övriga Fordon</font>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mb16 mt48">
+                <div class="container">
+                    <div class="row">
+                        <!--<div class="col-md-4"><img alt="Odoo - Sample 1 for three columns" class="img img-responsive" src="/theme_teamdoc/static/src/img/camcar/Rokmaskin_.png" style=""/><h4 class="mt16" style="color:#D31940">Rökmaskin Elverk &amp; Tillbehör</h4></div>-->
+                        <div class="col-md-3">
+                            <a href="/page/rokmaskin">
+                                <div class="hover-image ">
+                                    <img alt="Odoo - Sample 1 for three columns" class="img img-responsive" src="/theme_teamdoc/static/src/img/camcar/Rokmaskin_.png" style=""/>
+                                    <div class="hover-text hidden img-rounded">
+                                        <p style="left: 20%;">
+                                            <font style="font-family: 'Bowlby One SC', cursive; color:#D31940; opacity:1;">Rökmaskin &amp; Tillbehör</font>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="hover-image">
+                                <img alt="Odoo - Sample 2 for three columns" class="img img-rounded img-responsive text-center" src="/theme_teamdoc/static/src/img/camcar/question_.jpg"/>
+                                <div class="hover-text hidden img-rounded">
+                                    <p style="left: 30%; font-family: 'Bowlby One SC', cursive; ">
+                                        <h4 class="mt16" style="color:#D31940; text-align:center;">Kranar &amp; Riggar</h4>
+                                        <font size="2px" style="color:#e6e6e6">Sidan är under uppbyggnad - bilder och annan information kommer inom kort.</font>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="hover-image">
+                                <img alt="Odoo - Sample 3 for three columns" class="img img-rounded img-responsive text-center" src="/theme_teamdoc/static/src/img/camcar/question_.jpg"/>
+                                <div class="hover-text hidden img-rounded">
+                                    <p style="left: 30%; font-family: 'Bowlby One SC', cursive;">
+                                        <h4 class="mt16" style="color:#D31940; text-align:center;" >Släp</h4>
+                                        <font size="2px" style="color:#e6e6e6">Sidan är under uppbyggnad - bilder och annan information kommer inom kort.</font>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mb16 mt48">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-md-3">
+                            <a href="/page/ovrigt">
+                                <div class="hover-image">
+                                    <img alt="Odoo - Sample 3 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/camcar/ovrigt_.png"/>
+                                    <div class="hover-text hidden img-rounded">
+                                        <p style="left: 30%;">
+                                            <font style="font-family: 'Bowlby One SC', cursive; color:#D31940; ">Övrigt</font>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!--<div class="col-md-4"><img alt="Odoo - Sample 3 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/camcar/ovrigt_.png"/><h4 class="mt16" style="color:#D31940">Övrigt</h4></div>-->
+                        <!-- <div class="col-md-4"><img alt="Odoo - Sample 3 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/camcar/allafordon_.jpg" style=""/><h4 class="mt16" style="color:#D31940">Alla Fordon</h4></div>-->
+                        <div class="col-md-3">
+                            <a href="/page/allafordon">
+                                <div class="hover-image ">
+                                    <img alt="Odoo - Sample 3 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/camcar/allafordon_.jpg" style=""/>
+                                    <div class="hover-text hidden img-rounded">
+                                        <p style="left: 20%;">
+                                            <font style="font-family: 'Bowlby One SC', cursive; color:#D31940; opacity:1;">Alla Fordon</font>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6"/></div>
+                </div>
+            </section>
+        </div>
+    </t>
+</t>
+
+
+<!-- Locationbuss -->
+<t t-name="website.locationbuss">
+  <t t-call="website.layout">
+    <div id="wrap" class="oe_structure oe_empty">
+      <section class="mt128" style="height: 96px; overflow: hidden; margin-top: 10%;  margin-left:-15%;">
         <div class="container">
           <div class="row">
-            <div class="col-md-4">
-              <a href="/page/uthyrning">
-                <img alt="Odoo - Sample 1 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/camcar/uthyrning.jpg"/>
-              </a>
-              <h4 class="mt16">Uthyrning</h4>
-              <p>Kolla in vårt stora utbud av bilar och fordon som du kan hyra hos oss.</p>
-            </div>
-            <div class="col-md-4">
-              <a href="/page/fotogalleri">
-                <img alt="Odoo - Sample 2 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/camcar/galleri.jpg"/>
-              </a>
-              <h4 class="mt16">Fotogalleri</h4>
-              <p>En fotogalleri som visar lite av de jobb som har utförts med hjälp av våra bilar och fordon.</p>
-            </div>
-            <div class="col-md-4">
-              <a href="/page/contactus">
-                <img alt="Odoo - Sample 3 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/GoKart/kontakt_.jpg"/>
-              </a>
-              <h4 class="mt16">Kontakta Oss</h4>
-              <p>Kontakta oss gärna om du har några frågor eller funderingar.</p>
+            <div class="col-md-12 ">
+              <h1 class="text-center" style="color:#D31940">Locationbuss</h1>
             </div>
           </div>
         </div>
-      </section>
-      <hr/>
-    </div>
-  </t>
-
-
-</t>
-
-<!-- ut -->
-<t t-name="website.uthyrning">
-  <t t-call="website.layout">
-    <div id="wrap" class="oe_structure oe_empty">
-      <section style="height: 72px; overflow: hidden;">
-        <div class="container"> 
-<div class="col-md-1"/>
-
-<div><a href="/page/homepage"><button class="btn btn-default" type="button">Hem</button></a></div>
-</div>
       </section>
       <section>
         <div class="container">
           <div class="row">
-            <div class="col-md-12 mb16">
-              <h2 class="text-center">Uthyrning</h2>
-            </div>
-          </div>
-        </div>
-      </section>
-      <hr class="mt0"/>
-      <section class="mb32 mt64">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <a href="/page/locationbuss"><img alt="Odoo - Sample 1 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/camcar/locationbuss1_.jpg"/></a>
-              <h4 class="mt16">Locationbuss</h4>
-            </div>
-            <div class="col-md-4">
-              <img alt="Odoo - Sample 2 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/camcar/kamerabil1_.jpg"/>
-              <h4 class="mt16">Kamerabilar &amp; Tillbehör</h4>
-            </div>
-            <div class="col-md-4">
-              <img alt="Odoo - Sample 3 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/camcar/ovrigafordon1_.jpg"/>
-              <h4 class="mt16">Övriga Fordon</h4>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="mb16 mt48">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <img alt="Odoo - Sample 1 for three columns" class="img img-responsive" src="/theme_teamdoc/static/src/img/camcar/Rokmaskin_.png" style=""/>
-              <h4 class="mt16">Rökmaskin Elverk &amp; Tillbehör</h4>
-            </div>
-            <div class="col-md-4">
-              <img alt="Odoo - Sample 2 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/camcar/question_.jpg"/>
-              <h4 class="mt16">Kranar &amp; Riggar</h4>
-              <p/>
-              <p>Sidan är under uppbyggnad - bilder och annan information kommer inom kort.</p>
-              <p/>
-            </div>
-            <div class="col-md-4">
-              <img alt="Odoo - Sample 3 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/camcar/question_.jpg"/>
-              <h4 class="mt16">Släp</h4>
-              <p>Sidan är under uppbyggnad - bilder och annan information kommer inom kort.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="mb16 mt48">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-2"/>
-            <div class="col-md-4">
-              <img alt="Odoo - Sample 3 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/camcar/ovrigt_.png"/>
-              <h4 class="mt16">Övrigt</h4>
-            </div>
-            <div class="col-md-4">
-              <img alt="Odoo - Sample 3 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/camcar/allafordon_.jpg" style=""/>
-              <h4 class="mt16">Alla Fordon</h4>
-            </div>
-            <div class="col-md-2"/>
-          </div>
-        </div>
-      </section>
-    </div>
-  </t>
-</t>
-
-
-<!-- locationbuss -->
-<t t-name="website.locationbuss">
-  <t t-call="website.layout">
-    <div id="wrap" class="oe_structure oe_empty">
-      <section class="mt48" style="height: 40px; overflow: hidden;">
-        <div class="container">
-          <div class="col-md-1"/>
-          <div>
-            <a href="/page/uthyrning"><button class="btn btn-default" type="button">Tillbaka</button></a>
-          </div>
-        </div>
-      </section>
-      <hr/>
-      <section class="mb16 mt48">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-3">
               <img alt="Odoo - Sample 1 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/camcar/locationbuss1_.jpg" style=""/>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
               <img alt="Odoo - Sample 2 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/camcar/Bussen 2.jpg"/>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
               <img alt="Odoo - Sample 3 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/camcar/Bussen 3.jpg" style=""/>
             </div>
           </div>
         </div>
       </section>
-      <section class="mb16 mt0">
+      <section class="mt48" style="height: 232px; overflow: hidden;">
         <div class="container">
-          <div class="row">
-            <div class="col-md-12 mb16 mt16">
+          <div class="col-md-10 pull-left" style="font-size:1.2em;">
+            <div>
+              <p>Locationbussen är byggd främst med tanke på arbetsförhållandena för smink- och kostymavdelningarna och att teamet har en stor och bra toalett med en separat ingång utifrån.</p>
               <div>
-                <p>
-                  <font face="Verdana">Locationbussen är byggd främst med tanke på arbetsförhållandena för smink- och kostymavdelningarna och att teamet har en stor och bra toalett med en separat ingång utifrån.</font>
-                </p>
+                <p>Föraren, som alltid är på plats, tar under arbetspassen hand om kaffekokning och all service i bussen. Inköp av smörgåsar, läsk, godis mm kan givetvis ordnas.</p>
               </div>
               <div>
-                <p>
-                  <font face="Verdana">Föraren, som alltid är på plats, tar under arbetspassen hand om kaffekokning och all service i bussen. Inköp av smörgåsar, läsk, godis mm kan givetvis ordnas.</font>
-                </p>
-              </div>
-              <div><p><font face="Verdana">Locationbussen är miljögodkänd och registrerad för 8 passagerare. I hyres- priset ingår bland annat strykjärn, strykbräda, sjukvårdslåda samt all städning.</font></p>
+                <p>Locationbussen är miljögodkänd och registrerad för 8 passagerare. I hyres- priset ingår bland annat strykjärn, strykbräda, sjukvårdslåda samt all städning.</p>
               </div>
             </div>
           </div>
