@@ -1,105 +1,87 @@
-/*!
-Brfgeneralen
- */
+/*=============================================================
+                       BRF Generalen
+ ============================================================ */
 
-body {
+.bl-body {
     font-family: "Ubuntu";
     background-color: #e1e1e1;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
     list-style: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    text-transform: uppercase;
-    font-family: "Ubuntu";
-    font-weight: 700;
-    letter-spacing: 1px;
+/* MENU */
+.bl-navbar {
+    font-family: 'Ubuntu';
+    font-size: 1.5em;
+    background: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-p {
-    font-size: 1.25em;
-    line-height: 1.6;
+#bl-menu-bar > div > ul > li > a {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#bl-menu-bar > div {
+    width: 1024px;
+    margin: auto;
+}
+
+/* menu width depends on the width of the logo */
+#bl-menu-bar > div > ul{
+    padding-left: 25%;
+}
+
+.bl-navbar-fixed-top {
+    font-family: 'Ubuntu';
+    font-size: 1.5em;
+    z-index: 99;
+    margin-top: -206px;
+    position: fixed;
+    width: 100%;
+    background: #92BDE5;
+}
+
+/* COMPANY LOGO */
+#bl-logo {
+    width: 100%;
+    display:block;
+    margin:auto;
+}
+
+/* MENU TEXT */
+#bl-menu-bar > div > ul > li > a {
     color: #000;
 }
 
-hr {
-    max-width: 400px;
-    border-color: #999999;
+/* STYLE WHEN MOUSE HOVER */
+#bl-menu-bar > div > ul > li > a:hover,
+#bl-menu-bar > div > ul > li > a:focus {
+    color: #fff;
+    background-color: #92BDE5;
 }
 
-#oe_main_menu_navbar {
-    background: black;
-}
-
-.brand,
-.address-bar {
-    display: none;
-}
-
-.navbar-brand {
-    text-transform: uppercase;
-    font-weight: 900;
-    letter-spacing: 2px;
-}
-
-.navbar-nav {
-    text-transform: uppercase;
-    font-weight: 400;
-    letter-spacing: 3px;
-}
-
-.navbar.navbar-static-top ul.nav > li.divider {
-    margin-top: 35px;
-    padding-top: 25px;
-    border-right: 1px solid #808080;
-}
-
-header a.navbar-brand img {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 210px;
+/* STYLE WHEN PAGE ACTIVE */
+#bl-menu-bar > div > ul > .active > a {
+    color: #fff;
+    background-color: #92BDE5;
 }
 
 .navbar {
-    background: #92BDE5;
-    border-bottom: 1px solid #92BDE5;
+    border: 0px;
 }
 
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: #92BDE5;
+.navbar-nav {
+    border-color: none;
 }
 
-.navbar-default .navbar-toggle {
-    background-color: #92BDE5;
-    border-color: #92BDE5;
-    border-bottom: #92BDE5;
+#bl-menu-bar {
+    width: 100%;
 }
 
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border-color: #92BDE5;
-    border-bottom: #92BDE5;
-}
-
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a{
-    color: #000;
-}
-
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    color: #fff;
-    background-color: #92BDE5;
-}
-
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color: #fff;
-    background-color: #92BDE5;
+#bl-menu-bar > .row {
+    width: 100%;
 }
 
 .carousel-inner > .item > img {
@@ -111,148 +93,7 @@ header a.navbar-brand img {
     vertical-align: center
 }
 
-.img-full {
-    min-width: 100%;
-}
+/* FOOTER STYLE*/
+.bl-footer {
 
-.brand-before,
-.brand-name {
-    text-transform: capitalize;
-}
-
-.brand-before {
-    margin: 15px 0;
-}
-
-.brand-name {
-    margin: 0;
-    font-size: 4em;
-}
-
-.tagline-divider {
-    margin: 15px auto 3px;
-    max-width: 250px;
-    border-color: #999999;
-}
-
-.oe_website_login_container, .container {
-    padding-top: 2px;
-    /*
-    background: #fff;
-    background: rgba(178,217,255,0.5);*/
-}
-
-.box {
-    margin-bottom: 20px;
-    padding: 30px 15px;
-    background: #fff;
-    background: rgba(255,255,255,0.9);
-}
-
-.intro-text {
-    text-transform: uppercase;
-    font-size: 1.25em;
-    font-weight: 400;
-    letter-spacing: 1px;
-}
-
-.img-border {
-    float: none;
-    margin: 0 auto 0;
-    border: #999999 solid 1px;
-}
-
-.img-left {
-    float: none;
-    margin: 0 auto 0;
-}
-
-footer {
-    background: #fff;
-    background: rgba(0,0,0,0.7);
-}
-
-footer p {
-    margin: 0;
-    padding: 50px 0;
-}
-
-@media screen and (min-width:768px) {
-    .brand {
-        display: inherit;
-        margin: 0;
-        padding: 30px 0 10px;
-        text-align: center;
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-        font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 5em;
-        font-weight: 700;
-        line-height: normal;
-        color: #fff;
-    }
-
-    .top-divider {
-        margin-top: 0;
-    }
-
-    .img-left {
-        float: left;
-        margin-right: 25px;
-    }
-
-    .address-bar {
-        display: inherit;
-        margin: 0;
-        padding: 0 0 40px;
-        text-align: center;
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-        text-transform: uppercase;
-        font-size: 1.25em;
-        font-weight: 400;
-        letter-spacing: 3px;
-        color: #fff;
-    }
-
-    .navbar {
-        border-radius: 0;
-    }
-
-    .navbar-header {
-        display: none;
-    }
-
-    .navbar {
-        min-height: 0;
-    }
-
-    .navbar-default {
-        border: none;
-        background-color: none;
-        background: none;
-    }
-
-    .nav>li>a {
-        padding: 35px;
-    }
-
-    .navbar-nav>li>a {
-        line-height: normal;
-        color: #343434;
-    }
-
-    .navbar-nav {
-        display: table;
-        float: none;
-        margin: 0 auto;
-        table-layout: fixed;
-        font-size: 1.25em;
-    }
-}
-
-@media screen and (min-width:1200px) {
-    .box:after {
-        content: '';
-        display: table;
-        clear: both;
-    }
 }
