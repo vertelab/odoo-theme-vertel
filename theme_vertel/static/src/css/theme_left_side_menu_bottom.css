@@ -1,0 +1,57 @@
+/*=============================================================
+                       Left Side Menu Bottom
+ ============================================================ */
+
+.lsmb-body {
+    background: #fff;
+    list-style: none;
+}
+
+/* MENU */
+.lsmb-navbar {
+    font-family: 'Ubuntu';
+    font-size: 1.5em;
+    background: none;
+    position: fixed;
+    left: 20px;
+    bottom: 100px;
+    z-index: 999;
+}
+
+#lsmb-menu-bar > ul > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #343434;
+}
+
+/* STYLE WHEN MOUSE HOVER */
+#lsmb-menu-bar > ul > li > a:hover,
+#lsmb-menu-bar > ul > li > a:focus {
+    color: #D31940;
+    background: none;
+}
+
+/* STYLE WHEN PAGE ACTIVE */
+#lsmb-menu-bar > ul > .active > a {
+    color: #D31940;
+    background:none;
+}
+
+.navbar {
+    border: 0px;
+}
+
+.navbar-nav {
+    border-color: none;
+}
+
+
+/* FOOTER STYLE*/
+.lsmb-footer > div > div > li > a{
+    color:#fff;
+}
+#wrapwrap > footer{
+    height:20px;
+    background:#888;
+    opacity:0.5;
+}
