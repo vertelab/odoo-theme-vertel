@@ -4,7 +4,7 @@ Brfgeneralen
 
 body {
     font-family: "Ubuntu";
-    background-color: #A4BEDF;
+    background-color: #e1e1e1;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -89,16 +89,16 @@ header a.navbar-brand img {
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a{
-    color: #fff;
+    color: #000;
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    color: #343434;
+    color: #fff;
     background-color: #92BDE5;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color: #343434;
+    color: #fff;
     background-color: #92BDE5;
 }
 
