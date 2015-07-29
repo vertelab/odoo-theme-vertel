@@ -198,7 +198,7 @@
                     <div class="container">
                         <div id="bl-menu-bar" class="col-md-12">
                             <div class="row">
-                                <ul class="nav navbar-nav">
+                                <ul class="nav nav-justified">
                                     <t t-foreach="website.menu_id.child_id" t-as="submenu">
                                         <t t-call="website.submenu"/>
                                     </t>

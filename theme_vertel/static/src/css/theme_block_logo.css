@@ -27,11 +27,6 @@
     margin: auto;
 }
 
-/* menu width depends on the width of the logo */
-#bl-menu-bar > div > ul{
-    padding-left: 25%;
-}
-
 .bl-navbar-fixed-top {
     font-family: 'Ubuntu';
     font-size: 1.5em;

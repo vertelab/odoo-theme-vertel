@@ -28,11 +28,6 @@
     margin: auto;
 }
 
-/* menu width depends on the width of the logo */
-#bl-menu-bar > div > ul{
-    padding-left: 20%;
-}
-
 .bl-navbar-fixed-top {
     font-family: 'Ubuntu';
     font-size: 1.5em;
@@ -52,7 +47,7 @@
 
 /* MENU TEXT */
 #bl-menu-bar > div > ul > li > a {
-    color: #000;
+    color: #343434;
 }
 
 /* STYLE WHEN MOUSE HOVER */
@@ -101,24 +96,8 @@
     background: none;
 }
 
-#clock {
-    display: block;
-    margin: auto;
-    max-width: 1110px;
-    width:100%;
-}
-
-#slide_block{
-    display: block;
-    margin: auto;
-    max-width: 1110px;
-    width:100%;
+#myCarousel0{
     background: #92BDE5;
-}
-
-#myCarousel0 {
-    display: block;
-    margin: auto;
 }
 
 /* FOOTER STYLE*/
