@@ -2,58 +2,56 @@
 <t t-name="website.hem">
     <t t-call="website.layout">
         <div id="wrap" class="oe_structure oe_empty">
-            <section class="fw_categories mt16 mb16">
-                <div class="text-center">
+            <section class="mt16">
+                <div class="container text-center">
                     <p>
                         <font style="color:#000" size="3">
-                            <span id="clock">Idag är det tisdag, 30 juni. Klockan är 13:29:09, och det är Elof, Leif som har namnsdag idag.</span>
+                            <span id="clock">Idag är det tisdag, 28 juli. Klockan är 17:16:18, och det är Botvid, Seved som har namnsdag idag.</span>
                         </font>
                     </p>
                 </div>
             </section>
-            <section class="fw_categories mt16 mb16">
-                <div class="container">
-                    <div class="row-fluid">
-                        <div class="span6 offset3">
-                            <div class="carousel slide vertical" id="myCarousel0" style="width: 600px; display: block; margin: auto;">
-                                <div class="carousel-inner">
-                                    <div class="item active">
-                                        <img alt="First slide" src="/theme_teamdoc/static/src/img/brfgeneralen/startgalleri/002small300x298.JPG"/>
-                                    </div>
-                                    <div class="item img-responsive">
-                                        <img alt="Second slide" src="/theme_teamdoc/static/src/img/brfgeneralen/startgalleri/003small300x290.JPG"/>
-                                    </div>
-                                    <div class="item img-responsive">
-                                        <img alt="Third slide" src="/theme_teamdoc/static/src/img/brfgeneralen/startgalleri/004small300x238.JPG"/>
-                                    </div>
-                                    <div class="item img-responsive">
-                                        <img alt="Forth slide" src="/theme_teamdoc/static/src/img/brfgeneralen/startgalleri/005small300x235.JPG"/>
-                                    </div>
-                                    <div class="item img-responsive">
-                                        <img alt="Fifth slide" src="/theme_teamdoc/static/src/img/brfgeneralen/startgalleri/006small300x225.JPG"/>
-                                    </div>
-                                    <div class="item img-responsive">
-                                        <img alt="Sixth slide" src="/theme_teamdoc/static/src/img/brfgeneralen/startgalleri/007small300x225.JPG"/>
-                                    </div>
-                                    <div class="item img-responsive">
-                                        <img alt="Seventh slide" src="/theme_teamdoc/static/src/img/brfgeneralen/startgalleri/008small300x199.JPG"/>
-                                    </div>
-                                    <div class="item img-responsive">
-                                        <img alt="Eighth slide" src="/theme_teamdoc/static/src/img/brfgeneralen/startgalleri/009small300x182.JPG"/>
-                                    </div>
-                                    <div class="item img-responsive">
-                                        <img alt="Ninth slide" src="/theme_teamdoc/static/src/img/brfgeneralen/startgalleri/010small300x198.JPG"/>
-                                    </div>
-                                    <div class="item img-responsive">
-                                        <img alt="Tenth slide" src="/theme_teamdoc/static/src/img/brfgeneralen/startgalleri/011small300x225.JPG"/>
-                                    </div>
+            <section>
+                <div class="container" id="slide_block">
+                    <div class="col-md-12">
+                        <div class="carousel slide vertical" id="myCarousel0">
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img alt="First slide" src="/theme_teamdoc/static/src/img/brfgeneralen/startgalleri/002small300x298.JPG"/>
                                 </div>
-                                <div class="carousel-control left" data-slide="prev" data-target="#myCarousel0" href="#myCarousel4" style="height: 100%; background: none;">
-                                    <i class="fa fa-chevron-up"/>
+                                <div class="item img-responsive">
+                                    <img alt="Second slide" src="/theme_teamdoc/static/src/img/brfgeneralen/startgalleri/003small300x290.JPG"/>
                                 </div>
-                                <div class="carousel-control right" data-slide="next" data-target="#myCarousel0" href="#myCarousel4" style="height: 100%; background: none;">
-                                    <i class="fa fa-chevron-down"/>
+                                <div class="item img-responsive">
+                                    <img alt="Third slide" src="/theme_teamdoc/static/src/img/brfgeneralen/startgalleri/004small300x238.JPG"/>
                                 </div>
+                                <div class="item img-responsive">
+                                    <img alt="Forth slide" src="/theme_teamdoc/static/src/img/brfgeneralen/startgalleri/005small300x235.JPG"/>
+                                </div>
+                                <div class="item img-responsive">
+                                    <img alt="Fifth slide" src="/theme_teamdoc/static/src/img/brfgeneralen/startgalleri/006small300x225.JPG"/>
+                                </div>
+                                <div class="item img-responsive">
+                                    <img alt="Sixth slide" src="/theme_teamdoc/static/src/img/brfgeneralen/startgalleri/007small300x225.JPG"/>
+                                </div>
+                                <div class="item img-responsive">
+                                    <img alt="Seventh slide" src="/theme_teamdoc/static/src/img/brfgeneralen/startgalleri/008small300x199.JPG"/>
+                                </div>
+                                <div class="item img-responsive">
+                                    <img alt="Eighth slide" src="/theme_teamdoc/static/src/img/brfgeneralen/startgalleri/009small300x182.JPG"/>
+                                </div>
+                                <div class="item img-responsive">
+                                    <img alt="Ninth slide" src="/theme_teamdoc/static/src/img/brfgeneralen/startgalleri/010small300x198.JPG"/>
+                                </div>
+                                <div class="item img-responsive">
+                                    <img alt="Tenth slide" src="/theme_teamdoc/static/src/img/brfgeneralen/startgalleri/011small300x225.JPG"/>
+                                </div>
+                            </div>
+                            <div class="carousel-control left" data-slide="prev" data-target="#myCarousel0" href="#myCarousel4" style="height: 100%">
+                                <i class="fa fa-chevron-up"/>
+                            </div>
+                            <div class="carousel-control right" data-slide="next" data-target="#myCarousel0" href="#myCarousel4" style="height: 100%">
+                                <i class="fa fa-chevron-down"/>
                             </div>
                         </div>
                     </div>
@@ -62,6 +60,7 @@
         </div>
     </t>
 </t>
+
 
 
 <!-- om oss -->

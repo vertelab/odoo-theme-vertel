@@ -30,7 +30,7 @@
 
 /* menu width depends on the width of the logo */
 #bl-menu-bar > div > ul{
-    padding-left: 25%;
+    padding-left: 20%;
 }
 
 .bl-navbar-fixed-top {
@@ -40,7 +40,7 @@
     margin-top: -206px;
     position: fixed;
     width: 100%;
-    background: #92BDE5;
+    background: #a7a7a7;
 }
 
 /* COMPANY LOGO */
@@ -93,7 +93,36 @@
     vertical-align: center
 }
 
+.carousel-control.right {
+    background: none;
+}
+
+.carousel-control.left {
+    background: none;
+}
+
+#clock {
+    display: block;
+    margin: auto;
+    max-width: 1110px;
+    width:100%;
+}
+
+#slide_block{
+    display: block;
+    margin: auto;
+    max-width: 1110px;
+    width:100%;
+    background: #92BDE5;
+}
+
+#myCarousel0 {
+    display: block;
+    margin: auto;
+}
+
 /* FOOTER STYLE*/
 .bl-footer {
-
+    background: #a7a7a7;
+    color: #fff;
 }
