@@ -4,6 +4,29 @@
     position: relative;
 }
 
+.hover-image-cover {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    background-color: #000;
+}
+
+.hover-image-cover:hover {
+    left: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: 100%;
+    padding-top: 23%;
+    opacity: 0.7;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.hover-image-cover a {
+    color: #fff;
+}
+
 .hover-image > img {
     width: 100%;
 }

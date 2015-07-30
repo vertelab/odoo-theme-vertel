@@ -8,7 +8,7 @@
                 <script type="text/javascript" src="/snippet_addons/static/src/js/vertical_slide.js"/>
                 <script type="text/javascript" src="/snippet_addons/static/src/js/swedish_clock.js"/>
                 <script type="text/javascript">swedish_clock();</script>
-                <script type="text/javascript" src="/snippet_addons/static/src/js/image_gallery_with_hover_text.js"/>
+                <!--<script type="text/javascript" src="/snippet_addons/static/src/js/image_gallery_with_hover_text.js"/>-->
             </xpath>
             <!-- Customize CSS -->
             <xpath expr="//head" position="inside">
