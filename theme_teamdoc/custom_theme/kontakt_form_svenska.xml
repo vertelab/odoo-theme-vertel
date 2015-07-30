@@ -1,0 +1,91 @@
+<!--CONTACT US-->
+<t name="Contact us" t-name="website.contactus">
+  <t t-call="website.layout">
+    <div id="wrap">
+      <div class="oe_structure"/>
+      <div class="container">
+        <h1>Kontakta Oss</h1>
+        <div class="row">
+          <div class="col-md-8">
+            <div class="oe_structure">
+              <div>
+                <p>Kontakta oss om du har några frågor eller funderingar.</p>
+                <p>Vi gör vårt bästa för att svara så fort som möjligt.</p>
+              </div>
+            </div>
+            <div class="text-center mt64" name="mail_button">
+              <a t-attf-href="mailto:{{ res_company.email }}" class="btn btn-primary">Send us an email</a>
+            </div>
+          </div>
+          <div class="col-md-4 mb32">
+            <div groups="base.group_website_publisher" t-ignore="true" class="pull-right css_editable_mode_hidden" t-att-style="style or ''">
+              <a class="btn btm-sm btn-default" t-att-href="'/web#return_label=Website&amp;model=%s&amp;id=%s' % (res_company._name, res_company.id)">Change address</a>
+            </div>
+            <t t-call="website.company_description"/>
+          </div>
+        </div>
+      </div>
+      <div class="oe_structure"/>
+    </div>
+  </t>
+</t>
+
+<!--CONTACT FORM-->
+<data name="Contact Form" inherit_id="website.contactus" customize_show="True">
+  <xpath expr="//div[@name='mail_button']" position="replace">
+    <form action="/crm/contactus" method="post" class="form-horizontal mt32" enctype="multipart/form-data">
+      <div t-attf-class="form-group #{error and 'contact_name' in error and 'has-error' or ''}">
+        <label class="col-md-3 col-sm-4 control-label" for="contact_name">Namn</label>
+        <div class="col-md-7 col-sm-8">
+          <input type="text" class="form-control" name="contact_name" required="True" t-attf-value="#{contact_name or ''}"/>
+        </div>
+      </div>
+      <div t-attf-class="form-group #{error and 'phone' in error and 'has-error' or ''}">
+        <label class="col-md-3 col-sm-4 control-label" for="phone">Telefon</label>
+        <div class="col-md-7 col-sm-8">
+          <input type="text" class="form-control" name="phone" t-attf-value="#{phone or ''}"/>
+        </div>
+      </div>
+      <div name="email_from_container" t-attf-class="form-group #{error and 'email_from' in error and 'has-error' or ''}">
+        <label class="col-md-3 col-sm-4 control-label" for="email_from">E-post</label>
+        <div class="col-md-7 col-sm-8">
+          <input type="email" class="form-control" name="email_from" required="True" t-attf-value="#{email_from or ''}"/>
+        </div>
+      </div>
+      <div t-attf-class="form-group #{error and 'name' in error and 'has-error' or ''}">
+        <label class="col-md-3 col-sm-4 control-label" for="name">Ämne</label>
+        <div class="col-md-7 col-sm-8">
+          <input type="text" class="form-control" name="name" t-attf-value="#{name or ''}"/>
+        </div>
+      </div>
+      <div t-attf-class="form-group #{error and 'description' in error and 'has-error' or ''}">
+        <label class="col-md-3 col-sm-4 control-label" for="description">Din Fråga</label>
+        <div class="col-md-7 col-sm-8">
+          <textarea class="form-control" name="description" style="min-height: 120px" required="True">
+            <t t-esc="description or ''"/>
+          </textarea>
+        </div>
+      </div>
+      <t t-foreach="kwargs" t-as="kwarg">
+        <input type="hidden" t-att-name="kwarg[0]" t-att-value="kwarg[1]"/>
+      </t>
+      <div class="form-group">
+        <div class="col-md-offset-3 col-sm-offset-4 col-sm-8 col-md-7">
+          <button class="btn btn-primary btn-lg">Skicka</button>
+        </div>
+      </div>
+    </form>
+  </xpath>
+</data>
+
+<!--COMPANY NAME-->
+<data name="Company Name" inherit_id="website_crm.contactus_form" customize_show="True">
+  <xpath expr="//div[@name='email_from_container']" position="after">
+    <div t-attf-class="form-group #{error and 'partner_name' in error and 'has-error' or ''}">
+      <label class="col-md-3 col-sm-4 control-label" for="partner_name">Företag</label>
+      <div class="col-md-7 col-sm-8">
+        <input type="text" class="form-control" name="partner_name" required="True" t-attf-value="#{partner_name or ''}"/>
+      </div>
+    </div>
+  </xpath>
+</data>
