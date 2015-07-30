@@ -102,6 +102,10 @@
 
 /* FOOTER STYLE*/
 .bl-footer {
-    background: #a7a7a7;
+    background-color: #e1e1e1;
+}
+
+#footer > div > div {
     color: #fff;
+    background-color: #a7a7a7;
 }

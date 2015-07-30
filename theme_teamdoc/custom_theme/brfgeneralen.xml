@@ -85,3 +85,112 @@ På Karlbergsplan spelar Karle IF sina fotbollsmatcher i division 5 och på Gren
         </div>
     </t>
 </t>
+
+<!-- footer -->
+<?xml version="1.0"?>
+<data inherit_id="website.footer_custom" customize_show="True" name="Automatic Footer">
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div class="container hidden-print">
+            <div class="col-md-12">
+                <div class="col-md-12">
+                    <div class="col-md-8">
+                        <div>
+                            <h4>
+                                <span t-field="res_company.name"/>
+                            </h4>
+                            <font size="3">
+                                Bostadsrättsföreningen Generalen ligger i stadsdelen Hagaberg, belägen på Garnisonsområdet i Linköping. Föreningens hus byggdes av JM AB och stod färdigt våren 2006. Gatuadresserna är Kompanigatan 24-34.
+                                <br/>
+                                <a href="/page/website.omoss">Läs mer...</a>
+                            </font>
+                        </div>
+                        <div>
+                            <ul class="list-inline js_language_selector mt16" t-if="(request.website_multilang and len(languages) &gt; 1) or editable">
+                                <li t-foreach="languages" t-as="lg">
+                                    <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang=lg[0])" t-att-data-default-lang="editable and 'true' if lg[0] == website.default_lang_code else None" t-att-data-lang="lg[0]" class="js_change_lang">
+                                        <t t-esc="lg[1].split('/').pop()"/>
+                                    </a>
+                                </li>
+                                <li groups="base.group_website_publisher">
+                                    <t t-set="url_return" t-value="url_for('', '[lang]') + '?' + keep_query()"/>
+                                    <a t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id}&amp;url_return=#{url_return}">
+                                        <i class="fa fa-plus-circle"/>
+                                    Add a language...
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4" id="info">
+                        <a href="/page/website.kontaktaoss">
+                            <h4>Kontakta med oss</h4>
+                        </a>
+                        <ul class="list-unstyled">
+                            <li t-ignore="true">
+                                <i class="fa fa-phone"/>
+                                <span t-field="res_company.phone"/>
+                            </li>
+                            <li t-ignore="true">
+                                <i class="fa fa-mobile"/>
+                                <span t-field="res_company.partner_id.mobile"/>
+                            </li>
+                            <li t-ignore="true">
+                                <i class="fa fa-envelope"/>
+                                <span t-field="res_company.email"/>
+                            </li>
+                        </ul>
+                        <h2>
+                            <a t-att-href="website.social_facebook" t-if="website.social_facebook">
+                                <i class="fa fa-facebook-square"/>
+                            </a>
+                            <a t-att-href="website.social_twitter" t-if="website.social_twitter">
+                                <i class="fa fa-twitter"/>
+                            </a>
+                            <a t-att-href="website.social_linkedin" t-if="website.social_linkedin">
+                                <i class="fa fa-linkedin"/>
+                            </a>
+                            <a t-att-href="website.social_youtube" t-if="website.social_youtube">
+                                <i class="fa fa-youtube-play"/>
+                            </a>
+                            <a t-att-href="website.social_googleplus" t-if="website.social_googleplus" rel="publisher">
+                                <i class="fa fa-google-plus-square"/>
+                            </a>
+                            <a t-att-href="website.social_github" t-if="website.social_github">
+                                <i class="fa fa-github"/>
+                            </a>
+                        </h2>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="pull-right">
+                            <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <b>
+                                        <span t-esc="user_id.name"/>
+                                        <span class="caret"/>
+                                    </b>
+                                </a>
+                                <ul class="dropdown-menu js_usermenu" role="menu">
+                                    <li>
+                                        <a href="/web" role="menuitem">My Account</a>
+                                    </li>
+                                    <li class="divider"/>
+                                    <li>
+                                        <a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </div>
+                        <div class="pull-right">
+                            <li groups="base.group_public">
+                                <a t-attf-href="/web/login">
+                                    <b>Sign in</b>
+                                </a>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </xpath>
+</data>
