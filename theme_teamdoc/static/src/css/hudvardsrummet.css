@@ -10,7 +10,7 @@
 /* MENU */
 .bl-navbar {
     font-family: 'Cinzel Decorative', cursive;
-    font-size: 0.975em;
+    font-size: 0.95em;
     background: none;
     width: 100%;
     margin-left: auto;
@@ -28,13 +28,14 @@
 }
 
 /* menu width depends on the width of the logo */
-#bl-menu-bar > div > ul{
+#bl-menu-bar > div > ul > li > a{
     padding-left: 0%;
+    padding-right: 0%;
 }
 
 .bl-navbar-fixed-top {
     font-family: 'Cinzel Decorative', cursive;
-    font-size: 0.975em;
+    font-size: 0.95em;
     z-index: 99;
     margin-top: -216px;
     position: fixed;
@@ -50,8 +51,10 @@
 }
 
 /* MENU TEXT */
-#bl-menu-bar > div > ul > li > a {
+#bl-menu-bar > div > ul > li > a{
     color: #343434;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 /* STYLE WHEN MOUSE HOVER */
