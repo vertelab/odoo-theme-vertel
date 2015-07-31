@@ -5,7 +5,7 @@
         <div class="oe_structure oe_empty" id="wrap">
             <section class="mt0" style="height: 472px; overflow: hidden;">
                 <div class="container" id="carousel_slide">
-                    <div class="carousel slide mb32" id="myCarousel0" style="">
+                    <div class="carousel slide col-md-12" id="myCarousel0" style="">
                         <ol class="carousel-indicators">
                             <li class="active" data-slide-to="0" data-target="#myCarousel0"/>
                             <li data-slide-to="1" data-target="#myCarousel0"/>
@@ -34,10 +34,10 @@
                                 <img alt="Sixth slide" src="/theme_teamdoc/static/src/img/masterari/bildgalleri/bild9.jpg"/>
                             </div>
                         </div>
-                        <div class="carousel-control left" data-slide="prev" data-target="#myCarousel0" href="#myCarousel0" style="width: 10%">
+                        <div class="carousel-control left" data-slide="prev" data-target="#myCarousel0" href="#myCarousel0" style="width: 15%; background: none;">
                             <i class="fa fa-chevron-left"/>
                         </div>
-                        <div class="carousel-control right" data-slide="next" data-target="#myCarousel0" href="#myCarousel0" style="width: 10%">
+                        <div class="carousel-control right" data-slide="next" data-target="#myCarousel0" href="#myCarousel0" style="width: 15%; background: none;">
                             <i class="fa fa-chevron-right"/>
                         </div>
                     </div>
@@ -46,6 +46,7 @@
         </div>
     </t>
 </t>
+
 
 <!-- auto footer -->
 <?xml version="1.0"?>
