@@ -5,7 +5,7 @@
             <section class="fw_categories mt16">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-12">
+                        <div class="col-lg-12" style="color: #fff;">
                             <h1 class="intro-text text-center">Välkommen till Vallathai!</h1>
                             <p/>
                             <h4 class="intro-text text-center">Vallathai erbjuder thailändsk mat som den smakar och äts i Thailand – gott, sunt och prisvärt.</h4>
@@ -25,16 +25,22 @@
                     <div class="row">
                         <div class="col-md-1"/>
                         <div class="col-md-5">
-                        <a href="/page/veckans-lunch">
-                            <img alt="Odoo - Sample 1 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/mias_sushi/1437467_71634196.jpg" style="width:100%; height:200px;"/>
-                                <h4 class="mt16" style="text-align: center;">Veckans Lunch</h4>
+                            <a href="/page/veckans-lunch">
+                                <img alt="Odoo - Sample 1 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/mias_sushi/1437467_71634196.jpg" style="width:100%; height:200px;"/>
                             </a>
+                            <h4 class="mt16" style="text-align: center;">
+                                <a href="/page/veckans-lunch">Veckans lunch</a>
+                            </h4>
+                            <a href="/page/veckans-lunch"></a>
                         </div>
                         <div class="col-md-5">
-                        <a href="/page/meny">
-                            <img alt="Odoo - Sample 2 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/mias_sushi/240761_9420.jpg" style="width:100%; height:200px;"/>
-                                <h4 class="mt16" style="text-align: center;">Meny</h4>
+                            <a href="/page/meny-sushi">
+                                <img alt="Odoo - Sample 2 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/mias_sushi/240761_9420.jpg" style="width:100%; height:200px;"/>
                             </a>
+                            <h4 class="mt16" style="text-align: center;">
+                                <a href="/page/meny-sushi">Meny</a>
+                            </h4>
+                            <a href="/page/meny-sushi"></a>
                         </div>
                         <div class="col-md-1"/></div>
                 </div>
@@ -44,122 +50,123 @@
 </t>
 
 
+
 <!-- footer -->
 <data inherit_id="website.footer_custom" customize_show="True" name="Automatic Footer">
-  <xpath expr="//div[@id='footer']" position="replace">
-    <div class="container hidden-print">
-      <div class="row">
-        <div class="col-md-2">
-          <h4>Vårt Meny</h4>
-          <ul class="list-unstyled" id="products">
-            <li>
-              <a href="/page/meny-sushi">Sushi</a>
-            </li>
-            <li>
-              <a href="/page/meny-forratt">Förrätt</a>
-            </li>
-            <li>
-              <a href="/page/meny-curry-och-kokosmjolk">Curry och kokosmjölk</a>
-            </li>
-            <li>
-              <a href="/page/meny-grillade-och-friterade-ratter">Grillade och Friterade rätter</a>
-            </li>
-            <li>
-              <a href="/page/meny-wokade-ratter">Wokade rätter</a>
-            </li>
-            <li>
-              <a href="/page/meny-nudlar-ris">Nudlar/ ris</a>
-            </li>
-            <li>
-              <a href="/page/meny-vegetariskt">Vegetariskt</a>
-            </li>
-            <li>
-              <a href="/page/meny-efterratt">Efterrätt</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <div>
-            <h4 style="text-align: center;">Om Oss</h4>
-            <div class="box">
-              <font style="color:white;" size="3"><b>Naturligt fräscht och gott</b> Vår mat tillagas av färska och fräscha thailändska råvaror. Det garanterar den genuina smaken. Thailändsk mat är naturligt näringsrik och fettsnål. Den breda variationen av rätter med både starka och milda smaker erbjuder något för alla – barn som vuxna.<br/>
-<b>Snabbt och prisvärt</b> Hos oss får du din beställning inom några få minuter, alltid till samma låga pris.<br/>
-<b>Thaiköket</b> Med influenser från öst och väst har det unika thailändska köket växt fram. Thailändarna har alltid varit skickliga på att anpassa utländska matlagningsmetoder till det thailändska köket och byta ut ingredienser till sådana som är lättillgängliga i Thailand. </font>
-              <br/>
-              <br/>
-              <a href="/page/thailandska-koket">Läs mer om det Thailändska köket</a>
-              <div>
-                <p/>
-              </div>
-            </div>
-          </div>
-          <ul class="list-inline js_language_selector mt16" t-if="(request.website_multilang and len(languages) &gt; 1) or editable">
-            <li t-foreach="languages" t-as="lg">
-              <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang=lg[0])" t-att-data-default-lang="editable and 'true' if lg[0] == website.default_lang_code else None" t-att-data-lang="lg[0]" class="js_change_lang">
-                <t t-esc="lg[1].split('/').pop()"/>
-              </a>
-            </li>
-            <li groups="base.group_website_publisher">
-              <t t-set="url_return" t-value="url_for('', '[lang]') + '?' + keep_query()"/>
-              <a t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id}&amp;url_return=#{url_return}"><i class="fa fa-plus-circle"/>
-                            Add a language...
-
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div class="container hidden-print">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>Vår meny</h4>
+                    <ul class="list-unstyled" id="products">
+                        <li>
+                            <a href="/page/meny-sushi">Sushi</a>
+                        </li>
+                        <li>
+                            <a href="/page/meny-forratt">Förrätt</a>
+                        </li>
+                        <li>
+                            <a href="/page/meny-curry-och-kokosmjolk">Curry och kokosmjölk</a>
+                        </li>
+                        <li>
+                            <a href="/page/meny-grillade-och-friterade-ratter">Grillade och Friterade rätter</a>
+                        </li>
+                        <li>
+                            <a href="/page/meny-wokade-ratter">Wokade rätter</a>
+                        </li>
+                        <li>
+                            <a href="/page/meny-nudlar-ris">Nudlar/ ris</a>
+                        </li>
+                        <li>
+                            <a href="/page/meny-vegetariskt">Vegetariskt</a>
+                        </li>
+                        <li>
+                            <a href="/page/meny-efterratt">Efterrätt</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <h4 style="text-align: center;">Om oss</h4>
+                        <div class="box">
+                            <font style="color:white;" size="3">
+                                <b>Naturligt fräscht och gott</b> Vår mat tillagas av färska och fräscha thailändska råvaror. Det garanterar den genuina smaken. Thailändsk mat är naturligt näringsrik och fettsnål. Den breda variationen av rätter med både starka och milda smaker erbjuder något för alla – barn som vuxna.
+                            </font>
+                            <br/>
+                            <br/>
+                            <a href="/page/thailandska-koket">Läs mer om det Thailändska köket...</a>
+                            <div>
+                                <p/>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="list-inline js_language_selector mt16" t-if="(request.website_multilang and len(languages) &gt; 1) or editable">
+                        <li t-foreach="languages" t-as="lg">
+                            <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang=lg[0])" t-att-data-default-lang="editable and 'true' if lg[0] == website.default_lang_code else None" t-att-data-lang="lg[0]" class="js_change_lang">
+                                <t t-esc="lg[1].split('/').pop()"/>
                             </a>
-            </li>
-          </ul>
+                        </li>
+                        <li groups="base.group_website_publisher">
+                            <t t-set="url_return" t-value="url_for('', '[lang]') + '?' + keep_query()"/>
+                            <a t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id}&amp;url_return=#{url_return}">
+                                <i class="fa fa-plus-circle"/>
+                            Add a language...
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3" id="info" style="color: white;">
+                    <a href="/page/website.contactus">
+                        <h4>Kontakta oss</h4>
+                    </a>
+                    <ul class="list-unstyled">
+                        <li t-ignore="true">
+                            <i class="fa fa-phone"/>
+                            <span t-field="res_company.phone"/>
+                        </li>
+                        <li t-ignore="true">
+                            <i class="fa fa-mobile"/>
+                            <span t-field="res_company.partner_id.mobile"/>
+                        </li>
+                        <li t-ignore="true">
+                            <i class="fa fa-envelope"/>
+                            <span t-field="res_company.email"/>
+                        </li>
+                        <br/>
+                        <h4>Våra öppettider:</h4>
+                        <li>
+                            <span>Måndag - Fredag   11.00 - 21.00</span>
+                        </li>
+                        <li t-ignore="true">
+                            <span>Lördag - Söndag   12.00 - 21.00</span>
+                        </li>
+                    </ul>
+                    <h2>
+                        <a t-att-href="website.social_facebook" t-if="website.social_facebook">
+                            <i class="fa fa-facebook-square"/>
+                        </a>
+                        <a t-att-href="website.social_twitter" t-if="website.social_twitter">
+                            <i class="fa fa-twitter"/>
+                        </a>
+                        <a t-att-href="website.social_linkedin" t-if="website.social_linkedin">
+                            <i class="fa fa-linkedin"/>
+                        </a>
+                        <a t-att-href="website.social_youtube" t-if="website.social_youtube">
+                            <i class="fa fa-youtube-play"/>
+                        </a>
+                        <a t-att-href="website.social_googleplus" t-if="website.social_googleplus" rel="publisher">
+                            <i class="fa fa-google-plus-square"/>
+                        </a>
+                        <a t-att-href="website.social_github" t-if="website.social_github">
+                            <i class="fa fa-github"/>
+                        </a>
+                    </h2>
+                </div>
+            </div>
         </div>
-        <div class="col-md-1"/>
-        <div class="col-md-3" id="info" style="color: white;">
-          <a href="/page/website.contactus"><h4>Kontakta oss</h4></a>
-
-          <ul class="list-unstyled">
-            <li t-ignore="true">
-              <i class="fa fa-phone"/>
-              <span t-field="res_company.phone"/>
-            </li>
-            <li t-ignore="true">
-              <i class="fa fa-mobile"/>
-              <span t-field="res_company.partner_id.mobile"/>
-            </li>
-            <li t-ignore="true">
-              <i class="fa fa-envelope"/>
-              <span t-field="res_company.email"/>
-            </li>
-            <br/>
-            <h4>Våra öppettider:</h4>
-            <li>
-              <span>Måndag - Fredag   11.00 - 21.00</span>
-            </li>
-            <li t-ignore="true">
-              <span>Lördag - Söndag   12.00 - 21.00</span>
-            </li>
-          </ul>
-          
-          <h2>
-            <a t-att-href="website.social_facebook" t-if="website.social_facebook">
-              <i class="fa fa-facebook-square"/>
-            </a>
-            <a t-att-href="website.social_twitter" t-if="website.social_twitter">
-              <i class="fa fa-twitter"/>
-            </a>
-            <a t-att-href="website.social_linkedin" t-if="website.social_linkedin">
-              <i class="fa fa-linkedin"/>
-            </a>
-            <a t-att-href="website.social_youtube" t-if="website.social_youtube">
-              <i class="fa fa-youtube-play"/>
-            </a>
-            <a t-att-href="website.social_googleplus" t-if="website.social_googleplus" rel="publisher">
-              <i class="fa fa-google-plus-square"/>
-            </a>
-            <a t-att-href="website.social_github" t-if="website.social_github">
-              <i class="fa fa-github"/>
-            </a>
-          </h2>
-        </div>
-      </div>
-    </div>
-  </xpath>
+    </xpath>
 </data>
+
 
 
 <!-- thai köket -->
