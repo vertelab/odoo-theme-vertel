@@ -2,10 +2,10 @@
 <t t-name="website.hem">
     <t t-call="website.layout">
         <div id="wrap" class="oe_structure oe_empty">
-            <section class="parallax s_parallax" data-scroll-background-offset="0" data-scroll-background-ratio="0.3" style="background: transparent none repeat fixed 0px 136.8px;">
+            <section class="parallax s_parallax" data-scroll-background-offset="0" data-scroll-background-ratio="0.3" style="background: transparent none repeat fixed 0px 0px;">
                 <div>
                     <div class="oe_structure">
-                        <div class="mt128">
+                        <div class="mt64">
                             <h1 style="color: #fff; text-align: center;">Välkommen till</h1>
                             <h1 style="color: #fff; text-align: center;">Wilssons Åkeri och Wilsson Relining</h1>
                             <h3 style="color: #fff; text-align: center;">Kontorstid: Mån-Fre 07:00-16:00</h3>
@@ -18,22 +18,22 @@
                     <div class="container">
                         <div class="row">
                             <a class="col-md-3 col-xs-6 mt16 mb16" href="#">
-                                <img alt="Odoo Image" class="img-responsive md16 hover img-rounded" src="/theme_teamdoc/static/src/img/wilssons/slam_spol_ruta.jpg" style=""/>
+                                <img alt="Odoo Image" class="img-responsive md16 hover img-rounded hvr-grow" src="/theme_teamdoc/static/src/img/wilssons/slam_spol_ruta.jpg" style=""/>
                             </a>
                             <a class="col-md-3 col-xs-6 mt16 mb16" href="#">
-                                <img alt="Odoo Image" class="img-responsive md16 hover img-rounded" src="/theme_teamdoc/static/src/img/wilssons/spol_ruta.jpg" style=""/>
+                                <img alt="Odoo Image" class="img-responsive md16 hover img-rounded hvr-grow" src="/theme_teamdoc/static/src/img/wilssons/spol_ruta.jpg" style=""/>
                             </a>
                             <a class="col-md-3 col-xs-6 mt16 mb16" href="#">
-                                <img alt="Odoo Image" class="img-responsive md16 hover img-rounded" src="/theme_teamdoc/static/src/img/wilssons/insp_ruta.jpg" style=""/>
+                                <img alt="Odoo Image" class="img-responsive md16 hover img-rounded hvr-grow" src="/theme_teamdoc/static/src/img/wilssons/insp_ruta.jpg" style=""/>
                             </a>
                             <a class="col-md-3 col-xs-6 mt16 mb16" href="#">
-                                <img alt="Odoo Image" class="img-responsive md16 hover img-rounded" src="/theme_teamdoc/static/src/img/wilssons/relining_ruta.jpg" style=""/>
+                                <img alt="Odoo Image" class="img-responsive md16 hover img-rounded hvr-grow" src="/theme_teamdoc/static/src/img/wilssons/relining_ruta.jpg" style=""/>
                             </a>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="parallax s_parallax" data-scroll-background-offset="0" data-scroll-background-ratio="0.3" style="background-image: url(&quot;/theme_teamdoc/static/src/img/wilssons/metal-plate.png&quot;); background-attachment: scroll; background-position: 0px 136.8px;">
+            <section class="parallax s_parallax" data-scroll-background-offset="0" data-scroll-background-ratio="0.3" style="background-image: url(&quot;/theme_teamdoc/static/src/img/wilssons/metal-plate.png&quot;); background-attachment: scroll; background-position: 0px 0px;">
                 <div>
                     <div class="oe_structure">
                         <div class="mt64">
