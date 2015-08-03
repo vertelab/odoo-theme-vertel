@@ -9,8 +9,8 @@
 
 /* MENU */
 .bl-navbar {
-    font-family: 'Ubuntu';
-    font-size: 1.3em;
+    font-family: 'Homenaje', sans-serif;
+    font-size: 1.5em;
     background: none;
     width: 100%;
     margin-left: auto;
@@ -20,6 +20,8 @@
 #bl-menu-bar > div > ul > li > a {
     padding-top: 25px;
     padding-bottom: 25px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 #bl-menu-bar > div {
@@ -28,13 +30,14 @@
 }
 
 .bl-navbar-fixed-top {
-    font-family: 'Ubuntu';
-    font-size: 1.5em;
+    font-family: 'Homenaje', sans-serif;
+    font-size: 1.3em;
     z-index: 99;
     margin-top: -260px;
     position: fixed;
     width: 100%;
-    background: #fff;
+    background: #e1e1e1;
+    height:76px;
 }
 
 /* COMPANY LOGO */
@@ -45,8 +48,6 @@
     border-radius: 10px;
     
 }
-
-
 
 /* MENU TEXT */
 #bl-menu-bar > div > ul > li > a {
@@ -82,12 +83,9 @@
     width: 100%;
 }
 
-.jumbotron{
-    border-radius: 10px;
-    
-}
+
 
 /* FOOTER STYLE*/
 .bl-footer {
-
+    background:#e1e1e1;
 }

@@ -1,9 +1,9 @@
 <!--HEADER-->
-<?xml version="1.0"?>
 <data inherit_id="website.layout" customize_show="True" active="False" name="Theme Block Logo" priority="99">
     <!-- Customize CSS -->
     <xpath expr="//head" position="after">
         <link href="/theme_teamdoc/static/src/css/kastrup_genberg.css" rel="stylesheet"/>
+        <link href='https://fonts.googleapis.com/css?family=Homenaje' rel='stylesheet' type='text/css'/>
     </xpath>
     <!-- hide the original menu bar -->
     <xpath expr="//body/div[@id='wrapwrap']/header/div" position="attributes">
@@ -87,42 +87,108 @@
             <section>
                 <div class="container">
                     <div class="col-md-12">
-                        <div class="col-md-12" style="border-radius: 10px; background-image: url('/website/static/src/img/banner/orange_red.jpg'); background-size: cover; display: block; margin: auto; width: 100%; max-width: 1150px;">
-                            <div class="col-md-5 col-xs-12">
-                                <div class="mt32 mb16">
-                                    <img alt="Odoo CMS- Sample image floating" class="img img-responsive" src="/theme_teamdoc/static/src/img/kastrup_genberg/SP-Certifierad_swe_.png" style="margin:auto;"/>
+                        <div class="carousel slide s_banner" id="myCarousel0" style="border-radius: 10px; background-size: cover; display: block; margin: auto; width: 100%; max-width: 1150px; height: 350px; overflow: hidden;">
+                            <ol class="carousel-indicators">
+                                <li class="active" data-slide-to="0" data-target="#myCarousel0"/>
+                                <li data-slide-to="1" data-target="#myCarousel0"/>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item oe_img_bg active" style="background-image: url(&quot;/website/static/src/img/banner/orange_red.jpg&quot;);">
+                                    <div class="container">
+                                        <div class="row content">
+                                            <div class="col-md-5 col-xs-12">
+                                                <div class="mt32 mb16">
+                                                    <img alt="Odoo CMS- Sample image floating" class="img img-responsive" src="/theme_teamdoc/static/src/img/kastrup_genberg/SP-Certifierad_swe__.png" style="margin:auto;"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7 col-xs-12 mt64" style="color:#fff;">
+                                                <h3>
+                                                    <strong>Kvalitets- och Miljöpolicy</strong>
+                                                </h3>
+                                                <font style="padding-right:20%; margin:auto;">
+                                                    <strong>
+                                    Kastrup &amp; Genberg AB är ett ingenjörs- och handelsföretag som utvecklar och marknadsför produkter till
+                                    pannor samt produkter för rengöring av rör. Vi utvecklar egna produkter samt är även agent och distributör för
+                                    andra företag. Vår mest betydande miljöpåverkan kommer från rådgivning till kund. Kvalitet för oss är att
+                                    tillfredsställa våra kunders krav, behov och förväntningar.</strong>
+                                                </font>
+                                                <div>
+                                                    <a href="/page/certifiering">
+                                                        <strong>
+                                                            <br/>
+Läs mer ... 
+                                            
+                                                
+                                            
+                                                        </strong>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item oe_img_bg" style="height:350px; background-image: url(&quot;/website/static/src/img/banner/orange_red.jpg&quot;);">
+                                    <div class="container">
+                                        <div class="row content">
+                                            <div class="col-md-5 col-xs-12">
+                                                <div class="mt64 mb16">
+                                                    <img alt="Banner Odoo Image" class="img-responsive" src="/theme_teamdoc/static/src/img/kastrup_genberg/industriljudsandare_.png" style="margin:auto;"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7 col-xs-12 mt64" style="color:#fff;">
+                                                <h3>
+                                                    <strong>Tyfon</strong>
+                                                </h3>
+                                                <h4>
+                                                    <strong>
+                                                        <i>Allmän information om renhållning med ljud</i>
+                                                    </strong>
+                                                </h4>
+                                                <font style="padding-right:20%; margin:auto;">
+                                                    <strong>
+                                        Renhållning med ljud bygger i princip på att man med ett högt ljudtryck får beläggningar i pannor och 
+                                        filter att lossna från en yta. När beläggningen lossnat kan den vidaretransporteras av gasströmmen och/eller
+                                        gravitationskraften. Renhållning med ljud kan användas inom en mängd olika områden. Industriljudsändare har 
+                                        installerats i t ex kraft- och värmeverk, livsmedels- och kemiska industrier, på fartyg etc.
+                                    </strong>
+                                                </font>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-7 col-xs-12 mt64">
-                                <font style="color:#fff; margin:auto;">Kastrup &amp; Genberg AB är ett ingenjörs- och handelsföretag som utvecklar och marknadsför produkter till pannor samt produkter för rengöring av rör. Vi utvecklar egna produkter samt är även agent och distributör för andra företag. Vår mest betydande miljöpåverkan kommer från rådgivning till kund. Kvalitet för oss är att tillfredsställa våra kunders krav, behov och förväntningar.</font>
-                                <br/>
-                                <div class="pull-right">
-                                    <a href="/page/certifiering">
-                                        <strong>Läs mer ... </strong>
-                                    </a>
-                                </div>
+                            <div class="carousel-control left" data-slide="prev" data-target="#myCarousel0" href="#myCarousel0" style="width: 10%">
+                                <i class="fa fa-chevron-left"/>
+                            </div>
+                            <div class="carousel-control right" data-slide="next" data-target="#myCarousel0" href="#myCarousel0" style="width: 10%">
+                                <i class="fa fa-chevron-right" style=""/>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <!--<section class="s_comparisons mb16" style="padding-top: 40px;"><div class="container"><div class="row" style="display: block; margin: auto; width: 100%; max-width: 1150px;"><div class="col-md-12"><div class="panel panel-primary"><div class="panel-heading text-center" style="background:#016FAF;"><h2 style="margin: 0;"><strong>Produkter</strong></h2></div><div class="panel-body"><div class="col-md-3"><img class="shadow" src="/theme_teamdoc/static/src/img/kastrup_genberg/sotningsmaskin.jpg"/></div><div class="col-md-3"><img class="shadow" src="/theme_teamdoc/static/src/img/kastrup_genberg/vibroxsetprodukter.jpg"/></div><div class="col-md-3"><img class="shadow" src="/theme_teamdoc/static/src/img/kastrup_genberg/industriljudsandare.png"/></div><div class="col-md-3"><img class="shadow" src="/theme_teamdoc/static/src/img/kastrup_genberg/Sotarfrasen.jpg"/></div><div class="col-md-3" style="padding-top:5px;"><img class="shadow" src="/theme_teamdoc/static/src/img/kastrup_genberg/b3_18.jpg"/></div><div class="col-md-3" style="padding-top:5px;"><img class="shadow" src="/theme_teamdoc/static/src/img/kastrup_genberg/scantronic2.jpg"/></div><div class="col-md-3" style="padding-top:5px;"><img class="shadow" src="/theme_teamdoc/static/src/img/kastrup_genberg/1920kopia.jpg"/></div><div class="col-md-3" style="padding-top:5px;"><img class="shadow" src="/theme_teamdoc/static/src/img/kastrup_genberg/luftlans.jpg"/></div></div></div></div></div></div></section>-->
             <section class="s_comparisons mb16" style="padding-top: 40px;">
                 <div class="container">
                     <div class="row" style="display: block; margin: auto; width: 100%; max-width: 1150px;">
-                        <div class="col-md-4">
+                        <!--VIDEO-->
+                        <div class="col-md-3">
                             <div class="panel panel-primary">
-                                <div class="panel-heading text-center" style="background:#005E8C;">
+                                <div class="panel-heading text-center" style="background:#016FAF;">
                                     <h2 style="margin: 0">
                                         <strong>Video</strong>
                                     </h2>
                                 </div>
                                 <div class="panel-body text-center text-muted"/>
                                 <p class="text-center" style="color:#343434;">
-                                    <strong>Videodemonstration av Ferret 
+                                    <strong>Videodemonstration av Ferret
                                         
+                                            
                                         
-                                        <br/>tubrensningssystem
+                                        <br/>
+tubrensningssystem 
                                     
+                                        
                                     
                                     </strong>
                                 </p>
@@ -142,99 +208,145 @@
                                 </a>
                                 <div class="panel-body text-center text-muted"/></div>
                         </div>
-                        <div class="col-md-4 text-center">
-                            <a href="https://www.uc.se/risksigill2?showorg=5560454521&amp;language=swe" title="Sigillet är utfärdat av UC AB. Klicka på bilden för information om UC:s Riskklasser." target=" _ blank">
-                                <img src="/theme_teamdoc/static/src/img/kastrup_genberg/sigill_.png"/>
-                            </a>
+                        <!--PRODUKTER-->
+                        <div class="col-md-5 ">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading text-center" style="background:#016FAF;">
+                                    <h2 style="margin: 0">
+                                        <strong>Produkter</strong>
+                                    </h2>
+                                </div>
+                                <div class="panel-body" style="padding-right:0px; padding-left:0px;">
+                                    <div class="col-md-12">
+                                        <div class="col-md-6 col-sm-6">
+                                            <img class="shadow" src="/theme_teamdoc/static/src/img/kastrup_genberg/sotningsmaskin.jpg"/>
+                                            <br/>
+                                            <br/>
+                                            <img class="shadow" src="/theme_teamdoc/static/src/img/kastrup_genberg/industriljudsandare.png"/>
+                                            <br/>
+                                            <br/>
+                                            <img class="shadow" src="/theme_teamdoc/static/src/img/kastrup_genberg/b3_18.jpg"/>
+                                            <br/>
+                                            <br/>
+                                            <img class="shadow" src="/theme_teamdoc/static/src/img/kastrup_genberg/1920kopia.jpg"/>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6" >
+                                            <img class="shadow" src="/theme_teamdoc/static/src/img/kastrup_genberg/vibroxsetprodukter.jpg"/>
+                                            <br/>
+                                            <br/>
+                                            <img class="shadow" src="/theme_teamdoc/static/src/img/kastrup_genberg/Sotarfrasen.jpg"/>
+                                            <br/>
+                                            <br/>
+                                            <img class="shadow" src="/theme_teamdoc/static/src/img/kastrup_genberg/scantronic2.jpg"/>
+                                            <br/>
+                                            <br/>
+                                            <img class="shadow" src="/theme_teamdoc/static/src/img/kastrup_genberg/luftlans.jpg"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <!--NYHETER-->
                         <div class="col-md-4" id="nyheter">
                             <div class="panel panel-primary">
-                                <div class="panel-heading text-center" style="background:#005E8C;">
+                                <div class="panel-heading text-center" style="background:#016FAF;">
                                     <h2 style="margin: 0; color:#fff;">
                                         <strong>Nyheter</strong>
                                     </h2>
                                 </div>
                                 <div class="panel-body">
-                                    <div/>
                                     <t t-set="blog" t-value="request.env['blog.blog'].search([('name','=','Our News')])"/>
                                     <t t-set="news" t-value="request.env['blog.post'].search([('website_published','=',True), ('blog_id','=',blog.id)], order='write_date desc')"/>
                                     <t t-call="theme_teamdoc.news_block_til_sub_dat_txt_vie"/>
-                                </div>
+                                <div/>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
-    </t>
+            </div>
+        </section>
+    </div>
 </t>
+</t>
+
 
 <!--FOOTER-->
 <data inherit_id="website.footer_custom" customize_show="True" name="Automatic Footer">
-    <xpath expr="//div[@id='footer']" position="replace">
-        <div class="container hidden-print">
-            <div class="row">
-                <!--<div class="col-md-3"><h4>Our products &amp; Services</h4><ul class="list-unstyled" id="products"><li><a href="/">Home</a></li></ul></div>-->
-                <div class="col-md-3 col-lg-offset-1" id="info">
-                    <h4>Kontakta Oss</h4>
-                    <!--<ul class="list-unstyled"><li><a href="/page/website.contactus">Contact us</a></li></ul>-->
-                    <ul class="list-unstyled">
-                        <li t-ignore="true">
-                            <i class="fa fa-phone"/>
-                            <span t-field="res_company.phone"/>
-                        </li>
-                        <li t-ignore="true">
-                            <i class="fa fa-envelope"/>
-                            <span t-field="res_company.email"/>
-                        </li>
+  <xpath expr="//div[@id='footer']" position="replace">
+    <div class="container hidden-print">
+      <div class="row">
+        <!--<div class="col-md-3">
+                    <h4>Our products &amp; Services</h4>
+                    <ul class="list-unstyled" id="products">
+                        <li><a href="/">Home</a></li>
                     </ul>
-                    <h2>
-                        <a t-att-href="website.social_facebook" t-if="website.social_facebook">
-                            <i class="fa fa-facebook-square"/>
-                        </a>
-                        <a t-att-href="website.social_twitter" t-if="website.social_twitter">
-                            <i class="fa fa-twitter"/>
-                        </a>
-                        <a t-att-href="website.social_linkedin" t-if="website.social_linkedin">
-                            <i class="fa fa-linkedin"/>
-                        </a>
-                        <a t-att-href="website.social_youtube" t-if="website.social_youtube">
-                            <i class="fa fa-youtube-play"/>
-                        </a>
-                        <a t-att-href="website.social_googleplus" t-if="website.social_googleplus" rel="publisher">
-                            <i class="fa fa-google-plus-square"/>
-                        </a>
-                        <a t-att-href="website.social_github" t-if="website.social_github">
-                            <i class="fa fa-github"/>
-                        </a>
-                    </h2>
-                </div>
-                <div class="col-md-3"></div>
-                <div class="col-md-5 col-lg-offset-3">
-                    <div>
-                        <h4>
-                            <span class="oe_editable" t-field="res_company.name"/>
-                            <!--<small>  - <a href="/page/website.aboutus">About us</a></small>-->
-                        </h4>
-                        <p>Kastrup &amp; Genberg AB grundades 1945 och har sedan dess levererat komponenter till industripannor. Programmet omfattar idag produkter för rengöring och renhållning av värmeytor i industripannor, maskiner för rengöring av rör samt produkter för rökgasanalys.</p>
-                    </div>
-                    <ul class="list-inline js_language_selector mt16" t-if="(request.website_multilang and len(languages) &gt; 1) or editable">
-                        <li t-foreach="languages" t-as="lg">
-                            <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang=lg[0])" t-att-data-default-lang="editable and 'true' if lg[0] == website.default_lang_code else None" t-att-data-lang="lg[0]" class="js_change_lang">
-                                <t t-esc="lg[1].split('/').pop()"/>
-                            </a>
-                        </li>
-                        <li groups="base.group_website_publisher">
-                            <t t-set="url_return" t-value="url_for('', '[lang]') + '?' + keep_query()"/>
-                            <a t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id}&amp;url_return=#{url_return}">
-                                <i class="fa fa-plus-circle"/>
-                            Add a language...
-                            
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+                </div>-->
+        <div class="col-md-3 col-lg-offset-1" id="info">
+          <h4>Kontakta Oss</h4>
+          <!--<ul class="list-unstyled">
+                        <li><a href="/page/website.contactus">Contact us</a></li>
+                    </ul>-->
+          <ul class="list-unstyled">
+            <li t-ignore="true">
+              <i class="fa fa-phone"/>
+              <span t-field="res_company.phone"/>
+            </li>
+            <li t-ignore="true">
+              <i class="fa fa-envelope"/>
+              <span t-field="res_company.email"/>
+            </li>
+          </ul>
+          <h2>
+            <a t-att-href="website.social_facebook" t-if="website.social_facebook">
+              <i class="fa fa-facebook-square"/>
+            </a>
+            <a t-att-href="website.social_twitter" t-if="website.social_twitter">
+              <i class="fa fa-twitter"/>
+            </a>
+            <a t-att-href="website.social_linkedin" t-if="website.social_linkedin">
+              <i class="fa fa-linkedin"/>
+            </a>
+            <a t-att-href="website.social_youtube" t-if="website.social_youtube">
+              <i class="fa fa-youtube-play"/>
+            </a>
+            <a t-att-href="website.social_googleplus" t-if="website.social_googleplus" rel="publisher">
+              <i class="fa fa-google-plus-square"/>
+            </a>
+            <a t-att-href="website.social_github" t-if="website.social_github">
+              <i class="fa fa-github"/>
+            </a>
+          </h2>
         </div>
-    </xpath>
+        <div class="col-md-2">
+            <a href="https://www.uc.se/risksigill2?showorg=5560454521&amp;language=swe" target=" _ blank" title="Sigillet är utfärdat av UC AB. Klicka på bilden för information om UC:s Riskklasser.">
+                <img src="/theme_teamdoc/static/src/img/kastrup_genberg/sigill.png"/>
+            </a>
+        </div>
+        <div class="col-md-5 col-lg-offset-1">
+          <div>
+            <h4>
+              <span class="oe_editable" t-field="res_company.name"/>
+              <!--<small>  - <a href="/page/website.aboutus">About us</a></small>-->
+            </h4>
+            
+            <p>Kastrup &amp; Genberg AB grundades 1945 och har sedan dess levererat komponenter till industripannor. Programmet omfattar idag produkter för rengöring och renhållning av värmeytor i industripannor, maskiner för rengöring av rör samt produkter för rökgasanalys.</p>
+          </div>
+          <ul class="list-inline js_language_selector mt16" t-if="(request.website_multilang and len(languages) &gt; 1) or editable">
+            <li t-foreach="languages" t-as="lg">
+              <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang=lg[0])" t-att-data-default-lang="editable and 'true' if lg[0] == website.default_lang_code else None" t-att-data-lang="lg[0]" class="js_change_lang">
+                <t t-esc="lg[1].split('/').pop()"/>
+              </a>
+            </li>
+            <li groups="base.group_website_publisher">
+              <t t-set="url_return" t-value="url_for('', '[lang]') + '?' + keep_query()"/>
+              <a t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id}&amp;url_return=#{url_return}"><i class="fa fa-plus-circle"/>
+                            Add a language...
+                            </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </xpath>
 </data>
+

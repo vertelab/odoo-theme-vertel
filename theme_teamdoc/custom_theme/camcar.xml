@@ -1,27 +1,33 @@
 <!-- hem -->
 <t t-name="website.hem">
-  <t t-call="website.layout">
-    <xpath expr="//body" position="inside">
-      <video autoplay="" style="z-index: -100;transform: translateX(-50%) translateY(-50%);transition: opacity 1s ease 0s;top: 50%;left: 50%; position: fixed; min-width: 100%;min-height: 100%; width: auto; height: auto; ">
-        <source type="video/mp4" src="/theme_teamdoc/static/camcar1.webm"/>
-      </video>
-    </xpath>
-    <div id="wrap" class="oe_structure oe_empty">
-      <style type="text/css">#bl-logo {
-      display:none;
-      }
+    <t t-call="website.layout">
+        <xpath expr="//body" position="inside">
+            <video autoplay="" style="z-index: -100;transform: translateX(-50%) translateY(-50%);transition: opacity 1s ease 0s;top: 50%;left: 50%; position: fixed; min-width: 100%;min-height: 125%; width: auto; height: auto; ">
+                <source type="video/mp4" src="/theme_teamdoc/static/src/img/camcar/video/camcar1.webm"/>
+            </video>
+        </xpath>
+        <div id="wrap" class="oe_structure oe_empty">
+            <style type="text/css">#bl-logo {
+                  display:none;
+                  }
 </style>
-      <section class="s_big_picture automatic-color readable" style="">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 text-center mt32 mb32">
-              <h2/>
+            <div style="margin-top:120px;">
+                <div class="text-center" style="color:#D31940; text-shadow: 0px 0px 2px #fff; ">
+                    <h1>Hyr din kamerabil hos oss!</h1>
+                </div>
+                <section class="mt32">
+                    <div class="container col-md-12">
+                                <a class="col-md-6 col-xs-12 mt16 mb16">
+                                    <img class="img-circle" src="/theme_teamdoc/static/src/img/camcar/intro5.jpg" style="max-width:100%; margin: auto; display: block; box-shadow: 0px 0px 10px #fff;"/>
+                                </a>
+                                <a class="col-md-6 col-xs-12 mt16 mb16">
+                                    <img class="img-circle" src="/theme_teamdoc/static/src/img/camcar/Bil och trailer 2(1.gif" style="max-width:100%; margin: auto; display: block; box-shadow: 0px 0px 10px #fff;"/>
+                                </a>
+                            </div>
+                </section>
             </div>
-          </div>
         </div>
-      </section>
-    </div>
-  </t>
+    </t>
 </t>
 
 <!--Om Oss-->

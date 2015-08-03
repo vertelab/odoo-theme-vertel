@@ -26,16 +26,27 @@ from datetime import datetime
 from lxml import html
 import werkzeug
 
-def get_news(text, length=0):
-    if text:
-        result_text = ' '.join(html.fromstring(text).text_content().split())
-        if 0 < length < len(result_text):
-            return result_text[:length]
-        return result_text
-    return ''
-
-class Website(models.Model):
+class website(models.Model):
     _inherit = 'website'
+       
+    def get_news(self, text, length=0):
+        if text:
+            result_text = ' '.join(html.fromstring(text).text_content().split())
+            if 0 < length < len(result_text):
+                return result_text[:length]
+            return result_text
+        return ''
+        
+    def get_season(self):
+        if datetime.today().month in [3, 4, 5]:
+            return 'spring'
+        if datetime.today().month in [6, 7, 8]:
+            return 'summer'
+        if datetime.today().month in [9, 10, 11]:
+            return 'autumn'
+        if datetime.today().month in [1, 2, 12]:
+            return 'winter'
+        return ''
 
 class Vertel(http.Controller):
     @http.route(['/logo500.png'], type='http', auth="public", cors="*")
