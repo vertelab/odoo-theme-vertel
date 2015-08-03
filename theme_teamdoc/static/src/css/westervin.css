@@ -43,6 +43,7 @@
     position: fixed;
     width: 100%;
     background: #fff;
+    box-shadow: 0px 0px 20px #DA9000;
 }
 
 /* COMPANY LOGO */
@@ -106,6 +107,10 @@
 
 h2,h3,h5{
     color:#fff;
+}
+
+.hover-image-cover{
+    background-color:#282834;
 }
 
 /* FOOTER STYLE*/

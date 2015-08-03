@@ -1,135 +1,151 @@
 <!--HEM-->
 <t t-name="website.hem">
-  <t t-call="website.layout">
-    <div id="wrap" class="oe_structure oe_empty">
-      <section class="para_large mt16">
-        <div class="container">
-          <div class="row  col-md-12" style="display: block; margin: auto; width: 100%; max-width: 1110px;">
-            <div class="col-md-6 col-sm-6 col-xs-12" style="padding-left: 0; padding-right: 10px;">
-              <div style="position:relative;">
-                <img alt="" class="img-responsive shadow" id="ekologisk" src="/theme_teamdoc/static/src/img/westervin/EU_ekologisk-.png" style=""/>
-                <div class="col-md-12 col-xs-12 text-center" style="position:absolute; top: 0;left: 0;">
-                  <p/>
-                  <h2 class="text-center">
-                    <strong>EKO-certifiering</strong>
-                  </h2>
-                  <h3 class="text-center">
-                    <strong>Vår verksamhet nu eko-certifierad.<br/>
-<br/>
-(EG) No. 834/2007 </strong>
-                  </h3>
-                  <h4 class="text-center" style="color:#fff">
-                    <strong>Givetvis har hela vår odling även före certifieringen bedrivits ekologiskt!</strong>
-                  </h4>
-                  <h4 class="pull-right">
-                    <a href="/theme_teamdoc/static/src/img/westervin/certificate.png">
-                      <strong>Certifikatet</strong>
-                    </a>
-                  </h4>
-                  <p/>
+    <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty">
+            <section class="mt16">
+                <div class="container">
+                    <div class="row  col-md-12" style="display: block; margin: auto; width: 100%; max-width: 1110px;">
+                        <div class="col-md-6 col-sm-6 col-xs-12" style="padding-left: 0; padding-right: 10px;">
+                            <div style="position:relative;">
+                                <img alt="" class="img-responsive shadow" id="ekologisk" src="/theme_teamdoc/static/src/img/westervin/EU_ekologisk-.png" style=""/>
+                                <div class="col-md-12 col-xs-12 text-center" style="position:absolute; top: 0;left: 0;">
+                                    <p/>
+                                    <h2 class="text-center">
+                                        <strong>EKO-certifiering</strong>
+                                    </h2>
+                                    <h3 class="text-center">
+                                        <strong>Vår verksamhet nu eko-certifierad.
+                                            
+                                            <br/>
+                                            <br/>
+(EG) No. 834/2007 
+                                        
+                                        </strong>
+                                    </h3>
+                                    <h4 class="text-center" style="color:#fff">
+                                        <strong>Givetvis har hela vår odling även före certifieringen bedrivits ekologiskt!</strong>
+                                    </h4>
+                                    <h4 class="pull-right">
+                                        <a href="/theme_teamdoc/static/src/img/westervin/certificate.png">
+                                            <strong>Certifikatet</strong>
+                                        </a>
+                                    </h4>
+                                    <p/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-6" >
+                            <div class="text-center hover-image">
+                                <img alt="" class="img-responsive shadow" src="/theme_teamdoc/static/src/img/westervin/odling.jpg" />
+                                <div class="col-md-3 col-sm-3 col-xs-6 hover-image-cover">
+                                    <h5>
+                                        <a href="/page/odling">
+                                            <strong>Odling</strong>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-6" >
+                            <div class="text-center hover-image">
+                                <img alt="" class="img-responsive shadow" src="/theme_teamdoc/static/src/img/westervin/skotsel.jpg"/>
+                                <div class="col-md-3 col-sm-3 col-xs-6 hover-image-cover">
+                                    <h5>
+                                        <a href="/page/skotsel">
+                                            <strong>Skötsel</strong>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-6" style="margin-top:28px;">
+                            <div class="text-center hover-image">
+                                <img alt="" class="img-responsive shadow" src="/theme_teamdoc/static/src/img/westervin/skord.jpg"/>
+                                <div class="col-md-3 col-sm-3 col-xs-6 hover-image-cover">
+                                    <h5>
+                                        <a href="/page/skord">
+                                            <strong>Skörd</strong>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-6" style="margin-top:28px;">
+                            <div class="text-center hover-image">
+                                <img alt="" class="img-responsive shadow" src="/theme_teamdoc/static/src/img/westervin/alla_flaskor.jpg"/>
+                                <div class="col-md-3 col-sm-3 col-xs-6 hover-image-cover">
+                                    <h5>
+                                        <a href="/page/produkter">
+                                            <strong>Våra Produkter</strong>
+                                        </a>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-6" style="padding-left: 0px; padding-right: 10px;">
-              <div class="text-center hover-image">
-                <img alt="" class="img-responsive shadow" src="/theme_teamdoc/static/src/img/westervin/odling.jpg" style=""/>
-                <div class="col-md-3 col-sm-3 col-xs-6 hover-text hidden">
-                  <p style="left: 30%;">
-                    <a href="/page/odling">
-                      <strong>Odling</strong>
-                    </a>
-                  </p>
+            </section>
+            <section class="parallax s_parallax mb32 mt32" data-scroll-background-offset="0" data-scroll-background-ratio="0.3" style="background-image: url(&quot;/theme_teamdoc/static/src/img/westervin/parallax.jpg&quot;); background-attachment: scroll; background-position: 0px 0px; height: 100px; overflow: hidden; display: block; margin: auto; width: 100%; max-width: 1110px;">
+                <div>
+                    <div class="oe_structure"/></div>
+            </section>
+            <section class="s_image_text">
+                <div class="container">
+                    <div class="row" style="display: block; margin: auto; width: 100%; max-width: 1110px;">
+                        <div class="col-md-6 mt16">
+                            <img alt="Odoo image and text block" class="img img-responsive mb16 img-thumbnail shadow" src="/theme_teamdoc/static/src/img/westervin/img38.jpg" style=""/>
+                        </div>
+                        <div class="col-md-6 col-sm-12" style="padding-top:64px;">
+                            <font style="color:#343C4B;">
+                                <b style="font-size:1.8em;">Vinprovning!</b>
+                                <br/>
+                                <br/>
+                                <b style="font-size:1.6em;"> Öppet hus med drop-in</b>
+                                <br/>
+                                <br/>
+                                <b style="font-size:1.4em">lördagar kl 12-16 (start från 6:e juni)</b>
+                            </font>
+                            <br/>
+                            <br/>
+                            <font>
+                                <a href="/page/provsmakning">
+                                    <b style="font-size:1.2em">Läs mer om provsmakning... </b>
+                                </a>
+                            </font>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-6" style="padding-left: 0px; padding-right: 10px;">
-              <div class="text-center hover-image">
-                <img alt="" class="img-responsive shadow" src="/theme_teamdoc/static/src/img/westervin/skotsel.jpg" style=""/>
-                <div class="col-md-3 col-sm-3 col-xs-6 hover-text hidden">
-                  <p style="left: 30%;">
-                    <a href="/page/skotsel">
-                      <strong>Skötsel</strong>
-                    </a>
-                  </p>
+            </section>
+            <section class="parallax s_parallax mb32 mt32" data-scroll-background-offset="0" data-scroll-background-ratio="0.3" style="background-image: url(&quot;/theme_teamdoc/static/src/img/westervin/skord.jpg&quot;); background-attachment: scroll; background-position: 0px 0px; height: 100px; overflow: hidden; display: block; margin: auto; width: 100%; max-width: 1110px;">
+                <div>
+                    <div class="oe_structure"/></div>
+            </section>
+            <div class="carousel slide vertical mb64 mt32" id="myCarousel0">
+                <div class="item active" style="">
+                    <div class="container">
+                        <div class="row content" style="display: block; margin: auto; width: 100%; max-width: 1110px;">
+                            <div class="col-md-6 col-sm-12" style="padding-top:64px;">
+                                <font style="font-size:1.8em; color:#343C4B;">
+                                    <b>Följ med på vin-och matsafari i Östergötland!</b>
+                                </font>
+                                <br/>
+                                <br/>
+                                <font style="font-size:1.5em; color:#343C4B;">Vi besöker Westervin, Brunneby Musteri, Eklunds Chark samt Britta och Lennarts Nära Kött.</font>
+                                <p class="pull-right">
+                                    <a href="/page/mat-vinsafari">
+                                        <b style="font-size:1.2em">Läs mer här!</b>
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="carousel-img col-md-6 col-sm-6 col-xs-6">
+                                <img alt="Banner Odoo Image" class="img-responsive img-thumbnail shadow" src="/theme_teamdoc/static/src/img/westervin/vinsafari.jpg" style=""/>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="col-md-3 col-sm-3 col-xs-6" style="padding-left: 0px; padding-top:5px; padding-right: 10px;">
-              <div class="text-center hover-image">
-                <a href="/">
-                  <img alt="" class="img-responsive shadow" src="/theme_teamdoc/static/src/img/westervin/skord.jpg" style=""/>
-                </a>
-                <div class="col-md-3 col-sm-3 col-xs-6 hover-text hidden">
-                  <p style="left: 30%;">
-                    <a href="/page/skord">
-                      <strong>Skörd</strong>
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-6" style="padding-left: 0; padding-top:5px; padding-right: 10px;">
-              <div class="text-center hover-image">
-                <img alt="" class="img-responsive shadow" src="/theme_teamdoc/static/src/img/westervin/alla_flaskor.jpg" style=""/>
-                <div class="col-md-3 col-sm-3 col-xs-6 hover-text hidden">
-                  <p style="left: 10%;">
-                    <a href="/page/produkter">
-                      <strong>Våra Produkter</strong>
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </section>
-      <section class="parallax s_parallax mb32 mt32" data-scroll-background-offset="0" data-scroll-background-ratio="0.3" style="background-image: url(&quot;/theme_teamdoc/static/src/img/westervin/parallax.jpg&quot;); background-attachment: scroll; background-position: 0px 17.1px; height: 100px; overflow: hidden; display: block; margin: auto; width: 100%; max-width: 1110px;">
-        <div>
-          <div class="oe_structure"/>
-        </div>
-      </section>
-      <section class="s_image_text">
-        <div class="container">
-          <div class="row" style="display: block; margin: auto; width: 100%; max-width: 1110px;">
-            <div class="col-md-6 mt16">
-              <img alt="Odoo image and text block" class="img img-responsive mb16 img-thumbnail shadow" src="/theme_teamdoc/static/src/img/westervin/img38.jpg" style=""/>
-            </div>
-            <div class="col-md-6 col-sm-12" style="padding-top:64px;"><font style="color:#343C4B;"><b style="font-size:1.8em;">Vinprovning!</b><br/><br/><b style="font-size:1.6em;"> Öppet hus med drop-in</b><br/><br/><b style="font-size:1.4em">lördagar kl 12-16 (start från 6:e juni)</b></font><br/><br/><font><a href="/page/provsmakning"><b style="font-size:1.2em">Läs mer om provsmakning... </b></a></font><br/>
-        </div>
-          </div>
-        </div>
-      </section>
-      <section class="parallax s_parallax mb32 mt32" data-scroll-background-offset="0" data-scroll-background-ratio="0.3" style="background-image: url(&quot;/theme_teamdoc/static/src/img/westervin/skord.jpg&quot;); background-attachment: scroll; background-position: 0px 17.1px; height: 100px; overflow: hidden; display: block; margin: auto; width: 100%; max-width: 1110px;">
-        <div>
-          <div class="oe_structure"/>
-        </div>
-      </section>
-      <div class="carousel slide vertical mb64 mt32" id="myCarousel0">
-        <div class="item active" style="">
-          <div class="container">
-            <div class="row content" style="display: block; margin: auto; width: 100%; max-width: 1110px;">
-              <div class="col-md-6 col-sm-12" style="padding-top:64px;">
-                <font style="font-size:1.8em; color:#343C4B;">
-                  <b>Följ med på vin-och matsafari i Östergötland!</b>
-                </font>
-                <br/>
-                <br/>
-                <font style="font-size:1.5em; color:#343C4B;">Vi besöker Westervin, Brunneby Musteri, Eklunds Chark samt Britta och Lennarts Nära Kött.</font>
-                <p class="pull-right">
-                  <a href="/page/mat-vinsafari">
-                    <b style="font-size:1.2em">Läs mer här!</b>
-                  </a>
-                </p>
-              </div>
-              <div class="carousel-img col-md-6 col-sm-6 col-xs-6">
-                <img alt="Banner Odoo Image" class="img-responsive img-thumbnail shadow" src="/theme_teamdoc/static/src/img/westervin/vinsafari.jpg" style=""/>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </t>
+    </t>
 </t>
 
 <!--FOOTER-->

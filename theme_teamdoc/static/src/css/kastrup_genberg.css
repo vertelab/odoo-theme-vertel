@@ -18,7 +18,7 @@
 }
 
 #bl-menu-bar > div > ul > li > a {
-    padding-top: 25px;
+    padding-top: 40px;
     padding-bottom: 25px;
     padding-left: 0px;
     padding-right: 0px;
@@ -37,7 +37,8 @@
     position: fixed;
     width: 100%;
     background: #e1e1e1;
-    height:76px;
+    height:92px;
+    box-shadow: 0px 0px 20px #333;
 }
 
 /* COMPANY LOGO */
