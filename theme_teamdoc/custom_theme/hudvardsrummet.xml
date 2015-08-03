@@ -16,7 +16,7 @@
                                     </font>
                                 </a>
                             </div>
-                            <a href="/">
+                            <a href="/page/nyhetsbrev">
                                 <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/images_4ndrad_small.jpg" style=""/>
                             </a>
                         </div>
@@ -31,7 +31,7 @@
                                     </font>
                                 </a>
                             </div>
-                            <a href="/">
+                            <a href="/page/manadens-behandling">
                                 <img class="img-responsive" src="/website/image/ir.attachment/64_695220a/datas" style="width: 100%"/>
                             </a>
                         </div>
@@ -41,7 +41,7 @@
                             <div style="background: url('/theme_teamdoc/static/src/img/hudvardsrummet/behandlingar.jpg'); background-size: cover; height: 467px; margin: auto;"/>
                             <div class="text-center" style="background-color: #000; height: 115px;">
                                 <br/>
-                                <a href="/">
+                                <a href="/page/behandlingar">
                                     <font style="color: #fff;" size="4">
                                         <i class="fa fa-caret-up"/>
                                         <br/>
@@ -53,7 +53,7 @@
                     </div>
                     <div class="block col-md-4">
                         <div class="block col-md-12 hover hvr-float">
-                            <a href="/">
+                            <a href="/shop">
                                 <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/image-teoxane.jpg" style=""/>
                             </a>
                             <div class="text-center" style="background-color: #EEE7D0; height: 63px;">
@@ -61,7 +61,7 @@
                                 <a href="/">
                                     <font style="color: #000;" size="4">
                                         <i class="fa fa-caret-up"/>
-                                        <strong>Webshop</strong>
+                                        <strong>Webbutik</strong>
                                     </font>
                                 </a>
                             </div>
@@ -72,7 +72,7 @@
                             </a>
                             <div class="text-center" style="background-color: #B9A55A; height: 63px;">
                                 <br/>
-                                <a href="/">
+                                <a href="/page/om-oss">
                                     <font style="color: #fff;" size="4">
                                         <i class="fa fa-caret-up"/>
                                         <strong>Om oss</strong>
@@ -90,17 +90,17 @@
                             </font>
                         </div>
                         <div class="col-md-12 row" style="display: block; margin: auto;">
-                            <div class="block col-md-4 col-xs-12 hover">
+                            <div class="block col-md-4 col-xs-12 hover mt32">
                                 <a href="/">
                                     <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/clearstart.png" style="width: 380px;"/>
                                 </a>
                             </div>
-                            <div class="block col-md-4 col-xs-12 hover">
+                            <div class="block col-md-4 col-xs-12 hover mt32">
                                 <a href="/">
                                     <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/kahina.jpg" style="width: 380px;"/>
                                 </a>
                             </div>
-                            <div class="block col-md-4 col-xs-12 hover">
+                            <div class="block col-md-4 col-xs-12 hover mt32">
                                 <a href="/">
                                     <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/Teosyal.jpg" style="width: 380px;"/>
                                 </a>
@@ -129,12 +129,14 @@
                         <div class="col-md-2">
                             <img src="/theme_teamdoc/static/src/img/hudvardsrummet/sidfot.png" style="width: 100%;"/>
                         </div>
-                        <div class="col-md-5"/></div>
+                        <div class="col-md-5"/>
+                    </div>
                 </div>
             </section>
         </div>
     </t>
 </t>
+
 
 <!-- theme overwrite -->
 <?xml version="1.0"?>
@@ -142,7 +144,7 @@
     <!-- Customize CSS -->
     <xpath expr="//head" position="after">
         <link href="/theme_teamdoc/static/src/css/hudvardsrummet.css" rel="stylesheet"/>
-        <link href="http://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet" type="text/css"/>
     </xpath>
     <!-- hide the original menu bar -->
     <xpath expr="//body/div['id=wrawrap']/header/div" position="attributes">
@@ -153,14 +155,17 @@
     <xpath expr="//body/div['id=wrawrap']/header" position="inside">
         <div class="container">
             <div class="block col-md-12 hidden-xs">
-                <img id="bl-logo" src="/theme_teamdoc/static/src/img/hudvardsrummet/sommar2013.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
+                <img id="bl-logo" src="/theme_teamdoc/static/src/img/hudvardsrummet/header-logo.jpg" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name" style="position: relative;"/>
+                <p style="position: absolute; z-index: 1; left: 0;">
+                    hahahahaha
+                </p>
             </div>
         </div>
         <div id="bl-menu" class="bl-navbar hidden-xs">
             <div class="container">
                 <div id="bl-menu-bar" class="block col-md-12">
                     <div class="row">
-                        <ul class="nav navbar-nav">
+                        <ul class="nav nav-justified">
                             <t t-foreach="website.menu_id.child_id" t-as="submenu">
                                 <t t-call="website.submenu"/>
                             </t>
@@ -212,4 +217,3 @@
     </xpath>
 
 </data>
-
