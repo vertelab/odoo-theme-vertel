@@ -120,7 +120,7 @@
                                     <div class="text-center hover-image">
                                         <img src="/website/static/src/img/desert.jpg" alt="" class="img-responsive"/>
                                         <div class="col-md-6 col-sm-6 col-xs-12 hover-image-cover">
-                                            <a href="/"><h3>Hover Text</h3></a>
+                                            <a href="/"><h5>Hover Text</h5></a>
                                         </div>
                                     </div>
                                 </div>
@@ -128,7 +128,7 @@
                                     <div class="text-center hover-image">
                                         <img src="/website/static/src/img/china_thumb.jpg" alt="" class="img-responsive"/>
                                         <div class="col-md-3 col-sm-3 col-xs-6 hover-image-cover">
-                                            <a href="/"><h5>Hover Text</h5></a>
+                                            <a href="/"><h6>Hover Text</h6></a>
                                         </div>
                                     </div>
                                 </div>
@@ -136,7 +136,7 @@
                                     <div class="text-center hover-image">
                                         <img src="/website/static/src/img/deers_thumb.jpg" alt="" class="img-responsive"/>
                                         <div class="col-md-3 col-sm-3 col-xs-6 hover-image-cover">
-                                            <a href="/"><h5>Hover Text</h5></a>
+                                            <a href="/"><h6>Hover Text</h6></a>
                                         </div>
                                     </div>
                                 </div>
@@ -144,7 +144,7 @@
                                     <div class="text-center hover-image">
                                         <img src="/website/static/src/img/desert_thumb.jpg" alt="" class="img-responsive"/>
                                         <div class="col-md-3 col-sm-3 col-xs-6 hover-image-cover">
-                                            <a href="/"><h5>Hover Text</h5></a>
+                                            <a href="/"><h6>Hover Text</h6></a>
                                         </div>
                                     </div>
                                 </div>
@@ -152,7 +152,7 @@
                                     <div class="text-center hover-image">
                                         <img src="/website/static/src/img/china_thumb.jpg" alt="" class="img-responsive"/>
                                         <div class="col-md-3 col-sm-3 col-xs-6 hover-image-cover">
-                                            <a href="/"><h5>Hover Text</h5></a>
+                                            <a href="/"><h6>Hover Text</h6></a>
                                         </div>
                                     </div>
                                 </div>
