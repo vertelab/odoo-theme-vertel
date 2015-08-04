@@ -2,65 +2,6 @@
                        Middle Logo
  ============================================================ */
 
-.ml-body {
-    background: #E6E6E6;
-    list-style: none;
-}
-
-/* MENU */
-.ml-navbar {
-    font-family: 'Cinzel Decorative', cursive;
-    z-index: 1;
-    margin-top: 50px;
-    background: none;
-    width: 100%;
-}
-
-.ml-navbar-fixed-top {
-    font-family: 'Cinzel Decorative', cursive;
-    z-index: 99;
-    margin-top: -146px;
-    position: fixed;
-    width: 100%;
-    background: #fff;
-}
-
-/* COMPANY LOGO */
-#ml-logo {
-    max-width: 200px;
-    display:block;
-    margin:auto;
-}
-
-/* MENU TEXT */
-#ml-menu-bar > div > ul > div > div > li > a {
-    color: #343434;
-}
-
-/* STYLE WHEN MOUSE HOVER */
-#ml-menu-bar > div > ul > div > div > li > a:hover,
-#ml-menu-bar > div > ul > div > div > li > a:focus {
-    color: #50A7D2;
-    background-color: #E6E6E6;
-}
-
-/* STYLE WHEN PAGE ACTIVE */
-#ml-menu-bar > div > ul > div > div > .active > a {
-    color: #50A7D2;
-    background-color: #E6E6E6;
-}
-
-/* SIDE MENU */
-#ml-menu-bar > div > ul > div .navbar-right,
-#ml-menu-bar > div > ul > div .navbar-left {
-    padding-top: 15%;
-}
-
-#menu-leftside > div > li > a > span,
-#menu-rightside > div > li > a > span {
-    font-size: 120%;
-}
-
 .navbar {
     border: 0px;
 }
@@ -68,18 +9,4 @@
 .navbar-nav {
     border-color: none;
 }
-
-#ml-menu-bar {
-    width: 100%;
-}
-
-#ml-menu-bar > .row {
-    width: 100%;
-}
-
-/* FOOTER STYLE*/
-.ml-footer {
-
-}
-
 
