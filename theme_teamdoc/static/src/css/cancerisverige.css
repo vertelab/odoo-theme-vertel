@@ -29,23 +29,29 @@
 
 /* menu width depends on the width of the logo */
 #bl-menu-bar > div > ul{
-    padding-left: 18%;
+    padding-left: 5%;
+    
 }
 
 .bl-navbar-fixed-top {
     font-family: 'Ubuntu';
     font-size: 1.2em;
     z-index: 99;
-    margin-top: -234px;
+    margin-top: -302px;
     position: fixed;
     width: 100%;
     background: #EDEEF0;
 }
+.nav-justified{
+    width:95%;
+}
+
 
 /* COMPANY LOGO */
 #bl-logo {
     display:block;
     margin:auto;
+    width:1000px;
 }
 
 /* MENU TEXT */
@@ -57,13 +63,13 @@
 #bl-menu-bar > div > ul > li > a:hover,
 #bl-menu-bar > div > ul > li > a:focus {
     color: #EDEEF0;
-    background-color: #8B9DA7;
+    background-color: #A9BBC5;
 }
 
 /* STYLE WHEN PAGE ACTIVE */
 #bl-menu-bar > div > ul > .active > a {
     color: #EDEEF0;
-    background-color: #8B9DA7;
+    background-color: #A9BBC5;
 }
 
 .navbar {
