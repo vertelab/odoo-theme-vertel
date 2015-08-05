@@ -1,219 +1,288 @@
 <!-- hem -->
 <t t-name="website.hem">
-  <t t-call="website.layout">
-    <div class="oe_structure oe_empty" id="wrap">
-      <section id="slide_gallery">
-        <div class="container" id="carousel_slide">
-          <div class="carousel slide mb32" id="myCarousel0" style="">
-            <ol class="carousel-indicators">
-              <li class="active" data-slide-to="0" data-target="#myCarousel0"/>
-              <li data-slide-to="1" data-target="#myCarousel0"/>
-            </ol>
-            <div class="carousel-inner">
-              <div class="item active">
-                <img alt="First slide" src="/theme_teamdoc/static/src/img/sccaudio/IMG_2631.JPG"/>
-              </div>
-              <div class="item img-responsive">
-                <img alt="Second slide" src="/theme_teamdoc/static/src/img/sccaudio/IMG_2634.JPG"/>
-              </div>
-            </div>
-            <div class="carousel-control left" data-slide="prev" data-target="#myCarousel0" href="#myCarousel0" style="width: 10%">
-              <i class="fa fa-chevron-left"/>
-            </div>
-            <div class="carousel-control right" data-slide="next" data-target="#myCarousel0" href="#myCarousel0" style="width: 10%">
-              <i class="fa fa-chevron-right"/>
-            </div>
-          </div>
+    <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty">
+            <section>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div clss="col-md-12 col-sm-12 col-xs-12">
+                            <img alt="Odoo Image" class="img-responsive hover" src="/website/image/ir.attachment/26_348e5d4/datas" style="width: 100%"/>
+                        </div>
+                    </div>
+                    <div class="row col-md-12 col-sm-12 col-xs-12">
+                        <div class="col-md-4 col-sm-12 col-xs-12 hidden-xs">
+                            <img class="img-responsive hover" src="/theme_teamdoc/static/src/img/sccaudio/S3i_03.jpg" style="margin: auto; height: 100%;"/>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <div style="margin-top: 24%;">
+                                <h1 class="text-center mt32 mb32" style="color: #ED1C24;">
+                                    <strong>SCC Audio</strong>
+                                </h1>
+                                <hr/>
+                                <p class="mt32 mb32">
+                                    <font size="4"> Vi är en liten tillverkare, med all produktion i Sverige. Från ritbord till färdig produkt. Personlig service och gediget hantverk är nyckelord för verksamheten. Högtalarna konstrueras av musikentusiaster för musikentusiaster. SCC audio använder till största del komponenter från SEAS, Audyn cap och Jantzen audio. Förhållandet mellan pris och prestanda i en högtalare från SCC audio är i världsklass. Vi tillverkar även specialprodukter enligt kundens egna specifikationer. </font>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-xs-12 hidden-xs">
+                            <img class="img-responsive hover" src="/theme_teamdoc/static/src/img/sccaudio/S3i_02.jpg" style="margin: auto; height: 100%;"/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="parallax s_parallax" data-scroll-background-offset="0" data-scroll-background-ratio="0.3" style="background-image: url(&quot;/theme_teamdoc/static/src/img/sccaudio/bg.jpg&quot;); background-attachment: scroll; background-position: 0px 153.9px; height: 500px;">
+                <div>
+                    <div class="container">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8 col-xs-12" style="color: #fff; margin-top:7%;">
+                            <h1 class="text-center">Nyheter inför 2015</h1>
+                            <p class="text-center">
+                            <font size="5" style="color: #fff;">
+                            Ett helt nytt Demorum/Lyssningsrum finns nu tillgängligt i Linköping. Ett rum på 20kvm i avskild miljö. Där man efter tidsbokning kan få en omfattande demo.<br/>
+                            Tidsbokning på 0738-789248, Christian.
+                            </font>
+                            </p>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container-fluid">
+                    <div class="row col-md-12 col-sm-12 col-xs-12">
+                        <div class="col-md-3 col-sm-12 col-xs-12 hidden-xs">
+                            <img class="img-responsive hover" src="/theme_teamdoc/static/src/img/sccaudio/s1i_01.jpg" style="margin: auto; height: 100%;"/>
+                        </div>
+                        <div class="col-md-3 col-sm-12 col-xs-12">
+                            <div style="margin-top: 28%;">
+                                <h2 class="text-center" style="color: #ED1C24;">
+                                    <strong>Golvmodeller</strong>
+                                </h2>
+                                <hr/>
+                                <p class="text-center mt32 mb32">
+                                    <font size="5" style="color: #BE753E;">
+                                        SCC audio-S2i<br/>
+                                        <a href="/">Mer info...</a>
+                                        <br/>
+                                        SCC audio-S1i<br/>
+                                        <a href="/">Mer info...</a>
+                                    </font>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12 col-xs-12 hidden-xs">
+                            <img class="img-responsive hover" src="/theme_teamdoc/static/src/img/sccaudio/S3i_04.jpg" style="margin: auto; height: 100%;"/>
+                        </div>
+                        <div class="col-md-3 col-sm-12 col-xs-12">
+                            <div style="margin-top: 28%;">
+                                <h2 class="text-center" style="color: #ED1C24;">
+                                    <strong>Stativmodeller</strong>
+                                </h2>
+                                <hr/>
+                                <p class="text-center mt32 mb32">
+                                    <font size="5" style="color: #BE753E;">
+                                        SCC audio-S3i<br/>
+                                        <a href="/">Mer info...</a>
+                                        <br/>
+                                        SCC audio-S4iX<br/>
+                                        <a href="/">Mer info...</a>
+                                    </font>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-      </section>
-      <section class="mt16 mb16">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3">
-              <a class="product">
-                <img alt="Odoo - Sample 1 for three columns" class="img img-responsive" src="/theme_teamdoc/static/src/img/sccaudio/S4i.png" style="height: 300px"/>
-              </a>
-            </div>
-            <div class="col-md-3" style="text-align: left;">
-              <font size="3"> </font>
-              <h3>
-                <font size="3">Golvmodeller</font>
-              </h3>
-              <font size="3">
-                <b>SCC audio-S3i</b>
-                <br/>
-                <a href="#">Till Produkt...</a>
-                <br/>
-                <br/>
-                <b>SCC audio-S4iX</b>
-                <br/>
-                <a href="#">Till Produkt...</a>
-              </font>
-            </div>
-            <div class="col-md-3">
-              <a class="product" href="/page/matlagning">
-                <img alt="Odoo - Sample 2 for three columns" class="img img-responsive" src="/theme_teamdoc/static/src/img/sccaudio/S1i.png" style="height: 300px;"/>
-              </a>
-            </div>
-            <div class="col-md-3" style="text-align: left;">
-              <font size="3"> </font>
-              <h3>
-                <font size="3">Stativmodeller</font>
-              </h3>
-              <font size="3">
-                <b>SCC audio-S2i</b>
-                <br/>
-                <a href="#">Till Produkt...</a>
-                <br/>
-                <br/>
-                <b>SCC audio-S1i</b>
-                <br/>
-                <a href="#">Till Produkt...</a>
-              </font>
-            </div>
-          </div>
-        </div>
-      </section>
-      <hr/>
-    </div>
-  </t>
+    </t>
 </t>
+
 
 <!-- theme -->
 <?xml version="1.0"?>
-<data inherit_id="website.layout" customize_show="True" active="False" name="Business Casual" priority="99">
-    <xpath expr="//head" position="inside">
-        <!-- Custom CSS -->
-        <link href="/theme_teamdoc/static/src/css/sccaudio.css" rel="stylesheet"/>
-        <link href="/theme_teamdoc/static/src/css/custom.css" rel="stylesheet"/>
+<data inherit_id="website.layout" customize_show="True" active="False" name="Theme BS-Multipurpose-Ruma" priority="99">
+    <!-- Customize CSS -->
+    <xpath expr="//head" position="after">
+        <link href="/theme_vertel/static/src/css/theme_bs_ruma.css" rel="stylesheet"/>
         <style>
-                    body {
-                        background: #272B2E;
-                        background-size: cover;
-                        font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-                    }
-                    h1,h2,h3,h4,h5,h6 {
-                            text-transform: uppercase;
-                            font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
-                            font-weight: 700;
-                            letter-spacing: 1px;
-                    }
-                </style>
-        <!-- Fonts -->
-        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
-        <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css"/>
+            .bs-body {
+                font-family: 'Open Sans', sans-serif;
+                list-style: none;
+            }
+
+            /* MENU */
+            #bs-menu {
+                z-index: 1;
+                margin-top: 0px;
+                background: #222;
+            }
+
+            /* COMPANY LOGO */
+            #bs-menu &gt; div &gt; div &gt; a {
+                color: #FFF;
+            }
+
+            #bs-logo {
+                max-height: 50px;
+            }
+
+            /* MENU TEXT */
+            #bs-menu &gt; div &gt; div &gt; ul &gt; li &gt; a {
+                color: #fff;
+                font-size: 1em;
+            }
+
+            /* STYLE WHEN MOUSE HOVER */
+            #bs-menu &gt; div &gt; div &gt; ul &gt; li &gt; a:hover,
+            #bs-menu &gt; div &gt; div &gt; ul &gt; li &gt; a:focus {
+                color: #222;
+                background-color: #fff;
+            }
+
+            /* STYLE WHEN PAGE ACTIVE */
+            #bs-menu &gt; div &gt; div &gt; ul &gt; .active &gt; a {
+                color: #000;
+                background-color: #fff;
+            }
+
+            /* FOOTER STYLE*/
+            .bs-footer {
+                background: #222;
+                color: #fff;
+            }
+        </style>
     </xpath>
-    <xpath expr="//body/div" position="before">
-        <div class="brand" id="brand" t-field="res_company.name"/>
-        <div class="address-bar">
-            <t t-esc="res_company.street"/> | 
-            <t t-esc="res_company.partner_id.zip"/>
-            <t t-esc="res_company.city"/> | 
-            <t t-esc="res_company.phone"/> | 
-            <t t-esc="res_company.partner_id.mobile"/>
+
+    <!-- add company logo -->
+    <xpath expr="//header//ul[@id='top_menu']" position="before">
+        <img id="bs-logo" src="/logo.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
+    </xpath>
+
+    <!-- define id and class to menu bar -->
+    <xpath expr="//body/div[@id='wrapwrap']/header/div" position="attributes">
+        <attribute name="id">bs-menu</attribute>
+        <attribute name="class">navbar navbar-inverse navbar-fixed-top</attribute>
+    </xpath>
+
+    <!-- define class to menu style -->
+    <xpath expr="//header//ul[@id='top_menu']" position="attributes">
+        <attribute name="class">nav navbar-nav navbar-right</attribute>
+    </xpath>
+
+    <!-- hide company name -->
+    <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div/a" position="attributes">
+        <attribute name="class">navbar-brand hidden</attribute>
+    </xpath>
+
+    <!-- hide user login / out -->
+    <xpath expr="//header//ul[@id='top_menu']/li[@class='divider']" position="attributes">
+        <attribute name="class">hidden</attribute>
+    </xpath>
+    <xpath expr="//header//ul[@id='top_menu']/li[@class='dropdown']" position="attributes">
+        <attribute name="class">hidden</attribute>
+    </xpath>
+
+    <!-- define a class to body -->
+    <xpath expr="//body" position="attributes">
+        <attribute name="class">bs-body</attribute>
+    </xpath>
+    <!-- define a class to footer -->
+    <xpath expr="//footer" position="attributes">
+        <attribute name="class">bs-footer</attribute>
+    </xpath>
+    <!-- add log in/out in footer -->
+    <xpath expr="//footer" position="inside">
+        <div class="container">
+            <div class="pull-right">
+                <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <b>
+                            <span t-esc="user_id.name"/>
+                            <span class="caret"/>
+                        </b>
+                    </a>
+                    <ul class="dropdown-menu js_usermenu" role="menu">
+                        <li><a href="/web" role="menuitem">My Account</a></li>
+                        <li class="divider"/>
+                        <li><a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a></li>
+                    </ul>
+                </li>
+            </div>
+            <div class="pull-right">
+                <li groups="base.group_public">
+                    <a t-attf-href="/web/login">
+                        <b>Sign in</b>
+                    </a>
+                </li>
+            </div>
         </div>
     </xpath>
-    <xpath expr="//header//a[@class='navbar-brand logo'] | //header//a[@class='navbar-brand'] | //header//a[@class='navbar-brand logo hidden']" position="replace">
-        <a href="/" class="navbar-brand"/>
+    <!-- Customize javascript -->
+    <xpath expr="//body" position="after">
+        <script type="text/javascript" src="/theme_vertel/static/src/js/theme_bs_ruma.js"/>
     </xpath>
-    <xpath expr="//header//ul" position="attributes">
-        <attribute name="class">nav navbar-nav</attribute>
-    </xpath>
-    <xpath expr="//ul[@id='top_menu']/li[1]" position="attributes">
-        <attribute name="class">divider hidden</attribute>
-    </xpath>
-    <xpath expr="//ul[@id='top_menu']/li[2]" position="attributes">
-        <attribute name="class">dropdown hidden</attribute>
-    </xpath>
-    <!-- <xpath expr="//header//div" position="attributes"><attribute name="class">collapse navbar-collapse navbar-top-collapse custom</attribute></xpath> -->
 </data>
 
+
+
 <!-- autofooter -->
+<?xml version="1.0"?>
 <data inherit_id="website.footer_custom" customize_show="True" name="Automatic Footer">
-  <xpath expr="//div[@id='footer']" position="replace">
-    <div class="container hidden-print">
-      <div class="row">
-        <div class="col-md-3">
-          <h4>Våra produkter</h4>
-          <ul class="list-unstyled" id="products">
-            <li>
-              <a href="/">SCC audio-S3i</a>
-            </li>
-            <li>
-              <a href="/">SCC audio-S4iX</a>
-            </li>
-            <li>
-              <a href="/">SCC audio-S2i</a>
-            </li>
-            <li>
-              <a href="/">SCC audio-S1i</a>
-            </li>
-          </ul>
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div class="container hidden-print">
+        <div class="row">
+            <i class="fa fa-phone"/> <span t-field="res_company.phone"/> |
+            <i class="fa fa-envelope"/>  <span t-field="res_company.email"/>
         </div>
-        <div class="col-md-5">
-          <div>
-            <h4>
-              <span class="oe_editable" t-field="res_company.name"/>
-            </h4>
-            <font size="3">
-                  Nyheter inför 2015: Ett helt nytt Demorum/Lyssningsrum finns nu tillgängligt i Linköping. Ett rum på 20m2 i avskild miljö. Där man efter tidsbokning kan få en omfattande demo. Tidsbokning på 0738-789248, Christian.
-                <br/>
-                <a href="/">läs mer...</a>
-            </font>
-          </div>
-          <ul class="list-inline js_language_selector mt16" t-if="(request.website_multilang and len(languages) &gt; 1) or editable">
-            <li t-foreach="languages" t-as="lg">
-              <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang=lg[0])" t-att-data-default-lang="editable and 'true' if lg[0] == website.default_lang_code else None" t-att-data-lang="lg[0]" class="js_change_lang">
-                <t t-esc="lg[1].split('/').pop()"/>
-              </a>
-            </li>
-            <li groups="base.group_website_publisher">
-              <t t-set="url_return" t-value="url_for('', '[lang]') + '?' + keep_query()"/>
-              <a t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id}&amp;url_return=#{url_return}"><i class="fa fa-plus-circle"/>
+            <div class="row hidden">
+                <div class="col-md-3">
+                    <h4>Our products &amp; Services</h4>
+                    <ul class="list-unstyled" id="products">
+                        <li><a href="/">Home</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3" id="info">
+                    <h4>Connect with us</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="/page/website.contactus">Contact us</a></li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li t-ignore="true"><i class="fa fa-phone"/> <span t-field="res_company.phone"/></li>
+                        <li t-ignore="true"><i class="fa fa-envelope"/>  <span t-field="res_company.email"/></li>
+                    </ul>
+                    <h2>
+                        <a t-att-href="website.social_facebook" t-if="website.social_facebook"><i class="fa fa-facebook-square"/></a>
+                        <a t-att-href="website.social_twitter" t-if="website.social_twitter"><i class="fa fa-twitter"/></a>
+                        <a t-att-href="website.social_linkedin" t-if="website.social_linkedin"><i class="fa fa-linkedin"/></a>
+                        <a t-att-href="website.social_youtube" t-if="website.social_youtube"><i class="fa fa-youtube-play"/></a>
+                        <a t-att-href="website.social_googleplus" t-if="website.social_googleplus" rel="publisher"><i class="fa fa-google-plus-square"/></a>
+                        <a t-att-href="website.social_github" t-if="website.social_github"><i class="fa fa-github"/></a>
+                    </h2>
+                </div>
+                <div class="col-md-5 col-lg-offset-1">
+                    <div>
+                        <h4>
+                            <span t-field="res_company.name"/>
+                            <small> - <a href="/page/website.aboutus">About us</a></small>
+                        </h4>
+                    </div>
+                    <ul class="list-inline js_language_selector mt16" t-if="(request.website_multilang and len(languages) &gt; 1) or editable">
+                        <li t-foreach="languages" t-as="lg">
+                            <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang=lg[0])" t-att-data-default-lang="editable and 'true' if lg[0] == website.default_lang_code else None" t-att-data-lang="lg[0]" class="js_change_lang">
+                              <t t-esc="lg[1].split('/').pop()"/>
+                            </a>
+                        </li>
+                        <li groups="base.group_website_publisher">
+                            <t t-set="url_return" t-value="url_for('', '[lang]') + '?' + keep_query()"/>
+                            <a t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id}&amp;url_return=#{url_return}">
+                            <i class="fa fa-plus-circle"/>
                             Add a language...
                             </a>
-            </li>
-          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="col-md-3 col-lg-offset-1" id="info">
-          <h4>Kontakta med oss</h4>
-          <ul class="list-unstyled">
-            <li>
-              <a href="/page/website.contactus">Kontakta oss</a>
-            </li>
-          </ul>
-          <ul class="list-unstyled">
-            <li t-ignore="true">
-              <i class="fa fa-phone"/>
-              <span t-field="res_company.phone"/>
-            </li>
-            <li t-ignore="true">
-              <i class="fa fa-envelope"/>
-              <span t-field="res_company.email"/>
-            </li>
-          </ul>
-          <h2>
-            <a t-att-href="website.social_facebook" t-if="website.social_facebook">
-              <i class="fa fa-facebook-square"/>
-            </a>
-            <a t-att-href="website.social_twitter" t-if="website.social_twitter">
-              <i class="fa fa-twitter"/>
-            </a>
-            <a t-att-href="website.social_linkedin" t-if="website.social_linkedin">
-              <i class="fa fa-linkedin"/>
-            </a>
-            <a t-att-href="website.social_youtube" t-if="website.social_youtube">
-              <i class="fa fa-youtube-play"/>
-            </a>
-            <a t-att-href="website.social_googleplus" t-if="website.social_googleplus" rel="publisher">
-              <i class="fa fa-google-plus-square"/>
-            </a>
-            <a t-att-href="website.social_github" t-if="website.social_github">
-              <i class="fa fa-github"/>
-            </a>
-          </h2>
-        </div>
-      </div>
-    </div>
-  </xpath>
+    </xpath>
 </data>
+
