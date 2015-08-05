@@ -33,7 +33,7 @@
             <section class="parallax s_parallax" data-scroll-background-offset="0" data-scroll-background-ratio="0.3" style="background-image: url(&quot;/theme_teamdoc/static/src/img/sccaudio/bg.jpg&quot;); background-attachment: scroll; background-position: 0px 153.9px; height: 500px;">
                 <div>
                     <div class="container">
-                        <div class="col-md-2"/>
+                        <div class="col-md-2"></div>
                         <div class="col-md-8 col-xs-12" style="color: #fff; margin-top:7%;">
                             <h1 class="text-center">Nyheter inför 2015</h1>
                             <p class="text-center">
@@ -43,7 +43,7 @@
                             </font>
                             </p>
                         </div>
-                        <div class="col-md-2"/>
+                        <div class="col-md-2"></div>
                     </div>
                 </div>
             </section>
@@ -51,32 +51,12 @@
                 <div class="container-fluid">
                     <div class="row col-md-12 col-sm-12 col-xs-12">
                         <div class="col-md-3 col-sm-12 col-xs-12 hidden-xs">
-                            <img class="img-responsive hover" src="/theme_teamdoc/static/src/img/sccaudio/s1i_01.jpg" style="margin: auto; height: 100%;"/>
-                        </div>
-                        <div class="col-md-3 col-sm-12 col-xs-12">
-                            <div style="margin-top: 28%;">
-                                <h2 class="text-center" style="color: #ED1C24;">
-                                    <strong>Golvmodeller</strong>
-                                </h2>
-                                <hr/>
-                                <p class="text-center mt32 mb32">
-                                    <font size="5" style="color: #BE753E;">
-                                        SCC audio-S2i<br/>
-                                        <a href="/">Mer info...</a>
-                                        <br/>
-                                        SCC audio-S1i<br/>
-                                        <a href="/">Mer info...</a>
-                                    </font>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-12 col-xs-12 hidden-xs">
                             <img class="img-responsive hover" src="/theme_teamdoc/static/src/img/sccaudio/S3i_04.jpg" style="margin: auto; height: 100%;"/>
                         </div>
                         <div class="col-md-3 col-sm-12 col-xs-12">
                             <div style="margin-top: 28%;">
                                 <h2 class="text-center" style="color: #ED1C24;">
-                                    <strong>Stativmodeller</strong>
+                                    <strong>Golvmodeller</strong>
                                 </h2>
                                 <hr/>
                                 <p class="text-center mt32 mb32">
@@ -90,12 +70,33 @@
                                 </p>
                             </div>
                         </div>
+                        <div class="col-md-3 col-sm-12 col-xs-12 hidden-xs">
+                            <img class="img-responsive hover" src="/theme_teamdoc/static/src/img/sccaudio/s1i_01.jpg" style="margin: auto; height: 100%;"/>
+                        </div>
+                        <div class="col-md-3 col-sm-12 col-xs-12">
+                            <div style="margin-top: 28%;">
+                                <h2 class="text-center" style="color: #ED1C24;">
+                                    <strong>Stativmodeller</strong>
+                                </h2>
+                                <hr/>
+                                <p class="text-center mt32 mb32">
+                                    <font size="5" style="color: #BE753E;">
+                                        SCC audio-S2i<br/>
+                                        <a href="/">Mer info...</a>
+                                        <br/>
+                                        SCC audio-S1i<br/>
+                                        <a href="/">Mer info...</a>
+                                    </font>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
         </div>
     </t>
 </t>
+
 
 
 <!-- theme -->
