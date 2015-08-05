@@ -6,7 +6,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div clss="col-md-12 col-sm-12 col-xs-12">
-                            <img alt="Odoo Image" class="img-responsive hover" src="/website/image/ir.attachment/26_348e5d4/datas" style="width: 100%"/>
+                            <img alt="Odoo Image" class="img-responsive hover" src="/theme_teamdoc/static/src/img/sccaudio/IMG_2634.JPG" style="width: 100%"/>
                         </div>
                     </div>
                     <div class="row col-md-12 col-sm-12 col-xs-12">
@@ -33,7 +33,7 @@
             <section class="parallax s_parallax" data-scroll-background-offset="0" data-scroll-background-ratio="0.3" style="background-image: url(&quot;/theme_teamdoc/static/src/img/sccaudio/bg.jpg&quot;); background-attachment: scroll; background-position: 0px 153.9px; height: 500px;">
                 <div>
                     <div class="container">
-                        <div class="col-md-2"></div>
+                        <div class="col-md-2"/>
                         <div class="col-md-8 col-xs-12" style="color: #fff; margin-top:7%;">
                             <h1 class="text-center">Nyheter inför 2015</h1>
                             <p class="text-center">
@@ -43,7 +43,7 @@
                             </font>
                             </p>
                         </div>
-                        <div class="col-md-2"></div>
+                        <div class="col-md-2"/>
                     </div>
                 </div>
             </section>
