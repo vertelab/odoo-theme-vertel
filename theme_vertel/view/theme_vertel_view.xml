@@ -457,7 +457,7 @@
             </xpath>
         </template>
 
-                    <!-- Left Side Menu Bottom -->
+        <!-- Left Side Menu Bottom -->
         <template id="theme_left_side_menu_bottom" inherit_id="website.layout" customize_show="True" active="False" name="Theme Left Side Menu Bottom" priority="99">
             <!-- Customize CSS -->
             <xpath expr="//head" position="after">
