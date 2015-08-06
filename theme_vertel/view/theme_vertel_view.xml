@@ -100,6 +100,11 @@
                 <attribute name="class">navbar-brand hidden</attribute>
             </xpath>
 
+            <!-- show company logo in mobile version -->
+            <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div/button" position="before">
+                <img class="pull-left hidden-lg hidden-md hidden-sm" style="max-height: 50px;" src="/logo.png"/>
+            </xpath>
+
             <!-- hide user login / out -->
             <xpath expr="//header//ul[@id='top_menu']/li[@class='divider']" position="attributes">
                 <attribute name="class">hidden</attribute>

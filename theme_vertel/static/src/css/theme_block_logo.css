@@ -5,3 +5,11 @@
 #bl-menu-bar {
     width: 100%;
 }
+
+.navbar-toggle {
+    border-color: #ddd;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #333;
+}

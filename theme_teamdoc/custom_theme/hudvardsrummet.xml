@@ -44,9 +44,8 @@
                                 <br/>
                                 <a href="/page/behandlingar">
                                     <font style="color: #fff; font-family: 'Cinzel Decorative', cursive;" size="4">
-                                        <strong>Behandlingar</strong>
-                                        <br/>
                                         <i class="fa fa-caret-up"/>
+                                        <strong>Behandlingar</strong>
                                     </font>
                                 </a>
                             </div>
@@ -138,7 +137,6 @@
 </t>
 
 
-
 <!-- theme overwrite -->
 <?xml version="1.0"?>
 <data inherit_id="website.layout" customize_show="True" active="False" name="Theme Block Logo" priority="99">
@@ -172,7 +170,7 @@
                 font-family: 'Cinzel Decorative', cursive;
                 font-size: 0.95em;
                 z-index: 99;
-                margin-top: -216px;
+                margin-top: -240px;
                 position: fixed;
                 width: 100%;
                 background: #fff;
