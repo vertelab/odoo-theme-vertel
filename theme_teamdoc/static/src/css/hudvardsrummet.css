@@ -17,7 +17,7 @@
     margin-right: auto;
 }
 
-#bl-menu-bar > div > ul > li > a {
+#bl-menu-bar > ul > li > a {
     padding-top: 25px;
     padding-bottom: 25px;
 }
@@ -28,7 +28,7 @@
 }
 
 /* menu width depends on the width of the logo */
-#bl-menu-bar > div > ul > li > a{
+#bl-menu-bar > ul > li > a{
     padding-left: 0%;
     padding-right: 0%;
 }
@@ -52,15 +52,15 @@
 }
 
 /* MENU TEXT */
-#bl-menu-bar > div > ul > li > a{
+#bl-menu-bar > ul > li > a{
     color: #343434;
     padding-left: 0px;
     padding-right: 0px;
 }
 
 /* STYLE WHEN MOUSE HOVER */
-#bl-menu-bar > div > ul > li > a:hover,
-#bl-menu-bar > div > ul > li > a:focus {
+#bl-menu-bar > ul > li > a:hover,
+#bl-menu-bar > ul > li > a:focus {
     color: #B9A55A;
     background-color: #EEE7D0;
 }
@@ -69,14 +69,6 @@
 #bl-menu-bar > div > ul > .active > a {
     color: #B9A55A;
     background-color: #EEE7D0;
-}
-
-.navbar {
-    border: 0px;
-}
-
-.navbar-nav {
-    border-color: none;
 }
 
 #bl-menu-bar {

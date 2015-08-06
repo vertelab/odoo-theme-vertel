@@ -5,26 +5,25 @@
             <section>
                 <div class="container mb16">
                     <div class="block col-md-4">
-                        <div class="block col-md-12 hover hvr-float">
-                            <div class="text-center" style="background-color: #B9A55A; height: 86px;">
-                                <br/>
-                                <a href="/">
-                                    <font style="color: #fff;" size="4">
-                                        <strong>Nyheter</strong>
+                        <a href="/page/nyhetsbrev">
+                            <div class="block col-md-12 col-sm-12 hover hvr-float">
+
+                                    <div class="text-center" style="background-color: #B9A55A; height: 86px;">
                                         <br/>
-                                        <i class="fa fa-caret-down"/>
-                                    </font>
-                                </a>
+                                        <font style="color: #fff; font-family: 'Cinzel Decorative', cursive;" size="4;">
+                                            <strong>Nyheter</strong>
+                                            <br/>
+                                            <i class="fa fa-caret-down"/>
+                                        </font>
+                                    </div>
+                                    <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/images_4ndrad_small.jpg" style="width: 100%"/>
                             </div>
-                            <a href="/page/nyhetsbrev">
-                                <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/images_4ndrad_small.jpg" style=""/>
-                            </a>
-                        </div>
-                        <div class="block col-md-12 hover hvr-float">
+                        </a>
+                        <div class="block col-md-12 col-sm-12 hover hvr-float">
                             <div class="text-center" style="background-color: #EEE7D0; height: 87px;">
                                 <br/>
-                                <a href="/">
-                                    <font style="color: #000;" size="4">
+                                <a href="/page/manadens-behandling">
+                                    <font style="color: #000; font-family: 'Cinzel Decorative', cursive;" size="4">
                                         <strong>Månadens behandling</strong>
                                         <br/>
                                         <i class="fa fa-caret-down"/>
@@ -37,43 +36,45 @@
                         </div>
                     </div>
                     <div class="block col-md-4">
-                        <div class="block col-md-12 hover hvr-float">
-                            <div style="background: url('/theme_teamdoc/static/src/img/hudvardsrummet/behandlingar.jpg'); background-size: cover; height: 467px; margin: auto;"/>
-                            <div class="text-center" style="background-color: #000; height: 115px;">
+                        <div class="block col-md-12 col-sm-12 hover hvr-float">
+                            <a href="/page/manadens-behandling">
+                                <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/behandlingar.jpg" style="width: 100%"/>
+                            </a>
+                            <div class="text-center" style="background-color: #000; height: 74px;">
                                 <br/>
                                 <a href="/page/behandlingar">
-                                    <font style="color: #fff;" size="4">
-                                        <i class="fa fa-caret-up"/>
-                                        <br/>
+                                    <font style="color: #fff; font-family: 'Cinzel Decorative', cursive;" size="4">
                                         <strong>Behandlingar</strong>
+                                        <br/>
+                                        <i class="fa fa-caret-up"/>
                                     </font>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="block col-md-4">
-                        <div class="block col-md-12 hover hvr-float">
+                        <div class="block col-md-12 col-sm-12 hover hvr-float">
                             <a href="/shop">
-                                <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/image-teoxane.jpg" style=""/>
+                                <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/image-teoxane.jpg" style="width: 100%"/>
                             </a>
                             <div class="text-center" style="background-color: #EEE7D0; height: 63px;">
                                 <br/>
                                 <a href="/">
-                                    <font style="color: #000;" size="4">
+                                    <font style="color: #000; font-family: 'Cinzel Decorative', cursive;" size="4">
                                         <i class="fa fa-caret-up"/>
                                         <strong>Webbutik</strong>
                                     </font>
                                 </a>
                             </div>
                         </div>
-                        <div class="block col-md-12 hover hvr-float">
+                        <div class="block col-md-12 col-sm-12 hover hvr-float">
                             <a href="/">
-                                <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/personal.png" style=""/>
+                                <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/personal.png" style="width: 100%"/>
                             </a>
                             <div class="text-center" style="background-color: #B9A55A; height: 63px;">
                                 <br/>
                                 <a href="/page/om-oss">
-                                    <font style="color: #fff;" size="4">
+                                    <font style="color: #fff; font-family: 'Cinzel Decorative', cursive;" size="4">
                                         <i class="fa fa-caret-up"/>
                                         <strong>Om oss</strong>
                                     </font>
@@ -84,7 +85,7 @@
                     <div class="block col-md-12 mt16">
                         <div class="col-md-12 col-xs-12 text-center" style="background-color: #E6E6E6; color: #000; height: 70px;">
                             <br/>
-                            <font size="4">
+                            <font style="color: #000; font-family: 'Cinzel Decorative', cursive;" size="4">
                                 <i class="fa fa-caret-down"/>
                                 <strong>Produkter</strong>
                             </font>
@@ -92,34 +93,34 @@
                         <div class="col-md-12 row" style="display: block; margin: auto;">
                             <div class="block col-md-4 col-xs-12 hover mt32">
                                 <a href="/">
-                                    <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/clearstart.png" style="width: 380px;"/>
+                                    <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/clearstart.png" style="width: 100%;"/>
                                 </a>
                             </div>
                             <div class="block col-md-4 col-xs-12 hover mt32">
                                 <a href="/">
-                                    <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/kahina.jpg" style="width: 380px;"/>
+                                    <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/kahina.jpg" style="width: 100%;"/>
                                 </a>
                             </div>
                             <div class="block col-md-4 col-xs-12 hover mt32">
                                 <a href="/">
-                                    <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/Teosyal.jpg" style="width: 380px;"/>
+                                    <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/Teosyal.jpg" style="width: 100%;"/>
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-12 row" style="display: block; margin: auto;">
                             <div class="block col-md-4 col-xs-12 hover">
                                 <a href="/">
-                                    <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/dermalogica.jpg" style="width: 380px;"/>
+                                    <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/dermalogica.jpg" style="width: 100%;"/>
                                 </a>
                             </div>
                             <div class="block col-md-4 col-xs-12 hover">
                                 <a href="/">
-                                    <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/jane-iredale.jpg" style="width: 380px;"/>
+                                    <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/jane-iredale.jpg" style="width: 100%;"/>
                                 </a>
                             </div>
                             <div class="block col-md-4 col-xs-12 hover">
                                 <a href="/">
-                                    <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/dermacuetic.jpg" style="width: 380px"/>
+                                    <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/dermacuetic.jpg" style="width: 100%;"/>
                                 </a>
                             </div>
                         </div>
@@ -129,8 +130,7 @@
                         <div class="col-md-2">
                             <img src="/theme_teamdoc/static/src/img/hudvardsrummet/sidfot.png" style="width: 100%;"/>
                         </div>
-                        <div class="col-md-5"/>
-                    </div>
+                        <div class="col-md-5"/></div>
                 </div>
             </section>
         </div>
@@ -138,42 +138,138 @@
 </t>
 
 
+
 <!-- theme overwrite -->
 <?xml version="1.0"?>
 <data inherit_id="website.layout" customize_show="True" active="False" name="Theme Block Logo" priority="99">
     <!-- Customize CSS -->
     <xpath expr="//head" position="after">
-        <link href="/theme_teamdoc/static/src/css/hudvardsrummet.css" rel="stylesheet"/>
+        <link href="/theme_vertel/static/src/css/theme_block_logo.css" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet" type="text/css"/>
-    </xpath>
-    <!-- hide the original menu bar -->
-    <xpath expr="//body/div['id=wrawrap']/header/div" position="attributes">
-        <attribute name="class">navbar navbar-default navbar-static-top hidden-lg hidden-md hidden-sm</attribute>
+
+        <style>
+            .bl-body {
+                background: #fff;
+                list-style: none;
+            }
+
+            /* MENU */
+            .bl-navbar {
+                font-family: 'Cinzel Decorative', cursive;
+                font-size: 0.95em;
+                background: none;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #bl-menu-bar > ul > li > a {
+                padding-top: 25px;
+                padding-bottom: 25px;
+            }
+
+            .bl-navbar-fixed-top {
+                font-family: 'Cinzel Decorative', cursive;
+                font-size: 0.95em;
+                z-index: 99;
+                margin-top: -216px;
+                position: fixed;
+                width: 100%;
+                background: #fff;
+                box-shadow: 0px 0px 20px #B9A55A;
+            }
+
+            /* COMPANY LOGO */
+            #logo-box {
+                padding: 0px;
+            }
+
+            #bl-logo {
+                width: 100%;
+                display: block;
+                margin: auto;
+            }
+
+            /* MENU TEXT */
+            #bl-menu-bar > ul > li > a{
+                color: #343434;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+
+            /* STYLE WHEN MOUSE HOVER */
+            #bl-menu-bar > ul > li > a:hover,
+            #bl-menu-bar > ul > li > a:focus {
+                color: #B9A55A;
+                background-color: #EEE7D0;
+            }
+
+            /* STYLE WHEN PAGE ACTIVE */
+            #bl-menu-bar > div > ul > .active > a {
+                color: #B9A55A;
+                background-color: #EEE7D0;
+            }
+
+            #bl-menu-bar {
+                width: 100%;
+                padding: 0px;
+            }
+
+            #bl-menu-bar > .row {
+                width: 100%;
+            }
+
+            .block {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+
+            /* FOOTER STYLE*/
+            .bl-footer {
+                background-color: #EEE7D0;
+            }
+
+            .bl-footer a {
+                color: #B9A55A;
+            }
+        </style>
     </xpath>
 
-    <!-- add Block Logo style menu -->
-    <xpath expr="//body/div['id=wrawrap']/header" position="inside">
+    <!-- add company logo -->
+    <xpath expr="//body/div[@id='wrapwrap']/header" position="before">
         <div class="container">
-            <div class="block col-md-12 hidden-xs">
-                <img id="bl-logo" src="/theme_teamdoc/static/src/img/hudvardsrummet/header-logo.jpg" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name" style="position: relative;"/>
-                <p style="position: absolute; z-index: 1; left: 0;">
-                    hahahahaha
-                </p>
+            <div id="logo-box" class="col-md-12 hidden-xs">
+                <img id="bl-logo" src="/theme_teamdoc/static/src/img/hudvardsrummet/header-logo.jpg" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
             </div>
         </div>
-        <div id="bl-menu" class="bl-navbar hidden-xs">
-            <div class="container">
-                <div id="bl-menu-bar" class="block col-md-12">
-                    <div class="row">
-                        <ul class="nav nav-justified">
-                            <t t-foreach="website.menu_id.child_id" t-as="submenu">
-                                <t t-call="website.submenu"/>
-                            </t>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </xpath>
+
+    <!-- define id and class to menu bar -->
+    <xpath expr="//body/div[@id='wrapwrap']/header/div" position="attributes">
+        <attribute name="id">bl-menu</attribute>
+        <attribute name="class">bl-navbar</attribute>
+    </xpath>
+
+    <!-- define class to menu style -->
+    <xpath expr="//header//ul[@id='top_menu']" position="attributes">
+        <attribute name="class">nav nav-justified</attribute>
+    </xpath>
+    <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div[2]" position="attributes">
+        <attribute name="id">bl-menu-bar</attribute>
+        <attribute name="class">collapse navbar-collapse navbar-top-collapse col-md-12</attribute>
+    </xpath>
+
+    <!-- hide company name -->
+    <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div/a" position="attributes">
+        <attribute name="class">navbar-brand hidden</attribute>
+    </xpath>
+
+    <!-- hide user login / out -->
+    <xpath expr="//header//ul[@id='top_menu']/li[@class='divider']" position="attributes">
+        <attribute name="class">hidden</attribute>
+    </xpath>
+    <xpath expr="//header//ul[@id='top_menu']/li[@class='dropdown']" position="attributes">
+        <attribute name="class">hidden</attribute>
     </xpath>
 
     <!-- define a class to body -->
@@ -215,5 +311,4 @@
     <xpath expr="//body" position="after">
         <script type="text/javascript" src="/theme_vertel/static/src/js/theme_block_logo.js"/>
     </xpath>
-
 </data>
