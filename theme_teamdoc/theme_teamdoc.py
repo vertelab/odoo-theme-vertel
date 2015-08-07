@@ -41,6 +41,8 @@ class website(models.Model):
             return result_text
         return ''
         
+    
+        
     def get_season(self):
         if datetime.today().month in [3, 4, 5]:
             return 'spring'

@@ -14,6 +14,22 @@
             </body>
         </template>
         
+<!--
+        <template id="issue_tracking" name="Issue Tracking">
+            <div>
+                <t t-set="issue_nbr" t-value="0"/>
+                <t t-foreach="issues" t-as="i">
+                    <t t-if="issue_nbr&lt;6">
+                        <t t-esc="i.description"/>
+                        <b><t t-esc="i.name"/></b>
+                        <t t-esc="i.user_id"/>
+                    </t>
+                    <t t-set="issue_nbr" t-value="issue_nbr+1"/>
+                </t>
+            </div>
+        </template>
+-->
+        
         <template id="news-listing" name="News listing">
             <t t-if="not news" t-set="news" t-value="request.env['blog.post'].search([('website_published','=',True)],order='write_date asc')"/>
             <t t-if="not news_count" t-set="news_count" t-value="5"/>
