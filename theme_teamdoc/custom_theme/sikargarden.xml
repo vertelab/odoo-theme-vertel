@@ -104,3 +104,73 @@
         </div>
     </xpath>
 </data>
+
+<!-- overwrite theme -->
+<?xml version="1.0"?>
+<data inherit_id="website.layout" customize_show="True" active="False" name="Theme BS-Multipurpose-Ruma" priority="99">
+    <!-- Customize CSS -->
+    <xpath expr="//head" position="after">
+        <link href="/theme_vertel/static/src/css/theme_bs_ruma.css" rel="stylesheet"/>
+    </xpath>
+    <!-- hide the original menu bar -->
+    <xpath expr="//body/div[@id='wrapwrap']/header/div" position="attributes">
+        <attribute name="class">navbar navbar-default navbar-static-top hidden-lg hidden-md hidden-sm</attribute>
+    </xpath>
+    <!-- add BS-Multipurpose-Ruma style menu -->
+    <xpath expr="//body/div[@id='wrapwrap']/header" position="inside">
+        <div id="bs-menu" class="navbar navbar-inverse navbar-fixed-top hidden-xs">
+            <div class="container" style="max-width: 560px;">
+                <div class="row" style="display: block; margin: auto;">
+                    <img id="bs-logo" src="/logo.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
+                    <div>
+                        <ul class="nav navbar-nav navbar-justified">
+                            <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                                <t t-call="website.submenu"/>
+                            </t>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </xpath>
+    <!-- define a class to body -->
+    <xpath expr="//body" position="attributes">
+        <attribute name="class">bs-body</attribute>
+    </xpath>
+    <!-- define a class to footer -->
+    <xpath expr="//footer" position="attributes">
+        <attribute name="class">bs-footer</attribute>
+    </xpath>
+    <!-- add log in/out in footer -->
+    <xpath expr="//footer" position="inside">
+        <div class="container">
+            <div class="pull-right">
+                <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <b>
+                            <span t-esc="user_id.name"/>
+                            <span class="caret"/>
+                        </b>
+                    </a>
+                    <ul class="dropdown-menu js_usermenu" role="menu">
+                        <li><a href="/web" role="menuitem">My Account</a></li>
+                        <li class="divider"/>
+                        <li><a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a></li>
+                    </ul>
+                </li>
+            </div>
+            <div class="pull-right">
+                <li groups="base.group_public">
+                    <a t-attf-href="/web/login">
+                        <b>Sign in</b>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </xpath>
+    <!-- Customize javascript -->
+    <xpath expr="//body" position="after">
+        <script type="text/javascript" src="/theme_vertel/static/src/js/theme_bs_ruma.js"/>
+    </xpath>
+</data>
+

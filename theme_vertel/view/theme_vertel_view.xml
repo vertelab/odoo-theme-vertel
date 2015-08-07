@@ -29,7 +29,7 @@
         <!-- Theme BS-Multipurpose-Ruma -->
         <template id="theme_bs_multipurpose_ruma" inherit_id="website.layout" customize_show="True" active="False" name="Theme BS-Multipurpose-Ruma" priority="99">
             <!-- Customize CSS -->
-            <xpath expr="//head" position="after">
+            <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
                 <link href="/theme_vertel/static/src/css/theme_bs_ruma.css" rel="stylesheet"/>
                 <style>
                     .bs-body {
@@ -157,7 +157,7 @@
         <!-- Theme Middle Logo -->
         <template id="theme_middle_logo" inherit_id="website.layout" customize_show="True" active="False" name="Theme Middle Logo" priority="99">
             <!-- Customize CSS -->
-            <xpath expr="//head" position="after">
+            <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
                 <link href="/theme_vertel/static/src/css/theme_middle_logo.css" rel="stylesheet"/>
                 <link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative' rel='stylesheet' type='text/css'/>
                 <style>
@@ -312,7 +312,7 @@
         <!-- Theme Block Logo -->
         <template id="theme_block_logo" inherit_id="website.layout" customize_show="True" active="False" name="Theme Block Logo" priority="99">
             <!-- Customize CSS -->
-            <xpath expr="//head" position="after">
+            <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
                 <link href="/theme_vertel/static/src/css/theme_block_logo.css" rel="stylesheet" />
                 <style>
                     .bl-body {
@@ -465,7 +465,7 @@
         <!-- Left Side Menu Bottom -->
         <template id="theme_left_side_menu_bottom" inherit_id="website.layout" customize_show="True" active="False" name="Theme Left Side Menu Bottom" priority="99">
             <!-- Customize CSS -->
-            <xpath expr="//head" position="after">
+            <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
                 <link href="/theme_vertel/static/src/css/theme_left_side_menu_bottom.css" rel="stylesheet"/>
                 <style>
                     .lsmb-body {

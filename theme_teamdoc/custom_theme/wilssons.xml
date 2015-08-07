@@ -2,59 +2,101 @@
 <t t-name="website.hem">
     <t t-call="website.layout">
         <div id="wrap" class="oe_structure oe_empty">
-            <section class="parallax s_parallax" data-scroll-background-offset="0" data-scroll-background-ratio="0.3" style="background: transparent none repeat fixed 0px 0px;">
-                <div>
-                    <div class="oe_structure">
-                        <div class="mt64">
-                            <h1 style="color: #fff; text-align: center;">Välkommen till</h1>
-                            <h1 style="color: #fff; text-align: center;">Wilssons Åkeri och Wilsson Relining</h1>
-                            <h3 style="color: #fff; text-align: center;">Kontorstid: Mån-Fre 07:00-16:00</h3>
+            <section>
+                <div class="container" style="padding: 0px;">
+                    <div class="col-md-12" style="position: relative; padding: 0px;">
+                        <img src="/theme_teamdoc/static/src/img/wilssons/kontakt_header.jpg" width="100%"/>
+                        <div class="hidden-xs" style="position: absolute; right: 5%; bottom: 5%;">
+                            <h3 style="color: #fff; font-family: 'Orbitron', sans-serif; text-shadow: 0px 0px 10px #fff;">Vi bjuder på åkeri och relining</h3>
                         </div>
                     </div>
                 </div>
             </section>
-            <section id="banner_block_section" style="background: #343434; background-size: cover;">
-                <div class="content" id="banner_block_content">
-                    <div class="container">
-                        <div class="row">
-                            <a class="col-md-3 col-xs-6 mt16 mb16" href="#">
-                                <img alt="Odoo Image" class="img-responsive md16 hover img-rounded hvr-grow" src="/theme_teamdoc/static/src/img/wilssons/slam_spol_ruta.jpg" style=""/>
-                            </a>
-                            <a class="col-md-3 col-xs-6 mt16 mb16" href="#">
-                                <img alt="Odoo Image" class="img-responsive md16 hover img-rounded hvr-grow" src="/theme_teamdoc/static/src/img/wilssons/spol_ruta.jpg" style=""/>
-                            </a>
-                            <a class="col-md-3 col-xs-6 mt16 mb16" href="#">
-                                <img alt="Odoo Image" class="img-responsive md16 hover img-rounded hvr-grow" src="/theme_teamdoc/static/src/img/wilssons/insp_ruta.jpg" style=""/>
-                            </a>
-                            <a class="col-md-3 col-xs-6 mt16 mb16" href="#">
-                                <img alt="Odoo Image" class="img-responsive md16 hover img-rounded hvr-grow" src="/theme_teamdoc/static/src/img/wilssons/relining_ruta.jpg" style=""/>
-                            </a>
-                        </div>
+            <section>
+                <div class="container" style="padding: 0px; background: #fff;">
+                    <div class="col-md-12 text-center" style="padding: 5%;">
+                        <h3 style="color: #2D3D9F; font-family: 'Orbitron', sans-serif;">Wilssons Åkeri AB
+                            <br/>Wilsson Relining AB
+                        </h3>
+                        <hr/>
+                        <h4>Vi är två mångsidiga företag som arbetar med slamsugning, avloppsspolning, tv-inspektion och relining.</h4>
                     </div>
                 </div>
             </section>
-            <section class="parallax s_parallax" data-scroll-background-offset="0" data-scroll-background-ratio="0.3" style="background-image: url(&quot;/theme_teamdoc/static/src/img/wilssons/metal-plate.png&quot;); background-attachment: scroll; background-position: 0px 0px;">
-                <div>
-                    <div class="oe_structure">
-                        <div class="mt64">
-                            <h2 style="color: #fff; text-align: center;">Jour 7 dagar i veckan, dygnet, året runt!!</h2>
-                            <div class="col-md-2"/>
-                            <div class="col-md-8">
-                                <h4 style="color: rgb(255, 255, 255);">
-                                    <b>Wilssons Åkeri AB och Wilsson Relining AB</b> är två mångsidiga företag som arbetar med slamsugning, avloppsspolning, tv-inspektion och relining. Många av våra medarbetare har jobbat i företaget sedan lång tid tillbaka och tillsammans har vi över 300 års erfarenhet. I januari 2014 förvärvades företaget av Alltransport koncernen. Ägarbytet innebär inga förändringar för dig som kund. Bolaget drivs även fortsättningsvis vidare på samma sätt som innan och de tidigare ägarna är fortsatt delaktiga i företaget och dess utveckling.
-                                    <br/>
-                                    <b>Wilsson Relining AB</b> finns sendan 2014 i både Örebro och Östergötland.
-                                    <br/>
-                                    <b>Wilsson Åkeri AB</b> utgår med både bilar och personal från Linköping och Norrköping.
-                                </h4>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12" style="padding-left: 0; padding-right: 0;">
+                            <div class="text-center hover-image">
+                                <img alt="" class="img-responsive" src="/theme_teamdoc/static/src/img/wilssons/spol_header.jpg"/>
+                                <div class="col-md-3 col-sm-3 col-xs-6 hover-image-cover">
+                                    <h6>
+                                        <a href="/" style="font-family: 'Orbitron', sans-serif;">Fastighetsspolning</a>
+                                    </h6>
+                                </div>
                             </div>
-                            <div class="col-md-2"/></div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12" style="padding-left: 0; padding-right: 0;">
+                            <div class="text-center hover-image">
+                                <img alt="" class="img-responsive" src="/theme_teamdoc/static/src/img/wilssons/spol_slam_header.jpg"/>
+                                <div class="col-md-3 col-sm-3 col-xs-6 hover-image-cover">
+                                    <h6>
+                                        <a href="/" style="font-family: 'Orbitron', sans-serif;">Slamsugning &amp; Spolning</a>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12" style="padding-left: 0; padding-right: 0;">
+                            <div class="text-center hover-image">
+                                <img alt="" class="img-responsive" src="/theme_teamdoc/static/src/img/wilssons/tv_header.jpg"/>
+                                <div class="col-md-3 col-sm-3 col-xs-6 hover-image-cover">
+                                    <h6>
+                                        <a href="/" style="font-family: 'Orbitron', sans-serif;">TV-Inspektion</a>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12" style="padding-left: 0; padding-right: 0;">
+                            <div class="text-center hover-image">
+                                <img alt="" class="img-responsive" src="/theme_teamdoc/static/src/img/wilssons/relining_header.jpg"/>
+                                <div class="col-md-3 col-sm-3 col-xs-6 hover-image-cover">
+                                    <h6>
+                                        <a href="/" style="font-family: 'Orbitron', sans-serif;">Relining</a>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container mt32" style="padding: 0px; background: #fff;">
+                    <div class="row col-md-12" style="margin: 0px; padding: 0px;">
+                        <div class="col-md-6 col-xs-12" style="padding: 0px;">
+                            <img src="/theme_teamdoc/static/src/img/wilssons/tempheader02.jpg" width="100%"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12" style="padding: 7%;">
+                            <h4>Många av våra medarbetare har jobbat i företaget sedan lång tid tillbaka och tillsammans har vi över 300 års erfarenhet. I januari 2014 förvärvades företaget av Alltransport koncernen. Ägarbytet innebär inga förändringar för dig som kund. Bolaget drivs även fortsättningsvis vidare på samma sätt som innan och de tidigare ägarna är fortsatt delaktiga i företaget och dess utveckling.</h4>
+                        </div>
+                    </div>
+                    <div class="row col-md-12 text-center" style="margin: 0px; padding: 0px;">
+                        <div class="col-md-6 col-xs-12" style="padding: 7%;">
+                            <h3 style="color: #2D3D9F; font-family: 'Orbitron', sans-serif;">Wilssons Åkeri AB</h3>
+                            <h4>Utgår med både bilar och personal från Linköping och Norrköping.</h4>
+                            <hr/>
+                            <h3 style="color: #2D3D9F; font-family: 'Orbitron', sans-serif;">Wilsson Relining AB</h3>
+                            <h4>Finns sendan 2014 i både Örebro och Östergötland.</h4>
+                        </div>
+                        <div class="col-md-6 col-xs-12" style="padding: 0px;">
+                            <img src="/theme_teamdoc/static/src/img/wilssons/tempheader01.jpg" width="100%"/>
+                        </div>
                     </div>
                 </div>
             </section>
         </div>
     </t>
 </t>
+
 
 <!-- footer -->
 <data inherit_id="website.footer_custom" customize_show="True" name="Automatic Footer">
@@ -142,3 +184,141 @@
     </xpath>
 </data>
 
+<!-- theme -->
+<?xml version="1.0"?>
+<data inherit_id="website.layout" customize_show="True" active="False" name="Theme BS-Multipurpose-Ruma" priority="99">
+    <!-- Customize CSS -->
+    <xpath expr="//head" position="after">
+        <link href="/theme_vertel/static/src/css/theme_bs_ruma.css" rel="stylesheet"/>
+        <link href='http://fonts.googleapis.com/css?family=Orbitron:700,400' rel='stylesheet' type='text/css'/>
+        <style>
+            .bs-body {
+                font-family: 'Open Sans', sans-serif;
+                list-style: none;
+                background: #a7a7a7;
+            }
+
+            /* MENU */
+            #bs-menu {
+                z-index: 1;
+                margin-top: 0px;
+                background: #2D3D9F;
+            }
+
+            /* COMPANY LOGO */
+            #bs-menu &gt; div &gt; div &gt; a {
+                color: #FFF;
+            }
+
+            #bs-logo {
+                max-width: 200px;
+            }
+
+            /* MENU TEXT */
+            #bs-menu &gt; div &gt; div &gt; ul &gt; li &gt; a {
+                color: #FFF;
+            }
+
+            /* STYLE WHEN MOUSE HOVER */
+            #bs-menu &gt; div &gt; div &gt; ul &gt; li &gt; a:hover,
+            #bs-menu &gt; div &gt; div &gt; ul &gt; li &gt; a:focus {
+                color: #000;
+                background-color: #fff;
+            }
+
+            /* STYLE WHEN PAGE ACTIVE */
+            #bs-menu &gt; div &gt; div &gt; ul &gt; .active &gt; a {
+                color: #000;
+                background-color: #fff;
+            }
+
+            .hover-image-cover {
+                background-color: #2D3D9F;
+            }
+
+            .hover-image-cover:hover {
+                padding-top: 15%;
+            }
+
+            /* FOOTER STYLE*/
+            .bs-footer {
+                background: #fff;
+                color: #000;
+            }
+        </style>
+    </xpath>
+
+    <!-- add company logo -->
+    <xpath expr="//header//ul[@id='top_menu']" position="before">
+        <img id="bs-logo" src="/logo.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
+    </xpath>
+
+    <!-- define id and class to menu bar -->
+    <xpath expr="//body/div[@id='wrapwrap']/header/div" position="attributes">
+        <attribute name="id">bs-menu</attribute>
+        <attribute name="class">navbar navbar-inverse navbar-fixed-top</attribute>
+    </xpath>
+
+    <!-- define class to menu style -->
+    <xpath expr="//header//ul[@id='top_menu']" position="attributes">
+        <attribute name="class">nav navbar-nav navbar-right</attribute>
+    </xpath>
+
+    <!-- hide company name -->
+    <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div/a" position="attributes">
+        <attribute name="class">navbar-brand hidden</attribute>
+    </xpath>
+
+    <!-- show company logo in mobile version -->
+    <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div/button" position="before">
+        <img class="pull-left hidden-lg hidden-md hidden-sm" style="max-height: 50px;" src="/logo.png"/>
+    </xpath>
+
+    <!-- hide user login / out -->
+    <xpath expr="//header//ul[@id='top_menu']/li[@class='divider']" position="attributes">
+        <attribute name="class">hidden</attribute>
+    </xpath>
+    <xpath expr="//header//ul[@id='top_menu']/li[@class='dropdown']" position="attributes">
+        <attribute name="class">hidden</attribute>
+    </xpath>
+
+    <!-- define a class to body -->
+    <xpath expr="//body" position="attributes">
+        <attribute name="class">bs-body</attribute>
+    </xpath>
+    <!-- define a class to footer -->
+    <xpath expr="//footer" position="attributes">
+        <attribute name="class">bs-footer</attribute>
+    </xpath>
+    <!-- add log in/out in footer -->
+    <xpath expr="//footer" position="inside">
+        <div class="container">
+            <div class="pull-right">
+                <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <b>
+                            <span t-esc="user_id.name"/>
+                            <span class="caret"/>
+                        </b>
+                    </a>
+                    <ul class="dropdown-menu js_usermenu" role="menu">
+                        <li><a href="/web" role="menuitem">My Account</a></li>
+                        <li class="divider"/>
+                        <li><a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a></li>
+                    </ul>
+                </li>
+            </div>
+            <div class="pull-right">
+                <li groups="base.group_public">
+                    <a t-attf-href="/web/login">
+                        <b>Sign in</b>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </xpath>
+    <!-- Customize javascript -->
+    <xpath expr="//body" position="after">
+        <script type="text/javascript" src="/theme_vertel/static/src/js/theme_bs_ruma.js"/>
+    </xpath>
+</data>
