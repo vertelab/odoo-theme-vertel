@@ -57,7 +57,7 @@
 	#custom-nav.affix {
 	    top: 0;
 	    min-width: 100%;
-	    background: url('http://www.freeimages.com/pic/l/e/ev/evobrained/1442454_15613041.jpg') no-repeat center center fixed;
+	    background-color: #fff;
 	    opacity: 0.9;
 	    -webkit-transition: background .5s ease-in-out, opacity .5s ease;
 	    -moz-transition: background .5s ease-in-out, opacity .5s ease;
@@ -81,7 +81,7 @@
 	    -moz-transition: background .5s ease-in-out;
 	    transition: background .5s ease-in-out;
 	    border-top: 9px solid transparent;
-	    background: url('http://www.freeimages.com/pic/l/e/ev/evobrained/1442454_15613041.jpg') no-repeat center center fixed;
+	    background-color:#fff;
 	}
 	
 }
@@ -92,7 +92,7 @@
 	    padding-top: 50px;
 	}
 	body{
-	    background: url('http://www.freeimages.com/pic/l/m/mi/midnighta/1354425_48319487.jpg') no-repeat center center fixed;
+	    background-color:#fff;
 	    background-size: cover;
 	}
 
@@ -107,7 +107,7 @@
 	#custom-nav.affix {
 	    top: 0;
 	    min-width: 100%;
-	    background: url('http://www.freeimages.com/pic/l/e/ev/evobrained/1442454_15613041.jpg') no-repeat center center fixed;
+	    background-color:#fff;
 	    opacity: 0.9;
 	    -webkit-transition: background .5s ease-in-out, opacity .5s ease;
 	    -moz-transition: background .5s ease-in-out, opacity .5s ease;
@@ -119,7 +119,7 @@
 	    -moz-transition: background .5s ease-in-out;
 	    transition: background .5s ease-in-out;
 	    border-top: 9px solid transparent;
-	    background: url('http://www.freeimages.com/pic/l/e/ev/evobrained/1442454_15613041.jpg') no-repeat center center fixed;
+	    background-color:#fff;
 	}
 	
 	#big_logo_column {
