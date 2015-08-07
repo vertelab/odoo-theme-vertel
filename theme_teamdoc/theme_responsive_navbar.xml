@@ -7,7 +7,7 @@
                     <link href="/theme_teamdoc/static/src/css/mssgrupp.css" rel="stylesheet"/>
                     <style>
                         body{
-                            background: url('http://www.freeimages.com/pic/l/m/mi/midnighta/1354425_48319487.jpg') no-repeat center center fixed;
+                            background: url('') no-repeat center center fixed;
                             background-size: cover;
                         }
                     </style>
