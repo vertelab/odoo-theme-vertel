@@ -1,160 +1,138 @@
 <!--HEM-->
 <t t-name="website.hem">
-    <t t-call="website.layout">
-        <div id="wrap" class="oe_structure oe_empty">
-            <section class="s_comparisons mt16">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-1"/>
-                        <div class="col-md-5">
-                            <div class="panel" style="background-color:#385965; box-shadow: 10px 10px 10px #333;">
-                                <div class="panel-heading text-center">
-                                    <h2 style="margin: 0; color:#fff; ">Vem är vi</h2>
-                                </div>
-                                <div class="panel-body" style="background-color:#fff">
-                                    <div>
-                                        <em>
-                                            <font face="Arial, sans-serif">
-                                                <font style="font-size: 11pt;" size="2">Insamlingsstiftelsen Cancer i Sverige startades 2007. </font>
-                                            </font>
-                                        </em>
-                                    </div>
-                                    <div>
-                                        <em>
-                                            <font face="Arial, sans-serif">
-                                                <font style="font-size: 11pt;" size="2">Med fokus på insamling genom i första hand företag, föreningar och donationer ska vi arbeta för de cancerdrabbade. 
-                                                    <font size="3"/></font>
-                                            </font>
-                                            <font face="Arial, sans-serif">
-                                                <font style="font-size: 11pt;" size="2">Styrelsen har en mycket lång och bred erfarenhet gällande såväl sjukdomen i sig som behovet av rehabilitering och stöd både under och efter behandlingstiden.</font>
-                                            </font>
-                                        </em>
-                                        <em>
-                                            <font face="Arial, sans-serif">
-                                                <font style="font-size: 11pt;" size="2">Genom de förtroenden vi fått av bidragsgivare har vi förvaltat medel med vilka vi under 2008 beslutade att aktivt stödja projektet "Rehabilitering med samtal och yoga" för cancerpatienter på </font>
-                                            </font>
-                                            <font face="Arial, sans-serif">
-                                                <font style="font-size: 11pt;" size="2">Akademiska sjukhuset i Uppsala (se under fliken pågående verksamhet). Projektet är väl förankrat i sjukhusledningen och ett forskningsteam följer utvecklingen.Till daxdatum har över 3000 personer genomgått dessa kurser.</font>
-                                            </font>
-                                        </em>
-                                    </div>
-                                    <div>
-                                        <em>
-                                            <font face="Arial, sans-serif">
-                                                <font style="font-size: 11pt;" size="2"/></font>
-                                        </em>
-                                    </div>
-                                    <div>
-                                        <em>
-                                            <font face="Arial, sans-serif">
-                                                <font style="font-size: 11pt;" size="2">Projektet att dela ut bärbara datorer till cancersjuka barn startades 2009. Ett stort antal barn har sedan dess fått datorer samt internetabonnemang för att kunna fortsätta kontakten med sin omgivning. Utdelningen fortsätter till stor glädje för de drabbade.</font>
-                                            </font>
-                                        </em>
-                                    </div>
-                                    <p>
-                                        <span style="font-family: Arial;">
-                                            <span style="font-size: smaller;"/></span>
-                                    </p>
-                                    <div>
-                                        <strong>
-                                            <span style="font-family: Arial;">
-                                                <span style="font-size: small;">
-                                                    <font style="font-size: 11pt;">Under 2007-2008 delade föreningen ut drygt 80% och 2009-2012 har vi kunnat dela ut 100% av de insamlade medlen </font>
-                                                    <font style="font-size: 11pt;">till ändamålet, och för 2013 blev siffran långt över 90 % vilket är långt över gränsen för vad som krävs för 90-konto.</font>
-                                                </span>
-                                            </span>
-                                        </strong>
-                                        <strong>
-                                            <span style="font-family: Arial;">
-                                                <span style="font-size: small;">
-                                                    <font style="font-size: 11pt;">Om vi tagit merkostnader för ett 90-konto och medlemskap i Frii skulle detta inte vara möjligt</font>
-                                                </span>
-                                            </span>
-                                        </strong>.
-                                    </div>
-                                    <div>
-                                        <span style="font-family: Arial;">
-                                            <span style="font-size: smaller;">
-                                                <font style="font-size: 11pt;">
-                                                    <strong>Vi önskar er en fin fortsättning på 2014!</strong>
-                                                </font>
-                                            </span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container mt48">
-                            <div class="col-md-5">
-                                <div class="panel" style="background-color:#385965; box-shadow: 10px 10px 10px #333;">
-                                    <div class="panel-heading text-center">
-                                        <h2 style="margin: 0; color:#fff; ">Nyheter</h2>
-                                    </div>
-                                    <div class="panel-body" style="background-color:#fff;">
-                                        <t t-set="blog" t-value="request.env['blog.blog'].search([('name','=','Our News')])"/>
-                                        <t t-set="news" t-value="request.env['blog.post'].search([('website_published','=',True), ('blog_id','=',blog.id)], order='write_date desc')"/>
-                                        <t t-call="theme_teamdoc.news_block_til_sub_dat_txt_vie"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5">
-                                <div class="panel" style="background-color:#385965; box-shadow: 10px 10px 10px #333;">
-                                    <!--#865651-->
-                                    <div class="panel-heading text-center">
-                                        <h2 style="margin: 0; color:#fff; ">Broschyr</h2>
-                                    </div>
-                                    <div class="panel-body " style="background-color:#fff;">
-                                        <a href="#">Klicka på länken för att ladda upp vår senaste Broschyr</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-1"/></div>
+  <t t-call="website.layout">
+    <div id="wrap" class="oe_structure oe_empty">
+      <div class="carousel slide s_banner mt64 mb64" id="myCarousel0" style="font-family: &quot;Indie Flower&quot;,cursive; height: 500px; display: block; margin: auto; width: 100%; max-width: 1500px;">
+        <ol class="carousel-indicators">
+          <li class="active" data-slide-to="0" data-target="#myCarousel0"/>
+          <li data-slide-to="1" data-target="#myCarousel0"/>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item img-rounded active" style="background-image: url('/theme_teamdoc/static/src/img/cancerisverige/children.jpg')">
+            <div class="container ">
+              <div class="row content ">
+                <div class="col-md-6 col-sm-12 img-responsive" style="margin-left:-10%; margin-top:5%; color:#fff; text-shadow: 0px 0px 10px #333;">
+                  <h1>Bärbara datorer till cancersjuka skolbarn.</h1>
                 </div>
-            </section>
-            <section id="banner_block_section">
-                <div class="content" id="banner_block_content">
-                    <div class="container">
-                        <div class="row">
-                            <a class="col-md-3 col-xs-12 mt16 mb16" href="#">
-                                <div style="position:relative;">
-                                    <img alt="Odoo Image"  class="img-responsive md16 hover img-circle" src="/theme_teamdoc/static/src/img/cancerisverige/abtract.jpg" />
-                                    <div style="position:absolute; top: 45%; width: 100%;">
-                                        <p class="text-center"><font color="#000"><b>Stiftelsens ändamål och syfte</b></font></p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a class="col-md-3 col-xs-12 mt16 mb16" href="#">
-                            <div style="position:relative;">
-                                <img alt="Odoo Image" class="img-responsive md16 img-circle hover" src="/theme_teamdoc/static/src/img/cancerisverige/abstract.jpg"/>
-                                <div style="position:absolute; top: 45%; width: 100%;">
-                                    <p class="text-center"><font color="#fff"><b>Upprop</b></font></p>
-                                </div>
-                                </div>
-                            </a>
-                            <a class="col-md-3 col-xs-12 mt16 mb16" href="#">
-                            <div style="position:relative;">
-                                <img alt="Odoo Image" class="img-responsive md16 img-circle hover" src="/theme_teamdoc/static/src/img/cancerisverige/abtract.jpg"/>
-                                 <div style="position:absolute; top: 45%; width: 100%;">
-                                    <p class="text-center"><font color="#000"><b>Rehabilitering med samtal och yoga i grupp</b></font></p>
-                                </div>
-                                </div>
-                            </a>
-                            <a class="col-md-3 col-xs-12 mt16 mb16" href="#">
-                            <div style="position:relative;">
-                                <img alt="Odoo Image" class="img-responsive md16 img-circle hover" src="/theme_teamdoc/static/src/img/cancerisverige/abstract.jpg"/>
-                                <div style="position:absolute; top: 45%; width: 100%;">
-                                    <p class="text-center"><font color="#fff"><b>Bärbara datorer med bredband till cancersjuka skolbarn</b></font></p>
-                                </div>
-                                </div>
-                           </a>
-                        </div>
-                    </div>
+                <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
+              </div>
+            </div>
+          </div>
+          <div class="item img-rounded" style="background-image: url('/theme_teamdoc/static/src/img/cancerisverige/children.jpg')">
+            <div class="container ">
+              <div class="row content ">
+                <div class="col-md-6 col-sm-12 img-responsive" style="margin-left:-10%; margin-top:5%; color:#fff; text-shadow: 0px 0px 10px #333;">
+                  <h1>Hjälp oss att hjälpa...<br/>
+Ge ett litet bidrag !</h1>
+                  <a class="btn btn-success btn-lg" href="/" target="_blank">Ge bidrag</a>
                 </div>
-            </section>
+                <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
+              </div>
+            </div>
+          </div>
         </div>
-    </t>
+        <div class="carousel-control left" data-slide="prev" data-target="#myCarousel0" href="#myCarousel0" style="width: 10%">
+          <i class="fa fa-chevron-left"/>
+        </div>
+        <div class="carousel-control right" data-slide="next" data-target="#myCarousel0" href="#myCarousel0" style="width: 10%">
+          <i class="fa fa-chevron-right"/>
+        </div>
+      </div>
+      <section class="s_three_columns">
+        <div class="container" style="width: 100%;">
+          <div class="col-md-12 " style=" display: block; margin: auto; padding: 32px;">
+            <div class="col-md-3">
+              <img alt="Odoo - Sample 1 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/cancerisverige/andamal.jpg" style="width:100%;"/>
+              <h4 class="mt16 text-center">
+                <b>Stiftelsens ändamål och syfte</b>
+              </h4>
+              <p>
+                <b>Insamlingsstiftelsen Cancer i Sverige har skapats för att kunna ge Cancersjuka möjligheten till hjälp och stöd i en livssituation som ställer hela livet på ända. Genom att söka medel och bidrag av såväl... <a href="/">Läs mer</a> </b>
+              </p>
+            </div>
+            <div class="col-md-3">
+              <img alt="Odoo - Sample 2 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/cancerisverige/upprop.jpg" style="width:100%;"/>
+              <h4 class="mt16 text-center">
+                <b>Upprop</b>
+              </h4>
+              <p>
+                <b>Människor eller familjer som drabbas av cancer får ofta problem med sin ekonomi och de behöver inte så sällan hjälp eller stimulans i vardagen för att klara den rent praktiskt, ta tillvara på sina rättigheter eller för... <a href="/">Läs mer</a> </b>
+              </p>
+            </div>
+            <div class="col-md-3">
+              <img alt="Odoo - Sample 3 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/cancerisverige/rehab.jpg" style="width:100%;"/>
+              <h4 class="mt16 text-center">
+                <b>Rehabilitering med samtal och yoga i grupp</b>
+              </h4>
+              <p>
+                <b>Insamlingsstiftelsen Cancer i Sverige har glädjen att sedan 2008 kunna stödja projektet Rehabilitering med samtal och yoga i grupp på Akademiska sjukhuset i Uppsala... <a href="/">Läs mer</a> </b>
+              </p>
+            </div>
+            <div class="col-md-3">
+              <img alt="Odoo - Sample 3 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/cancerisverige/internet.jpg" style="width:100%;"/>
+              <h4 class="mt16 text-center">
+                <b>Bärbara datorer med bredband till cancersjuka skolbarn</b>
+              </h4>
+              <p>
+                <b>2009 undersökte vi intresset och behovet av bärbara datorer för cancersjuka skolelever. Responsen av såväl sjukhusledningen som personal på Astid Lindgrens... <a href="/">Läs mer</a> </b>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="jumbotron s_big_message mt32 mb32 bg-turquoise" style="width:100%;">
+        <div class="container" style="color:#fff; font-family:'Indie Flower', cursive; ">
+          <h3>Projektet att dela ut bärbara datorer till cancersjuka barn startades 2009. Ett stort antal barn har sedan dess fått datorer samt internetabonnemang för att kunna fortsätta kontakten med sin omgivning. Utdelningen fortsätter till stor glädje för de drabbade.</h3>
+        </div>
+      </section>
+      <style type="text/css">.issue_box {
+                width: 100%;
+                height: 7em;
+                max-height: 9em;
+                padding: 0px 0.75em;
+                color: #333;
+                background: #F6FAFB none repeat scroll 0% 0%;
+                border: 1px solid #EEE;
+            }
+</style>
+      <section class="s_three_columns">
+        <div class="container" style="width: 100%;">
+          <div class="col-md-12 " style=" display: block; margin: auto; padding: 32px;">
+            <div class="col-md-3">
+              <img alt="Odoo - Sample 1 for three columns" class="img img-responsive" src="/website/static/src/img/library/ship_sea.jpg" style="width:100%"/>
+              <div class="issue_box text-center">
+                <h3 class="mt16">Bärbar dator utdelad</h3>
+                <h4>Till: Malin</h4>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <img alt="Odoo - Sample 1 for three columns" class="img img-responsive" src="/website/static/src/img/library/flight.jpg" style="width: 100%;"/>
+              <div class="issue_box text-center">
+                <h3 class="mt16">Bärbar dator utdelad</h3>
+                <h4>Till: Jesper</h4>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <img alt="Odoo - Sample 1 for three columns" class="img img-responsive" src="/website/image/ir.attachment/44_45f5433/datas" style="width: 100%;"/>
+              <div class="issue_box text-center">
+                <h3 class="mt16">Bärbar dator utdelad</h3>
+                <h4>Till: Anton</h4>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <img alt="Odoo - Sample 1 for three columns" class="img img-responsive" src="/website/image/ir.attachment/43_7c11e82/datas" style="width: 100%;"/>
+              <div class="issue_box text-center">
+                <h3 class="mt16">Bärbar dator utdelad</h3>
+                <h4>Till: Hannah</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </t>
 </t>
+
 
 <!--FOOTER-->
 <?xml version="1.0"?>
@@ -221,393 +199,6 @@
         </div>
     </xpath>
 </data>
-
-<!--HEM VERSION 2 -->
-<t t-name="website.hem">
-    <t t-call="website.layout">
-        <div id="wrap" class="oe_structure oe_empty">
-            <section class="mt32" style="background-color:#C6CFD4;">
-                <div class="container">
-                    <div class="col-md-12 mt32 mb32" style="padding:0px;">
-                        <div class="col-md-4 mt32">
-                            <img class="img-responsive" src="/theme_teamdoc/static/src/img/cancerisverige/childhood.jpg"/>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="oe_structure oe_empty">
-                                <section class="s_text_block">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-md-12 mb16 mt16">
-                                                <div>
-                                                    <em>
-                                                        <font face="Arial, sans-serif">
-                                                            <font style="font-size: 11pt;" size="2">Insamlingsstiftelsen Cancer i Sverige startades 2007. </font>
-                                                        </font>
-                                                    </em>
-                                                </div>
-                                                <div>
-                                                    <em>
-                                                        <font face="Arial, sans-serif">
-                                                            <font style="font-size: 11pt;" size="2">Med fokus på insamling genom i första hand företag, föreningar och donationer ska vi arbeta för de cancerdrabbade. 
-                                                                <font size="3"/></font>
-                                                        </font>
-                                                        <font face="Arial, sans-serif">
-                                                            <font style="font-size: 11pt;" size="2">Styrelsen har en mycket lång och bred erfarenhet gällande såväl sjukdomen i sig som behovet av rehabilitering och stöd både under och efter behandlingstiden.</font>
-                                                        </font>
-                                                    </em>
-                                                    <em>
-                                                        <font face="Arial, sans-serif">
-                                                            <font style="font-size: 11pt;" size="2">Genom de förtroenden vi fått av bidragsgivare har vi förvaltat medel med vilka vi under 2008 beslutade att aktivt stödja projektet "Rehabilitering med samtal och yoga" för cancerpatienter på </font>
-                                                        </font>
-                                                        <font face="Arial, sans-serif">
-                                                            <font style="font-size: 11pt;" size="2">Akademiska sjukhuset i Uppsala (se under fliken pågående verksamhet). Projektet är väl förankrat i sjukhusledningen och ett forskningsteam följer utvecklingen.Till daxdatum har över 3000 personer genomgått dessa kurser.</font>
-                                                        </font>
-                                                    </em>
-                                                </div>
-                                                <div>
-                                                    <em>
-                                                        <font face="Arial, sans-serif">
-                                                            <font style="font-size: 11pt;" size="2"/></font>
-                                                    </em>
-                                                </div>
-                                                <div>
-                                                    <em>
-                                                        <font face="Arial, sans-serif">
-                                                            <font style="font-size: 11pt;" size="2">Projektet att dela ut bärbara datorer till cancersjuka barn startades 2009. Ett stort antal barn har sedan dess fått datorer samt internetabonnemang för att kunna fortsätta kontakten med sin omgivning. Utdelningen fortsätter till stor glädje för de drabbade.</font>
-                                                        </font>
-                                                    </em>
-                                                </div>
-                                                <p>
-                                                    <span style="font-family: Arial;">
-                                                        <span style="font-size: smaller;"/></span>
-                                                </p>
-                                                <div>
-                                                    <strong>
-                                                        <span style="font-family: Arial;">
-                                                            <span style="font-size: small;">
-                                                                <font style="font-size: 11pt;">Under 2007-2008 delade föreningen ut drygt 80% och 2009-2012 har vi kunnat dela ut 100% av de insamlade medlen </font>
-                                                                <font style="font-size: 11pt;">till ändamålet, och för 2013 blev siffran långt över 90 % vilket är långt över gränsen för vad som krävs för 90-konto.</font>
-                                                            </span>
-                                                        </span>
-                                                    </strong>
-                                                    <strong>
-                                                        <span style="font-family: Arial;">
-                                                            <span style="font-size: small;">
-                                                                <font style="font-size: 11pt;">Om vi tagit merkostnader för ett 90-konto och medlemskap i Frii skulle detta inte vara möjligt</font>
-                                                            </span>
-                                                        </span>
-                                                    </strong>.
-                                                </div>
-                                                <div>
-                                                    <span style="font-family: Arial;">
-                                                        <span style="font-size: smaller;">
-                                                            <font style="font-size: 11pt;">
-                                                                <strong>Vi önskar er en fin fortsättning på 2014!</strong>
-                                                            </font>
-                                                        </span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--SECTION STIFTELSEN-->
-            <section class="bg-danger">
-                <div class="container">
-                    <div class="col-md-12 mt32 mb32" style="padding:0%;">
-                        <div class="col-md-8">
-                            <div class="oe_structure oe_empty">
-                                <section class="s_text_block">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-md-12 text-center mt16 mb32">
-                                                <h2>Stiftelsens ändamål och syfte</h2>
-                                            </div>
-                                            <div class="col-md-12 mb16 mt16">
-                                                <p>
-                                                    <span style="font-size: medium">
-                                                        <em>
-                                                            <span>
-                                                                <span style="font-family: Arial">Insamlingsstiftelsen Cancer i Sverige har skapas för att kunna ge Cancersjuka möjligheten till hjälp och stöd i en livssituation som ställer hela livet på ända. Genom att söka medel och bidrag av såväl företag, organisationer samt privatpersoner kan vi hjälpa Cancersjuka i deras vardag. Forskning behövs men alla som lever med sjukdomen idag vet att det som är bäst för dem är att få leva ett drägligt och så normalt liv som möjligt med hjälp av det bästa som sjukvården kan erbjuda. Vi vet att många tyvärr råkar illa ut under sin sjukdomsperiod och att såväl ekonomin som den mänskliga kontakten med myndigheter och sjukvård tar mycket energi av den som redan är sjuk. Vår mål är att stöjda och underlätta denna vardag.</span>
-                                                            </span>
-                                                        </em>
-                                                    </span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mt8">
-                            <img class="img-responsive" src="/theme_teamdoc/static/src/img/cancerisverige/don-t-let-go.jpg"/>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--SECTION UPPROP-->
-            <section class="" style="background-color:#C6CFD4;">
-                <div class="container">
-                    <div class="col-md-12 mt32 mb32" style="padding:0px;">
-                        <div class="col-md-4 mt16">
-                            <img class="img-responsive" src="/theme_teamdoc/static/src/img/cancerisverige/hands.jpg"/>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="oe_structure oe_empty">
-                                <section class="s_text_block">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-md-12 text-center mt16 mb16">
-                                                <h2>Upprop</h2>
-                                            </div>
-                                            <div class="col-md-12 mb16 mt8">
-                                                <p>
-                                                    <span style="font-size: medium">
-                                                        <em>
-                                                            <span style="font-family: Arial">Människor eller familjer som drabbas av cancer får ofta problem med sin ekonomi och de behöver inte så sällan hjälp eller stimulans i vardagen för att klara den rent praktiskt, ta tillvara på sina rättigheter eller för att tillfriskna. I syfte att underlätta vardagen för eller tillfrisknandet hos cancersjuka, såväl barn som vuxna, har vi bildat 
-                                                                <u>Insamlingsstiftelsen Cancer i Sverige.</u>
-                                                            </span>
-                                                        </em>
-                                                    </span>
-                                                </p>
-                                                <div>
-                                                    <span style="font-size: medium">
-                                                        <em>
-                                                            <span style="font-family: Arial">Stiftelsen skall tillgodose sitt syfte genom att med sina samlade resurser och på ansökan utge ekonomiskt stöd till Cancersjuka med behov därav eller till verksamhet som stimulerar tillfrisknandet hos Cancersjuka eller som medverkar till en ökad förståelse för Cancersjukas behov i praktiskt eller rättsligt avseende eller som i något av senast sagda avseenden underlättar vardagen för Cancersjuka. </span>
-                                                        </em>
-                                                        <em>
-                                                            <span style="font-family: Arial">I insamlingsstiftelsens första styrelse ingår: </span>
-                                                        </em>
-                                                    </span>
-                                                </div>
-                                                <div>
-                                                    <span style="font-size: medium">
-                                                        <em>
-                                                            <span style="font-family: Arial">Menno Dijk, Sigbritt Ljungqvist och Håkan Carlén. </span>
-                                                        </em>
-                                                    </span>
-                                                </div>
-                                                <div/>
-                                                <div>
-                                                    <span style="font-size: medium">
-                                                        <em>
-                                                            <span style="font-family: Arial">Som stiftare vädjar vi härmed genom detta upprop om bidrag till stiftelsen. </span>
-                                                        </em>
-                                                    </span>
-                                                </div>
-                                                <div>
-                                                    <span style="font-size: medium">
-                                                        <em>
-                                                            <span style="font-family: Arial">Bidrag inbetalas lämpligen till stiftelsens plusgirokonto </span>
-                                                        </em>
-                                                    </span>
-                                                    <strong>
-                                                        <span style="font-size: medium">
-                                                            <em>
-                                                                <span style="font-family: Arial">465924-9</span>
-                                                            </em>
-                                                        </span>
-                                                    </strong>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--SECTION REHABILITERING-->
-            <section class="bg-danger">
-                <div class="container">
-                    <div class="col-md-12" style="padding:0%;">
-                        <div class="col-md-8">
-                            <div class="oe_structure oe_empty">
-                                <section class="s_text_block">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-md-12 text-center mb0 mt0">
-                                                <a href="http://www.akademiska.se/templates/page____38595.aspx">
-                                                    <span style="font-size: small;">
-                                                        <span style="font-family: Arial;"/></span>
-                                                </a>
-                                                <h2>Rehabilitering med samtal
-                                                    <br/>
-och yoga i grupp
-                                                </h2>
-                                            </div>
-                                            <div class="col-md-12 mb16 mt16">
-                                                <strong>
-                                                    <span style="font-family: Arial;">
-                                                        <span style="font-size: small;"/></span>
-                                                </strong>
-                                                <div>
-                                                    <font face="Arial, sans-serif">
-                                                        <font size="4">
-                                                            <b>Projektansvariga </b>
-                                                        </font>
-                                                    </font>
-                                                </div>
-                                                <p style="margin-bottom: 0cm;">
-                                                    <font face="Arial, sans-serif">
-                                                        <font style="font-size: 11pt;" size="2">Samtliga som arbetar inom projektet är anställda vid OTM-divisionen Akademiska sjukhuset.</font>
-                                                    </font>
-                                                </p>
-                                                <p style="margin-bottom: 0cm;">
-                                                    <span style="font-size: large;">
-                                                        <strong>
-                                                            <font style="font-size: 11pt;">
-                                                                <font face="Arial, sans-serif">Kurator/terapeut</font>
-                                                            </font>
-                                                        </strong>
-                                                    </span>
-                                                    <font style="font-size: 11pt;" size="2">
-                                                        <font face="Arial, sans-serif">
-                                                            <strong/>
-                                                            <br/>
-Ann-Charlotte Pellettieri, legitimerad kognitiv beteendeterapeut, projektansvarig
-                                                        </font>
-                                                    </font>
-                                                </p>
-                                                <div>
-                                                    <span style="font-size: medium;">
-                                                        <span style="font-family: Arial;">
-                                                            <strong>Professor och verksamhetsansvarig</strong>
-                                                            <br/>
-Gunilla Enblad
-                                                        </span>
-                                                    </span>
-                                                </div>
-                                                <strong>
-                                                    <span style="font-family: Arial;">
-                                                        <span style="font-size: small;">Övriga medarbetare:</span>
-                                                    </span>
-                                                </strong>
-                                                <div/>
-                                                <div>
-                                                    <a href="http://www.akademiska.se/templates/page____38596.aspx">
-                                                        <span style="font-size: small;">
-                                                            <span style="font-family: Arial;">Du hittar alla medarbetare via denna länk</span>
-                                                        </span>
-                                                    </a>
-                                                </div>
-                                                <div/>
-                                                <div/>
-                                                <div>
-                                                    <span style="font-size: small;">
-                                                        <span style="font-family: Arial;">Till daxs dato har över 3000 personer gått dessa kurser och sedan 2010 finns också prostatagrupper. Under 2011 kommer antalet kurser att fördubblas för att klara den stora efterfrågan.</span>
-                                                        <span style="font-family: Arial;">Även anhörighetsgrupper har startats under 2011 för föräldrar till cancersjuka barn. 2011 tillkom även bassängträning.</span>
-                                                    </span>
-                                                    <strong>
-                                                        <span style="font-size: medium;">
-                                                            <span style="font-family: Arial;"/></span>
-                                                    </strong>
-                                                </div>
-                                                <div/>
-                                                <div>
-                                                    <strong>
-                                                        <span style="font-size: medium;">
-                                                            <span style="font-family: Arial;">Tyvärr tog Akademiska sjukhuset beslutet i november 2013 att lägga ner projektet för att försöka driva liknande verksamhet själva. Vi kan dock i september 2014 konstatera att inget startades och att ingen liknande verksamhet finns på sjukhuset. Vår förhoppning står nu till att kunna starta verksamheten utanför sjukhusets väggar.</span>
-                                                        </span>
-                                                    </strong>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mt32">
-                            <img class="img-responsive" src="/theme_teamdoc/static/src/img/cancerisverige/yoga.jpg" style=""/>
-                            <font>
-                                <br/>
-Insamlingsstiftelsen Cancer i Sverige har glädjen att sedan 2008 kunna stödja projektet Rehabilitering med samtal och yoga i grupp på Akademiska sjukhuset i Uppsala. <a href="#">Se Akademiska sjukhusets hemsida</a>                             </font>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--SECTION BÄRBARA DATORER-->
-            <section class="" style="background-color:#C6CFD4;">
-                <div class="container">
-                    <div class="col-md-12 mt32 mb32" style="padding:0px;">
-                        <div class="col-md-4 mt64">
-                            <img class="img-responsive" src="/theme_teamdoc/static/src/img/cancerisverige/laptop.jpg"/>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="oe_structure oe_empty">
-                                <section class="s_text_block">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-md-12 text-center mt16 mb0">
-                                                <h2>Bärbara datorer med bredband
-                                                    <br/>
-till cancersjuka skolbarn
-                                                </h2>
-                                            </div>
-                                            <div class="col-md-12 mb16 mt8">
-                                                <div>
-                                                    <span style="font-size: small;">
-                                                        <span style="font-family: Arial;">2009 undersökte vi intresset och behovet av bärbara datorer för cancersjuka skolelever.</span>
-                                                    </span>
-                                                    <span style="font-size: small;">
-                                                        <span style="font-family: Arial;">Responsen av såväl sjukhusledningen som personal på Astid Lindgrens Barnsjukhus, Akademiska sjukhuset i Uppsala samt Universitetsjukhuset i Örebro har varit mycket positiva.</span>
-                                                    </span>
-                                                </div>
-                                                <div>
-                                                    <span style="font-size: small;">
-                                                        <span style="font-family: Arial;">Allt som ger en avkoppling och möjlighet att tänka på annat än sin sjukdom är av stor vikt för det sjuka barnet. Cancersjuka barn blir under sin långa sjukdomstid ofta isolerade och kommer ifrån sitt normala umgänge, släkt och vänner. Skolgången blir besvärligt och även från skolan finns ett önskemål om att ha direktkontakt med eleven och inte behöva skicka material och anteckningar med föräldrarna. Att ha ett cancersjukt barn är förknippat med extremt stora utgifter under många år vilket gör att en bärbar dator blir en tung utgift för en redan anstängd ekonomi.</span>
-                                                    </span>
-                                                </div>
-                                                <div>
-                                                    <span style="font-size: small;">
-                                                        <span style="font-family: Arial;">Personalen på berörda avdelningarna har gett klartecken för att hjälpa oss få in ansökningar av rätt patientgrupp med de ansökningskriterier som behövs. Vår tanke är att vi anpassar varje dator för en specifik användare med dennes önskemål och behov. Alla föräldrar inte har kunskapen och personalen inte har tid att bistå, så vi har lovat att varje dator ska vara preparerad och klar för användning till rätt användare. E-mailadresser ska var på plats m.m.</span>
-                                                    </span>
-                                                    <span style="font-size: small;">
-                                                        <span style="font-family: Arial;">De kan använda datorn att ringa via IP-telefoni och på så sätt spara mobiltelefonpengar. De kan utföra skolarbete och hålla sig uppdaterade med skolans arbete. Naturligtvis kan datorerna spärras för allt ovidkommande. De kan skicka bilder till kompisar och ha ett utbyte andra på avdelningen av material. </span>
-                                                    </span>
-                                                    <span style="font-size: small;">
-                                                        <span style="font-family: Arial;">Lyssna på musik och titta på film. </span>
-                                                    </span>
-                                                </div>
-                                                <div>
-                                                    <span style="font-size: small;">
-                                                        <span style="font-family: Arial;">Det finns möjligheter för sjukhuset att ha en direkt dialog med patienten även i hemmet och idag finns det även program där viktig patientinformation direkt kan skickas till sjukhuset. </span>
-                                                    </span>
-                                                </div>
-                                                <div>
-                                                    <span style="font-size: small;">
-                                                        <span style="font-family: Arial;">En komplett bärbar dator med trådlöst bredband </span>
-                                                    </span>
-                                                    <span style="font-size: small;">
-                                                        <span style="font-family: Arial;">färdig för användning är vad vi vill erbjuda dessa barn.</span>
-                                                    </span>
-                                                    <span style="font-size: small;">
-                                                        <span style="font-family: Arial;">De får naturligtvis ha datorn så länge de är sjuka och behålla den även efter ett tillfrisknande.</span>
-                                                    </span>
-                                                </div>
-                                                <div>
-                                                    <span style="font-size: small;">
-                                                        <span style="font-family: Arial;">De första datorerna delades ut under 2010 och vi ser ansökningar nu komma in från alla delar av landet.</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </t>
-</t>
 
 
 
