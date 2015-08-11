@@ -1,44 +1,267 @@
 <!-- theme -->
+<t t-name="website.hem">
+    <t t-call="website.layout">
+        <div class="oe_structure oe_empty" id="wrap">
+            <section>
+                <div class="container" id="carousel_slide">
+                    <div class="carousel slide mt32 mb32" id="myCarousel0">
+                        <ol class="carousel-indicators">
+                            <li class="active" data-slide-to="0" data-target="#myCarousel0"/>
+                            <li data-slide-to="1" data-target="#myCarousel0"/>
+                            <li data-slide-to="2" data-target="#myCarousel0"/>
+                            <li data-slide-to="3" data-target="#myCarousel0"/>
+                            <li data-slide-to="4" data-target="#myCarousel0"/>
+                            <li data-slide-to="5" data-target="#myCarousel0"/>
+                            <li data-slide-to="6" data-target="#myCarousel0"/>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img alt="First slide" src="/theme_teamdoc/static/src/img/trivsamma_hem/Image/Startflash/1.jpg" style=""/>
+                            </div>
+                            <div class="item img-responsive">
+                                <img alt="Second slide" src="/theme_teamdoc/static/src/img/trivsamma_hem/Image/Startflash/2.jpg"/>
+                            </div>
+                            <div class="item img-responsive">
+                                <img alt="Third slide" src="/theme_teamdoc/static/src/img/trivsamma_hem/Image/Startflash/3.jpg"/>
+                            </div>
+                            <div class="item img-responsive">
+                                <img alt="Forth slide" src="/theme_teamdoc/static/src/img/trivsamma_hem/Image/Startflash/4.jpg"/>
+                            </div>
+                            <div class="item img-responsive">
+                                <img alt="Fifth slide" src="/theme_teamdoc/static/src/img/trivsamma_hem/Image/Startflash/5.jpg"/>
+                            </div>
+                            <div class="item img-responsive">
+                                <img alt="Sixth slide" src="/theme_teamdoc/static/src/img/trivsamma_hem/Image/Startflash/6.jpg"/>
+                            </div>
+                            <div class="item img-responsive">
+                                <img alt="Seventh slide" src="/theme_teamdoc/static/src/img/trivsamma_hem/Image/Startflash/7.jpg"/>
+                            </div>
+                        </div>
+                        <div class="carousel-control left" data-slide="prev" data-target="#myCarousel0" href="#myCarousel0" style="width: 10%">
+                            <i class="fa fa-chevron-left"/>
+                        </div>
+                        <div class="carousel-control right" data-slide="next" data-target="#myCarousel0" href="#myCarousel0" style="width: 10%">
+                            <i class="fa fa-chevron-right"/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container mb32">
+                    <div class="col-md-12" style="background-color: rgb(255, 255, 255);">
+                        <div class="row" style="max-width: 1110px; margin: 0px; padding: 64px 0px 32px 0px;">
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <a href="/page/hemstadning">
+                                    <img alt="Odoo - Sample 1 for three columns" class="img img-responsive img-circle" src="/theme_teamdoc/static/src/img/trivsamma_hem/Image/hemstadning4.jpg" style="height: 150px; margin: auto;"/>
+                                    <h4 class="mt16" style="text-align: center;">Hemstädning</h4>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <a href="/page/matlagning">
+                                    <img alt="Odoo - Sample 2 for three columns" class="img img-responsive img-circle" src="/theme_teamdoc/static/src/img/trivsamma_hem/Image/matratter.jpg" style="height: 150px; margin: auto;"/>
+                                    <h4 class="mt16" style="text-align: center;">matlagning</h4>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <a href="/page/barnpassning">
+                                    <img alt="Odoo - Sample 3 for three columns" class="img img-responsive img-circle" src="/theme_teamdoc/static/src/img/trivsamma_hem/Image/barnpassnis.jpg" style="height: 150px; margin: auto;"/>
+                                    <h4 class="mt16" style="text-align: center;">Barnpassning</h4>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                <a href="/page/kontorstadning">
+                                    <img alt="Odoo - Sample 3 for three columns" class="img img-responsive img-circle" src="/theme_teamdoc/static/src/img/trivsamma_hem/Image/kontor.jpg" style="height: 150px; margin: auto;"/>
+                                    <h4 class="mt16" style="text-align: center;">Kontorstädning</h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </t>
+</t>
+
+
+<!-- theme -->
 <?xml version="1.0"?>
-<data inherit_id="website.layout" customize_show="True" active="False" name="Business Casual" priority="99">
-    <xpath expr="//head" position="inside">
-        <!-- Custom CSS -->
-        <link href="/theme_teamdoc/static/src/css/trivsamma_hem.css" rel="stylesheet"/>
-        <link href="/theme_teamdoc/static/src/css/custom.css" rel="stylesheet"/>
-        <!-- Fonts -->
-        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
-        <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css"/>
+<data inherit_id="website.layout" customize_show="True" active="False" name="Theme Block Logo" priority="99">
+    <!-- Customize CSS -->
+    <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
+        <link href="/theme_vertel/static/src/css/theme_block_logo.css" rel="stylesheet"/>
+        <style>
+            .bl-body {
+                background-image: url('/theme_teamdoc/static/src/img/trivsamma_hem/1289880_52244146.jpg');
+                background-size: cover;
+                list-style: none;
+            }
+
+            /* MENU */
+            .bl-navbar {
+                font-family: 'Ubuntu';
+                font-size: 1.5em;
+                background: none;
+                width: 100%;
+            }
+
+            #bl-menu-bar {
+                max-width: 1110px;
+                padding: 0px;
+            }
+
+            #bl-menu-bar &gt; div &gt; ul &gt; li &gt; a {
+                padding-top: 25px;
+                padding-bottom: 25px;
+            }
+
+            #bl-menu-bar &gt; div {
+                width: 1024px;
+                margin: auto;
+            }
+
+            .bl-navbar-fixed-top {
+                font-family: 'Ubuntu';
+                font-size: 1.5em;
+                z-index: 99;
+                margin-top: -216px;
+                position: fixed;
+                width: 100%;
+                background: #e1e1e1;
+                box-shadow: 0px 0px 20px #333;
+            }
+
+            /* COMPANY LOGO */
+            #logo-box {
+                padding: 32px;
+            }
+
+            #bl-logo {
+                width: 200px;
+                margin: auto;
+                display:block;
+            }
+
+            /* MENU TEXT */
+            #bl-menu-bar &gt; ul &gt; li &gt; a {
+                color: #333;
+            }
+
+            /* STYLE WHEN MOUSE HOVER */
+            #bl-menu-bar &gt; ul &gt; li &gt; a:hover,
+            #bl-menu-bar &gt; ul &gt; li &gt; a:focus {
+                color: #71DB00;
+                background-color: #333;
+            }
+
+            /* STYLE WHEN PAGE ACTIVE */
+            #bl-menu-bar &gt; ul &gt; .active &gt; a {
+                color: #71DB00;
+                background-color: #333;
+            }
+
+            #myCarousel0, .container {
+                max-width: 1110px;
+            }
+
+            .carousel-inner img {
+                width: 100%;
+            }
+
+            a {
+                color: #71DB00;
+            }
+
+            /* FOOTER STYLE*/
+            .bl-footer {
+                background-color: #fff;
+            }
+        </style>
     </xpath>
-    <xpath expr="//body/div" position="before">
-        <div class="brand" id="brand" t-field="res_company.name"/>
-        <div class="address-bar">
-            <t t-esc="res_company.street"/> | 
-            <t t-esc="res_company.partner_id.zip"/>
-            <t t-esc="res_company.city"/> | 
-            <t t-esc="res_company.phone"/> | 
-            <t t-esc="res_company.partner_id.mobile"/>
+
+    <!-- add company logo -->
+    <xpath expr="//body/div[@id='wrapwrap']/header" position="before">
+        <div class="container">
+            <div id="logo-box" class="col-md-12 hidden-xs">
+                <img id="bl-logo" src="/logo1024.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
+            </div>
         </div>
     </xpath>
-    <xpath expr="//header//a[@class='navbar-brand logo'] | //header//a[@class='navbar-brand'] | //header//a[@class='navbar-brand logo hidden']" position="replace">
-        <a href="/" class="navbar-brand"/>
+
+    <!-- define id and class to menu bar -->
+    <xpath expr="//body/div[@id='wrapwrap']/header/div" position="attributes">
+        <attribute name="id">bl-menu</attribute>
+        <attribute name="class">bl-navbar</attribute>
     </xpath>
-    <xpath expr="//header//ul" position="attributes">
-        <attribute name="class">nav navbar-nav</attribute>
+
+    <!-- define class to menu style -->
+    <xpath expr="//header//ul[@id='top_menu']" position="attributes">
+        <attribute name="class">nav nav-justified</attribute>
     </xpath>
-    <xpath expr="//ul[@id='top_menu']/li[1]" position="replace">
-        <!-- remove log in -->
+    <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div[2]" position="attributes">
+        <attribute name="id">bl-menu-bar</attribute>
+        <attribute name="class">collapse navbar-collapse navbar-top-collapse col-md-12</attribute>
     </xpath>
-    <xpath expr="//ul[@id='top_menu']/li[1]" position="replace">
-        <!-- remove log in -->
+
+    <!-- hide company name -->
+    <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div/a" position="attributes">
+        <attribute name="class">navbar-brand hidden</attribute>
     </xpath>
-    <!-- <xpath expr="//header//div" position="attributes"><attribute name="class">collapse navbar-collapse navbar-top-collapse custom</attribute></xpath> -->
+
+    <!-- hide user login / out -->
+    <xpath expr="//header//ul[@id='top_menu']/li[@class='divider']" position="attributes">
+        <attribute name="class">hidden</attribute>
+    </xpath>
+    <xpath expr="//header//ul[@id='top_menu']/li[@class='dropdown']" position="attributes">
+        <attribute name="class">hidden</attribute>
+    </xpath>
+
+    <!-- define a class to body -->
+    <xpath expr="//body" position="attributes">
+        <attribute name="class">bl-body</attribute>
+    </xpath>
+    <!-- define a class to footer -->
+    <xpath expr="//footer" position="attributes">
+        <attribute name="class">bl-footer</attribute>
+    </xpath>
+    <!-- add log in/out in footer -->
+    <xpath expr="//footer" position="inside">
+        <div class="container">
+            <div class="pull-right">
+                <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <b>
+                            <span t-esc="user_id.name"/>
+                            <span class="caret"/>
+                        </b>
+                    </a>
+                    <ul class="dropdown-menu js_usermenu" role="menu">
+                        <li><a href="/web" role="menuitem">My Account</a></li>
+                        <li class="divider"/>
+                        <li><a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a></li>
+                    </ul>
+                </li>
+            </div>
+            <div class="pull-right">
+                <li groups="base.group_public">
+                    <a t-attf-href="/web/login">
+                        <b>Sign in</b>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </xpath>
+    <!-- Customize javascript -->
+    <xpath expr="//body" position="after">
+        <script type="text/javascript" src="/theme_vertel/static/src/js/theme_block_logo.js"/>
+    </xpath>
 </data>
 
-<!-- auto footer -->
+
+<!-- footer -->
 <data inherit_id="website.footer_custom" customize_show="True" name="Automatic Footer">
     <xpath expr="//div[@id='footer']" position="replace">
         <div class="container hidden-print">
-            <div class="row">
+            <div class="row" style="margin: 0px;">
                 <div class="col-md-2">
                     <h4>Våra Tjänster</h4>
                     <ul class="list-unstyled" id="products">
@@ -90,10 +313,10 @@
                     <ul class="list-unstyled">
                         <li>
                             <h4>
-                                <a href="/page/website.contactus">Kontakt Oss</a>
+                                <a href="/page/website.contactus">Kontakta oss</a>
                             </h4>
                             <h4>
-                                <a href="/page/jobba-hos-oss">Jobba Hos Oss</a>
+                                <a href="/page/jobba-hos-oss">Jobba hos oss</a>
                             </h4>
                         </li>
                     </ul>
@@ -109,6 +332,13 @@
                         <li t-ignore="true">
                             <i class="fa fa-envelope"/>
                             <span t-field="res_company.email"/>
+                        </li>
+                        <li t-ignore="true">
+                            <i class="fa fa-home"/>
+                            <span t-field="res_company.street"/>
+                        </li>
+                        <li t-ignore="true">
+                            <span t-field="res_company.zip"/> <span t-field="res_company.city"/>
                         </li>
                     </ul>
                     <h2>
