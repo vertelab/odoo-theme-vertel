@@ -55,19 +55,19 @@
 
 /* MENU TEXT */
 #bl-menu-bar > div > ul > li > a {
-    color: #343434;
+    color: #D88D00;
 }
 
 /* STYLE WHEN MOUSE HOVER */
 #bl-menu-bar > div > ul > li > a:hover,
 #bl-menu-bar > div > ul > li > a:focus {
-    color: #E1A934;
+    color: #D88D00;
     background: #FBFBFB;
 }
 
 /* STYLE WHEN PAGE ACTIVE */
 #bl-menu-bar > div > ul > .active > a {
-    color: #E1A934;
+    color: #D88D00;
     background-color: #F6F6F6;
 }
 

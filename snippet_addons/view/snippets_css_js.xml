@@ -15,6 +15,7 @@
                 <link href="/snippet_addons/static/src/css/vertical_slide.css" rel="stylesheet"/>
                 <link href="/snippet_addons/static/src/css/banner_block.css" rel="stylesheet"/>
                 <link href="/snippet_addons/static/src/css/image_gallery_with_hover_text.css" rel="stylesheet"/>
+                <link href="/snippet_addons/static/src/css/family_tree.css" rel="stylesheet"/>
             </xpath>
         </template>
 
