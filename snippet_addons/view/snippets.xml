@@ -86,6 +86,46 @@
                 </div><!-- End of hover button -->
                 
                 
+                <!--ROUND HOVER IMAGE BUTTONS-->
+                <div id="round_hover_image_buttons">
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_big_picture.png"/>
+                        <span class="oe_snippet_thumbnail_title">Round Hover Image Button</span>
+                    </div>
+                    <div class="oe_snippet_body oe_share">
+                        <div class="button-images">
+                            <div class="one_fourth col-md-3 col-sm-3 col-xs-12" style="margin: 0px 0px 4px 0px;">
+                                <div class="button-container">
+                                  <a href="#">Link #1</a>
+                                    <img src="/website/static/src/img/library/manufacturing.jpg"/>
+                                </div>
+                            </div>    
+                            <div class="one_fourth col-md-3 col-sm-3 col-xs-12" style="margin: 0px 0px 4px 0px;">
+                                <div class="button-container">
+                                    <a href="#">Link #2</a>
+                                    <img src="/website/static/src/img/library/ship_sea.jpg" />
+                                </div>
+                            </div>
+                            <div class="one_fourth col-md-3 col-sm-3 col-xs-12" style="margin: 0px 0px 4px 0px;">
+                                <div class="button-container">
+                                    <a href="#">Link #3</a>
+                                    <div class="button-image"> 
+                                        <img src="/website/static/src/img/library/school_kids.jpg"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="one_fourth last col-md-3 col-sm-3 col-xs-12" style="margin: 0px 0px 4px 0px;">
+                                <div class="button-container">
+                                    <a href="#">Link #4</a>
+                                    <img src="/website/static/src/img/library/flight.jpg"/>
+                                </div>
+                            </div>
+                            <div class="clearboth"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--END OF ROUND HOVER IMAGE BUTTONS-->
+
                 <!-- Famliy Tree -->
                 <div id="family_tree">
                     <div class="oe_snippet_thumbnail">
@@ -213,8 +253,8 @@
                     </section>
                 </div><!-- End of Swedish clock with week day and name of the day -->
                 
-                <!--WINDOWS 10 LAYOUT-->
-                <div id="windows_layout">
+                <!--WINION SNIPPET-->
+                <div id="winion_snippet">
                     <div class="oe_snippet_thumbnail">
                         <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_parallax.png"/>
                         <span class="oe_snippet_thumbnail_title">Winion</span>
@@ -322,6 +362,7 @@
                         </div>
                     </section>
                 </div>
+                <!--END OF WINION SNIPPET-->
                                         
                 <div id="image_gallery_with_hover_text">
                     <div class="oe_snippet_thumbnail">
