@@ -12,7 +12,7 @@ Mia's sushi
 /* MENU */
 #bs-menu {
     z-index: 1;
-    margin-top: 0px;
+    margin-top: 10px;
     background: #000;
 }
 

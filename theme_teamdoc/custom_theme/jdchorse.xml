@@ -2,16 +2,71 @@
 <t t-name="website.hem">
     <t t-call="website.layout">
         <div id="wrap" class="oe_structure oe_empty">
-            <section class="mt16 mb16">
+            <style>
+                .issue_box {
+                    width: 100%;
+                    position: absolute;
+                    bottom: 3%;
+                    color: #fff;
+                    background-color:rgba(0, 0, 0, 0.5);
+                    font-size:1.5em;
+                    font-family: 'Open-sans';
+                    max-width:300px;
+                }
+                
+                .issue_box_container {
+                    position: relative;
+                    display: block;
+                    margin: auto;
+                    padding: 0px;
+                }
+            </style>
+            <section class="s_big_picture mt32">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <img alt="Odoo CMS - a big picture" class="img img-responsive" src="/theme_teamdoc/static/src/img/jdchorse/2068451 (Medium).jpg" style="width: 100%; margin: 0 auto;"/>
+                            <img alt="Odoo CMS - a big picture" class="img img-responsive img-rounded shadow" src="/theme_teamdoc/static/src/img/jdchorse/2068451 (Medium).jpg" style="margin: 0 auto"/>
                         </div>
                         <div class="col-md-8 col-md-offset-2 mb16 mt16">
                             <p class="text-center">
                                 <b>Head Over Hills och Jonas Rinnè vnnare av fyra års championatet 2012</b>
                             </p>
+                            <p class="text-center">JDC Horse verksamhet är inriktat på utbildning/träning och tävling samt försäljning av hästar. Verksamheten bedrivs på Höga Gård som är en modern anläggning under uppbyggnad ca 6 km från Linköpings City.
+                                <br/>
+                                <br/>
+För info gällande aktuella försäljningar och tävlingsresultat vänligen 
+                                <a href="/page/contactus">
+                                    <b>kontakta oss!</b>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="s_three_columns mb64" style="margin-left:4%;">
+                <div class="container">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="col-md-12 col-xs-12 mb16 issue_box_container">
+                            <img alt="Odoo - Sample 1 for three columns" class="img img-responsive hover shadow hvr-shadow" src="/theme_teamdoc/static/src/img/jdchorse/kan_way.png"/>
+                            <div class="text-center issue_box">
+                                <a href="/page/vara-haster" style="color:#fff;">Våra hästar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="col-md-12 col-xs-12 mb16 issue_box_container">
+                            <img alt="Odoo - Sample 1 for three columns" class="img img-responsive hover shadow hvr-shadow" src="/theme_teamdoc/static/src/img/jdchorse/aviator.png"/>
+                            <div class="text-center issue_box">
+                                <a href="/page/vara-haster" style="color:#fff;">Till salu</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="col-md-12 col-xs-12 issue_box_container">
+                            <img alt="Odoo - Sample 1 for three columns" class="img img-responsive hover shadow hvr-shadow" src="/theme_teamdoc/static/src/img/jdchorse/sakke.png"/>
+                            <div class="text-center issue_box">
+                                <a href="/page/vara-haster" style="color:#fff;">Filmer</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -21,42 +76,180 @@
 </t>
 
 
+
 <!-- theme -->
 <?xml version="1.0"?>
-<data inherit_id="website.layout" customize_show="True" active="False" name="Business Casual" priority="99">
-    <xpath expr="//head" position="inside">
-        <!-- Custom CSS -->
-        <link href="/theme_teamdoc/static/src/css/jdchorse.css" rel="stylesheet"/>
-        <link href="/theme_teamdoc/static/src/css/custom.css" rel="stylesheet"/>
-        <!-- Fonts -->
-        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
-        <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css"/>
+<data inherit_id="website.layout" customize_show="True" active="False" name="Theme Block Logo" priority="99">
+    <!-- Customize CSS -->
+    <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
+        <link href="/theme_vertel/static/src/css/theme_block_logo.css" rel="stylesheet"/>
+        <style>
+           .bl-body {
+                background: #fff;
+                list-style: none;
+            }
+            
+            /* MENU */
+            .bl-navbar {
+                font-family: 'Open-sans';
+                font-size: 1.5em;
+                background: none;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            #bl-menu-bar > ul > li > a {
+                padding-top: 25px;
+                padding-bottom: 25px;
+            }
+            
+            #bl-menu-bar > div {
+                width: 1024px;
+                margin: auto;
+            }
+            
+            .bl-navbar-fixed-top {
+                font-family: 'Open-sans';
+                font-size: 1.5em;
+                z-index: 99;
+                margin-top: -15%;
+                position: fixed;
+                width: 100%;
+                background: #fff;
+                box-shadow: 0px 0px 10px #333;
+            }
+            
+            /* COMPANY LOGO */
+            #bl-logo {
+                width: 50%;
+                display:block;
+                margin:auto;
+            }
+            
+            /* MENU TEXT */
+            #bl-menu-bar > ul > li > a {
+                color: #343434;
+            }
+            
+            /* STYLE WHEN MOUSE HOVER */
+            #bl-menu-bar > ul > li > a:hover,
+            #bl-menu-bar > ul > li > a:focus {
+                color: #333;
+                background: none;
+                text-shadow: 0px 0px 5px #333;
+            }
+            
+            /* STYLE WHEN PAGE ACTIVE */
+            #bl-menu-bar > ul > .active > a {
+                color: #333;
+                background: none;
+                text-shadow: 0px 0px 10px #333;
+            }
+            
+            .navbar {
+                border: 0px;
+            }
+            
+            .navbar-nav {
+                border-color: none;
+            }
+            
+            #bl-menu-bar {
+                width: 100%;
+            }
+            
+            #bl-menu-bar > .row {
+                width: 100%;
+            }
+            
+            /* FOOTER STYLE*/
+            .bl-footer {
+                box-shadow: 0px 0px 10px #333;
+                font-family: 'Open-sans';
+            }
+        </style>
     </xpath>
-    <xpath expr="//body/div" position="before">
-        <div class="brand" id="brand" t-field="res_company.name"/>
-        <div class="address-bar">
-            <t t-esc="res_company.street"/> | 
-            <t t-esc="res_company.partner_id.zip"/>
-            <t t-esc="res_company.city"/> | 
-            <t t-esc="res_company.phone"/> | 
-            <t t-esc="res_company.partner_id.mobile"/>
+
+    <!-- add company logo -->
+    <xpath expr="//body/div[@id='wrapwrap']/header" position="before">
+        <div class="container">
+            <div id="logo-box" class="col-md-12 hidden-xs">
+                <img id="bl-logo" src="/logo1024.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
+            </div>
         </div>
     </xpath>
-    <xpath expr="//header//a[@class='navbar-brand logo'] | //header//a[@class='navbar-brand'] | //header//a[@class='navbar-brand logo hidden']" position="replace">
-        <a href="/" class="navbar-brand"/>
+
+    <!-- define id and class to menu bar -->
+    <xpath expr="//body/div[@id='wrapwrap']/header/div" position="attributes">
+        <attribute name="id">bl-menu</attribute>
+        <attribute name="class">bl-navbar</attribute>
     </xpath>
-    <xpath expr="//header//ul" position="attributes">
-        <attribute name="class">nav navbar-nav</attribute>
+
+    <!-- define class to menu style -->
+    <xpath expr="//header//ul[@id='top_menu']" position="attributes">
+        <attribute name="class">nav nav-justified</attribute>
     </xpath>
-    <xpath expr="//ul[@id='top_menu']/li[1]" position="attributes">
-        <attribute name="class">divider hidden</attribute>
+    <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div[2]" position="attributes">
+        <attribute name="id">bl-menu-bar</attribute>
+        <attribute name="class">collapse navbar-collapse navbar-top-collapse col-md-12</attribute>
     </xpath>
-    <xpath expr="//ul[@id='top_menu']/li[2]" position="attributes">
-        <attribute name="class">dropdown hidden</attribute>
+
+    <!-- hide company name -->
+    <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div/a" position="attributes">
+        <attribute name="class">navbar-brand hidden</attribute>
     </xpath>
-    <!-- <xpath expr="//header//div" position="attributes"><attribute name="class">collapse navbar-collapse navbar-top-collapse custom</attribute></xpath> -->
+
+    <!-- hide user login / out -->
+    <xpath expr="//header//ul[@id='top_menu']/li[@class='divider']" position="attributes">
+        <attribute name="class">hidden</attribute>
+    </xpath>
+    <xpath expr="//header//ul[@id='top_menu']/li[@class='dropdown']" position="attributes">
+        <attribute name="class">hidden</attribute>
+    </xpath>
+
+    <!-- define a class to body -->
+    <xpath expr="//body" position="attributes">
+        <attribute name="class">bl-body</attribute>
+    </xpath>
+    <!-- define a class to footer -->
+    <xpath expr="//footer" position="attributes">
+        <attribute name="class">bl-footer</attribute>
+    </xpath>
+    <!-- add log in/out in footer -->
+    <xpath expr="//footer" position="inside">
+        <div class="container">
+            <div class="pull-right">
+                <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <b>
+                            <span t-esc="user_id.name"/>
+                            <span class="caret"/>
+                        </b>
+                    </a>
+                    <ul class="dropdown-menu js_usermenu" role="menu">
+                        <li><a href="/web" role="menuitem">My Account</a></li>
+                        <li class="divider"/>
+                        <li><a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a></li>
+                    </ul>
+                </li>
+            </div>
+            <div class="pull-right">
+                <li groups="base.group_public">
+                    <a t-attf-href="/web/login">
+                        <b>Sign in</b>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </xpath>
+    <!-- Customize javascript -->
+    <xpath expr="//body" position="after">
+        <script type="text/javascript" src="/theme_vertel/static/src/js/theme_block_logo.js"/>
+    </xpath>
 </data>
 
+        
 <!-- autofooter -->
 <?xml version="1.0"?>
 <data inherit_id="website.footer_custom" customize_show="True" name="Automatic Footer">
@@ -64,57 +257,90 @@
         <div class="container hidden-print">
             <div class="row">
                 <div class="col-md-3">
-                    <h4>Våra hästar</h4>
-                    <ul class="list-unstyled" id="products">
-                        <li><a href="/">Aviator</a></li>
-                        <li><a href="/">Kan Way</a></li>
-                        <li><a href="/">Sakke</a></li>
-                        <li><a href="/">Sol way</a></li>
-                    </ul>
+                    <div class="col-md-12">
+                        <h4 class="col-md-offset-2">Våra hästar</h4>
+                        <ul class="list-unstyled" id="products">
+                            <div class="col-md-6">
+                                <li>
+                                    <a href="/">Aviator</a>
+                                </li>
+                                <li>
+                                    <a href="/">Kan Way</a>
+                                </li>
+                            </div>
+                            <div class="col-md-6">
+                                <li>
+                                    <a href="/">Sakke</a>
+                                </li>
+                                <li>
+                                    <a href="/">Sol way</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
                 </div>
-                
-                <div class="col-md-5">
+                <div class="col-md-4">
                     <div>
                         <h4>
                             <span t-field="res_company.name"/>
                         </h4>
                         JDC Horse verksamhet är inriktat på utbildning/träning och tävling samt försäljning av hästar. Verksamheten bedrivs på Höga Gård som är en modern anläggning under uppbyggnad ca 6 km från Linköpings City.
+                        
+                        
                         <a href="/">Läs mer...</a>
                     </div>
-                    <ul class="list-inline js_language_selector mt16" t-if="(request.website_multilang and len(languages) &gt; 1) or editable">
-                        <li t-foreach="languages" t-as="lg">
-                            <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang=lg[0])" t-att-data-default-lang="editable and 'true' if lg[0] == website.default_lang_code else None" t-att-data-lang="lg[0]" class="js_change_lang">
-                              <t t-esc="lg[1].split('/').pop()"/>
-                            </a>
-                        </li>
-                        <li groups="base.group_website_publisher">
-                            <t t-set="url_return" t-value="url_for('', '[lang]') + '?' + keep_query()"/>
-                            <a t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id}&amp;url_return=#{url_return}">
-                            <i class="fa fa-plus-circle"/>
+                    <!--  <ul class="list-inline js_language_selector mt16" t-if="(request.website_multilang and len(languages) &gt; 1) or editable"><li t-foreach="languages" t-as="lg"><a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang=lg[0])" t-att-data-default-lang="editable and 'true' if lg[0] == website.default_lang_code else None" t-att-data-lang="lg[0]" class="js_change_lang"><t t-esc="lg[1].split('/').pop()"/></a></li><li groups="base.group_website_publisher"><t t-set="url_return" t-value="url_for('', '[lang]') + '?' + keep_query()"/><a t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id}&amp;url_return=#{url_return}"><i class="fa fa-plus-circle"/>
                             Add a language...
-                            </a>
-                        </li>
-                    </ul>
+                            
+                            </a></li></ul>-->
                 </div>
-                <div class="col-md-3 col-lg-offset-1" id="info">
-                    <h4>Kontakta oss</h4>För info gällande aktuella försäljningar och tävlingsresultat vänligen <a href="/page/website.contactus">kontakta oss</a>!
+                <div class="col-md-5 " id="info">
+                    <h4>Kontakta oss</h4>För info gällande aktuella försäljningar och tävlingsresultat vänligen 
+                    
+                    <a href="/page/website.contactus">kontakta oss</a>!
+                        
                     <ul class="list-unstyled">
-                        <li t-ignore="true"><i class="fa fa-phone"/> <span t-field="res_company.phone"/></li>
-                        <li t-ignore="true"><i class="fa fa-mobile"/>  <span t-field="res_company.partner_id.mobile"/></li>
-                        <li t-ignore="true"><i class="fa fa-envelope"/>  <span>bernt.johansson@jdchorse.se</span></li>
-                        <li t-ignore="true"><i class="fa fa-envelope"/>  <span>maria.johansson@jdchorse.se</span></li>
+                        <li t-ignore="true">
+                            <i class="fa fa-phone"/>
+                            <span t-field="res_company.phone"/>
+                        </li>
+                        <li t-ignore="true">
+                            <i class="fa fa-mobile"/>
+                            <span t-field="res_company.partner_id.mobile"/>
+                        </li>
+                        <li t-ignore="true">
+                            <i class="fa fa-envelope"/>
+                            <span>bernt.johansson@jdchorse.se</span>
+                        </li>
+                        <li t-ignore="true">
+                            <i class="fa fa-envelope"/>
+                            <span>maria.johansson@jdchorse.se</span>
+                        </li>
                     </ul>
                     <h2>
-                        <a t-att-href="website.social_facebook" t-if="website.social_facebook"><i class="fa fa-facebook-square"/></a>
-                        <a t-att-href="website.social_twitter" t-if="website.social_twitter"><i class="fa fa-twitter"/></a>
-                        <a t-att-href="website.social_linkedin" t-if="website.social_linkedin"><i class="fa fa-linkedin"/></a>
-                        <a t-att-href="website.social_youtube" t-if="website.social_youtube"><i class="fa fa-youtube-play"/></a>
-                        <a t-att-href="website.social_googleplus" t-if="website.social_googleplus" rel="publisher"><i class="fa fa-google-plus-square"/></a>
-                        <a t-att-href="website.social_github" t-if="website.social_github"><i class="fa fa-github"/></a>
+                        <a t-att-href="website.social_facebook" t-if="website.social_facebook">
+                            <i class="fa fa-facebook-square"/>
+                        </a>
+                        <a t-att-href="website.social_twitter" t-if="website.social_twitter">
+                            <i class="fa fa-twitter"/>
+                        </a>
+                        <a t-att-href="website.social_linkedin" t-if="website.social_linkedin">
+                            <i class="fa fa-linkedin"/>
+                        </a>
+                        <a t-att-href="website.social_youtube" t-if="website.social_youtube">
+                            <i class="fa fa-youtube-play"/>
+                        </a>
+                        <a t-att-href="website.social_googleplus" t-if="website.social_googleplus" rel="publisher">
+                            <i class="fa fa-google-plus-square"/>
+                        </a>
+                        <a t-att-href="website.social_github" t-if="website.social_github">
+                            <i class="fa fa-github"/>
+                        </a>
                     </h2>
                 </div>
             </div>
         </div>
     </xpath>
 </data>
+
 
