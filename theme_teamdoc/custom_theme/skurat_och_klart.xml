@@ -30,12 +30,11 @@ Ska du flytta hjälper vi dig med det mest tidskrävande, flyttstädningen!</h3>
                             </div>
                         </div>
                     </a>
-
                     <a href="/">
                         <div class="col-md-12 mb32 col-box">
                             <div class="row mt32 mb32">
                                 <div class="col-md-8" style="padding: 0px 20px 0px 20px;">
-                                    <h1>Företag / Skolan</h1>
+                                    <h1>Företag / Skola</h1>
                                     <hr/>
                                     <h4>Vi på Skurat och klart tar även oss an mindre till medelstora kontor samt skolor.
     Ni väljer själva hur ofta ni vill använda vår service per vecka/månad.Även här gäller som hemstäd, samma personal utgår från oss samt tystnadsplikt. Vi på Skurat och Klart tillhandahåller med utrustning. Avgifter för materiell tillkommer.
@@ -47,7 +46,6 @@ Ska du flytta hjälper vi dig med det mest tidskrävande, flyttstädningen!</h3>
                             </div>
                         </div>
                     </a>
-
                     <a href="/">
                         <div class="col-md-12 col-box">
                             <div class="row mt32 mb32">
@@ -55,7 +53,7 @@ Ska du flytta hjälper vi dig med det mest tidskrävande, flyttstädningen!</h3>
                                     <img class="img-responsive" src="/theme_teamdoc/static/src/img/skurat_och_klart/sweet-home.jpg" style="margin: auto;"/>
                                 </div>
                                 <div class="col-md-8" style="padding: 0px 20px 0px 20px;">
-                                    <h1>Hem service</h1>
+                                    <h1>Hemservice</h1>
                                     <hr/>
                                     <h4>Vi utformar tillsammans med Er ett schema hur ni vill nyttja era beställda timmar för hemservice. Vi på Skurat och Klart försöker vara så flexibla som möjligt för era önskemål.
                                     Vill ni någon gång byta ut något från ert grundschema i samma tid så löser vi detta. Du bestämmer hur du vill ha tjänsten utförd. Går självklart även bra att lägga till arbetstimmar vid önskemål vid tex storstäd. Men det måste bokas i förväg.
@@ -64,7 +62,6 @@ Ska du flytta hjälper vi dig med det mest tidskrävande, flyttstädningen!</h3>
                             </div>
                         </div>
                     </a>
-
                 </div>
             </section>
             <section class="parallax s_parallax mt16 hidden-xs" data-scroll-background-offset="0" data-scroll-background-ratio="0.3" style="background-image: url(&quot;/theme_teamdoc/static/src/img/skurat_och_klart/1969727.jpg&quot;); background-attachment: scroll; background-position: 0px 0px; height: 200px; overflow: hidden;">

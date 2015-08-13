@@ -97,7 +97,7 @@
 
             <!-- hide company name -->
             <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div/a" position="attributes">
-                <attribute name="class">navbar-brand hidden</attribute>
+                <attribute name="class">navbar-brand hidden-lg hidden-md hidden-sm</attribute>
             </xpath>
 
             <!-- show company logo in mobile version -->
@@ -410,7 +410,7 @@
 
             <!-- hide company name -->
             <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div/a" position="attributes">
-                <attribute name="class">navbar-brand hidden</attribute>
+                <attribute name="class">navbar-brand hidden-lg hidden-md hidden-sm</attribute>
             </xpath>
 
             <!-- hide user login / out -->
