@@ -268,6 +268,7 @@
                                         <a href="/" style="display: block; width: 100%; height: 100%;">
                                             <img class="img-responsive" src="/website/static/src/img/library/ship_sea.jpg" style="width:100%; height:266px;"/>
                                         </a>
+                                        <h3>Hover Text</h3>
                                     </div>
                                     <div class="col-md-2 col-sm-2 col-xs-12" style="padding: 2px;">
                                         <div href="/" class="col-md-12 col-xs-6 hover" style="padding: 0px 0px 2px 0px;">
@@ -275,6 +276,7 @@
                                                 <a href="/" style="display: block; width: 100%; height: 100%;">
                                                     <i class="fa fa-envelope fa-4x winion-icon-small" style=""/>
                                                 </a>
+                                                <h5>Hover Text</h5>
                                             </div>
                                         </div>
                                         <div class="col-md-12 col-xs-6 hover" style="padding: 2px 0px 0px 0px;">
@@ -282,6 +284,7 @@
                                                 <a href="/" style="display: block; width: 100%; height: 100%;">
                                                     <i class="fa fa-headphones fa-4x winion-icon-small" style=""/>
                                                 </a>
+                                                <h5>Hover Text</h5>
                                             </div>
                                         </div>
                                     </div>
@@ -289,6 +292,7 @@
                                         <a href="/" style="display: block; width: 100%; height: 100%;">
                                             <img class="img-responsive" src="/website/static/src/img/library/flight.jpg" style="width:100%; height:266px;"/>
                                         </a>
+                                        <h3>Hover Text</h3>
                                     </div>
                                 </div>
                                 <!-- END ROW 1-->
@@ -300,12 +304,14 @@
                                             <a href="/" style="display: block; width: 100%; height: 100%;">
                                                 <img class="img-responsive" src="/website/static/src/img/desert_thumb.jpg" style="width:100%; height:131px;"/>
                                             </a>
+                                            <h5>Hover Text</h5>
                                         </div>
                                         <div class="col-md-12 col-xs-6 hover" style="padding: 2px 0px 0px 0px;">
                                             <div class="text-center" style="background-color: #0274D8; height:131px;">
                                                 <a href="/" style="display: block; width: 100%; height: 100%;">
                                                     <i class="fa fa-info fa-4x winion-icon-small" style=""/>
                                                 </a>
+                                                <h5>Hover Text</h5>
                                             </div>
                                         </div>
                                     </div>
@@ -313,11 +319,13 @@
                                         <a href="/" style="display: block; width: 100%; height: 100%;">
                                             <img class="img-responsive" src="/website/static/src/img/library/business_stats.jpg" style="width:100%; height:266px;"/>
                                         </a>
+                                        <h3>Hover Text</h3>
                                     </div>
                                     <div class="col-md-5 col-sm-5 col-xs-12 hover" style="padding: 2px;">
                                         <a href="/" style="display: block; width: 100%; height: 100%;">
                                             <img class="img-responsive" src="/website/static/src/img/library/business_hands.jpg" style="width:100%; height:266px;"/>
                                         </a>
+                                        <h3>Hover Text</h3>
                                     </div>
                                 </div>
                                 <!--END ROW 2-->
@@ -329,11 +337,13 @@
                                             <a href="/" style="display: block; width: 100%; height: 100%;">
                                                 <img class="img-responsive" src="/website/static/src/img/landscape.jpg" style="width:100%; height:131px;"/>
                                             </a>
+                                            <h5>Hover Text</h5>
                                         </div>
                                         <div class="col-md-12 col-xs-6 hover" style="padding: 2px 0px 0px 0px;">
                                             <a href="/" style="display: block; width: 100%; height: 100%;">
                                                 <img class="img-responsive" src="/website/static/src/img/china_thumb.jpg" style="width:100%; height:131px;"/>
                                             </a>
+                                            <h5>Hover Text</h5>
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-sm-4 col-xs-12 hover" style="padding: 2px;">
@@ -341,6 +351,7 @@
                                             <a href="/" style="display: block; width: 100%; height: 100%;">
                                                 <i class="fa fa-calendar fa-5x winion-icon-medium" style=""/>
                                             </a>
+                                            <h4>Hover Text</h4>
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-sm-4 col-xs-12" style="padding: 2px;">
@@ -348,11 +359,13 @@
                                             <a href="/" style="display: block; width: 100%; height: 100%;">
                                                 <img class="img-responsive" src="/website/static/src/img/library/manufacturing.jpg" style="width:100%; height:131px;"/>
                                             </a>
+                                            <h5>Hover Text</h5>
                                         </div>
                                         <div class="col-md-12 col-xs-6 hover" style="padding: 2px 0px 0px 0px;">
                                             <a href="/" style="display: block; width: 100%; height: 100%;">
                                                 <img class="img-responsive" src="/website/static/src/img/library/helpdesk.jpg" style="width:100%; height:131px;"/>
                                             </a>
+                                            <h5>Hover Text</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -376,6 +389,7 @@
                                                 <a href="/" style="display: block; width: 100%; height: 100%;">
                                                     <i class="fa fa-heart-o fa-4x winion-icon-small" style=""/>
                                                 </a>
+                                                <h5>Hover Text</h5>
                                             </div>
                                         </div>
                                         <div class="col-md-12 col-xs-6 hover" style="padding: 2px 0px 0px 0px;">
@@ -383,6 +397,7 @@
                                                 <a href="/" style="display: block; width: 100%; height: 100%;">
                                                     <i class="fa fa-picture-o fa-4x winion-icon-small" style=""/>
                                                 </a>
+                                                <h5>Hover Text</h5>
                                             </div>
                                         </div>
                                     </div>
@@ -390,6 +405,7 @@
                                         <a href="/" style="display: block; width: 100%; height: 100%;">
                                             <img class="img-responsive" src="/website/static/src/img/library/world.jpg" style="width:100%; height:266px;"/>
                                         </a>
+                                        <h3>Hover Text</h3>
                                     </div>
                                 </div>
                                 <!--END ROW 4-->

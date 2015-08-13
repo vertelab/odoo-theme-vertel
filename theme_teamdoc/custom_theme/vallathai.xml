@@ -1,0 +1,137 @@
+<!-- hem -->
+<t t-name="website.hem">
+    <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty">
+            <section>
+                <div class="container mt32 mb32">
+                    <div class="row">
+                        <div class="container">
+                            <div class="col-md-12 hover" style="padding: 2px;">
+                                <a href="/" style="display: block; width: 100%; height: 100%;">
+                                    <img class="img-responsive" src="/theme_teamdoc/static/src/img/mias_sushi/start_img.jpg" style="width:100%; height:266px;"/>
+                                </a>
+                                <h3>hahaha</h3>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="col-md-6 col-sm-6 col-xs-12 hover" style="padding: 2px;">
+                                <a href="/" style="display: block; width: 100%; height: 100%;">
+                                    <img class="img-responsive" src="/theme_teamdoc/static/src/img/mias_sushi/1437467_71634196.jpg" style="width:100%; height:266px;"/>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12 hover" style="padding: 2px;">
+                                <a href="/" style="display: block; width: 100%; height: 100%;">
+                                    <img class="img-responsive" src="/theme_teamdoc/static/src/img/mias_sushi/240761_9420.jpg" style="width:100%; height:266px;"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="col-md-4 col-sm-4 col-xs-12" style="padding: 2px;">
+                                <div class="col-md-12 col-xs-6 hover" style="padding: 0px 0px 2px 0px;">
+                                    <a href="/" style="display: block; width: 100%; height: 100%;">
+                                        <img class="img-responsive" src="/website/static/src/img/landscape.jpg" style="width:100%; height:131px;"/>
+                                    </a>
+                                </div>
+                                <div class="col-md-12 col-xs-6 hover" style="padding: 2px 0px 0px 0px;">
+                                    <a href="/" style="display: block; width: 100%; height: 100%;">
+                                        <img class="img-responsive" src="/website/static/src/img/china_thumb.jpg" style="width:100%; height:131px;"/>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12 hover" style="padding: 2px;">
+                                <div class="text-center" style="background-color: #5E3CB7; height:266px;">
+                                    <a href="/" style="display: block; width: 100%; height: 100%;">
+                                        <i class="fa fa-calendar fa-5x winion-icon-medium" style=""/>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12" style="padding: 2px;">
+                                <div class="col-md-12 col-xs-6 hover" style="padding: 0px 0px 2px 0px;">
+                                    <a href="/" style="display: block; width: 100%; height: 100%;">
+                                        <img class="img-responsive" src="/website/static/src/img/library/manufacturing.jpg" style="width:100%; height:131px;"/>
+                                    </a>
+                                </div>
+                                <div class="col-md-12 col-xs-6 hover" style="padding: 2px 0px 0px 0px;">
+                                    <a href="/" style="display: block; width: 100%; height: 100%;">
+                                        <img class="img-responsive" src="/website/static/src/img/library/helpdesk.jpg" style="width:100%; height:131px;"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="col-md-5 col-sm-5 col-xs-12 hover" style="padding: 2px;">
+                                <div style="background-color: #00881A; color: #fff; height:266px;">
+                                    <p style="padding: 20px;">
+                                        <a class="text-center" href="/" style="display: block; width: 100%; height: 100%; color: #fff;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-2 col-xs-12" style="padding: 2px;">
+                                <div class="col-md-12 col-xs-6 hover" style="padding: 0px 0px 2px 0px;">
+                                    <div class="text-center" style="background-color: #DF2F00; height:131px;">
+                                        <a href="/" style="display: block; width: 100%; height: 100%;">
+                                            <i class="fa fa-heart-o fa-4x winion-icon-small" style=""/>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-xs-6 hover" style="padding: 2px 0px 0px 0px;">
+                                    <div class="text-center" style="background-color: #AC193D; height:131px;">
+                                        <a href="/" style="display: block; width: 100%; height: 100%;">
+                                            <i class="fa fa-picture-o fa-4x winion-icon-small" style=""/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-sm-5 col-xs-12 hover" style="padding: 2px;">
+                                <a href="/" style="display: block; width: 100%; height: 100%;">
+                                    <img class="img-responsive" src="/website/static/src/img/library/world.jpg" style="width:100%; height:266px;"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="fw_categories mt16">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12" style="color: #fff;">
+                            <h1 class="intro-text text-center">Välkommen till Vallathai!</h1>
+                            <p/>
+                            <h4 class="intro-text text-center">Vallathai erbjuder thailändsk mat som den smakar och äts i Thailand – gott, sunt och prisvärt.</h4>
+                        </div>
+                        <div>
+                            <p/>
+                        </div>
+                        <div class="col-md-12">
+                            <img alt="Odoo - Sample 2 for three columns" class="img img-rounded" src="/theme_teamdoc/static/src/img/mias_sushi/start_img.jpg" style="width:100%"/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <p/>
+            <section class="mt16 mb16">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-1"/>
+                        <div class="col-md-5">
+                            <a href="/page/veckans-lunch">
+                                <img alt="Odoo - Sample 1 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/mias_sushi/1437467_71634196.jpg" style="width:100%; height:200px;"/>
+                            </a>
+                            <h4 class="mt16" style="text-align: center;">
+                                <a href="/page/veckans-lunch">Veckans lunch</a>
+                            </h4>
+                        </div>
+                        <div class="col-md-5">
+                            <a href="/page/meny-sushi">
+                                <img alt="Odoo - Sample 2 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/mias_sushi/240761_9420.jpg" style="width:100%; height:200px;"/>
+                            </a>
+                            <h4 class="mt16" style="text-align: center;">
+                                <a href="/page/meny-sushi">Meny</a>
+                            </h4>
+                        </div>
+                        <div class="col-md-1"/></div>
+                </div>
+            </section>
+        </div>
+    </t>
+</t>
