@@ -3,6 +3,7 @@
     <t t-call="website.layout">
         <div id="wrap" class="oe_structure oe_empty">
             <section>
+                <h2 class="mt64 mb64 text-center" style="color: #fff;"><strong>Vallathai erbjuder thailändsk mat som den smakar och äts i Thailand – gott, sunt och prisvärt.</strong></h2>
                 <div class="container mt32 mb32">
                     <div class="row">
                         <div class="container">
@@ -10,7 +11,7 @@
                                 <a href="/" style="display: block; width: 100%; height: 100%;">
                                     <img class="img-responsive" src="/theme_teamdoc/static/src/img/mias_sushi/start_img.jpg" style="width:100%; height:266px;"/>
                                 </a>
-                                <h3>hahaha</h3>
+                                <h2>Om Vallathai</h2>
                             </div>
                         </div>
                         <div class="container">
@@ -18,120 +19,333 @@
                                 <a href="/" style="display: block; width: 100%; height: 100%;">
                                     <img class="img-responsive" src="/theme_teamdoc/static/src/img/mias_sushi/1437467_71634196.jpg" style="width:100%; height:266px;"/>
                                 </a>
+                                <h3>Veckans lunch</h3>
                             </div>
                             <div class="col-md-6 col-sm-6 col-xs-12 hover" style="padding: 2px;">
                                 <a href="/" style="display: block; width: 100%; height: 100%;">
                                     <img class="img-responsive" src="/theme_teamdoc/static/src/img/mias_sushi/240761_9420.jpg" style="width:100%; height:266px;"/>
                                 </a>
+                                <h3>Vår Meny</h3>
                             </div>
                         </div>
                         <div class="container">
-                            <div class="col-md-4 col-sm-4 col-xs-12" style="padding: 2px;">
-                                <div class="col-md-12 col-xs-6 hover" style="padding: 0px 0px 2px 0px;">
-                                    <a href="/" style="display: block; width: 100%; height: 100%;">
-                                        <img class="img-responsive" src="/website/static/src/img/landscape.jpg" style="width:100%; height:131px;"/>
-                                    </a>
-                                </div>
-                                <div class="col-md-12 col-xs-6 hover" style="padding: 2px 0px 0px 0px;">
-                                    <a href="/" style="display: block; width: 100%; height: 100%;">
-                                        <img class="img-responsive" src="/website/static/src/img/china_thumb.jpg" style="width:100%; height:131px;"/>
-                                    </a>
-                                </div>
+                            <div class="col-md-3 col-sm-3 col-xs-12 hover" style="padding: 2px;">
+                                <a href="/" style="display: block; width: 100%; height: 100%;">
+                                    <img class="img-responsive" src="/theme_teamdoc/static/src/img/mias_sushi/hem_sushi.jpg" style="width:100%; height:266px;"/>
+                                </a>
+                                <h3>Sushi</h3>
                             </div>
-                            <div class="col-md-4 col-sm-4 col-xs-12 hover" style="padding: 2px;">
-                                <div class="text-center" style="background-color: #5E3CB7; height:266px;">
-                                    <a href="/" style="display: block; width: 100%; height: 100%;">
-                                        <i class="fa fa-calendar fa-5x winion-icon-medium" style=""/>
-                                    </a>
-                                </div>
+                            <div class="col-md-3 col-sm-3 col-xs-12 hover" style="padding: 2px;">
+                                <a href="/" style="display: block; width: 100%; height: 100%;">
+                                    <img class="img-responsive" src="/theme_teamdoc/static/src/img/mias_sushi/hem_forratt.jpg" style="width:100%; height:266px;"/>
+                                </a>
+                                <h3>Förrätt</h3>
                             </div>
-                            <div class="col-md-4 col-sm-4 col-xs-12" style="padding: 2px;">
-                                <div class="col-md-12 col-xs-6 hover" style="padding: 0px 0px 2px 0px;">
-                                    <a href="/" style="display: block; width: 100%; height: 100%;">
-                                        <img class="img-responsive" src="/website/static/src/img/library/manufacturing.jpg" style="width:100%; height:131px;"/>
-                                    </a>
-                                </div>
-                                <div class="col-md-12 col-xs-6 hover" style="padding: 2px 0px 0px 0px;">
-                                    <a href="/" style="display: block; width: 100%; height: 100%;">
-                                        <img class="img-responsive" src="/website/static/src/img/library/helpdesk.jpg" style="width:100%; height:131px;"/>
-                                    </a>
-                                </div>
+                            <div class="col-md-3 col-sm-3 col-xs-12 hover" style="padding: 2px;">
+                                <a href="/" style="display: block; width: 100%; height: 100%;">
+                                    <img class="img-responsive" src="/theme_teamdoc/static/src/img/mias_sushi/hem_curry.jpg" style="width:100%; height:266px;"/>
+                                </a>
+                                <h3>Curry och kokosmjölk</h3>
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-12 hover" style="padding: 2px;">
+                                <a href="/" style="display: block; width: 100%; height: 100%;">
+                                    <img class="img-responsive" src="/theme_teamdoc/static/src/img/mias_sushi/hem_grillade.jpg" style="width:100%; height:266px;"/>
+                                </a>
+                                <h3>Grillade &amp; Friterade rätter</h3>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="col-md-3 col-sm-3 col-xs-12 hover" style="padding: 2px;">
+                                <a href="/" style="display: block; width: 100%; height: 100%;">
+                                    <img class="img-responsive" src="/theme_teamdoc/static/src/img/mias_sushi/hem_wok.jpg" style="width:100%; height:266px;"/>
+                                </a>
+                                <h3>Wokade rätter</h3>
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-12 hover" style="padding: 2px;">
+                                <a href="/" style="display: block; width: 100%; height: 100%;">
+                                    <img class="img-responsive" src="/theme_teamdoc/static/src/img/mias_sushi/hem_nudlar.jpg" style="width:100%; height:266px;"/>
+                                </a>
+                                <h3>Nudlar/ ris</h3>
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-12 hover" style="padding: 2px;">
+                                <a href="/" style="display: block; width: 100%; height: 100%;">
+                                    <img class="img-responsive" src="/theme_teamdoc/static/src/img/mias_sushi/hem_vegetariskt.jpg" style="width:100%; height:266px;"/>
+                                </a>
+                                <h3>Vegetariskt</h3>
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-12 hover" style="padding: 2px;">
+                                <a href="/" style="display: block; width: 100%; height: 100%;">
+                                    <img class="img-responsive" src="/theme_teamdoc/static/src/img/mias_sushi/hem_efterratt.jpg" style="width:100%; height:266px;"/>
+                                </a>
+                                <h3>Efterrätt</h3>
                             </div>
                         </div>
                         <div class="container">
                             <div class="col-md-5 col-sm-5 col-xs-12 hover" style="padding: 2px;">
-                                <div style="background-color: #00881A; color: #fff; height:266px;">
-                                    <p style="padding: 20px;">
-                                        <a class="text-center" href="/" style="display: block; width: 100%; height: 100%; color: #fff;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </a>
-                                    </p>
-                                </div>
+                                <a href="/" style="display: block; width: 100%; height: 100%;">
+                                    <img class="img-responsive" src="/theme_teamdoc/static/src/img/mias_sushi/hem_naringstabell.jpg" style="width:100%; height:266px;"/>
+                                </a>
+                                <h3>Näringstabell</h3>
                             </div>
                             <div class="col-md-2 col-sm-2 col-xs-12" style="padding: 2px;">
                                 <div class="col-md-12 col-xs-6 hover" style="padding: 0px 0px 2px 0px;">
-                                    <div class="text-center" style="background-color: #DF2F00; height:131px;">
-                                        <a href="/" style="display: block; width: 100%; height: 100%;">
-                                            <i class="fa fa-heart-o fa-4x winion-icon-small" style=""/>
-                                        </a>
+                                    <div style="background-color: #00881A; color: #fff; height:131px;">
+                                        <p class="text-center" href="/" style="display: block; width: 100%; height: 100%; color: #fff; padding: 18px;">
+                                            <strong>Våra öppettider:</strong><br/>
+                                            Måndag - Fredag<br/>11.00 - 21.00<br/>
+                                            Lördag - Söndag<br/>12.00 - 21.00
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="col-md-12 col-xs-6 hover" style="padding: 2px 0px 0px 0px;">
-                                    <div class="text-center" style="background-color: #AC193D; height:131px;">
-                                        <a href="/" style="display: block; width: 100%; height: 100%;">
-                                            <i class="fa fa-picture-o fa-4x winion-icon-small" style=""/>
+                                    <div class="text-center" style="background-color: #0049B6; height:131px;">
+                                        <a href="/page/website.contactus" style="display: block; width: 100%; height: 100%;">
+                                            <i class="fa fa-phone fa-4x winion-icon-small" style=""/>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-5 col-sm-5 col-xs-12 hover" style="padding: 2px;">
                                 <a href="/" style="display: block; width: 100%; height: 100%;">
-                                    <img class="img-responsive" src="/website/static/src/img/library/world.jpg" style="width:100%; height:266px;"/>
+                                    <img class="img-responsive" src="/theme_teamdoc/static/src/img/mias_sushi/hem_koket.jpg" style="width:100%; height:266px;"/>
                                 </a>
+                                <h3>Thailändska köket</h3>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="fw_categories mt16">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12" style="color: #fff;">
-                            <h1 class="intro-text text-center">Välkommen till Vallathai!</h1>
-                            <p/>
-                            <h4 class="intro-text text-center">Vallathai erbjuder thailändsk mat som den smakar och äts i Thailand – gott, sunt och prisvärt.</h4>
-                        </div>
-                        <div>
-                            <p/>
-                        </div>
-                        <div class="col-md-12">
-                            <img alt="Odoo - Sample 2 for three columns" class="img img-rounded" src="/theme_teamdoc/static/src/img/mias_sushi/start_img.jpg" style="width:100%"/>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <p/>
-            <section class="mt16 mb16">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-1"/>
-                        <div class="col-md-5">
-                            <a href="/page/veckans-lunch">
-                                <img alt="Odoo - Sample 1 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/mias_sushi/1437467_71634196.jpg" style="width:100%; height:200px;"/>
-                            </a>
-                            <h4 class="mt16" style="text-align: center;">
-                                <a href="/page/veckans-lunch">Veckans lunch</a>
-                            </h4>
-                        </div>
-                        <div class="col-md-5">
-                            <a href="/page/meny-sushi">
-                                <img alt="Odoo - Sample 2 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/mias_sushi/240761_9420.jpg" style="width:100%; height:200px;"/>
-                            </a>
-                            <h4 class="mt16" style="text-align: center;">
-                                <a href="/page/meny-sushi">Meny</a>
-                            </h4>
-                        </div>
-                        <div class="col-md-1"/></div>
-                </div>
-            </section>
         </div>
     </t>
 </t>
+
+
+<!-- footer -->
+<data inherit_id="website.footer_custom" customize_show="True" name="Automatic Footer">
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div class="container hidden-print">
+            <div class="row">
+                <div class="col-md-3 hidden">
+                    <h4>Vår meny</h4>
+                    <ul class="list-unstyled" id="products">
+                        <li>
+                            <a href="/page/meny-sushi">Sushi</a>
+                        </li>
+                        <li>
+                            <a href="/page/meny-forratt">Förrätt</a>
+                        </li>
+                        <li>
+                            <a href="/page/meny-curry-och-kokosmjolk">Curry och kokosmjölk</a>
+                        </li>
+                        <li>
+                            <a href="/page/meny-grillade-och-friterade-ratter">Grillade och Friterade rätter</a>
+                        </li>
+                        <li>
+                            <a href="/page/meny-wokade-ratter">Wokade rätter</a>
+                        </li>
+                        <li>
+                            <a href="/page/meny-nudlar-ris">Nudlar/ ris</a>
+                        </li>
+                        <li>
+                            <a href="/page/meny-vegetariskt">Vegetariskt</a>
+                        </li>
+                        <li>
+                            <a href="/page/meny-efterratt">Efterrätt</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 hidden">
+                    <div>
+                        <h4 style="text-align: center;">Om oss</h4>
+                        <div class="box">
+                            <font style="color:white;" size="3">
+                                <b>Naturligt fräscht och gott</b> Vår mat tillagas av färska och fräscha thailändska råvaror. Det garanterar den genuina smaken. Thailändsk mat är naturligt näringsrik och fettsnål. Den breda variationen av rätter med både starka och milda smaker erbjuder något för alla – barn som vuxna.
+                            </font>
+                            <br/>
+                            <br/>
+                            <a href="/page/thailandska-koket">Läs mer om det Thailändska köket...</a>
+                            <div>
+                                <p/>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="list-inline js_language_selector mt16" t-if="(request.website_multilang and len(languages) &gt; 1) or editable">
+                        <li t-foreach="languages" t-as="lg">
+                            <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang=lg[0])" t-att-data-default-lang="editable and 'true' if lg[0] == website.default_lang_code else None" t-att-data-lang="lg[0]" class="js_change_lang">
+                                <t t-esc="lg[1].split('/').pop()"/>
+                            </a>
+                        </li>
+                        <li groups="base.group_website_publisher">
+                            <t t-set="url_return" t-value="url_for('', '[lang]') + '?' + keep_query()"/>
+                            <a t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id}&amp;url_return=#{url_return}">
+                                <i class="fa fa-plus-circle"/>
+                            Add a language...
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-12" id="info" style="color: white;">
+                    <span t-field="res_company.name"/> | <span t-field="res_company.phone"/> | <span t-field="res_company.partner_id.mobile"/> | <span t-field="res_company.email"/>
+
+                    <h2>
+                        <a t-att-href="website.social_facebook" t-if="website.social_facebook">
+                            <i class="fa fa-facebook-square"/>
+                        </a>
+                        <a t-att-href="website.social_twitter" t-if="website.social_twitter">
+                            <i class="fa fa-twitter"/>
+                        </a>
+                        <a t-att-href="website.social_linkedin" t-if="website.social_linkedin">
+                            <i class="fa fa-linkedin"/>
+                        </a>
+                        <a t-att-href="website.social_youtube" t-if="website.social_youtube">
+                            <i class="fa fa-youtube-play"/>
+                        </a>
+                        <a t-att-href="website.social_googleplus" t-if="website.social_googleplus" rel="publisher">
+                            <i class="fa fa-google-plus-square"/>
+                        </a>
+                        <a t-att-href="website.social_github" t-if="website.social_github">
+                            <i class="fa fa-github"/>
+                        </a>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </xpath>
+</data>
+
+
+<!-- theme -->
+<?xml version="1.0"?>
+<data inherit_id="website.layout" customize_show="True" active="False" name="Theme BS-Multipurpose-Ruma" priority="99">
+    <!-- Customize CSS -->
+    <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
+        <link href="/theme_vertel/static/src/css/theme_bs_ruma.css" rel="stylesheet"/>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'/>
+        <style>
+            .bs-body {
+                font-family: 'Open Sans', sans-serif;
+                list-style: none;
+            }
+
+            h1, h2, h3, h4, h5 {
+                font-family: 'Open Sans Condensed', sans-serif;
+            }
+
+            /* MENU */
+            #bs-menu {
+                z-index: 1;
+                margin-top: 0px !important;
+                background: #000;
+            }
+
+            /* COMPANY LOGO */
+            #bs-menu &gt; div &gt; div &gt; a {
+                color: #FFF;
+            }
+
+            #bs-logo {
+                max-width: 100px;
+            }
+
+            /* MENU TEXT */
+            #bs-menu &gt; div &gt; div &gt; ul &gt; li &gt; a {
+                color: #FFF;
+                font-family: 'Open Sans Condensed', sans-serif;
+                font-size: 1.5em;
+            }
+
+            /* STYLE WHEN MOUSE HOVER */
+            #bs-menu &gt; div &gt; div &gt; ul &gt; li &gt; a:hover,
+            #bs-menu &gt; div &gt; div &gt; ul &gt; li &gt; a:focus {
+                color: #000;
+                background-color: #fff;
+            }
+
+            /* STYLE WHEN PAGE ACTIVE */
+            #bs-menu &gt; div &gt; div &gt; ul &gt; .active &gt; a {
+                color: #000;
+                background-color: #fff;
+            }
+
+            /* FOOTER STYLE*/
+            .bs-footer {
+                background: #000;
+                color: #fff;
+            }
+        </style>
+    </xpath>
+
+    <!-- add company logo -->
+    <xpath expr="//header//ul[@id='top_menu']" position="before">
+        <img class="hidden-xs" id="bs-logo" src="/logo.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
+    </xpath>
+
+    <!-- define id and class to menu bar -->
+    <xpath expr="//body/div[@id='wrapwrap']/header/div" position="attributes">
+        <attribute name="id">bs-menu</attribute>
+        <attribute name="class">navbar navbar-inverse navbar-fixed-top</attribute>
+    </xpath>
+
+    <!-- define class to menu style -->
+    <xpath expr="//header//ul[@id='top_menu']" position="attributes">
+        <attribute name="class">nav navbar-nav navbar-right</attribute>
+    </xpath>
+
+    <!-- hide company name -->
+    <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div/a" position="attributes">
+        <attribute name="class">navbar-brand hidden-lg hidden-md hidden-sm hidden-xs</attribute>
+    </xpath>
+
+    <!-- show company logo in mobile version -->
+    <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div/button" position="before">
+        <img class="pull-left hidden-lg hidden-md hidden-sm" style="max-height: 50px;" src="/logo.png"/>
+    </xpath>
+
+    <!-- hide user login / out -->
+    <xpath expr="//header//ul[@id='top_menu']/li[@class='divider']" position="attributes">
+        <attribute name="class">hidden</attribute>
+    </xpath>
+    <xpath expr="//header//ul[@id='top_menu']/li[@class='dropdown']" position="attributes">
+        <attribute name="class">hidden</attribute>
+    </xpath>
+
+    <!-- define a class to body -->
+    <xpath expr="//body" position="attributes">
+        <attribute name="class">bs-body</attribute>
+    </xpath>
+    <!-- define a class to footer -->
+    <xpath expr="//footer" position="attributes">
+        <attribute name="class">bs-footer</attribute>
+    </xpath>
+    <!-- add log in/out in footer -->
+    <xpath expr="//footer" position="inside">
+        <div class="container">
+            <div class="pull-right">
+                <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <b>
+                            <span t-esc="user_id.name"/>
+                            <span class="caret"/>
+                        </b>
+                    </a>
+                    <ul class="dropdown-menu js_usermenu" role="menu">
+                        <li><a href="/web" role="menuitem">My Account</a></li>
+                        <li class="divider"/>
+                        <li><a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a></li>
+                    </ul>
+                </li>
+            </div>
+            <div class="pull-right">
+                <li groups="base.group_public">
+                    <a t-attf-href="/web/login">
+                        <b>Sign in</b>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </xpath>
+    <!-- Customize javascript -->
+    <xpath expr="//body" position="after">
+        <script type="text/javascript" src="/theme_vertel/static/src/js/theme_bs_ruma.js"/>
+    </xpath>
+</data>
