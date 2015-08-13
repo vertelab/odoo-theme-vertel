@@ -6,6 +6,37 @@
         <template id="custom_snippets" inherit_id="website.snippets" name="Custom Snippets">
             <!-- Customize Structure -->
             <xpath expr="//div[@id='snippet_structure']" position="inside">
+               
+                <!--NEWS SNIPPET-->
+                <div id="news_snippet">
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_panel.png"/>
+                        <span class="oe_snippet_thumbnail_title">Blog News</span>
+                    </div>
+                    <section class="oe_snippet_body">
+                        <div class="content">
+                            <div class="container col-md-4">
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading text-center" style="background:#016FAF;">
+                                        <h2 style="margin: 0; color:#fff;">
+                                            <strong>Nyheter</strong>
+                                        </h2>
+                                    </div>
+                                    <div class="panel-body">
+<!--
+                                        <t t-set="blog" t-value="request.env['blog.blog'].search([('name','=','Our News')])"/>
+                                        <t t-set="news" t-value="request.env['blog.post'].search([('website_published','=',True), ('blog_id','=',blog.id)], order='write_date desc')"/>
+                                        <t t-call="theme_vertel.news_block_til_sub_dat_txt_vie_"/>
+-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!--END OF NEWS SNIPPET-->
+              
+              
                 <!-- Vertical slide -->
                 <div id="vertical_slide">
                     <div class="oe_snippet_thumbnail">

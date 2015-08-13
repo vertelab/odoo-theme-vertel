@@ -1,78 +1,62 @@
 <!-- hem -->
 <t t-name="website.hem">
-    <t t-call="website.layout">
-        <div id="wrap" class="oe_structure oe_empty">
-            <style>
-                .issue_box {
-                    width: 100%;
-                    position: absolute;
-                    bottom: 3%;
-                    color: #fff;
-                    background-color:rgba(0, 0, 0, 0.5);
-                    font-size:1.5em;
-                    font-family: 'Open-sans';
-                    max-width:300px;
-                }
-                
-                .issue_box_container {
-                    position: relative;
-                    display: block;
-                    margin: auto;
-                    padding: 0px;
-                }
-            </style>
-            <section class="s_big_picture mt32">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <img alt="Odoo CMS - a big picture" class="img img-responsive img-rounded shadow" src="/theme_teamdoc/static/src/img/jdchorse/2068451 (Medium).jpg" style="margin: 0 auto"/>
-                        </div>
-                        <div class="col-md-8 col-md-offset-2 mb16 mt16">
-                            <p class="text-center">
-                                <b>Head Over Hills och Jonas Rinnè vnnare av fyra års championatet 2012</b>
-                            </p>
-                            <p class="text-center">JDC Horse verksamhet är inriktat på utbildning/träning och tävling samt försäljning av hästar. Verksamheten bedrivs på Höga Gård som är en modern anläggning under uppbyggnad ca 6 km från Linköpings City.
-                                <br/>
-                                <br/>
-För info gällande aktuella försäljningar och tävlingsresultat vänligen 
-                                <a href="/page/contactus">
-                                    <b>kontakta oss!</b>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="s_three_columns mb64" style="margin-left:4%;">
-                <div class="container">
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <div class="col-md-12 col-xs-12 mb16 issue_box_container">
-                            <img alt="Odoo - Sample 1 for three columns" class="img img-responsive hover shadow hvr-shadow" src="/theme_teamdoc/static/src/img/jdchorse/kan_way.png"/>
-                            <div class="text-center issue_box">
-                                <a href="/page/vara-haster" style="color:#fff;">Våra hästar</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <div class="col-md-12 col-xs-12 mb16 issue_box_container">
-                            <img alt="Odoo - Sample 1 for three columns" class="img img-responsive hover shadow hvr-shadow" src="/theme_teamdoc/static/src/img/jdchorse/aviator.png"/>
-                            <div class="text-center issue_box">
-                                <a href="/page/vara-haster" style="color:#fff;">Till salu</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <div class="col-md-12 col-xs-12 issue_box_container">
-                            <img alt="Odoo - Sample 1 for three columns" class="img img-responsive hover shadow hvr-shadow" src="/theme_teamdoc/static/src/img/jdchorse/sakke.png"/>
-                            <div class="text-center issue_box">
-                                <a href="/page/vara-haster" style="color:#fff;">Filmer</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+  <t t-call="website.layout">
+    <div id="wrap" class="oe_structure oe_empty">
+      <style type="text/css">.issue_box {
+                width: 100%;
+                max-width:300px;
+                position: relative;
+                top:-40px;
+                text-shadow: 0px 0px 10px #333;
+                color: #fff;
+                background-color:rgba(0, 0, 0, 0.5);
+                font-size:1.5em;
+                font-family: 'Open-sans';
+            }
+</style>
+      <section class="s_big_picture mt32">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <img alt="Odoo CMS - a big picture" class="img img-responsive" src="/theme_teamdoc/static/src/img/jdchorse/2068451 (Medium).jpg" style="margin: 0 auto"/>
+            </div>
+            <div class="col-md-8 col-md-offset-2 mb16 mt16">
+              <p class="text-center">
+                <b>Head Over Hills och Jonas Rinnè vnnare av fyra års championatet 2012</b>
+              </p>
+              <p class="text-center">JDC Horse verksamhet är inriktat på utbildning/träning och tävling samt försäljning av hästar. Verksamheten bedrivs på Höga Gård som är en modern anläggning under uppbyggnad ca 6 km från Linköpings City.<br/>
+<br/>
+För info gällande aktuella försäljningar och tävlingsresultat vänligen <a href="/page/contactus"><b>kontakta oss!</b></a></p>
+            </div>
+          </div>
         </div>
-    </t>
+      </section>
+      <section class="s_three_columns mb64">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <img alt="Odoo - Sample 1 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/jdchorse/kan_way.png"/>
+              <p class="text-center issue_box">
+                <a href="/page/vara-haster" style="color:#fff;">Våra hästar</a>
+              </p>
+            </div>
+            <div class="col-md-4">
+              <img alt="Odoo - Sample 2 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/jdchorse/aviator.png"/>
+              <p class="text-center issue_box">
+                <a href="/page/till-salu" style="color:#fff;">Till salu</a>
+              </p>
+            </div>
+            <div class="col-md-4">
+              <img alt="Odoo - Sample 3 for three columns" class="img img-rounded img-responsive" src="/theme_teamdoc/static/src/img/jdchorse/sakke.png"/>
+              <p class="text-center issue_box">
+                <a href="/page/filmer" style="color:#fff;">Filmer</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </t>
 </t>
 
 

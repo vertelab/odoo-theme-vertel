@@ -603,8 +603,30 @@
                     </div>
                 </main>
             </xpath>
-
         </template>
-
+        
+        <template id="news_block_til_sub_dat_txt_vie_" name="News Block with Title Subtitle Date 200 Text Views">
+            <div>
+                <h4 t-esc="title"/>
+                <br/>
+                <!--List of news-->
+                <t t-set="nbr" t-value="0"/>
+                <t t-foreach="news" t-as="n">
+                    <t t-if="nbr&lt;2">
+                        <a t-att-href="'/blog/%s/post/%s' % (n.blog_id.id, n.id)">
+                        <b style="color:blue;"><t t-esc="n.name"/></b></a><br/>
+                        <b><t t-esc="website.get_news(n.subtitle)"/></b><br/>
+                        <font size="1"><t t-esc="n.write_date"/></font><br/>
+                        <t t-esc="website.get_news(n.content, 200)"/>...<br/>
+                        <font size="1">views: <t t-esc="n.visits"/></font><br/>
+                    </t>
+                    <t t-set="nbr" t-value="nbr+1"/>
+                </t>
+                <br/>
+                <a t-att-href="'/blog/%s' % blog.id">
+                    <b style="color:orange">Läs alla...</b>
+                </a>
+            </div>
+        </template>
     </data>
 </openerp>
