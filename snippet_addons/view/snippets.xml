@@ -84,8 +84,8 @@
                         <a class="btn btn-default hover" href="#">Button with hover effect</a>
                     </div>
                 </div><!-- End of hover button -->
-                
-                
+
+
                 <!--ROUND HOVER IMAGE BUTTONS-->
                 <div id="round_hover_image_buttons">
                     <div class="oe_snippet_thumbnail">
@@ -96,10 +96,10 @@
                         <div class="button-images">
                             <div class="one_fourth col-md-3 col-sm-3 col-xs-12" style="margin: 0px 0px 4px 0px;">
                                 <div class="button-container">
-                                  <a href="#">Link #1</a>
+                                    <a href="#">Link #1</a>
                                     <img src="/website/static/src/img/library/manufacturing.jpg"/>
                                 </div>
-                            </div>    
+                            </div>
                             <div class="one_fourth col-md-3 col-sm-3 col-xs-12" style="margin: 0px 0px 4px 0px;">
                                 <div class="button-container">
                                     <a href="#">Link #2</a>
@@ -109,7 +109,7 @@
                             <div class="one_fourth col-md-3 col-sm-3 col-xs-12" style="margin: 0px 0px 4px 0px;">
                                 <div class="button-container">
                                     <a href="#">Link #3</a>
-                                    <div class="button-image"> 
+                                    <div class="button-image">
                                         <img src="/website/static/src/img/library/school_kids.jpg"/>
                                     </div>
                                 </div>
@@ -252,7 +252,7 @@
                         </div>
                     </section>
                 </div><!-- End of Swedish clock with week day and name of the day -->
-                
+
                 <!--WINION SNIPPET-->
                 <div id="winion_snippet">
                     <div class="oe_snippet_thumbnail">
@@ -264,7 +264,7 @@
                             <div class="row">
                                 <!--ROW 1-->
                                 <div class="container">
-                                    <div href="/" class="col-md-5 col-sm-5 col-xs-12 hover" style="padding: 2px;">
+                                    <div class="col-md-5 col-sm-5 col-xs-12 hover" style="padding: 2px;">
                                         <a href="/" style="display: block; width: 100%; height: 100%;">
                                             <img class="img-responsive" src="/website/static/src/img/library/ship_sea.jpg" style="width:100%; height:266px;"/>
                                         </a>
@@ -273,19 +273,19 @@
                                         <div href="/" class="col-md-12 col-xs-6 hover" style="padding: 0px 0px 2px 0px;">
                                             <div class="text-center" style="background-color: #0274D8; height:131px;">
                                                 <a href="/" style="display: block; width: 100%; height: 100%;">
-                                                    <i class="fa fa-envelope fa-4x" style="width: 98px; color:#fff; margin-top: 20%;"/>
+                                                    <i class="fa fa-envelope fa-4x winion-icon-small" style=""/>
                                                 </a>
                                             </div>
                                         </div>
-                                        <div href="/" class="col-md-12 col-xs-6 hover" style="padding: 2px 0px 0px 0px;">
+                                        <div class="col-md-12 col-xs-6 hover" style="padding: 2px 0px 0px 0px;">
                                             <div class="text-center" style="background-color: #D14724; height:131px;">
                                                 <a href="/" style="display: block; width: 100%; height: 100%;">
-                                                    <i class="fa fa-headphones fa-4x" style="width: 98px; color:#fff; margin-top: 20%;"/>
+                                                    <i class="fa fa-headphones fa-4x winion-icon-small" style=""/>
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div href="/" class="col-md-5 col-sm-5 col-xs-12 hover" style="padding: 2px;">
+                                    <div class="col-md-5 col-sm-5 col-xs-12 hover" style="padding: 2px;">
                                         <a href="/" style="display: block; width: 100%; height: 100%;">
                                             <img class="img-responsive" src="/website/static/src/img/library/flight.jpg" style="width:100%; height:266px;"/>
                                         </a>
@@ -304,7 +304,7 @@
                                         <div class="col-md-12 col-xs-6 hover" style="padding: 2px 0px 0px 0px;">
                                             <div class="text-center" style="background-color: #0274D8; height:131px;">
                                                 <a href="/" style="display: block; width: 100%; height: 100%;">
-                                                    <i class="fa fa-info fa-4x" style="width: 98px; color:#fff; margin-top: 20%;"/>
+                                                    <i class="fa fa-info fa-4x winion-icon-small" style=""/>
                                                 </a>
                                             </div>
                                         </div>
@@ -339,7 +339,7 @@
                                     <div class="col-md-4 col-sm-4 col-xs-12 hover" style="padding: 2px;">
                                         <div class="text-center" style="background-color: #5E3CB7; height:266px;">
                                             <a href="/" style="display: block; width: 100%; height: 100%;">
-                                                <i class="fa fa-calendar fa-5x" style="width: 98px; color:#fff; margin-top: 25%;"/>
+                                                <i class="fa fa-calendar fa-5x winion-icon-medium" style=""/>
                                             </a>
                                         </div>
                                     </div>
@@ -363,7 +363,8 @@
                                     <div class="col-md-5 col-sm-5 col-xs-12 hover" style="padding: 2px;">
                                         <div style="background-color: #00881A; color: #fff; height:266px;">
                                             <a class="text-center" href="/" style="display: block; width: 100%; height: 100%; color: #fff;">
-                                                <p style="padding: 20px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                                                <p style="padding: 20px;">
+                                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
                                                     Aenean massa.
                                                 </p>
                                             </a>
@@ -373,14 +374,14 @@
                                         <div class="col-md-12 col-xs-6 hover" style="padding: 0px 0px 2px 0px;">
                                             <div class="text-center" style="background-color: #DF2F00; height:131px;">
                                                 <a href="/" style="display: block; width: 100%; height: 100%;">
-                                                    <i class="fa fa-heart-o fa-4x" style="width: 98px; color:#fff; margin-top: 20%;"/>
+                                                    <i class="fa fa-heart-o fa-4x winion-icon-small" style=""/>
                                                 </a>
                                             </div>
                                         </div>
                                         <div class="col-md-12 col-xs-6 hover" style="padding: 2px 0px 0px 0px;">
                                             <div class="text-center" style="background-color: #AC193D; height:131px;">
                                                 <a href="/" style="display: block; width: 100%; height: 100%;">
-                                                    <i class="fa fa-picture-o fa-4x" style="width: 98px; color:#fff; margin-top: 20%;"/>
+                                                    <i class="fa fa-picture-o fa-4x winion-icon-small" style=""/>
                                                 </a>
                                             </div>
                                         </div>
@@ -397,7 +398,7 @@
                     </section>
                 </div>
                 <!--END OF WINION SNIPPET-->
-                                        
+
                 <div id="image_gallery_with_hover_text">
                     <div class="oe_snippet_thumbnail">
                         <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_image_gallery.png"/>
