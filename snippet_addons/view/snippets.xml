@@ -351,7 +351,7 @@
                                             <a href="/" style="display: block; width: 100%; height: 100%;">
                                                 <i class="fa fa-calendar fa-5x winion-icon-medium" style=""/>
                                             </a>
-                                            <h4>Hover Text</h4>
+                                            <h3>Hover Text</h3>
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-sm-4 col-xs-12" style="padding: 2px;">
