@@ -539,6 +539,14 @@
                         color: #000;
                         background-color: #fff;
                     }
+                    
+                    .navbar-toggle {
+                        border-color: #000;
+                    }
+                    
+                    .navbar-toggle .icon-bar{
+                        background-color: #000;
+                    }
 
                     /* FOOTER STYLE*/
                     .bl2-footer {
