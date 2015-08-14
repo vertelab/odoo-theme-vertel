@@ -5,27 +5,48 @@
             <section class="">
                 <div class="oe_structure oe_empty">
                     <section class="fw_categories">
-                        <div><t t-call="theme_teamdoc.season_effect"/></div>
+                        <div>
+                            <t t-call="theme_teamdoc.season_effect"/>
+                        </div>
                         <div class="oe_structure oe_empty">
                             <section>
                                 <div class="container" id="intro-board">
                                     <div class="row mb16">
                                         <div class="col-md-6">
                                             <h2 style="text-align: center">
-                                                <span style="color: rgb(51, 153, 102);">Förskolan Ankan<br/>
-                                                    där äventyr blir till kunskap </span>
+                                                <span style="color: rgb(51, 153, 102);">Förskolan Ankan
+                                                    <br/>
+där äventyr blir till kunskap
+                                                </span>
                                             </h2>
-                                            <img alt="Odoo image and text block" class="img img-responsive shadow mb16" src="/website/image/ir.attachment/62_75ff286/datas" style="width:100%;"/>
+                                            <img alt="Odoo image and text block" class="img img-responsive mb16 shadow" src="/website/image/ir.attachment/77_7f07c54/datas" style="width:100%"/>
                                         </div>
-                                        <div class="col-md-6 mt32"><h4>Letar du efter ett riktigt bra föräldrakooperativ?<br/>
-                                            <b style="color:#339966;">Då är det Ankan som gäller!</b></h4>
-                                            Vi ger dig och ditt barn:
+                                        <div class="col-md-6 mt32">
+                                            <h4>Letar du efter ett riktigt bra föräldrakooperativ?
+                                                <br/>
+                                                <b style="color:#339966;">Då är det Ankan som gäller!</b>
+                                            </h4>
+Vi ger dig och ditt barn:
 
-                                            <ul><li>en trygg vardag med stimulerande aktiviteter</li><li>Äventyrspedagogik</li><li>ett samarbete med Friluftsfrämjandet (Knopp, Knytte &amp; Mulle)</li><li>en god pedagogisk verksamhet, både ute och inne</li><li>en gemenskap, delaktighet och inflytande att påverka</li><li>utbildad och engagerad personal</li><li>hemlagad mat från vår egna kock</li></ul>
-                                            Allt i en hemtrevlig och inbjudande miljö!<br/>
-                                            Detta tycker vi att just ditt barn är värd, vad tycker du?<br/>
-                                            <b style="color:blue;">Ring oss först innan du ansöker om förskoleplats!</b><br/>
-                                            Läs mer om hur du söker <a href="/">förskoleplats</a> hos oss.</div>
+
+                                            <ul>
+                                                <li>en trygg vardag med stimulerande aktiviteter</li>
+                                                <li>Äventyrspedagogik</li>
+                                                <li>ett samarbete med Friluftsfrämjandet (Knopp, Knytte &amp; Mulle)</li>
+                                                <li>en god pedagogisk verksamhet, både ute och inne</li>
+                                                <li>en gemenskap, delaktighet och inflytande att påverka</li>
+                                                <li>utbildad och engagerad personal</li>
+                                                <li>hemlagad mat från vår egna kock</li>
+                                            </ul>
+Allt i en hemtrevlig och inbjudande miljö!
+                                            <br/>
+Detta tycker vi att just ditt barn är värd, vad tycker du?
+                                            <br/>
+                                            <b style="color:blue;">Ring oss först innan du ansöker om förskoleplats!</b>
+                                            <br/>
+Läs mer om hur du söker
+                                            <a href="/">förskoleplats</a> hos oss.
+                                        </div>
                                     </div>
                                 </div>
                             </section>
@@ -68,7 +89,9 @@
                                             <table class="table table-bordered table-responsive">
                                                 <tbody>
                                                     <tr>
-                                                        <td><strong>Måndag</strong>​</td>
+                                                        <td>
+                                                            <strong>Måndag</strong>​
+                                                        </td>
                                                         <td>Pasta med krämig paprika</td>
                                                     </tr>
                                                     <tr>
@@ -130,212 +153,562 @@
 
 
 <!-- theme -->
-<data inherit_id="website.layout" customize_show="True" active="False" name="Big Logo and Block Menu" priority="99">
-    <xpath expr="//head" position="inside">
-        <!-- Custom CSS -->
-        <link href="/theme_teamdoc/static/src/css/fkankan.css" rel="stylesheet"/>
-        <link href="http://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet" type="text/css"/>
+<?xml version="1.0"?>
+<data inherit_id="website.layout" customize_show="True" active="False" name="Theme Block Logo II">
+    <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet" type="text/css"/>
+        <style>
+            .bl2-body {
+                background: #fff;
+                list-style: none;
+            }
+
+            /* MENU */
+            .bl2-navbar {
+                font-family: "Indie Flower";
+                font-size: 1.2em;
+                background: none;
+                width: 100%;
+            }
+
+            #bl2-menu-bar &gt; div &gt; ul &gt; li &gt; a {
+                padding-top: 25px;
+                padding-bottom: 25px;
+            }
+
+            #bl2-menu-bar &gt; div {
+                width: 1024px;
+                margin: auto;
+            }
+
+            .bl2-navbar-fixed-top {
+                transition: all 0.5s ease-in 0s;
+                font-family: "Indie Flower";
+                font-size: 1.2em;
+                z-index: 99;
+                top: 0px;
+                position: fixed;
+                width: 100%;
+                background: #fff;
+                box-shadow: 0px 0px 20px #333;
+            }
+
+            #top_menu {
+                max-width: 905px;
+                margin: auto;
+            }
+
+            #top_menu > li > a {
+                padding: 10px 0px 10px 0px;
+            }
+
+            /* COMPANY LOGO */
+            #logo-box-2 {
+                padding: 0px;
+            }
+
+            #bl2-logo {
+                width: 30%;
+                display:block;
+                margin:auto;
+                padding-bottom:3%;
+                padding-top:2%;
+            }
+
+            /* MENU TEXT */
+            #bl2-menu-bar &gt; ul &gt; li &gt; a {
+                color: #333;
+            }
+
+            /* STYLE WHEN MOUSE HOVER */
+            #bl2-menu-bar &gt; ul &gt; li &gt; a:hover,
+            #bl2-menu-bar &gt; ul &gt; li &gt; a:focus {
+                color: #917FE3;
+                background-color: #D0E27E;
+            }
+
+            /* STYLE WHEN PAGE ACTIVE */
+            #bl2-menu-bar &gt; ul &gt; .active &gt; a {
+                color: #917FE3;
+                background-color: #D0E27E
+            }
+
+            .navbar-toggle {
+                border-color: #D0E27E;
+                background-color: #e6e6e6;
+            }
+
+            .navbar-toggle .icon-bar{
+                background-color: #917FE3;
+            }
+
+            /* FOOTER STYLE*/
+            .bl2-footer {
+
+            }
+
+            #intro-board {
+                background: #F4FFBD;
+                width:100%;
+                max-width: 904px;
+                margin-bottom:4px;
+                box-shadow: 0px 0px 15px #343434;
+            }
+
+            #info-board {
+                background: #F4FFBD;
+                width:100%;
+                max-width: 904px;
+                margin:auto;
+                box-shadow: 0px 0px 15px #343434;
+            }
+
+            .panel {
+                border-color: #396;
+            }
+
+            .panel-heading {
+                background-color: #396;
+                border-color: #396;
+            }
+
+            .panel-body {
+                background-color: #FAFAFA;
+                border-color: #396;
+            }
+
+            #kvackar {
+
+            }
+
+            #Matsedel {
+
+            }
+
+            .table {
+                font-size: 0.7em;
+                margin-bottom: 0;
+            }
+
+            #aktuellt {
+
+            }
+
+            #footer_spring {
+                position:relative;
+                background:url(/theme_teamdoc/static/src/img/fkankan/spring/Spring_Footer.jpg) top center;
+                border: 0px solid red;
+                color: #666;
+                font-size: 1.1em;
+                height:151px;
+                width:100%;
+                padding: 0 0 0 0;
+                text-align:center;
+                vertical-align:bottom;
+            }
+
+            #footer_summer {
+                position:relative;
+                background:url(/theme_teamdoc/static/src/img/fkankan/spring/Spring_Footer.jpg) top center;
+                border: 0px solid red;
+                color: #666;
+                font-size: 1.1em;
+                height:151px;
+                width:100%;
+                padding: 0 0 0 0;
+                text-align:center;
+                vertical-align:bottom;
+            }
+
+            #footer_autumn {
+                position:relative;
+                background:url(/theme_teamdoc/static/src/img/fkankan/autumn/footer_autumn.jpg) top center;
+                border: 0px solid red;
+                color: #666;
+                font-size: 1.1em;
+                height:151px;
+                width:100%;
+                padding: 0 0 0 0;
+                text-align:center;
+                vertical-align:bottom;
+            }
+
+            #footer_winter {
+                position:relative;
+                background:url(/theme_teamdoc/static/src/img/fkankan/winter/footer_vinter.jpg) top center;
+                border: 0px solid red;
+                color: #666;
+                font-size: 1.1em;
+                height:136px;
+                width:100%;
+                padding: 0 0 0 0;
+                text-align:center;
+                vertical-align:bottom;
+            }
+
+            #spring_effect_1 {
+                background:url(/theme_teamdoc/static/src/img/fkankan/spring/vaarblommor.png);
+                z-index: 98;
+                position:absolute;
+                top: 550px;
+                left: 12%;
+                width: 155px;
+                height: 163px;
+            }
+
+            #spring_effect_2 {
+                background:url(/theme_teamdoc/static/src/img/fkankan/spring/fluga_1.gif);
+                z-index: 99;
+                position:absolute;
+                top: 600px;
+                left: 14%;
+                width: 56px;
+                height: 50px;
+            }
+
+            #spring_effect_3 {
+                background:url(/theme_teamdoc/static/src/img/fkankan/spring/fjarilar.png);
+                z-index: 99;
+                position:absolute;
+                top: 500px;
+                right: 8%;
+                width: 182px;
+                height: 470px;
+            }
+
+            #summer_effect_1 {
+                background:url(/theme_teamdoc/static/src/img/fkankan/summer/blomma_1.png);
+                z-index: 98;
+                position: absolute;
+                top: 550px;
+                left: 16%;
+                width: 118px;
+                height: 150px;
+            }
+
+            #summer_effect_2 {
+                background:url(/theme_teamdoc/static/src/img/fkankan/summer/spindel.gif);
+                z-index: 99;
+                position: absolute;
+                top: 800px;
+                left: 18%;
+                width: 30px;
+                height: 127px;
+            }
+
+            #summer_effect_3 {
+                background:url(/theme_teamdoc/static/src/img/fkankan/summer/blomma_1.png);
+                z-index: 99;
+                position: absolute;
+                top: 1100px;
+                right: 16%;
+                width: 118px;
+                height: 150px;
+            }
+
+            #autumn_effect_1 {
+                background:url(/theme_teamdoc/static/src/img/fkankan/autumn/Host_pic.png);
+                z-index: 99;
+                position: absolute;
+                top: 500px;
+                left: 12%;
+                width: 155px;
+                height: 149px;
+            }
+
+            #autumn_effect_2 {
+                background:url(/theme_teamdoc/static/src/img/fkankan/autumn/Leaves.png);
+                z-index: 98;
+                position: absolute;
+                top: 550px;
+                left: 20%;
+                width: 140px;
+                height: 147px;
+            }
+
+            #autumn_effect_3 {
+                background:url(/theme_teamdoc/static/src/img/fkankan/autumn/fallingleaves.png);
+                z-index: 99;
+                position: absolute;
+                top: 700px;
+                right: 8%;
+                width: 182px;
+                height: 470px;
+            }
+
+            #winter_effect_1 {
+                background:url(/theme_teamdoc/static/src/img/fkankan/winter/snoflingor.png);
+                z-index: 99;
+                position: absolute;
+                top: 500px;
+                left: 12%;
+                width: 134px;
+                height: 159px;
+            }
+
+            #winter_effect_2 {
+                background:url(/theme_teamdoc/static/src/img/fkankan/winter/snoflingor_1.png);
+                z-index: 98;
+                position: absolute;
+                top: 550px;
+                left: 20%;
+                width: 134px;
+                height: 159px;
+            }
+
+            #winter_effect_3 {
+                background:url(/theme_teamdoc/static/src/img/fkankan/winter/snoflingor.png);
+                z-index: 99;
+                position: absolute;
+                top: 1000px;
+                right: 8%;
+                width: 134px;
+                height: 159px;
+            }
+        </style>
     </xpath>
-    <xpath expr="//div[@class='navbar navbar-default navbar-static-top'] | //div[@class='navbar navbar-default navbar-static-top hidden-lg hidden-md hidden-sm']" position="before">
+
+    <!-- add company logo -->
+    <xpath expr="//body/div[@id='wrapwrap']/header" position="before">
         <div class="oe_structure oe_empty">
-            <div class="carousel slide text-center hidden-sm hidden-xs" id="myCarousel0" style="width: 905px; height: 140px; margin: 0px auto;">
-                <ol class="carousel-indicators">
-                    <li class="active" data-slide-to="0" data-target="#myCarousel0"/>
-                    <li data-slide-to="1" data-target="#myCarousel0"/>
-                    <li data-slide-to="2" data-target="#myCarousel0"/>
-                    <li data-slide-to="3" data-target="#myCarousel0"/>
-                    <li data-slide-to="4" data-target="#myCarousel0"/>
-                    <li data-slide-to="5" data-target="#myCarousel0"/>
-                    <li data-slide-to="6" data-target="#myCarousel0"/>
-                    <li data-slide-to="7" data-target="#myCarousel0"/>
-                    <li data-slide-to="8" data-target="#myCarousel0"/>
-                    <li data-slide-to="9" data-target="#myCarousel0"/>
-                    <li data-slide-to="10" data-target="#myCarousel0"/>
-                    <li data-slide-to="11" data-target="#myCarousel0"/>
-                    <li data-slide-to="12" data-target="#myCarousel0"/>
-                    <li data-slide-to="13" data-target="#myCarousel0"/>
-                    <li data-slide-to="14" data-target="#myCarousel0"/>
-                    <li data-slide-to="15" data-target="#myCarousel0"/>
-                    <li data-slide-to="16" data-target="#myCarousel0"/>
-                    <li data-slide-to="17" data-target="#myCarousel0"/>
-                    <li data-slide-to="18" data-target="#myCarousel0"/>
-                    <li data-slide-to="19" data-target="#myCarousel0"/>
-                    <li data-slide-to="20" data-target="#myCarousel0"/>
-                    <li data-slide-to="21" data-target="#myCarousel0"/>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="item active" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/01.jpg')">
-                        <div class="container">
-                            <div class="row content">
-                                <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/02.jpg');">
-                        <div class="container">
-                            <div class="row content">
-                                <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/03.jpg');">
-                        <div class="container">
-                            <div class="row content">
-                                <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/04.jpg');">
-                        <div class="container">
-                            <div class="row content">
-                                <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/05.jpg');">
-                        <div class="container">
-                            <div class="row content">
-                                <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/06.jpg');">
-                        <div class="container">
-                            <div class="row content">
-                                <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/07.jpg');">
-                        <div class="container">
-                            <div class="row content">
-                                <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/08.jpg');">
-                        <div class="container">
-                            <div class="row content">
-                                <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/09.jpg');">
-                        <div class="container">
-                            <div class="row content">
-                                <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/10.jpg');">
-                        <div class="container">
-                            <div class="row content">
-                                <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/11.jpg');">
-                        <div class="container">
-                            <div class="row content">
-                                <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/12.jpg');">
-                        <div class="container">
-                            <div class="row content">
-                                <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/13.jpg');">
-                        <div class="container">
-                            <div class="row content">
-                                <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/14.jpg');">
-                        <div class="container">
-                            <div class="row content">
-                                <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/15.jpg');">
-                        <div class="container">
-                            <div class="row content">
-                                <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/16.jpg');">
-                        <div class="container">
-                            <div class="row content">
-                                <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/17.jpg');">
-                        <div class="container">
-                            <div class="row content">
-                                <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/18.jpg');">
-                        <div class="container">
-                            <div class="row content">
-                                <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/19.jpg');">
-                        <div class="container">
-                            <div class="row content">
-                                <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/20.jpg');">
-                        <div class="container">
-                            <div class="row content">
-                                <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/21.jpg');">
-                        <div class="container">
-                            <div class="row content">
-                                <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/22.jpg');">
-                        <div class="container">
-                            <div class="row content">
-                                <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
-                            </div>
-                        </div>
-                    </div>
+    <div class="carousel slide text-center hidden-sm hidden-xs" id="myCarousel0" style="width: 905px; height: 140px; margin: 0px auto;">
+        <ol class="carousel-indicators">
+            <li class="active" data-slide-to="0" data-target="#myCarousel0"/>
+            <li data-slide-to="1" data-target="#myCarousel0"/>
+            <li data-slide-to="2" data-target="#myCarousel0"/>
+            <li data-slide-to="3" data-target="#myCarousel0"/>
+            <li data-slide-to="4" data-target="#myCarousel0"/>
+            <li data-slide-to="5" data-target="#myCarousel0"/>
+            <li data-slide-to="6" data-target="#myCarousel0"/>
+            <li data-slide-to="7" data-target="#myCarousel0"/>
+            <li data-slide-to="8" data-target="#myCarousel0"/>
+            <li data-slide-to="9" data-target="#myCarousel0"/>
+            <li data-slide-to="10" data-target="#myCarousel0"/>
+            <li data-slide-to="11" data-target="#myCarousel0"/>
+            <li data-slide-to="12" data-target="#myCarousel0"/>
+            <li data-slide-to="13" data-target="#myCarousel0"/>
+            <li data-slide-to="14" data-target="#myCarousel0"/>
+            <li data-slide-to="15" data-target="#myCarousel0"/>
+            <li data-slide-to="16" data-target="#myCarousel0"/>
+            <li data-slide-to="17" data-target="#myCarousel0"/>
+            <li data-slide-to="18" data-target="#myCarousel0"/>
+            <li data-slide-to="19" data-target="#myCarousel0"/>
+            <li data-slide-to="20" data-target="#myCarousel0"/>
+            <li data-slide-to="21" data-target="#myCarousel0"/>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/01.jpg')">
+                <div class="container">
+                    <div class="row content">
+                        <div class="carousel-img col-md-6 hidden-sm hidden-xs"/></div>
                 </div>
-                <div class="carousel-control left" data-slide="prev" data-target="#myCarousel0" href="#myCarousel0" style="width: 10%">
-                    <i class="fa fa-chevron-left"/>
+            </div>
+            <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/02.jpg');">
+                <div class="container">
+                    <div class="row content">
+                        <div class="carousel-img col-md-6 hidden-sm hidden-xs"/></div>
                 </div>
-                <div class="carousel-control right" data-slide="next" data-target="#myCarousel0" href="#myCarousel0" style="width: 10%">
-                    <i class="fa fa-chevron-right"/>
+            </div>
+            <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/03.jpg');">
+                <div class="container">
+                    <div class="row content">
+                        <div class="carousel-img col-md-6 hidden-sm hidden-xs"/></div>
+                </div>
+            </div>
+            <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/04.jpg');">
+                <div class="container">
+                    <div class="row content">
+                        <div class="carousel-img col-md-6 hidden-sm hidden-xs"/></div>
+                </div>
+            </div>
+            <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/05.jpg');">
+                <div class="container">
+                    <div class="row content">
+                        <div class="carousel-img col-md-6 hidden-sm hidden-xs"/></div>
+                </div>
+            </div>
+            <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/06.jpg');">
+                <div class="container">
+                    <div class="row content">
+                        <div class="carousel-img col-md-6 hidden-sm hidden-xs"/></div>
+                </div>
+            </div>
+            <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/07.jpg');">
+                <div class="container">
+                    <div class="row content">
+                        <div class="carousel-img col-md-6 hidden-sm hidden-xs"/></div>
+                </div>
+            </div>
+            <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/08.jpg');">
+                <div class="container">
+                    <div class="row content">
+                        <div class="carousel-img col-md-6 hidden-sm hidden-xs"/></div>
+                </div>
+            </div>
+            <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/09.jpg');">
+                <div class="container">
+                    <div class="row content">
+                        <div class="carousel-img col-md-6 hidden-sm hidden-xs"/></div>
+                </div>
+            </div>
+            <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/10.jpg');">
+                <div class="container">
+                    <div class="row content">
+                        <div class="carousel-img col-md-6 hidden-sm hidden-xs"/></div>
+                </div>
+            </div>
+            <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/11.jpg');">
+                <div class="container">
+                    <div class="row content">
+                        <div class="carousel-img col-md-6 hidden-sm hidden-xs"/></div>
+                </div>
+            </div>
+            <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/12.jpg');">
+                <div class="container">
+                    <div class="row content">
+                        <div class="carousel-img col-md-6 hidden-sm hidden-xs"/></div>
+                </div>
+            </div>
+            <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/13.jpg');">
+                <div class="container">
+                    <div class="row content">
+                        <div class="carousel-img col-md-6 hidden-sm hidden-xs"/></div>
+                </div>
+            </div>
+            <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/14.jpg');">
+                <div class="container">
+                    <div class="row content">
+                        <div class="carousel-img col-md-6 hidden-sm hidden-xs"/></div>
+                </div>
+            </div>
+            <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/15.jpg');">
+                <div class="container">
+                    <div class="row content">
+                        <div class="carousel-img col-md-6 hidden-sm hidden-xs"/></div>
+                </div>
+            </div>
+            <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/16.jpg');">
+                <div class="container">
+                    <div class="row content">
+                        <div class="carousel-img col-md-6 hidden-sm hidden-xs"/></div>
+                </div>
+            </div>
+            <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/17.jpg');">
+                <div class="container">
+                    <div class="row content">
+                        <div class="carousel-img col-md-6 hidden-sm hidden-xs"/></div>
+                </div>
+            </div>
+            <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/18.jpg');">
+                <div class="container">
+                    <div class="row content">
+                        <div class="carousel-img col-md-6 hidden-sm hidden-xs"/></div>
+                </div>
+            </div>
+            <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/19.jpg');">
+                <div class="container">
+                    <div class="row content">
+                        <div class="carousel-img col-md-6 hidden-sm hidden-xs"/></div>
+                </div>
+            </div>
+            <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/20.jpg');">
+                <div class="container">
+                    <div class="row content">
+                        <div class="carousel-img col-md-6 hidden-sm hidden-xs"/></div>
+                </div>
+            </div>
+            <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/21.jpg');">
+                <div class="container">
+                    <div class="row content">
+                        <div class="carousel-img col-md-6 hidden-sm hidden-xs"/></div>
+                </div>
+            </div>
+            <div class="item oe_img_bg" style="background-image: url('/theme_teamdoc/static/src/img/fkankan/slidepic/22.jpg');">
+                <div class="container">
+                    <div class="row content">
+                        <div class="carousel-img col-md-6 hidden-sm hidden-xs"/></div>
                 </div>
             </div>
         </div>
+        <div class="carousel-control left" data-slide="prev" data-target="#myCarousel0" href="#myCarousel0" style="width: 10%">
+            <i class="fa fa-chevron-left"/>
+        </div>
+        <div class="carousel-control right" data-slide="next" data-target="#myCarousel0" href="#myCarousel0" style="width: 10%">
+            <i class="fa fa-chevron-right"/>
+        </div>
+    </div>
+</div>
     </xpath>
-    <xpath expr="//header//ul" position="attributes">
-        <attribute name="class">nav navbar-nav</attribute>
+
+    <xpath expr="//a[@class='navbar-brand logo']" position="attributes">
+        <attribute name="class">navbar-brand logo hidden-lg hidden-md hidden-sm</attribute>
     </xpath>
-    <xpath expr="//ul[@id='top_menu']/li[1]" position="attributes">
-        <attribute name="class">divider hidden</attribute>
+
+    <!-- define id and class to menu bar -->
+    <xpath expr="//body/div[@id='wrapwrap']/header/div" position="attributes">
+        <attribute name="id">bl2-menu</attribute>
+        <attribute name="class">bl2-navbar</attribute>
     </xpath>
-    <xpath expr="//ul[@id='top_menu']/li[2]" position="attributes">
-        <attribute name="class">dropdown hidden</attribute>
+
+    <!-- define class to menu style -->
+    <xpath expr="//header//ul[@id='top_menu']" position="attributes">
+        <attribute name="class">nav nav-justified</attribute>
+    </xpath>
+    <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div[2]" position="attributes">
+        <attribute name="id">bl2-menu-bar</attribute>
+        <attribute name="class">collapse navbar-collapse navbar-top-collapse col-md-12</attribute>
+    </xpath>
+
+    <!-- hide user login / out -->
+    <xpath expr="//header//ul[@id='top_menu']/li[@class='divider']" position="attributes">
+        <attribute name="class">hidden</attribute>
+    </xpath>
+    <xpath expr="//header//ul[@id='top_menu']/li[@class='dropdown']" position="attributes">
+        <attribute name="class">hidden</attribute>
+    </xpath>
+
+    <!-- define a class to body -->
+    <xpath expr="//body" position="attributes">
+        <attribute name="class">bl2-body</attribute>
+    </xpath>
+    <!-- define a class to footer -->
+    <xpath expr="//footer" position="attributes">
+        <attribute name="class">bl2-footer</attribute>
+    </xpath>
+    <!-- add log in/out in footer -->
+    <xpath expr="//footer" position="inside">
+        <div class="container">
+            <div class="pull-right">
+                <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <b>
+                            <span t-esc="user_id.name"/>
+                            <span class="caret"/>
+                        </b>
+                    </a>
+                    <ul class="dropdown-menu js_usermenu" role="menu">
+                        <li><a href="/web" role="menuitem">My Account</a></li>
+                        <li class="divider"/>
+                        <li><a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a></li>
+                    </ul>
+                </li>
+            </div>
+            <div class="pull-right">
+                <li groups="base.group_public">
+                    <a t-attf-href="/web/login">
+                        <b>Sign in</b>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </xpath>
+    <!-- Customize javascript -->
+    <xpath expr="//body" position="after">
+        <script>
+            var margin_value = 120;
+        </script>
+        <script type="text/javascript" src="/theme_vertel/static/src/js/theme_block_logo_II.js"/>
     </xpath>
 </data>
+
 

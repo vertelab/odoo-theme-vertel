@@ -1,160 +1,124 @@
-/*!
+/*
 fkankan
- */
+*/
 
-body {
-    font-family: "Ubuntu";
-    background-color: #fff;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    list-style: none;
+.bl2-body {
+	background: #fff;
+	list-style: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Ubuntu";
-    font-weight: 700;
-    letter-spacing: 1px;
+/* MENU */
+.bl2-navbar {
+	font-family: "Indie Flower";
+	font-size: 1.2em;
+	background: none;
+	width: 100%;
 }
 
-p {
-    font-size: 1.25em;
-    line-height: 1.6;
-    color: #000;
+#bl2-menu-bar &gt; div &gt; ul &gt; li &gt; a {
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
 
-.navbar.navbar-static-top ul.nav > li.divider {
-    margin-top: 35px;
-    padding-top: 25px;
-    border-right: 1px solid #808080;
+#bl2-menu-bar &gt; div {
+	width: 1024px;
+	margin: auto;
 }
 
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: #D0E27E;
+.bl2-navbar-fixed-top {
+	transition: all 0.5s ease-in 0s;
+	font-family: "Indie Flower";
+	font-size: 1.2em;
+	z-index: 99;
+	top: 0px;
+	position: fixed;
+	width: 100%;
+	background: #fff;
+	box-shadow: 0px 0px 20px #333;
 }
 
-.navbar-default .navbar-toggle {
-    background-color: #D0E27E;
-    border-color: #D0E27E;
-    border-bottom: #D0E27E;
+#top_menu {
+	max-width: 905px;
+	margin: auto;
 }
 
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border-color: #D0E27E;
-    border-bottom: #D0E27E;
+#top_menu > li > a {
+	padding: 10px 0px 10px 0px;
 }
 
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a{
-    color: #000;
+/* COMPANY LOGO */
+#logo-box-2 {
+	padding: 0px;
 }
 
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    color: #917FE3;
-    background-color: #D0E27E;
+#bl2-logo {
+	width: 30%;
+	display:block;
+	margin:auto;
+	padding-bottom:3%;
+	padding-top:2%;
 }
 
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color: #917FE3;
-    background-color: #D0E27E;
+/* MENU TEXT */
+#bl2-menu-bar &gt; ul &gt; li &gt; a {
+	color: #333;
 }
 
-.oe_website_login_container, .container {
-    padding-top: 2px;
-    padding-bottom: 2px;
+/* STYLE WHEN MOUSE HOVER */
+#bl2-menu-bar &gt; ul &gt; li &gt; a:hover,
+#bl2-menu-bar &gt; ul &gt; li &gt; a:focus {
+	color: #917FE3;
+	background-color: #D0E27E;
 }
 
-.box {
-    margin-bottom: 20px;
-    padding: 30px 15px;
-    background: #fff;
-    background: rgba(255,255,255,0.9);
+/* STYLE WHEN PAGE ACTIVE */
+#bl2-menu-bar &gt; ul &gt; .active &gt; a {
+	color: #917FE3;
+	background-color: #D0E27E
 }
 
-.intro-text {
-    text-transform: uppercase;
-    font-size: 1.25em;
-    font-weight: 400;
-    letter-spacing: 1px;
+.navbar-toggle {
+	border-color: #D0E27E;
+	background-color: #e6e6e6;
 }
 
-.img-border {
-    float: none;
-    margin: 0 auto 0;
-    border: #999999 solid 1px;
+.navbar-toggle .icon-bar{
+	background-color: #917FE3;
 }
 
-.img-left {
-    float: none;
-    margin: 0 auto 0;
-}
+/* FOOTER STYLE*/
+.bl2-footer {
 
-footer {
-    background: #fff;
-    background: rgba(0,0,0,0.7);
-}
-
-footer p {
-    margin: 0;
-    padding: 50px 0;
-}
-
-@media screen and (min-width:768px) {
-    .navbar-header {
-        display: none;
-    }
-
-    .navbar-default {
-        border: none;
-        background-color: none;
-        background: none;
-    }
-
-    .navbar-nav {
-        display: table;
-        float: none;
-        margin: 0 auto;
-        table-layout: fixed;
-        font-size: 1.25em;
-        font-family: "Indie Flower";
-        font-weight: 120;
-        letter-spacing: 0px;
-    }
 }
 
 #intro-board {
-    background: #F4FFBD;
-    width:100%;
-    max-width: 904px;
-    margin-bottom:4px;
-    box-shadow: 0px 0px 15px #343434;
+	background: #F4FFBD;
+	width:100%;
+	max-width: 904px;
+	margin-bottom:4px;
+	box-shadow: 0px 0px 15px #343434;
 }
 
 #info-board {
-    background: #F4FFBD;
-    width:100%;
-    max-width: 904px;
-    margin:auto;
-    box-shadow: 0px 0px 15px #343434;
+	background: #F4FFBD;
+	width:100%;
+	max-width: 904px;
+	margin:auto;
+	box-shadow: 0px 0px 15px #343434;
 }
 
 .panel {
-    border-color: #396;
+	border-color: #396;
 }
 
 .panel-heading {
-    background-color: #396;
-    border-color: #396;
+	background-color: #396;
+	border-color: #396;
 }
 
 .panel-body {
-    background-color: #FAFAFA;
-    border-color: #396;
+	background-color: #FAFAFA;
+	border-color: #396;
 }
 
 #kvackar {
@@ -166,8 +130,8 @@ footer p {
 }
 
 .table {
-    font-size: 0.7em;
-    margin-bottom: 0;
+	font-size: 0.7em;
+	margin-bottom: 0;
 }
 
 #aktuellt {
@@ -227,7 +191,7 @@ footer p {
 }
 
 #spring_effect_1 {
-    background:url(/theme_teamdoc/static/src/img/fkankan/spring/vaarblommor.png);
+	background:url(/theme_teamdoc/static/src/img/fkankan/spring/vaarblommor.png);
 	z-index: 98;
 	position:absolute;
 	top: 550px;
@@ -237,7 +201,7 @@ footer p {
 }
 
 #spring_effect_2 {
-    background:url(/theme_teamdoc/static/src/img/fkankan/spring/fluga_1.gif);
+	background:url(/theme_teamdoc/static/src/img/fkankan/spring/fluga_1.gif);
 	z-index: 99;
 	position:absolute;
 	top: 600px;
@@ -247,8 +211,8 @@ footer p {
 }
 
 #spring_effect_3 {
-    background:url(/theme_teamdoc/static/src/img/fkankan/spring/fjarilar.png);
-    z-index: 99;
+	background:url(/theme_teamdoc/static/src/img/fkankan/spring/fjarilar.png);
+	z-index: 99;
 	position:absolute;
 	top: 500px;
 	right: 8%;
@@ -257,7 +221,7 @@ footer p {
 }
 
 #summer_effect_1 {
-    background:url(/theme_teamdoc/static/src/img/fkankan/summer/blomma_1.png);
+	background:url(/theme_teamdoc/static/src/img/fkankan/summer/blomma_1.png);
 	z-index: 98;
 	position: absolute;
 	top: 550px;
@@ -267,7 +231,7 @@ footer p {
 }
 
 #summer_effect_2 {
-    background:url(/theme_teamdoc/static/src/img/fkankan/summer/spindel.gif);
+	background:url(/theme_teamdoc/static/src/img/fkankan/summer/spindel.gif);
 	z-index: 99;
 	position: absolute;
 	top: 800px;
@@ -277,7 +241,7 @@ footer p {
 }
 
 #summer_effect_3 {
-    background:url(/theme_teamdoc/static/src/img/fkankan/summer/blomma_1.png);
+	background:url(/theme_teamdoc/static/src/img/fkankan/summer/blomma_1.png);
 	z-index: 99;
 	position: absolute;
 	top: 1100px;
@@ -287,7 +251,7 @@ footer p {
 }
 
 #autumn_effect_1 {
-    background:url(/theme_teamdoc/static/src/img/fkankan/autumn/Host_pic.png);
+	background:url(/theme_teamdoc/static/src/img/fkankan/autumn/Host_pic.png);
 	z-index: 99;
 	position: absolute;
 	top: 500px;
@@ -297,7 +261,7 @@ footer p {
 }
 
 #autumn_effect_2 {
-    background:url(/theme_teamdoc/static/src/img/fkankan/autumn/Leaves.png);
+	background:url(/theme_teamdoc/static/src/img/fkankan/autumn/Leaves.png);
 	z-index: 98;
 	position: absolute;
 	top: 550px;
@@ -307,7 +271,7 @@ footer p {
 }
 
 #autumn_effect_3 {
-    background:url(/theme_teamdoc/static/src/img/fkankan/autumn/fallingleaves.png);
+	background:url(/theme_teamdoc/static/src/img/fkankan/autumn/fallingleaves.png);
 	z-index: 99;
 	position: absolute;
 	top: 700px;
@@ -317,7 +281,7 @@ footer p {
 }
 
 #winter_effect_1 {
-    background:url(/theme_teamdoc/static/src/img/fkankan/winter/snoflingor.png);
+	background:url(/theme_teamdoc/static/src/img/fkankan/winter/snoflingor.png);
 	z-index: 99;
 	position: absolute;
 	top: 500px;
@@ -327,7 +291,7 @@ footer p {
 }
 
 #winter_effect_2 {
-    background:url(/theme_teamdoc/static/src/img/fkankan/winter/snoflingor_1.png);
+	background:url(/theme_teamdoc/static/src/img/fkankan/winter/snoflingor_1.png);
 	z-index: 98;
 	position: absolute;
 	top: 550px;
@@ -337,7 +301,7 @@ footer p {
 }
 
 #winter_effect_3 {
-    background:url(/theme_teamdoc/static/src/img/fkankan/winter/snoflingor.png);
+	background:url(/theme_teamdoc/static/src/img/fkankan/winter/snoflingor.png);
 	z-index: 99;
 	position: absolute;
 	top: 1000px;
