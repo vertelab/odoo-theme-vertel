@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
     <data>
-
         <!-- Layout menu, parallax, column, parallax -->
         <template id="layout_parallax_column_parallax" inherit_id="website.layout" customize_show="True" active="False" name="Layout Menu-Parallax-Column-Parallax" priority="99">
             <xpath expr="//main" position="inside">
@@ -558,7 +557,7 @@
             </xpath>
             
             <xpath expr="//a[@class='navbar-brand logo']" position="attributes">
-                <attribute name="class">navbar-brand logo hidden</attribute>
+                <attribute name="class">navbar-brand logo hidden-lg hidden-md hidden-sm</attribute>
             </xpath>
 
             <!-- define id and class to menu bar -->
@@ -794,7 +793,5 @@
                 </a>
             </div>
         </template>
-
-
     </data>
 </openerp>
