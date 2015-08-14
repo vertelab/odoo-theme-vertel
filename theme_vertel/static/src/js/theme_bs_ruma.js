@@ -3,7 +3,7 @@
         main_fun: function () {
             //ADD REMOVE PADDING CLASS ON SCROLL
             $(window).scroll(function () {
-                if ($(".navbar").offset().top >50){
+                if ($(".navbar").offset().top > margin_value){
                     $(".navbar-fixed-top").addClass("navbar-pad-original");
                 } else {
                     $(".navbar-fixed-top").removeClass("navbar-pad-original");

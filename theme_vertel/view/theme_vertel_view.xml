@@ -150,6 +150,9 @@
             </xpath>
             <!-- Customize javascript -->
             <xpath expr="//body" position="after">
+                <script>
+                    var margin_value = 50;
+                </script>
                 <script type="text/javascript" src="/theme_vertel/static/src/js/theme_bs_ruma.js"/>
             </xpath>
         </template>
@@ -305,12 +308,15 @@
             </xpath>
             <!-- Customize javascript -->
             <xpath expr="//body" position="after">
+                <script>
+                    var margin_value = 180;
+                </script>
                 <script type="text/javascript" src="/theme_vertel/static/src/js/theme_middle_logo.js"/>
             </xpath>
         </template>
 
-        <!-- Theme Block Logo -->
-        <template id="theme_block_logo" inherit_id="website.layout" customize_show="True" active="False" name="Theme Block Logo" priority="99">
+        <!-- Theme Block Logo I-->
+        <template id="theme_block_logo_I" inherit_id="website.layout" customize_show="True" active="False" name="Theme Block Logo I" priority="99">
             <!-- Customize CSS -->
             <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
                 <link href="/theme_vertel/static/src/css/theme_block_logo.css" rel="stylesheet" />
@@ -458,10 +464,170 @@
             </xpath>
             <!-- Customize javascript -->
             <xpath expr="//body" position="after">
+                <script>
+                    var margin_value = 180;
+                </script>
                 <script type="text/javascript" src="/theme_vertel/static/src/js/theme_block_logo.js"/>
             </xpath>
         </template>
 
+        <!-- Theme Block Logo II-->
+        <template id="theme_block_logo_II" inherit_id="website.layout" customize_show="True" active="False" name="Theme Block Logo II">
+            <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
+                <style>
+                   .bl2-body {
+                        background: #fff;
+                        list-style: none;
+                    }
+
+                    /* MENU */
+                    .bl2-navbar {
+                        font-family: 'Ubuntu';
+                        font-size: 1.5em;
+                        background: none;
+                        width: 100%;
+                    }
+
+                    #bl2-menu-bar > div > ul > li > a {
+                        padding-top: 25px;
+                        padding-bottom: 25px;
+                    }
+
+                    #bl2-menu-bar > div {
+                        width: 1024px;
+                        margin: auto;
+                    }
+
+                    .bl2-navbar-fixed-top {
+                        transition: all 0.5s ease-in 0s;
+                        font-family: 'Ubuntu';
+                        font-size: 1.5em;
+                        z-index: 99;
+                        top: 0px;
+                        position: fixed;
+                        width: 100%;
+                        background: #fff;
+                        box-shadow: 0px 0px 20px #333;
+                    }
+
+                    /* COMPANY LOGO */
+                    #logo-box-2 {
+                        padding: 0px;
+                    }
+
+                    #bl2-logo {
+                        width: 30%;
+                        display:block;
+                        margin:auto;
+                        padding-bottom:3%;
+                        padding-top:2%;
+                    }
+
+                    /* MENU TEXT */
+                    #bl2-menu-bar > ul > li > a {
+                        color: #333;
+                    }
+
+                    /* STYLE WHEN MOUSE HOVER */
+                    #bl2-menu-bar > ul > li > a:hover,
+                    #bl2-menu-bar > ul > li > a:focus {
+                        color: #000;
+                        background-color: #fff;
+                    }
+
+                    /* STYLE WHEN PAGE ACTIVE */
+                    #bl2-menu-bar > ul > .active > a {
+                        color: #000;
+                        background-color: #fff;
+                    }
+
+                    /* FOOTER STYLE*/
+                    .bl2-footer {
+
+                    }
+                </style>
+            </xpath>
+                   
+            <!-- add company logo -->
+            <xpath expr="//body/div[@id='wrapwrap']/header" position="before">
+                <div class="container">
+                    <div id="logo-box-2" class="col-md-12 hidden-xs">
+                        <img id="bl2-logo" src="/logo1024.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
+                    </div>
+                </div>
+            </xpath>
+            
+            <xpath expr="//a[@class='navbar-brand logo']" position="attributes">
+                <attribute name="class">navbar-brand logo hidden</attribute>
+            </xpath>
+
+            <!-- define id and class to menu bar -->
+            <xpath expr="//body/div[@id='wrapwrap']/header/div" position="attributes">
+                <attribute name="id">bl2-menu</attribute>
+                <attribute name="class">bl2-navbar</attribute>
+            </xpath>
+
+            <!-- define class to menu style -->
+            <xpath expr="//header//ul[@id='top_menu']" position="attributes">
+                <attribute name="class">nav nav-justified</attribute>
+            </xpath>
+            <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div[2]" position="attributes">
+                <attribute name="id">bl2-menu-bar</attribute>
+                <attribute name="class">collapse navbar-collapse navbar-top-collapse col-md-12</attribute>
+            </xpath>
+
+            <!-- hide user login / out -->
+            <xpath expr="//header//ul[@id='top_menu']/li[@class='divider']" position="attributes">
+                <attribute name="class">hidden</attribute>
+            </xpath>
+            <xpath expr="//header//ul[@id='top_menu']/li[@class='dropdown']" position="attributes">
+                <attribute name="class">hidden</attribute>
+            </xpath>
+
+            <!-- define a class to body -->
+            <xpath expr="//body" position="attributes">
+                <attribute name="class">bl2-body</attribute>
+            </xpath>
+            <!-- define a class to footer -->
+            <xpath expr="//footer" position="attributes">
+                <attribute name="class">bl2-footer</attribute>
+            </xpath>
+            <!-- add log in/out in footer -->
+            <xpath expr="//footer" position="inside">
+                <div class="container">
+                    <div class="pull-right">
+                        <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <b>
+                                    <span t-esc="user_id.name"/>
+                                    <span class="caret"/>
+                                </b>
+                            </a>
+                            <ul class="dropdown-menu js_usermenu" role="menu">
+                                <li><a href="/web" role="menuitem">My Account</a></li>
+                                <li class="divider"/>
+                                <li><a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                    <div class="pull-right">
+                        <li groups="base.group_public">
+                            <a t-attf-href="/web/login">
+                                <b>Sign in</b>
+                            </a>
+                        </li>
+                    </div>
+                </div>
+            </xpath>
+            <!-- Customize javascript -->
+            <xpath expr="//body" position="after">
+                <script>
+                    var margin_value = 120;
+                </script>
+                <script type="text/javascript" src="/theme_vertel/static/src/js/theme_block_logo_II.js"/>
+            </xpath>
+        </template>
+       
         <!-- Left Side Menu Bottom -->
         <template id="theme_left_side_menu_bottom" inherit_id="website.layout" customize_show="True" active="False" name="Theme Left Side Menu Bottom" priority="99">
             <!-- Customize CSS -->
@@ -629,174 +795,6 @@
             </div>
         </template>
 
-        <!--THEME RESPONSIVE NAVBAR-->
-        <template id="theme_responsive_navbar_" inherit_id="website.layout" customize_show="True" active="False" name="Theme Responsive Navbar">
-            <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
-                <style>
-                   .rl-body {
-                        background: #fff;
-                        list-style: none;
-                    }
 
-                    /* MENU */
-                    .rl-navbar {
-                        font-family: 'Ubuntu';
-                        font-size: 1.5em;
-                        background: none;
-                        width: 100%;
-                    }
-
-                    #rl-menu-bar > div > ul > li > a {
-                        padding-top: 25px;
-                        padding-bottom: 25px;
-                    }
-
-                    #rl-menu-bar > div {
-                        width: 1024px;
-                        margin: auto;
-                    }
-
-                    .rl-navbar-fixed-top {
-                        transition: all 0.5s ease-in 0s;
-                        font-family: 'Ubuntu';
-                        font-size: 1.5em;
-                        z-index: 99;
-                        top: 0px;
-                        position: fixed;
-                        width: 100%;
-                        background: #fff;
-                        box-shadow: 0px 0px 20px #333;
-                    }
-
-                    /* COMPANY LOGO */
-                    #responsive-logo-box {
-                        padding: 0px;
-                    }
-
-                    #rl-logo {
-                        width: 30%;
-                        display:block;
-                        margin:auto;
-                        padding-bottom:3%;
-                        padding-top:2%;
-                    }
-
-                    /* MENU TEXT */
-                    #rl-menu-bar > ul > li > a {
-                        color: #333;
-                    }
-
-                    /* STYLE WHEN MOUSE HOVER */
-                    #rl-menu-bar > ul > li > a:hover,
-                    #rl-menu-bar > ul > li > a:focus {
-                        color: #000;
-                        background-color: #fff;
-                    }
-
-                    /* STYLE WHEN PAGE ACTIVE */
-                    #rl-menu-bar > ul > .active > a {
-                        color: #000;
-                        background-color: #fff;
-                    }
-
-                    /* FOOTER STYLE*/
-                    .rl-footer {
-
-                    }
-                </style>
-            </xpath>
-            
-
-<!--
-            <xpath expr="//ul[@id='top_menu']/t" position="before">
-                 <li>
-                     <img class="img-responsive" id="logo_before_scroll" src="/logo.png" style="vertical-align:middle;" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
-                </li>
-            </xpath>
--->
-            
-            <!-- add company logo -->
-            <xpath expr="//body/div[@id='wrapwrap']/header" position="before">
-                <div class="container">
-                    <div id="responsive-logo-box" class="col-md-12 hidden-xs">
-                        <img id="rl-logo" src="/logo1024.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
-                    </div>
-                </div>
-            </xpath>
-            
-            <xpath expr="//a[@class='navbar-brand logo']" position="attributes">
-                <attribute name="class">navbar-brand logo hidden</attribute>
-            </xpath>
-
-            <!-- define id and class to menu bar -->
-            <xpath expr="//body/div[@id='wrapwrap']/header/div" position="attributes">
-                <attribute name="id">rl-menu</attribute>
-                <attribute name="class">rl-navbar</attribute>
-            </xpath>
-
-            <!-- define class to menu style -->
-            <xpath expr="//header//ul[@id='top_menu']" position="attributes">
-                <attribute name="class">nav nav-justified</attribute>
-            </xpath>
-            <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div[2]" position="attributes">
-                <attribute name="id">rl-menu-bar</attribute>
-                <attribute name="class">collapse navbar-collapse navbar-top-collapse col-md-12</attribute>
-            </xpath>
-
-            <!-- hide company name -->
-<!--
-            <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div/a" position="attributes">
-                <attribute name="class">navbar-brand hidden-lg hidden-md hidden-sm</attribute>
-            </xpath>
--->
-
-            <!-- hide user login / out -->
-            <xpath expr="//header//ul[@id='top_menu']/li[@class='divider']" position="attributes">
-                <attribute name="class">hidden</attribute>
-            </xpath>
-            <xpath expr="//header//ul[@id='top_menu']/li[@class='dropdown']" position="attributes">
-                <attribute name="class">hidden</attribute>
-            </xpath>
-
-            <!-- define a class to body -->
-            <xpath expr="//body" position="attributes">
-                <attribute name="class">rl-body</attribute>
-            </xpath>
-            <!-- define a class to footer -->
-            <xpath expr="//footer" position="attributes">
-                <attribute name="class">rl-footer</attribute>
-            </xpath>
-            <!-- add log in/out in footer -->
-            <xpath expr="//footer" position="inside">
-                <div class="container">
-                    <div class="pull-right">
-                        <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <b>
-                                    <span t-esc="user_id.name"/>
-                                    <span class="caret"/>
-                                </b>
-                            </a>
-                            <ul class="dropdown-menu js_usermenu" role="menu">
-                                <li><a href="/web" role="menuitem">My Account</a></li>
-                                <li class="divider"/>
-                                <li><a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a></li>
-                            </ul>
-                        </li>
-                    </div>
-                    <div class="pull-right">
-                        <li groups="base.group_public">
-                            <a t-attf-href="/web/login">
-                                <b>Sign in</b>
-                            </a>
-                        </li>
-                    </div>
-                </div>
-            </xpath>
-            <!-- Customize javascript -->
-            <xpath expr="//body" position="after">
-                <script type="text/javascript" src="/theme_vertel/static/src/js/theme_responsive_navbar.js"/>
-            </xpath>
-        </template>
     </data>
 </openerp>

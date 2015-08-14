@@ -3,7 +3,7 @@
         main_fun: function () {
             //ADD REMOVE CLASS ON SCROLL
             $(window).scroll(function () {
-                if ($(".navbar").offset().top >180){
+                if ($(".navbar").offset().top > margin_value){
                     $("#menu-center").addClass("hidden");
                     $("#ml-menu").addClass("ml-navbar-fixed-top");
                     $("#ml-menu").removeClass("ml-navbar");
