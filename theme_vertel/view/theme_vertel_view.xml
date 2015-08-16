@@ -42,48 +42,48 @@
                 <link href="/theme_vertel/static/src/css/theme_bs_ruma.css" rel="stylesheet"/>
                 <style>
                     .bs-body {
-                    font-family: 'Open Sans', sans-serif;
-                    list-style: none;
+                        font-family: 'Open Sans', sans-serif;
+                        list-style: none;
                     }
 
                     /* MENU */
                     #bs-menu {
-                    z-index: 1;
-                    margin-top: 0px;
-                    background: #000;
+                        z-index: 1;
+                        margin-top: 0px;
+                        background: #000;
                     }
 
                     /* COMPANY LOGO */
                     #bs-menu > div > div > a {
-                    color: #FFF;
+                        color: #FFF;
                     }
 
                     #bs-logo {
-                    max-width: 100px;
+                        max-width: 100px;
                     }
 
                     /* MENU TEXT */
                     #bs-menu > div > div > ul > li > a {
-                    color: #FFF;
+                        color: #FFF;
                     }
 
                     /* STYLE WHEN MOUSE HOVER */
                     #bs-menu > div > div > ul > li > a:hover,
                     #bs-menu > div > div > ul > li > a:focus {
-                    color: #000;
-                    background-color: #fff;
+                        color: #000;
+                        background-color: #fff;
                     }
 
                     /* STYLE WHEN PAGE ACTIVE */
                     #bs-menu > div > div > ul > .active > a {
-                    color: #000;
-                    background-color: #fff;
+                        color: #000;
+                        background-color: #fff;
                     }
 
                     /* FOOTER STYLE*/
                     .bs-footer {
-                    background: #000;
-                    color: #fff;
+                        background: #000;
+                        color: #fff;
                     }
                 </style>
             </xpath>
@@ -174,70 +174,70 @@
                 <link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative' rel='stylesheet' type='text/css'/>
                 <style>
                     .ml-body {
-                    background: #E6E6E6;
-                    list-style: none;
+                        background: #E6E6E6;
+                        list-style: none;
                     }
 
                     /* MENU */
                     .ml-navbar {
-                    font-family: 'Cinzel Decorative', cursive;
-                    z-index: 1;
-                    margin-top: 50px;
-                    background: none;
-                    width: 100%;
+                        font-family: 'Cinzel Decorative', cursive;
+                        z-index: 1;
+                        margin-top: 50px;
+                        background: none;
+                        width: 100%;
                     }
 
                     .ml-navbar-fixed-top {
-                    font-family: 'Cinzel Decorative', cursive;
-                    z-index: 99;
-                    top: 0px;
-                    position: fixed;
-                    width: 100%;
-                    background: #fff;
+                        font-family: 'Cinzel Decorative', cursive;
+                        z-index: 99;
+                        top: 0px;
+                        position: fixed;
+                        width: 100%;
+                        background: #fff;
                     }
 
                     /* COMPANY LOGO */
                     #ml-logo {
-                    max-width: 200px;
-                    display:block;
-                    margin:auto;
+                        max-width: 200px;
+                        display:block;
+                        margin:auto;
                     }
 
                     /* MENU TEXT */
                     #ml-menu-bar > div > ul > div > div > li > a {
-                    color: #343434;
+                        color: #343434;
                     }
 
                     /* STYLE WHEN MOUSE HOVER */
                     #ml-menu-bar > div > ul > div > div > li > a:hover,
                     #ml-menu-bar > div > ul > div > div > li > a:focus {
-                    color: #50A7D2;
-                    background-color: #E6E6E6;
+                        color: #50A7D2;
+                        background-color: #E6E6E6;
                     }
 
                     /* STYLE WHEN PAGE ACTIVE */
                     #ml-menu-bar > div > ul > div > div > .active > a {
-                    color: #50A7D2;
-                    background-color: #E6E6E6;
+                        color: #50A7D2;
+                        background-color: #E6E6E6;
                     }
 
                     /* SIDE MENU */
                     #ml-menu-bar > div > ul > div .navbar-right,
                     #ml-menu-bar > div > ul > div .navbar-left {
-                    padding-top: 15%;
+                        padding-top: 15%;
                     }
 
                     #menu-leftside > div > li > a > span,
                     #menu-rightside > div > li > a > span {
-                    font-size: 120%;
+                        font-size: 120%;
                     }
 
                     #ml-menu-bar {
-                    width: 100%;
+                        width: 100%;
                     }
 
                     #ml-menu-bar > .row {
-                    width: 100%;
+                        width: 100%;
                     }
 
                     /* FOOTER STYLE*/
@@ -331,65 +331,65 @@
                 <link href="/theme_vertel/static/src/css/theme_block_logo.css" rel="stylesheet" />
                 <style>
                     .bl-body {
-                    background: #fff;
-                    list-style: none;
+                        background: #fff;
+                        list-style: none;
                     }
 
                     /* MENU */
                     .bl-navbar {
-                    font-family: 'Ubuntu';
-                    font-size: 1.5em;
-                    background: none;
-                    width: 100%;
+                        font-family: 'Ubuntu';
+                        font-size: 1.5em;
+                        background: none;
+                        width: 100%;
                     }
 
                     #bl-menu-bar > div > ul > li > a {
-                    padding-top: 25px;
-                    padding-bottom: 25px;
+                        padding-top: 25px;
+                        padding-bottom: 25px;
                     }
 
                     #bl-menu-bar > div {
-                    width: 1024px;
-                    margin: auto;
+                        width: 1024px;
+                        margin: auto;
                     }
 
                     .bl-navbar-fixed-top {
-                    font-family: 'Ubuntu';
-                    font-size: 1.5em;
-                    z-index: 99;
-                    top: 0px;
-                    position: fixed;
-                    width: 100%;
-                    background: #e1e1e1;
-                    box-shadow: 0px 0px 20px #333;
+                        font-family: 'Ubuntu';
+                        font-size: 1.5em;
+                        z-index: 99;
+                        top: 0px;
+                        position: fixed;
+                        width: 100%;
+                        background: #e1e1e1;
+                        box-shadow: 0px 0px 20px #333;
                     }
 
                     /* COMPANY LOGO */
                     #logo-box {
-                    padding: 0px;
+                        padding: 0px;
                     }
 
                     #bl-logo {
-                    width: 100%;
-                    display:block;
+                        width: 100%;
+                        display:block;
                     }
 
                     /* MENU TEXT */
                     #bl-menu-bar > ul > li > a {
-                    color: #333;
+                        color: #333;
                     }
 
                     /* STYLE WHEN MOUSE HOVER */
                     #bl-menu-bar > ul > li > a:hover,
                     #bl-menu-bar > ul > li > a:focus {
-                    color: #fff;
-                    background-color: #333;
+                        color: #fff;
+                        background-color: #333;
                     }
 
                     /* STYLE WHEN PAGE ACTIVE */
                     #bl-menu-bar > ul > .active > a {
-                    color: #fff;
-                    background-color: #333;
+                        color: #fff;
+                        background-color: #333;
                     }
 
                     /* FOOTER STYLE*/
@@ -484,78 +484,78 @@
         <template id="theme_block_logo_II" inherit_id="website.layout" customize_show="True" active="False" name="Theme Block Logo II" priority="99">
             <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
                 <style>
-                    .bl2-body {
-                    background: #fff;
-                    list-style: none;
+                   .bl2-body {
+                        background: #fff;
+                        list-style: none;
                     }
 
                     /* MENU */
                     .bl2-navbar {
-                    font-family: 'Ubuntu';
-                    font-size: 1.5em;
-                    background: none;
-                    width: 100%;
+                        font-family: 'Ubuntu';
+                        font-size: 1.5em;
+                        background: none;
+                        width: 100%;
                     }
 
                     #bl2-menu-bar > div > ul > li > a {
-                    padding-top: 25px;
-                    padding-bottom: 25px;
+                        padding-top: 25px;
+                        padding-bottom: 25px;
                     }
 
                     #bl2-menu-bar > div {
-                    width: 1024px;
-                    margin: auto;
+                        width: 1024px;
+                        margin: auto;
                     }
 
                     .bl2-navbar-fixed-top {
-                    transition: all 0.5s ease-in 0s;
-                    font-family: 'Ubuntu';
-                    font-size: 1.5em;
-                    z-index: 99;
-                    top: 0px;
-                    position: fixed;
-                    width: 100%;
-                    background: #fff;
-                    box-shadow: 0px 0px 20px #333;
+                        transition: all 0.5s ease-in 0s;
+                        font-family: 'Ubuntu';
+                        font-size: 1.5em;
+                        z-index: 99;
+                        top: 0px;
+                        position: fixed;
+                        width: 100%;
+                        background: #fff;
+                        box-shadow: 0px 0px 20px #333;
                     }
 
                     /* COMPANY LOGO */
                     #logo-box-2 {
-                    padding: 0px;
+                        padding: 0px;
                     }
 
                     #bl2-logo {
-                    width: 30%;
-                    display:block;
-                    margin:auto;
-                    padding-bottom:3%;
-                    padding-top:2%;
+                        width: 30%;
+                        display:block;
+                        margin:auto;
+                        padding-bottom:3%;
+                        padding-top:2%;
                     }
 
                     /* MENU TEXT */
                     #bl2-menu-bar > ul > li > a {
-                    color: #333;
+                        color: #333;
                     }
 
                     /* STYLE WHEN MOUSE HOVER */
                     #bl2-menu-bar > ul > li > a:hover,
                     #bl2-menu-bar > ul > li > a:focus {
-                    color: #000;
-                    background-color: #fff;
+                        color: #000;
+                        background-color: #fff;
                     }
 
                     /* STYLE WHEN PAGE ACTIVE */
                     #bl2-menu-bar > ul > .active > a {
-                    color: #000;
-                    background-color: #fff;
+                        color: #000;
+                        background-color: #fff;
                     }
 
                     .navbar-toggle {
-                    border-color: #000;
+                        border-color: #000;
                     }
 
                     .navbar-toggle .icon-bar{
-                    background-color: #000;
+                        background-color: #000;
                     }
 
                     /* FOOTER STYLE*/
@@ -704,10 +704,10 @@
             <xpath expr="//body" position="after">
                 <script>
                     $("#top_menu > .dropdown").mouseover(function() {
-                    $(this).addClass("open");
+                        $(this).addClass("open");
                     });
                     $("#top_menu > .dropdown").mouseout(function() {
-                    $(this).removeClass("open");
+                        $(this).removeClass("open");
                     });
                 </script>
             </xpath>
@@ -719,67 +719,67 @@
                 <link href="/theme_vertel/static/src/css/theme_left_side_menu_bottom.css" rel="stylesheet"/>
                 <style>
                     .lsmb-body {
-                    background: #fff;
-                    list-style: none;
+                        background: #fff;
+                        list-style: none;
                     }
 
                     /* LOGO */
 
                     #logo-box {
-                    margin-top: 20px;
-                    position: fixed;
+                        margin-top: 20px;
+                        position: fixed;
                     }
 
                     #lsmb-logo {
-                    max-width: 150px;
+                        max-width: 150px;
                     }
 
                     /* MENU */
                     #lsmb-menu {
-                    width: 25%;
+                        width: 25%;
                     }
 
                     #lsmb-menu-bar {
-                    width: 100%;
+                        width: 100%;
                     }
 
                     .lsmb-navbar {
-                    font-family: 'Ubuntu';
-                    font-size: 1.5em;
-                    background: none;
-                    position: fixed;
-                    left: 20px;
-                    bottom: 100px;
-                    z-index: 999;
+                        font-family: 'Ubuntu';
+                        font-size: 1.5em;
+                        background: none;
+                        position: fixed;
+                        left: 20px;
+                        bottom: 100px;
+                        z-index: 999;
                     }
 
                     #lsmb-menu-bar > ul > li > a {
-                    padding-top: 10px;
-                    padding-bottom: 10px;
-                    color: #343434;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        color: #343434;
                     }
 
                     /* STYLE WHEN MOUSE HOVER */
                     #lsmb-menu-bar > ul > li > a:hover,
                     #lsmb-menu-bar > ul > li > a:focus {
-                    color: #D31940;
-                    background: none;
+                        color: #D31940;
+                        background: none;
                     }
 
                     /* STYLE WHEN PAGE ACTIVE */
                     #lsmb-menu-bar > ul > .active > a {
-                    color: #D31940;
-                    background:none;
+                        color: #D31940;
+                        background:none;
                     }
 
                     /* FOOTER STYLE*/
                     .lsmb-footer > div > div > li > a{
-                    color:#fff;
+                        color:#fff;
                     }
                     #wrapwrap > footer{
-                    height:20px;
-                    background:#888;
-                    opacity:0.5;
+                        height:20px;
+                        background:#888;
+                        opacity:0.5;
                     }
                 </style>
             </xpath>
@@ -864,7 +864,7 @@
                 <t t-foreach="news" t-as="n">
                     <t t-if="nbr&lt;2">
                         <a t-att-href="'/blog/%s/post/%s' % (n.blog_id.id, n.id)">
-                            <b style="color:blue;"><t t-esc="n.name"/></b></a><br/>
+                        <b style="color:blue;"><t t-esc="n.name"/></b></a><br/>
                         <b><t t-esc="website.get_news(n.subtitle)"/></b><br/>
                         <font size="1"><t t-esc="n.write_date"/></font><br/>
                         <t t-esc="website.get_news(n.content, 200)"/>...<br/>
