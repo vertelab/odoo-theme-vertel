@@ -634,7 +634,74 @@
                 <script type="text/javascript" src="/theme_vertel/static/src/js/theme_block_logo_II.js"/>
             </xpath>
         </template>
-       
+
+        <!-- Mega Menu -->
+        <template id="theme_mega_menu" inherit_id="website.submenu" customize_show="True" active="False" name="THeme Mega Menu" priority="99">
+            <!-- Customize CSS -->
+            <xpath expr="//li[2]/ul" position="attributes">
+                <attribute name="style">
+                    width: 700px;
+                </attribute>
+            </xpath>
+
+            <!-- Mega Menu Style -->
+            <xpath expr="//li[2]/ul/t" position="inside">
+                <div class="contanier">
+                    <div class="col-md-4">
+                        <h4 class="text-center">Submenu 1</h4>
+                        <hr/>
+                        <div class="row text-center" style="padding: 20px;">
+                            <ul class="list-unstyled">
+                                <a href="/"><li>List Item</li></a>
+                                <a href="/"><li>List Item</li></a>
+                                <a href="/"><li>List Item</li></a>
+                                <a href="/"><li>List Item</li></a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h4 class="text-center">Submenu 2</h4>
+                        <hr/>
+                        <div class="row text-center" style="padding: 20px;">
+                            <ul class="list-unstyled">
+                                <a href="/"><li>List Item</li></a>
+                                <a href="/"><li>List Item</li></a>
+                                <a href="/"><li>List Item</li></a>
+                                <a href="/"><li>List Item</li></a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h4 class="text-center">Submenu 3</h4>
+                        <hr/>
+                        <div class="row text-center" style="padding: 20px;">
+                            <ul class="list-unstyled">
+                                <a href="/"><li>List Item</li></a>
+                                <a href="/"><li>List Item</li></a>
+                                <a href="/"><li>List Item</li></a>
+                                <a href="/"><li>List Item</li></a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </xpath>
+
+        </template>
+
+        <template id="theme_mega_menu_hover" inherit_id="website.layout" customize_show="True" active="False" name="Theme Mega Menu Hover" priority="99">
+            <!-- Customize javascript -->
+            <xpath expr="//body" position="after">
+                <script>
+                    $("#top_menu > .dropdown").mouseover(function() {
+                        $(this).addClass("open");
+                    });
+                    $("#top_menu > .dropdown").mouseout(function() {
+                        $(this).removeClass("open");
+                    });
+                </script>
+            </xpath>
+        </template>
         <!-- Left Side Menu Bottom -->
         <template id="theme_left_side_menu_bottom" inherit_id="website.layout" customize_show="True" active="False" name="Theme Left Side Menu Bottom" priority="99">
             <!-- Customize CSS -->
