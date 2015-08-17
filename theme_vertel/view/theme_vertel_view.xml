@@ -20,6 +20,7 @@
 
                     .box {
                         padding: 0px;
+                        margin: 0px;
                     }
 
                     #presentation-img h1 {
@@ -75,7 +76,7 @@
                             <img class="img-responsive" src="/website/static/src/img/island.jpg" style="width: 100%;"/>
                         </div>
                         <div class="col-md-6 col-xs-12 box">
-                            <div class="col-md-12 row">
+                            <div class="col-md-12 box">
                                 <div class="col-md-6 col-xs-12 box">
                                     <img class="img-responsive" src="/website/static/src/img/island.jpg" style="width: 100%;"/>
                                 </div>
@@ -87,7 +88,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-md-12 row">
+                            <div class="col-md-12 box">
                                 <div class="col-md-6 col-xs-12 text-center" style="padding 20px;">
                                     <h2>Title</h2>
                                     <hr style="border-color: #f00;"/>
