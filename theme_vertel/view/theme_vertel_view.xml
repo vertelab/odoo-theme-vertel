@@ -3,35 +3,106 @@
     <data>
         <!-- Layout menu, parallax, column, parallax -->
         <template id="layout_demo_site_I" inherit_id="website.layout" customize_show="True" active="False" name="Layout Demo Site I" priority="99">
-            <xpath expr="//main/t" position="before">
-                <section>
-                    <div style="margin: 0px; padding: 0px; position: relative;">
-                        <img class="img-responsive" src="/website/static/src/img/library/ship_sea.jpg" style="width: 100%;"/>
-                        <div class="text-center" style="position: absolute; right: 10%; top: 30%;">
-                            <h1 style="color: #fff; text-shadow: 0px 0px 20px #fff">Our Journey begin here</h1>
-                            <h2 style="color: #fff; text-shadow: 0px 0px 20px #fff">All around the world</h2>
-                            <a class="btn btn-default hover hvr-grow" href="#">Let's get started</a>
+            <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
+                <style>
+                    body h1, h2, h3, h4, p{
+                        font-family: 'Ubuntu';
+                    }
+
+                    .out-box {
+                        position: relative;
+                        margin: 0px;
+                    }
+
+                    .inner-box {
+                        position: absolute;
+                    }
+
+                    .box {
+                        padding: 0px;
+                    }
+
+                    #presentation-img h1 {
+                        font-size: 4em;
+                        color: #fff;
+                        text-shadow: 0px 0px 20px #fff;
+                    }
+
+                    #presentation-img h2 {
+                        font-size: 3em;
+                        color: #fff;
+                        text-shadow: 0px 0px 20px #fff;
+                    }
+
+                </style>
+            </xpath>
+            <xpath expr="//main/t" position="replace">
+                <section id="presentation-img" class="hidden-xs">
+                    <div class="out-box">
+                        <img class="img-responsive" src="/website/static/src/img/fields.jpg" style="width: 100%;"/>
+                        <div class="inner-box text-center" style="margin: auto; top: 30%; width: 100%;">
+                            <h1>Our Journey begins here</h1>
+                            <h2>All around the world</h2>
+                            <a class="btn btn-default mt16 hover hvr-grow" href="#">Let's get started</a>
                         </div>
                     </div>
                 </section>
-                <section>
-                    <div style="margin: 0px; padding: 0px;">
+                <section id="presentation-text">
+                    <div>
                         <div class="container mt32 mb32" style="margin: auto;">
                             <h1 class="col-md-12 text-center" style="color: orange;">
-                                Title
+                                Journey Title
                             </h1>
                             <div class="col-md-12">
                                 <hr style="border-color: #f00;"/>
                                 <div class="col-md-6 col-xs-12" style="padding: 10px 40px 10px 40px;">
-                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                    <p>
+                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                    </p>
                                 </div>
                                 <div class="col-md-6 col-xs-12" style="padding: 10px 40px 10px 40px;">
-                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                    <p>
+                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
+                <section id="section-I">
+                    <div class="col-md-12 box">
+                        <div class="col-md-6 col-xs-12 box">
+                            <img class="img-responsive" src="/website/static/src/img/island.jpg" style="width: 100%;"/>
+                        </div>
+                        <div class="col-md-6 col-xs-12 box">
+                            <div class="col-md-12 row">
+                                <div class="col-md-6 col-xs-12 box">
+                                    <img class="img-responsive" src="/website/static/src/img/island.jpg" style="width: 100%;"/>
+                                </div>
+                                <div class="col-md-6 col-xs-12 text-center" style="padding 20px;">
+                                    <h2>Title</h2>
+                                    <hr style="border-color: #f00;"/>
+                                    <p>
+                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-12 row">
+                                <div class="col-md-6 col-xs-12 text-center" style="padding 20px;">
+                                    <h2>Title</h2>
+                                    <hr style="border-color: #f00;"/>
+                                    <p>
+                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                                    </p>
+                                </div>
+                                <div class="col-md-6 col-xs-12 box">
+                                    <img class="img-responsive" src="/website/static/src/img/island.jpg" style="width: 100%;"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="oe_structure oe_empty"/>
             </xpath>
         </template>
 
