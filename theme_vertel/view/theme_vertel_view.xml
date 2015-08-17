@@ -37,7 +37,7 @@
 
                 </style>
             </xpath>
-            <xpath expr="//main/t" position="replace">
+            <xpath expr="//main/t" position="after">
                 <section id="presentation-img" class="hidden-xs">
                     <div class="out-box">
                         <img class="img-responsive" src="/website/static/src/img/fields.jpg" style="width: 100%;"/>
@@ -103,7 +103,6 @@
                         </div>
                     </div>
                 </section>
-                <div class="oe_structure oe_empty"/>
             </xpath>
         </template>
 
