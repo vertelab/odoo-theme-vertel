@@ -23,6 +23,15 @@
                         margin: 0px;
                     }
 
+                    .fa-box {
+                        padding: 15px;
+                    }
+
+                    hr {
+                        width: 70%;
+                        margin: 16px auto 16px auto;
+                    }
+
                     #presentation-img h1 {
                         font-size: 4em;
                         color: #fff;
@@ -44,64 +53,150 @@
                         <div class="inner-box text-center" style="margin: auto; top: 30%; width: 100%;">
                             <h1>Our Journey begins here</h1>
                             <h2>All around the world</h2>
-                            <a class="btn btn-default mt16 hover hvr-grow" href="#">Let's get started</a>
+                            <a class="btn btn-success btn-lg mt16 hover hvr-grow" href="#">Let's get started</a>
                         </div>
                     </div>
                 </section>
                 <section id="presentation-text">
-                    <div>
-                        <div class="container mt32 mb32" style="margin: auto;">
-                            <h1 class="col-md-12 text-center" style="color: orange;">
+                    <div class="container mt64 mb64" style="margin: auto;">
+                        <h1 class="col-md-12 text-center" style="color: orange;">
                                 Journey Title
                             </h1>
-                            <div class="col-md-12">
-                                <hr style="border-color: #f00;"/>
-                                <div class="col-md-6 col-xs-12" style="padding: 10px 40px 10px 40px;">
-                                    <p>
-                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                                    </p>
-                                </div>
-                                <div class="col-md-6 col-xs-12" style="padding: 10px 40px 10px 40px;">
-                                    <p>
-                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                                    </p>
-                                </div>
+                        <div class="col-md-12 box">
+                            <hr style="border-color: #f00;"/>
+                            <div class="col-md-6 col-xs-12" style="padding: 0px;">
+                                <p style="padding: 10px;">
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-xs-12" style="padding: 0px;">
+                                <p style="padding: 10px;">
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                </p>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section id="section-I">
-                    <div class="col-md-12 box">
+                <section id="img-cube">
+                    <div class="container box" style="margin: auto; width: 100%;">
                         <div class="col-md-6 col-xs-12 box">
                             <img class="img-responsive" src="/website/static/src/img/island.jpg" style="width: 100%;"/>
                         </div>
                         <div class="col-md-6 col-xs-12 box">
                             <div class="col-md-12 box">
-                                <div class="col-md-6 col-xs-12 box">
+                                <div class="col-md-6 col-sm-12 col-xs-12 box">
                                     <img class="img-responsive" src="/website/static/src/img/island.jpg" style="width: 100%;"/>
                                 </div>
-                                <div class="col-md-6 col-xs-12 text-center" style="padding 20px;">
+                                <div class="col-md-6 col-sm-12 col-xs-12 text-center" style="padding: 3% 20px 0px 20px;">
                                     <h2>Title</h2>
                                     <hr style="border-color: #f00;"/>
                                     <p>
-                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                                     </p>
                                 </div>
                             </div>
                             <div class="col-md-12 box">
-                                <div class="col-md-6 col-xs-12 text-center" style="padding 20px;">
+                                <div class="col-md-6 col-sm-12 col-xs-12 text-center" style="padding: 3% 20px 0px 20px;">
                                     <h2>Title</h2>
                                     <hr style="border-color: #f00;"/>
                                     <p>
-                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                                     </p>
                                 </div>
-                                <div class="col-md-6 col-xs-12 box">
+                                <div class="col-md-6 col-sm-12 col-xs-12 box">
                                     <img class="img-responsive" src="/website/static/src/img/island.jpg" style="width: 100%;"/>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </section>
+                <section id="icon-field">
+                    <div class="container mt64 mb64">
+                        <div class="row text-center pad-row">
+                            <div class="col-md-4 col-sm-4 fa-box">
+                                <i class="fa fa-desktop fa-5x"/>
+                                <h4>
+                                    <strong>Sure Quique Menu</strong>
+                                </h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </p>
+                                <a href="#" class="btn btn-primary">Read Details</a>
+                            </div>
+                            <div class="col-md-4 col-sm-4 fa-box">
+                                <i class="fa fa-bomb fa-5x"/>
+                                <h4>
+                                    <strong>Sure Quique Menu</strong>
+                                </h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </p>
+                                <a href="#" class="btn btn-primary">Read Details</a>
+                            </div>
+                            <div class="col-md-4 col-sm-4 fa-box">
+                                <i class="fa fa-plus  fa-5x"/>
+                                <h4>
+                                    <strong>Sure Quique Menu</strong>
+                                </h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </p>
+                                <a href="#" class="btn btn-primary">Read Details</a>
+                            </div>
+                        </div>
+                        <div class="row text-center pad-row">
+                            <div class="col-md-4 col-sm-4 fa-box">
+                                <i class="fa fa-edit fa-5x"/>
+                                <h4>
+                                    <strong>Sure Quique Menu</strong>
+                                </h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </p>
+                                <a href="#" class="btn btn-primary">Read Details</a>
+                            </div>
+                            <div class="col-md-4 col-sm-4 fa-box">
+                                <i class="fa fa-comments-o fa-5x"/>
+                                <h4>
+                                    <strong>Sure Quique Menu</strong>
+                                </h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </p>
+                                <a href="#" class="btn btn-primary">Read Details</a>
+                            </div>
+                            <div class="col-md-4 col-sm-4 fa-box">
+                                <i class="fa fa-pencil  fa-5x"/>
+                                <h4>
+                                    <strong>Sure Quique Menu</strong>
+                                </h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </p>
+                                <a href="#" class="btn btn-primary">Read Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="parallax s_parallax" data-scroll-background-offset="0" data-scroll-background-ratio="0.3" style="background-image: url(&quot;/website/static/src/img/volcano.jpg&quot;); background-attachment: scroll; background-position: 0px 0px; height: 1000px;">
+                    <div>
+                        <div class="oe_structure"/>
+                    </div>
+                </section>
+                <section id="round-icon">
+
                 </section>
             </xpath>
         </template>
