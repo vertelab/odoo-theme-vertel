@@ -167,3 +167,23 @@
         width: 65.3332%;
     }
 
+    .round-icon {
+        background-color: rgba(0, 0, 255, 1);
+        border-radius: 100px;
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .round-icon i {
+        padding-top: 33%;
+        width:200px;
+        height: 200px;
+        color: #fff;
+    }
+
+    .round-icon:hover {
+        background-color: rgba(0, 255, 0, 0.4);
+        transition: all 0.7s ease-out;
+    }

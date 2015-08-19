@@ -101,6 +101,19 @@
                     </section>
                 </div><!-- End of banner block -->
 
+                <!-- Google Maps -->
+                <div id="google_maps">
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_well.png"/>
+                        <span class="oe_snippet_thumbnail_title">Google Maps</span>
+                    </div>
+                    <section id="google-map" class="oe_snippet_body">
+                        <div class="container box" style="width: 100%; margin: auto; padding: 0px;">
+                            <div id="map-container" class="col-md-12" style="height: 400px;"/>
+                        </div>
+                    </section>
+                </div><!-- End of Google Maps -->
+
             </xpath>
 
             <!-- Customize Content -->
@@ -156,6 +169,55 @@
                     </div>
                 </div>
                 <!--END OF ROUND HOVER IMAGE BUTTONS-->
+
+                <!--ROUND HOVER ICON BUTTONS-->
+                <div id="round_hover_icon_buttons">
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_big_picture.png"/>
+                        <span class="oe_snippet_thumbnail_title">Round Hover Icon Button</span>
+                    </div>
+                    <div class="oe_snippet_body oe_share">
+                        <div class="container mt128 mb128">
+                            <div class="col-md-3 col-sm-6" style="padding: 15px;">
+                                <div class="round-icon">
+                                    <a href="#">
+                                        <div class="text-center">
+                                            <i class="fa fa-phone fa-5x" style="padding-top: 33%;"/>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6" style="padding: 15px;">
+                                <div class="round-icon">
+                                    <a href="#">
+                                        <div class="text-center">
+                                            <i class="fa fa-mobile fa-5x" style="padding-top: 33%;"/>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6" style="padding: 15px;">
+                                <div class="round-icon">
+                                    <a href="#">
+                                        <div class="text-center">
+                                            <i class="fa fa-envelope fa-5x" style="padding-top: 33%;"/>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6" style="padding: 15px;">
+                                <div class="round-icon">
+                                    <a href="#">
+                                        <div class="text-center">
+                                            <i class="fa fa-home fa-5x" style="padding-top: 33%;"/>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--END OF ROUND HOVER ICON BUTTONS-->
 
                 <!-- Famliy Tree -->
                 <div id="family_tree">
