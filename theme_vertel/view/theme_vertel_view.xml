@@ -105,6 +105,167 @@
                 </section>
             </xpath>
         </template>
+        
+        <!--DEMO SITE II-->
+        <template id="layout_demo_site_II" inherit_id="website.layout" customize_show="True" active="False" name="Layout Demo Site II" priority="99">
+            <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
+                <style>
+                   #myCarousel0{
+                        height: 500px;
+                    }
+
+                    .carousel-inner h2{
+                        color:#fff;
+                        padding-top:3%;
+                    }
+
+                    #description_text{
+                        box-shadow: 0px 0px 5px #333;
+                        height:150px;
+                    }
+
+                    #description_text container{
+                        padding-top:2%;
+                    }
+
+                    #three_columns_photos .col-md-4{
+                        padding: 0px 2px 4px 2px;
+                    }
+
+                    #three_columns_photos img{
+                        margin:auto; 
+                        width:386px; 
+                        height:244px;
+                    }
+
+                    #follow_us_title .col-md-12{
+                        text-shadow: 1px 1px 1px #000;
+                    }
+
+                    #follow_us_parallax{
+                        background-attachment: scroll; 
+                        background-position: 0px 222px; 
+                        height: 216px; 
+                        overflow: hidden;
+                    }
+
+                    #follow_us_container{
+                        height: 152px; 
+                        overflow: hidden;
+                    }
+
+                    #social_icons i{
+                        color:#fff; 
+                        padding: 0px 16px 0px 16px;
+                    }
+
+                    footer{
+                        box-shadow: 0px 0px 5px #333;
+                    }
+                </style>
+            </xpath>
+            <xpath expr="//main/t" position="after">
+                <section>
+                    <div class="carousel slide s_banner mb0" id="myCarousel0">
+                        <ol class="carousel-indicators hidden">
+                            <li class="active" data-slide-to="0" data-target="#myCarousel0"/>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="item oe_custom_bg oe_img_bg active" style="background-image: url(&quot;/website/static/src/img/banner/greenfields.jpg&quot;);">
+                                <div class="container">
+                                    <div class="row content">
+                                        <div class="col-md-6 col-sm-12 text-center pull-right">
+                                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+                                            <p/>
+                                        </div>
+                                        <div class="carousel-img col-md-6 hidden-sm hidden-xs"/></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-control left hidden" data-slide="prev" data-target="#myCarousel0" href="#myCarousel0" style="width: 10%">
+                            <i class="fa fa-chevron-left"/>
+                        </div>
+                        <div class="carousel-control right hidden" data-slide="next" data-target="#myCarousel0" href="#myCarousel0" style="width: 10%">
+                            <i class="fa fa-chevron-right"/>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_big_message mb16 text-center" id="description_text">
+                    <div class="container">
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h3>
+                    </div>
+                </section>
+                <section class="s_three_columns" id="three_columns_photos">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img alt="Odoo - Sample 1 for three columns" class="img img-rounded img-responsive" src="/website/static/src/img/library/ship_sea.jpg"/>
+                            </div>
+                            <div class="col-md-4" style="padding: 0px 2px 4px 2px; ">
+                                <img alt="Odoo - Sample 2 for three columns" class="img img-rounded img-responsive" src="/website/static/src/img/library/flight.jpg"/>
+                            </div>
+                            <div class="col-md-4" style="padding: 0px 2px 4px 2px; ">
+                                <img alt="Odoo - Sample 3 for three columns" class="img img-responsive img-rounded" src="/website/image/ir.attachment/43_9b62b0f/datas"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_title" id="follow_us_title">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1 class="text-center">Don't forget to follow us!</h1>
+                                <h3 class="text-muted text-center">Choose the best way for you to follow us... We are everywhere!</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="parallax s_parallax bg-primary oe_custom_bg oe_img_bg" id="follow_us_parallax" data-scroll-background-offset="0" data-scroll-background-ratio="0.3" style="background-image: url(&quot;/website/image/ir.attachment/46_8df0235/datas&quot;);">
+                    <div>
+                        <div class="oe_structure">
+                            <section class="s_title" id="follow_us_container">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12 mb32 mt32">
+                                            <div class="oe_share s_share text-center" id="social_icons">
+                                                <h3>
+                                                    <a class="oe_share_facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8069%2F%23advanced-view-editor%3Fview%3D290" target="_Blank">
+                                                        <i class="fa fa-facebook-square fa-3x"/>
+                                                    </a>
+                                                    <a class="oe_share_twitter" href="https://twitter.com/intent/tweet?text=Homepage%20%7C%20localhost&amp;url=http%3A%2F%2Flocalhost%3A8069%2F%23advanced-view-editor%3Fview%3D290" target="_Blank">
+                                                        <i class="fa fa-twitter fa-3x"/>
+                                                    </a>
+                                                    <a class="oe_share_linkedin" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Flocalhost%3A8069%2F%23advanced-view-editor%3Fview%3D290&amp;title=Homepage%20%7C%20localhost&amp;" target="_Blank">
+                                                        <i class="fa fa-linkedin fa-3x"/>
+                                                    </a>
+                                                    <a href="https://flickr,com">
+                                                        <i class="fa fa-flickr fa-3x"/>
+                                                    </a>
+                                                    <a href="https://instagram.com">
+                                                        <i class="fa fa-instagram fa-3x"/>
+                                                    </a>
+                                                    <a href="https://youtube.com">
+                                                        <i class="fa fa-youtube fa-3x"/>
+                                                    </a>
+                                                    <a class="oe_share_google" href="https://plus.google.com/share?url=http%3A%2F%2Flocalhost%3A8069%2F%23advanced-view-editor%3Fview%3D290" target="_Blank">
+                                                        <i class="fa fa-google-plus-square fa-3x"/>
+                                                    </a>
+                                                    <a href="/">
+                                                        <i class="fa fa-wechat fa-3x"/>
+                                                    </a>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </section>
+            </xpath>
+        </template>
+
+
 
         <!-- Theme BS-Multipurpose-Ruma -->
         <template id="theme_bs_multipurpose_ruma" inherit_id="website.layout" customize_show="True" active="False" name="Theme BS-Multipurpose-Ruma" priority="99">
@@ -948,6 +1109,159 @@
                     <b style="color:orange">Läs alla...</b>
                 </a>
             </div>
+        </template>
+        
+        <!--THEME MAGP -->
+        <template id="news-block-one" inherit_id="website.layout" customize_show="True" active="False" name="Theme MAGP">
+             <xpath expr="//head" position="inside">
+                <!-- Custom CSS -->
+                <style>
+                    body{
+                        background-color:#C6C7CA ;
+                        background-size: cover;
+                        background-position: 0px 0px;
+                        list-style: none;
+                    }
+                    
+                    #main_body{
+                        margin-left: 2%;
+                        margin-right: 1%;
+                    }
+
+                    #news_box{
+                        box-shadow:8px 8px 5px #888888; 
+                        background: rgba(255, 255, 255, 0.5); 
+                    }
+
+                    #left_menu{
+                        box-shadow:8px 8px 5px #888888; 
+                        background: rgba(255, 255, 255, 0.5);
+                    }
+
+                    #left_navbar &gt;ul&gt;li&gt;a&gt;span{
+                        color: black;
+                        font-size:12px;
+                    }
+
+                    #left_navbar {
+                         padding-left:0px;
+                         padding-right:20px;
+                         margin-left:-15px;
+                    }
+                    
+                    .jumbotron{
+                        margin-top:28%;
+                    }
+                    
+                    #menu_button &gt;button&gt;span{
+                        background:black;
+                    }
+                    #menu_button &gt;button{
+                        border-color: black;
+                    }
+
+                    .navbar.navbar-static-top{
+                        display:none;
+                    } 
+                    
+                    .magp-footer{
+                        background-color: #E3E6EC;
+                        box-shadow: 0px 0px 5px #333;
+                    }
+                    
+                </style>
+            </xpath>
+            <!-- Removes Odoo Top-Menu -->
+            <xpath expr="//ul[@id='top_menu']" position="replace"/>
+            
+            <!-- Adding Back The ul For Odoo Top-Menu -->
+            <xpath expr="//header/div/div/div[2]" position="inside">
+                <ul class="nav navbar-nav navbar-right" id="top_menu"/>
+            </xpath>
+            
+            <!-- The Layout For MAGP Page -->
+            <xpath expr="//main" position="replace">
+                <div class="container col-md-12" id="main_body">
+                    <!-- LEFT SIDE NAVBAR -->
+                    <div class="jumbotron col-md-3 col-sm-3 col-xs-12" id="news_box">
+                        <b class="hidden-xs">Meny</b>
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header page-scroll" id="menu_button">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-top-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"/>
+                                <span class="icon-bar"/>
+                                <span class="icon-bar"/>
+                            </button>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse navbar-top-collapse" id="left_navbar">
+                            <ul class="nav nav-pills nav-stacked" id="top_menu">
+                                <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                                    <t t-call="website.submenu"/>
+                                </t>
+                            </ul>
+                        </div><br/><br/>
+                        <div class="hidden-xs">
+                            <b>Nyheter</b><br/>                                                                       
+                            <font size="0.9">  
+                                <!--List with news-->
+                                <t t-set="news" t-value="request.env['blog.post'].search([('website_published','=',True)],order='write_date desc')"/>
+                                <t t-set="nbr" t-value="0"/>
+                                <t t-foreach="news" t-as="n"> 
+                                    <t t-if="nbr&lt;5">
+                                    <a t-att-href="'/blog/our-news-1/post/%s' % n.id" style="color:black;">
+                                        <t t-raw="n.name"/> 
+                                    </a><br/>
+                                    <t t-esc="n.write_date"/><br/>
+                                    </t>
+                                    <t t-set="nbr" t-value="nbr+1"/>
+                                </t> 
+                            </font>
+                            <br/>
+                            <a t-att-href="'/blog/our-news-1' ">
+                                <b style="color:black">Nyhetsarkiv</b>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-1 col-sm-1"/>
+                        <main class="jumbotron col-md-7 col-sm-7 col-xs-12" id="left_menu">
+                            <t t-raw="0"/>
+                        </main>
+                    <div class="col-md-1"/>
+                </div>
+            </xpath>
+            <!-- define a class to footer -->
+            <xpath expr="//footer" position="attributes">
+                <attribute name="class">magp-footer</attribute>
+            </xpath>
+            <!-- add log in/out in footer -->
+            <xpath expr="//footer" position="inside">
+                <div class="container" id="lsmb-footer">
+                    <div class="pull-right">
+                        <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <b>
+                                    <span t-esc="user_id.name"/>
+                                    <span class="caret"/>
+                                </b>
+                            </a>
+                            <ul class="dropdown-menu js_usermenu" role="menu">
+                                <li><a href="/web" role="menuitem">My Account</a></li>
+                                <li class="divider"/>
+                                <li><a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                    <div class="pull-right">
+                        <li groups="base.group_public">
+                            <a t-attf-href="/web/login">
+                                <b>Sign in</b>
+                            </a>
+                        </li>
+                    </div>
+                </div>
+            </xpath>
         </template>
     </data>
 </openerp>
