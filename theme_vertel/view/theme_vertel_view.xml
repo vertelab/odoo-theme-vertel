@@ -573,7 +573,7 @@
                 </div>
             </xpath>
             <!-- Customize javascript -->
-            <xpath expr="//body" position="after">
+            <xpath expr="//body/script[last()]" position="after">
                 <script>
                     var margin_value = 50;
                 </script>
@@ -731,7 +731,7 @@
                 </div>
             </xpath>
             <!-- Customize javascript -->
-            <xpath expr="//body" position="after">
+            <xpath expr="//body/script[last()]" position="after">
                 <script>
                     var margin_value = 180;
                 </script>
@@ -887,7 +887,7 @@
                 </div>
             </xpath>
             <!-- Customize javascript -->
-            <xpath expr="//body" position="after">
+            <xpath expr="//body/script[last()]" position="after">
                 <script>
                     var margin_value = 180;
                 </script>
@@ -1052,7 +1052,7 @@
                 </div>
             </xpath>
             <!-- Customize javascript -->
-            <xpath expr="//body" position="after">
+            <xpath expr="//body/script[last()]" position="after">
                 <script>
                     var margin_value = 120;
                 </script>
@@ -1116,7 +1116,7 @@
 
         <template id="menu_hover_effect" inherit_id="website.layout" customize_show="True" active="False" name="Menu Hover Effect" priority="99">
             <!-- Customize javascript -->
-            <xpath expr="//body" position="after">
+            <xpath expr="//body/script[last()]" position="after">
                 <script>
                     $("#top_menu > .dropdown").mouseover(function() {
                         $(this).addClass("open");

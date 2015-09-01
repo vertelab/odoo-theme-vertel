@@ -23,6 +23,7 @@
                                         </h2>
                                     </div>
                                     <div class="panel-body">
+                                        <p class="news-block"/>
 <!--
                                         <t t-set="blog" t-value="request.env['blog.blog'].search([('name','=','Our News')])"/>
                                         <t t-set="news" t-value="request.env['blog.post'].search([('website_published','=',True), ('blog_id','=',blog.id)], order='write_date desc')"/>
