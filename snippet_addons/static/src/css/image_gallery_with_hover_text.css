@@ -13,7 +13,7 @@
     background-color: #000;
 }
 
-.hover-image-cover:hover {
+.hover-image:hover .hover-image-cover {
     left: 0%;
     bottom: 0%;
     width: 100%;
@@ -23,11 +23,26 @@
     transition: all 0.4s ease-in-out 0s;
 }
 
+.hover-image:hover h5 {
+    font-size: 2em;
+}
+
+.hover-image:hover h6 {
+    font-size: 1em;
+}
+
 .hover-image-cover a {
+    color: #fff;
+    display: block;
+    text-decoration: none !important;
+}
+
+.hover-image-cover a:hover {
     color: #fff;
 }
 
 .hover-image-cover h5, .hover-image-cover h6{
+    height: 100%;
     margin-top: 2px;
 }
 
