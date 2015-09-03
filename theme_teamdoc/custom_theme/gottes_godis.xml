@@ -1,0 +1,268 @@
+<!-- hem -->
+<t t-name="website.hem">
+    <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty">
+            <section>
+                <div class="container" style="max-width: 854px;">
+                    <div class="row">
+                        <div class="container">
+                            <div class="col-md-6 col-sm-6 col-xs-12" style="padding: 2px;">
+                                <div class="hover">
+                                    <a href="/" style="display: block; width: 100%; height: 100%;">
+                                        <img class="img-responsive" src="/theme_teamdoc/static/src/img/gottes_godis/godis.jpg" style="width:100%; height:266px;"/>
+                                    </a>
+                                    <h3>Lösviktsgodis</h3>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12" style="padding: 2px;">
+                                <div class="hover">
+                                    <a href="/" style="display: block; width: 100%; height: 100%;">
+                                        <img class="img-responsive" src="/theme_teamdoc/static/src/img/gottes_godis/oreo.jpg" style="width:100%; height:266px;"/>
+                                    </a>
+                                    <h3>Choklad</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="col-md-6 col-sm-6 col-xs-12" style="padding: 2px;">
+                                <div class="hover">
+                                    <a href="/" style="display: block; width: 100%; height: 100%;">
+                                        <img class="img-responsive" src="/theme_teamdoc/static/src/img/gottes_godis/fanta.jpg" style="width:100%; height:266px;"/>
+                                    </a>
+                                    <h3>Läsk</h3>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12" style="padding: 2px;">
+                                <div class="hover">
+                                    <a href="/" style="display: block; width: 100%; height: 100%;">
+                                        <img class="img-responsive" src="/theme_teamdoc/static/src/img/gottes_godis/skittles.jpg" style="width:100%; height:266px;"/>
+                                    </a>
+                                    <h3>Godispåsar</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="col-md-4 col-sm-4 col-xs-12" style="padding: 2px;">
+                                <div class="hover">
+                                    <div class="text-center" style="background-color: #E10000; height:266px;">
+                                        <a href="/" style="display: block; width: 100%; height: 100%;">
+                                            <i class="fa fa-phone fa-5x winion-icon-medium" style=""/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12" style="padding: 2px;">
+                                <div class="text-center" style="background-color: #00881A; height:266px; color: #fff;">
+                                    <div style="padding: 20px;">
+                                        <h3><strong>Öppettid</strong></h3>
+                                        <h4>
+                                            Mån-Fre: 9:00 - 17:00<br/>
+                                            Lör-Sön: Stängt
+                                        </h4>
+                                        <i class="fa fa-phone"/> <span t-field="res_company.phone"/><br/>
+                                        <i class="fa fa-envelope"/> <span t-field="res_company.email"/><br/>
+                                        <i class="fa fa-home"/> <span t-field="res_company.street"/><br/>
+                                        <span t-field="res_company.zip"/> <span t-field="res_company.city"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12" style="padding: 2px;">
+                                <div class="hover">
+                                    <div class="text-center" style="background-color: #45619D; height:266px;">
+                                        <a href="/" style="display: block; width: 100%; height: 100%;">
+                                            <i class="fa fa-facebook-square fa-5x winion-icon-medium" style=""/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </t>
+</t>
+
+<!-- theme -->
+<?xml version="1.0"?>
+<data inherit_id="website.layout" customize_show="True" active="False" name="Theme Block Logo II" priority="99">
+    <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
+        <style>
+           .bl2-body {
+                background: #DAFFB8;
+                list-style: none;
+            }
+
+            /* MENU */
+            .bl2-navbar {
+                font-family: 'Ubuntu';
+                font-size: 1.5em;
+                background: none;
+                width: 100%;
+            }
+
+            #bl2-menu-bar &gt; div &gt; ul &gt; li &gt; a {
+                padding-top: 25px;
+                padding-bottom: 25px;
+            }
+
+            #bl2-menu-bar {
+                padding: 0;
+                margin: 0;
+            }
+
+            #bl2-menu-bar &gt; div {
+                width: 1024px;
+                margin: auto;
+            }
+
+            #bl2-menu > .container {
+                padding: 0px;
+                max-width: 850px;
+            }
+
+            #top_menu {
+                max-width: 850px;
+                margin: auto;
+            }
+
+            .bl2-navbar-fixed-top {
+                transition: all 0.5s ease-in 0s;
+                font-family: 'Ubuntu';
+                font-size: 1.5em;
+                z-index: 99;
+                top: 0px;
+                position: fixed;
+                width: 100%;
+                background: #FFE9E9;
+                box-shadow: 0px 0px 20px #333;
+            }
+
+            /* COMPANY LOGO */
+            #logo-box-2 {
+                padding: 0px;
+            }
+
+            #bl2-logo {
+                max-width: 850px;
+                display:block;
+                margin: auto;
+                margin-bottom: 2px;
+            }
+
+            /* MENU TEXT */
+            #bl2-menu-bar &gt; ul &gt; li &gt; a {
+                color: #E00000;
+            }
+
+            /* STYLE WHEN MOUSE HOVER */
+            #bl2-menu-bar &gt; ul &gt; li &gt; a:hover,
+            #bl2-menu-bar &gt; ul &gt; li &gt; a:focus {
+                color: #fff;
+                background-color: #61CA00;
+            }
+
+            /* STYLE WHEN PAGE ACTIVE */
+            #bl2-menu-bar &gt; ul &gt; .active &gt; a {
+                color: #fff;
+                background-color: #61CA00;
+            }
+
+            .navbar-toggle {
+                border-color: #E00000;
+            }
+
+            .navbar-toggle .icon-bar{
+                background-color: #61CA00;
+            }
+
+            /* FOOTER STYLE*/
+            .bl2-footer {
+
+            }
+
+            #footer {
+                display: none;
+            }
+        </style>
+    </xpath>
+
+    <!-- add company logo -->
+    <xpath expr="//body/div[@id='wrapwrap']/header" position="before">
+        <div class="container">
+            <div id="logo-box-2" class="col-md-12 hidden-xs">
+                <img id="bl2-logo" src="/theme_teamdoc/static/src/img/gottes_godis/head.jpg" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
+            </div>
+        </div>
+    </xpath>
+
+    <xpath expr="//a[@class='navbar-brand logo']" position="attributes">
+        <attribute name="class">navbar-brand logo hidden-lg hidden-md hidden-sm</attribute>
+    </xpath>
+
+    <!-- define id and class to menu bar -->
+    <xpath expr="//body/div[@id='wrapwrap']/header/div" position="attributes">
+        <attribute name="id">bl2-menu</attribute>
+        <attribute name="class">bl2-navbar</attribute>
+    </xpath>
+
+    <!-- define class to menu style -->
+    <xpath expr="//header//ul[@id='top_menu']" position="attributes">
+        <attribute name="class">nav nav-justified</attribute>
+    </xpath>
+    <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div[2]" position="attributes">
+        <attribute name="id">bl2-menu-bar</attribute>
+        <attribute name="class">collapse navbar-collapse navbar-top-collapse col-md-12</attribute>
+    </xpath>
+
+    <!-- hide user login / out -->
+    <xpath expr="//header//ul[@id='top_menu']/li[@class='divider']" position="attributes">
+        <attribute name="class">hidden</attribute>
+    </xpath>
+    <xpath expr="//header//ul[@id='top_menu']/li[@class='dropdown']" position="attributes">
+        <attribute name="class">hidden</attribute>
+    </xpath>
+
+    <!-- define a class to body -->
+    <xpath expr="//body" position="attributes">
+        <attribute name="class">bl2-body</attribute>
+    </xpath>
+    <!-- define a class to footer -->
+    <xpath expr="//footer" position="attributes">
+        <attribute name="class">bl2-footer</attribute>
+    </xpath>
+    <!-- add log in/out in footer -->
+    <xpath expr="//footer" position="inside">
+        <div class="container">
+            <div class="pull-right">
+                <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <b>
+                            <span t-esc="user_id.name"/>
+                            <span class="caret"/>
+                        </b>
+                    </a>
+                    <ul class="dropdown-menu js_usermenu" role="menu">
+                        <li><a href="/web" role="menuitem">My Account</a></li>
+                        <li class="divider"/>
+                        <li><a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a></li>
+                    </ul>
+                </li>
+            </div>
+            <div class="pull-right">
+                <li groups="base.group_public">
+                    <a t-attf-href="/web/login">
+                        <b>Sign in</b>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </xpath>
+    <!-- Customize javascript -->
+    <xpath expr="//body/script[last()]" position="after">
+        <script>
+            var margin_value = 315;
+        </script>
+        <script type="text/javascript" src="/theme_vertel/static/src/js/theme_block_logo_II.js"/>
+    </xpath>
+</data>
