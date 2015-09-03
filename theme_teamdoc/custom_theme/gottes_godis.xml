@@ -87,6 +87,7 @@
 <?xml version="1.0"?>
 <data inherit_id="website.layout" customize_show="True" active="False" name="Theme Block Logo II" priority="99">
     <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
+        <link href='https://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'/>
         <style>
            .bl2-body {
                 background: #DAFFB8;
@@ -153,6 +154,7 @@
             /* MENU TEXT */
             #bl2-menu-bar &gt; ul &gt; li &gt; a {
                 color: #E00000;
+                font-family: 'Sigmar One', cursive;
             }
 
             /* STYLE WHEN MOUSE HOVER */
@@ -174,6 +176,10 @@
 
             .navbar-toggle .icon-bar{
                 background-color: #61CA00;
+            }
+
+            .hover h3, .hover h4 {
+                font-family: 'Sigmar One', cursive;
             }
 
             /* FOOTER STYLE*/
