@@ -38,7 +38,6 @@ Teamdoc style theme.
         'big_logo_and_block_menu.xml',
         'theme_responsive_navbar.xml',
         'theme_magp.xml',
-        'magp_backup.xml',
         'countdown_timer.xml',
 ],
     'application': True,
