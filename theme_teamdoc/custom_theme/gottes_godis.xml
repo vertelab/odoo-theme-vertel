@@ -41,6 +41,88 @@
                                 </div>
                             </div>
                         </div>
+                        <!--
+                        <div class="container">
+                            <div class="col-md-12 row" style="margin: auto; width: 100%; padding: 0px;">
+                                <div class="col-md-8 col-sm-8 col-xs-12" style="padding: 2px;">
+                                    <div class="panel" style="border-style: solid; border-color: #E00000; height: 536px; padding: 20px; margin: 0px;">
+                                        <div class="panel-heading text-center" style="padding: 10px 15px 0px 15px;">
+                                            <h4 style="margin: 0">
+                                                <span style="color: #61CA00; font-size: 2em; font-family: 'Sigmar One', cursive;">Nyheter</span>
+                                            </h4>
+                                        </div>
+                                        <div class="panel-body">
+                                            <div>
+                                                <t t-set="blog" t-value="request.env['blog.blog'].search([('name','=','Nyheter')])"/>
+                                                <t t-set="news" t-value="request.env['blog.post'].search([('website_published','=',True), ('blog_id','=',blog.id)], order='write_date desc')"/>
+                                                    <div>
+                                                        <h4 t-esc="title"/>
+                                                        <br/>
+                                                        <t t-set="nbr" t-value="0"/>
+                                                        <t t-foreach="news" t-as="n">
+                                                            <t t-if="nbr&lt;5">
+                                                                <p>
+                                                                    <i class="fa fa-flag fa-2x"/>
+                                                                    <a t-att-href="'/blog/%s/post/%s' % (n.blog_id.id, n.id)">
+                                                                        <b style="color: #000; font-size: 1.5em; padding-left: 10px;"><t t-esc="n.name"/></b>
+                                                                    </a>
+                                                                        <font size="2" style="padding-left: 10px;"><t t-esc="n.write_date"/></font>
+                                                                    <br/>
+                                                                    </p>
+                                                                </t>
+                                                            <t t-set="nbr" t-value="nbr+1"/>
+                                                        </t>
+                                                        <br/>
+                                                        <a t-att-href="'/blog/%s' % blog.id">
+                                                            <b style="color:orange">Läs alla...</b>
+                                                        </a>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-12" style="padding: 0px;">
+                                    <div class="container">
+                                        <div class="text-center" style="background-color: #00881A; height:266px; color: #fff; margin: 2px;">
+                                            <div style="padding: 20px;">
+                                                <h3>
+                                                    <strong>Öppettid</strong>
+                                                </h3>
+                                                <h4>Mån-Fre: 9:00 - 17:00
+                                                    <br/>
+                                                Lör-Sön: Stängt
+                                                </h4>
+                                                <i class="fa fa-phone"/>
+                                                <a href="tel: +4613133656" style="color: #fff;">
+                                                    <span class="oe_editable" t-field="res_company.phone"/>
+                                                </a>
+                                                <br/>
+                                                <i class="fa fa-envelope"/>
+                                                <a href="mailto: info@gottesgodis.se" style="color: #fff;">
+                                                    <span class="oe_editable" t-field="res_company.email"/>
+                                                </a>
+                                                <br/>
+                                                <i class="fa fa-home"/>
+                                                <span class="oe_editable" t-field="res_company.street"/>
+                                                <br/>
+                                                <span class="oe_editable" t-field="res_company.zip"/>
+                                                <span class="oe_editable" t-field="res_company.city"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container">
+                                        <div class="hover">
+                                            <div class="text-center" style="background-color: #45619D; height:266px; margin: 2px;">
+                                                <a href="https://www.facebook.com/GottesGodis?fref=ts" style="display: block; width: 100%; height: 100%;">
+                                                    <i class="fa fa-facebook-square fa-5x winion-icon-medium" style=""/>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        -->
                         <div class="container">
                             <div class="col-md-4 col-sm-4 col-xs-12" style="padding: 2px;">
                                 <div class="hover">
@@ -83,11 +165,12 @@
     </t>
 </t>
 
+
 <!-- theme -->
 <?xml version="1.0"?>
 <data inherit_id="website.layout" customize_show="True" active="False" name="Theme Block Logo II" priority="99">
     <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
-        <link href='https://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'/>
+    <link href='https://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'/>
         <style>
            .bl2-body {
                 background: #DAFFB8;
@@ -117,9 +200,8 @@
                 margin: auto;
             }
 
-            #bl2-menu > .container {
+            #bl2-menu &gt; .container {
                 padding: 0px;
-                max-width: 850px;
             }
 
             #top_menu {
@@ -144,8 +226,14 @@
                 padding: 0px;
             }
 
-            #bl2-logo {
+            #logo-box-2 &gt; a {
+                display:block;
+                margin: auto;
+                margin-bottom: 2px;
                 max-width: 850px;
+            }
+
+            #bl2-logo {
                 display:block;
                 margin: auto;
                 margin-bottom: 2px;
@@ -197,7 +285,9 @@
     <xpath expr="//body/div[@id='wrapwrap']/header" position="before">
         <div class="container">
             <div id="logo-box-2" class="col-md-12 hidden-xs">
+            <a href="/page/hem">
                 <img id="bl2-logo" src="/theme_teamdoc/static/src/img/gottes_godis/head.jpg" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
+            </a>
             </div>
         </div>
     </xpath>
@@ -265,7 +355,7 @@
         </div>
     </xpath>
     <!-- Customize javascript -->
-    <xpath expr="//body/script[last()]" position="after">
+    <xpath expr="//body" position="inside">
         <script>
             var margin_value = 315;
         </script>
