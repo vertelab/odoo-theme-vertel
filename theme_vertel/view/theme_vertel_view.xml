@@ -581,6 +581,188 @@
             </xpath>
         </template>
 
+
+        <!-- Theme Simple-Menu -->
+        <template id="theme_simple_menu" inherit_id="website.layout" customize_show="True" active="False" name="Theme Simple Menu" priority="99">
+            <!-- Customize CSS -->
+            <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
+                <style>
+                   .sm-body {
+                        background: #fff;
+                        list-style: none;
+                   }
+
+                    /* MENU */
+                   .sm-navbar {
+                        font-family: 'Ubuntu';
+                        font-size: 1.5em;
+                        background: none;
+                        width: 100%;
+                   }
+
+                   #sm-menu-bar > div > ul > li > a {
+                        padding-top: 25px;
+                        padding-bottom: 25px;
+                   }
+
+                   #sm-menu-bar > div {
+                        width: 1024px;
+                        margin: auto;
+                   }
+
+                    #sm-menu-bar {
+                        width: 100%;
+                        padding: 5px;
+                        z-index: 1;
+                    }
+
+                   .sm-navbar-fixed-top {
+                        transition: all 0.5s ease-in 0s;
+                        font-family: 'Ubuntu';
+                        font-size: 1.5em;
+                        z-index: 99;
+                        top: 0px;
+                        position: fixed;
+                        width: 100%;
+                        background: #fff;
+                        box-shadow: 0px 0px 20px #333;
+                   }
+
+                    #sm-logo {
+                        height: 64px;
+                        display:block;
+                        margin:auto;
+                    }
+
+                    /* MENU TEXT */
+                    #sm-menu-bar > ul > li > a {
+                        color: #333;
+                    }
+
+                    /* STYLE WHEN MOUSE HOVER */
+                    #sm-menu-bar > ul > li > a:hover,
+                    #sm-menu-bar > ul > li > a:focus {
+                        color: #000;
+                        background: none;
+                        border-bottom: 4px solid #888;
+                    }
+
+                    /* STYLE WHEN PAGE ACTIVE */
+                    #sm-menu-bar > ul > .active > a {
+                        color: #000;
+                        background: none;
+                        border-bottom: 4px solid #444;
+                    }
+
+                    #top_menu li {
+                        padding: 0px 5px 0px 5px
+                    }
+
+                    .navbar-toggle {
+                        border-color: #000;
+                    }
+
+                    .navbar-toggle .icon-bar{
+                        background-color: #000;
+                    }
+
+                    /* FOOTER STYLE*/
+                    .sm-footer {
+
+                    }
+
+                    @media screen and (max-width: 480px) {
+                        #sm-menu-bar &gt; ul &gt; li &gt; a:hover,
+                        #sm-menu-bar &gt; ul &gt; li &gt; a:focus {
+                            border: 0px solid;
+                        }
+
+                        /* STYLE WHEN PAGE ACTIVE */
+                        #sm-menu-bar &gt; ul &gt; .active &gt; a {
+                            border: 0px solid;
+                        }
+                    }
+
+                </style>
+            </xpath>
+
+            <!-- add company logo -->
+            <xpath expr="//ul[@id='top_menu']" position="before">
+                <img id="sm-logo" src="/logo500.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name" class="pull-left hidden-xs"/>
+            </xpath>
+
+            <xpath expr="//a[@class='navbar-brand logo']" position="attributes">
+                <attribute name="class">navbar-brand logo hidden-lg hidden-md hidden-sm</attribute>
+            </xpath>
+
+            <!-- define id and class to menu bar -->
+            <xpath expr="//body/div[@id='wrapwrap']/header/div" position="attributes">
+                <attribute name="id">sm-menu</attribute>
+                <attribute name="class">sm-navbar</attribute>
+            </xpath>
+
+            <!-- define class to menu style -->
+            <xpath expr="//ul[@id='top_menu']" position="attributes">
+                <attribute name="class">nav navbar-nav navbar-right</attribute>
+            </xpath>
+            <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div[2]" position="attributes">
+                <attribute name="id">sm-menu-bar</attribute>
+                <attribute name="class">collapse navbar-collapse navbar-top-collapse col-md-12</attribute>
+            </xpath>
+
+            <!-- hide user login / out -->
+            <xpath expr="//header//ul[@id='top_menu']/li[@class='divider']" position="attributes">
+                <attribute name="class">hidden</attribute>
+            </xpath>
+            <xpath expr="//header//ul[@id='top_menu']/li[@class='dropdown']" position="attributes">
+                <attribute name="class">hidden</attribute>
+            </xpath>
+
+            <!-- define a class to body -->
+            <xpath expr="//body" position="attributes">
+                <attribute name="class">sm-body</attribute>
+            </xpath>
+            <!-- define a class to footer -->
+            <xpath expr="//footer" position="attributes">
+                <attribute name="class">sm-footer</attribute>
+            </xpath>
+            <!-- add log in/out in footer -->
+            <xpath expr="//footer" position="inside">
+                <div class="container">
+                    <div class="pull-right">
+                        <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <b>
+                                    <span t-esc="user_id.name"/>
+                                    <span class="caret"/>
+                                </b>
+                            </a>
+                            <ul class="dropdown-menu js_usermenu" role="menu">
+                                <li><a href="/web" role="menuitem">My Account</a></li>
+                                <li class="divider"/>
+                                <li><a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                    <div class="pull-right">
+                        <li groups="base.group_public">
+                            <a t-attf-href="/web/login">
+                                <b>Sign in</b>
+                            </a>
+                        </li>
+                    </div>
+                </div>
+            </xpath>
+            <!-- Customize javascript -->
+            <xpath expr="//body/script[last()]" position="after">
+                <script>
+                    var margin_value = 100;
+                </script>
+                <script type="text/javascript" src="/theme_vertel/static/src/js/theme_simple_menu.js"/>
+            </xpath>
+        </template>
+
+
         <!-- Theme Middle Logo -->
         <template id="theme_middle_logo" inherit_id="website.layout" customize_show="True" active="False" name="Theme Middle Logo" priority="99">
             <!-- Customize CSS -->
