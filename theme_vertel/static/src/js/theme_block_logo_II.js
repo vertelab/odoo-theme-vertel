@@ -1,5 +1,5 @@
 $(window).scroll(function () {
-    if ($(".navbar").offset().top > margin_value){
+    if ($(window).scrollTop() > margin_value){
         $("#bl2-menu").addClass("bl2-navbar-fixed-top");
         $("#bl2-menu").removeClass("bl2-navbar");
         $("#top_menu").removeClass("nav-justified");

@@ -1,5 +1,5 @@
 $(window).scroll(function () {
-    if ($(".navbar").offset().top > margin_value){
+    if ($(window).scrollTop() > margin_value){
         $("#sm-menu").addClass("sm-navbar-fixed-top");
         $("#sm-menu").removeClass("sm-navbar");
         $(".navbar-header").removeClass("hidden-lg").removeClass("hidden-md").removeClass("hidden-sm");
