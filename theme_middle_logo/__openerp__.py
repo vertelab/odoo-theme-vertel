@@ -20,7 +20,7 @@
 ##############################################################################
 
 {
-    'name': 'Theme Vertel',
+    'name': 'Theme Middle Logo',
     'version': '1.0',
     'category': 'Theme',
     'summary': 'A Theme Style',
@@ -32,7 +32,8 @@ Extra themes made by Haojun.
     'website': 'http://www.vertel.se',
     'depends': ['website', 'snippet_addons'],
     'data': [
-        'view/theme_vertel_view.xml',
+        'view/theme_middle_logo_view.xml',
+        'view/website_overwritten_templates.xml',
 ],
     'application': True,
 }

@@ -141,9 +141,8 @@
 <?xml version="1.0"?>
 <data inherit_id="website.layout" customize_show="True" active="False" name="Theme Block Logo" priority="99">
     <!-- Customize CSS -->
-    <xpath expr="//head" position="after">
+    <xpath expr="//head/t[@name='layout_head']" position="after">
         <link href="/theme_vertel/static/src/css/theme_block_logo.css" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet" type="text/css"/>
 
         <style>
             .bl-body {
@@ -153,8 +152,7 @@
 
             /* MENU */
             .bl-navbar {
-                font-family: 'Cinzel Decorative', cursive;
-                font-size: 0.95em;
+                font-size: 1.2em;
                 background: none;
                 width: 100%;
                 margin-left: auto;
@@ -167,14 +165,33 @@
             }
 
             .bl-navbar-fixed-top {
-                font-family: 'Cinzel Decorative', cursive;
-                font-size: 0.95em;
+                font-size: 1.2em;
                 z-index: 99;
-                margin-top: -240px;
+                top: 0;
                 position: fixed;
                 width: 100%;
                 background: #fff;
                 box-shadow: 0px 0px 20px #B9A55A;
+            }
+
+            #top_menu {
+                max-width: 1140px;
+                margin: auto;
+            }
+
+            #top_menu > .dropdown > .dropdown-menu {
+                margin: 0px;
+                border-radius: 0px;
+                padding: 0px;
+            }
+
+            #top_menu > .dropdown > .dropdown-menu span {
+                font-size: 1.2em;
+            }
+
+            #top_menu > .dropdown > .dropdown-menu > li > a:hover {
+                color: #B9A55A;
+                background-color: #EEE7D0;
             }
 
             /* COMPANY LOGO */
@@ -183,6 +200,7 @@
             }
 
             #bl-logo {
+                max-width: 1140px;
                 width: 100%;
                 display: block;
                 margin: auto;
@@ -230,6 +248,51 @@
             .bl-footer a {
                 color: #B9A55A;
             }
+
+            div#products_grid_before a {
+                background-color: #FFFFFF;
+                color: #776337;
+            }
+
+            div#products_grid_before > ul > li > a {
+                background: linear-gradient(to bottom right, #f5d9a7 , #b09c77);
+            }
+
+            div#products_grid_before li.active > a {
+                font-weight: bold;
+            }
+            .ribbon.btn.btn-danger {
+                font-size: 12px;
+            }
+
+            .oe_product-custom-color-0 section{
+                background-color: #B9A55A;
+            }
+
+            .oe_product-custom-color-2 section{
+                background-color: #E6E6E6;
+            }
+
+            .oe_product-custom-color-1 section{
+                background-color: #000000;
+                color: #ddd;
+            }
+
+            .oe_product-custom-color-0 a.btn.fa-shopping-cart {
+                background-color: #DDC56C;
+            }
+
+            .oe_product-custom-color-1 a.btn.fa-shopping-cart {
+                background-color: #BBBBBB;
+            }
+
+            .oe_product-custom-color-2 a.btn.fa-shopping-cart {
+                background-color: #aaa;
+            }
+
+            .oe_product-custom-color-3 a.btn.fa-shopping-cart {
+                background-color: #C5BFAC;
+            }
         </style>
     </xpath>
 
@@ -260,6 +323,11 @@
     <!-- hide company name -->
     <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div/a" position="attributes">
         <attribute name="class">navbar-brand hidden</attribute>
+    </xpath>
+
+    <!-- show company logo in mobile version -->
+    <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div/button" position="before">
+        <img class="pull-left hidden-lg hidden-md hidden-sm" style="max-height: 50px;" src="/logo.png"/>
     </xpath>
 
     <!-- hide user login / out -->
@@ -306,7 +374,10 @@
         </div>
     </xpath>
     <!-- Customize javascript -->
-    <xpath expr="//body" position="after">
+    <xpath expr="//body" position="inside">
+        <script>
+            var margin_value = 178
+        </script>
         <script type="text/javascript" src="/theme_vertel/static/src/js/theme_block_logo.js"/>
     </xpath>
 </data>

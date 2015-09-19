@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <!-- Theme Middle Logo -->
+        <template id="theme_middle_logo" inherit_id="website.layout" customize_show="True" active="False" name="Theme Middle Logo" priority="99">
+            <!-- Customize CSS -->
+            <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
+                <link href="/theme_middle_logo/static/src/css/theme_middle_logo.css" rel="stylesheet"/>
+                <link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative' rel='stylesheet' type='text/css'/>
+                <style>
+                    .ml-body {
+                        background: #E6E6E6;
+                        list-style: none;
+                    }
+
+                    /* MENU */
+                    .ml-navbar {
+                        font-family: 'Cinzel Decorative', cursive;
+                        z-index: 1;
+                        margin-top: 50px;
+                        background: none;
+                        width: 100%;
+                    }
+
+                    .ml-navbar-fixed-top {
+                        font-family: 'Cinzel Decorative', cursive;
+                        z-index: 99;
+                        top: 0px;
+                        position: fixed;
+                        width: 100%;
+                        background: #fff;
+                    }
+
+                    /* COMPANY LOGO */
+                    #ml-logo {
+                        max-width: 200px;
+                        display:block;
+                        margin:auto;
+                    }
+
+                    /* MENU TEXT */
+                    #ml-menu-bar > div > ul > div > div > li > a {
+                        color: #343434;
+                    }
+
+                    /* STYLE WHEN MOUSE HOVER */
+                    #ml-menu-bar > div > ul > div > div > li > a:hover,
+                    #ml-menu-bar > div > ul > div > div > li > a:focus {
+                        color: #50A7D2;
+                        background-color: #E6E6E6;
+                    }
+
+                    /* STYLE WHEN PAGE ACTIVE */
+                    #ml-menu-bar > div > ul > div > div > .active > a {
+                        color: #50A7D2;
+                        background-color: #E6E6E6;
+                    }
+
+                    /* SIDE MENU */
+                    #ml-menu-bar > div > ul > div .navbar-right,
+                    #ml-menu-bar > div > ul > div .navbar-left {
+                        padding-top: 0;
+                    }
+
+                    #menu-leftside > div > li > a > span,
+                    #menu-rightside > div > li > a > span {
+                        font-size: 120%;
+                    }
+
+                    #ml-menu-bar {
+                        width: 100%;
+                    }
+
+                    #ml-menu-bar > .row {
+                        width: 100%;
+                    }
+
+                    /* FOOTER STYLE*/
+                    .ml-footer {
+
+                    }
+                </style>
+            </xpath>
+            <!-- hide the original menu bar -->
+            <xpath expr="//body/div[@id='wrapwrap']/header/div" position="attributes">
+                <attribute name="class">navbar navbar-default navbar-static-top hidden-lg hidden-md hidden-sm</attribute>
+            </xpath>
+            <!-- add Middle Logo style menu -->
+            <xpath expr="//body/div[@id='wrapwrap']/header" position="inside">
+                <div id="ml-menu" class="ml-navbar hidden-xs">
+                    <div id="ml-menu-bar" class="container">
+                        <t t-set="menu_left" t-value="website.menu_id.child_id[:len(website.menu_id.child_id)/2]"/>
+                        <t t-set="menu_right" t-value="website.menu_id.child_id[len(website.menu_id.child_id)/2:]"/>
+                        <div class="row">
+                            <ul>
+                                <div id="menu-leftside" class="col-md-5">
+                                    <div class="nav navbar-nav navbar-right">
+                                        <t t-foreach="menu_left" t-as="submenu">
+                                            <t t-call="website.submenu"/>
+                                        </t>
+                                    </div>
+                                </div>
+                                <div id="menu-center" class="col-md-2 hidden-xs">
+                                    <img id="ml-logo" src="/logo.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
+                                </div>
+                                <div id="menu-rightside" class="col-md-5">
+                                    <div class="nav navbar-nav navbar-left">
+                                        <t t-foreach="menu_right" t-as="submenu">
+                                            <t t-call="website.submenu"/>
+                                        </t>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+            <!-- define a class to body -->
+            <xpath expr="//body" position="attributes">
+                <attribute name="class">ml-body</attribute>
+            </xpath>
+            <!-- define a class to footer -->
+            <xpath expr="//footer" position="attributes">
+                <attribute name="class">ml-footer</attribute>
+            </xpath>
+            <!-- add log in/out in footer -->
+            <xpath expr="//footer" position="inside">
+                <div class="container">
+                    <div class="pull-right">
+                        <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <b>
+                                    <span t-esc="user_id.name"/>
+                                    <span class="caret"/>
+                                </b>
+                            </a>
+                            <ul class="dropdown-menu js_usermenu" role="menu">
+                                <li><a href="/web" role="menuitem">My Account</a></li>
+                                <li class="divider"/>
+                                <li><a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                    <div class="pull-right">
+                        <li groups="base.group_public">
+                            <a t-attf-href="/web/login">
+                                <b>Sign in</b>
+                            </a>
+                        </li>
+                    </div>
+                </div>
+            </xpath>
+            <!-- Customize javascript -->
+            <xpath expr="//body" position="inside">
+                <script>
+                    var margin_value = 80;
+                </script>
+                <script type="text/javascript" src="/theme_middle_logo/static/src/js/theme_middle_logo.js"/>
+            </xpath>
+        </template>
+
+        <!-- Menu Hover Effect -->
+        <template id="menu_hover_effect" inherit_id="website.layout" customize_show="True" active="False" name="Menu Hover Effect" priority="99">
+            <!-- Customize javascript -->
+            <xpath expr="//body/script[last()]" position="after">
+                <script>
+                    $("#top_menu > .dropdown").mouseover(function() {
+                        $(this).addClass("open");
+                    });
+                    $("#top_menu > .dropdown").mouseout(function() {
+                        $(this).removeClass("open");
+                    });
+                </script>
+            </xpath>
+        </template>
+
+    </data>
+</openerp>

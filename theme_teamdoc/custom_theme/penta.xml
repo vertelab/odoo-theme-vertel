@@ -1,12 +1,16 @@
 <!-- theme -->
 <data inherit_id="website.layout" customize_show="True" active="False" name="Theme Simple Menu" priority="99">
-  <!-- Customize CSS -->
-  <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
-    <style>
+    <!-- Customize CSS -->
+    <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
+        <style>
 
                     .sm-body {
-                        background: #fff;
+                        background: #F3F0E9;
                         list-style: none;
+                    }
+
+                    #website-top-edit {
+                        z-index: 1001;
                     }
 
                     /* MENU */
@@ -27,8 +31,10 @@
                     }
 
                     #sm-menu-bar {
+                        width: 100%;
                         padding: 5px 40px 5px 40px;
                         z-index: 1;
+                        background-color: rgba(255, 255, 255, 0.5)
                     }
 
                    .sm-navbar-fixed-top {
@@ -44,7 +50,6 @@
                    }
 
                     #sm-logo {
-                        max-height: 100px;
                         height: 64px;
                         display:block;
                         margin:auto;
@@ -60,14 +65,14 @@
                     #sm-menu-bar &gt; ul &gt; li &gt; a:focus {
                         color: #000;
                         background: none;
-                        border-bottom: 4px solid #888;
+                        border-bottom: 4px solid #6B8EB2;
                     }
 
                     /* STYLE WHEN PAGE ACTIVE */
                     #sm-menu-bar &gt; ul &gt; .active &gt; a {
                         color: #000;
                         background: none;
-                        border-bottom: 4px solid #444;
+                        border-bottom: 4px solid #0D6499;
                     }
 
                     #top_menu li {
@@ -84,7 +89,31 @@
 
                     /* FOOTER STYLE*/
                     .sm-footer {
+                        background-color: #716F69;
+                        color: #fff;
+                    }
 
+                    .sm-footer a {
+                        color: #F0AD4E
+                    }
+
+                    .round-icon {
+                        background-color: rgba(13, 100, 153, 1);
+                        border-radius: 100px;
+                        width: 200px;
+                        height: 200px;
+                        margin: auto;
+                        overflow: hidden;
+                    }
+
+                    .round-icon:hover {
+                        background-color: rgba(240, 173, 78, 0.4);
+                        transition: all 0.7s ease-out;
+                    }
+
+                    .round-icon i:hover {
+                        color: #0D6499;
+                        transition: all 0.7s ease-out;
                     }
 
                     @media screen and (max-width: 480px) {
@@ -100,81 +129,84 @@
                     }
 
                 </style>
-  </xpath>
-  <!-- add company logo -->
-  <xpath expr="//ul[@id='top_menu']" position="before">
-    <img id="sm-logo" src="/logo500.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name" class="pull-left hidden-xs"/>
-  </xpath>
-  <xpath expr="//a[@class='navbar-brand logo']" position="attributes">
-    <attribute name="class">navbar-brand logo hidden-lg hidden-md hidden-sm</attribute>
-  </xpath>
-  <!-- define id and class to menu bar -->
-  <xpath expr="//body/div[@id='wrapwrap']/header/div" position="attributes">
-    <attribute name="id">sm-menu</attribute>
-    <attribute name="class">sm-navbar</attribute>
-  </xpath>
-  <!-- define class to menu style -->
-  <xpath expr="//ul[@id='top_menu']" position="attributes">
-    <attribute name="class">nav navbar-nav navbar-right</attribute>
-  </xpath>
-  <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div[2]" position="attributes">
-    <attribute name="id">sm-menu-bar</attribute>
-    <attribute name="class">collapse navbar-collapse navbar-top-collapse col-md-12</attribute>
-  </xpath>
-  <!-- hide user login / out -->
-  <xpath expr="//header//ul[@id='top_menu']/li[@class='divider']" position="attributes">
-    <attribute name="class">hidden</attribute>
-  </xpath>
-  <xpath expr="//header//ul[@id='top_menu']/li[@class='dropdown']" position="attributes">
-    <attribute name="class">hidden</attribute>
-  </xpath>
-  <!-- define a class to body -->
-  <xpath expr="//body" position="attributes">
-    <attribute name="class">sm-body</attribute>
-  </xpath>
-  <!-- define a class to footer -->
-  <xpath expr="//footer" position="attributes">
-    <attribute name="class">sm-footer</attribute>
-  </xpath>
-  <!-- add log in/out in footer -->
-  <xpath expr="//footer" position="inside">
-    <div class="container">
-      <div class="pull-right">
-        <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-            <b>
-              <span t-esc="user_id.name"/>
-              <span class="caret"/>
-            </b>
-          </a>
-          <ul class="dropdown-menu js_usermenu" role="menu">
-            <li>
-              <a href="/web" role="menuitem">My Account</a>
-            </li>
-            <li class="divider"/>
-            <li>
-              <a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a>
-            </li>
-          </ul>
-        </li>
-      </div>
-      <div class="pull-right">
-        <li groups="base.group_public">
-          <a t-attf-href="/web/login">
-            <b>Sign in</b>
-          </a>
-        </li>
-      </div>
-    </div>
-  </xpath>
-  <!-- Customize javascript -->
-  <xpath expr="//body/script[last()]" position="after">
-    <script>
+    </xpath>
+    <!-- add company logo -->
+    <xpath expr="//ul[@id='top_menu']" position="before">
+        <a href="/page/hem">
+            <img id="sm-logo" src="/logo500.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name" class="pull-left hidden-xs"/>
+        </a>
+    </xpath>
+    <xpath expr="//a[@class='navbar-brand logo']" position="attributes">
+        <attribute name="class">navbar-brand logo hidden-lg hidden-md hidden-sm</attribute>
+    </xpath>
+    <!-- define id and class to menu bar -->
+    <xpath expr="//body/div[@id='wrapwrap']/header/div" position="attributes">
+        <attribute name="id">sm-menu</attribute>
+        <attribute name="class">sm-navbar</attribute>
+    </xpath>
+    <!-- define class to menu style -->
+    <xpath expr="//ul[@id='top_menu']" position="attributes">
+        <attribute name="class">nav navbar-nav navbar-right</attribute>
+    </xpath>
+    <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div[2]" position="attributes">
+        <attribute name="id">sm-menu-bar</attribute>
+        <attribute name="class">collapse navbar-collapse navbar-top-collapse col-md-12</attribute>
+    </xpath>
+    <!-- hide user login / out -->
+    <xpath expr="//header//ul[@id='top_menu']/li[@class='divider']" position="attributes">
+        <attribute name="class">hidden</attribute>
+    </xpath>
+    <xpath expr="//header//ul[@id='top_menu']/li[@class='dropdown']" position="attributes">
+        <attribute name="class">hidden</attribute>
+    </xpath>
+    <!-- define a class to body -->
+    <xpath expr="//body" position="attributes">
+        <attribute name="class">sm-body</attribute>
+    </xpath>
+    <!-- define a class to footer -->
+    <xpath expr="//footer" position="attributes">
+        <attribute name="class">sm-footer</attribute>
+    </xpath>
+    <!-- add log in/out in footer -->
+    <xpath expr="//footer" position="inside">
+        <div class="container">
+            <div class="pull-right">
+                <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <b>
+                            <span t-esc="user_id.name"/>
+                            <span class="caret"/>
+                        </b>
+                    </a>
+                    <ul class="dropdown-menu js_usermenu" role="menu">
+                        <li>
+                            <a href="/web" role="menuitem">My Account</a>
+                        </li>
+                        <li class="divider"/>
+                        <li>
+                            <a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a>
+                        </li>
+                    </ul>
+                </li>
+            </div>
+            <div class="pull-right">
+                <li groups="base.group_public">
+                    <a t-attf-href="/web/login">
+                        <b>Sign in</b>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </xpath>
+    <!-- Customize javascript -->
+    <xpath expr="//body/script[last()]" position="after">
+        <script>
                     var margin_value = 100;
                 </script>
-    <script type="text/javascript" src="/theme_vertel/static/src/js/theme_simple_menu.js"/>
-  </xpath>
+        <script type="text/javascript" src="/theme_vertel/static/src/js/theme_simple_menu.js"/>
+    </xpath>
 </data>
+
 
 
 <!-- hem -->
@@ -193,7 +225,7 @@
                             <div class="panel" style="height: 360px;">
                                 <div class="panel-heading text-center" style="background-color: #0D6499;">
                                     <h4 style="margin: 0">
-                                        <span style="color:#FFFFFF;">Min sida</span>
+                                        <span style="color:#FFFFFF;">Är du morgondagens konsult? </span>
                                     </h4>
                                 </div>
                                 <div class="panel-body">
@@ -223,11 +255,17 @@
                                         <t t-foreach="news" t-as="n">
                                             <t t-if="nbr&lt;5">
                                                 <a t-att-href="'/blog/%s/post/%s' % (n.blog_id.id, n.id)">
-                                                <b style="color: #0D6499;"><t t-esc="n.name"/></b></a><br/>
-                                                <font size="1"><t t-esc="n.write_date"/></font><br/>
+                                                    <b style="color: #0D6499;">
+                                                        <t t-esc="n.name"/>
+                                                    </b>
+                                                </a>
+                                                <br/>
+                                                <font size="1">
+                                                    <t t-esc="n.write_date"/>
+                                                </font>
+                                                <br/>
                                             </t>
-                                            <t t-set="nbr" t-value="nbr+1"/>
-                                        </t>
+                                            <t t-set="nbr" t-value="nbr+1"/></t>
                                         <br/>
                                         <a t-att-href="'/blog/%s' % blog.id">
                                             <b style="color: #F0AD4E">Läs alla...</b>
@@ -245,7 +283,9 @@
                                 </div>
                                 <div class="panel-body">
                                     <div class="text-center mb64">
-                                        <h3><strong>GÅ MED IDAG</strong></h3>
+                                        <h3>
+                                            <strong>GÅ MED IDAG</strong>
+                                        </h3>
                                         <h4>
                                             Registrera ditt CV redan nu och var med i nordens största konsultnätverk. Genom att samarbeta med oss har du stora möjligheter att få spännande och utvecklande uppdrag inom just ditt specialistområde.
                                         </h4>
@@ -302,8 +342,7 @@
                     </div>
                 </div>
             </section>
+            <div class="oe_structure oe_empty"></div>
         </div>
-        <div id="wrap" class="oe_structure oe_empty"/>
     </t>
 </t>
-

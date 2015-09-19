@@ -20,19 +20,20 @@
 ##############################################################################
 
 {
-    'name': 'Theme Vertel',
+    'name': 'Theme Left Side Menu Bottom',
     'version': '1.0',
     'category': 'Theme',
     'summary': 'A Theme Style',
     'description': """
-Extra themes made by Haojun.
+Extra themes made by Chirstelle.
 ====================
 """,
     'author': 'Vertel AB',
     'website': 'http://www.vertel.se',
     'depends': ['website', 'snippet_addons'],
     'data': [
-        'view/theme_vertel_view.xml',
+        'view/theme_left_side_menu_bottom_view.xml',
+        'view/website_overwritten_templates.xml',
 ],
     'application': True,
 }

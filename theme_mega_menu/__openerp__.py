@@ -20,7 +20,7 @@
 ##############################################################################
 
 {
-    'name': 'Theme Vertel',
+    'name': 'Theme Mega Menu',
     'version': '1.0',
     'category': 'Theme',
     'summary': 'A Theme Style',
@@ -30,9 +30,9 @@ Extra themes made by Haojun.
 """,
     'author': 'Vertel AB',
     'website': 'http://www.vertel.se',
-    'depends': ['website', 'snippet_addons'],
+    'depends': ['website'],
     'data': [
-        'view/theme_vertel_view.xml',
+        'view/theme_mega_menu_view.xml',
 ],
     'application': True,
 }

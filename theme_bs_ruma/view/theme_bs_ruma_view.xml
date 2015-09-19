@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <!-- Theme BS-Multipurpose-Ruma -->
+        <template id="theme_bs_multipurpose_ruma" inherit_id="website.layout" customize_show="True" active="False" name="Theme BS-Multipurpose-Ruma" priority="99">
+            <!-- Customize CSS -->
+            <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
+                <link href="/theme_bs_ruma/static/src/css/theme_bs_ruma.css" rel="stylesheet"/>
+                <style>
+                    .bs-body {
+                        font-family: 'Open Sans', sans-serif;
+                        list-style: none;
+                    }
+
+                    /* MENU */
+                    #bs-menu {
+                        z-index: 1;
+                        margin-top: 0px;
+                        background: #000;
+                    }
+
+                    /* COMPANY LOGO */
+                    #bs-menu > div > div > a {
+                        color: #FFF;
+                    }
+
+                    #bs-logo {
+                        max-width: 100px;
+                    }
+
+                    /* MENU TEXT */
+                    #bs-menu > div > div > ul > li > a {
+                        color: #FFF;
+                    }
+
+                    /* STYLE WHEN MOUSE HOVER */
+                    #bs-menu > div > div > ul > li > a:hover,
+                    #bs-menu > div > div > ul > li > a:focus {
+                        color: #000;
+                        background-color: #fff;
+                    }
+
+                    /* STYLE WHEN PAGE ACTIVE */
+                    #bs-menu > div > div > ul > .active > a {
+                        color: #000;
+                        background-color: #fff;
+                    }
+
+                    /* FOOTER STYLE*/
+                    .bs-footer {
+                        background: #000;
+                        color: #fff;
+                    }
+                </style>
+            </xpath>
+
+            <!-- add company logo -->
+            <xpath expr="//header//ul[@id='top_menu']" position="before">
+                <img id="bs-logo" src="/logo.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
+            </xpath>
+
+            <!-- define id and class to menu bar -->
+            <xpath expr="//body/div[@id='wrapwrap']/header/div" position="attributes">
+                <attribute name="id">bs-menu</attribute>
+                <attribute name="class">navbar navbar-inverse navbar-fixed-top</attribute>
+            </xpath>
+
+            <!-- define class to menu style -->
+            <xpath expr="//header//ul[@id='top_menu']" position="attributes">
+                <attribute name="class">nav navbar-nav navbar-right</attribute>
+            </xpath>
+
+            <!-- hide company name -->
+            <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div/a" position="attributes">
+                <attribute name="class">navbar-brand hidden-lg hidden-md hidden-sm</attribute>
+            </xpath>
+
+            <!-- show company logo in mobile version -->
+            <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div/button" position="before">
+                <img class="pull-left hidden-lg hidden-md hidden-sm" style="max-height: 50px;" src="/logo.png"/>
+            </xpath>
+
+            <!-- hide user login / out -->
+            <xpath expr="//header//ul[@id='top_menu']/li[@class='divider']" position="attributes">
+                <attribute name="class">hidden</attribute>
+            </xpath>
+            <xpath expr="//header//ul[@id='top_menu']/li[@class='dropdown']" position="attributes">
+                <attribute name="class">hidden</attribute>
+            </xpath>
+
+            <!-- define a class to body -->
+            <xpath expr="//body" position="attributes">
+                <attribute name="class">bs-body</attribute>
+            </xpath>
+            <!-- define a class to footer -->
+            <xpath expr="//footer" position="attributes">
+                <attribute name="class">bs-footer</attribute>
+            </xpath>
+            <!-- add log in/out in footer -->
+            <xpath expr="//footer" position="inside">
+                <div class="container">
+                    <div class="pull-right">
+                        <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <b>
+                                    <span t-esc="user_id.name"/>
+                                    <span class="caret"/>
+                                </b>
+                            </a>
+                            <ul class="dropdown-menu js_usermenu" role="menu">
+                                <li><a href="/web" role="menuitem">My Account</a></li>
+                                <li class="divider"/>
+                                <li><a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                    <div class="pull-right">
+                        <li groups="base.group_public">
+                            <a t-attf-href="/web/login">
+                                <b>Sign in</b>
+                            </a>
+                        </li>
+                    </div>
+                </div>
+            </xpath>
+            <!-- Customize javascript -->
+            <xpath expr="//body" position="inside">
+                <script>
+                    var margin_value = 50;
+                </script>
+                <script type="text/javascript" src="/theme_bs_ruma/static/src/js/theme_bs_ruma.js"/>
+            </xpath>
+        </template>
+
+        <!-- Menu Hover Effect -->
+        <template id="menu_hover_effect" inherit_id="website.layout" customize_show="True" active="False" name="Menu Hover Effect" priority="99">
+            <!-- Customize javascript -->
+            <xpath expr="//body/script[last()]" position="after">
+                <script>
+                    $("#top_menu > .dropdown").mouseover(function() {
+                        $(this).addClass("open");
+                    });
+                    $("#top_menu > .dropdown").mouseout(function() {
+                        $(this).removeClass("open");
+                    });
+                </script>
+            </xpath>
+        </template>
+
+    </data>
+</openerp>
