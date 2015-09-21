@@ -170,8 +170,9 @@
                 top: 0;
                 position: fixed;
                 width: 100%;
-                background: #fff;
+                background: #EEE7D0;
                 box-shadow: 0px 0px 20px #B9A55A;
+                transition: all 0.3s ease-out;
             }
 
             #top_menu {
@@ -189,10 +190,14 @@
                 font-size: 1.2em;
             }
 
-            #top_menu > .dropdown > .dropdown-menu > li > a:hover {
+            #top_menu > .dropdown > .dropdown-menu > li > a:hover,
+            #top_menu > .dropdown > .dropdown-menu > .active > a,
+            #top_menu > .dropdown > .dropdown-menu > .active > a:focus,
+            #top_menu > .dropdown >.dropdown-menu > .active > a:hover {
                 color: #B9A55A;
                 background-color: #EEE7D0;
             }
+
 
             /* COMPANY LOGO */
             #logo-box {
@@ -243,10 +248,37 @@
             /* FOOTER STYLE*/
             .bl-footer {
                 background-color: #EEE7D0;
+                box-shadow: 0px 0px 20px #B9A55A;
             }
 
             .bl-footer a {
                 color: #B9A55A;
+            }
+
+            .round-icon {
+                background-color: rgba(198, 159, 86, 1);
+                border-radius: 100px;
+                width: 200px;
+                height: 200px;
+                margin: auto;
+                overflow: hidden;
+            }
+
+            .round-icon i {
+                padding-top: 33%;
+                width:200px;
+                height: 200px;
+                color: #fff;
+            }
+
+            .round-icon:hover {
+                background-color: rgba(238, 231, 208, 0.4);
+                transition: all 0.7s ease-out;
+            }
+
+            .round-icon i:hover {
+                color: #BD9F56;
+                transition: all 0.7s ease-out;
             }
 
             div#products_grid_before a {
@@ -381,3 +413,4 @@
         <script type="text/javascript" src="/theme_vertel/static/src/js/theme_block_logo.js"/>
     </xpath>
 </data>
+
