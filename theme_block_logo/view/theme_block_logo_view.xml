@@ -157,6 +157,12 @@
                 <script type="text/javascript" src="/theme_block_logo/static/src/js/theme_block_logo.js"/>
             </xpath>
         </template>
+        
+        <template id="bl-login" inherit_id="web.login" name="Simple Menu Login">
+            <xpath expr="//form" position="attributes">
+                <attribute name="style">margin-top: 100px;</attribute>
+            </xpath>
+        </template>
 
         <!-- Theme Block Logo II-->
         <template id="theme_block_logo_II" inherit_id="website.layout" customize_show="True" active="False" name="Theme Block Logo II" priority="99">

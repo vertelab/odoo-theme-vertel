@@ -173,12 +173,21 @@
                     </div>
                 </div>
             </xpath>
+
+            
+            
             <!-- Customize javascript -->
             <xpath expr="//body" position="inside">
                 <script>
                     var margin_value = 100;
                 </script>
                 <script type="text/javascript" src="/theme_simple_menu/static/src/js/theme_simple_menu.js"/>
+            </xpath>
+        </template>
+        
+        <template id="sm-login" inherit_id="web.login" name="Simple Menu Login">
+            <xpath expr="//form" position="attributes">
+                <attribute name="style">margin-top: 100px;</attribute>
             </xpath>
         </template>
 

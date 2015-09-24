@@ -10,6 +10,7 @@
                 <script type="text/javascript">swedish_clock();</script>
                 <!--<script type="text/javascript" src="/snippet_addons/static/src/js/image_gallery_with_hover_text.js"/>-->
                 <script type="text/javascript" src="/snippet_addons/static/src/js/news_block.js"/>
+                <script type="text/javascript" src="/snippet_addons/static/src/js/fade_slider.js"/>
                 <script src="http://maps.google.com/maps/api/js?sensor=false"/>
                 <script>
                     var myLocation = new google.maps.LatLng(58.4105659,15.6314626,20.25);
@@ -42,6 +43,7 @@
                 <link href="/snippet_addons/static/src/css/family_tree.css" rel="stylesheet"/>
                 <link href="/snippet_addons/static/src/css/winion.css" rel="stylesheet"/>
                 <link href="/snippet_addons/static/src/css/round_hover_button.css" rel="stylesheet"/>
+                <link href="/snippet_addons/static/src/css/fade_slider.css" rel="stylesheet"/>
             </xpath>
         </template>
 

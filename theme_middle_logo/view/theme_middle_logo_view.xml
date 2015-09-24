@@ -159,6 +159,12 @@
                 <script type="text/javascript" src="/theme_middle_logo/static/src/js/theme_middle_logo.js"/>
             </xpath>
         </template>
+        
+        <template id="ml-login" inherit_id="web.login" name="Simple Menu Login">
+            <xpath expr="//form" position="attributes">
+                <attribute name="style">margin-top: 100px;</attribute>
+            </xpath>
+        </template>
 
         <!-- Menu Hover Effect -->
         <template id="menu_hover_effect" inherit_id="website.layout" customize_show="True" active="False" name="Menu Hover Effect" priority="99">
