@@ -574,6 +574,7 @@
                 </div>
                 <!--END OF WINION SNIPPET-->
 
+                <!-- IMAGE GALLERY WITH HOVER TEXT -->
                 <div id="image_gallery_with_hover_text">
                     <div class="oe_snippet_thumbnail">
                         <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_image_gallery.png"/>
@@ -582,7 +583,7 @@
                     <section class="oe_snippet_body">
                         <div class="container">
                             <div class="row">
-                                <div class="row">
+                                <div class="row" style="width: 100%; margin: auto;">
                                     <div class="col-md-6 col-sm-6 col-xs-12" style="padding-left: 0; padding-right: 0;">
                                         <div class="text-center hover-image">
                                             <img src="/website/static/src/img/desert.jpg" alt="" class="img-responsive"/>

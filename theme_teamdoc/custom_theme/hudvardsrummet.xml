@@ -1,153 +1,15 @@
 <!-- hem -->
-<t t-name="website.hem">
-    <t t-call="website.layout">
-        <div id="wrap" class="oe_structure oe_empty">
-            <section>
-                <div class="container mb16">
-                    <div class="block col-md-4">
-                        <a href="/page/nyhetsbrev">
-                            <div class="block col-md-12 col-sm-12 hover hvr-float">
-
-                                    <div class="text-center" style="background-color: #B9A55A; height: 86px;">
-                                        <br/>
-                                        <font style="color: #fff; font-family: 'Cinzel Decorative', cursive;" size="4;">
-                                            <strong>Nyheter</strong>
-                                            <br/>
-                                            <i class="fa fa-caret-down"/>
-                                        </font>
-                                    </div>
-                                    <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/images_4ndrad_small.jpg" style="width: 100%"/>
-                            </div>
-                        </a>
-                        <div class="block col-md-12 col-sm-12 hover hvr-float">
-                            <div class="text-center" style="background-color: #EEE7D0; height: 87px;">
-                                <br/>
-                                <a href="/page/manadens-behandling">
-                                    <font style="color: #000; font-family: 'Cinzel Decorative', cursive;" size="4">
-                                        <strong>Månadens behandling</strong>
-                                        <br/>
-                                        <i class="fa fa-caret-down"/>
-                                    </font>
-                                </a>
-                            </div>
-                            <a href="/page/manadens-behandling">
-                                <img class="img-responsive" src="/website/image/ir.attachment/64_695220a/datas" style="width: 100%"/>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="block col-md-4">
-                        <div class="block col-md-12 col-sm-12 hover hvr-float">
-                            <a href="/page/manadens-behandling">
-                                <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/behandlingar.jpg" style="width: 100%"/>
-                            </a>
-                            <div class="text-center" style="background-color: #000; height: 74px;">
-                                <br/>
-                                <a href="/page/behandlingar">
-                                    <font style="color: #fff; font-family: 'Cinzel Decorative', cursive;" size="4">
-                                        <i class="fa fa-caret-up"/>
-                                        <strong>Behandlingar</strong>
-                                    </font>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="block col-md-4">
-                        <div class="block col-md-12 col-sm-12 hover hvr-float">
-                            <a href="/shop">
-                                <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/image-teoxane.jpg" style="width: 100%"/>
-                            </a>
-                            <div class="text-center" style="background-color: #EEE7D0; height: 63px;">
-                                <br/>
-                                <a href="/">
-                                    <font style="color: #000; font-family: 'Cinzel Decorative', cursive;" size="4">
-                                        <i class="fa fa-caret-up"/>
-                                        <strong>Webbutik</strong>
-                                    </font>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="block col-md-12 col-sm-12 hover hvr-float">
-                            <a href="/">
-                                <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/personal.png" style="width: 100%"/>
-                            </a>
-                            <div class="text-center" style="background-color: #B9A55A; height: 63px;">
-                                <br/>
-                                <a href="/page/om-oss">
-                                    <font style="color: #fff; font-family: 'Cinzel Decorative', cursive;" size="4">
-                                        <i class="fa fa-caret-up"/>
-                                        <strong>Om oss</strong>
-                                    </font>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="block col-md-12 mt16">
-                        <div class="col-md-12 col-xs-12 text-center" style="background-color: #E6E6E6; color: #000; height: 70px;">
-                            <br/>
-                            <font style="color: #000; font-family: 'Cinzel Decorative', cursive;" size="4">
-                                <i class="fa fa-caret-down"/>
-                                <strong>Produkter</strong>
-                            </font>
-                        </div>
-                        <div class="col-md-12 row" style="display: block; margin: auto;">
-                            <div class="block col-md-4 col-xs-12 hover mt32">
-                                <a href="/">
-                                    <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/clearstart.png" style="width: 100%;"/>
-                                </a>
-                            </div>
-                            <div class="block col-md-4 col-xs-12 hover mt32">
-                                <a href="/">
-                                    <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/kahina.jpg" style="width: 100%;"/>
-                                </a>
-                            </div>
-                            <div class="block col-md-4 col-xs-12 hover mt32">
-                                <a href="/">
-                                    <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/Teosyal.jpg" style="width: 100%;"/>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-12 row" style="display: block; margin: auto;">
-                            <div class="block col-md-4 col-xs-12 hover">
-                                <a href="/">
-                                    <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/dermalogica.jpg" style="width: 100%;"/>
-                                </a>
-                            </div>
-                            <div class="block col-md-4 col-xs-12 hover">
-                                <a href="/">
-                                    <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/jane-iredale.jpg" style="width: 100%;"/>
-                                </a>
-                            </div>
-                            <div class="block col-md-4 col-xs-12 hover">
-                                <a href="/">
-                                    <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/dermacuetic.jpg" style="width: 100%;"/>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12 col-xs-12 mt64 mb32">
-                        <div class="col-md-5"/>
-                        <div class="col-md-2">
-                            <img src="/theme_teamdoc/static/src/img/hudvardsrummet/sidfot.png" style="width: 100%;"/>
-                        </div>
-                        <div class="col-md-5"/></div>
-                </div>
-            </section>
-        </div>
-    </t>
-</t>
-
-
-<!-- theme overwrite -->
 <?xml version="1.0"?>
 <data inherit_id="website.layout" customize_show="True" active="False" name="Theme Block Logo" priority="99">
     <!-- Customize CSS -->
     <xpath expr="//head/t[@name='layout_head']" position="after">
-        <link href="/theme_vertel/static/src/css/theme_block_logo.css" rel="stylesheet"/>
+        <link href="/theme_block_logo/static/src/css/theme_block_logo.css" rel="stylesheet"/>
 
         <style>
             .bl-body {
                 background: #fff;
                 list-style: none;
+                font-family: ''New Time Roman';
             }
 
             /* MENU */
@@ -170,7 +32,7 @@
                 top: 0;
                 position: fixed;
                 width: 100%;
-                background: #EEE7D0;
+                background: #EDE7D3;
                 box-shadow: 0px 0px 20px #B9A55A;
                 transition: all 0.3s ease-out;
             }
@@ -195,7 +57,7 @@
             #top_menu > .dropdown > .dropdown-menu > .active > a:focus,
             #top_menu > .dropdown >.dropdown-menu > .active > a:hover {
                 color: #B9A55A;
-                background-color: #EEE7D0;
+                background-color: #EDE7D3;
             }
 
 
@@ -222,13 +84,13 @@
             #bl-menu-bar > ul > li > a:hover,
             #bl-menu-bar > ul > li > a:focus {
                 color: #B9A55A;
-                background-color: #EEE7D0;
+                background-color: #EDE7D3;
             }
 
             /* STYLE WHEN PAGE ACTIVE */
             #bl-menu-bar > div > ul > .active > a {
                 color: #B9A55A;
-                background-color: #EEE7D0;
+                background-color: #EDE7D3;
             }
 
             #bl-menu-bar {
@@ -247,7 +109,7 @@
 
             /* FOOTER STYLE*/
             .bl-footer {
-                background-color: #EEE7D0;
+                background-color: #EDE7D3;
                 box-shadow: 0px 0px 20px #B9A55A;
             }
 
@@ -256,28 +118,32 @@
             }
 
             .round-icon {
-                background-color: rgba(198, 159, 86, 1);
+                border-color: rgba(198, 159, 86, 0);
+                background-color: transparent;
                 border-radius: 100px;
                 width: 200px;
                 height: 200px;
                 margin: auto;
                 overflow: hidden;
+                border-style: solid;
+                border-width: 1px;
             }
 
             .round-icon i {
                 padding-top: 33%;
-                width:200px;
+                width: 200px;
                 height: 200px;
-                color: #fff;
+                color: #C69F56;
             }
 
             .round-icon:hover {
-                background-color: rgba(238, 231, 208, 0.4);
+                border-color: rgba(132, 86, 0, 1);
+                background-color: transparent;
                 transition: all 0.7s ease-out;
             }
 
             .round-icon i:hover {
-                color: #BD9F56;
+                color: #845600;
                 transition: all 0.7s ease-out;
             }
 
@@ -287,43 +153,63 @@
             }
 
             div#products_grid_before > ul > li > a {
-                background: linear-gradient(to bottom right, #f5d9a7 , #b09c77);
+                /* background: linear-gradient(to bottom right, #f5d9a7 , #b09c77); */
+                margin: 5px 0px 5px 0px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: #C69F56;
             }
 
             div#products_grid_before li.active > a {
-                font-weight: bold;
+                /* font-weight: bold; */
+                background-color: #C69F56;
+                color: #fff;
             }
             .ribbon.btn.btn-danger {
                 font-size: 12px;
             }
 
             .oe_product-custom-color-0 section{
-                background-color: #B9A55A;
+                background-color: #EFE8D7;
+                color: #000;
+            }
+
+            .oe_product-custom-color-0 section a {
+                color: #000;
             }
 
             .oe_product-custom-color-2 section{
-                background-color: #E6E6E6;
+                background-color: #EFE8D7;
+                color: #000;
+            }
+
+            .oe_product-custom-color-2 section a{
+                color: #000;
             }
 
             .oe_product-custom-color-1 section{
-                background-color: #000000;
-                color: #ddd;
+                background-color: #EFE8D7;
+                color: #000;
+            }
+
+            .oe_product-custom-color-1 section a{
+                color: #000;
             }
 
             .oe_product-custom-color-0 a.btn.fa-shopping-cart {
-                background-color: #DDC56C;
+                background-color: #fff;
             }
 
             .oe_product-custom-color-1 a.btn.fa-shopping-cart {
-                background-color: #BBBBBB;
+                background-color: #fff;
             }
 
             .oe_product-custom-color-2 a.btn.fa-shopping-cart {
-                background-color: #aaa;
+                background-color: #fff;
             }
 
             .oe_product-custom-color-3 a.btn.fa-shopping-cart {
-                background-color: #C5BFAC;
+                background-color: #fff;
             }
         </style>
     </xpath>
@@ -410,7 +296,409 @@
         <script>
             var margin_value = 178
         </script>
-        <script type="text/javascript" src="/theme_vertel/static/src/js/theme_block_logo.js"/>
+        <script type="text/javascript" src="/theme_block_logo/static/src/js/theme_block_logo.js"/>
     </xpath>
 </data>
 
+
+<!-- theme overwrite -->
+<?xml version="1.0"?>
+<data inherit_id="website.layout" customize_show="True" active="False" name="Theme Block Logo" priority="99">
+    <!-- Customize CSS -->
+    <xpath expr="//head/t[@name='layout_head']" position="after">
+        <link href="/theme_block_logo/static/src/css/theme_block_logo.css" rel="stylesheet"/>
+
+        <style>
+            .bl-body {
+                background: #fff;
+                list-style: none;
+                font-family: 'New Time Roman';
+            }
+
+            /* MENU */
+            .bl-navbar {
+                font-size: 1.2em;
+                background: none;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #bl-menu-bar > ul > li > a {
+                padding-top: 25px;
+                padding-bottom: 25px;
+            }
+
+            .bl-navbar-fixed-top {
+                font-size: 1.2em;
+                z-index: 99;
+                top: 0;
+                position: fixed;
+                width: 100%;
+                background: #EDE7D3;
+                box-shadow: 0px 0px 20px #B9A55A;
+                transition: all 0.3s ease-out;
+            }
+
+            #top_menu {
+                max-width: 1140px;
+                margin: auto;
+            }
+
+            #top_menu > .dropdown > .dropdown-menu {
+                margin: 0px;
+                border-radius: 0px;
+                padding: 0px;
+            }
+
+            #top_menu > .dropdown > .dropdown-menu span {
+                font-size: 1.2em;
+            }
+
+            #top_menu > .dropdown > .dropdown-menu > li > a:hover,
+            #top_menu > .dropdown > .dropdown-menu > .active > a,
+            #top_menu > .dropdown > .dropdown-menu > .active > a:focus,
+            #top_menu > .dropdown >.dropdown-menu > .active > a:hover {
+                color: #B9A55A;
+                background-color: #EDE7D3;
+            }
+
+
+            /* COMPANY LOGO */
+            #logo-box {
+                padding: 0px;
+            }
+
+            #bl-logo {
+                max-width: 1140px;
+                width: 100%;
+                display: block;
+                margin: auto;
+            }
+
+            /* MENU TEXT */
+            #bl-menu-bar > ul > li > a{
+                color: #343434;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+
+            /* STYLE WHEN MOUSE HOVER */
+            #bl-menu-bar > ul > li > a:hover,
+            #bl-menu-bar > ul > li > a:focus {
+                color: #B9A55A;
+                background-color: #EDE7D3;
+            }
+
+            /* STYLE WHEN PAGE ACTIVE */
+            #bl-menu-bar > div > ul > .active > a {
+                color: #B9A55A;
+                background-color: #EDE7D3;
+            }
+
+            #bl-menu-bar {
+                width: 100%;
+                padding: 0px;
+            }
+
+            #bl-menu-bar > .row {
+                width: 100%;
+            }
+
+            .block {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+
+            /* FOOTER STYLE*/
+            .bl-footer {
+                background-color: #EDE7D3;
+                box-shadow: 0px 0px 20px #B9A55A;
+            }
+
+            .bl-footer a {
+                color: #B9A55A;
+            }
+
+            .round-icon {
+                border-color: rgba(217, 200, 157, 1);
+                background-color: #fff;
+                border-radius: 100px;
+                width: 200px;
+                height: 200px;
+                margin: auto;
+                overflow: hidden;
+                border-style: solid;
+                border-width: 2px;
+            }
+
+            .round-icon i {
+                padding-top: 33%;
+                width: 200px;
+                height: 200px;
+                color: #D9C89D;
+            }
+
+            .round-icon:hover {
+                border-color: rgba(198, 159, 86, 1);
+                background-color: #fff;
+                transition: all 0.3s ease-out;
+            }
+
+            .round-icon i:hover {
+                color: #AD9A54;
+                transition: all 0.7s ease-out;
+            }
+
+            div#products_grid_before a {
+                background-color: #FFFFFF;
+                color: #776337;
+            }
+
+            div#products_grid_before > ul > li > a {
+                background: linear-gradient(to bottom right, #f5d9a7 , #b09c77);
+            }
+
+            div#products_grid_before li.active > a {
+                font-weight: bold;
+            }
+            .ribbon.btn.btn-danger {
+                font-size: 12px;
+            }
+
+            .oe_product-custom-color-0 section{
+                background-color: #B9A55A;
+                color: #000;
+            }
+
+            .oe_product-custom-color-0 section a {
+                color: #fff;
+            }
+
+            .oe_product-custom-color-2 section{
+                background-color: #E6E6E6;
+                color: #000;
+            }
+
+            .oe_product-custom-color-2 section a{
+                color: #B9A55A;
+            }
+
+            .oe_product-custom-color-1 section{
+                background-color: #000000;
+                color: #fff;
+            }
+
+            .oe_product-custom-color-1 section a{
+                color: #B9A55A;
+            }
+
+            .oe_product-custom-color-0 a.btn.fa-shopping-cart {
+                background-color: #000;
+            }
+
+            .oe_product-custom-color-1 a.btn.fa-shopping-cart {
+                background-color: #fff;
+            }
+
+            .oe_product-custom-color-2 a.btn.fa-shopping-cart {
+                background-color: #fff;
+            }
+
+            .oe_product-custom-color-3 a.btn.fa-shopping-cart {
+                background-color: #fff;
+            }
+        </style>
+    </xpath>
+
+    <!-- add company logo -->
+    <xpath expr="//body/div[@id='wrapwrap']/header" position="before">
+        <div class="container">
+            <div id="logo-box" class="col-md-12 hidden-xs">
+                <img id="bl-logo" src="/theme_teamdoc/static/src/img/hudvardsrummet/header-logo.jpg" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
+            </div>
+        </div>
+    </xpath>
+
+    <!-- define id and class to menu bar -->
+    <xpath expr="//body/div[@id='wrapwrap']/header/div" position="attributes">
+        <attribute name="id">bl-menu</attribute>
+        <attribute name="class">bl-navbar</attribute>
+    </xpath>
+
+    <!-- define class to menu style -->
+    <xpath expr="//header//ul[@id='top_menu']" position="attributes">
+        <attribute name="class">nav nav-justified</attribute>
+    </xpath>
+    <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div[2]" position="attributes">
+        <attribute name="id">bl-menu-bar</attribute>
+        <attribute name="class">collapse navbar-collapse navbar-top-collapse col-md-12</attribute>
+    </xpath>
+
+    <!-- hide company name -->
+    <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div/a" position="attributes">
+        <attribute name="class">navbar-brand hidden</attribute>
+    </xpath>
+
+    <!-- show company logo in mobile version -->
+    <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div/button" position="before">
+        <img class="pull-left hidden-lg hidden-md hidden-sm" style="max-height: 50px;" src="/logo.png"/>
+    </xpath>
+
+    <!-- hide user login / out -->
+    <xpath expr="//header//ul[@id='top_menu']/li[@class='divider']" position="attributes">
+        <attribute name="class">hidden</attribute>
+    </xpath>
+    <xpath expr="//header//ul[@id='top_menu']/li[@class='dropdown']" position="attributes">
+        <attribute name="class">hidden</attribute>
+    </xpath>
+
+    <!-- define a class to body -->
+    <xpath expr="//body" position="attributes">
+        <attribute name="class">bl-body</attribute>
+    </xpath>
+    <!-- define a class to footer -->
+    <xpath expr="//footer" position="attributes">
+        <attribute name="class">bl-footer</attribute>
+    </xpath>
+    <!-- add log in/out in footer -->
+    <xpath expr="//footer" position="inside">
+        <div class="container">
+            <div class="pull-right">
+                <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <b>
+                            <span t-esc="user_id.name"/>
+                            <span class="caret"/>
+                        </b>
+                    </a>
+                    <ul class="dropdown-menu js_usermenu" role="menu">
+                        <li><a href="/web" role="menuitem">My Account</a></li>
+                        <li class="divider"/>
+                        <li><a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a></li>
+                    </ul>
+                </li>
+            </div>
+            <div class="pull-right">
+                <li groups="base.group_public">
+                    <a t-attf-href="/web/login">
+                        <b>Sign in</b>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </xpath>
+    <!-- Customize javascript -->
+    <xpath expr="//body" position="inside">
+        <script>
+            var margin_value = 178
+        </script>
+        <script type="text/javascript" src="/theme_block_logo/static/src/js/theme_block_logo.js"/>
+    </xpath>
+</data>
+
+
+
+<!-- footer -->
+<data inherit_id="website.footer_custom" customize_show="True" name="Automatic Footer">
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div class="container hidden-print">
+            <div class="row">
+                <div class="col-md-3 hidden">
+                    <h4>Vår produkter</h4>
+                    <ul class="list-unstyled" id="products">
+                        <li>
+                            <a href="/shop/category/clear-start-7">Clear Start</a>
+                        </li>
+                        <li>
+                            <a href="/shop/category/dermalogica-1">Dermalogica</a>
+                        </li>
+                        <li>
+                            <a href="/shop/category/jane-iredale-5">Jane Iredale</a>
+                        </li>
+                        <li>
+                            <a href="/shop/category/dermaceutic-2">Dermaceutic</a>
+                        </li>
+                        <li>
+                            <a href="/shop/category/teoxane-6">Teoxane</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-12" id="info">
+                    <a href="/page/website.contactus">Kontakta oss</a>
+                    <i class="fa fa-phone" style="margin-left: 32px;"/> <a href="tel: +4613101060"><span t-field="res_company.phone"/></a>
+                    <i class="fa fa-envelope" style="margin-left: 32px;"/> <a href="mailto: info@hudvardsrummet.se"><span t-field="res_company.email"/></a>
+                    <i class="fa fa-home" style="margin-left: 32px;"/> <span t-field="res_company.street"/> <span t-field="res_company.zip"/> <span t-field="res_company.city"/>
+
+                    <h2>
+                        <a t-att-href="website.social_facebook" t-if="website.social_facebook">
+                            <i class="fa fa-facebook-square"/>
+                        </a>
+                        <a t-att-href="website.social_twitter" t-if="website.social_twitter">
+                            <i class="fa fa-twitter"/>
+                        </a>
+                        <a t-att-href="website.social_linkedin" t-if="website.social_linkedin">
+                            <i class="fa fa-linkedin"/>
+                        </a>
+                        <a t-att-href="website.social_youtube" t-if="website.social_youtube">
+                            <i class="fa fa-youtube-play"/>
+                        </a>
+                        <a t-att-href="website.social_googleplus" t-if="website.social_googleplus" rel="publisher">
+                            <i class="fa fa-google-plus-square"/>
+                        </a>
+                        <a t-att-href="website.social_github" t-if="website.social_github">
+                            <i class="fa fa-github"/>
+                        </a>
+                    </h2>
+                    <ul class="list-inline js_language_selector mt16" t-if="(request.website_multilang and len(languages) &gt; 1) or editable">
+                        <li t-foreach="languages" t-as="lg">
+                            <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang=lg[0])" t-att-data-default-lang="editable and 'true' if lg[0] == website.default_lang_code else None" t-att-data-lang="lg[0]" class="js_change_lang">
+                                <t t-esc="lg[1].split('/').pop()"/>
+                            </a>
+                        </li>
+                        <li groups="base.group_website_publisher">
+                            <t t-set="url_return" t-value="url_for('', '[lang]') + '?' + keep_query()"/>
+                            <a t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id}&amp;url_return=#{url_return}">
+                                <i class="fa fa-plus-circle"/>
+                            Add a language...
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-5 col-lg-offset-1 hidden">
+                    <div>
+                        <h4>
+                            <span class="" t-field="res_company.name"/>
+                        </h4>
+                        <p>Vi som jobbar på hudvårdsrummet heter Hanna Selim och Linda Adolfsson.
+                            <br/>
+Vi är auktoriserade hudterapeuter med internatinellt cidescodiplom och är medlemmar i SHR - Sveriges hudterapeuters riksorganisation.
+                        </p>
+                        <a href="/page/website.om-oss">Läs mer...</a>
+                    </div>
+                    <ul class="list-inline js_language_selector mt16" t-if="(request.website_multilang and len(languages) &gt; 1) or editable">
+                        <li t-foreach="languages" t-as="lg">
+                            <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang=lg[0])" t-att-data-default-lang="editable and 'true' if lg[0] == website.default_lang_code else None" t-att-data-lang="lg[0]" class="js_change_lang">
+                                <t t-esc="lg[1].split('/').pop()"/>
+                            </a>
+                        </li>
+                        <li groups="base.group_website_publisher">
+                            <t t-set="url_return" t-value="url_for('', '[lang]') + '?' + keep_query()"/>
+                            <a t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id}&amp;url_return=#{url_return}">
+                                <i class="fa fa-plus-circle"/>
+                            Add a language...
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </xpath>
+</data>
+
+
+<!-- footer -->
+<i class="fa fa-phone"/> <span t-field="res_company.phone"/> | <i class="fa fa-envelope"/> <span t-field="res_company.email"/> |
+<i class="fa fa-home"/> <span t-field="res_company.street"/> <span t-field="res_company.zip"/> <span t-field="res_company.city"/>

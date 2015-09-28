@@ -9,6 +9,23 @@
                         list-style: none;
                     }
 
+                    h1, h2 {
+                        color: #0D6499;
+                    }
+
+                    h3, h4, h5 {
+                        color: #000;
+                    }
+
+                    section, div {
+                        max-width: 1140px;
+                        margin: auto;
+                    }
+
+                    .penta-block {
+                        background-color: #0D6499;
+                    }
+
                     #website-top-edit {
                         z-index: 1001;
                     }
@@ -19,6 +36,10 @@
                         font-size: 1.5em;
                         background: none;
                         width: 100%;
+                    }
+
+                    #sm-menu > div {
+                        padding: 0px;
                     }
 
                     #sm-menu-bar &gt; div &gt; ul &gt; li &gt; a {
@@ -34,6 +55,7 @@
                         width: 100%;
                         padding: 5px 40px 5px 40px;
                         z-index: 1;
+                        margin: auto;
                         background-color: rgba(255, 255, 255, 0.5)
                     }
 
@@ -53,6 +75,14 @@
                         height: 64px;
                         display:block;
                         margin:auto;
+                    }
+
+                    #head-bg {
+                        margin-top: -150px;
+                        margin-left: 0;
+                        margin-right: 0;
+                        width: 100%;
+                        padding: 0px;
                     }
 
                     /* MENU TEXT */
@@ -125,6 +155,10 @@
                         /* STYLE WHEN PAGE ACTIVE */
                         #sm-menu-bar &gt; ul &gt; .active &gt; a {
                             border: 0px solid;
+                        }
+
+                        #head-bg {
+                            margin-top: 0px;
                         }
                     }
 
@@ -199,11 +233,11 @@
         </div>
     </xpath>
     <!-- Customize javascript -->
-    <xpath expr="//body/script[last()]" position="after">
+    <xpath expr="//body" position="inside">
         <script>
-                    var margin_value = 100;
-                </script>
-        <script type="text/javascript" src="/theme_vertel/static/src/js/theme_simple_menu.js"/>
+            var margin_value = 100;
+        </script>
+        <script type="text/javascript" src="/theme_simple_menu/static/src/js/theme_simple_menu.js"/>
     </xpath>
 </data>
 
@@ -214,16 +248,22 @@
     <t t-call="website.layout">
         <div id="wrap" class="oe_structure oe_empty">
             <section>
-                <div class="container">
-                    <img class="img-responsive hidden-xs" id="head-bg" src="/theme_teamdoc/static/src/img/penta/business.jpg" style="margin-top: -150px;"/>
+                <div class="container" style="padding: 0px;">
+                    <img class="img-responsive" id="head-bg" src="/theme_teamdoc/static/src/img/penta/business.jpg"/>
+                </div>
+            </section>
+            <section>
+                <div class="container mt64 mb64 text-center" style="max-width: 1140px;">
+                    <h1>Vi är Penta</h1>
+                    <h3>Vi hjälper dig med IT-konsult.</h3>
                 </div>
             </section>
             <section>
                 <div class="container" id="info-board">
                     <div class="row mt16">
                         <div class="col-md-4">
-                            <div class="panel" style="height: 360px;">
-                                <div class="panel-heading text-center" style="background-color: #0D6499;">
+                            <div class="panel" style="height: 400px;">
+                                <div class="panel-heading text-center penta-block">
                                     <h4 style="margin: 0">
                                         <span style="color:#FFFFFF;">Är du morgondagens konsult? </span>
                                     </h4>
@@ -231,15 +271,17 @@
                                 <div class="panel-body">
                                     <div class="text-center mb64">
                                         <h4>
-                                            Forecaster är ett framtids-quiz där du kan få en "hint" om hur het du är på framtidens konsultmarknad.
+                                            Forecaster är ett framtids-quiz där du kan få en "hint" om hur het du är på framtidens konsultmarknad.<br/>
+                                            Forecaster är ett framtids-quiz där du kan få en "hint" om hur het du är på framtidens konsultmarknad.<br/>
+                                            Forecaster är ett framtids-quiz där du kan få en "hint" om hur het du är på framtidens konsultmarknad.<br/>
                                         </h4>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="panel" style="height: 360px;">
-                                <div class="panel-heading text-center" style="background-color: #0D6499;">
+                            <div class="panel" style="height: 400px;">
+                                <div class="panel-heading text-center penta-block">
                                     <h4 style="margin: 0">
                                         <span style="color:#FFFFFF;">Senaste uppdragen</span>
                                     </h4>
@@ -275,8 +317,8 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="panel" style="height: 360px;">
-                                <div class="panel-heading text-center" style="background-color: #0D6499;">
+                            <div class="panel" style="height: 400px;">
+                                <div class="panel-heading text-center penta-block">
                                     <h4 style="margin: 0">
                                         <span style="color:#FFFFFF;">Min sida</span>
                                     </h4>
@@ -316,15 +358,6 @@
                             <div class="round-icon">
                                 <div class="text-center">
                                     <a href="#">
-                                        <i class="fa fa-mobile fa-5x" style="padding-top: 33%;"/>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6" style="padding: 15px;">
-                            <div class="round-icon">
-                                <div class="text-center">
-                                    <a href="#">
                                         <i class="fa fa-envelope fa-5x" style="padding-top: 33%;"/>
                                     </a>
                                 </div>
@@ -334,7 +367,16 @@
                             <div class="round-icon">
                                 <div class="text-center">
                                     <a href="#">
-                                        <i class="fa fa-home fa-5x" style="padding-top: 33%;"/>
+                                        <i class="fa fa-newspaper-o fa-5x" style="padding-top: 33%;"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6" style="padding: 15px;">
+                            <div class="round-icon">
+                                <div class="text-center">
+                                    <a href="#">
+                                        <i class="fa fa-info-circle fa-5x" style="padding-top: 33%;"/>
                                     </a>
                                 </div>
                             </div>
@@ -342,7 +384,10 @@
                     </div>
                 </div>
             </section>
-            <div class="oe_structure oe_empty"></div>
+            <div class="oe_structure oe_empty">
+
+            </div>
         </div>
     </t>
 </t>
+
