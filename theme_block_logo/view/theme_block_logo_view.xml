@@ -345,7 +345,7 @@
         </template>
 
         <!-- Demo side -->
-        <template id="block_logo_demo_side" inherit_id="website.layout" customize_show="True" active="False" name="Block Logo Demo Side" priority="99">
+        <template id="block_logo_demo_site" inherit_id="website.layout" customize_show="True" active="False" name="Block Logo Demo Site" priority="99">
             <xpath expr="//main/t" position="after">
                 <section class="s_title">
                 <div class="container">

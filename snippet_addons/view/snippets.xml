@@ -107,6 +107,95 @@
                     </div>
                 </div><!-- End of vertical slide -->
 
+                <!-- Notes Cubes -->
+                <div id="notes_cubes">
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_features.png"/>
+                        <span class="oe_snippet_thumbnail_title">Notes Cubes</span>
+                    </div>
+                    <section class="s_cubes oe_snippet_body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6 cube cube-big col-xs-12 col-sm-12 cube-big-bg" style="background-image: url('/website/static/src/img/fields.jpg');"/>
+                                <div class="cube-big col-md-6 col-xs-12 col-sm-12">
+                                    <div class="row">
+                                        <div class="cube cube-text col-md-6 col-sm-6 col-xs-12">
+                                            <div class="cube-heading">
+                                                <h4 class="text-center">Lorem ipsum dolor sit amet</h4>
+                                                <p class="text-center">Lorem ipsum dolor sit amet, class pharetra id elit leo. Massa leo per orci ullamcorper egestas, in diam, fermentum phasellus elit praesent morbi.</p>
+                                            </div>
+                                        </div>
+                                        <div class="cube cube-small col-md-6 col-sm-6 col-xs-12 cube-medium-bg" style="background-image: url('/website/static/src/img/volcano.jpg');"/>
+                                    </div>
+                                    <div class="row">
+                                        <div class="cube cube-small col-md-6 col-sm-6 col-xs-12 cube-medium-bg" style="background-image: url('website/static/src/img/island.jpg');"/>
+                                        <div class="cube cube-text col-md-6 col-sm-6 col-xs-12 last">
+                                            <div class="cube-heading">
+                                                <h4 class="text-center">Lorem ipsum dolor sit amet</h4>
+                                                <p class="text-center">Lorem ipsum dolor sit amet, class pharetra id elit leo. Massa leo per orci ullamcorper egestas, in diam, fermentum phasellus elit praesent morbi.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div><!-- End of Notes Cubes -->
+
+                <!-- Notes Cubes -->
+                <div id="two_column_text">
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_text_block.png"/>
+                        <span class="oe_snippet_thumbnail_title">Two Column Text</span>
+                    </div>
+                    <section class="s_2_column_text oe_structure oe_snippet_body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h2>Lorem ipsum dolor sit amet</h2>
+                                    <p>Lorem ipsum dolor sit amet, mea id tacimates moderatius referrentur, ea vel nisl dissentias. Per dicat ludus eirmod cu, idque reprimique temporibus at per. Vel ex aeque epicuri partiendo. Sonet consulatu vel at. Commune invenire ut mei, cu sed prompta hendrerit.<br/>
+                                    Ex mel feugiat dissentias, et eam dicta labore epicuri, iisque pertinax vis ne. Ea intellegat voluptatum vis, ei magna consul sea, te his natum oratio. His brute gloriatur cu, et eum ipsum oblique consequat. Justo consulatu ius ei, eu labore possit vim, qui ad essent vocibus. Eu nec delectus oportere vituperatoribus.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h2>Lorem ipsum dolor sit amet</h2>
+                                    <p>Lorem ipsum dolor sit amet, mea id tacimates moderatius referrentur, ea vel nisl dissentias. Per dicat ludus eirmod cu, idque reprimique temporibus at per. Vel ex aeque epicuri partiendo. Sonet consulatu vel at. Commune invenire ut mei, cu sed prompta hendrerit.<br/>
+                                    Ex mel feugiat dissentias, et eam dicta labore epicuri, iisque pertinax vis ne. Ea intellegat voluptatum vis, ei magna consul sea, te his natum oratio. His brute gloriatur cu, et eum ipsum oblique consequat. Justo consulatu ius ei, eu labore possit vim, qui ad essent vocibus. Eu nec delectus oportere vituperatoribus.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div><!-- End of Notes Cubes -->
+
+                <!-- Color Blocks -->
+                <div id="color_blocks">
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_features.png"/>
+                        <span class="oe_snippet_thumbnail_title">Color Blocks</span>
+                    </div>
+                    <section class="s_color_blocks_4 oe_snippet_body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-6 text-center" style="padding: 64px 20px 64px 20px; height: 100%; min-height: 100%; background-color: #E4151D; color: #FFF;">
+                                    <h4>A COLOR BLOCK</h4>
+                                    <p>Color code : #E4151D</p>
+                                </div>
+                                <div class="col-md-3 col-sm-6 text-center" style="padding: 64px 20px 64px 20px; height: 100%; min-height: 100%; background-color: #C1C1C1; color: #111;">
+                                    <h4>A COLOR BLOCK</h4>
+                                    <p>Color code : #C1C1C1</p>
+                                </div>
+                                <div class="col-md-3 col-sm-6 text-center" style="padding: 64px 20px 64px 20px; height: 100%; min-height: 100%; background-color: #3B3D4D; color: #FFF;">
+                                    <h4>A COLOR BLOCK</h4>
+                                    <p>Color code : #3B3D4D</p>
+                                </div>
+                                <div class="col-md-3 col-sm-6 text-center" style="padding: 64px 20px 64px 20px; height: 100%; min-height: 100%; background-color: #E6FA16; color: #333;">
+                                    <h4>A COLOR BLOCK</h4>
+                                    <p>Color code : #E6FA16</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div><!-- End of Color Blocks -->
+
                 <!-- Banner block -->
                 <div id="banner_block">
                     <div class="oe_snippet_thumbnail">
