@@ -384,202 +384,93 @@
                         <span class="oe_snippet_thumbnail_title">Winion</span>
                     </div>
                     <section class="oe_snippet_body">
-                        <div class="container">
+                        <div class="container mt32 mb32">
                             <div class="row">
-                                <!--ROW 1-->
                                 <div class="container">
-                                    <div class="col-md-5 col-sm-5 col-xs-12" style="padding: 2px;">
-                                        <div class="hover">
-                                            <a href="/" style="display: block; width: 100%; height: 100%;">
-                                                <img class="img-responsive" src="/website/static/src/img/library/ship_sea.jpg" style="width:100%; height:266px;"/>
+                                    <div class="col-md-4 col-sm-4 col-xs-12" style="padding: 2px 2px 0px 2px;">
+                                        <div class="hover" style="display: inline-block; width: 100%;">
+                                            <a href="/" style="">
+                                                <img class="img-responsive" src="/website/static/src/img/library/world.jpg" style="width:100%; top: 0px; bottom: 0px; left; 0px; right: 0px; position: absolute"/>
                                             </a>
                                             <h3>Hover Text</h3>
                                         </div>
                                     </div>
-                                    <div class="col-md-2 col-sm-2 col-xs-12" style="padding: 2px;">
-                                        <div class="col-md-12 col-xs-6" style="padding: 0px 0px 2px 0px;">
-                                            <div class="hover">
-                                                <div class="text-center" style="background-color: #0274D8; height:131px;">
-                                                    <a href="/" style="display: block; width: 100%; height: 100%;">
-                                                        <i class="fa fa-envelope fa-4x winion-icon-small" style=""/>
-                                                    </a>
-                                                    <h5>Hover Text</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12 col-xs-6" style="padding: 2px 0px 0px 0px;">
-                                            <div class="hover">
-                                                <div class="text-center" style="background-color: #D14724; height:131px;">
-                                                    <a href="/" style="display: block; width: 100%; height: 100%;">
-                                                        <i class="fa fa-headphones fa-4x winion-icon-small" style=""/>
-                                                    </a>
-                                                    <h5>Hover Text</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 col-sm-5 col-xs-12" style="padding: 2px;">
-                                        <div class="hover">
-                                            <a href="/" style="display: block; width: 100%; height: 100%;">
-                                                <img class="img-responsive" src="/website/static/src/img/library/flight.jpg" style="width:100%; height:266px;"/>
-                                            </a>
-                                            <h3>Hover Text</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- END ROW 1-->
-
-                                <!--ROW 2-->
-                                <div class="container">
-                                    <div class="col-md-2 col-sm-2 col-xs-12" style="padding: 2px;">
-                                        <div class="col-md-12 col-xs-6" style="padding: 0px 0px 2px 0px;">
-                                            <div class="hover">
-                                                <a href="/" style="display: block; width: 100%; height: 100%;">
-                                                    <img class="img-responsive" src="/website/static/src/img/desert_thumb.jpg" style="width:100%; height:131px;"/>
-                                                </a>
-                                                <h5>Hover Text</h5>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12 col-xs-6" style="padding: 2px 0px 0px 0px;">
-                                            <div class="hover">
-                                                <div class="text-center" style="background-color: #0274D8; height:131px;">
-                                                    <a href="/" style="display: block; width: 100%; height: 100%;">
-                                                        <i class="fa fa-info fa-4x winion-icon-small" style=""/>
-                                                    </a>
-                                                    <h5>Hover Text</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 col-sm-5 col-xs-12" style="padding: 2px;">
-                                        <div class="hover">
-                                            <a href="/" style="display: block; width: 100%; height: 100%;">
-                                                <img class="img-responsive" src="/website/static/src/img/library/business_stats.jpg" style="width:100%; height:266px;"/>
-                                            </a>
-                                            <h3>Hover Text</h3>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 col-sm-5 col-xs-12" style="padding: 2px;">
-                                        <div class="hover">
-                                            <a href="/" style="display: block; width: 100%; height: 100%;">
-                                                <img class="img-responsive" src="/website/static/src/img/library/business_hands.jpg" style="width:100%; height:266px;"/>
-                                            </a>
-                                            <h3>Hover Text</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--END ROW 2-->
-
-                                <!--ROW 3-->
-                                <div class="container">
-                                    <div class="col-md-4 col-sm-4 col-xs-12" style="padding: 2px;">
-                                        <div class="col-md-12 col-xs-6" style="padding: 0px 0px 2px 0px;">
-                                            <div class="hover">
-                                                <a href="/" style="display: block; width: 100%; height: 100%;">
-                                                    <img class="img-responsive" src="/website/static/src/img/landscape.jpg" style="width:100%; height:131px;"/>
-                                                </a>
-                                                <h5>Hover Text</h5>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12 col-xs-6" style="padding: 2px 0px 0px 0px;">
-                                            <div class="hover">
-                                                <a href="/" style="display: block; width: 100%; height: 100%;">
-                                                    <img class="img-responsive" src="/website/static/src/img/china_thumb.jpg" style="width:100%; height:131px;"/>
-                                                </a>
-                                                <h5>Hover Text</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 col-xs-12" style="padding: 2px;">
-                                        <div class="hover">
-                                            <div class="text-center" style="background-color: #5E3CB7; height:266px;">
-                                                <a href="/" style="display: block; width: 100%; height: 100%;">
-                                                    <i class="fa fa-calendar fa-5x winion-icon-medium" style=""/>
-                                                </a>
-                                                <h3>Hover Text</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 col-xs-12" style="padding: 2px;">
-                                        <div class="col-md-12 col-xs-6" style="padding: 0px 0px 2px 0px;">
-                                            <div class="hover">
-                                                <a href="/" style="display: block; width: 100%; height: 100%;">
-                                                    <img class="img-responsive" src="/website/static/src/img/library/manufacturing.jpg" style="width:100%; height:131px;"/>
-                                                </a>
-                                                <h5>Hover Text</h5>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12 col-xs-6" style="padding: 2px 0px 0px 0px;">
-                                            <div class="hover">
-                                                <a href="/" style="display: block; width: 100%; height: 100%;">
-                                                    <img class="img-responsive" src="/website/static/src/img/library/helpdesk.jpg" style="width:100%; height:131px;"/>
-                                                </a>
-                                                <h5>Hover Text</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--END ROW 3-->
-
-                                <!--ROW 4-->
-                                <div class="container">
-                                    <div class="col-md-5 col-sm-5 col-xs-12" style="padding: 2px;">
-                                        <div style="background-color: #00881A; color: #fff; height:266px;">
-                                            <a class="text-center" href="/" style="display: block; width: 100%; height: 100%; color: #fff;">
+                                    <div class="col-md-4 col-sm-4 col-xs-12" style="padding: 2px 2px 0px 2px;">
+                                        <div class="hover" style="display: inline-block; width: 100%;">
+                                            <div class="text-center" style="width: 100%; background-color: #0274D8; top: 0px; bottom: 0px; left; 0px; right: 0px; position: absolute;">
                                                 <p style="padding: 20px;">
-                                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                                                    Aenean massa.
+                                                    <a class="text-center" href="/" style="display: block; width: 100%; height: 100%; color: #fff;">
+                                                        <strong>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</strong><br/>
+                                                        <em>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</em><br/>
+                                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                                    </a>
                                                 </p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2 col-sm-2 col-xs-12" style="padding: 2px;">
-                                        <div class="col-md-12 col-xs-6" style="padding: 0px 0px 2px 0px;">
-                                            <div class="hover">
-                                                <div class="text-center" style="background-color: #DF2F00; height:131px;">
-                                                    <a href="/" style="display: block; width: 100%; height: 100%;">
-                                                        <i class="fa fa-heart-o fa-4x winion-icon-small" style=""/>
-                                                    </a>
-                                                    <h5>Hover Text</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12 col-xs-6" style="padding: 2px 0px 0px 0px;">
-                                            <div class="hover">
-                                                <div class="text-center" style="background-color: #AC193D; height:131px;">
-                                                    <a href="/" style="display: block; width: 100%; height: 100%;">
-                                                        <i class="fa fa-picture-o fa-4x winion-icon-small" style=""/>
-                                                    </a>
-                                                    <h5>Hover Text</h5>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-5 col-sm-5 col-xs-12" style="padding: 2px;">
-                                        <div class="hover">
-                                            <a href="/" style="display: block; width: 100%; height: 100%;">
-                                                <img class="img-responsive" src="/website/static/src/img/library/world.jpg" style="width:100%; height:266px;"/>
+                                    <div class="col-md-4 col-sm-4 col-xs-12" style="padding: 2px 2px 0px 2px;">
+                                        <div class="hover" style="display: inline-block; width: 100%;">
+                                            <a href="/" style="">
+                                                <img class="img-responsive" src="/website/static/src/img/library/school_kids.jpg" style="width: 100%; top: 0px; bottom: 0px; right: 0px; position: absolute; animation-play-state: paused; transition: none 0s ease 0s"/>
                                             </a>
                                             <h3>Hover Text</h3>
                                         </div>
                                     </div>
                                 </div>
-                                <!--END ROW 4-->
+                                <div class="container">
+                                    <div class="col-md-3 col-sm-6 col-xs-12" style="padding: 0px 2px 0px 2px;">
+                                        <div class="hover" style="display: inline-block; width: 100%;">
+                                            <a href="/" style="">
+                                                <img class="img-responsive" src="/website/static/src/img/library/ship_sea.jpg" style="width:100%; top: 0px; bottom: 0px; left; 0px; right: 0px; position: absolute"/>
+                                            </a>
+                                            <h4>Hover Text</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-xs-12" style="padding: 0px 2px 0px 2px;">
+                                        <div class="hover" style="display: inline-block; width: 100%;">
+                                            <div class="text-center" style="width: 100%; background-color: #5E3CB7; top: 0px; bottom: 0px; left; 0px; right: 0px; position: absolute;">
+                                                <a href="/" style="">
+                                                    <i class="fa fa-envelope fa-4x winion-icon-medium" style=""/>
+                                                </a>
+                                                <h4>Hover Text</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-xs-12" style="padding: 0px 2px 0px 2px;">
+                                        <div class="hover" style="display: inline-block; width: 100%;">
+                                            <a href="/" style="">
+                                                <img class="img-responsive" src="/website/static/src/img/library/flight.jpg" style="width:100%; top: 0px; bottom: 0px; left; 0px; right: 0px; position: absolute"/>
+                                            </a>
+                                            <h4>Hover Text</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-xs-12" style="padding: 0px 2px 0px 2px;">
+                                        <div class="hover" style="display: inline-block; width: 100%;">
+                                            <div class="text-center" style="width: 100%; background-color: #00881A; top: 0px; bottom: 0px; left; 0px; right: 0px; position: absolute;">
+                                                <a href="/" style="">
+                                                    <i class="fa fa-phone fa-4x winion-icon-medium" style=""/>
+                                                </a>
+                                                <h4>Hover Text</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </section>
                 </div>
                 <!--END OF WINION SNIPPET-->
 
+                <!-- IMAGE GALLERY WITH HOVER TEXT -->
                 <div id="image_gallery_with_hover_text">
                     <div class="oe_snippet_thumbnail">
                         <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_image_gallery.png"/>
                         <span class="oe_snippet_thumbnail_title">Image Gallery With Hover Text</span>
                     </div>
                     <section class="oe_snippet_body">
-                        <div class="container">
+                        <div class="container" style="padding: 0px;">
                             <div class="row">
-                                <div class="row">
+                                <div class="row" style="width: 100%; margin: auto;">
                                     <div class="col-md-6 col-sm-6 col-xs-12" style="padding-left: 0; padding-right: 0;">
                                         <div class="text-center hover-image">
                                             <img src="/website/static/src/img/desert.jpg" alt="" class="img-responsive"/>

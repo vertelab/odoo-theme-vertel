@@ -206,5 +206,296 @@
             </xpath>
         </template>
 
+        <!-- Demo side -->
+        <template id="simple_menu_demo_side" inherit_id="website.layout" customize_show="True" active="False" name="Simple Menu Demo Side" priority="99">
+            <xpath expr="//main/t" position="after">
+                <section class="s_title">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="text-center">H1 Rubrik-text</h1>
+                            <h3 class="text-muted text-center">h3 text med text-muted class</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="carousel slide s_banner" id="myCarousel1" style="height: 320px;">
+                <ol class="carousel-indicators">
+                    <li class="active" data-slide-to="0" data-target="#myCarousel1"/>
+                    <li data-slide-to="1" data-target="#myCarousel1"/>
+                    <li data-slide-to="2" data-target="#myCarousel1"/>
+                    <li data-slide-to="3" data-target="#myCarousel1"/>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item oe_img_bg active" style="background-image: url(&quot;/website/static/src/img/banner/baby_blue.jpg&quot;);">
+                        <div class="container">
+                            <div class="row content">
+                                <div class="carousel-content col-sm-12 col-md-5 col-md-offset-1">
+                                    <h2>H2</h2>
+                                    <h3>H3 text</h3>
+                                    <p>
+                                        <a class="btn btn-danger " href="/page/website.contactus">Kontakta oss</a>
+                                    </p>
+                                </div>
+                                <div class="carousel-img col-md-6 hidden-sm hidden-xs">
+                                    <img alt="Banner Odoo Image" class="img-responsive" src="/website/static/src/img/library/helpdesk.jpg" style="animation-play-state: paused; transition: none 0s ease 0s"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="">
+                        <div class="container">
+                            <div class="row content">
+                                <div class="carousel-content col-sm-12 col-md-5 col-md-offset-1">
+                                    <h2>H2</h2>
+                                    <h3>H3 text</h3>
+                                    <p>
+                                        <a class="btn btn-success btn-large" href="/page/website.contactus">Kontakta oss</a>
+                                    </p>
+                                </div>
+                                <div class="carousel-img col-md-6 hidden-sm hidden-xs">
+                                    <img alt="Banner Odoo Image" class="img-responsive" src="/website/static/src/img/library/flight.jpg" style="animation-play-state: paused; transition: none 0s ease 0s"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item oe_img_bg" style="background-image: url(&quot;/website/static/src/img/banner/yellow_green.jpg&quot;);">
+                        <div class="container">
+                            <div class="row content">
+                                <div class="carousel-content col-sm-12 col-md-5 col-md-offset-1">
+                                    <h2>H2</h2>
+                                    <h3>H3 text</h3>
+                                    <p>
+                                        <a class="btn btn-primary " href="/page/website.contactus">Kontakta oss</a>
+                                    </p>
+                                </div>
+                                <div class="carousel-img col-md-6 hidden-sm hidden-xs">
+                                    <img alt="Banner Odoo Image" class="img-responsive" src="/website/static/src/img/banner/banner_picture.png" style=""/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item oe_img_bg" style="background-image: url(&quot;/website/static/src/img/banner/mango.jpg&quot;);">
+                        <div class="container">
+                            <div class="row content">
+                                <div class="carousel-content col-sm-12 col-md-5 col-md-offset-1">
+                                    <h2>H2</h2>
+                                    <h3>H3 text</h3>
+                                    <p>
+                                        <a class="btn btn-default " href="/page/website.contactus">Kontakta oss</a>
+                                    </p>
+                                </div>
+                                <div class="carousel-img col-md-6 hidden-sm hidden-xs">
+                                    <img alt="Banner Odoo Image" class="img-responsive" src="/website/static/src/img/library/world.jpg" style=""/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-control left" data-slide="prev" data-target="#myCarousel1" href="#myCarousel1" style="width: 10%">
+                    <i class="fa fa-chevron-left"/>
+                </div>
+                <div class="carousel-control right" data-slide="next" data-target="#myCarousel1" href="#myCarousel1" style="width: 10%">
+                    <i class="fa fa-chevron-right" style=""/>
+                </div>
+            </div>
+            <section class="oe_dark s_big_picture">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center mt32 mb32">
+                            <h2>H2 Rubrik-text</h2>
+                        </div>
+                        <div class="col-md-12">
+                            <img alt="Odoo CMS - a big picture" class="img img-responsive" src="/website/static/src/img/big_picture.png" style="margin: 0 auto;"/>
+                        </div>
+                        <div class="col-md-6 col-md-offset-3 mb16 mt16">
+                            <p class="text-center">
+                                <b>En liten underrubrik</b>
+                            </p>
+                            <p class="text-center">Choose a vibrant image and write an inspiring paragraph about it. It does not have to be long, but it should reinforce your image.</p>
+                            <p class="text-center">
+                                <a href="/page/website.contactus">Kontakta oss</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="s_features mt92" style="height: 280px; overflow: hidden;">
+                <div class="container">
+                    <div class="row mt16 mb16">
+                        <div class="col-md-4 text-center">
+                            <span class="fa fa-suitcase fa-5x"/>
+                            <h3 class="mt8 mb0">First Feature (H3)</h3>
+                            <div class="text-muted">Tell what's the value for the</div>
+                            <div class="text-muted">customer for this feature.</div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <span class="fa fa-lock fa-5x"/>
+                            <h3 class="mt8 mb0">Second Feature (H3)</h3>
+                            <div class="text-muted">Write what the customer would like to know,</div>
+                            <div class="text-muted">inte vad du vill visa.</div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <span class="fa fa-heart fa-5x"/>
+                            <h3 class="mt8 mb0">Third Feature (H3)</h3>
+                            <div class="text-muted">A small explanation of this great</div>
+                            <div class="text-muted">Finess, i klartext.</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="row" style="width: 100%; margin: auto;">
+                            <div class="col-md-6 col-sm-6 col-xs-12" style="padding-left: 0; padding-right: 0;">
+                                <div class="text-center hover-image">
+                                    <img alt="" class="img-responsive" src="/website/static/src/img/desert.jpg"/>
+                                    <div class="hover-image-cover">
+                                        <h5>
+                                            <a href="/">Hover Text</a>
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-6" style="padding-left: 0; padding-right: 0;">
+                                <div class="text-center hover-image">
+                                    <img alt="" class="img-responsive" src="/website/static/src/img/china_thumb.jpg"/>
+                                    <div class="hover-image-cover">
+                                        <h6>
+                                            <a href="/">Hover Text</a>
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-6" style="padding-left: 0; padding-right: 0;">
+                                <div class="text-center hover-image">
+                                    <img alt="" class="img-responsive" src="/website/static/src/img/deers_thumb.jpg"/>
+                                    <div class="hover-image-cover">
+                                        <h6>
+                                            <a href="/">Hover Text</a>
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-6" style="padding-left: 0; padding-right: 0;">
+                                <div class="text-center hover-image">
+                                    <img alt="" class="img-responsive" src="/website/static/src/img/desert_thumb.jpg"/>
+                                    <div class="hover-image-cover">
+                                        <h6>
+                                            <a href="/">Hover Text</a>
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-6" style="padding-left: 0; padding-right: 0;">
+                                <div class="text-center hover-image">
+                                    <img alt="" class="img-responsive" src="/website/static/src/img/china_thumb.jpg"/>
+                                    <div class="hover-image-cover">
+                                        <h6>
+                                            <a href="/">Hover Text</a>
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="s_image_text mt128" style="height: 408px; overflow: hidden;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 mt16">
+                            <img alt="Odoo image and text block" class="img img-responsive shadow mb16" src="/website/static/src/img/image_text.jpg"/>
+                        </div>
+                        <div class="col-md-6 mt16">
+                            <h3>En underrubrik för en sektion (H3)</h3>
+                            <p>Write one or two paragraphs describing your product, services or a specific feature. To be successful your content needs to be useful to your readers.</p>
+                            <p>Start with the customer – find out what they want and give it to them.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="para_large s_image_floating">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 mb16 mt16">
+                            <div class="o_image_floating o_margin_l pull-right">
+                                <div class="o_container">
+                                    <img alt="Odoo Members" class="img img-rounded img-responsive" src="/website/static/src/img/odoo.jpg"/>
+                                    <mark class="text-center">
+                                        <a href="#">
+                                            <strong>Click Here</strong>
+                                        </a>
+                                    </mark>
+                                </div>
+                                <div class="o_footer">
+                                    <small class="text-muted">A great way to catch your reader's attention is to tell a story. Everything you consider writing can be told as a story.</small>
+                                </div>
+                            </div>
+                            <h3>What a day it was yesterday - such a big day for us! (H3)</h3>
+                            <p style="text-align: justify;">In case you still feel a bit puzzled about all of our yesterday's announcements, here is a little summary for you.
+                                <br/>
+We have decided to change the name because
+                                <b>"OpenERP"</b> didn't reflect the offering of the company anymore. With our newest apps, such as Website Builder, PoS or eCommerce, we have moved beyond the ERP territory.
+                                <br/>
+Men
+                                <u>oroa dig inte</u>,
+                                <b>Odoo</b> is and always will be fully open source. You can read more about the new name here. We have also prepared a short FAQ to explain all these changes to all of you.
+                            </p>
+                            <h3>Upptäck mer av Odoo</h3>
+                            <p style="text-align: justify;">With Odoo's fully integrated software, you can easily manage your meetings, schedule business calls, create recurring meetings, synchronize your agenda and easily keep in touch with your colleagues, partners and other people involved in projects or business discussions.
+                                <br/>
+                                <br/>
+                                <a href="#">Check now and discover more today!</a>
+                            </p>
+                            <div class="oe_share">
+                                <div class="container mt128 mb128">
+                                    <div class="col-md-3 col-sm-6" style="padding: 15px;">
+                                        <div class="round-icon">
+                                            <div class="text-center">
+                                                <a href="#">
+                                                    <i class="fa fa-phone fa-5x" style="padding-top: 33%;"/>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6" style="padding: 15px;">
+                                        <div class="round-icon">
+                                            <div class="text-center">
+                                                <a href="#">
+                                                    <i class="fa fa-mobile fa-5x" style="padding-top: 33%;"/>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6" style="padding: 15px;">
+                                        <div class="round-icon">
+                                            <div class="text-center">
+                                                <a href="#">
+                                                    <i class="fa fa-envelope fa-5x" style="padding-top: 33%;"/>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6" style="padding: 15px;">
+                                        <div class="round-icon">
+                                            <div class="text-center">
+                                                <a href="#">
+                                                    <i class="fa fa-home fa-5x" style="padding-top: 33%;"/>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            </xpath>
+        </template>
+
+
     </data>
 </openerp>
