@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
     <data>
-
+        
         <!-- Customize Snippets -->
         <template id="custom_snippets" inherit_id="website.snippets" name="Custom Snippets">
             <!-- Customize Structure -->
@@ -38,35 +38,32 @@
                 <!--END OF NEWS SNIPPET-->
                 
                 <!--FADE SLIDER-->
-                <div id="fade_slider_snippet">
+                <div id="fade_slide">
                     <div class="oe_snippet_thumbnail">
-                        <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_parallax.png"/>
-                        <span class="oe_snippet_thumbnail_title">Image Fade Slider</span>
+                        <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_banner.png"/>
+                        <span class="oe_snippet_thumbnail_title">Fade Banner</span>
                     </div>
-                    <section class="oe_snippet_body">
-                        <div class="content">
-                            <div class="wrapper">
-                                <div id="animation">
-                                    <div id="animation-box">
-                                        <img class="active" src="http://lorempixel.com/520/220/abstract/" alt="" />
-                                        <img src="http://lorempixel.com/520/220/animals/" alt="" />
-                                        <img src="http://lorempixel.com/520/220/business/" alt="" />
-                                        <img src="http://lorempixel.com/520/220/cats/" alt="" />
-                                        <img src="http://lorempixel.com/520/220/city/" alt="" />
-                                        <img src="http://lorempixel.com/520/220/food/" alt="" />
-                                        <img src="http://lorempixel.com/520/220/nightlife/" alt="" />
-                                        <img src="http://lorempixel.com/520/220/fashion/" alt="" />
-                                        <img src="http://lorempixel.com/520/220/people/" alt="" />
-                                        <img src="http://lorempixel.com/520/220/nature/" alt="" />
-                                        <img src="http://lorempixel.com/520/220/sports/" alt="" />
-                                        <img src="http://lorempixel.com/520/220/technics/" alt="" />
-                                        <img src="http://lorempixel.com/520/220/transport/" alt="" />
+                    <div id="carousel_fade" class="oe_snippet_body carousel slide">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators hidden">
+                            <li data-target="#carousel_fade" data-slide-to="0" class="active"/>
+                        </ol>
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item active" style="background-image: url('/website/static/src/img/banner/color_splash.jpg')">
+                                <div class="container">
+                                    <div class="row content">
+                                        <div class="carousel-content col-md-12 col-sm-12" style="height: 480px; background: none;">
+                                            
+                                        </div>
                                     </div>
-                                    <div id="animation-buttons"/>
                                 </div>
                             </div>
                         </div>
-                    </section>
+                        <!-- Carousel nav -->
+                        <div class="carousel-control left hidden" data-target="#carousel_fade" data-slide="prev" style="height: 100%"><i class="fa fa-chevron-up"/></div>
+                        <div class="carousel-control right hidden" data-target="#carousel_fade" data-slide="next" style="height: 100%"><i class="fa fa-chevron-down"/></div>
+                    </div>
                 </div>
                 <!--END OF FADE SLIDER-->
               
