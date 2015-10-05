@@ -297,7 +297,7 @@
                         <span class="oe_snippet_thumbnail_title">Round Hover Icon Button</span>
                     </div>
                     <div class="oe_snippet_body oe_share">
-                        <div class="container mt128 mb128">
+                        <div class="container mt64 mb64">
                             <div class="col-md-3 col-sm-6" style="padding: 15px;">
                                 <div class="round-icon">
                                     <a href="#">
@@ -330,6 +330,55 @@
                                     <a href="#">
                                         <div class="text-center">
                                             <i class="fa fa-home fa-5x" style="padding-top: 33%;"/>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--END OF ROUND HOVER ICON BUTTONS-->
+
+                <!--ROUND HOVER ICON TRANSPARENT BUTTONS-->
+                <div id="round_hover_icon_transparent_buttons">
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_big_picture.png"/>
+                        <span class="oe_snippet_thumbnail_title">Round Hover Icon Transparent Button</span>
+                    </div>
+                    <div class="oe_share">
+                        <div class="container mt64 mb64">
+                            <div class="col-md-3 col-sm-6" style="padding: 15px;">
+                                <div class="round-icon-transparent" style="border-color: #43609C;">
+                                    <a href="#">
+                                        <div class="text-center">
+                                            <i class="fa fa-facebook-square fa-5x" style="padding-top: 33%; color: #43609C; :hover{opacity: 1;}"/>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6" style="padding: 15px;">
+                                <div class="round-icon-transparent" style="border-color: #A4704B;">
+                                    <a href="#">
+                                        <div class="text-center">
+                                            <i class="fa fa-instagram fa-5x" style="padding-top: 33%; color: #A4704B; :hover{opacity: 1;}"/>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6" style="padding: 15px;">
+                                <div class="round-icon-transparent" style="border-color: #00ACED;">
+                                    <a href="#">
+                                        <div class="text-center">
+                                            <i class="fa fa-twitter fa-5x" style="padding-top: 33%; color: #00ACED; :hover{opacity: 1;}"/>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6" style="padding: 15px;">
+                                <div class="round-icon-transparent" style="border-color: #006699;">
+                                    <a href="#">
+                                        <div class="text-center">
+                                            <i class="fa fa-linkedin fa-5x" style="padding-top: 33%; color: #006699; :hover{opacity: 1;}"/>
                                         </div>
                                     </a>
                                 </div>
