@@ -181,6 +181,10 @@
                         width: 100%;
                     }
 
+                    #bl2-menu-bar {
+                        width: 100%;
+                    }
+
                     #bl2-menu-bar > div > ul > li > a {
                         padding-top: 25px;
                         padding-bottom: 25px;
