@@ -1,0 +1,436 @@
+<!-- hem -->
+<t t-name="website.hem">
+    <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty">
+            <section>
+                <div class="container mb64 text-center">
+                    <h1>Välkommen till Hagdahlsakademien</h1>
+                    <hr class="mt32 mb32" style="width: 400px; margin: auto; border-color: #369;"/>
+                    <h4><strong>Hagdahlsakademiens syfte är att i Charles Emil Hagdahls anda stödja östgötsk konst och hushållning, gastronomi och hälsa.</strong></h4>
+                    <h4>Konsthistorikern Urban Windahl har hittat ett hittills okänt porträtt av Emilia Gylling, Hagdahls hustru, på Kungliga Biblioteket! Han berättar att dessutom att Hagdahl hade ett musikaliskt intresse - inte minst för Bellman. Han var medlem under studietiden i Uppsala av studentsällskapet Turkiska Musiken som vid denna tid "bokstavligen gjorde mycket väsen av sig". Deras bullersamma och nattliga framföranden på gator och torg väckte stadsbornas avsky... Läs mera på "Nytt om Hagdahl"</h4>
+                </div>
+            </section>
+            <section>
+                <div class="container mt32 mb32" style="max-width: 1140px; margin: auto; padding: 0px;">
+                <div class="col-md-12" style="padding: 0px;">
+                    <div class="col-md-4 block">
+                        <div>
+                            <h1 class="text-center">Nyheter</h1>
+                            <ul>
+                                <li>Nyheter</li>
+                                <li>Nyheter</li>
+                                <li>Nyheter</li>
+                                <li>Nyheter</li>
+                                <li>Nyheter</li>
+                                <li>Nyheter</li>
+                                <li>Nyheter</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 block">
+                        <div>
+                            <h1 class="text-center">Pressreleaser</h1>
+                            <ul>
+                                <li>Pressreleaser</li>
+                                <li>Pressreleaser</li>
+                                <li>Pressreleaser</li>
+                                <li>Pressreleaser</li>
+                                <li>Pressreleaser</li>
+                                <li>Pressreleaser</li>
+                                <li>Pressreleaser</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 block">
+                        <div style="position: relative;">
+                            <div class="round-icon-transparent" style="opacity: 1; border: 1px solid #369; width: 150px; height: 150px; background-color: rgba(51,102,153,0.9); position: absolute; top: -75px; right: -20px;">
+                                <a href="#" style="text-decoration: none;">
+                                    <div class="text-center">
+                                        <h3 style="color: #fff; margin-top: 25%;">
+                                            6/Feb<br/>
+                                            <hr style="width: 100px; margin: auto;" class="mt8 mb8"/>
+                                            Evenemang
+                                        </h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <h1 class="text-center">Evenemang</h1>
+                            <ul>
+                                <li>Evenemang</li>
+                                <li>Evenemang</li>
+                                <li>Evenemang</li>
+                                <li>Evenemang</li>
+                                <li>Evenemang</li>
+                                <li>Evenemang</li>
+                                <li>Evenemang</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+            <section>
+                <div class="container mb16" style="max-width: 1120px; padding: 0px;">
+                    <div style="margin: auto;">
+                        <div class="grid js-masonry" style="">
+                            <div class="col-md-3 col-sm-4 col-12 grid-item" style="">
+                                <a href="#" title="Hagdahlakademiens pris 2015 tilldelas Per Jensen">
+                                    <img class="thumbnail img-responsive img-thumbnail img-circle" src="/website/image/ir.attachment/32_f9fe176/datas" style="margin: auto"/>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-4 col-12 grid-item" style="">
+                                <a href="#" title="Per Jensen, Elisabeth Lagerfelt och Landshövding Elisabeth Nilsson">
+                                    <img class="thumbnail img-responsive" src="/website/image/ir.attachment/26_9683fea/datas" style="margin: auto"/>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-4 col-12 grid-item" style="">
+                                <a href="#" title="Karin Elebring och Thomas Hallgren från Östgöta Kök i Norrköping">
+                                    <img class="thumbnail img-responsive" src="/website/image/ir.attachment/27_deacb31/datas" style="margin: auto;"/>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-4 col-12 grid-item" style="">
+                                <a href="#" title="2015 års Hagdahlskockar: Karin Elebring och Thomas Hallgren, krögare i Norrköping som driver Östgöta Kök-gruppen. Från Björke skola tog Frida Öberg, Katarina Söderberg och Erik Eriksson emot priset">
+                                    <img class="thumbnail img-responsive" src="/website/image/ir.attachment/28_5ca3aed/datas" style="margin: auto;"/>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-4 col-12 grid-item" style="">
+                                <a href="#" title="Hagdahlspris för Bra Mat i Äldrevården som delas ut för första gången och som går till Kosmo Garnisonens Vårdboende i Linköping. Jeanette och Hans Blackert">
+                                    <img class="thumbnail img-responsive" src="/website/image/ir.attachment/30_caff7a7/datas" style="margin: auto;"/>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-4 col-12 grid-item" style="">
+                                <a href="#" title="Två diplommottagare: grisproducenterna Catarina och Jan Arvidsson, Kalvsjö, Motala och Jeanette och Hans Blackert, Vistena, Skänninge. Catarina och Jan Arvidsson">
+                                    <img class="thumbnail img-responsive" src="/website/image/ir.attachment/31_3d45cc8/datas" style="margin: auto;"/>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-4 col-12 grid-item" style="">
+                                <a href="#" title="Hagdahls pris för Skolbarns Matvanor som går till Björke skola i Igelfors. Johnny Ludvigsson, Barbro Konradsson lämnar priset till Anna Bergdahl på Kosmo Garnison i Linköping">
+                                    <img class="thumbnail img-responsive" src="/website/image/ir.attachment/29_817562e/datas" style="margin: auto;"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div aria-hidden="true" class="modal fade" id="myModal" role="dialog" style="display: none;" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button class="close" data-dismiss="modal" type="button">×</button>
+                                <h3 class="modal-title">Image 1</h3>
+                            </div>
+                            <div class="modal-body">
+                                <a href="#" title="Image 1">
+                                    <img class="thumbnail img-responsive img-thumbnail img-circle" src="/website/image/ir.attachment/32_f9fe176/datas" style="margin: auto"/>
+                                </a>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary" data-dismiss="modal">Stäng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </t>
+</t>
+
+<!-- theme -->
+<?xml version="1.0"?>
+<data inherit_id="website.layout" customize_show="True" active="False" name="Theme Block Logo II" priority="99">
+    <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
+        <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'/>
+        <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'/>
+        <style>
+                   .bl2-body {
+                        background: #fff;
+                        list-style: none;
+                        font-family: 'Lato', sans-serif;
+                        color: #000;
+                    }
+
+                    h1, h2, h3 {
+                        color: #369;
+                    }
+
+                    #wrap{
+                        max-width: 1140px;
+                        width: 100%;
+                        margin: auto;
+                    }
+
+                    /*
+                    section, div {
+                        width: 100%;
+                        margin: auto;
+                        max-width: 1140px;
+                    }
+                    */
+
+                    /* MENU */
+                    .bl2-navbar {
+                        font-family: 'Slabo 27px', serif;
+                        font-size: 1.1em;
+                        background: none;
+                        width: 100%;
+                    }
+
+                    #bl2-menu-bar {
+                        width: 100%;
+                        padding: 0px;
+                    }
+
+                    #bl2-menu-bar &gt; div &gt; ul &gt; li &gt; a {
+                        padding-top: 25px;
+                        padding-bottom: 25px;
+                    }
+
+                    #bl2-menu-bar &gt; div {
+                        width: 1024px;
+                        margin: auto;
+                    }
+
+                    #top_menu {
+                        z-index: 99;
+                        top: 0px;
+                        left: 0px;
+                        position: fixed;
+                        width: 100%;
+                        background: #fff;
+                        box-shadow: 0px 0px 5px #369;
+                        opacity: 0.9;
+                    }
+
+                    #top_menu > li > a {
+                        padding: 10px 0px 10px 0px;
+                        border-width: 1px;
+                        border-style: solid;
+                        border-color: #fff;
+                    }
+
+                    #top_menu > li > a:hover {
+                        color: #369;
+                        border-color: #369;
+                    }
+
+                    /* COMPANY LOGO */
+                    #logo-box-2 {
+                        padding: 0px;
+                    }
+
+                    #bl2-logo {
+                        width: 100%;
+                        max-width: 1140px;
+                        display:block;
+                        margin:auto;
+                        padding-bottom: 3%;
+                        padding-top: 50px;
+                    }
+
+                    /* MENU TEXT */
+                    #bl2-menu-bar &gt; ul &gt; li &gt; a {
+                        color: #333;
+                    }
+
+                    /* STYLE WHEN MOUSE HOVER */
+                    #bl2-menu-bar &gt; ul &gt; li &gt; a:hover,
+                    #bl2-menu-bar &gt; ul &gt; li &gt; a:focus {
+                        color: #000;
+                        background-color: #fff;
+                    }
+
+                    /* STYLE WHEN PAGE ACTIVE */
+                    #bl2-menu-bar &gt; ul &gt; .active &gt; a {
+                        color: #000;
+                        background-color: #fff;
+                    }
+
+                    .navbar-toggle {
+                        border-color: #000;
+                    }
+
+                    .navbar-toggle .icon-bar{
+                        background-color: #000;
+                    }
+
+                    /* FOOTER STYLE*/
+                    .bl2-footer {
+
+                    }
+
+                    .block {
+                        padding: 10px;
+                    }
+
+                    .block > div{
+                        padding: 20px 40px 20px 40px;
+                        border: 1px solid #369;
+                    }
+
+                    .grid-item {
+                        width: 280px;
+                        padding: 0px;
+                    }
+
+                    .grid-item--width2 {
+                        width: 560px;
+                    }
+
+                </style>
+    </xpath>
+    <!-- add company logo -->
+    <xpath expr="//body/div[@id='wrapwrap']/header" position="before">
+        <div class="container">
+            <div id="logo-box-2" class="col-md-12 hidden-xs">
+                <img id="bl2-logo" src="/logo1024.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
+            </div>
+        </div>
+    </xpath>
+    <xpath expr="//a[@class='navbar-brand logo']" position="attributes">
+        <attribute name="class">navbar-brand logo hidden-lg hidden-md hidden-sm</attribute>
+    </xpath>
+    <!-- define id and class to menu bar -->
+    <xpath expr="//body/div[@id='wrapwrap']/header/div" position="attributes">
+        <attribute name="id">bl2-menu</attribute>
+        <attribute name="class">bl2-navbar</attribute>
+    </xpath>
+    <!-- define class to menu style -->
+    <xpath expr="//header//ul[@id='top_menu']" position="attributes">
+        <attribute name="class">nav nav-justified</attribute>
+    </xpath>
+    <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div[2]" position="attributes">
+        <attribute name="id">bl2-menu-bar</attribute>
+        <attribute name="class">collapse navbar-collapse navbar-top-collapse col-md-12</attribute>
+    </xpath>
+    <!-- hide user login / out -->
+    <xpath expr="//header//ul[@id='top_menu']/li[@class='divider']" position="attributes">
+        <attribute name="class">hidden</attribute>
+    </xpath>
+    <xpath expr="//header//ul[@id='top_menu']/li[@class='dropdown']" position="attributes">
+        <attribute name="class">hidden</attribute>
+    </xpath>
+    <!-- define a class to body -->
+    <xpath expr="//body" position="attributes">
+        <attribute name="class">bl2-body</attribute>
+    </xpath>
+    <!-- define a class to footer -->
+    <xpath expr="//footer" position="attributes">
+        <attribute name="class">bl2-footer</attribute>
+    </xpath>
+    <!-- add log in/out in footer -->
+    <xpath expr="//footer" position="inside">
+        <div class="container">
+            <div class="pull-right">
+                <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <b>
+                            <span t-esc="user_id.name"/>
+                            <span class="caret"/>
+                        </b>
+                    </a>
+                    <ul class="dropdown-menu js_usermenu" role="menu">
+                        <li>
+                            <a href="/web" role="menuitem">My Account</a>
+                        </li>
+                        <li class="divider"/>
+                        <li>
+                            <a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a>
+                        </li>
+                    </ul>
+                </li>
+            </div>
+            <div class="pull-right">
+                <li groups="base.group_public">
+                    <a t-attf-href="/web/login">
+                        <b>Sign in</b>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </xpath>
+    <!-- Customize javascript -->
+    <xpath expr="//body" position="inside">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+        <script>
+            $('.thumbnail').click(function(){
+                  $('.modal-body').empty();
+              	var title = $(this).parent('a').attr("title");
+              	$('.modal-title').html(title);
+              	$($(this).parents('div').html()).appendTo('.modal-body');
+              	$('#myModal').modal({show:true});
+            });
+        </script>
+    </xpath>
+</data>
+
+<!-- footer -->
+<?xml version="1.0"?>
+<data inherit_id="website.footer_custom" customize_show="True" name="Automatic Footer">
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div class="container hidden-print">
+            <div class="col-md-12">
+                <span t-field="res_company.name"/> c/o <span t-field="res_company.partner_id.child_ids.name"/> | <span t-field="res_company.street"/> | <span t-field="res_company.zip"/> <span t-field="res_company.city"/>
+            </div>
+            <div class="row hidden">
+                <div class="col-md-3">
+                    <h4>Our products &amp; Services</h4>
+                    <ul class="list-unstyled" id="products">
+                        <li><a href="/">Home</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3" id="info">
+                    <h4>Connect with us</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="/page/website.contactus">Contact us</a></li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li t-ignore="true"><i class="fa fa-phone"/> <span t-field="res_company.phone"/></li>
+                        <li t-ignore="true"><i class="fa fa-envelope"/>  <span t-field="res_company.email"/></li>
+                    </ul>
+                    <h2>
+                        <a t-att-href="website.social_facebook" t-if="website.social_facebook"><i class="fa fa-facebook-square"/></a>
+                        <a t-att-href="website.social_twitter" t-if="website.social_twitter"><i class="fa fa-twitter"/></a>
+                        <a t-att-href="website.social_linkedin" t-if="website.social_linkedin"><i class="fa fa-linkedin"/></a>
+                        <a t-att-href="website.social_youtube" t-if="website.social_youtube"><i class="fa fa-youtube-play"/></a>
+                        <a t-att-href="website.social_googleplus" t-if="website.social_googleplus" rel="publisher"><i class="fa fa-google-plus-square"/></a>
+                        <a t-att-href="website.social_github" t-if="website.social_github"><i class="fa fa-github"/></a>
+                    </h2>
+                </div>
+                <div class="col-md-5 col-lg-offset-1">
+                    <div>
+                        <h4>
+                            <span t-field="res_company.name"/>
+                            <small> - <a href="/page/website.aboutus">About us</a></small>
+                        </h4>
+                        <p>
+                            We are a team of passionate people whose goal is to improve everyone's
+                            life through disruptive products. We build great products to solve your
+                            business problems.
+                        </p>
+                        <p>
+                            Our products are designed for small to medium size companies willing to optimize
+                            their performance.
+                        </p>
+                    </div>
+                    <ul class="list-inline js_language_selector mt16" t-if="(request.website_multilang and len(languages) &gt; 1) or editable">
+                        <li t-foreach="languages" t-as="lg">
+                            <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang=lg[0])" t-att-data-default-lang="editable and 'true' if lg[0] == website.default_lang_code else None" t-att-data-lang="lg[0]" class="js_change_lang">
+                              <t t-esc="lg[1].split('/').pop()"/>
+                            </a>
+                        </li>
+                        <li groups="base.group_website_publisher">
+                            <t t-set="url_return" t-value="url_for('', '[lang]') + '?' + keep_query()"/>
+                            <a t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id}&amp;url_return=#{url_return}">
+                            <i class="fa fa-plus-circle"/>
+                            Add a language...
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </xpath>
+</data>
+
+
+
+
