@@ -6,6 +6,91 @@
         <template id="custom_snippets" inherit_id="website.snippets" name="Custom Snippets">
             <!-- Customize Structure -->
             <xpath expr="//div[@id='snippet_structure']" position="inside">
+               <div id="family_table">
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_panel.png"/>
+                        <span class="oe_snippet_thumbnail_title">Family Tree Table</span>
+                    </div>
+                    <section class="oe_snippet_body">
+                        <div class="content">
+                            <div class="col-md-6 col-xs-12 mt16">
+                                <table class="text-center table table-bordered table-responsive" id="famtable" style="margin:auto; display;block;">
+                                    <tbody>
+                                        <tr class="info">
+                                            <td colspan="4">
+                                                <h3>Name</h3>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4">
+                                                <img class="img-responsive shadow" src="/website/static/src/img/island.jpg" style="max-width: 400px; margin: auto; animation-play-state: paused; transition: none 0s ease 0s"/>
+                                            </td>
+                                        </tr>
+                                        <tr class="active">
+                                            <td>Color:
+                                                <br/>
+                                                Enter color
+                                            </td>
+                                            <td>Sex:
+                                                <br/>
+                                                Enter sex
+                                            </td>
+                                            <td>Birth year:
+                                                <br/>
+                                                2006
+                                            </td>
+                                            <td>Height:
+                                                <br/>
+                                                167
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" rowspan="4" style="PADDING-LEFT: 15px; FONT-WEIGHT: bold" width="130">Name</td>
+                                            <td rowspan="2" style="PADDING-LEFT: 15px" width="130">Name</td>
+                                            <td style="PADDING-LEFT: 15px" width="130">Name</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="PADDING-LEFT: 15px">Name
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2" style="PADDING-LEFT: 15px">Name</td>
+                                            <td style="PADDING-LEFT: 15px">Name</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="PADDING-LEFT: 15px">Name</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" rowspan="4" style="PADDING-LEFT: 15px">Name</td>
+                                            <td rowspan="2" style="PADDING-LEFT: 15px; FONT-WEIGHT: bold">Name</td>
+                                            <td style="PADDING-LEFT: 15px">Name</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="PADDING-LEFT: 15px">Name</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2" style="PADDING-LEFT: 15px">Name</td>
+                                            <td style="PADDING-LEFT: 15px; FONT-WEIGHT: bold">Name</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="PADDING-LEFT: 15px">Name</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4">
+                                                <span style="MARGIN: 15px">
+                                                    <span style="FONT-WEIGHT: bold">lorum ipsum</span>: lorem ipsum 
+                                                    <span style="FONT-WEIGHT: bold">lorum ipsum</span>: lorem ipsum 
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+               
+               
                
                 <!--NEWS SNIPPET-->
                 <div id="news_snippet">
