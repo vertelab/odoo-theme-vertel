@@ -6,121 +6,86 @@
                 <div class="container mb64 text-center">
                     <h1>Välkommen till Hagdahlsakademien</h1>
                     <hr class="mt32 mb32" style="width: 400px; margin: auto; border-color: #369;"/>
-                    <h4><strong>Hagdahlsakademiens syfte är att i Charles Emil Hagdahls anda stödja östgötsk konst och hushållning, gastronomi och hälsa.</strong></h4>
+                    <h4>
+                        <strong>Hagdahlsakademiens syfte är att i Charles Emil Hagdahls anda stödja östgötsk konst och hushållning, gastronomi och hälsa.</strong>
+                    </h4>
                     <h4>Konsthistorikern Urban Windahl har hittat ett hittills okänt porträtt av Emilia Gylling, Hagdahls hustru, på Kungliga Biblioteket! Han berättar att dessutom att Hagdahl hade ett musikaliskt intresse - inte minst för Bellman. Han var medlem under studietiden i Uppsala av studentsällskapet Turkiska Musiken som vid denna tid "bokstavligen gjorde mycket väsen av sig". Deras bullersamma och nattliga framföranden på gator och torg väckte stadsbornas avsky... Läs mera på "Nytt om Hagdahl"</h4>
                 </div>
             </section>
             <section>
                 <div class="container mt32 mb32" style="max-width: 1140px; margin: auto; padding: 0px;">
-                <div class="col-md-12" style="padding: 0px;">
-                    <div class="col-md-4 block">
-                        <div>
-                            <h1 class="text-center">Nyheter</h1>
-                            <ul>
-                                <li>Nyheter</li>
-                                <li>Nyheter</li>
-                                <li>Nyheter</li>
-                                <li>Nyheter</li>
-                                <li>Nyheter</li>
-                                <li>Nyheter</li>
-                                <li>Nyheter</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-4 block">
-                        <div>
-                            <h1 class="text-center">Pressreleaser</h1>
-                            <ul>
-                                <li>Pressreleaser</li>
-                                <li>Pressreleaser</li>
-                                <li>Pressreleaser</li>
-                                <li>Pressreleaser</li>
-                                <li>Pressreleaser</li>
-                                <li>Pressreleaser</li>
-                                <li>Pressreleaser</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-4 block">
-                        <div style="position: relative;">
-                            <div class="round-icon-transparent" style="opacity: 1; border: 1px solid #369; width: 150px; height: 150px; background-color: rgba(51,102,153,0.9); position: absolute; top: -75px; right: -20px;">
-                                <a href="#" style="text-decoration: none;">
-                                    <div class="text-center">
-                                        <h3 style="color: #fff; margin-top: 25%;">
-                                            6/Feb<br/>
-                                            <hr style="width: 100px; margin: auto;" class="mt8 mb8"/>
-                                            Evenemang
-                                        </h3>
-                                    </div>
-                                </a>
+                    <div class="col-md-12" style="padding: 0px;">
+                        <div class="col-md-4 block">
+                            <div>
+                                <h1 class="text-center">Nyheter</h1>
+                                <ul>
+                                    <li>Nyheter</li>
+                                    <li>Nyheter</li>
+                                    <li>Nyheter</li>
+                                    <li>Nyheter</li>
+                                    <li>Nyheter</li>
+                                    <li>Nyheter</li>
+                                    <li>Nyheter</li>
+                                </ul>
                             </div>
-                            <h1 class="text-center">Evenemang</h1>
-                            <ul>
-                                <li>Evenemang</li>
-                                <li>Evenemang</li>
-                                <li>Evenemang</li>
-                                <li>Evenemang</li>
-                                <li>Evenemang</li>
-                                <li>Evenemang</li>
-                                <li>Evenemang</li>
-                            </ul>
+                        </div>
+                        <div class="col-md-4 block">
+                            <div>
+                                <h1 class="text-center">Pressreleaser</h1>
+                                <ul>
+                                    <li>Pressreleaser</li>
+                                    <li>Pressreleaser</li>
+                                    <li>Pressreleaser</li>
+                                    <li>Pressreleaser</li>
+                                    <li>Pressreleaser</li>
+                                    <li>Pressreleaser</li>
+                                    <li>Pressreleaser</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 block">
+                            <div style="position: relative;">
+                                <div class="round-icon-transparent" style="opacity: 1; border: 1px solid #369; width: 150px; height: 150px; background-color: rgba(51,102,153,0.9); position: absolute; top: -75px; right: -20px;">
+                                    <a href="#" style="text-decoration: none;">
+                                        <div class="text-center">
+                                            <h3 style="color: #fff; margin-top: 25%;">
+                                            6/Feb
+                                                <br/>
+                                                <hr style="width: 100px; margin: auto;" class="mt8 mb8"/>
+                                            Evenemang
+
+                                            </h3>
+                                        </div>
+                                    </a>
+                                </div>
+                                <h1 class="text-center">Evenemang</h1>
+                                <ul>
+                                    <li>Evenemang</li>
+                                    <li>Evenemang</li>
+                                    <li>Evenemang</li>
+                                    <li>Evenemang</li>
+                                    <li>Evenemang</li>
+                                    <li>Evenemang</li>
+                                    <li>Evenemang</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
                 </div>
             </section>
             <section>
-                <div class="container mb16" style="max-width: 1120px; padding: 0px;">
-                    <div style="margin: auto;">
-                        <div class="grid js-masonry" style="">
-                            <div class="col-md-3 col-sm-4 col-12 grid-item" style="">
-                                <a href="#" title="Hagdahlakademiens pris 2015 tilldelas Per Jensen">
-                                    <img class="thumbnail img-responsive img-thumbnail img-circle" src="/website/image/ir.attachment/32_f9fe176/datas" style="margin: auto"/>
-                                </a>
-                            </div>
-                            <div class="col-md-3 col-sm-4 col-12 grid-item" style="">
-                                <a href="#" title="Per Jensen, Elisabeth Lagerfelt och Landshövding Elisabeth Nilsson">
-                                    <img class="thumbnail img-responsive" src="/website/image/ir.attachment/26_9683fea/datas" style="margin: auto"/>
-                                </a>
-                            </div>
-                            <div class="col-md-3 col-sm-4 col-12 grid-item" style="">
-                                <a href="#" title="Karin Elebring och Thomas Hallgren från Östgöta Kök i Norrköping">
-                                    <img class="thumbnail img-responsive" src="/website/image/ir.attachment/27_deacb31/datas" style="margin: auto;"/>
-                                </a>
-                            </div>
-                            <div class="col-md-3 col-sm-4 col-12 grid-item" style="">
-                                <a href="#" title="2015 års Hagdahlskockar: Karin Elebring och Thomas Hallgren, krögare i Norrköping som driver Östgöta Kök-gruppen. Från Björke skola tog Frida Öberg, Katarina Söderberg och Erik Eriksson emot priset">
-                                    <img class="thumbnail img-responsive" src="/website/image/ir.attachment/28_5ca3aed/datas" style="margin: auto;"/>
-                                </a>
-                            </div>
-                            <div class="col-md-3 col-sm-4 col-12 grid-item" style="">
-                                <a href="#" title="Hagdahlspris för Bra Mat i Äldrevården som delas ut för första gången och som går till Kosmo Garnisonens Vårdboende i Linköping. Jeanette och Hans Blackert">
-                                    <img class="thumbnail img-responsive" src="/website/image/ir.attachment/30_caff7a7/datas" style="margin: auto;"/>
-                                </a>
-                            </div>
-                            <div class="col-md-3 col-sm-4 col-12 grid-item" style="">
-                                <a href="#" title="Två diplommottagare: grisproducenterna Catarina och Jan Arvidsson, Kalvsjö, Motala och Jeanette och Hans Blackert, Vistena, Skänninge. Catarina och Jan Arvidsson">
-                                    <img class="thumbnail img-responsive" src="/website/image/ir.attachment/31_3d45cc8/datas" style="margin: auto;"/>
-                                </a>
-                            </div>
-                            <div class="col-md-3 col-sm-4 col-12 grid-item" style="">
-                                <a href="#" title="Hagdahls pris för Skolbarns Matvanor som går till Björke skola i Igelfors. Johnny Ludvigsson, Barbro Konradsson lämnar priset till Anna Bergdahl på Kosmo Garnison i Linköping">
-                                    <img class="thumbnail img-responsive" src="/website/image/ir.attachment/29_817562e/datas" style="margin: auto;"/>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <t t-call="website_academy_rewards.prize_winners_show_in_website"/>
                 <div aria-hidden="true" class="modal fade" id="myModal" role="dialog" style="display: none;" tabindex="-1">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button class="close" data-dismiss="modal" type="button">×</button>
-                                <h3 class="modal-title">Image 1</h3>
+                                <h3 class="modal-title"></h3>
+                                <h4 class="modal-comment"></h4>
                             </div>
                             <div class="modal-body">
                                 <a href="#" title="Image 1">
-                                    <img class="thumbnail img-responsive img-thumbnail img-circle" src="/website/image/ir.attachment/32_f9fe176/datas" style="margin: auto"/>
+                                    <img class="thumbnail img-responsive" src="" style="margin: auto"/>
                                 </a>
                             </div>
                             <div class="modal-footer">
@@ -352,15 +317,18 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
         <script>
             $('.thumbnail').click(function(){
-                  $('.modal-body').empty();
-              	var title = $(this).parent('a').attr("title");
+                $('.modal-body').empty();
+              	var title = $(this).parents('a').attr("title");
+                var comment = $(this).parents('a').attr("comment");
               	$('.modal-title').html(title);
+                $('.modal-comment').html(comment);
               	$($(this).parents('div').html()).appendTo('.modal-body');
               	$('#myModal').modal({show:true});
             });
         </script>
     </xpath>
 </data>
+
 
 <!-- footer -->
 <?xml version="1.0"?>
@@ -430,6 +398,8 @@
         </div>
     </xpath>
 </data>
+
+
 
 
 
