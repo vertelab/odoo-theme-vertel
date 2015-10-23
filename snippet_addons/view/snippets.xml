@@ -474,7 +474,7 @@
                 <!--END OF ROUND HOVER ICON BUTTONS-->
 
                 <!-- Famliy Tree -->
-                <div id="family_tree">
+                <!--<div id="family_tree">
                     <div class="oe_snippet_thumbnail">
                         <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_features.png"/>
                         <span class="oe_snippet_thumbnail_title">Family Tree</span>
@@ -488,7 +488,51 @@
                                         <strong>CEO</strong>
                                     </a>
                                     <ul>
-                                        <li><!--Start of first CFO-->
+                                        <li>-->
+                                        <!--Start of first CFO-->
+                                           <!-- <a href="#">
+                                                <img alt="" src="http://placehold.it/" />CFO
+                                            </a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#"> <img alt="" style="" src="http://placehold.it/"/>
+                                                        Employee
+                                                    </a>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#"> <img alt="" style="" src="http://placehold.it/"/>
+                                                                Employee
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"> <img alt="" style="" src="http://placehold.it/"/>
+                                                                <b>Employee</b>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img alt="" src="http://placehold.it/" /><b>Employee</b>
+                                                    </a>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#"> <img alt="" style="" src="http://placehold.it/"/>
+                                                                Employee
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"> <img alt="" style="" src="http://placehold.it/"/>
+                                                                Employee
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>-->
+                                        <!--end of first CFO-->
+                                        <!--Start of second CFO-->
+                                        <!--<li>
                                             <a href="#">
                                                 <img alt="" src="http://placehold.it/" />CFO
                                             </a>
@@ -528,56 +572,16 @@
                                                     </ul>
                                                 </li>
                                             </ul>
-                                        </li><!--end of first CFO-->
-
-                                        <li><!--Start of seconf CFO-->
-                                            <a href="#">
-                                                <img alt="" src="http://placehold.it/" />CFO
-                                            </a>
-                                            <ul>
-                                                <li>
-                                                    <a href="#"> <img alt="" style="" src="http://placehold.it/"/>
-                                                        Employee
-                                                    </a>
-                                                    <ul>
-                                                        <li>
-                                                            <a href="#"> <img alt="" style="" src="http://placehold.it/"/>
-                                                                Employee
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#"> <img alt="" style="" src="http://placehold.it/"/>
-                                                                <b>Employee</b>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <img alt="" src="http://placehold.it/" /><b>Employee</b>
-                                                    </a>
-                                                    <ul>
-                                                        <li>
-                                                            <a href="#"> <img alt="" style="" src="http://placehold.it/"/>
-                                                                Employee
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#"> <img alt="" style="" src="http://placehold.it/"/>
-                                                                Employee
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li><!--end of second CFO-->
+                                        </li>-->
+                                        <!--end of second CFO-->
+                                        <!--
                                     </ul>
                                 </li>
                             </ul>
-                        </div><!--end of family tree-->
-                    </div>
+                        </div>--><!--end of family tree-->
+                    <!--</div>
                 </div>
-            </xpath>
+            </xpath>-->
 
             <!-- Customize Features -->
             <xpath expr="//div[@id='snippet_feature']" position="inside">
