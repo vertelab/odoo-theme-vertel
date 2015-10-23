@@ -9,65 +9,85 @@
                 <link href="/theme_block_logo/static/src/css/theme_block_logo.css" rel="stylesheet" />
                 <style>
                     .bl-body {
-                    background: #fff;
-                    list-style: none;
+                        background: #fff;
+                        list-style: none;
                     }
 
                     /* MENU */
                     .bl-navbar {
-                    font-family: 'Ubuntu';
-                    font-size: 1.5em;
-                    background: none;
-                    width: 100%;
+                        font-family: 'Ubuntu';
+                        font-size: 1.5em;
+                        background: none;
+                        width: 100%;
                     }
 
                     #bl-menu-bar > div > ul > li > a {
-                    padding-top: 25px;
-                    padding-bottom: 25px;
+                        padding-top: 25px;
+                        padding-bottom: 25px;
                     }
 
                     #bl-menu-bar > div {
-                    width: 1024px;
-                    margin: auto;
+                        width: 100%;
+                        padding: 0px;
+                        margin: 0px;
                     }
 
                     .bl-navbar-fixed-top {
-                    font-family: 'Ubuntu';
-                    font-size: 1.5em;
-                    z-index: 99;
-                    top: 0px;
-                    position: fixed;
-                    width: 100%;
-                    background: #e1e1e1;
-                    box-shadow: 0px 0px 20px #333;
+                        font-family: 'Ubuntu';
+                        font-size: 1.5em;
+                        z-index: 99;
+                        top: 0px;
+                        position: fixed;
+                        width: 100%;
+                        background: #e1e1e1;
+                        box-shadow: 0px 0px 20px #333;
                     }
 
                     /* COMPANY LOGO */
-                    #logo-box {
-                    padding: 0px;
+                        #logo-box {
+                        padding: 0px;
                     }
 
                     #bl-logo {
-                    width: 100%;
-                    display:block;
+                        width: 100%;
+                        display:block;
                     }
 
                     /* MENU TEXT */
                     #bl-menu-bar > ul > li > a {
-                    color: #333;
+                        color: #333;
                     }
+
+                    #top_menu &gt; .dropdown &gt; .dropdown-menu {
+                        margin: 0px;
+                        border-radius: 0px;
+                        padding: 0px;
+                    }
+
+                    #top_menu &gt; .dropdown &gt; .dropdown-menu span {
+                        font-size: 1.2em;
+                    }
+
+                    #top_menu &gt; .dropdown &gt; .dropdown-menu &gt; li &gt; a:hover,
+                    #top_menu &gt; .dropdown &gt; .dropdown-menu &gt; .active &gt; a,
+                    #top_menu &gt; .dropdown &gt; .dropdown-menu &gt; .active &gt; a:focus,
+                    #top_menu &gt; .dropdown &gt;.dropdown-menu &gt; .active &gt; a:hover {
+                        color: #333;
+                        background-color: #fff;
+                    }
+
 
                     /* STYLE WHEN MOUSE HOVER */
                     #bl-menu-bar > ul > li > a:hover,
                     #bl-menu-bar > ul > li > a:focus {
-                    color: #fff;
-                    background-color: #333;
+                        color: #fff;
+                        background-color: #333;
                     }
 
                     /* STYLE WHEN PAGE ACTIVE */
                     #bl-menu-bar > ul > .active > a {
-                    color: #fff;
-                    background-color: #333;
+                        color: #fff;
+                        background-color: #333;
                     }
 
                     /* FOOTER STYLE*/
@@ -169,81 +189,102 @@
             <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
                 <style>
                     .bl2-body {
-                    background: #fff;
-                    list-style: none;
+                        background: #fff;
+                        list-style: none;
                     }
 
                     /* MENU */
                     .bl2-navbar {
-                    font-family: 'Ubuntu';
-                    font-size: 1.5em;
-                    background: none;
-                    width: 100%;
+                        font-family: 'Ubuntu';
+                        font-size: 1.5em;
+                        background: none;
+                        width: 100%;
                     }
 
                     #bl2-menu-bar {
-                    width: 100%;
+                        width: 100%;
+                        padding: 0px;
+                        margin: 0px;
                     }
 
                     #bl2-menu-bar > div > ul > li > a {
-                    padding-top: 25px;
-                    padding-bottom: 25px;
+                        padding-top: 25px;
+                        padding-bottom: 25px;
                     }
 
                     #bl2-menu-bar > div {
-                    width: 1024px;
-                    margin: auto;
+                        width: 1024px;
+                        margin: auto;
                     }
 
                     .bl2-navbar-fixed-top {
-                    transition: all 0.5s ease-in 0s;
-                    font-family: 'Ubuntu';
-                    font-size: 1.5em;
-                    z-index: 99;
-                    top: 0px;
-                    position: fixed;
-                    width: 100%;
-                    background: #fff;
-                    box-shadow: 0px 0px 20px #333;
+                        transition: all 0.5s ease-in 0s;
+                        font-family: 'Ubuntu';
+                        font-size: 1.5em;
+                        z-index: 99;
+                        top: 0px;
+                        position: fixed;
+                        width: 100%;
+                        background: #fff;
+                        box-shadow: 0px 0px 20px #333;
                     }
 
                     /* COMPANY LOGO */
                     #logo-box-2 {
-                    padding: 0px;
+                        padding: 0px;
                     }
 
                     #bl2-logo {
-                    width: 30%;
-                    display:block;
-                    margin:auto;
-                    padding-bottom:3%;
-                    padding-top:2%;
+                        width: 30%;
+                        display:block;
+                        margin:auto;
+                        padding-bottom:3%;
+                        padding-top:2%;
                     }
 
                     /* MENU TEXT */
                     #bl2-menu-bar > ul > li > a {
-                    color: #333;
+                        color: #333;
                     }
+
+                    #top_menu &gt; .dropdown &gt; .dropdown-menu {
+                        margin: 0px;
+                        border-radius: 0px;
+                        padding: 0px;
+                    }
+
+                    #top_menu &gt; .dropdown &gt; .dropdown-menu span {
+                        font-size: 1.2em;
+                    }
+
+                    #top_menu &gt; .dropdown &gt; .dropdown-menu &gt; li &gt; a:hover,
+                    #top_menu &gt; .dropdown &gt; .dropdown-menu &gt; .active &gt; a,
+                    #top_menu &gt; .dropdown &gt; .dropdown-menu &gt; .active &gt; a:focus,
+                    #top_menu &gt; .dropdown &gt;.dropdown-menu &gt; .active &gt; a:hover {
+                        color: #333;
+                        background-color: #fff;
+                    }
+
 
                     /* STYLE WHEN MOUSE HOVER */
                     #bl2-menu-bar > ul > li > a:hover,
                     #bl2-menu-bar > ul > li > a:focus {
-                    color: #000;
-                    background-color: #fff;
+                        color: #000;
+                        background-color: #fff;
                     }
 
                     /* STYLE WHEN PAGE ACTIVE */
                     #bl2-menu-bar > ul > .active > a {
-                    color: #000;
-                    background-color: #fff;
+                        color: #000;
+                        background-color: #fff;
                     }
 
                     .navbar-toggle {
-                    border-color: #000;
+                        border-color: #000;
                     }
 
                     .navbar-toggle .icon-bar{
-                    background-color: #000;
+                        background-color: #000;
                     }
 
                     /* FOOTER STYLE*/
@@ -401,7 +442,7 @@
 
                                 <p style="margin-left: 40px;">Indrag</p>
                                 <p style="margin-left: 80px;">Indrag mer</p>
-                                <p style="margin-left: 120px;">Indrag mer mer</p>
+                                <p style="margin-left: 120px;">Indrag ännu mer</p>
                                 <p style="margin-left: 120px;"/>
                                 <h1>Vänsterjusterat</h1>
                                 <p>Lorem ipsum dolor sit amet, class pharetra id elit leo. Massa leo per orci ullamcorper egestas, in diam, fermentum phasellus elit praesent morbi. Volutpat luctus eu nostra ipsum dui pulvinar, eget velit porttitor elit pede. Diam ipsum velit, incididunt commodo eu penatibus. Duis consectetuer, at ultrices sapien2 massa2 a dolor, vitae lectus elementum maecenas, iaculis non elit congue. Fermentum ultricies.</p>
