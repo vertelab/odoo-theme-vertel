@@ -128,27 +128,65 @@
                         <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_banner.png"/>
                         <span class="oe_snippet_thumbnail_title">Fade Banner</span>
                     </div>
-                    <div id="carousel_fade" class="oe_snippet_body carousel slide">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators hidden">
-                            <li data-target="#carousel_fade" data-slide-to="0" class="active"/>
+                    <section class="oe_snippet_body">
+                        <div class="carousel slide carousel-fade" data-ride="carousel" id="Carousel" style="height: 640px; overflow: hidden;">
+                        <ol class="carousel-indicators">
+                            <li class="active" data-slide-to="0" data-target="Carousel"/>
+                            <li data-slide-to="1" data-target="Carousel"/>
+                            <li data-slide-to="2" data-target="Carousel"/>
                         </ol>
-                        <!-- Carousel items -->
                         <div class="carousel-inner">
-                            <div class="item active" style="background-image: url('/website/static/src/img/banner/color_splash.jpg')">
-                                <div class="container">
+                            <div class="item active" style="">
+                                <img class="img-responsive" src="/website/static/src/img/fields.jpg" style="position: relative;"/>
+                                 <div class="container" style="position: absolute; top: 20%; left: 20%;">
                                     <div class="row content">
-                                        <div class="carousel-content col-md-12 col-sm-12" style="height: 480px; background: none;">
-                                            
+                                        <div class="col-md-6 col-sm-12">
+                                            <h2>Your Banner Title</h2>
+                                            <h3>Click here to add text</h3>
+                                            <p>
+                                                <a class="btn btn-success btn-large" href="/page/website.contactus">Contact us</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive" src="/website/static/src/img/island.jpg" style="position: relative;"/>
+                                <div class="container" style="position: absolute; top: 20%; left: 20%;">
+                                    <div class="row content">
+                                        <div class="col-md-6 col-sm-12">
+                                            <h2>Your Banner Title</h2>
+                                            <h3>Click here to add text</h3>
+                                            <p>
+                                                <a class="btn btn-success btn-large" href="/page/website.contactus">Contact us</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive" src="/website/static/src/img/volcano.jpg" style="position: relative;"/>
+                                <div class="container" style="position: absolute; top: 20%; left: 20%;">
+                                    <div class="row content">
+                                        <div class="col-md-6 col-sm-12">
+                                            <h2>Your Banner Title</h2>
+                                            <h3>Click here to add text</h3>
+                                            <p>
+                                                <a class="btn btn-success btn-large" href="/page/website.contactus">Contact us</a>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- Carousel nav -->
-                        <div class="carousel-control left hidden" data-target="#carousel_fade" data-slide="prev" style="height: 100%"><i class="fa fa-chevron-up"/></div>
-                        <div class="carousel-control right hidden" data-target="#carousel_fade" data-slide="next" style="height: 100%"><i class="fa fa-chevron-down"/></div>
+                        <a class="left carousel-control" data-slide="prev" href="#Carousel">
+                            <i class="fa fa-chevron-left"/>
+                        </a>
+                        <a class="right carousel-control" data-slide="next" href="#Carousel">
+                            <i class="fa fa-chevron-right"/>
+                        </a>
                     </div>
+                    </section>
                 </div>
                 <!--END OF FADE SLIDER-->
               
@@ -580,8 +618,8 @@
                             </ul>
                         </div>--><!--end of family tree-->
                     <!--</div>
-                </div>
-            </xpath>-->
+                </div>-->
+            </xpath>
 
             <!-- Customize Features -->
             <xpath expr="//div[@id='snippet_feature']" position="inside">

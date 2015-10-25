@@ -1,22 +1,23 @@
-.fade .carousel-inner {
-  height: 100%;
-}
-
-.fade .carousel-inner .item {
+.carousel-fade .carousel-inner .item {
     opacity: 0;
     -webkit-transition-property: opacity;
     -moz-transition-property: opacity;
     -o-transition-property: opacity;
     transition-property: opacity;
 }
-.fade .carousel-inner .active { opacity: 1 }
-.fade .carousel-inner .active.left,
-.fade .carousel-inner .active.right {
+.carousel-fade .carousel-inner .active {
+    opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
     left: 0;
     opacity: 0;
     z-index: 1;
 }
-.fade .carousel-inner .next.left,
-.fade .carousel-inner .prev.right { opacity: 1 }
-.fade .carousel-control { z-index: 2 }
-
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
