@@ -181,9 +181,19 @@ Läs mer om hur du söker <a href="/">förskoleplats</a> hos oss.</div>
   <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet" type="text/css"/>
     <style>
+
                    .bl2-body {
                         background: #fff;
                         list-style: none;
+                    }
+
+                    h1, h2 {
+                        color: #D0E27E;
+                    }
+
+                    div .container, div .container-fluid {
+                        max-width: 905px;
+                        margin: auto;
                     }
 
                     /* MENU */
@@ -191,17 +201,22 @@ Läs mer om hur du söker <a href="/">förskoleplats</a> hos oss.</div>
                         font-family: "Indie Flower";
                         font-size: 1.2em;
                         background: none;
+                    }
+
+                    .bl2-navbar &gt; .container {
                         width: 100%;
+                        padding: 0px;
+                    }
+
+                    #bl2-menu-bar {
+                        width: 100%;
+                        margin: auto;
+                        padding: 0px;
                     }
 
                     #bl2-menu-bar &gt; div &gt; ul &gt; li &gt; a {
                         padding-top: 25px;
                         padding-bottom: 25px;
-                    }
-
-                    #bl2-menu-bar &gt; div {
-                        width: 1024px;
-                        margin: auto;
                     }
 
                     .bl2-navbar-fixed-top {
@@ -319,9 +334,9 @@ Läs mer om hur du söker <a href="/">förskoleplats</a> hos oss.</div>
 
                     #footer_spring {
                         position:relative;
-                    	background:url(/theme_teamdoc/static/src/img/fkankan/spring/Spring_Footer.jpg) top center;
-                    	border: 0px solid red;
-                    	color: #666;
+                        background:url(/theme_teamdoc/static/src/img/fkankan/spring/Spring_Footer.jpg) top center;
+                        border: 0px solid red;
+                        color: #666;
                     	font-size: 1.1em;
                     	height:151px;
                     	width:100%;
@@ -433,7 +448,7 @@ Läs mer om hur du söker <a href="/">förskoleplats</a> hos oss.</div>
                         background:url(/theme_teamdoc/static/src/img/fkankan/autumn/Host_pic.png);
                     	z-index: 99;
                     	position: absolute;
-                    	top: 500px;
+                    	top: 1000px;
                     	left: 12%;
                     	width: 155px;
                     	height: 149px;
@@ -443,7 +458,7 @@ Läs mer om hur du söker <a href="/">förskoleplats</a> hos oss.</div>
                         background:url(/theme_teamdoc/static/src/img/fkankan/autumn/Leaves.png);
                     	z-index: 98;
                     	position: absolute;
-                    	top: 550px;
+                    	top: 1100px;
                     	left: 20%;
                     	width: 140px;
                     	height: 147px;
@@ -750,7 +765,7 @@ Läs mer om hur du söker <a href="/">förskoleplats</a> hos oss.</div>
     <script>
         var margin_value = 120;
     </script>
-    <script type="text/javascript" src="/theme_vertel/static/src/js/theme_block_logo_II.js"/>
+    <script type="text/javascript" src="/theme_block_logo/static/src/js/theme_block_logo_II.js"/>
   </xpath>
 </data>
 
