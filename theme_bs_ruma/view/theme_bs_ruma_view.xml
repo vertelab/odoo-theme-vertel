@@ -15,7 +15,7 @@
 
                     /* MENU */
                     #bs-menu {
-                        z-index: 1;
+                        z-index: 99;
                         margin-top: 0px;
                         background: #000;
                     }
@@ -132,7 +132,7 @@
                 <script type="text/javascript" src="/theme_bs_ruma/static/src/js/theme_bs_ruma.js"/>
             </xpath>
         </template>
-        
+
         <template id="bs-login" inherit_id="web.login" name="Simple Menu Login">
             <xpath expr="//form" position="attributes">
                 <attribute name="style">margin-top: 100px;</attribute>
@@ -153,7 +153,7 @@
                 </script>
             </xpath>
         </template>
-        
+
         <template id="bs_ruma_demo_site" inherit_id="website.layout" customize_show="True" active="False" name="BS Ruma Demo Site" priority="99">
             <xpath expr="//main/t" position="after">
                 <section class="s_title">
@@ -465,6 +465,6 @@
                 </section>
             </xpath>
         </template>
-        
+
     </data>
 </openerp>
