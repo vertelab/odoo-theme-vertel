@@ -7,21 +7,61 @@
             <!-- Customize CSS -->
             <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
                 <link href="/theme_bs_ruma/static/src/css/theme_bs_ruma.css" rel="stylesheet"/>
+                <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700" rel="stylesheet" type="text/css"/>
                 <style>
                     .bs-body {
-                        font-family: 'Open Sans', sans-serif;
+                        font-family: 'PT Sans Caption', sans-serif;
                         list-style: none;
+                        background-color: #fafaf8;
+                    }
+
+                    #wrapwrap section ul li {
+                        list-style-image: url(/theme_bs_ruma/static/src/img/arrow_right_red_10.png);
+                    }
+
+                    h1, h2 {
+                        font-family: 'PT Sans Caption', sans-serif;
+                        font-weight: 700;
+                        color: #333;
+                    }
+
+                    .btn-primary {
+                        background-color: #f00;
+                        border: 1px solid #f00;
+                        opacity: 0.8;
+                    }
+
+                    .btn-primary:hover {
+                        background-color: #f00;
+                        border: 1px solid #f00;
+                        opacity: 1;
+                    }
+
+                    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+                        border-color: #aaa;
+                    }
+
+                    #bs-menu > .container > .navbar-header > .navbar-toggle > .icon-bar {
+                        background-color: #f00;
+                    }
+
+                    #bs-menu > .container > .navbar-header > .navbar-toggle:hover,
+                    #bs-menu > .container > .navbar-header > .navbar-toggle:focus,
+                    #bs-menu > .container > .navbar-header > .navbar-toggle:active{
+                        background-color: #fff;
                     }
 
                     /* MENU */
                     #bs-menu {
-                        z-index: 99;
+                        z-index: 1;
                         margin-top: 0px;
-                        background: #000;
+                        background: #fff;
+                        box-shadow: 0px 0px 3px #333;
+                        border-bottom-width: 0px;
                     }
 
                     /* COMPANY LOGO */
-                    #bs-menu > div > div > a {
+                    #bs-menu &gt; div &gt; div &gt; a {
                         color: #FFF;
                     }
 
@@ -30,34 +70,36 @@
                     }
 
                     /* MENU TEXT */
-                    #bs-menu > div > div > ul > li > a {
-                        color: #FFF;
+                    #bs-menu &gt; div &gt; div &gt; ul &gt; li &gt; a {
+                        color: #333;
+                        font-family: 'PT Sans Caption', sans-serif;
                     }
 
                     /* STYLE WHEN MOUSE HOVER */
-                    #bs-menu > div > div > ul > li > a:hover,
-                    #bs-menu > div > div > ul > li > a:focus {
-                        color: #000;
+                    #bs-menu &gt; div &gt; div &gt; ul &gt; li &gt; a:hover,
+                    #bs-menu &gt; div &gt; div &gt; ul &gt; li &gt; a:focus {
+                        color: #333;
                         background-color: #fff;
                     }
 
                     /* STYLE WHEN PAGE ACTIVE */
-                    #bs-menu > div > div > ul > .active > a {
+                    #bs-menu &gt; div &gt; div &gt; ul &gt; .active &gt; a {
                         color: #000;
                         background-color: #fff;
                     }
 
                     /* FOOTER STYLE*/
                     .bs-footer {
-                        background: #000;
-                        color: #fff;
+                        background: #e8e8e8;
+                        color: #333;
+                        list-style: none;
                     }
                 </style>
             </xpath>
 
             <!-- add company logo -->
             <xpath expr="//header//ul[@id='top_menu']" position="before">
-                <img id="bs-logo" src="/logo.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
+                <img id="bs-logo" src="/logo.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name" class="hidden-xs"/>
             </xpath>
 
             <!-- define id and class to menu bar -->
@@ -74,11 +116,12 @@
             <!-- hide company name -->
             <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div/a" position="attributes">
                 <attribute name="class">navbar-brand hidden-lg hidden-md hidden-sm</attribute>
+                <attribute name="style">padding: 0px 15px</attribute>
             </xpath>
 
             <!-- show company logo in mobile version -->
             <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div/button" position="before">
-                <img class="pull-left hidden-lg hidden-md hidden-sm" style="max-height: 50px;" src="/logo.png"/>
+                <img class="pull-left hidden" style="max-height: 50px;" src="/logo.png"/>
             </xpath>
 
             <!-- hide user login / out -->

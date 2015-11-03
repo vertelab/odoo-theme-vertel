@@ -150,6 +150,243 @@
 
                     /* MENU */
                     #bs-menu {
+                        z-index: 99;
+                        margin-top: 0px;
+                        background: rgba(255, 255, 255, 1);
+                        position: fixed;
+                        top: 0px;
+                        padding: 0px;
+                        border: 0px 0px 1px 0px solid #369;
+                        border-bottom-width: 0px;
+                        box-shadow: 0px 0px 5px #369;
+                    }
+
+                    /* COMPANY LOGO */
+                    #bs-menu &gt; div &gt; div &gt; a {
+                        color: #FFF;
+                        font-family: 'Slabo 27px', serif;
+                    }
+
+                    #bs-logo {
+                        max-height: 50px;
+                    }
+
+                    #top_menu &gt; li &gt; a{
+                        padding: 15px;
+                    }
+
+                    .navbar {
+                        padding: 0px;
+                    }
+
+                    .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+                        max-height: 800px;
+                        border-top-width: 0px;
+                    }
+
+                    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+                        color: #369;
+                    }
+
+                    .dropdown-menu > .active > a,
+                    .dropdown-menu > .active > a:focus,
+                    .dropdown-menu > .active > a:hover,
+                    .dropdown-menu > li > a:hover{
+                        background-color: rgba(33, 66, 99, 0.1);
+                    }
+
+                    .navbar-inverse .navbar-nav > .active > a,
+                    .navbar-inverse .navbar-nav > .active > a:focus,
+                    .navbar-inverse .navbar-nav > .active > a:hover,
+                    .navbar-inverse .navbar-nav > .open > a,
+                    .navbar-inverse .navbar-nav > .open > a:focus,
+                    .navbar-inverse .navbar-nav > .open > a:hover {
+                        background-color: transparent;
+                    }
+
+                    #top_menu &gt; .dropdown &gt; .dropdown-menu {
+                        margin: 0px;
+                        border-radius: 0px;
+                        padding: 0px;
+                    }
+
+                    #top_menu &gt; .dropdown &gt; .dropdown-menu span {
+                        font-size: 1.0em;
+                        background-color: rgba(33, 66, 99, 0.1);
+                    }
+
+                    /* MENU TEXT */
+                    #bs-menu &gt; div &gt; div &gt; ul &gt; li &gt; a {
+                        color: #369;
+                        background-color: none;
+                    }
+
+                    /* STYLE WHEN MOUSE HOVER */
+                    #bs-menu &gt; div &gt; div &gt; ul &gt; li &gt; a:hover,
+                    #bs-menu &gt; div &gt; div &gt; ul &gt; li &gt; a:focus,
+                    #bs-menu &gt; div &gt; div &gt; ul &gt; li &gt; a:active {
+                        color: #369;
+                        text-shadow: 0px 0px 5px #369;
+                    }
+
+                    /* STYLE WHEN PAGE ACTIVE */
+                    #bs-menu &gt; div &gt; div &gt; ul &gt; .active &gt; a {
+                        color: #369;
+                    }
+
+                    /* FOOTER STYLE*/
+                    .bs-footer {
+                        background-color: rgba(33,66,99,0.1);
+                        color: #369;
+                    }
+
+                    .block {
+                        padding: 10px;
+                    }
+
+                    .block > div{
+                        padding: 20px 40px 20px 40px;
+                        border: 1px solid #369;
+                    }
+
+                    .grid-item {
+                        width: 280px;
+                        padding: 0px;
+                    }
+
+                    .grid-item--width2 {
+                        width: 560px;
+                    }
+
+                    .prize {
+                        color: #BD9F57;
+                        font-size: 1.5em;
+                    }
+
+                    #wrapwrap .navbar-toggle {
+                        background-color: #fff;
+                        border-color: #369;
+                    }
+
+                    #wrapwrap .navbar-toggle > .icon-bar {
+                        background-color: #369;
+                    }
+
+                    .carousel-control.left, .carousel-control.right {
+                        background-image: none;
+                    }
+
+                    @media screen and (max-width: 320px) {
+                        h1 {
+                           font-size: 2em;
+                        }
+                        #top_menu {
+                            position: relative;
+                        }
+                    }
+                </style>
+    </xpath>
+    <!-- add company logo -->
+    <xpath expr="//header//ul[@id='top_menu']" position="before">
+        <img id="bs-logo" src="/logo.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name" class="hidden-sm hidden-xs"/>
+    </xpath>
+    <!-- define id and class to menu bar -->
+    <xpath expr="//body/div[@id='wrapwrap']/header/div" position="attributes">
+        <attribute name="id">bs-menu</attribute>
+        <attribute name="class">navbar navbar-inverse navbar-fixed-top</attribute>
+    </xpath>
+    <!-- define class to menu style -->
+    <xpath expr="//header//ul[@id='top_menu']" position="attributes">
+        <attribute name="class">nav navbar-nav navbar-right</attribute>
+    </xpath>
+    <!-- hide company name -->
+    <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div/a" position="attributes">
+        <attribute name="class">navbar-brand hidden</attribute>
+    </xpath>
+    <!-- show company logo in mobile version -->
+    <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div/button" position="before">
+        <img class="pull-left hidden-lg hidden-md hidden-sm" style="max-height: 50px;" src="/logo.png"/>
+    </xpath>
+    <!-- hide user login / out -->
+    <xpath expr="//header//ul[@id='top_menu']/li[@class='divider']" position="attributes">
+        <attribute name="class">hidden</attribute>
+    </xpath>
+    <xpath expr="//header//ul[@id='top_menu']/li[@class='dropdown']" position="attributes">
+        <attribute name="class">hidden</attribute>
+    </xpath>
+    <!-- define a class to body -->
+    <xpath expr="//body" position="attributes">
+        <attribute name="class">bs-body</attribute>
+    </xpath>
+    <!-- define a class to footer -->
+    <xpath expr="//footer" position="attributes">
+        <attribute name="class">bs-footer</attribute>
+    </xpath>
+    <!-- add log in/out in footer -->
+    <xpath expr="//footer" position="inside">
+        <div class="container">
+            <div class="pull-right">
+                <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <b>
+                            <span t-esc="user_id.name"/>
+                            <span class="caret"/>
+                        </b>
+                    </a>
+                    <ul class="dropdown-menu js_usermenu" role="menu">
+                        <li>
+                            <a href="/web" role="menuitem">My Account</a>
+                        </li>
+                        <li class="divider"/>
+                        <li>
+                            <a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a>
+                        </li>
+                    </ul>
+                </li>
+            </div>
+            <div class="pull-right">
+                <li groups="base.group_public">
+                    <a t-attf-href="/web/login">
+                        <b>Sign in</b>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </xpath>
+    <!-- Customize javascript -->
+    <xpath expr="//body" position="inside">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+        <script>
+            $('.thumbnail').click(function(){
+                $('.modal-body').empty();
+                var title = $(this).parents('a').attr("title");
+                var comment = $(this).parents('a').attr("comment");
+                var reward = $(this).parents('a').attr("reward");
+                var year = $(this).parents('a').attr("year");
+                  $('.modal-title').html(title);
+                $('.modal-comment').html(comment);
+                $('.modal-reward').html(reward);
+                $('.modal-year').html(year);
+                $($(this).parents('div').html()).appendTo('.modal-body');
+                $('#myModal').modal({show:true});
+            });
+        </script>
+    </xpath>
+</data>
+
+    <!-- Customize CSS -->
+    <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
+        <link href="/theme_bs_ruma/static/src/css/theme_bs_ruma.css" rel="stylesheet"/>
+        <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'/>
+        <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'/>
+        <style>
+                    .bs-body {
+                        font-family: 'Lato', sans-serif;
+                        list-style: none;
+                    }
+
+                    /* MENU */
+                    #bs-menu {
                         z-index: 1;
                         margin-top: 0px;
                         background: rgba(255, 255, 255, 1);
