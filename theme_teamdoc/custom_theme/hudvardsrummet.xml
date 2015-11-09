@@ -1,15 +1,100 @@
 <!-- hem -->
+<t t-name="website.hem">
+    <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty">
+            <div class="carousel slide s_banner mt16 mb16" id="myCarousel0">
+                <ol class="carousel-indicators">
+                    <li class="active" data-slide-to="0" data-target="#myCarousel0"/>
+                    <li data-slide-to="1" data-target="#myCarousel0"/>
+                    <li data-slide-to="2" data-target="#myCarousel0"/>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active" style="">
+                        <div class="container"/>
+                        <img src="/website/image/ir.attachment/140_81280e2/datas" style="width: 100%; height: auto; animation-play-state: paused; transition: none 0s ease 0s"/>
+                    </div>
+                    <div class="item">
+                        <div class="container"/>
+                        <img src="/website/image/ir.attachment/150_e9778bf/datas" style="width: 100%; height: auto; animation-play-state: paused; transition: none"/>
+                    </div>
+                    <div class="item" style="">
+                        <div class="container"/>
+                        <img src="/website/image/ir.attachment/149_22ebad7/datas" style="width: 100%; height: auto; animation-play-state: paused; transition: none 0s ease 0s"/>
+                    </div>
+                </div>
+                <div class="carousel-control left" data-slide="prev" data-target="#myCarousel0" href="#myCarousel0" style="width: 10%; background: none;">
+                    <i class="fa fa-chevron-left" style="color: #888"/>
+                </div>
+                <div class="carousel-control right" data-slide="next" data-target="#myCarousel0" href="#myCarousel0" style="width: 10%; background: none;">
+                    <i class="fa fa-chevron-right" style="color: #888"/>
+                </div>
+            </div>
+            <section>
+                <div class="container mb64" style="max-width: 1140px; padding: 0px; background-color: #fff;">
+                    <div class="container">
+                        <div class="col-md-4 col-sm-4 col-xs-12" style="padding: 2px;">
+                            <div class="hover" style="display: inline-block; width: 100%; position: relative;">
+                                <div class="text-center" style="width: 100%; background-color: #C69F56; top: 0px; bottom: 0px; left; 0px; right: 0px; position: absolute;">
+                                    <a href="/shop" style="">
+                                        <i class="fa fa-shopping-cart fa-5x winion-icon-medium" style=""/>
+                                    </a>
+                                    <h4>Webshop</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12" style="padding: 2px;">
+                            <div class="hover" style="display: inline-block; width: 100%; position: relative;">
+                                <a href="/page/om-oss" style="">
+                                    <img class="img-responsive" src="/theme_teamdoc/static/src/img/hudvardsrummet/personal.png" style="width:100%; top: 0px; bottom: 0px; left; 0px; right: 0px; position: absolute;"/>
+                                </a>
+                                <h4>Om Oss</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12" style="padding: 2px;">
+                            <div class="hover" style="display: inline-block; width: 100%; position: relative;">
+                                <div class="text-center" style="width: 100%; background-color: #389A2F; top: 0px; bottom: 0px; left; 0px; right: 0px; position: absolute;">
+                                    <a href="http://hudvardsrummetilinkoping.bokadirekt.se" style="">
+                                        <i class="fa fa-calendar fa-5x winion-icon-medium" style=""/>
+                                    </a>
+                                    <h4>Boka tid</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </t>
+</t>
+
+<!-- theme -->
 <?xml version="1.0"?>
 <data inherit_id="website.layout" customize_show="True" active="False" name="Theme Block Logo" priority="99">
     <!-- Customize CSS -->
     <xpath expr="//head/t[@name='layout_head']" position="after">
         <link href="/theme_block_logo/static/src/css/theme_block_logo.css" rel="stylesheet"/>
-
+        <link href='https://fonts.googleapis.com/css?family=Domine' rel='stylesheet' type='text/css'/>
         <style>
+
             .bl-body {
                 background: #fff;
                 list-style: none;
-                font-family: ''New Time Roman';
+                font-family: 'Domine', serif;
+            }
+
+            h1, h2, h3 {
+                color: #B9A55A;
+                font-family: 'Domine', serif;
+            }
+
+            h4, h5 {
+                color: #000;
+            }
+
+            #wrap {
+                max-width: 1140px;
+                width: 100%;
+                margin: auto;
             }
 
             /* MENU */
@@ -60,7 +145,6 @@
                 background-color: #EDE7D3;
             }
 
-
             /* COMPANY LOGO */
             #logo-box {
                 padding: 0px;
@@ -109,6 +193,7 @@
 
             /* FOOTER STYLE*/
             .bl-footer {
+                max-width: 2000px;
                 background-color: #EDE7D3;
                 box-shadow: 0px 0px 20px #B9A55A;
             }
@@ -147,7 +232,103 @@
                 transition: all 0.7s ease-out;
             }
 
-            div#products_grid_before a {
+            .hover h4 {
+                transition: all 0.7s ease-in;
+                color: #fff !important;
+                width: 100%;
+                height: 15%;
+                bottom: 15%;
+                line-height: 200%;
+                text-align: center;
+                position: absolute;
+                margin: 0;
+                background-color: rgba(0, 0, 0, 0.7);
+                opacity: 1;
+            }
+
+            .hover:hover h4 {
+                opacity: 0.2;
+            }
+
+            .hover:after{
+                padding-top: 65%;
+                display: block;
+                content: '';
+            }
+
+            @media screen and (max-width: 1280px) {
+                .winion-icon-medium {
+                    line-height: 370%;
+                }
+            }
+
+            @media screen and (max-width: 1024px) {
+                .winion-icon-medium {
+                    line-height: 470%;
+                }
+                .hover i {
+                    line-height: 220%;
+                }
+                .hover h4 {
+                    line-height: 140%;
+                }
+            }
+
+            @media screen and (max-width: 800px) {
+                .winion-icon-medium {
+                    line-height: 470%;
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                .winion-icon-medium {
+                    line-height: 450%;
+                }
+                .hover h3 {
+                    line-height: 150%;
+                }
+            }
+
+            @media screen and (max-width: 480px) {
+                h1 {
+                    font-size: 1.2em;
+                }
+                #bl-menu-bar > ul > li > a {
+                    padding: 5px 0px 5px 0px;
+                }
+                section .s_title > div .container {
+                    margin-top: 0px;
+                }
+                #pro_table h3, #pro_des h1 {
+                    font-size: 1.2em;
+                }
+                .winion-icon-medium {
+                    line-height: 300%;
+                }
+                .hover h3 {
+                    line-height: 200%;
+                }
+            }
+
+            @media screen and (max-width: 360px) {
+                .winion-icon-medium {
+                    line-height: 300%;
+                }
+                .hover h3 {
+                    line-height: 200%;
+                }
+            }
+
+            @media screen and (max-width: 320px) {
+                .winion-icon-medium {
+                    line-height: 300%;
+                }
+                .hover h3 {
+                    line-height: 180%;
+                }
+            }
+
+            div#products_grid_before a{
                 background-color: #FFFFFF;
                 color: #776337;
             }
@@ -165,12 +346,13 @@
                 background-color: #C69F56;
                 color: #fff;
             }
+
             .ribbon.btn.btn-danger {
                 font-size: 12px;
             }
 
             .oe_product-custom-color-0 section{
-                background-color: #EFE8D7;
+                background-color: rgba(239, 232, 215, 0.3);
                 color: #000;
             }
 
@@ -179,7 +361,7 @@
             }
 
             .oe_product-custom-color-2 section{
-                background-color: #EFE8D7;
+                background-color: rgba(239, 232, 215, 0.3);
                 color: #000;
             }
 
@@ -188,7 +370,7 @@
             }
 
             .oe_product-custom-color-1 section{
-                background-color: #EFE8D7;
+                background-color: rgba(239, 232, 215, 0.3);
                 color: #000;
             }
 
@@ -211,9 +393,63 @@
             .oe_product-custom-color-3 a.btn.fa-shopping-cart {
                 background-color: #fff;
             }
+
+            .products_pager .pagination a {
+                color: #333;
+                background-color: none;
+                border-color: #CACACA;
+            }
+
+            .pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover, .pagination > li > a:focus, .pagination > li > a:hover, .pagination > li > span:focus, .pagination > li > span:hover {
+                background-color: #B9A55A;
+                border-color: #B9A55A;
+                color: #333;
+            }
+
+            #pro_table tbody, #pro_table td {
+                border: none;
+            }
+
+            .js_add_cart_json i, .breadcrumb a, #cart_products a, .wizard li, #products_grid a{
+                color: #B9A55A;
+            }
+
+            #add_to_cart, .oe_cart .btn-primary {
+                background-color: #B9A55A;
+                border-color: #B9A55A;
+            }
+
+            .my_cart_quantity {
+                background-color: #B9A55A;
+            }
+
+            .oe_monthly_offer .monthly-offer {
+                display: block;
+            }
+
+            .oe_recommended_product .recommended-product {
+                display: block;
+            }
+
+            .monthly-offer, .recommended-product, .oe_styles_header {
+                display: none;
+                z-index: 5;
+                position: absolute;
+                background-color: #000000;
+                color: #FFFFFF;border-radius: 5px;
+                padding: 5px;
+                text-align: center;
+            }
+
+            .oe_styles_header {
+                display: inline-block;
+                position: static;
+            }
+            .oe_styles_body {
+                padding: 0px;
+            }
         </style>
     </xpath>
-
     <!-- add company logo -->
     <xpath expr="//body/div[@id='wrapwrap']/header" position="before">
         <div class="container">
@@ -222,13 +458,17 @@
             </div>
         </div>
     </xpath>
-
+    <!-- Footer design -->
+    <xpath expr="//main" position="inside">
+        <div class="col-md-12 col-xs-12 mt64 mb32">
+            <img src="/theme_teamdoc/static/src/img/hudvardsrummet/sidfot.png" style="max-width: 145px; width: 100%; margin: auto; display: block;"/>
+        </div>
+    </xpath>
     <!-- define id and class to menu bar -->
     <xpath expr="//body/div[@id='wrapwrap']/header/div" position="attributes">
         <attribute name="id">bl-menu</attribute>
         <attribute name="class">bl-navbar</attribute>
     </xpath>
-
     <!-- define class to menu style -->
     <xpath expr="//header//ul[@id='top_menu']" position="attributes">
         <attribute name="class">nav nav-justified</attribute>
@@ -237,17 +477,14 @@
         <attribute name="id">bl-menu-bar</attribute>
         <attribute name="class">collapse navbar-collapse navbar-top-collapse col-md-12</attribute>
     </xpath>
-
     <!-- hide company name -->
     <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div/a" position="attributes">
         <attribute name="class">navbar-brand hidden</attribute>
     </xpath>
-
     <!-- show company logo in mobile version -->
     <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div/button" position="before">
         <img class="pull-left hidden-lg hidden-md hidden-sm" style="max-height: 50px;" src="/logo.png"/>
     </xpath>
-
     <!-- hide user login / out -->
     <xpath expr="//header//ul[@id='top_menu']/li[@class='divider']" position="attributes">
         <attribute name="class">hidden</attribute>
@@ -255,7 +492,6 @@
     <xpath expr="//header//ul[@id='top_menu']/li[@class='dropdown']" position="attributes">
         <attribute name="class">hidden</attribute>
     </xpath>
-
     <!-- define a class to body -->
     <xpath expr="//body" position="attributes">
         <attribute name="class">bl-body</attribute>
@@ -276,9 +512,13 @@
                         </b>
                     </a>
                     <ul class="dropdown-menu js_usermenu" role="menu">
-                        <li><a href="/web" role="menuitem">My Account</a></li>
+                        <li>
+                            <a href="/web" role="menuitem">My Account</a>
+                        </li>
                         <li class="divider"/>
-                        <li><a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a></li>
+                        <li>
+                            <a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a>
+                        </li>
                     </ul>
                 </li>
             </div>
@@ -299,7 +539,6 @@
         <script type="text/javascript" src="/theme_block_logo/static/src/js/theme_block_logo.js"/>
     </xpath>
 </data>
-
 
 <!-- theme overwrite -->
 <?xml version="1.0"?>
@@ -597,8 +836,6 @@
     </xpath>
 </data>
 
-
-
 <!-- footer -->
 <data inherit_id="website.footer_custom" customize_show="True" name="Automatic Footer">
     <xpath expr="//div[@id='footer']" position="replace">
@@ -625,31 +862,38 @@
                     </ul>
                 </div>
                 <div class="col-md-12" id="info">
-                    <a href="/page/website.contactus">Kontakta oss</a>
-                    <i class="fa fa-phone" style="margin-left: 32px;"/> <a href="tel: +4613101060"><span t-field="res_company.phone"/></a>
-                    <i class="fa fa-envelope" style="margin-left: 32px;"/> <a href="mailto: info@hudvardsrummet.se"><span t-field="res_company.email"/></a>
-                    <i class="fa fa-home" style="margin-left: 32px;"/> <span t-field="res_company.street"/> <span t-field="res_company.zip"/> <span t-field="res_company.city"/>
-
-                    <h2>
-                        <a t-att-href="website.social_facebook" t-if="website.social_facebook">
-                            <i class="fa fa-facebook-square"/>
-                        </a>
-                        <a t-att-href="website.social_twitter" t-if="website.social_twitter">
-                            <i class="fa fa-twitter"/>
-                        </a>
-                        <a t-att-href="website.social_linkedin" t-if="website.social_linkedin">
-                            <i class="fa fa-linkedin"/>
-                        </a>
-                        <a t-att-href="website.social_youtube" t-if="website.social_youtube">
-                            <i class="fa fa-youtube-play"/>
-                        </a>
-                        <a t-att-href="website.social_googleplus" t-if="website.social_googleplus" rel="publisher">
-                            <i class="fa fa-google-plus-square"/>
-                        </a>
-                        <a t-att-href="website.social_github" t-if="website.social_github">
-                            <i class="fa fa-github"/>
-                        </a>
-                    </h2>
+                    <div class="col-md-6 col-sx-12">
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-phone"/> <a href="tel: +4613101060"><span t-field="res_company.phone"/></a> </li>
+                            <li><i class="fa fa-envelope"/> <a href="mailto: info@hudvardsrummet.se"><span t-field="res_company.email"/></a></li>
+                            <li><i class="fa fa-home"/> <span t-field="res_company.street"/> <span t-field="res_company.zip"/> <span t-field="res_company.city"/></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-sx-12">
+                        <span class="pull-right">
+                            <a t-att-href="website.social_facebook" t-if="website.social_facebook">
+                                <i class="fa fa-facebook-square fa-3x"/>
+                            </a>
+                            <a href="https://www.instagram.com/hudvardsrummet">
+                                <i class="fa fa-instagram fa-3x"/>
+                            </a>
+                            <a t-att-href="website.social_twitter" t-if="website.social_twitter">
+                                <i class="fa fa-twitter fa-3x"/>
+                            </a>
+                            <a t-att-href="website.social_linkedin" t-if="website.social_linkedin">
+                                <i class="fa fa-linkedin fa-3x"/>
+                            </a>
+                            <a t-att-href="website.social_youtube" t-if="website.social_youtube">
+                                <i class="fa fa-youtube-play fa-3x"/>
+                            </a>
+                            <a t-att-href="website.social_googleplus" t-if="website.social_googleplus" rel="publisher">
+                                <i class="fa fa-google-plus-square fa-3x"/>
+                            </a>
+                            <a t-att-href="website.social_github" t-if="website.social_github">
+                                <i class="fa fa-github fa-3x"/>
+                            </a>
+                        </span>
+                    </div>
                     <ul class="list-inline js_language_selector mt16" t-if="(request.website_multilang and len(languages) &gt; 1) or editable">
                         <li t-foreach="languages" t-as="lg">
                             <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang=lg[0])" t-att-data-default-lang="editable and 'true' if lg[0] == website.default_lang_code else None" t-att-data-lang="lg[0]" class="js_change_lang">
@@ -697,7 +941,6 @@ Vi är auktoriserade hudterapeuter med internatinellt cidescodiplom och är medl
         </div>
     </xpath>
 </data>
-
 
 <!-- footer -->
 <i class="fa fa-phone"/> <span t-field="res_company.phone"/> | <i class="fa fa-envelope"/> <span t-field="res_company.email"/> |

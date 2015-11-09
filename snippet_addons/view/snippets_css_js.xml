@@ -43,6 +43,7 @@
                 <link href="/snippet_addons/static/src/css/family_tree.css" rel="stylesheet"/>
                 <link href="/snippet_addons/static/src/css/winion.css" rel="stylesheet"/>
                 <link href="/snippet_addons/static/src/css/round_hover_button.css" rel="stylesheet"/>
+                <link href="/snippet_addons/static/src/css/cubes.css" rel="stylesheet"/>
                 <link href="/snippet_addons/static/src/css/fade_slider.css" rel="stylesheet"/>
             </xpath>
         </template>

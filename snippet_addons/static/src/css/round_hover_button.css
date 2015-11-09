@@ -176,8 +176,18 @@
         overflow: hidden;
     }
 
-    .round-icon i {
-        padding-top: 33%;
+    .round-icon-transparent {
+        background-color: transparent;
+        border-radius: 100px;
+        border: 0px solid;
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        overflow: hidden;
+        opacity: 0.8;
+    }
+
+    .round-icon i, .round-icon-transparent i {
         width:200px;
         height: 200px;
         color: #fff;
@@ -186,4 +196,10 @@
     .round-icon:hover {
         background-color: rgba(0, 255, 0, 0.4);
         transition: all 0.7s ease-out;
+    }
+
+    .round-icon-transparent:hover {
+        border: 1px solid;
+        opacity: 1;
+        transition: all 0.3s ease-out;
     }

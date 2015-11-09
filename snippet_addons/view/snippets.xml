@@ -1,11 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
     <data>
-
+        
         <!-- Customize Snippets -->
         <template id="custom_snippets" inherit_id="website.snippets" name="Custom Snippets">
             <!-- Customize Structure -->
             <xpath expr="//div[@id='snippet_structure']" position="inside">
+               <div id="family_table">
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_panel.png"/>
+                        <span class="oe_snippet_thumbnail_title">Family Tree Table</span>
+                    </div>
+                    <section class="oe_snippet_body">
+                        <div class="content">
+                            <div class="col-md-6 col-xs-12 mt16">
+                                <table class="text-center table table-bordered table-responsive" id="famtable" style="margin:auto; display;block;">
+                                    <tbody>
+                                        <tr class="info">
+                                            <td colspan="4">
+                                                <h3>Name</h3>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4">
+                                                <img class="img-responsive shadow" src="/website/static/src/img/island.jpg" style="max-width: 400px; margin: auto; animation-play-state: paused; transition: none 0s ease 0s"/>
+                                            </td>
+                                        </tr>
+                                        <tr class="active">
+                                            <td>Color:
+                                                <br/>
+                                                Enter color
+                                            </td>
+                                            <td>Sex:
+                                                <br/>
+                                                Enter sex
+                                            </td>
+                                            <td>Birth year:
+                                                <br/>
+                                                2006
+                                            </td>
+                                            <td>Height:
+                                                <br/>
+                                                167
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" rowspan="4" style="PADDING-LEFT: 15px; FONT-WEIGHT: bold" width="130">Name</td>
+                                            <td rowspan="2" style="PADDING-LEFT: 15px" width="130">Name</td>
+                                            <td style="PADDING-LEFT: 15px" width="130">Name</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="PADDING-LEFT: 15px">Name
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2" style="PADDING-LEFT: 15px">Name</td>
+                                            <td style="PADDING-LEFT: 15px">Name</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="PADDING-LEFT: 15px">Name</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" rowspan="4" style="PADDING-LEFT: 15px">Name</td>
+                                            <td rowspan="2" style="PADDING-LEFT: 15px; FONT-WEIGHT: bold">Name</td>
+                                            <td style="PADDING-LEFT: 15px">Name</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="PADDING-LEFT: 15px">Name</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2" style="PADDING-LEFT: 15px">Name</td>
+                                            <td style="PADDING-LEFT: 15px; FONT-WEIGHT: bold">Name</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="PADDING-LEFT: 15px">Name</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4">
+                                                <span style="MARGIN: 15px">
+                                                    <span style="FONT-WEIGHT: bold">lorum ipsum</span>: lorem ipsum 
+                                                    <span style="FONT-WEIGHT: bold">lorum ipsum</span>: lorem ipsum 
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+               
+               
                
                 <!--NEWS SNIPPET-->
                 <div id="news_snippet">
@@ -38,34 +123,69 @@
                 <!--END OF NEWS SNIPPET-->
                 
                 <!--FADE SLIDER-->
-                <div id="fade_slider_snippet">
+                <div id="fade_slide">
                     <div class="oe_snippet_thumbnail">
-                        <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_parallax.png"/>
-                        <span class="oe_snippet_thumbnail_title">Image Fade Slider</span>
+                        <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_banner.png"/>
+                        <span class="oe_snippet_thumbnail_title">Fade Banner</span>
                     </div>
                     <section class="oe_snippet_body">
-                        <div class="content">
-                            <div class="wrapper">
-                                <div id="animation">
-                                    <div id="animation-box">
-                                        <img class="active" src="http://lorempixel.com/520/220/abstract/" alt="" />
-                                        <img src="http://lorempixel.com/520/220/animals/" alt="" />
-                                        <img src="http://lorempixel.com/520/220/business/" alt="" />
-                                        <img src="http://lorempixel.com/520/220/cats/" alt="" />
-                                        <img src="http://lorempixel.com/520/220/city/" alt="" />
-                                        <img src="http://lorempixel.com/520/220/food/" alt="" />
-                                        <img src="http://lorempixel.com/520/220/nightlife/" alt="" />
-                                        <img src="http://lorempixel.com/520/220/fashion/" alt="" />
-                                        <img src="http://lorempixel.com/520/220/people/" alt="" />
-                                        <img src="http://lorempixel.com/520/220/nature/" alt="" />
-                                        <img src="http://lorempixel.com/520/220/sports/" alt="" />
-                                        <img src="http://lorempixel.com/520/220/technics/" alt="" />
-                                        <img src="http://lorempixel.com/520/220/transport/" alt="" />
+                        <div class="carousel slide carousel-fade" data-ride="carousel" id="Carousel" style="height: 640px; overflow: hidden;">
+                        <ol class="carousel-indicators">
+                            <li class="active" data-slide-to="0" data-target="Carousel"/>
+                            <li data-slide-to="1" data-target="Carousel"/>
+                            <li data-slide-to="2" data-target="Carousel"/>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="item active" style="">
+                                <img class="img-responsive" src="/website/static/src/img/fields.jpg" style="position: relative;"/>
+                                 <div class="container" style="position: absolute; top: 20%; left: 20%;">
+                                    <div class="row content">
+                                        <div class="col-md-6 col-sm-12">
+                                            <h2>Your Banner Title</h2>
+                                            <h3>Click here to add text</h3>
+                                            <p>
+                                                <a class="btn btn-success btn-large" href="/page/website.contactus">Contact us</a>
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div id="animation-buttons"/>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive" src="/website/static/src/img/island.jpg" style="position: relative;"/>
+                                <div class="container" style="position: absolute; top: 20%; left: 20%;">
+                                    <div class="row content">
+                                        <div class="col-md-6 col-sm-12">
+                                            <h2>Your Banner Title</h2>
+                                            <h3>Click here to add text</h3>
+                                            <p>
+                                                <a class="btn btn-success btn-large" href="/page/website.contactus">Contact us</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive" src="/website/static/src/img/volcano.jpg" style="position: relative;"/>
+                                <div class="container" style="position: absolute; top: 20%; left: 20%;">
+                                    <div class="row content">
+                                        <div class="col-md-6 col-sm-12">
+                                            <h2>Your Banner Title</h2>
+                                            <h3>Click here to add text</h3>
+                                            <p>
+                                                <a class="btn btn-success btn-large" href="/page/website.contactus">Contact us</a>
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <a class="left carousel-control" data-slide="prev" href="#Carousel">
+                            <i class="fa fa-chevron-left"/>
+                        </a>
+                        <a class="right carousel-control" data-slide="next" href="#Carousel">
+                            <i class="fa fa-chevron-right"/>
+                        </a>
+                    </div>
                     </section>
                 </div>
                 <!--END OF FADE SLIDER-->
@@ -106,6 +226,95 @@
                         <div class="carousel-control right hidden" data-target="#carousel_vertical" data-slide="next" style="height: 100%"><i class="fa fa-chevron-down"/></div>
                     </div>
                 </div><!-- End of vertical slide -->
+
+                <!-- Notes Cubes -->
+                <div id="notes_cubes">
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_features.png"/>
+                        <span class="oe_snippet_thumbnail_title">Notes Cubes</span>
+                    </div>
+                    <section class="s_cubes oe_snippet_body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6 cube cube-big col-xs-12 col-sm-12 cube-big-bg" style="background-image: url('/website/static/src/img/fields.jpg');"/>
+                                <div class="cube-big col-md-6 col-xs-12 col-sm-12">
+                                    <div class="row">
+                                        <div class="cube cube-text col-md-6 col-sm-6 col-xs-12">
+                                            <div class="cube-heading">
+                                                <h4 class="text-center">Lorem ipsum dolor sit amet</h4>
+                                                <p class="text-center">Lorem ipsum dolor sit amet, class pharetra id elit leo. Massa leo per orci ullamcorper egestas, in diam, fermentum phasellus elit praesent morbi.</p>
+                                            </div>
+                                        </div>
+                                        <div class="cube cube-small col-md-6 col-sm-6 col-xs-12 cube-medium-bg" style="background-image: url('/website/static/src/img/volcano.jpg');"/>
+                                    </div>
+                                    <div class="row">
+                                        <div class="cube cube-small col-md-6 col-sm-6 col-xs-12 cube-medium-bg" style="background-image: url('website/static/src/img/island.jpg');"/>
+                                        <div class="cube cube-text col-md-6 col-sm-6 col-xs-12 last">
+                                            <div class="cube-heading">
+                                                <h4 class="text-center">Lorem ipsum dolor sit amet</h4>
+                                                <p class="text-center">Lorem ipsum dolor sit amet, class pharetra id elit leo. Massa leo per orci ullamcorper egestas, in diam, fermentum phasellus elit praesent morbi.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div><!-- End of Notes Cubes -->
+
+                <!-- Notes Cubes -->
+                <div id="two_column_text">
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_text_block.png"/>
+                        <span class="oe_snippet_thumbnail_title">Two Column Text</span>
+                    </div>
+                    <section class="s_2_column_text oe_structure oe_snippet_body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h2>Lorem ipsum dolor sit amet</h2>
+                                    <p>Lorem ipsum dolor sit amet, mea id tacimates moderatius referrentur, ea vel nisl dissentias. Per dicat ludus eirmod cu, idque reprimique temporibus at per. Vel ex aeque epicuri partiendo. Sonet consulatu vel at. Commune invenire ut mei, cu sed prompta hendrerit.<br/>
+                                    Ex mel feugiat dissentias, et eam dicta labore epicuri, iisque pertinax vis ne. Ea intellegat voluptatum vis, ei magna consul sea, te his natum oratio. His brute gloriatur cu, et eum ipsum oblique consequat. Justo consulatu ius ei, eu labore possit vim, qui ad essent vocibus. Eu nec delectus oportere vituperatoribus.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h2>Lorem ipsum dolor sit amet</h2>
+                                    <p>Lorem ipsum dolor sit amet, mea id tacimates moderatius referrentur, ea vel nisl dissentias. Per dicat ludus eirmod cu, idque reprimique temporibus at per. Vel ex aeque epicuri partiendo. Sonet consulatu vel at. Commune invenire ut mei, cu sed prompta hendrerit.<br/>
+                                    Ex mel feugiat dissentias, et eam dicta labore epicuri, iisque pertinax vis ne. Ea intellegat voluptatum vis, ei magna consul sea, te his natum oratio. His brute gloriatur cu, et eum ipsum oblique consequat. Justo consulatu ius ei, eu labore possit vim, qui ad essent vocibus. Eu nec delectus oportere vituperatoribus.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div><!-- End of Notes Cubes -->
+
+                <!-- Color Blocks -->
+                <div id="color_blocks">
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_features.png"/>
+                        <span class="oe_snippet_thumbnail_title">Color Blocks</span>
+                    </div>
+                    <section class="s_color_blocks_4 oe_snippet_body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-6 text-center" style="padding: 64px 20px 64px 20px; height: 100%; min-height: 100%; background-color: #E4151D; color: #FFF;">
+                                    <h4>A COLOR BLOCK</h4>
+                                    <p>Color code : #E4151D</p>
+                                </div>
+                                <div class="col-md-3 col-sm-6 text-center" style="padding: 64px 20px 64px 20px; height: 100%; min-height: 100%; background-color: #C1C1C1; color: #111;">
+                                    <h4>A COLOR BLOCK</h4>
+                                    <p>Color code : #C1C1C1</p>
+                                </div>
+                                <div class="col-md-3 col-sm-6 text-center" style="padding: 64px 20px 64px 20px; height: 100%; min-height: 100%; background-color: #3B3D4D; color: #FFF;">
+                                    <h4>A COLOR BLOCK</h4>
+                                    <p>Color code : #3B3D4D</p>
+                                </div>
+                                <div class="col-md-3 col-sm-6 text-center" style="padding: 64px 20px 64px 20px; height: 100%; min-height: 100%; background-color: #E6FA16; color: #333;">
+                                    <h4>A COLOR BLOCK</h4>
+                                    <p>Color code : #E6FA16</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div><!-- End of Color Blocks -->
 
                 <!-- Banner block -->
                 <div id="banner_block">
@@ -211,7 +420,7 @@
                         <span class="oe_snippet_thumbnail_title">Round Hover Icon Button</span>
                     </div>
                     <div class="oe_snippet_body oe_share">
-                        <div class="container mt128 mb128">
+                        <div class="container mt64 mb64">
                             <div class="col-md-3 col-sm-6" style="padding: 15px;">
                                 <div class="round-icon">
                                     <a href="#">
@@ -253,8 +462,57 @@
                 </div>
                 <!--END OF ROUND HOVER ICON BUTTONS-->
 
+                <!--ROUND HOVER ICON TRANSPARENT BUTTONS-->
+                <div id="round_hover_icon_transparent_buttons">
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_big_picture.png"/>
+                        <span class="oe_snippet_thumbnail_title">Round Hover Icon Transparent Button</span>
+                    </div>
+                    <div class="oe_share">
+                        <div class="container mt64 mb64">
+                            <div class="col-md-3 col-sm-6" style="padding: 15px;">
+                                <div class="round-icon-transparent" style="border-color: #43609C;">
+                                    <a href="#">
+                                        <div class="text-center">
+                                            <i class="fa fa-facebook-square fa-5x" style="padding-top: 33%; color: #43609C; :hover{opacity: 1;}"/>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6" style="padding: 15px;">
+                                <div class="round-icon-transparent" style="border-color: #A4704B;">
+                                    <a href="#">
+                                        <div class="text-center">
+                                            <i class="fa fa-instagram fa-5x" style="padding-top: 33%; color: #A4704B; :hover{opacity: 1;}"/>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6" style="padding: 15px;">
+                                <div class="round-icon-transparent" style="border-color: #00ACED;">
+                                    <a href="#">
+                                        <div class="text-center">
+                                            <i class="fa fa-twitter fa-5x" style="padding-top: 33%; color: #00ACED; :hover{opacity: 1;}"/>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6" style="padding: 15px;">
+                                <div class="round-icon-transparent" style="border-color: #006699;">
+                                    <a href="#">
+                                        <div class="text-center">
+                                            <i class="fa fa-linkedin fa-5x" style="padding-top: 33%; color: #006699; :hover{opacity: 1;}"/>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--END OF ROUND HOVER ICON BUTTONS-->
+
                 <!-- Famliy Tree -->
-                <div id="family_tree">
+                <!--<div id="family_tree">
                     <div class="oe_snippet_thumbnail">
                         <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_features.png"/>
                         <span class="oe_snippet_thumbnail_title">Family Tree</span>
@@ -268,7 +526,51 @@
                                         <strong>CEO</strong>
                                     </a>
                                     <ul>
-                                        <li><!--Start of first CFO-->
+                                        <li>-->
+                                        <!--Start of first CFO-->
+                                           <!-- <a href="#">
+                                                <img alt="" src="http://placehold.it/" />CFO
+                                            </a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#"> <img alt="" style="" src="http://placehold.it/"/>
+                                                        Employee
+                                                    </a>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#"> <img alt="" style="" src="http://placehold.it/"/>
+                                                                Employee
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"> <img alt="" style="" src="http://placehold.it/"/>
+                                                                <b>Employee</b>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img alt="" src="http://placehold.it/" /><b>Employee</b>
+                                                    </a>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#"> <img alt="" style="" src="http://placehold.it/"/>
+                                                                Employee
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#"> <img alt="" style="" src="http://placehold.it/"/>
+                                                                Employee
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>-->
+                                        <!--end of first CFO-->
+                                        <!--Start of second CFO-->
+                                        <!--<li>
                                             <a href="#">
                                                 <img alt="" src="http://placehold.it/" />CFO
                                             </a>
@@ -308,55 +610,15 @@
                                                     </ul>
                                                 </li>
                                             </ul>
-                                        </li><!--end of first CFO-->
-
-                                        <li><!--Start of seconf CFO-->
-                                            <a href="#">
-                                                <img alt="" src="http://placehold.it/" />CFO
-                                            </a>
-                                            <ul>
-                                                <li>
-                                                    <a href="#"> <img alt="" style="" src="http://placehold.it/"/>
-                                                        Employee
-                                                    </a>
-                                                    <ul>
-                                                        <li>
-                                                            <a href="#"> <img alt="" style="" src="http://placehold.it/"/>
-                                                                Employee
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#"> <img alt="" style="" src="http://placehold.it/"/>
-                                                                <b>Employee</b>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        <img alt="" src="http://placehold.it/" /><b>Employee</b>
-                                                    </a>
-                                                    <ul>
-                                                        <li>
-                                                            <a href="#"> <img alt="" style="" src="http://placehold.it/"/>
-                                                                Employee
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#"> <img alt="" style="" src="http://placehold.it/"/>
-                                                                Employee
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li><!--end of second CFO-->
+                                        </li>-->
+                                        <!--end of second CFO-->
+                                        <!--
                                     </ul>
                                 </li>
                             </ul>
-                        </div><!--end of family tree-->
-                    </div>
-                </div>
+                        </div>--><!--end of family tree-->
+                    <!--</div>
+                </div>-->
             </xpath>
 
             <!-- Customize Features -->
@@ -387,187 +649,77 @@
                         <span class="oe_snippet_thumbnail_title">Winion</span>
                     </div>
                     <section class="oe_snippet_body">
-                        <div class="container">
+                        <div class="container mt32 mb32">
                             <div class="row">
-                                <!--ROW 1-->
                                 <div class="container">
-                                    <div class="col-md-5 col-sm-5 col-xs-12" style="padding: 2px;">
-                                        <div class="hover">
-                                            <a href="/" style="display: block; width: 100%; height: 100%;">
-                                                <img class="img-responsive" src="/website/static/src/img/library/ship_sea.jpg" style="width:100%; height:266px;"/>
+                                    <div class="col-md-4 col-sm-4 col-xs-12" style="padding: 2px 2px 0px 2px;">
+                                        <div class="hover" style="display: inline-block; width: 100%;">
+                                            <a href="/" style="">
+                                                <img class="img-responsive" src="/website/static/src/img/library/world.jpg" style="width:100%; top: 0px; bottom: 0px; left; 0px; right: 0px; position: absolute"/>
                                             </a>
                                             <h3>Hover Text</h3>
                                         </div>
                                     </div>
-                                    <div class="col-md-2 col-sm-2 col-xs-12" style="padding: 2px;">
-                                        <div class="col-md-12 col-xs-6" style="padding: 0px 0px 2px 0px;">
-                                            <div class="hover">
-                                                <div class="text-center" style="background-color: #0274D8; height:131px;">
-                                                    <a href="/" style="display: block; width: 100%; height: 100%;">
-                                                        <i class="fa fa-envelope fa-4x winion-icon-small" style=""/>
-                                                    </a>
-                                                    <h5>Hover Text</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12 col-xs-6" style="padding: 2px 0px 0px 0px;">
-                                            <div class="hover">
-                                                <div class="text-center" style="background-color: #D14724; height:131px;">
-                                                    <a href="/" style="display: block; width: 100%; height: 100%;">
-                                                        <i class="fa fa-headphones fa-4x winion-icon-small" style=""/>
-                                                    </a>
-                                                    <h5>Hover Text</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 col-sm-5 col-xs-12" style="padding: 2px;">
-                                        <div class="hover">
-                                            <a href="/" style="display: block; width: 100%; height: 100%;">
-                                                <img class="img-responsive" src="/website/static/src/img/library/flight.jpg" style="width:100%; height:266px;"/>
-                                            </a>
-                                            <h3>Hover Text</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- END ROW 1-->
-
-                                <!--ROW 2-->
-                                <div class="container">
-                                    <div class="col-md-2 col-sm-2 col-xs-12" style="padding: 2px;">
-                                        <div class="col-md-12 col-xs-6" style="padding: 0px 0px 2px 0px;">
-                                            <div class="hover">
-                                                <a href="/" style="display: block; width: 100%; height: 100%;">
-                                                    <img class="img-responsive" src="/website/static/src/img/desert_thumb.jpg" style="width:100%; height:131px;"/>
-                                                </a>
-                                                <h5>Hover Text</h5>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12 col-xs-6" style="padding: 2px 0px 0px 0px;">
-                                            <div class="hover">
-                                                <div class="text-center" style="background-color: #0274D8; height:131px;">
-                                                    <a href="/" style="display: block; width: 100%; height: 100%;">
-                                                        <i class="fa fa-info fa-4x winion-icon-small" style=""/>
-                                                    </a>
-                                                    <h5>Hover Text</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 col-sm-5 col-xs-12" style="padding: 2px;">
-                                        <div class="hover">
-                                            <a href="/" style="display: block; width: 100%; height: 100%;">
-                                                <img class="img-responsive" src="/website/static/src/img/library/business_stats.jpg" style="width:100%; height:266px;"/>
-                                            </a>
-                                            <h3>Hover Text</h3>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-5 col-sm-5 col-xs-12" style="padding: 2px;">
-                                        <div class="hover">
-                                            <a href="/" style="display: block; width: 100%; height: 100%;">
-                                                <img class="img-responsive" src="/website/static/src/img/library/business_hands.jpg" style="width:100%; height:266px;"/>
-                                            </a>
-                                            <h3>Hover Text</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--END ROW 2-->
-
-                                <!--ROW 3-->
-                                <div class="container">
-                                    <div class="col-md-4 col-sm-4 col-xs-12" style="padding: 2px;">
-                                        <div class="col-md-12 col-xs-6" style="padding: 0px 0px 2px 0px;">
-                                            <div class="hover">
-                                                <a href="/" style="display: block; width: 100%; height: 100%;">
-                                                    <img class="img-responsive" src="/website/static/src/img/landscape.jpg" style="width:100%; height:131px;"/>
-                                                </a>
-                                                <h5>Hover Text</h5>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12 col-xs-6" style="padding: 2px 0px 0px 0px;">
-                                            <div class="hover">
-                                                <a href="/" style="display: block; width: 100%; height: 100%;">
-                                                    <img class="img-responsive" src="/website/static/src/img/china_thumb.jpg" style="width:100%; height:131px;"/>
-                                                </a>
-                                                <h5>Hover Text</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 col-xs-12" style="padding: 2px;">
-                                        <div class="hover">
-                                            <div class="text-center" style="background-color: #5E3CB7; height:266px;">
-                                                <a href="/" style="display: block; width: 100%; height: 100%;">
-                                                    <i class="fa fa-calendar fa-5x winion-icon-medium" style=""/>
-                                                </a>
-                                                <h3>Hover Text</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 col-xs-12" style="padding: 2px;">
-                                        <div class="col-md-12 col-xs-6" style="padding: 0px 0px 2px 0px;">
-                                            <div class="hover">
-                                                <a href="/" style="display: block; width: 100%; height: 100%;">
-                                                    <img class="img-responsive" src="/website/static/src/img/library/manufacturing.jpg" style="width:100%; height:131px;"/>
-                                                </a>
-                                                <h5>Hover Text</h5>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12 col-xs-6" style="padding: 2px 0px 0px 0px;">
-                                            <div class="hover">
-                                                <a href="/" style="display: block; width: 100%; height: 100%;">
-                                                    <img class="img-responsive" src="/website/static/src/img/library/helpdesk.jpg" style="width:100%; height:131px;"/>
-                                                </a>
-                                                <h5>Hover Text</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--END ROW 3-->
-
-                                <!--ROW 4-->
-                                <div class="container">
-                                    <div class="col-md-5 col-sm-5 col-xs-12" style="padding: 2px;">
-                                        <div style="background-color: #00881A; color: #fff; height:266px;">
-                                            <a class="text-center" href="/" style="display: block; width: 100%; height: 100%; color: #fff;">
+                                    <div class="col-md-4 col-sm-4 col-xs-12" style="padding: 2px 2px 0px 2px;">
+                                        <div class="hover" style="display: inline-block; width: 100%;">
+                                            <div class="text-center" style="width: 100%; background-color: #0274D8; top: 0px; bottom: 0px; left; 0px; right: 0px; position: absolute;">
                                                 <p style="padding: 20px;">
-                                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                                                    Aenean massa.
+                                                    <a class="text-center" href="/" style="display: block; width: 100%; height: 100%; color: #fff;">
+                                                        <strong>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</strong><br/>
+                                                        <em>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</em><br/>
+                                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                                    </a>
                                                 </p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2 col-sm-2 col-xs-12" style="padding: 2px;">
-                                        <div class="col-md-12 col-xs-6" style="padding: 0px 0px 2px 0px;">
-                                            <div class="hover">
-                                                <div class="text-center" style="background-color: #DF2F00; height:131px;">
-                                                    <a href="/" style="display: block; width: 100%; height: 100%;">
-                                                        <i class="fa fa-heart-o fa-4x winion-icon-small" style=""/>
-                                                    </a>
-                                                    <h5>Hover Text</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12 col-xs-6" style="padding: 2px 0px 0px 0px;">
-                                            <div class="hover">
-                                                <div class="text-center" style="background-color: #AC193D; height:131px;">
-                                                    <a href="/" style="display: block; width: 100%; height: 100%;">
-                                                        <i class="fa fa-picture-o fa-4x winion-icon-small" style=""/>
-                                                    </a>
-                                                    <h5>Hover Text</h5>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-5 col-sm-5 col-xs-12" style="padding: 2px;">
-                                        <div class="hover">
-                                            <a href="/" style="display: block; width: 100%; height: 100%;">
-                                                <img class="img-responsive" src="/website/static/src/img/library/world.jpg" style="width:100%; height:266px;"/>
+                                    <div class="col-md-4 col-sm-4 col-xs-12" style="padding: 2px 2px 0px 2px;">
+                                        <div class="hover" style="display: inline-block; width: 100%;">
+                                            <a href="/" style="">
+                                                <img class="img-responsive" src="/website/static/src/img/library/school_kids.jpg" style="width: 100%; top: 0px; bottom: 0px; right: 0px; position: absolute; animation-play-state: paused; transition: none 0s ease 0s"/>
                                             </a>
                                             <h3>Hover Text</h3>
                                         </div>
                                     </div>
                                 </div>
-                                <!--END ROW 4-->
+                                <div class="container">
+                                    <div class="col-md-3 col-sm-6 col-xs-12" style="padding: 0px 2px 0px 2px;">
+                                        <div class="hover" style="display: inline-block; width: 100%;">
+                                            <a href="/" style="">
+                                                <img class="img-responsive" src="/website/static/src/img/library/ship_sea.jpg" style="width:100%; top: 0px; bottom: 0px; left; 0px; right: 0px; position: absolute"/>
+                                            </a>
+                                            <h4>Hover Text</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-xs-12" style="padding: 0px 2px 0px 2px;">
+                                        <div class="hover" style="display: inline-block; width: 100%;">
+                                            <div class="text-center" style="width: 100%; background-color: #5E3CB7; top: 0px; bottom: 0px; left; 0px; right: 0px; position: absolute;">
+                                                <a href="/" style="">
+                                                    <i class="fa fa-envelope fa-4x winion-icon-medium" style=""/>
+                                                </a>
+                                                <h4>Hover Text</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-xs-12" style="padding: 0px 2px 0px 2px;">
+                                        <div class="hover" style="display: inline-block; width: 100%;">
+                                            <a href="/" style="">
+                                                <img class="img-responsive" src="/website/static/src/img/library/flight.jpg" style="width:100%; top: 0px; bottom: 0px; left; 0px; right: 0px; position: absolute"/>
+                                            </a>
+                                            <h4>Hover Text</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-xs-12" style="padding: 0px 2px 0px 2px;">
+                                        <div class="hover" style="display: inline-block; width: 100%;">
+                                            <div class="text-center" style="width: 100%; background-color: #00881A; top: 0px; bottom: 0px; left; 0px; right: 0px; position: absolute;">
+                                                <a href="/" style="">
+                                                    <i class="fa fa-phone fa-4x winion-icon-medium" style=""/>
+                                                </a>
+                                                <h4>Hover Text</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </section>
@@ -581,7 +733,7 @@
                         <span class="oe_snippet_thumbnail_title">Image Gallery With Hover Text</span>
                     </div>
                     <section class="oe_snippet_body">
-                        <div class="container">
+                        <div class="container" style="padding: 0px;">
                             <div class="row">
                                 <div class="row" style="width: 100%; margin: auto;">
                                     <div class="col-md-6 col-sm-6 col-xs-12" style="padding-left: 0; padding-right: 0;">

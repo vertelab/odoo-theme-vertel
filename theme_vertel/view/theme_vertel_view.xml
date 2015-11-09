@@ -293,57 +293,38 @@
         <template id="layout_demo_site_II" inherit_id="website.layout" customize_show="True" active="False" name="Layout Demo Site II" priority="99">
             <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
                 <style>
+                    body{
+                        font-family: 'Josefin Sans', sans-serif;
+                    }
                    #myCarousel0{
                         height: 500px;
                     }
 
-                    .carousel-inner h2{
+                    .carousel-inner h3{
                         color:#fff;
-                        padding-top:3%;
+                        padding-top: 3%;
                     }
-
-                    #description_text{
-                        box-shadow: 0px 0px 5px #333;
-                        height:150px;
+                    
+                    #text-box-one{
+                        background-color: #fff; 
+                        
                     }
-
-                    #description_text container{
-                        padding-top:2%;
+                    
+                    #text-box-one-p1 #text-box-one-p2{
+                        padding: 0px;
                     }
-
-                    #three_columns_photos .col-md-4{
-                        padding: 0px 2px 4px 2px;
+                    
+                    hr{
+                        box-shadow: 0px 0px 5px #81D317;
                     }
-
-                    #three_columns_photos img{
-                        margin:auto; 
-                        width:386px; 
-                        height:244px;
-                    }
-
-                    #follow_us_title .col-md-12{
+                    
+                    #thx-box h1{
                         text-shadow: 1px 1px 1px #000;
                     }
 
-                    #follow_us_parallax{
-                        background-attachment: scroll; 
-                        background-position: 0px 222px; 
-                        height: 216px; 
-                        overflow: hidden;
-                    }
-
-                    #follow_us_container{
-                        height: 152px; 
-                        overflow: hidden;
-                    }
-
-                    #social_icons i{
-                        color:#fff; 
-                        padding: 0px 16px 0px 16px;
-                    }
-
                     footer{
-                        box-shadow: 0px 0px 5px #333;
+                        background-color: #fff;
+                        box-shadow: 0px 0px 2px #333;
                     }
                 </style>
             </xpath>
@@ -358,7 +339,7 @@
                                 <div class="container">
                                     <div class="row content">
                                         <div class="col-md-6 col-sm-12 text-center pull-right">
-                                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+                                            <h3>This test theme layout contains all types of fonts. You can find all the header types from h1 all the way to h6. You can even find text in paragraph tags.</h3>
                                             <p/>
                                         </div>
                                         <div class="carousel-img col-md-6 hidden-sm hidden-xs"/></div>
@@ -373,78 +354,60 @@
                         </div>
                     </div>
                 </section>
-                <section class="s_big_message mb16 text-center" id="description_text">
-                    <div class="container">
-                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h3>
-                    </div>
-                </section>
-                <section class="s_three_columns" id="three_columns_photos">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <img alt="Odoo - Sample 1 for three columns" class="img img-rounded img-responsive" src="/website/static/src/img/library/ship_sea.jpg"/>
-                            </div>
-                            <div class="col-md-4" style="padding: 0px 2px 4px 2px; ">
-                                <img alt="Odoo - Sample 2 for three columns" class="img img-rounded img-responsive" src="/website/static/src/img/library/flight.jpg"/>
-                            </div>
-                            <div class="col-md-4" style="padding: 0px 2px 4px 2px; ">
-                                <img alt="Odoo - Sample 3 for three columns" class="img img-responsive img-rounded" src="/website/static/src/img/library/business_stats.jpg"/>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="s_title" id="follow_us_title">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h1 class="text-center">Don't forget to follow us!</h1>
-                                <h3 class="text-muted text-center">Choose the best way for you to follow us... We are everywhere!</h3>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="parallax s_parallax bg-primary oe_custom_bg oe_img_bg" id="follow_us_parallax" data-scroll-background-offset="0" data-scroll-background-ratio="0.3" style="background-image: url(&quot;/website/image/ir.attachment/46_8df0235/datas&quot;);">
-                    <div>
-                        <div class="oe_structure">
-                            <section class="s_title" id="follow_us_container">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-12 mb32 mt32">
-                                            <div class="oe_share s_share text-center" id="social_icons">
-                                                <h3>
-                                                    <a class="oe_share_facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8069%2F%23advanced-view-editor%3Fview%3D290" target="_Blank">
-                                                        <i class="fa fa-facebook-square fa-3x"/>
-                                                    </a>
-                                                    <a class="oe_share_twitter" href="https://twitter.com/intent/tweet?text=Homepage%20%7C%20localhost&amp;url=http%3A%2F%2Flocalhost%3A8069%2F%23advanced-view-editor%3Fview%3D290" target="_Blank">
-                                                        <i class="fa fa-twitter fa-3x"/>
-                                                    </a>
-                                                    <a class="oe_share_linkedin" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Flocalhost%3A8069%2F%23advanced-view-editor%3Fview%3D290&amp;title=Homepage%20%7C%20localhost&amp;" target="_Blank">
-                                                        <i class="fa fa-linkedin fa-3x"/>
-                                                    </a>
-                                                    <a href="https://flickr,com">
-                                                        <i class="fa fa-flickr fa-3x"/>
-                                                    </a>
-                                                    <a href="https://instagram.com">
-                                                        <i class="fa fa-instagram fa-3x"/>
-                                                    </a>
-                                                    <a href="https://youtube.com">
-                                                        <i class="fa fa-youtube fa-3x"/>
-                                                    </a>
-                                                    <a class="oe_share_google" href="https://plus.google.com/share?url=http%3A%2F%2Flocalhost%3A8069%2F%23advanced-view-editor%3Fview%3D290" target="_Blank">
-                                                        <i class="fa fa-google-plus-square fa-3x"/>
-                                                    </a>
-                                                    <a href="/">
-                                                        <i class="fa fa-wechat fa-3x"/>
-                                                    </a>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                    </div>
+                <div id="wrap" class="oe_structure oe_empty">
+                    <section class="jumbotron s_big_message" id="text-box-one">
+                        <div class="container">
+                            <h2 class="text-center">
+                                <strong>Lorem Ipsum</strong>
+                            </h2>
+                            <div class="col-md-12 col-xs-12">
+                                <div class="col-md-4 col-xs-12" id="text-box-one-p1">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas odio vel tortor dapibus faucibus. Maecenas volutpat ultrices rutrum. Proin molestie semper porttitor. Aliquam vel condimentum sem. Sed eu lobortis nulla. Quisque elementum congue urna dictum laoreet. Vivamus vel cursus dui.</p>
                                 </div>
-                            </section>
+                                <div class="col-md-4 col-xs-12">
+                                    <img class="img-responsive" src="http://pixelcrows.com/wp-content/uploads/2014/07/lipsum.jpg"/>
+                                </div>
+                                <div class="col-md-4 col-xs-12" id="text-box-one-p2">
+                                    <p>Etiam et felis malesuada, facilisis eros in, luctus turpis. Maecenas nec purus ut ante lobortis euismod semper non purus. Maecenas quis leo quis ante laoreet aliquet nec eu urna. Nunc sodales nisl eget ex semper, eu venenatis diam egestas. Pellentesque id dui eget urna malesuada egestas.</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </section>
+                    </section>
+                    <section class="s_three_columns">
+                        <div class="container mb32">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img alt="Odoo - Sample 1 for three columns" class="img img-responsive img-rounded shadow" src="/website/static/src/img/desert_thumb.jpg" style=""/>
+                                    <h4 class="mt16">Feature One</h4>
+                                    <h5>Adapt these three columns to fit you design need. To duplicate, delete or move columns, select the column and use the top icons to perform your action.</h5>
+                                </div>
+                                <div class="col-md-4">
+                                    <img alt="Odoo - Sample 2 for three columns" class="img img-responsive img-rounded shadow" src="/website/static/src/img/deers_thumb.jpg" style=""/>
+                                    <h4 class="mt16">Feature Two</h4>
+                                    <h5>To add a fourth column, reduce the size of these three columns using the right icon of each block. Then, duplicate one of the column to create a new one as a copy.</h5>
+                                </div>
+                                <div class="col-md-4">
+                                    <img alt="Odoo - Sample 3 for three columns" class="img img-responsive img-rounded shadow" src="/website/static/src/img/china_thumb.jpg" style=""/>
+                                    <h4 class="mt16">Feature Three</h4>
+                                    <h5>Delete the above image or replace it with a picture that illustrates your message. Click on the picture to change it's 
+                                        <em>rounded corner</em> style.
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <hr class="s_separator mt64"/>
+                    <section class="s_title mb32" id="thx-box">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h1 class="text-center">Thank for using this theme!</h1>
+                                    <h6 class="text-muted text-center">by Christelle Wehbe, 2015-09-24</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </xpath>
         </template>
 
@@ -472,6 +435,6 @@
                 </a>
             </div>
         </template>
-
+        
     </data>
 </openerp>

@@ -1,0 +1,674 @@
+<!-- hem -->
+<t t-name="website.hem">
+    <t t-call="website.layout">
+        <div class="oe_structure oe_empty">
+            <section class="hidden-xs" style="margin-top: 50px;">
+                <div class="carousel slide carousel-fade" data-ride="carousel" id="myCarousel9" style="max-height: 480px; overflow: hidden;">
+                    <ol class="carousel-indicators">
+                        <li class="active" data-slide-to="0" data-target="#myCarousel9"/>
+                        <li data-slide-to="1" data-target="#myCarousel9"/>
+                        <li data-slide-to="2" data-target="#myCarousel9"/>
+                        <li data-slide-to="3" data-target="#myCarousel9"/>
+                        <li data-slide-to="4" data-target="#myCarousel9"/>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active" style="">
+                            <img class="img-responsive" src="/website/image/ir.attachment/43_29cc573/datas" style="position: relative; width: 100%"/>
+                            <div class="container" style="position: absolute; top: 25%; left: 10%; width: 100%;">
+                                <div class="row content">
+                                    <div class="col-md-6 col-sm-6">
+                                        <h1 style="color: #fff; background-color: rgba(0,0,0,0.2); padding: 10px;">Välkommen till Hagdahlsakademien</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="/website/image/ir.attachment/44_088f0aa/datas" style="position: relative; width: 100%; animation-play-state: paused; transition: none 0s ease 0s"/>
+                            <div class="container" style="position: absolute; top: 25%; left: 10%; width: 100%;">
+                                <div class="row content">
+                                    <div class="col-md-6 col-sm-6">
+                                        <h2 style="color: #fff; background-color: rgba(0,0,0,0.2); padding: 10px;">Hagdahlsakademiens syfte är att i Charles Emil Hagdahls anda stödja östgötsk konst och hushållning, gastronomi och hälsa.</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="/website/image/ir.attachment/45_ce6cf95/datas" style="position: relative; width: 100%; animation-play-state: paused; transition: none 0s ease 0s"/>
+                            <div class="container" style="position: absolute; top: 25%; left: 10%; width: 100%;">
+                                <div class="row content">
+                                    <div class="col-md-6 col-sm-6">
+                                        <h2 style="color: #fff; background-color: rgba(0,0,0,0.2); padding: 10px;">Konsthistorikern Urban Windahl har hittat ett hittills okänt porträtt av Emilia Gylling, Hagdahls hustru, på Kungliga Biblioteket!</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="/website/image/ir.attachment/46_5d9c163/datas" style="position: relative; width: 100%; animation-play-state: paused; transition: none 0s ease 0s"/>
+                            <div class="container" style="position: absolute; top: 25%; left: 10%; width: 100%;">
+                                <div class="row content">
+                                    <div class="col-md-6 col-sm-6">
+                                        <h3 style="color: #fff; background-color: rgba(0,0,0,0.2); padding: 10px;">Konsthistorikern Urban Windahl berättar att dessutom att Hagdahl hade ett musikaliskt intresse - inte minst för Bellman. Han var medlem under studietiden i Uppsala av studentsällskapet Turkiska Musiken som vid denna tid "bokstavligen gjorde mycket väsen av sig".</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="/website/image/ir.attachment/47_88d799a/datas" style="position: relative; width: 100%; animation-play-state: paused; transition: none 0s ease 0s"/>
+                            <div class="container" style="position: absolute; top: 25%; left: 10%; width: 100%;">
+                                <div class="row content">
+                                    <div class="col-md-6 col-sm-6">
+                                        <h2 style="color: #fff; background-color: rgba(0,0,0,0.2); padding: 10px;">Deras bullersamma och nattliga framföranden på gator och torg väckte stadsbornas avsky... Läs mera på "Nytt om Hagdahl"</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="left carousel-control" data-slide="prev" href="#myCarousel9">
+                        <i class="fa fa-chevron-left"/>
+                    </a>
+                    <a class="right carousel-control" data-slide="next" href="#myCarousel9">
+                        <i class="fa fa-chevron-right" style=""/>
+                    </a>
+                </div>
+            </section>
+        </div>
+        <div id="wrap" class="oe_structure oe_empty">
+            <section>
+                <div class="container mt64 mb64" style="max-width: 1140px; margin: auto; padding: 0px;">
+                    <div class="col-md-12" style="padding: 0px;">
+                        <div class="col-md-4 block">
+                            <div style="background-color: rgba(33,66,99,0.1);">
+                                <h1 class="text-center">Nyheter</h1>
+                                <ul>
+                                    <li>Nyheter</li>
+                                    <li>Nyheter</li>
+                                    <li>Nyheter</li>
+                                    <li>Nyheter</li>
+                                    <li>Nyheter</li>
+                                    <li>Nyheter</li>
+                                    <li>Nyheter</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 block">
+                            <div style="background-color: rgba(33,66,99,0.1);">
+                                <h1 class="text-center">Pressreleaser</h1>
+                                <ul>
+                                    <li>Pressreleaser</li>
+                                    <li>Pressreleaser</li>
+                                    <li>Pressreleaser</li>
+                                    <li>Pressreleaser</li>
+                                    <li>Pressreleaser</li>
+                                    <li>Pressreleaser</li>
+                                    <li>Pressreleaser</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 block">
+                            <div style="position: relative; background-color: rgba(33,66,99,0.1);">
+                                <div class="round-icon-transparent" style="opacity: 1; border: 1px solid #369; width: 150px; height: 150px; background-color: rgba(51,102,153,0.9); position: absolute; top: -75px; right: -20px;">
+                                    <div class="text-center">
+                                        <h3 style="margin-top: 25%;">
+                                            <a href="#" style="text-decoration: none; color: #fff;">6/Feb </a>
+                                        </h3>
+                                        <hr class="mt8 mb8" style="width: 100px; margin: auto;"/>
+                                        <a href="#" style="text-decoration: none; color: #fff;">Evenemang </a>
+                                    </div>
+                                </div>
+                                <h1 class="text-center">Evenemang</h1>
+                                <ul>
+                                    <li>Evenemang</li>
+                                    <li>Evenemang</li>
+                                    <li>Evenemang</li>
+                                    <li>Evenemang</li>
+                                    <li>Evenemang</li>
+                                    <li>Evenemang</li>
+                                    <li>Evenemang</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </t>
+</t>
+
+<!-- theme -->
+<?xml version="1.0"?>
+<data inherit_id="website.layout" customize_show="True" active="False" name="Theme BS-Multipurpose-Ruma" priority="99">
+    <!-- Customize CSS -->
+    <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
+        <link href="/theme_bs_ruma/static/src/css/theme_bs_ruma.css" rel="stylesheet"/>
+        <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'/>
+        <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'/>
+        <style>
+                    .bs-body {
+                        font-family: 'Lato', sans-serif;
+                        list-style: none;
+                    }
+
+                    /* MENU */
+                    #bs-menu {
+                        z-index: 99;
+                        margin-top: 0px;
+                        background: rgba(255, 255, 255, 1);
+                        position: fixed;
+                        top: 0px;
+                        padding: 0px;
+                        border: 0px 0px 1px 0px solid #369;
+                        border-bottom-width: 0px;
+                        box-shadow: 0px 0px 5px #369;
+                    }
+
+                    /* COMPANY LOGO */
+                    #bs-menu &gt; div &gt; div &gt; a {
+                        color: #FFF;
+                        font-family: 'Slabo 27px', serif;
+                    }
+
+                    #bs-logo {
+                        max-height: 50px;
+                    }
+
+                    #top_menu &gt; li &gt; a{
+                        padding: 15px;
+                    }
+
+                    .navbar {
+                        padding: 0px;
+                    }
+
+                    .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+                        max-height: 800px;
+                        border-top-width: 0px;
+                    }
+
+                    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+                        color: #369;
+                    }
+
+                    .dropdown-menu > .active > a,
+                    .dropdown-menu > .active > a:focus,
+                    .dropdown-menu > .active > a:hover,
+                    .dropdown-menu > li > a:hover{
+                        background-color: rgba(33, 66, 99, 0.1);
+                    }
+
+                    .navbar-inverse .navbar-nav > .active > a,
+                    .navbar-inverse .navbar-nav > .active > a:focus,
+                    .navbar-inverse .navbar-nav > .active > a:hover,
+                    .navbar-inverse .navbar-nav > .open > a,
+                    .navbar-inverse .navbar-nav > .open > a:focus,
+                    .navbar-inverse .navbar-nav > .open > a:hover {
+                        background-color: transparent;
+                    }
+
+                    #top_menu &gt; .dropdown &gt; .dropdown-menu {
+                        margin: 0px;
+                        border-radius: 0px;
+                        padding: 0px;
+                    }
+
+                    #top_menu &gt; .dropdown &gt; .dropdown-menu span {
+                        font-size: 1.0em;
+                        background-color: rgba(33, 66, 99, 0.1);
+                    }
+
+                    /* MENU TEXT */
+                    #bs-menu &gt; div &gt; div &gt; ul &gt; li &gt; a {
+                        color: #369;
+                        background-color: none;
+                    }
+
+                    /* STYLE WHEN MOUSE HOVER */
+                    #bs-menu &gt; div &gt; div &gt; ul &gt; li &gt; a:hover,
+                    #bs-menu &gt; div &gt; div &gt; ul &gt; li &gt; a:focus,
+                    #bs-menu &gt; div &gt; div &gt; ul &gt; li &gt; a:active {
+                        color: #369;
+                        text-shadow: 0px 0px 5px #369;
+                    }
+
+                    /* STYLE WHEN PAGE ACTIVE */
+                    #bs-menu &gt; div &gt; div &gt; ul &gt; .active &gt; a {
+                        color: #369;
+                    }
+
+                    /* FOOTER STYLE*/
+                    .bs-footer {
+                        background-color: rgba(33,66,99,0.1);
+                        color: #369;
+                    }
+
+                    .block {
+                        padding: 10px;
+                    }
+
+                    .block > div{
+                        padding: 20px 40px 20px 40px;
+                        border: 1px solid #369;
+                    }
+
+                    .grid-item {
+                        width: 280px;
+                        padding: 0px;
+                    }
+
+                    .grid-item--width2 {
+                        width: 560px;
+                    }
+
+                    .prize {
+                        color: #BD9F57;
+                        font-size: 1.5em;
+                    }
+
+                    #wrapwrap .navbar-toggle {
+                        background-color: #fff;
+                        border-color: #369;
+                    }
+
+                    #wrapwrap .navbar-toggle > .icon-bar {
+                        background-color: #369;
+                    }
+
+                    .carousel-control.left, .carousel-control.right {
+                        background-image: none;
+                    }
+
+                    @media screen and (max-width: 320px) {
+                        h1 {
+                           font-size: 2em;
+                        }
+                        #top_menu {
+                            position: relative;
+                        }
+                    }
+                </style>
+    </xpath>
+    <!-- add company logo -->
+    <xpath expr="//header//ul[@id='top_menu']" position="before">
+        <img id="bs-logo" src="/logo.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name" class="hidden-sm hidden-xs"/>
+    </xpath>
+    <!-- define id and class to menu bar -->
+    <xpath expr="//body/div[@id='wrapwrap']/header/div" position="attributes">
+        <attribute name="id">bs-menu</attribute>
+        <attribute name="class">navbar navbar-inverse navbar-fixed-top</attribute>
+    </xpath>
+    <!-- define class to menu style -->
+    <xpath expr="//header//ul[@id='top_menu']" position="attributes">
+        <attribute name="class">nav navbar-nav navbar-right</attribute>
+    </xpath>
+    <!-- hide company name -->
+    <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div/a" position="attributes">
+        <attribute name="class">navbar-brand hidden</attribute>
+    </xpath>
+    <!-- show company logo in mobile version -->
+    <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div/button" position="before">
+        <img class="pull-left hidden-lg hidden-md hidden-sm" style="max-height: 50px;" src="/logo.png"/>
+    </xpath>
+    <!-- hide user login / out -->
+    <xpath expr="//header//ul[@id='top_menu']/li[@class='divider']" position="attributes">
+        <attribute name="class">hidden</attribute>
+    </xpath>
+    <xpath expr="//header//ul[@id='top_menu']/li[@class='dropdown']" position="attributes">
+        <attribute name="class">hidden</attribute>
+    </xpath>
+    <!-- define a class to body -->
+    <xpath expr="//body" position="attributes">
+        <attribute name="class">bs-body</attribute>
+    </xpath>
+    <!-- define a class to footer -->
+    <xpath expr="//footer" position="attributes">
+        <attribute name="class">bs-footer</attribute>
+    </xpath>
+    <!-- add log in/out in footer -->
+    <xpath expr="//footer" position="inside">
+        <div class="container">
+            <div class="pull-right">
+                <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <b>
+                            <span t-esc="user_id.name"/>
+                            <span class="caret"/>
+                        </b>
+                    </a>
+                    <ul class="dropdown-menu js_usermenu" role="menu">
+                        <li>
+                            <a href="/web" role="menuitem">My Account</a>
+                        </li>
+                        <li class="divider"/>
+                        <li>
+                            <a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a>
+                        </li>
+                    </ul>
+                </li>
+            </div>
+            <div class="pull-right">
+                <li groups="base.group_public">
+                    <a t-attf-href="/web/login">
+                        <b>Sign in</b>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </xpath>
+    <!-- Customize javascript -->
+    <xpath expr="//body" position="inside">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+        <script>
+            $('.thumbnail').click(function(){
+                $('.modal-body').empty();
+                var title = $(this).parents('a').attr("title");
+                var comment = $(this).parents('a').attr("comment");
+                var reward = $(this).parents('a').attr("reward");
+                var year = $(this).parents('a').attr("year");
+                  $('.modal-title').html(title);
+                $('.modal-comment').html(comment);
+                $('.modal-reward').html(reward);
+                $('.modal-year').html(year);
+                $($(this).parents('div').html()).appendTo('.modal-body');
+                $('#myModal').modal({show:true});
+            });
+        </script>
+    </xpath>
+</data>
+
+    <!-- Customize CSS -->
+    <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
+        <link href="/theme_bs_ruma/static/src/css/theme_bs_ruma.css" rel="stylesheet"/>
+        <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'/>
+        <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'/>
+        <style>
+                    .bs-body {
+                        font-family: 'Lato', sans-serif;
+                        list-style: none;
+                    }
+
+                    /* MENU */
+                    #bs-menu {
+                        z-index: 1;
+                        margin-top: 0px;
+                        background: rgba(255, 255, 255, 1);
+                        position: fixed;
+                        top: 0px;
+                        padding: 0px;
+                        border: 0px 0px 1px 0px solid #369;
+                        border-bottom-width: 0px;
+                        box-shadow: 0px 0px 5px #369;
+                    }
+
+                    /* COMPANY LOGO */
+                    #bs-menu &gt; div &gt; div &gt; a {
+                        color: #FFF;
+                        font-family: 'Slabo 27px', serif;
+                    }
+
+                    #bs-logo {
+                        max-height: 50px;
+                    }
+
+                    #top_menu &gt; li &gt; a{
+                        padding: 15px;
+                    }
+
+                    .navbar {
+                        padding: 0px;
+                    }
+
+                    .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+                        max-height: 800px;
+                        border-top-width: 0px;
+                    }
+
+                    .navbar-inverse .navbar-nav > .active > a,
+                    .navbar-inverse .navbar-nav > .active > a:focus,
+                    .navbar-inverse .navbar-nav > .active > a:hover,
+                    .navbar-inverse .navbar-nav > .open > a,
+                    .navbar-inverse .navbar-nav > .open > a:focus,
+                    .navbar-inverse .navbar-nav > .open > a:hover {
+                        background-color: transparent;
+                    }
+
+                    #top_menu &gt; .dropdown &gt; .dropdown-menu {
+                        margin: 0px;
+                        border-radius: 0px;
+                        padding: 0px;
+                    }
+
+                    #top_menu &gt; .dropdown &gt; .dropdown-menu span {
+                        font-size: 1.2em;
+                    }
+
+                    /* MENU TEXT */
+                    #bs-menu &gt; div &gt; div &gt; ul &gt; li &gt; a {
+                        color: #369;
+                        background-color: none;
+                    }
+
+                    /* STYLE WHEN MOUSE HOVER */
+                    #bs-menu &gt; div &gt; div &gt; ul &gt; li &gt; a:hover,
+                    #bs-menu &gt; div &gt; div &gt; ul &gt; li &gt; a:focus {
+                        color: #369;
+                    }
+
+                    /* STYLE WHEN PAGE ACTIVE */
+                    #bs-menu &gt; div &gt; div &gt; ul &gt; .active &gt; a {
+                        color: #369;
+                        background-color: transparent;
+                    }
+
+                    /* FOOTER STYLE*/
+                    .bs-footer {
+                        background-color: rgba(33,66,99,0.1);
+                        color: #369;
+                    }
+
+                    .block {
+                        padding: 10px;
+                    }
+
+                    .block > div{
+                        padding: 20px 40px 20px 40px;
+                        border: 1px solid #369;
+                    }
+
+                    .grid-item {
+                        width: 280px;
+                        padding: 0px;
+                    }
+
+                    .grid-item--width2 {
+                        width: 560px;
+                    }
+
+                    .prize {
+                        color: #BD9F57;
+                        font-size: 1.5em;
+                    }
+
+                    #wrapwrap .navbar-toggle {
+                        background-color: #fff;
+                        border-color: #369;
+                    }
+
+                    #wrapwrap .navbar-toggle > .icon-bar {
+                        background-color: #369;
+                    }
+
+                    .carousel-control.left, .carousel-control.right {
+                        background-image: none;
+                    }
+
+                    @media screen and (max-width: 320px) {
+                        h1 {
+                           font-size: 2em;
+                        }
+                        #top_menu {
+                            position: relative;
+                        }
+                    }
+                </style>
+    </xpath>
+    <!-- add company logo -->
+    <xpath expr="//header//ul[@id='top_menu']" position="before">
+        <img id="bs-logo" src="/logo.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name" class="hidden-sm hidden-xs"/>
+    </xpath>
+    <!-- define id and class to menu bar -->
+    <xpath expr="//body/div[@id='wrapwrap']/header/div" position="attributes">
+        <attribute name="id">bs-menu</attribute>
+        <attribute name="class">navbar navbar-inverse navbar-fixed-top</attribute>
+    </xpath>
+    <!-- define class to menu style -->
+    <xpath expr="//header//ul[@id='top_menu']" position="attributes">
+        <attribute name="class">nav navbar-nav navbar-right</attribute>
+    </xpath>
+    <!-- hide company name -->
+    <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div/a" position="attributes">
+        <attribute name="class">navbar-brand hidden</attribute>
+    </xpath>
+    <!-- show company logo in mobile version -->
+    <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div/button" position="before">
+        <img class="pull-left hidden-lg hidden-md hidden-sm" style="max-height: 50px;" src="/logo.png"/>
+    </xpath>
+    <!-- hide user login / out -->
+    <xpath expr="//header//ul[@id='top_menu']/li[@class='divider']" position="attributes">
+        <attribute name="class">hidden</attribute>
+    </xpath>
+    <xpath expr="//header//ul[@id='top_menu']/li[@class='dropdown']" position="attributes">
+        <attribute name="class">hidden</attribute>
+    </xpath>
+    <!-- define a class to body -->
+    <xpath expr="//body" position="attributes">
+        <attribute name="class">bs-body</attribute>
+    </xpath>
+    <!-- define a class to footer -->
+    <xpath expr="//footer" position="attributes">
+        <attribute name="class">bs-footer</attribute>
+    </xpath>
+    <!-- add log in/out in footer -->
+    <xpath expr="//footer" position="inside">
+        <div class="container">
+            <div class="pull-right">
+                <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <b>
+                            <span t-esc="user_id.name"/>
+                            <span class="caret"/>
+                        </b>
+                    </a>
+                    <ul class="dropdown-menu js_usermenu" role="menu">
+                        <li>
+                            <a href="/web" role="menuitem">My Account</a>
+                        </li>
+                        <li class="divider"/>
+                        <li>
+                            <a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a>
+                        </li>
+                    </ul>
+                </li>
+            </div>
+            <div class="pull-right">
+                <li groups="base.group_public">
+                    <a t-attf-href="/web/login">
+                        <b>Sign in</b>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </xpath>
+    <!-- Customize javascript -->
+    <xpath expr="//body" position="inside">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+        <script>
+            $('.thumbnail').click(function(){
+                $('.modal-body').empty();
+                var title = $(this).parents('a').attr("title");
+                var comment = $(this).parents('a').attr("comment");
+                var reward = $(this).parents('a').attr("reward");
+                var year = $(this).parents('a').attr("year");
+                  $('.modal-title').html(title);
+                $('.modal-comment').html(comment);
+                $('.modal-reward').html(reward);
+                $('.modal-year').html(year);
+                $($(this).parents('div').html()).appendTo('.modal-body');
+                $('#myModal').modal({show:true});
+            });
+        </script>
+    </xpath>
+</data>
+
+<!-- footer -->
+<?xml version="1.0"?>
+<data inherit_id="website.footer_custom" customize_show="True" name="Automatic Footer">
+    <xpath expr="//div[@id='footer']" position="replace">
+        <div class="container hidden-print">
+            <div class="col-md-12">
+                <span t-field="res_company.name"/> c/o <span t-field="res_company.partner_id.child_ids.name"/> | <span t-field="res_company.street"/> | <span t-field="res_company.zip"/> <span t-field="res_company.city"/>
+            </div>
+            <div class="row hidden">
+                <div class="col-md-3">
+                    <h4>Our products &amp; Services</h4>
+                    <ul class="list-unstyled" id="products">
+                        <li><a href="/">Home</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3" id="info">
+                    <h4>Connect with us</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="/page/website.contactus">Contact us</a></li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li t-ignore="true"><i class="fa fa-phone"/> <span t-field="res_company.phone"/></li>
+                        <li t-ignore="true"><i class="fa fa-envelope"/>  <span t-field="res_company.email"/></li>
+                    </ul>
+                    <h2>
+                        <a t-att-href="website.social_facebook" t-if="website.social_facebook"><i class="fa fa-facebook-square"/></a>
+                        <a t-att-href="website.social_twitter" t-if="website.social_twitter"><i class="fa fa-twitter"/></a>
+                        <a t-att-href="website.social_linkedin" t-if="website.social_linkedin"><i class="fa fa-linkedin"/></a>
+                        <a t-att-href="website.social_youtube" t-if="website.social_youtube"><i class="fa fa-youtube-play"/></a>
+                        <a t-att-href="website.social_googleplus" t-if="website.social_googleplus" rel="publisher"><i class="fa fa-google-plus-square"/></a>
+                        <a t-att-href="website.social_github" t-if="website.social_github"><i class="fa fa-github"/></a>
+                    </h2>
+                </div>
+                <div class="col-md-5 col-lg-offset-1">
+                    <div>
+                        <h4>
+                            <span t-field="res_company.name"/>
+                            <small> - <a href="/page/website.aboutus">About us</a></small>
+                        </h4>
+                        <p>
+                            We are a team of passionate people whose goal is to improve everyone's
+                            life through disruptive products. We build great products to solve your
+                            business problems.
+                        </p>
+                        <p>
+                            Our products are designed for small to medium size companies willing to optimize
+                            their performance.
+                        </p>
+                    </div>
+                    <ul class="list-inline js_language_selector mt16" t-if="(request.website_multilang and len(languages) &gt; 1) or editable">
+                        <li t-foreach="languages" t-as="lg">
+                            <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang=lg[0])" t-att-data-default-lang="editable and 'true' if lg[0] == website.default_lang_code else None" t-att-data-lang="lg[0]" class="js_change_lang">
+                              <t t-esc="lg[1].split('/').pop()"/>
+                            </a>
+                        </li>
+                        <li groups="base.group_website_publisher">
+                            <t t-set="url_return" t-value="url_for('', '[lang]') + '?' + keep_query()"/>
+                            <a t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id}&amp;url_return=#{url_return}">
+                            <i class="fa fa-plus-circle"/>
+                            Add a language...
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </xpath>
+</data>
+
+
+
+
+
+
