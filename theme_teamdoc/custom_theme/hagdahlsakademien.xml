@@ -1,22 +1,83 @@
 <!-- hem -->
 <t t-name="website.hem">
     <t t-call="website.layout">
-        <div id="wrap" class="oe_structure oe_empty">
-            <section>
-                <div class="container mb64 text-center">
-                    <h1>Välkommen till Hagdahlsakademien</h1>
-                    <hr class="mt32 mb32" style="width: 400px; margin: auto; border-color: #369;"/>
-                    <h4>
-                        <strong>Hagdahlsakademiens syfte är att i Charles Emil Hagdahls anda stödja östgötsk konst och hushållning, gastronomi och hälsa.</strong>
-                    </h4>
-                    <h4>Konsthistorikern Urban Windahl har hittat ett hittills okänt porträtt av Emilia Gylling, Hagdahls hustru, på Kungliga Biblioteket! Han berättar att dessutom att Hagdahl hade ett musikaliskt intresse - inte minst för Bellman. Han var medlem under studietiden i Uppsala av studentsällskapet Turkiska Musiken som vid denna tid "bokstavligen gjorde mycket väsen av sig". Deras bullersamma och nattliga framföranden på gator och torg väckte stadsbornas avsky... Läs mera på "Nytt om Hagdahl"</h4>
+        <div class="oe_structure oe_empty">
+            <section class="hidden-xs" style="margin-top: 50px;">
+                <div class="carousel slide carousel-fade" data-ride="carousel" id="myCarousel9" style="max-height: 480px; overflow: hidden;">
+                    <ol class="carousel-indicators">
+                        <li class="active" data-slide-to="0" data-target="#myCarousel9"/>
+                        <li data-slide-to="1" data-target="#myCarousel9"/>
+                        <li data-slide-to="2" data-target="#myCarousel9"/>
+                        <li data-slide-to="3" data-target="#myCarousel9"/>
+                        <li data-slide-to="4" data-target="#myCarousel9"/>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active" style="">
+                            <img class="img-responsive" src="/website/image/ir.attachment/43_29cc573/datas" style="position: relative; width: 100%"/>
+                            <div class="container" style="position: absolute; top: 25%; left: 10%; width: 100%;">
+                                <div class="row content">
+                                    <div class="col-md-6 col-sm-6">
+                                        <h1 style="color: #fff; background-color: rgba(0,0,0,0.2); padding: 10px;">Välkommen till Hagdahlsakademien</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="/website/image/ir.attachment/44_088f0aa/datas" style="position: relative; width: 100%; animation-play-state: paused; transition: none 0s ease 0s"/>
+                            <div class="container" style="position: absolute; top: 25%; left: 10%; width: 100%;">
+                                <div class="row content">
+                                    <div class="col-md-6 col-sm-6">
+                                        <h2 style="color: #fff; background-color: rgba(0,0,0,0.2); padding: 10px;">Hagdahlsakademiens syfte är att i Charles Emil Hagdahls anda stödja östgötsk konst och hushållning, gastronomi och hälsa.</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="/website/image/ir.attachment/45_ce6cf95/datas" style="position: relative; width: 100%; animation-play-state: paused; transition: none 0s ease 0s"/>
+                            <div class="container" style="position: absolute; top: 25%; left: 10%; width: 100%;">
+                                <div class="row content">
+                                    <div class="col-md-6 col-sm-6">
+                                        <h2 style="color: #fff; background-color: rgba(0,0,0,0.2); padding: 10px;">Konsthistorikern Urban Windahl har hittat ett hittills okänt porträtt av Emilia Gylling, Hagdahls hustru, på Kungliga Biblioteket!</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="/website/image/ir.attachment/46_5d9c163/datas" style="position: relative; width: 100%; animation-play-state: paused; transition: none 0s ease 0s"/>
+                            <div class="container" style="position: absolute; top: 25%; left: 10%; width: 100%;">
+                                <div class="row content">
+                                    <div class="col-md-6 col-sm-6">
+                                        <h3 style="color: #fff; background-color: rgba(0,0,0,0.2); padding: 10px;">Konsthistorikern Urban Windahl berättar att dessutom att Hagdahl hade ett musikaliskt intresse - inte minst för Bellman. Han var medlem under studietiden i Uppsala av studentsällskapet Turkiska Musiken som vid denna tid "bokstavligen gjorde mycket väsen av sig".</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="/website/image/ir.attachment/47_88d799a/datas" style="position: relative; width: 100%; animation-play-state: paused; transition: none 0s ease 0s"/>
+                            <div class="container" style="position: absolute; top: 25%; left: 10%; width: 100%;">
+                                <div class="row content">
+                                    <div class="col-md-6 col-sm-6">
+                                        <h2 style="color: #fff; background-color: rgba(0,0,0,0.2); padding: 10px;">Deras bullersamma och nattliga framföranden på gator och torg väckte stadsbornas avsky... Läs mera på "Nytt om Hagdahl"</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="left carousel-control" data-slide="prev" href="#myCarousel9">
+                        <i class="fa fa-chevron-left"/>
+                    </a>
+                    <a class="right carousel-control" data-slide="next" href="#myCarousel9">
+                        <i class="fa fa-chevron-right" style=""/>
+                    </a>
                 </div>
             </section>
+        </div>
+        <div id="wrap" class="oe_structure oe_empty">
             <section>
-                <div class="container mt32 mb32" style="max-width: 1140px; margin: auto; padding: 0px;">
+                <div class="container mt64 mb64" style="max-width: 1140px; margin: auto; padding: 0px;">
                     <div class="col-md-12" style="padding: 0px;">
                         <div class="col-md-4 block">
-                            <div>
+                            <div style="background-color: rgba(33,66,99,0.1);">
                                 <h1 class="text-center">Nyheter</h1>
                                 <ul>
                                     <li>Nyheter</li>
@@ -30,7 +91,7 @@
                             </div>
                         </div>
                         <div class="col-md-4 block">
-                            <div>
+                            <div style="background-color: rgba(33,66,99,0.1);">
                                 <h1 class="text-center">Pressreleaser</h1>
                                 <ul>
                                     <li>Pressreleaser</li>
@@ -44,19 +105,15 @@
                             </div>
                         </div>
                         <div class="col-md-4 block">
-                            <div style="position: relative;">
+                            <div style="position: relative; background-color: rgba(33,66,99,0.1);">
                                 <div class="round-icon-transparent" style="opacity: 1; border: 1px solid #369; width: 150px; height: 150px; background-color: rgba(51,102,153,0.9); position: absolute; top: -75px; right: -20px;">
-                                    <a href="#" style="text-decoration: none;">
-                                        <div class="text-center">
-                                            <h3 style="color: #fff; margin-top: 25%;">
-                                            6/Feb
-                                                <br/>
-                                                <hr style="width: 100px; margin: auto;" class="mt8 mb8"/>
-                                            Evenemang
-
-                                            </h3>
-                                        </div>
-                                    </a>
+                                    <div class="text-center">
+                                        <h3 style="margin-top: 25%;">
+                                            <a href="#" style="text-decoration: none; color: #fff;">6/Feb </a>
+                                        </h3>
+                                        <hr class="mt8 mb8" style="width: 100px; margin: auto;"/>
+                                        <a href="#" style="text-decoration: none; color: #fff;">Evenemang </a>
+                                    </div>
                                 </div>
                                 <h1 class="text-center">Evenemang</h1>
                                 <ul>
@@ -73,153 +130,114 @@
                     </div>
                 </div>
             </section>
-            <section>
-                <t t-call="website_academy_rewards.prize_winners_show_in_website"/>
-                <div aria-hidden="true" class="modal fade" id="myModal" role="dialog" style="display: none;" tabindex="-1">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button class="close" data-dismiss="modal" type="button">×</button>
-                                <h3 class="modal-title"></h3>
-                                <h4 class="modal-comment"></h4>
-                            </div>
-                            <div class="modal-body">
-                                <a href="#" title="Image 1">
-                                    <img class="thumbnail img-responsive" src="" style="margin: auto"/>
-                                </a>
-                            </div>
-                            <div class="modal-footer">
-                                <button class="btn btn-primary" data-dismiss="modal">Stäng</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
         </div>
     </t>
 </t>
 
 <!-- theme -->
 <?xml version="1.0"?>
-<data inherit_id="website.layout" customize_show="True" active="False" name="Theme Block Logo II" priority="99">
+<data inherit_id="website.layout" customize_show="True" active="False" name="Theme BS-Multipurpose-Ruma" priority="99">
+    <!-- Customize CSS -->
     <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
+        <link href="/theme_bs_ruma/static/src/css/theme_bs_ruma.css" rel="stylesheet"/>
         <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'/>
         <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'/>
         <style>
-                   .bl2-body {
-                        background: #fff;
-                        list-style: none;
+                    .bs-body {
                         font-family: 'Lato', sans-serif;
-                        color: #000;
+                        list-style: none;
                     }
-
-                    h1, h2, h3 {
-                        color: #369;
-                    }
-
-                    #wrap{
-                        max-width: 1140px;
-                        width: 100%;
-                        margin: auto;
-                    }
-
-                    /*
-                    section, div {
-                        width: 100%;
-                        margin: auto;
-                        max-width: 1140px;
-                    }
-                    */
 
                     /* MENU */
-                    .bl2-navbar {
-                        font-family: 'Slabo 27px', serif;
-                        font-size: 1.1em;
-                        background: none;
-                        width: 100%;
-                    }
-
-                    #bl2-menu-bar {
-                        width: 100%;
-                        padding: 0px;
-                    }
-
-                    #bl2-menu-bar &gt; div &gt; ul &gt; li &gt; a {
-                        padding-top: 25px;
-                        padding-bottom: 25px;
-                    }
-
-                    #bl2-menu-bar &gt; div {
-                        width: 1024px;
-                        margin: auto;
-                    }
-
-                    #top_menu {
+                    #bs-menu {
                         z-index: 99;
-                        top: 0px;
-                        left: 0px;
+                        margin-top: 0px;
+                        background: rgba(255, 255, 255, 1);
                         position: fixed;
-                        width: 100%;
-                        background: #fff;
+                        top: 0px;
+                        padding: 0px;
+                        border: 0px 0px 1px 0px solid #369;
+                        border-bottom-width: 0px;
                         box-shadow: 0px 0px 5px #369;
-                        opacity: 0.9;
-                    }
-
-                    #top_menu > li > a {
-                        padding: 10px 0px 10px 0px;
-                        border-width: 1px;
-                        border-style: solid;
-                        border-color: #fff;
-                    }
-
-                    #top_menu > li > a:hover {
-                        color: #369;
-                        border-color: #369;
                     }
 
                     /* COMPANY LOGO */
-                    #logo-box-2 {
+                    #bs-menu &gt; div &gt; div &gt; a {
+                        color: #FFF;
+                        font-family: 'Slabo 27px', serif;
+                    }
+
+                    #bs-logo {
+                        max-height: 50px;
+                    }
+
+                    #top_menu &gt; li &gt; a{
+                        padding: 15px;
+                    }
+
+                    .navbar {
                         padding: 0px;
                     }
 
-                    #bl2-logo {
-                        width: 100%;
-                        max-width: 1140px;
-                        display:block;
-                        margin:auto;
-                        padding-bottom: 3%;
-                        padding-top: 50px;
+                    .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+                        max-height: 800px;
+                        border-top-width: 0px;
+                    }
+
+                    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+                        color: #369;
+                    }
+
+                    .dropdown-menu > .active > a,
+                    .dropdown-menu > .active > a:focus,
+                    .dropdown-menu > .active > a:hover,
+                    .dropdown-menu > li > a:hover{
+                        background-color: rgba(33, 66, 99, 0.1);
+                    }
+
+                    .navbar-inverse .navbar-nav > .active > a,
+                    .navbar-inverse .navbar-nav > .active > a:focus,
+                    .navbar-inverse .navbar-nav > .active > a:hover,
+                    .navbar-inverse .navbar-nav > .open > a,
+                    .navbar-inverse .navbar-nav > .open > a:focus,
+                    .navbar-inverse .navbar-nav > .open > a:hover {
+                        background-color: transparent;
+                    }
+
+                    #top_menu &gt; .dropdown &gt; .dropdown-menu {
+                        margin: 0px;
+                        border-radius: 0px;
+                        padding: 0px;
+                    }
+
+                    #top_menu &gt; .dropdown &gt; .dropdown-menu span {
+                        font-size: 1.0em;
+                        background-color: rgba(33, 66, 99, 0.1);
                     }
 
                     /* MENU TEXT */
-                    #bl2-menu-bar &gt; ul &gt; li &gt; a {
-                        color: #333;
+                    #bs-menu &gt; div &gt; div &gt; ul &gt; li &gt; a {
+                        color: #369;
+                        background-color: none;
                     }
 
                     /* STYLE WHEN MOUSE HOVER */
-                    #bl2-menu-bar &gt; ul &gt; li &gt; a:hover,
-                    #bl2-menu-bar &gt; ul &gt; li &gt; a:focus {
-                        color: #000;
-                        background-color: #fff;
+                    #bs-menu &gt; div &gt; div &gt; ul &gt; li &gt; a:hover,
+                    #bs-menu &gt; div &gt; div &gt; ul &gt; li &gt; a:focus,
+                    #bs-menu &gt; div &gt; div &gt; ul &gt; li &gt; a:active {
+                        color: #369;
+                        text-shadow: 0px 0px 5px #369;
                     }
 
                     /* STYLE WHEN PAGE ACTIVE */
-                    #bl2-menu-bar &gt; ul &gt; .active &gt; a {
-                        color: #000;
-                        background-color: #fff;
-                    }
-
-                    .navbar-toggle {
-                        border-color: #000;
-                    }
-
-                    .navbar-toggle .icon-bar{
-                        background-color: #000;
+                    #bs-menu &gt; div &gt; div &gt; ul &gt; .active &gt; a {
+                        color: #369;
                     }
 
                     /* FOOTER STYLE*/
-                    .bl2-footer {
-
+                    .bs-footer {
+                        background-color: rgba(33,66,99,0.1);
+                        color: #369;
                     }
 
                     .block {
@@ -240,31 +258,54 @@
                         width: 560px;
                     }
 
+                    .prize {
+                        color: #BD9F57;
+                        font-size: 1.5em;
+                    }
+
+                    #wrapwrap .navbar-toggle {
+                        background-color: #fff;
+                        border-color: #369;
+                    }
+
+                    #wrapwrap .navbar-toggle > .icon-bar {
+                        background-color: #369;
+                    }
+
+                    .carousel-control.left, .carousel-control.right {
+                        background-image: none;
+                    }
+
+                    @media screen and (max-width: 320px) {
+                        h1 {
+                           font-size: 2em;
+                        }
+                        #top_menu {
+                            position: relative;
+                        }
+                    }
                 </style>
     </xpath>
     <!-- add company logo -->
-    <xpath expr="//body/div[@id='wrapwrap']/header" position="before">
-        <div class="container">
-            <div id="logo-box-2" class="col-md-12 hidden-xs">
-                <img id="bl2-logo" src="/logo1024.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
-            </div>
-        </div>
-    </xpath>
-    <xpath expr="//a[@class='navbar-brand logo']" position="attributes">
-        <attribute name="class">navbar-brand logo hidden-lg hidden-md hidden-sm</attribute>
+    <xpath expr="//header//ul[@id='top_menu']" position="before">
+        <img id="bs-logo" src="/logo.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name" class="hidden-sm hidden-xs"/>
     </xpath>
     <!-- define id and class to menu bar -->
     <xpath expr="//body/div[@id='wrapwrap']/header/div" position="attributes">
-        <attribute name="id">bl2-menu</attribute>
-        <attribute name="class">bl2-navbar</attribute>
+        <attribute name="id">bs-menu</attribute>
+        <attribute name="class">navbar navbar-inverse navbar-fixed-top</attribute>
     </xpath>
     <!-- define class to menu style -->
     <xpath expr="//header//ul[@id='top_menu']" position="attributes">
-        <attribute name="class">nav nav-justified</attribute>
+        <attribute name="class">nav navbar-nav navbar-right</attribute>
     </xpath>
-    <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div[2]" position="attributes">
-        <attribute name="id">bl2-menu-bar</attribute>
-        <attribute name="class">collapse navbar-collapse navbar-top-collapse col-md-12</attribute>
+    <!-- hide company name -->
+    <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div/a" position="attributes">
+        <attribute name="class">navbar-brand hidden</attribute>
+    </xpath>
+    <!-- show company logo in mobile version -->
+    <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div/button" position="before">
+        <img class="pull-left hidden-lg hidden-md hidden-sm" style="max-height: 50px;" src="/logo.png"/>
     </xpath>
     <!-- hide user login / out -->
     <xpath expr="//header//ul[@id='top_menu']/li[@class='divider']" position="attributes">
@@ -275,11 +316,11 @@
     </xpath>
     <!-- define a class to body -->
     <xpath expr="//body" position="attributes">
-        <attribute name="class">bl2-body</attribute>
+        <attribute name="class">bs-body</attribute>
     </xpath>
     <!-- define a class to footer -->
     <xpath expr="//footer" position="attributes">
-        <attribute name="class">bl2-footer</attribute>
+        <attribute name="class">bs-footer</attribute>
     </xpath>
     <!-- add log in/out in footer -->
     <xpath expr="//footer" position="inside">
@@ -318,17 +359,244 @@
         <script>
             $('.thumbnail').click(function(){
                 $('.modal-body').empty();
-              	var title = $(this).parents('a').attr("title");
+                var title = $(this).parents('a').attr("title");
                 var comment = $(this).parents('a').attr("comment");
-              	$('.modal-title').html(title);
+                var reward = $(this).parents('a').attr("reward");
+                var year = $(this).parents('a').attr("year");
+                  $('.modal-title').html(title);
                 $('.modal-comment').html(comment);
-              	$($(this).parents('div').html()).appendTo('.modal-body');
-              	$('#myModal').modal({show:true});
+                $('.modal-reward').html(reward);
+                $('.modal-year').html(year);
+                $($(this).parents('div').html()).appendTo('.modal-body');
+                $('#myModal').modal({show:true});
             });
         </script>
     </xpath>
 </data>
 
+    <!-- Customize CSS -->
+    <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
+        <link href="/theme_bs_ruma/static/src/css/theme_bs_ruma.css" rel="stylesheet"/>
+        <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'/>
+        <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'/>
+        <style>
+                    .bs-body {
+                        font-family: 'Lato', sans-serif;
+                        list-style: none;
+                    }
+
+                    /* MENU */
+                    #bs-menu {
+                        z-index: 1;
+                        margin-top: 0px;
+                        background: rgba(255, 255, 255, 1);
+                        position: fixed;
+                        top: 0px;
+                        padding: 0px;
+                        border: 0px 0px 1px 0px solid #369;
+                        border-bottom-width: 0px;
+                        box-shadow: 0px 0px 5px #369;
+                    }
+
+                    /* COMPANY LOGO */
+                    #bs-menu &gt; div &gt; div &gt; a {
+                        color: #FFF;
+                        font-family: 'Slabo 27px', serif;
+                    }
+
+                    #bs-logo {
+                        max-height: 50px;
+                    }
+
+                    #top_menu &gt; li &gt; a{
+                        padding: 15px;
+                    }
+
+                    .navbar {
+                        padding: 0px;
+                    }
+
+                    .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+                        max-height: 800px;
+                        border-top-width: 0px;
+                    }
+
+                    .navbar-inverse .navbar-nav > .active > a,
+                    .navbar-inverse .navbar-nav > .active > a:focus,
+                    .navbar-inverse .navbar-nav > .active > a:hover,
+                    .navbar-inverse .navbar-nav > .open > a,
+                    .navbar-inverse .navbar-nav > .open > a:focus,
+                    .navbar-inverse .navbar-nav > .open > a:hover {
+                        background-color: transparent;
+                    }
+
+                    #top_menu &gt; .dropdown &gt; .dropdown-menu {
+                        margin: 0px;
+                        border-radius: 0px;
+                        padding: 0px;
+                    }
+
+                    #top_menu &gt; .dropdown &gt; .dropdown-menu span {
+                        font-size: 1.2em;
+                    }
+
+                    /* MENU TEXT */
+                    #bs-menu &gt; div &gt; div &gt; ul &gt; li &gt; a {
+                        color: #369;
+                        background-color: none;
+                    }
+
+                    /* STYLE WHEN MOUSE HOVER */
+                    #bs-menu &gt; div &gt; div &gt; ul &gt; li &gt; a:hover,
+                    #bs-menu &gt; div &gt; div &gt; ul &gt; li &gt; a:focus {
+                        color: #369;
+                    }
+
+                    /* STYLE WHEN PAGE ACTIVE */
+                    #bs-menu &gt; div &gt; div &gt; ul &gt; .active &gt; a {
+                        color: #369;
+                        background-color: transparent;
+                    }
+
+                    /* FOOTER STYLE*/
+                    .bs-footer {
+                        background-color: rgba(33,66,99,0.1);
+                        color: #369;
+                    }
+
+                    .block {
+                        padding: 10px;
+                    }
+
+                    .block > div{
+                        padding: 20px 40px 20px 40px;
+                        border: 1px solid #369;
+                    }
+
+                    .grid-item {
+                        width: 280px;
+                        padding: 0px;
+                    }
+
+                    .grid-item--width2 {
+                        width: 560px;
+                    }
+
+                    .prize {
+                        color: #BD9F57;
+                        font-size: 1.5em;
+                    }
+
+                    #wrapwrap .navbar-toggle {
+                        background-color: #fff;
+                        border-color: #369;
+                    }
+
+                    #wrapwrap .navbar-toggle > .icon-bar {
+                        background-color: #369;
+                    }
+
+                    .carousel-control.left, .carousel-control.right {
+                        background-image: none;
+                    }
+
+                    @media screen and (max-width: 320px) {
+                        h1 {
+                           font-size: 2em;
+                        }
+                        #top_menu {
+                            position: relative;
+                        }
+                    }
+                </style>
+    </xpath>
+    <!-- add company logo -->
+    <xpath expr="//header//ul[@id='top_menu']" position="before">
+        <img id="bs-logo" src="/logo.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name" class="hidden-sm hidden-xs"/>
+    </xpath>
+    <!-- define id and class to menu bar -->
+    <xpath expr="//body/div[@id='wrapwrap']/header/div" position="attributes">
+        <attribute name="id">bs-menu</attribute>
+        <attribute name="class">navbar navbar-inverse navbar-fixed-top</attribute>
+    </xpath>
+    <!-- define class to menu style -->
+    <xpath expr="//header//ul[@id='top_menu']" position="attributes">
+        <attribute name="class">nav navbar-nav navbar-right</attribute>
+    </xpath>
+    <!-- hide company name -->
+    <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div/a" position="attributes">
+        <attribute name="class">navbar-brand hidden</attribute>
+    </xpath>
+    <!-- show company logo in mobile version -->
+    <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div/button" position="before">
+        <img class="pull-left hidden-lg hidden-md hidden-sm" style="max-height: 50px;" src="/logo.png"/>
+    </xpath>
+    <!-- hide user login / out -->
+    <xpath expr="//header//ul[@id='top_menu']/li[@class='divider']" position="attributes">
+        <attribute name="class">hidden</attribute>
+    </xpath>
+    <xpath expr="//header//ul[@id='top_menu']/li[@class='dropdown']" position="attributes">
+        <attribute name="class">hidden</attribute>
+    </xpath>
+    <!-- define a class to body -->
+    <xpath expr="//body" position="attributes">
+        <attribute name="class">bs-body</attribute>
+    </xpath>
+    <!-- define a class to footer -->
+    <xpath expr="//footer" position="attributes">
+        <attribute name="class">bs-footer</attribute>
+    </xpath>
+    <!-- add log in/out in footer -->
+    <xpath expr="//footer" position="inside">
+        <div class="container">
+            <div class="pull-right">
+                <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <b>
+                            <span t-esc="user_id.name"/>
+                            <span class="caret"/>
+                        </b>
+                    </a>
+                    <ul class="dropdown-menu js_usermenu" role="menu">
+                        <li>
+                            <a href="/web" role="menuitem">My Account</a>
+                        </li>
+                        <li class="divider"/>
+                        <li>
+                            <a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a>
+                        </li>
+                    </ul>
+                </li>
+            </div>
+            <div class="pull-right">
+                <li groups="base.group_public">
+                    <a t-attf-href="/web/login">
+                        <b>Sign in</b>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </xpath>
+    <!-- Customize javascript -->
+    <xpath expr="//body" position="inside">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+        <script>
+            $('.thumbnail').click(function(){
+                $('.modal-body').empty();
+                var title = $(this).parents('a').attr("title");
+                var comment = $(this).parents('a').attr("comment");
+                var reward = $(this).parents('a').attr("reward");
+                var year = $(this).parents('a').attr("year");
+                  $('.modal-title').html(title);
+                $('.modal-comment').html(comment);
+                $('.modal-reward').html(reward);
+                $('.modal-year').html(year);
+                $($(this).parents('div').html()).appendTo('.modal-body');
+                $('#myModal').modal({show:true});
+            });
+        </script>
+    </xpath>
+</data>
 
 <!-- footer -->
 <?xml version="1.0"?>
