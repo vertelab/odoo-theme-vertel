@@ -37,11 +37,10 @@ class website(osv.osv):
         id = int(id)
 
         try:
-            ids = Model.search(cr, uid,
-                           [('id', '=', id)], context=context)
+            ids = Model.search(cr, uid, [('id', '=', id)], context=context)
         except:
             ids = None
-            
+
         if not ids and 'website_published' in Model._fields:
             ids = Model.search(cr, openerp.SUPERUSER_ID,
                                [('id', '=', id), ('website_published', '=', True)], context=context)
