@@ -182,18 +182,60 @@ Läs mer om hur du söker <a href="/">förskoleplats</a> hos oss.</div>
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet" type="text/css"/>
     <style>
 
-                   .bl2-body {
-                        background: #fff;
+                    body {
+                        background: -webkit-linear-gradient(#fff, #CEE1E7, #fff); /* For Safari 5.1 to 6.0 */
+                        background: -o-linear-gradient(#fff, #CEE1E7, #fff); /* For Opera 11.1 to 12.0 */
+                        background: -moz-linear-gradient(#fff, #CEE1E7, #fff); /* For Firefox 3.6 to 15 */
+                        background: linear-gradient(#fff, #CEE1E7, #fff); /* Standard syntax */
+                        background-repeat: no-repeat;
                         list-style: none;
                     }
 
-                    h1, h2 {
-                        color: #D0E27E;
+                    h1, h2, h3 {
+                        color: rgb(51, 153, 102);
+                    }
+
+                    .btn-primary {
+                        border: 1px solid #396;
+                        background-color: #396;
+                        opacity: 0.9;
+                    }
+
+                    .btn-primary:hover {
+                        border: 1px solid #396;
+                        background-color: #396;
+                        opacity: 1;
+                    }
+
+                    a {
+                        color: #917FE3;
                     }
 
                     div .container, div .container-fluid {
-                        max-width: 905px;
+                        max-width: 935px;
                         margin: auto;
+                    }
+
+                    /* ankan style */
+                    #intro-board,
+                    .blog_post &gt; div,
+                    #wrap section &gt; div{
+                        background: #F4FFBD;
+                        width:100%;
+                        max-width: 904px;
+                        margin: auto;
+                        margin-bottom: 10px;
+                        box-shadow: 0px 10px 10px #343434;
+                    }
+
+                    #wrap section &gt; div &gt; div{
+                        padding: 15px;
+                    }
+
+                    /* none style */
+                    .blog_post section &gt; div{
+                        background: none !important;
+                        box-shadow: none !important;
                     }
 
                     /* MENU */
@@ -203,20 +245,19 @@ Läs mer om hur du söker <a href="/">förskoleplats</a> hos oss.</div>
                         background: none;
                     }
 
-                    .bl2-navbar &gt; .container {
-                        width: 100%;
-                        padding: 0px;
+                    .bl2-navbar &gt; .container &gt; .navbar-header {
+                        margin: 0px;
+                    }
+
+                    #bl2-menu-bar &gt; div &gt; ul &gt; li &gt; a {
+                        padding-top: 25px;
+                        padding-bottom: 25px;
                     }
 
                     #bl2-menu-bar {
                         width: 100%;
                         margin: auto;
                         padding: 0px;
-                    }
-
-                    #bl2-menu-bar &gt; div &gt; ul &gt; li &gt; a {
-                        padding-top: 25px;
-                        padding-bottom: 25px;
                     }
 
                     .bl2-navbar-fixed-top {
@@ -258,6 +299,24 @@ Läs mer om hur du söker <a href="/">förskoleplats</a> hos oss.</div>
                         color: #333;
                     }
 
+                    #top_menu &gt; .dropdown &gt; .dropdown-menu {
+                        margin: 0px;
+                        border-radius: 0px;
+                        padding: 0px;
+                    }
+
+                    #top_menu &gt; .dropdown &gt; .dropdown-menu span {
+                        font-size: 1.2em;
+                    }
+
+                    #top_menu &gt; .dropdown &gt; .dropdown-menu &gt; li &gt; a:hover,
+                    #top_menu &gt; .dropdown &gt; .dropdown-menu &gt; .active &gt; a,
+                    #top_menu &gt; .dropdown &gt; .dropdown-menu &gt; .active &gt; a:focus,
+                    #top_menu &gt; .dropdown &gt;.dropdown-menu &gt; .active &gt; a:hover {
+                        color: #917FE3;
+                        background-color: #D0E27E;
+                    }
+
                     /* STYLE WHEN MOUSE HOVER */
                     #bl2-menu-bar &gt; ul &gt; li &gt; a:hover,
                     #bl2-menu-bar &gt; ul &gt; li &gt; a:focus {
@@ -271,34 +330,18 @@ Läs mer om hur du söker <a href="/">förskoleplats</a> hos oss.</div>
                         background-color: #D0E27E
                     }
 
-                    .navbar-toggle {
+                    #bl2-menu .navbar-toggle {
                         border-color: #D0E27E;
                         background-color: #e6e6e6;
                     }
 
-                    .navbar-toggle .icon-bar{
+                    #bl2-menu .navbar-toggle .icon-bar{
                         background-color: #917FE3;
                     }
 
                     /* FOOTER STYLE*/
                     .bl2-footer {
 
-                    }
-
-                    #intro-board {
-                        background: #F4FFBD;
-                        width:100%;
-                        max-width: 904px;
-                        margin-bottom:4px;
-                        box-shadow: 0px 0px 15px #343434;
-                    }
-
-                    #info-board {
-                        background: #F4FFBD;
-                        width:100%;
-                        max-width: 904px;
-                        margin:auto;
-                        box-shadow: 0px 0px 15px #343434;
                     }
 
                     .panel {
@@ -337,171 +380,171 @@ Läs mer om hur du söker <a href="/">förskoleplats</a> hos oss.</div>
                         background:url(/theme_teamdoc/static/src/img/fkankan/spring/Spring_Footer.jpg) top center;
                         border: 0px solid red;
                         color: #666;
-                    	font-size: 1.1em;
-                    	height:151px;
-                    	width:100%;
-                    	padding: 0 0 0 0;
-                    	text-align:center;
-                    	vertical-align:bottom;
+                        font-size: 1.1em;
+                        height:151px;
+                        width:100%;
+                        padding: 0 0 0 0;
+                        text-align:center;
+                        vertical-align:bottom;
                     }
 
                     #footer_summer {
-                    	position:relative;
-                    	background:url(/theme_teamdoc/static/src/img/fkankan/spring/Spring_Footer.jpg) top center;
-                    	border: 0px solid red;
-                    	color: #666;
-                    	font-size: 1.1em;
-                    	height:151px;
-                    	width:100%;
-                    	padding: 0 0 0 0;
-                    	text-align:center;
-                    	vertical-align:bottom;
+                        position:relative;
+                        background:url(/theme_teamdoc/static/src/img/fkankan/spring/Spring_Footer.jpg) top center;
+                        border: 0px solid red;
+                        color: #666;
+                        font-size: 1.1em;
+                        height:151px;
+                        width:100%;
+                        padding: 0 0 0 0;
+                        text-align:center;
+                        vertical-align:bottom;
                     }
 
                     #footer_autumn {
-                    	position:relative;
-                    	background:url(/theme_teamdoc/static/src/img/fkankan/autumn/footer_autumn.jpg) top center;
-                    	border: 0px solid red;
-                    	color: #666;
-                    	font-size: 1.1em;
-                    	height:151px;
-                    	width:100%;
-                    	padding: 0 0 0 0;
-                    	text-align:center;
-                    	vertical-align:bottom;
+                        position:relative;
+                        background:url(/theme_teamdoc/static/src/img/fkankan/autumn/footer_autumn.jpg) top center;
+                        border: 0px solid red;
+                        color: #666;
+                        font-size: 1.1em;
+                        height:151px;
+                        width:100%;
+                        padding: 0 0 0 0;
+                        text-align:center;
+                        vertical-align:bottom;
                     }
 
                     #footer_winter {
-                    	position:relative;
-                    	background:url(/theme_teamdoc/static/src/img/fkankan/winter/footer_vinter.jpg) top center;
-                    	border: 0px solid red;
-                    	color: #666;
-                    	font-size: 1.1em;
-                    	height:136px;
-                    	width:100%;
-                    	padding: 0 0 0 0;
-                    	text-align:center;
-                    	vertical-align:bottom;
+                        position:relative;
+                        background:url(/theme_teamdoc/static/src/img/fkankan/winter/footer_vinter.jpg) top center;
+                        border: 0px solid red;
+                        color: #666;
+                        font-size: 1.1em;
+                        height:136px;
+                        width:100%;
+                        padding: 0 0 0 0;
+                        text-align:center;
+                        vertical-align:bottom;
                     }
 
                     #spring_effect_1 {
                         background:url(/theme_teamdoc/static/src/img/fkankan/spring/vaarblommor.png);
-                    	z-index: 98;
-                    	position:absolute;
-                    	top: 550px;
-                    	left: 12%;
-                    	width: 155px;
-                    	height: 163px;
+                        z-index: 98;
+                        position:absolute;
+                        bottom: 150px;
+                        left: 6%;
+                        width: 155px;
+                        height: 163px;
                     }
 
                     #spring_effect_2 {
                         background:url(/theme_teamdoc/static/src/img/fkankan/spring/fluga_1.gif);
-                    	z-index: 99;
-                    	position:absolute;
-                    	top: 600px;
-                    	left: 14%;
-                    	width: 56px;
-                    	height: 50px;
+                        z-index: 99;
+                        position:absolute;
+                        bottom: 200px;
+                        left: 8%;
+                        width: 56px;
+                        height: 50px;
                     }
 
                     #spring_effect_3 {
                         background:url(/theme_teamdoc/static/src/img/fkankan/spring/fjarilar.png);
                         z-index: 99;
-                    	position:absolute;
-                    	top: 500px;
-                    	right: 8%;
-                    	width: 182px;
-                    	height: 470px;
+                        position:absolute;
+                        bottom: 300px;
+                        right: 2%;
+                        width: 182px;
+                        height: 470px;
                     }
 
                     #summer_effect_1 {
                         background:url(/theme_teamdoc/static/src/img/fkankan/summer/blomma_1.png);
-                    	z-index: 98;
-                    	position: absolute;
-                    	top: 550px;
-                    	left: 16%;
-                    	width: 118px;
-                    	height: 150px;
+                        z-index: 98;
+                        position: absolute;
+                        bottom: 450px;
+                        left: 4%;
+                        width: 118px;
+                        height: 150px;
                     }
 
                     #summer_effect_2 {
                         background:url(/theme_teamdoc/static/src/img/fkankan/summer/spindel.gif);
-                    	z-index: 99;
-                    	position: absolute;
-                    	top: 800px;
-                    	left: 18%;
-                    	width: 30px;
-                    	height: 127px;
+                        z-index: 99;
+                        position: absolute;
+                        bottom: 100px;
+                        left: 6%;
+                        width: 30px;
+                        height: 127px;
                     }
 
                     #summer_effect_3 {
                         background:url(/theme_teamdoc/static/src/img/fkankan/summer/blomma_1.png);
-                    	z-index: 99;
-                    	position: absolute;
-                    	top: 1100px;
-                    	right: 16%;
-                    	width: 118px;
-                    	height: 150px;
+                        z-index: 99;
+                        position: absolute;
+                        bottom: 400px;
+                        right: 3%;
+                        width: 118px;
+                        height: 150px;
                     }
 
                     #autumn_effect_1 {
                         background:url(/theme_teamdoc/static/src/img/fkankan/autumn/Host_pic.png);
-                    	z-index: 99;
-                    	position: absolute;
-                    	top: 1000px;
-                    	left: 12%;
-                    	width: 155px;
-                    	height: 149px;
+                        z-index: 99;
+                        position: absolute;
+                        bottom: 100px;
+                        left: 3%;
+                        width: 155px;
+                        height: 149px;
                     }
 
                     #autumn_effect_2 {
                         background:url(/theme_teamdoc/static/src/img/fkankan/autumn/Leaves.png);
-                    	z-index: 98;
-                    	position: absolute;
-                    	top: 1100px;
-                    	left: 20%;
-                    	width: 140px;
-                    	height: 147px;
+                        z-index: 98;
+                        position: absolute;
+                        bottom: 250px;
+                        left: 4%;
+                        width: 140px;
+                        height: 147px;
                     }
 
                     #autumn_effect_3 {
                         background:url(/theme_teamdoc/static/src/img/fkankan/autumn/fallingleaves.png);
-                    	z-index: 99;
-                    	position: absolute;
-                    	top: 700px;
-                    	right: 8%;
-                    	width: 182px;
-                    	height: 470px;
+                        z-index: 99;
+                        position: absolute;
+                        bottom: 100px;
+                        right: 4%;
+                        width: 182px;
+                        height: 470px;
                     }
 
                     #winter_effect_1 {
                         background:url(/theme_teamdoc/static/src/img/fkankan/winter/snoflingor.png);
-                    	z-index: 99;
-                    	position: absolute;
-                    	top: 500px;
-                    	left: 12%;
-                    	width: 134px;
-                    	height: 159px;
+                        z-index: 99;
+                        position: absolute;
+                        bottom: 700px;
+                        left: 6%;
+                        width: 134px;
+                        height: 159px;
                     }
 
                     #winter_effect_2 {
                         background:url(/theme_teamdoc/static/src/img/fkankan/winter/snoflingor_1.png);
-                    	z-index: 98;
-                    	position: absolute;
-                    	top: 550px;
-                    	left: 20%;
-                    	width: 134px;
-                    	height: 159px;
+                        z-index: 98;
+                        position: absolute;
+                        bottom: 550px;
+                        left: 14%;
+                        width: 134px;
+                        height: 159px;
                     }
 
                     #winter_effect_3 {
                         background:url(/theme_teamdoc/static/src/img/fkankan/winter/snoflingor.png);
-                    	z-index: 99;
-                    	position: absolute;
-                    	top: 1000px;
-                    	right: 8%;
-                    	width: 134px;
-                    	height: 159px;
+                        z-index: 99;
+                        position: absolute;
+                        bottom: 100px;
+                        right: 2%;
+                        width: 134px;
+                        height: 159px;
                     }
                 </style>
   </xpath>
@@ -699,7 +742,7 @@ Läs mer om hur du söker <a href="/">förskoleplats</a> hos oss.</div>
     </div>
   </xpath>
   <xpath expr="//a[@class='navbar-brand logo']" position="attributes">
-    <attribute name="class">navbar-brand logo hidden-lg hidden-md hidden-sm</attribute>
+    <attribute name="class">navbar-brand logo hidden</attribute>
   </xpath>
   <!-- define id and class to menu bar -->
   <xpath expr="//body/div[@id='wrapwrap']/header/div" position="attributes">
@@ -763,11 +806,167 @@ Läs mer om hur du söker <a href="/">förskoleplats</a> hos oss.</div>
   <!-- Customize javascript -->
   <xpath expr="//body" position="inside">
     <script>
-        var margin_value = 120;
-    </script>
-    <script type="text/javascript" src="/theme_block_logo/static/src/js/theme_block_logo_II.js"/>
+        var margin_value = 140;
+        $(window).scroll(function () {
+            if ($(window).scrollTop() &gt; margin_value){
+                $("#bl2-menu").addClass("bl2-navbar-fixed-top");
+                $("#bl2-menu").removeClass("bl2-navbar");
+                $(".logo").removeClass("hidden-lg").removeClass("hidden-md").removeClass("hidden-sm");
+                $("#bl2-menu-bar").removeClass("col-md-12");
+                $("#bl2-menu-bar").addClass("col-md-11").addClass("navbar-right");
+            } else {
+                $("#bl2-menu").removeClass("bl2-navbar-fixed-top");
+                $("#bl2-menu").addClass("bl2-navbar");
+                $(".logo").addClass("hidden-lg").addClass("hidden-md").addClass("hidden-sm");
+                $("#bl2-menu-bar").removeClass("col-md-11").removeClass("navbar-right");
+                $("#bl2-menu-bar").addClass("col-md-12");
+            }
+        });
+        </script>
   </xpath>
 </data>
 
+
+<!-- blog_post -->
+<?xml version="1.0"?>
+<data inherit_id="website_blog.blog_post_complete" name="Blog Post">
+    <xpath expr="//div[@id='title']" position="replace">
+        <div class="mb32">
+            <div class="container blog_post" style="">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+
+                    <!-- blog post body -->
+                    <div class="col-md-9 col-sm-9 col-xs-12" style="padding: 5px;">
+                        <div class="col-md-12 col-sm-12 col-xs-12 oe_dark">
+                            <div class="blog_title">
+                                <h2 t-field="blog_post.name" id="blog_post_name" class="text-center" t-att-data-blog-id="blog_post.id"/>
+                                <h4 t-field="blog_post.subtitle" class="text-center"/>
+                                <p class="post-meta text-muted text-center" name="blog_post_data"/>
+                                <div class="hidden">
+                                    <img itemprop="image" t-att-src="website.simple_blog_url(blog_post, 'website_blog_simple.im_blog_list')" style="margin: auto; padding: 0px;"/>
+                                    <span t-field="blog_post.author_id" style="display: inline-block;" t-field-options="{                                                 &quot;widget&quot;: &quot;contact&quot;,                                                 &quot;fields&quot;: [&quot;name&quot;]                                             }"/>
+                                </div>
+                                <div class="container text-right">
+                                    <t t-call="website.publish_management">
+                                        <t t-set="object" t-value="blog_post"/>
+                                        <t t-set="publish_edit" t-value="True"/>
+                                        <li>
+                                            <form class="duplicate hidden" action="/blogpost/duplicate">
+                                                <input name="blog_post_id" t-att-value="blog_post.id"/>
+                                            </form>
+                                            <a href="#" class="duplicate" onclick="$(this).prev('form').submit()">Duplicate</a>
+                                        </li>
+                                    </t>
+                                </div>
+                            </div>
+                            <div class="blog_image col-md-12 col-sm-12 col-xs-12">
+                                <t t-if="not blog_post.website_published">
+                                    <span itemprop="image" contenteditable="true" t-field="blog_post.image" t-field-options="{&quot;widget&quot;: &quot;image&quot;, &quot;class&quot;: &quot;img img-responsive&quot;, &quot;alt-field&quot;: &quot;name&quot;}"/>
+                                </t>
+                                <t t-if="blog_post.website_published">
+                                    <img t-if="blog_post.image" itemprop="image" t-att-src="website.imagemagick_url(blog_post, 'image', 'website_blog_simple.im_blog_single')"/>
+                                </t>
+                            </div>
+                            <div t-if="blog_post.background_image" id="blog_angle_down" class="hidden">
+                                <strong><a href="#blog_content" class="fa fa-angle-down fa-3x fa-inverse mt32"/></strong>
+                            </div>
+                            <div t-field="blog_post.content" class="mt32 col-md-12 col-sm-12 col-xs-12"/>
+                            <div>
+                                <h5 t-field="blog_post.write_uid" class="author pull-left"/>
+                                <h5 t-field="blog_post.write_date" class="published_date pull-right"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- blog post list -->
+                    <div class="col-md-3 col-sm-3 col-xs-12" style="padding: 5px;">
+                        <t t-set="blog_post_list" t-value="request.env['blog.post'].sudo().search([('blog_id', '=', blog.id)])"/>
+                        <t t-set="n" t-value="0"/>
+                        <t t-foreach="blog_post_list" t-as="b">
+                            <t t-if="n&lt;6">
+                                <a t-if="b.website_published == True or user_id.has_group('base.group_website_publisher')" t-att-href="'/blog/%s/post/%s' % (blog.id, b.id)">
+                                    <div class="col-sm-12 oe_dark mb16" t-att-style="'padding: 0px; %s' % 'border: 1px solid #f00; opacity: 0.5;' if b.website_published == False else ''">
+                                        <div class="col-md-3 col-sm-3 col-xs-3" style="padding: 5px;">
+                                            <img itemprop="image" t-att-src="website.simple_blog_url(b, 'website_blog_simple.im_blog_list')" style="margin: 10px auto auto; padding: 0px;"/>
+                                        </div>
+                                        <div class="col-md-9 col-sm-9 col-xs-9">
+                                            <h5 class="blog_list_title" t-field="b.name"/>
+                                            <h6 class="blog_list_subtitle" t-field="b.subtitle"/>
+                                            <h6 class="blog_list_date" t-field="b.write_date"/>
+                                        </div>
+                                    </div>
+                                </a>
+                                <t t-set="n" t-value="n+1"/>
+                            </t>
+                        </t>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </xpath>
+
+    <xpath expr="//div[@id='blog_content']" position="attributes">
+        <attribute name="class">hidden</attribute>
+    </xpath>
+
+    <xpath expr="//div[@class='cover cover_footer mb0 text-center']" position="attributes">
+        <attribute name="class">cover cover_footer mb0 text-center hidden</attribute>
+    </xpath>
+</data>
+
+
+<!-- blog post short -->
+<?xml version="1.0"?>
+<t name="Blog Posts" t-name="website_blog.blog_post_short">
+    <t t-call="website_blog.index">
+        <div class="oe_structure">
+            <section class="mb0">
+                <div class="container">
+                    <div class="row">
+                        <t t-call="website.pager">
+                            <t t-set="classname">pull-right</t>
+                        </t>
+                        <div class="col-md-12 mb32 mt16 text-center">
+                            <h1 t-field="blog.name"/>
+                            <h3 class="text-muted" t-field="blog.subtitle"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2" t-ignore="True" id="main_column">
+                            <div t-if="not blog_posts" class="container mb64">
+                                <p class="css_editable_hidden">
+                                    <h1>No blog post yet.</h1>
+                                </p>
+                                <p groups="base.group_document_user">
+                            Click on "Content" on the top menu to write your first blog post.
+                          </p>
+                            </div>
+                            <div t-foreach="blog_posts" t-as="blog_post" class="mb32">
+                                <span t-field="blog_post.author_avatar" t-field-options="{&quot;widget&quot;: &quot;image&quot;, &quot;class&quot;: &quot;img-circle pull-right mt16 media-object&quot;}"/>
+                                <a t-attf-href="/blog/#{ slug(blog_post.blog_id) }/post/#{ slug(blog_post) }">
+                                    <h2 t-field="blog_post.name" class="mb4"/>
+                                </a>
+                                <div class="text-muted">
+                                    <h4 t-field="blog_post.subtitle" class="mb4 mt4"/>
+                                    <div name="blog_post_data" class="mb0">
+                                        <span t-field="blog_post.author_id" style="display: inline-block;" t-field-options="{                                 &quot;widget&quot;: &quot;contact&quot;,                                 &quot;fields&quot;: [&quot;name&quot;]                             }"/>
+                                        <span t-field="blog_post.create_date" t-field-options="{&quot;format&quot;: &quot;MMMM yyyy&quot;}"/>
+                                        <span t-if="len(blog_post.message_ids) &gt; 0">
+                                            <t t-esc="len(blog_post.message_ids)"/>
+                                            <t t-if="len(blog_post.message_ids) &lt;= 1">comment</t>
+                                            <t t-if="len(blog_post.message_ids) &gt; 1">comments</t>
+                                        </span>
+                                        <span t-if="not blog_post.website_published" class="label label-danger">not published</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="oe_structure"/>
+    </t>
+</t>
 
 

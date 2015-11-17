@@ -149,7 +149,7 @@
             <!-- add log in/out in footer -->
             <xpath expr="//footer" position="inside">
                 <div class="container">
-                    <div class="pull-right">
+                    <div class="dropup pull-right">
                         <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <b>
@@ -174,8 +174,8 @@
                 </div>
             </xpath>
 
-            
-            
+
+
             <!-- Customize javascript -->
             <xpath expr="//body" position="inside">
                 <script>
@@ -184,7 +184,7 @@
                 <script type="text/javascript" src="/theme_simple_menu/static/src/js/theme_simple_menu.js"/>
             </xpath>
         </template>
-        
+
         <template id="sm-login" inherit_id="web.login" name="Simple Menu Login">
             <xpath expr="//form" position="attributes">
                 <attribute name="style">margin-top: 100px;</attribute>
