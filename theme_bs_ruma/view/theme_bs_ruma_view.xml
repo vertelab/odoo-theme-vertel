@@ -19,6 +19,10 @@
                         list-style-image: url(/theme_bs_ruma/static/src/img/arrow_right_red_10.png);
                     }
 
+                    #wrap {
+                        margin-top: 50px;
+                    }
+
                     h1, h2 {
                         font-family: 'PT Sans Caption', sans-serif;
                         font-weight: 700;
