@@ -19,7 +19,7 @@
                         list-style-image: url(/theme_bs_ruma/static/src/img/arrow_right_red_10.png);
                     }
 
-                    #wrap {
+                    #wrapwrap {
                         margin-top: 50px;
                     }
 
@@ -57,7 +57,7 @@
 
                     /* MENU */
                     #bs-menu {
-                        z-index: 1;
+                        z-index: 99;
                         margin-top: 0px;
                         background: #fff;
                         box-shadow: 0px 0px 3px #333;
@@ -70,7 +70,7 @@
                     }
 
                     #bs-logo {
-                        max-width: 100px;
+                        transition: all 0.8s ease-in 0s;
                     }
 
                     /* MENU TEXT */
@@ -175,14 +175,10 @@
             <xpath expr="//body" position="inside">
                 <script>
                     var margin_value = 50;
+                    var logo_max_height = 100;
+                    var logo_min_height = 50;
                 </script>
                 <script type="text/javascript" src="/theme_bs_ruma/static/src/js/theme_bs_ruma.js"/>
-            </xpath>
-        </template>
-
-        <template id="bs-login" inherit_id="web.login" name="Simple Menu Login">
-            <xpath expr="//form" position="attributes">
-                <attribute name="style">margin-top: 100px;</attribute>
             </xpath>
         </template>
 
