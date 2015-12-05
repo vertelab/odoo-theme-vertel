@@ -35,7 +35,7 @@
                     #ml-logo {
                         display:block;
                         margin:auto;
-                        z-index: 100px;
+                        z-index: 100;
                     }
 
                     .logo_grown {
