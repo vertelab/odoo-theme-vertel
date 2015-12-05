@@ -1,0 +1,457 @@
+<data inherit_id="website.layout" customize_show="True" active="False" name="Theme Middle Logo" priority="99">
+  <!-- Customize CSS -->
+  <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
+    <link href="/theme_middle_logo/static/src/css/theme_middle_logo.css" rel="stylesheet"/>
+    <link href="http://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet" type="text/css"/>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'/>
+    <style>
+                    .ml-body {
+                        background: #F1EBC8;
+                        list-style: none;
+                        font-family: 'Roboto', sans-serif;
+                    }
+
+                    .text-blue { color: #1E4485; }
+                    .text-yellow { color: #EAD24E; }
+                    .text-red { color: #9B1F1F; }
+
+                    .btn-primary {
+                        border: 1px solid #1E4485;
+                        background-color: rgba(30, 68, 133, 0.9);
+                    }
+
+                    .btn-primary:hover {
+                        border: 1px solid #1E4485;
+                        background-color: rgba(30, 68, 133, 1);
+                    }
+
+                    .btn-warning {
+                        border: 1px solid #EAD24E;
+                        background-color: rgba(234, 210, 78, 0.9);
+                    }
+
+                    .btn-warning:hover {
+                        border: 1px solid #EAD24E;
+                        background-color: rgba(234, 210, 78, 1);
+                    }
+
+                    .btn-danger {
+                        border: 1px solid #9B1F1F;
+                        background-color: rgba(155, 31, 31, 0.9);
+                    }
+
+                    .btn-danger:hover {
+                        border: 1px solid #9B1F1F;
+                        background-color: rgba(155, 31, 31, 1);
+                    }
+
+                    a {
+                        color: #1E4485;
+                    }
+
+                    /* MENU */
+                    .ml-navbar {
+                        font-family: 'Cinzel Decorative', cursive;
+                        z-index: 100;
+                        background: none;
+                        width: 100%;
+                    }
+
+                    .ml-navbar-fixed-top {
+                        font-family: 'Cinzel Decorative', cursive;
+                        z-index: 99;
+                        top: 0px;
+                        position: fixed;
+                        width: 100%;
+                        background: #fff;
+                        box-shadow: 0px 0px 5px #EAD24E;
+                    }
+
+                    /* COMPANY LOGO */
+                    #ml-logo {
+                        display:block;
+                        margin:auto;
+                        z-index: 100;
+                    }
+
+                    .logo_grown {
+                        position: absolute;
+                        max-height: 200px;
+                    }
+
+                    .logo_shrink {
+                        position: static;
+                        max-height: 50px;
+                    }
+
+                    /* MENU TEXT */
+                    #ml-menu-bar &gt; div &gt; ul &gt; div &gt; div &gt; li &gt; a {
+                        color: #343434;
+                    }
+
+                    /* STYLE WHEN MOUSE HOVER */
+                    #ml-menu-bar &gt; div &gt; ul &gt; div &gt; div &gt; li &gt; a:hover,
+                    #ml-menu-bar &gt; div &gt; ul &gt; div &gt; div &gt; li &gt; a:focus {
+                        color: #1E4485;
+                        background: none;
+                    }
+
+                    /* STYLE WHEN PAGE ACTIVE */
+                    #ml-menu-bar &gt; div &gt; ul &gt; div &gt; div &gt; .active &gt; a {
+                        color: #1E4485;
+                        background: z-index: 99;;
+                    }
+
+                    /* SIDE MENU */
+                    #ml-menu-bar &gt; div &gt; ul &gt; div .pull-right {
+                        padding: 0px 20px 0px 0px;
+                    }
+                    #ml-menu-bar &gt; div &gt; ul &gt; div .pull-left {
+                        padding: 0px 0px 0px 20px;
+                    }
+
+                    #menu-leftside &gt; div &gt; li &gt; a &gt; span,
+                    #menu-rightside &gt; div &gt; li &gt; a &gt; span {
+                        font-size: 120%;
+                    }
+
+                    #ml-menu-bar {
+                        width: 100%;
+                    }
+
+                    /* FOOTER STYLE*/
+                    .ml-footer {
+                        background-color: #fff;
+                    }
+
+                    .carousel-inner img {
+                        width: 100%;
+                    }
+
+                    .carousel  .carousel-control.left {
+                        background: none;
+                        left: 30px;
+                    }
+
+                    .carousel  .carousel-control.right{
+                        background: none;
+                        right: 30px;
+                    }
+
+                </style>
+  </xpath>
+  <!-- hide the original menu bar -->
+  <xpath expr="//body/div[@id='wrapwrap']/header/div" position="attributes">
+    <attribute name="class">navbar navbar-default navbar-static-top hidden-lg hidden-md hidden-sm</attribute>
+  </xpath>
+  <!-- add Middle Logo style menu -->
+  <xpath expr="//body/div[@id='wrapwrap']/header" position="inside">
+    <div id="ml-menu" class="ml-navbar hidden-xs">
+      <div id="ml-menu-bar" class="container">
+        <t t-set="menu_left" t-value="website.menu_id.child_id[:len(website.menu_id.child_id)/2]"/>
+        <t t-set="menu_right" t-value="website.menu_id.child_id[len(website.menu_id.child_id)/2:]"/>
+        <div class="row">
+          <ul>
+            <div id="menu-leftside" class="col-md-5 col-sm-5">
+              <div class="nav navbar-nav pull-right">
+                <t t-foreach="menu_left" t-as="submenu">
+                  <t t-call="website.submenu"/>
+                </t>
+              </div>
+            </div>
+            <div id="menu-center" class="col-md-2 col-sm-2 hidden-xs">
+              <a href="/page/homepage"><img id="ml-logo" class="logo_grown" src="/logo.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/></a>
+            </div>
+            <div id="menu-rightside" class="col-md-5 col-sm-5">
+              <div class="nav navbar-nav pull-left">
+                <t t-foreach="menu_right" t-as="submenu">
+                  <t t-call="website.submenu"/>
+                </t>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </xpath>
+  <!-- define a class to body -->
+  <xpath expr="//body" position="attributes">
+    <attribute name="class">ml-body</attribute>
+  </xpath>
+  <!-- define a class to footer -->
+  <xpath expr="//footer" position="attributes">
+    <attribute name="class">ml-footer</attribute>
+  </xpath>
+  <!-- add log in/out in footer -->
+  <xpath expr="//div[@id='footer']/div[1]" position="inside">
+    <div class="dropup pull-right">
+      <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+          <b>
+            <span t-esc="user_id.name"/>
+            <span class="caret"/>
+          </b>
+        </a>
+        <ul class="dropdown-menu js_usermenu" role="menu">
+          <li>
+            <a href="/web" role="menuitem">My Account</a>
+          </li>
+          <li class="divider"/>
+          <li>
+            <a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a>
+          </li>
+        </ul>
+      </li>
+    </div>
+    <div class="pull-right">
+      <li groups="base.group_public">
+        <a t-attf-href="/web/login">
+          <b>Sign in</b>
+        </a>
+      </li>
+    </div>
+  </xpath>
+  <!-- Customize javascript -->
+  <xpath expr="//body" position="inside">
+    <script>
+                    var margin_value = 5;
+                </script>
+    <script type="text/javascript" src="/theme_middle_logo/static/src/js/theme_middle_logo.js"/>
+  </xpath>
+</data>
+
+
+<t name="Homepage" priority="29" t-name="website.homepage">
+  <t t-call="website.layout">
+    <div id="wrap" class="oe_structure oe_empty">
+      <section>
+        <div class="carousel slide carousel-fade hidden-xs" data-ride="carousel" id="myCarousel4" style="height: 640px; overflow: hidden;">
+          <ol class="carousel-indicators">
+            <li class="active" data-slide-to="0" data-target="#myCarousel4"/>
+            <li data-slide-to="1" data-target="#myCarousel4"/>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item active" style="">
+              <img class="img-responsive" src="/website/image/ir.attachment/32_2e04ab0/datas" style="position: relative"/>
+            </div>
+            <div class="item" style="">
+              <img class="img-responsive" src="/website/static/src/img/fields.jpg" style="position: relative"/>
+            </div>
+          </div>
+          <a class="left carousel-control" data-slide="prev" href="#myCarousel4">
+            <i class="fa fa-chevron-left"/>
+          </a>
+          <a class="right carousel-control" data-slide="next" href="#myCarousel4">
+            <i class="fa fa-chevron-right"/>
+          </a>
+        </div>
+      </section>
+      <div class="oe_structure oe_empty">
+        <section class="s_title" style="background: #fff;">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12" style="padding: 40px 20px 40px 20px;">
+                <h1 class="text-center">Välkomna till Fyris Parks hemsida!</h1>
+                <h3 class="text-center">För att se vårt aktuella dansschema så använder ni er av kolumnerna till vänster. Klicka på den aktuella månaden och dansen ni önskar så hittar ni det aktuella schemat för just den månaden.
+
+                                    <br/>
+Väl mött!
+                                </h3>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section>
+        <div class="container">
+          <div class="carousel slide vertical col-md-6 mt16 mb16" id="moderna_danser" style="padding: 0px;">
+            <t t-set="moderna" t-value="request.env['event.event'].search([('type', '=', 'Moderna Danser')])"/>
+            <div class="carousel-inner">
+              <div class="item active">
+                <div class="container" style="max-width: 500px; height: 200px;">
+                  <div class="col-md-12 col-xs-12 text-center">
+                    <div class="col-md-4 col-xs-12" style="background: #fff; height: 200px;">
+                      <h1 t-field="moderna[0].date_begin" t-field-options="{&quot;format&quot;: &quot;dd&quot;}" style="font-size: 4.7em;"/>
+                      <h4 t-field="moderna[0].date_begin" t-field-options="{&quot;format&quot;: &quot;MMMM&quot;}"/>
+                      <h4 t-field="moderna[0].date_begin" t-field-options="{&quot;format&quot;: &quot;yyyy&quot;}"/>
+                      <p>
+                        <a class="btn btn-success btn-large" t-att-href="'/event/%i/register' % moderna[0].id">Gå till eventet</a>
+                      </p>
+                    </div>
+                    <div class="col-md-8 col-xs-12" style="color: #fff; background: #1E4485; height: 200px;">
+                      <h1 t-field="moderna[0].name"/>
+                      <h3>Plats kvar: <span t-field="moderna[0].seats_available"/></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <t t-foreach="moderna[1:]" t-as="mod">
+                <div class="item">
+                  <div class="container" style="max-width: 500px; height: 200px;">
+                    <div class="col-md-12 col-xs-12 text-center">
+                      <div class="col-md-4 col-xs-12" style="background: #fff; height: 200px;">
+                        <h1 t-field="mod.date_begin" t-field-options="{&quot;format&quot;: &quot;dd&quot;}" style="font-size: 4.7em;"/>
+                        <h4 t-field="mod.date_begin" t-field-options="{&quot;format&quot;: &quot;MMMM&quot;}"/>
+                        <h4 t-field="mod.date_begin" t-field-options="{&quot;format&quot;: &quot;yyyy&quot;}"/>
+                        <p>
+                          <a class="btn btn-success btn-large" t-att-href="'/event/%i/register' % mod.id">Gå till eventet</a>
+                        </p>
+                      </div>
+                      <div class="col-md-8 col-xs-12" style="color: #fff; background: #1E4485; height: 200px;">
+                        <h1 t-field="mod.name"/>
+                        <h3>Plats kvar: <span t-field="mod.seats_available"/></h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </t>
+            </div>
+            <div class="carousel-control left" data-slide="prev" data-target="#moderna_danser" href="#moderna_danser" style="height: 100%">
+              <i class="fa fa-chevron-up"/>
+            </div>
+            <div class="carousel-control right" data-slide="next" data-target="#moderna_danser" href="#moderna_danser" style="height: 100%">
+              <i class="fa fa-chevron-down"/>
+            </div>
+          </div>
+          <div class="carousel slide vertical col-md-6 mt16 mb16" id="mogen_dans" style="padding: 0px;">
+            <t t-set="mogen" t-value="request.env['event.event'].search([('type', '=', 'Mogen Dans')])"/>
+            <div class="carousel-inner">
+              <div class="item active">
+                <div class="container" style="max-width: 500px; height: 200px;">
+                  <div class="col-md-12 col-xs-12 text-center">
+                    <div class="col-md-4 col-xs-12" style="color: #fff; background: #9B1F1F; height: 200px;">
+                      <h1 t-field="mogen[0].date_begin" t-field-options="{&quot;format&quot;: &quot;dd&quot;}" style="font-size: 4.7em;"/>
+                      <h4 t-field="mogen[0].date_begin" t-field-options="{&quot;format&quot;: &quot;MMMM&quot;}"/>
+                      <h4 t-field="mogen[0].date_begin" t-field-options="{&quot;format&quot;: &quot;yyyy&quot;}"/>
+                      <p>
+                        <a class="btn btn-success btn-large" t-att-href="'/event/%i/register' % mogen[0].id">Gå till eventet</a>
+                      </p>
+                    </div>
+                    <div class="col-md-8 col-xs-12 text-blue" style="background: #EAD24E; height: 200px;">
+                      <h1 t-field="mogen[0].name"/>
+                      <h3>Plats kvar: <span t-field="mogen[0].seats_available"/></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <t t-foreach="mogen[1:]" t-as="mog">
+                <div class="item">
+                  <div class="container" style="max-width: 500px; height: 200px;">
+                    <div class="col-md-12 col-xs-12 text-center">
+                      <div class="col-md-4 col-xs-12" style="color: #fff; background: #9B1F1F; height: 200px;">
+                        <h1 t-field="mog.date_begin" t-field-options="{&quot;format&quot;: &quot;dd&quot;}" style="font-size: 4.7em;"/>
+                        <h4 t-field="mog.date_begin" t-field-options="{&quot;format&quot;: &quot;MMMM&quot;}"/>
+                        <h4 t-field="mog.date_begin" t-field-options="{&quot;format&quot;: &quot;yyyy&quot;}"/>
+                        <p>
+                          <a class="btn btn-success btn-large" t-att-href="'/event/%i/register' % mog.id">Gå till eventet</a>
+                        </p>
+                      </div>
+                      <div class="col-md-8 col-xs-12 text-blue" style="background: #EAD24E; height: 200px;">
+                        <h1 t-field="mog.name"/>
+                        <h3>Plats kvar: <span t-field="mog.seats_available"/></h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </t>
+            </div>
+            <div class="carousel-control left" data-slide="prev" data-target="#mogen_dans" href="#mogen_dans" style="height: 100%">
+              <i class="fa fa-chevron-up"/>
+            </div>
+            <div class="carousel-control right" data-slide="next" data-target="#mogen_dans" href="#mogen_dans" style="height: 100%">
+              <i class="fa fa-chevron-down"/>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="oe_structure oe_empty">
+        <section class="s_cubes">
+          <div class="container-fluid">
+            <div class="row" style="background-color: #fff;">
+              <div class="col-md-6 cube cube-big col-xs-12 col-sm-12 cube-big-bg" style="padding: 20px;">
+                <h4 class="text-center">Uthyrning</h4>
+                <p>Vi har antagligen det största dansgolvet i Uppsala med sina 425 m². Golvet är preparerat för dans. Lokalen är godkänd för 1500 personer. Här spelar flera kända dansband på lördagar som Drifters, Mats Bergmans, Jontez, Claes Löfgrens, Flamingokvintetten och många fler. Fyris park är även värd för den populära söndags loppisen som drar över 900 besökare varje söndag</p>
+                <img class="img img-responsive" src="/website/image/ir.attachment/35_bfcc357/datas" style="margin: auto;"/>
+                <p>Obs! Parken går ej att hyra lördagar, då dessa dagar alltid är upptagna för dans i egen regi.</p>
+              </div>
+              <div class="cube-big col-md-6 col-xs-12 col-sm-12">
+                <div class="row">
+                  <div class="cube cube-text col-md-6 col-sm-6 col-xs-12">
+                    <div class="cube-heading">
+                      <h4 class="text-center">Kulturella Dansföreningen</h4>
+                      <p class="text-center">Kulturella Dansföreningen som också syns i Fyris Park med jämna mellanrum är en dansförening med gamla anor som ofta och gärna ordnar danser i parken, titta gärna in på deras hemsida för aktuell information <a href="http://kdfuppsala.se/">http://kdfuppsala.se</a></p>
+                    </div>
+                  </div>
+                  <div class="cube cube-small col-md-6 col-sm-6 col-xs-12 cube-medium-bg" style="background-image: url('/website/image/ir.attachment/37_99266b0/datas');"/>
+                </div>
+                <div class="row">
+                  <div class="cube cube-small col-md-6 col-sm-6 col-xs-12 cube-medium-bg" style="background-image: url('/website/image/ir.attachment/36_5b89f7e/datas');"/>
+                  <div class="cube cube-text col-md-6 col-sm-6 col-xs-12 last">
+                    <div class="cube-heading">
+                      <h4 class="text-center">Loppis Fyris Park</h4>
+                      <p>För mer information om Fyris Parks loppisar klickar du på länken nedan.</p>
+                      <p class="text-center">
+                        <a href="http://svenskaloppisar.se/visaloppis.asp?id=1675">http://svenskaloppisar.se/visaloppis.asp?id=1675</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="s_2_column_text oe_structure">
+        <div class="container" style="padding: 40px 20px 40px 20px;">
+          <div class="row">
+            <div class="col-md-6">
+              <h4>Fyris Park har det största dansgolvet i Uppsala med sina 425 m². Parken ligger i Uppsalas västra utposter längs Enköpingsvägen precis utanför Stenhagen. Från stan nås Fyris Park enklast med buss 5, avstigningsplats Stenhagens Centrum.</h4>
+            </div>
+            <div class="col-md-6">
+              <h4>Vi har tyvärr ej möjlighet att ta emot betalning med bankkort. Om man skulle behöva ta ut kontanter finns en bankomat utanför Ica Maxi i Stenhagen.</h4>
+              <h4>Obs, att den östra serveringen (även kallad snålhyllan) är stängd p.g.a. renoveringarbeten. Egna kaffekorgar får ej längre medtagas.</h4>
+            </div>
+          </div>
+        </div>
+        <section class="s_color_blocks_4">
+          <div class="container-fluid">
+            <div class="row">
+              <a href="/">
+                <div class="col-md-3 col-sm-6 text-center" style="padding: 64px 20px 64px 20px; height: 100%; min-height: 100%; background-color: #9B1F1F; color: #FFF;">
+                  <h4>
+                    <i class="fa fa-video-camera" style="font-size: 4em;"/>
+                  </h4>
+                  <h4>Vår video</h4>
+                </div>
+              </a>
+              <a href="/">
+                <div class="col-md-3 col-sm-6 text-center" style="padding: 64px 20px 64px 20px; height: 100%; min-height: 100%; background-color: #1E4485; color: #FFF;">
+                  <h4>
+                    <i class="fa fa-facebook-square" style="font-size: 4em;"/>
+                  </h4>
+                  <h4>Facebook</h4>
+                </div>
+              </a>
+              <a href="/">
+                <div class="col-md-3 col-sm-6 text-center text-blue" style="padding: 64px 20px 64px 20px; height: 100%; min-height: 100%; background-color: #EAD24E;">
+                  <h4>
+                    <i class="fa fa-calendar" style="font-size: 4em;"/>
+                  </h4>
+                  <h4>Vår event</h4>
+                </div>
+              </a>
+              <a href="/">
+                <div class="col-md-3 col-sm-6 text-center text-red" style="padding: 64px 20px 64px 20px; height: 100%; min-height: 100%; background-color: #F1EBC8;">
+                  <h4>
+                    <i class="fa fa-map-marker" style="font-size: 4em;"/>
+                  </h4>
+                  <h4>Hitta Oss</h4>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+      </section>
+    </div>
+  </t>
+</t>
