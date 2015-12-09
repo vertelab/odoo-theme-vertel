@@ -197,7 +197,13 @@
             </xpath>
         </template>
 
-        <template id="bs_ruma_demo_site" inherit_id="website.layout" customize_show="True" active="False" name="BS Ruma Demo Site" priority="99">
+        <!-- bs ruma demo site -->
+        <template id="bs_ruma_demo_site" inherit_id="website.layout" customize_show="True" active="False" name="BS-Ruma Demo Site" priority="99">
+            <t t-call="theme_bs_ruma.bs_ruma_demo_site_template"/>
+        </template>
+
+        <!-- bs ruma demo site template -->
+        <template id="bs_ruma_demo_site_template" name="BS-Ruma demo site template">
             <xpath expr="//main/t" position="after">
                 <section class="s_title">
                     <div class="container">
