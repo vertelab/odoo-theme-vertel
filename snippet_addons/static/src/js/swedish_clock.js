@@ -34,6 +34,8 @@ function swedish_clock(){
 
 	names = names[today.getMonth()][today.getDate()];
 
-    document.getElementById("clock").innerHTML = "Idag är det " + week_day + ", " + day + " " + month + ". Klockan är " + hours + ":" + minutes + ":" + seconds + ", och det är " + names + " som har namnsdag idag.";
-    setTimeout("swedish_clock()",1000);
+    if ($("#clock") ) {
+        $("#clock").innerHTML = "Idag är det " + week_day + ", " + day + " " + month + ". Klockan är " + hours + ":" + minutes + ":" + seconds + ", och det är " + names + " som har namnsdag idag.";
+        setTimeout("swedish_clock()",1000);
+    }
 }
