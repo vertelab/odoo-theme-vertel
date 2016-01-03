@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
     <data>
-        
+
         <!-- Customize Snippets -->
         <template id="custom_snippets" inherit_id="website.snippets" name="Custom Snippets">
             <!-- Customize Structure -->
@@ -78,8 +78,8 @@
                                         <tr>
                                             <td colspan="4">
                                                 <span style="MARGIN: 15px">
-                                                    <span style="FONT-WEIGHT: bold">lorum ipsum</span>: lorem ipsum 
-                                                    <span style="FONT-WEIGHT: bold">lorum ipsum</span>: lorem ipsum 
+                                                    <span style="FONT-WEIGHT: bold">lorum ipsum</span>: lorem ipsum
+                                                    <span style="FONT-WEIGHT: bold">lorum ipsum</span>: lorem ipsum
                                                 </span>
                                             </td>
                                         </tr>
@@ -89,9 +89,7 @@
                         </div>
                     </section>
                 </div>
-               
-               
-               
+
                 <!--NEWS SNIPPET-->
                 <div id="news_snippet">
                     <div class="oe_snippet_thumbnail">
@@ -121,7 +119,7 @@
                     </section>
                 </div>
                 <!--END OF NEWS SNIPPET-->
-                
+
                 <!--FADE SLIDER-->
                 <div id="fade_slide">
                     <div class="oe_snippet_thumbnail">
@@ -189,8 +187,8 @@
                     </section>
                 </div>
                 <!--END OF FADE SLIDER-->
-              
-              
+
+
                 <!-- Vertical slide -->
                 <div id="vertical_slide">
                     <div class="oe_snippet_thumbnail">
@@ -370,8 +368,8 @@
                     <div class="oe_snippet_body oe_share">
                         <a class="btn btn-default hover" href="#">Button with hover effect</a>
                     </div>
-                </div><!-- End of hover button -->
-
+                </div>
+                <!-- End of hover button -->
 
                 <!--ROUND HOVER IMAGE BUTTONS-->
                 <div id="round_hover_image_buttons">
@@ -510,6 +508,27 @@
                     </div>
                 </div>
                 <!--END OF ROUND HOVER ICON BUTTONS-->
+
+                <!-- Two column image -->
+                <div id="two_column_image">
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_features.png"/>
+                        <span class="oe_snippet_thumbnail_title">Two Column Image</span>
+                    </div>
+                    <div class="oe_snippet_body oe_share">
+                        <div class="col-md-12 mb16 mt16">
+                            <div class="col-md-6">
+                                <img class="img img-responsive" src="/website/image/ir.attachment/185_9dcbbba/datas" style="max-height: 400px; margin: auto;"/>
+                                <p class="text-center">Image text</p>
+                            </div>
+                            <div class="col-md-6">
+                                <img class="img img-responsive" src="/website/image/ir.attachment/184_708e552/datas" style="max-height: 400px; margin: auto;"/>
+                                <p class="text-center">Image text</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of two column image -->
 
                 <!-- Famliy Tree -->
                 <!--<div id="family_tree">
