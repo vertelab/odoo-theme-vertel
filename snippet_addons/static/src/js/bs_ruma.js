@@ -11,9 +11,9 @@
                 }
             });
             //SLIDESHOW SCRIPT
-            $('.carousel').carousel({
-                interval: 1000 //TIME IN MILLI SECONDS
-            })
+            //$('.carousel').carousel({
+                //interval: 1000 //TIME IN MILLI SECONDS
+            //})
             // PRETTYPHOTO FUNCTION
 
             $("a.preview").prettyPhoto({
