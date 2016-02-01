@@ -30,7 +30,7 @@ Extra snippets made by Haojun.
 """,
     'author': 'Vertel AB',
     'website': 'http://www.vertel.se',
-    'depends': ['website', 'website_less'],
+    'depends': ['website'],
     'data': [
         'view/snippets_css_js.xml',
         'view/snippets.xml',
