@@ -304,7 +304,7 @@
             </xpath>
 
             <xpath expr="//ul[@id='top_menu']" position="before">
-                <a href="/page/hem">
+                <a href="/page/homepage">
                     <img id="small-logo" class="pull-left hidden" src="/logo.png" style="max-height: 50px;" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
                 </a>
             </xpath>
