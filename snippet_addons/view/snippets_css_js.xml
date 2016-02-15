@@ -5,7 +5,6 @@
         <template id="custom_snippet_css_and_js" inherit_id="website.layout" name="Custom Snippet Custom CSS and JS">
             <!-- Customize javascript -->
             <xpath expr="//body" position="inside">
-                <script type="text/javascript" src="/snippet_addons/static/src/js/vertical_slide.js"/>
                 <script type="text/javascript" src="/snippet_addons/static/src/js/swedish_clock.js"/>
                 <script type="text/javascript">swedish_clock();</script>
                 <!--<script type="text/javascript" src="/snippet_addons/static/src/js/image_gallery_with_hover_text.js"/>-->
