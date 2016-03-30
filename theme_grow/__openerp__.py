@@ -30,7 +30,7 @@ Extra themes made by Robert Frost.
 """,
     'author': 'Vertel AB',
     'website': 'http://www.vertel.se',
-    'depends': ['website', 'website_less', 'snippet_addons'],
+    'depends': ['website', 'website_less', 'snippet_addons','project'],
     'data': [
         'views/theme_grow_view.xml',
         'views/website_overwritten_templates.xml',

@@ -58,5 +58,79 @@
         </div>
       </xpath>
     </template>
+    <!--
+         
+         Work List (masonry?)
+         
+    -->
+    <template id="theme_grow.work_list" name="Work List">
+      <t t-call="website.layout">
+        <div id="wrap">
+          <div class="oe_structure" />
+          <div class="container">
+            <h1>Work</h1>
+            <div class="row">
+              <div class="col-md-8">
+                <div class="oe_structure">
+                  <div >
+                      <t t-foreach="project_ids" t-as="project">
+                            <a t-att-href="'/work/%s' % project.id" ><span t-field="project.name" /></a>
+                                                    
+                      </t>
+                      
+                      </div>
+                </div>
+              </div>
+            </div>
+            <!-- row -->
+            <div class="oe_structure" />
+          </div>
+          <!-- container -->
+        </div>
+        <!-- wrap -->
+      </t>
+    </template>
+       <!--
+         
+         Work Single
+         
+    -->
+    <template id="theme_grow.work_single" name="Work Single">
+      <t t-call="website.layout">
+        <div id="wrap">
+          <div class="oe_structure" />
+          <div class="container">
+            <h1 t-field="project.name"/>
+            <div class="row">
+              <div class="col-md-8">
+                <div class="oe_structure">
+                  <div >
+                            <span t-field="project.description" />
+                                                    
+                      
+                      </div>
+                </div>
+              </div>
+            </div>
+            <!-- row -->
+            <div class="oe_structure" />
+          </div>
+          <!-- container -->
+        </div>
+        <!-- wrap -->
+      </t>
+    </template>
+    
+    <record id="edit_project" model="ir.ui.view">
+            <field name="name">project.project.form.inherit</field>
+            <field name="model">project.project</field>
+            <field name="inherit_id" ref="project.edit_project" />
+            <field name="arch" type="xml">
+                <field name="resource_calendar_id" position="after">
+                    <field name="project_image" />
+               </field>
+            </field>
+    </record>
+    
   </data>
 </openerp>

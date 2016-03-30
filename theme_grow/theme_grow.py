@@ -26,27 +26,23 @@ from datetime import datetime
 from lxml import html
 import werkzeug
 
+
+class project(models.Model):
+    _inherit = 'project.project'
+    
+    project_image = fields.Binary(string="Image")    
+
 class website(models.Model):
     _inherit = 'website'
-       
-    def get_news(self, text, length=0):
-        if text:
-            result_text = ' '.join(html.fromstring(text).text_content().split())
-            if 0 < length < len(result_text):
-                return result_text[:length]
-            return result_text
-        return ''
+    
+    social_instagram = fields.Char(string='Instagram Account')
 
-    def get_season(self):
-        if datetime.today().month in [3, 4, 5]:
-            return 'spring'
-        if datetime.today().month in [6, 7, 8]:
-            return 'summer'
-        if datetime.today().month in [9, 10, 11]:
-            return 'autumn'
-        if datetime.today().month in [1, 2, 12]:
-            return 'winter'
-        return ''
+class website_config_settings(models.TransientModel):
+    _inherit = 'website.config.settings'
+
+    social_instagram = fields.Char(related='website_id.social_instagram',string='Instagram Account')
+
+
 
 
 class Grow(http.Controller):
@@ -63,3 +59,12 @@ class Grow(http.Controller):
         response = werkzeug.wrappers.Response()
         return request.registry['website']._image(request.cr, request.uid, 'res.company', user.company_id.id, 'logo',
                                                   response, max_width=1024, max_height=None, )
+
+    @http.route(['/work'], type='http', auth="public", website=True)
+    def work_list(self):
+        return request.website.render("theme_grow.work_list",
+            {'project_ids': request.env['project.project'].sudo().search([],order="name")})
+
+    @http.route(['/work/<model("project.project"):project>'], type='http', auth="public", website=True)
+    def work_single(self,project=None):
+        return request.website.render("theme_grow.work_single",{'project': project })
