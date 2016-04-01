@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
   <data>
+    <!-- Dropzone Default Grow Page Full Screen -->
+    <template id="default_page" inherit_id="website.default_page">
+      <xpath expr="//div[@id='wrap']" position="before">
+        <div id="grow-full-screen" class="oe_structure" />
+      </xpath>
+    </template>
+    <!-- Dropzone Homepage Grow Page Full Screen -->
+    <template id="homepage" inherit_id="website.homepage">
+      <xpath expr="//div[@id='wrap']" position="before">
+        <div id="grow-full-screen-size" class="oe_structure" />
+      </xpath>
+    </template>
     <!-- Theme Grow-Menu -->
     <template id="theme_grow" inherit_id="website.layout" customize_show="True" active="False" name="Theme Grow" priority="99">
       <!-- add company logo -->
@@ -23,40 +35,98 @@
         <attribute name="id">grow-menu-bar</attribute>
         <attribute name="class">collapse navbar-collapse navbar-top-collapse col-md-12</attribute>
       </xpath>
-      <!-- add bottom menu -->
-      <xpath expr="//footer" position="before">
-        <div class="container" id="grow-bottom-menu">
-          <div class="row">
-            <div class="col-sm-4 col-md-4" id="products">
-              <div class="circle">
-                <span class="info">
-                  <p>
-                    <a href="/">Our Products and Services</a>
-                  </p>
-                </span>
+      <!-- change footer -->
+      <xpath expr="//div[@class='row']" position="attributes">
+        <attribute name="class">hidden</attribute>
+      </xpath>
+      <xpath expr="//div[@class='container hidden-print']" position="inside">
+        <nav class="navbar navbar-fixed-bottom navbar-inverse">
+          <div class="container-fluid" id="grow-footer-menu">
+            <div class="row row-centered">
+              <div class="col-xs-12 col-md-6 text-left white" id="social">
+                <h4>
+                  <a t-att-href="website.social_facebook" t-if="website.social_facebook">
+                    <i class="fa fa-facebook-square" />
+                  </a>
+                  <a t-att-href="website.social_twitter" t-if="website.social_twitter">
+                    <i class="fa fa-twitter" />
+                  </a>
+                  <a t-att-href="website.social_linkedin" t-if="website.social_linkedin">
+                    <i class="fa fa-linkedin" />
+                  </a>
+                  <a t-att-href="website.social_youtube" t-if="website.social_youtube">
+                    <i class="fa fa-youtube-play" />
+                  </a>
+                  <a t-att-href="website.social_googleplus" t-if="website.social_googleplus" rel="publisher">
+                    <i class="fa fa-google-plus-square" />
+                  </a>
+                  <a t-att-href="website.social_github" t-if="website.social_github">
+                    <i class="fa fa-github" />
+                  </a>
+                  <a t-att-href="website.social_instagram" t-if="website.social_instagram">
+                    <i class="fa fa-instagram" />
+                  </a>
+                </h4>
               </div>
-            </div>
-            <div class="col-sm-4 col-md-4" id="info">
-              <div class="circle">
-                <span class="info">
-                  <p>
-                    <a href="/page/website.contactus">Connect with us</a>
-                  </p>
-                </span>
-              </div>
-            </div>
-            <div class="col-sm-4 col-md-4" id="about">
-              <div class="circle">
-                <span class="info">
-                  <p>
-                    <a href="/page/website.aboutus">About us</a>
-                  </p>
-                </span>
+              <div class="col-xs-12 col-md-6 text-right white" id="contacts">
+                <h4>
+                  <a href="/page/website.contactus">Contact us</a>
+                  <a t-ignore="true">
+                    <i class="fa fa-phone" />
+                    <span t-field="res_company.phone" />
+                  </a>
+                  <a t-ignore="true">
+                    <i class="fa fa-envelope" />
+                    <span t-field="res_company.email" />
+                  </a>
+                </h4>
               </div>
             </div>
           </div>
-        </div>
+        </nav>
       </xpath>
+      <!--
+           <xpath expr="//footer//" position="inside"/>
+      -->
+      <!--
+           PREPARED FOR SNIPPET
+      -->
+      <!--
+           <div class="container" id="grow-bottom-menu">
+           <div class="row">
+           <div class="col-sm-4 col-md-4" id="products">
+           <div class="circle">
+           <span class="info">
+           <p>
+           <a href="/">Our Products and Services</a>
+           </p>
+           </span>
+           </div>
+           </div>
+           <div class="col-sm-4 col-md-4" id="info">
+           <div class="circle">
+           <span class="info">
+           <p>
+           <a href="/page/website.contactus">Connect with us</a>
+           </p>
+           </span>
+           </div>
+           </div>
+           <div class="col-sm-4 col-md-4" id="about">
+           <div class="circle">
+           <span class="info">
+           <p>
+           <a href="/page/website.aboutus">About us</a>
+           </p>
+           </span>
+           </div>
+           </div>
+           </div>
+           </div>
+      -->
+      <!--
+           </xpath>
+      -->
     </template>
     <!--
          
@@ -72,13 +142,13 @@
             <div class="row">
               <div class="col-md-8">
                 <div class="oe_structure">
-                  <div >
-                      <t t-foreach="project_ids" t-as="project">
-                            <a t-att-href="'/work/%s' % project.id" ><span t-field="project.name" /></a>
-                                                    
-                      </t>
-                      
-                      </div>
+                  <div>
+                    <t t-foreach="project_ids" t-as="project">
+                      <a t-att-href="'/work/%s' % project.id">
+                        <span t-field="project.name" />
+                      </a>
+                    </t>
+                  </div>
                 </div>
               </div>
             </div>
@@ -90,7 +160,7 @@
         <!-- wrap -->
       </t>
     </template>
-       <!--
+    <!--
          
          Work Single
          
@@ -100,15 +170,13 @@
         <div id="wrap">
           <div class="oe_structure" />
           <div class="container">
-            <h1 t-field="project.name"/>
+            <h1 t-field="project.name" />
             <div class="row">
               <div class="col-md-8">
                 <div class="oe_structure">
-                  <div >
-                            <span t-field="project.description" />
-                                                    
-                      
-                      </div>
+                  <div>
+                    <span t-field="project.description" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -120,17 +188,28 @@
         <!-- wrap -->
       </t>
     </template>
-    
     <record id="edit_project" model="ir.ui.view">
-            <field name="name">project.project.form.inherit</field>
-            <field name="model">project.project</field>
-            <field name="inherit_id" ref="project.edit_project" />
-            <field name="arch" type="xml">
-                <field name="resource_calendar_id" position="after">
-                    <field name="project_image" />
-               </field>
-            </field>
+      <field name="name">project.project.form.inherit</field>
+      <field name="model">project.project</field>
+      <field name="inherit_id" ref="project.edit_project" />
+      <field name="arch" type="xml">
+        <field name="resource_calendar_id" position="after">
+          <field name="project_image" />
+        </field>
+      </field>
     </record>
-    
+    <record id="view_website_config_settings" model="ir.ui.view">
+      <field name="name">Website.settings.instagram</field>
+      <field name="model">website.config.settings</field>
+      <field name="inherit_id" ref="website.view_website_config_settings" />
+      <field name="arch" type="xml">
+        <group string="Social Media" position="inside">
+          <label for="social_instagram" />
+          <div class="oe_inline">
+            <field name="social_instagram" placeholder="https://www.instagram.com" />
+          </div>
+        </group>
+      </field>
+    </record>
   </data>
 </openerp>
