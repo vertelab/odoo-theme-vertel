@@ -4,6 +4,7 @@
     <template id="theme_grow_style" name="Theme Grow style" inherit_id="website.assets_frontend">
       <xpath expr="link[last()]" position="after">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Fjord+One" />
         <link href="/theme_grow/static/less/style.less" rel="stylesheet" type="text/less" />
       </xpath>
     </template>

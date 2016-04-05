@@ -1,9 +1,23 @@
+
+
 #grow-full-screen-default {
-    background-size:100%;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(51,51,51,0.7);
+    z-index: 10;
 }
 
 #grow-full-screen-homepage {
-    background-size:100%;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(51,51,51,0.7);
+    z-index: 10;
 }
 
 .grow-body {
@@ -14,16 +28,25 @@
 #grow-logo {
         height: 66px;
         display:block;
-        margin:auto;
+        margin-top:10px;
+        transition: all .2s ease-in-out;
 }
 
+
+#grow-logo:hover { transform: scale(1.2); }
+
 /* MENU */
+
 .grow-navbar {
     font-family: 'Lato';
-    font-size: 1.2em;
+    font-size: 1.3em;
     background: none;
     width: 100%;
 }
+
+.grow-navbar a {  transition: all .2s ease-in-out; }
+
+.grow-navbar a:hover { font-size: 1.1em; }
 
 #grow-menu-bar > div {
     width: 1024px;
@@ -60,7 +83,7 @@
     display: block;
     position:relative;
     top:10px;
-    height: 2px;
+    height: 3px;
     text-shadow: 1px 1px 3px rgba(0,0,0,1);
     box-shadow: 1px 1px 3px #888888;
     background: #ffffff;
@@ -74,10 +97,25 @@
 #grow-footer-menu {
     color: #ffffff;
     font-family: 'Lato';
+    font-size: 1em;
     text-shadow: 1px 1px 3px rgba(0,0,0,1);
     text-indent: 10px;
     }
     
+    
+#social i{ transition: all .2s ease-in-out; }
+
+#social i:hover { transform: scale(1.3); }
+
+#contacts i { transition: all .2s ease-in-out; }
+
+#contacts i:hover { transform: scale(1.3); }
+
+#contact_us{ transition: all .2s ease-in-out;
+    }
+
+#contact_us:hover { font-size: 1.1em; }
+
 .white, .white a {
   color: #ffffff;
 }
@@ -89,7 +127,6 @@
 
 .white, .white a:hover {
   color: #00e600 ;
-
 }
 
 
@@ -114,7 +151,7 @@
 /* BOTTOM MENU
 #grow-bottom-menu {
     font-family: 'Lato';
-    font-size: 1.2em;
+    font-size: 1.3em;
     color: #ffffff;
     background: none;
     width: 100%;
