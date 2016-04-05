@@ -1,519 +1,526 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
-    <data>
+  <data>
+    <!-- Theme BS-Multipurpose-Ruma -->
+    <template id="theme_bs_multipurpose_ruma" inherit_id="website.layout" customize_show="True" active="False" name="Theme BS-Multipurpose-Ruma" priority="99">
+      <!-- Customize CSS -->
+      <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
+        <link href="/theme_bs_ruma/static/src/css/theme_bs_ruma.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700" rel="stylesheet" type="text/css" />
+        <style>
+          .bs-body {
+          font-family: 'PT Sans Caption', sans-serif;
+          list-style: none;
+          background-color: #fafaf8;
+          }
+          
+          #wrapwrap section ul li {
+          list-style-image: url(/theme_bs_ruma/static/src/img/arrow_right_red_10.png);
+          }
+          
+          #wrapwrap {
+          margin-top: 100px;
+          }
+          
+          h1, h2 {
+          font-family: 'PT Sans Caption', sans-serif;
+          font-weight: 700;
+          color: #333;
+          }
+          
+          .btn-primary {
+          background-color: #f00;
+          border: 1px solid #f00;
+          opacity: 0.8;
+          }
+          
+          .btn-primary:hover {
+          background-color: #f00;
+          border: 1px solid #f00;
+          opacity: 1;
+          }
+          
+          .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+          border-color: #aaa;
+          }
+          
+          #bs-menu > .container > .navbar-header > .navbar-toggle > .icon-bar {
+          background-color: #f00;
+          }
+          
+          #bs-menu > .container > .navbar-header > .navbar-toggle:hover,
+          #bs-menu > .container > .navbar-header > .navbar-toggle:focus,
+          #bs-menu > .container > .navbar-header > .navbar-toggle:active{
+          background-color: #fff;
+          }
+          
+          /* MENU */
+          #bs-menu {
+          z-index: 99;
+          margin-top: 0px;
+          background: #fff;
+          box-shadow: 0px 0px 3px #333;
+          border-bottom-width: 0px;
+          }
+          
+          /* COMPANY LOGO */
+          #bs-menu &gt; div &gt; div &gt; a {
+          color: #FFF;
+          }
+          
+          #bs-logo {
+          transition: all 0.8s ease-in 0s;
+          }
+          
+          /* MENU TEXT */
+          #bs-menu &gt; div &gt; div &gt; ul &gt; li &gt; a {
+          color: #333;
+          font-family: 'PT Sans Caption', sans-serif;
+          }
+          
+          /* STYLE WHEN MOUSE HOVER */
+          #bs-menu &gt; div &gt; div &gt; ul &gt; li &gt; a:hover,
+          #bs-menu &gt; div &gt; div &gt; ul &gt; li &gt; a:focus {
+          color: #333;
+          background-color: #fff;
+          }
+          
+          /* STYLE WHEN PAGE ACTIVE */
+          #bs-menu &gt; div &gt; div &gt; ul &gt; .active &gt; a {
+          color: #000;
+          background-color: #fff;
+          }
+          
+          /* FOOTER STYLE*/
+          .bs-footer {
+          background: #e8e8e8;
+          color: #333;
+          list-style: none;
+          }
+        </style>
+      </xpath>
+      <!-- add company logo -->
+      <xpath expr="//header//ul[@id='top_menu']" position="before">
+        <img id="bs-logo" src="/logo.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name" class="hidden-xs" />
+      </xpath>
+      <!-- define id and class to menu bar -->
+      <xpath expr="//body/div[@id='wrapwrap']/header/div" position="attributes">
+        <attribute name="id">bs-menu</attribute>
+        <attribute name="class">navbar navbar-inverse navbar-fixed-top</attribute>
+      </xpath>
+      <!-- define class to menu style -->
+      <xpath expr="//header//ul[@id='top_menu']" position="attributes">
+        <attribute name="class">nav navbar-nav navbar-right</attribute>
+      </xpath>
+      <!-- hide company name -->
+      <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div/a" position="attributes">
+        <attribute name="class">navbar-brand hidden-lg hidden-md hidden-sm</attribute>
+        <attribute name="style">padding: 0px 15px</attribute>
+      </xpath>
+      <!-- show company logo in mobile version -->
+      <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div/button" position="before">
+        <img class="pull-left hidden" style="max-height: 50px;" src="/logo.png" />
+      </xpath>
+      <!-- hide user login / out -->
+      <xpath expr="//header//ul[@id='top_menu']/li[@class='divider']" position="attributes">
+        <attribute name="class">hidden</attribute>
+      </xpath>
+      <xpath expr="//header//ul[@id='top_menu']/li[@class='dropdown']" position="attributes">
+        <attribute name="class">hidden</attribute>
+      </xpath>
+      <!-- define a class to body -->
+      <xpath expr="//body" position="attributes">
+        <attribute name="class">bs-body</attribute>
+      </xpath>
+      <!-- define a class to footer -->
+      <xpath expr="//footer" position="attributes">
+        <attribute name="class">bs-footer</attribute>
+      </xpath>
+      <!-- add log in/out in footer -->
+      <xpath expr="//footer" position="inside">
+        <div class="container">
+          <div class="dropup pull-right">
+            <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <b>
+                  <span t-esc="user_id.name" />
+                  <span class="caret" />
+                </b>
+              </a>
+              <ul class="dropdown-menu js_usermenu" role="menu">
+                <li>
+                  <a href="/web" role="menuitem">My Account</a>
+                </li>
+                <li class="divider" />
+                <li>
+                  <a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a>
+                </li>
+              </ul>
+            </li>
+          </div>
+          <div class="pull-right">
+            <li groups="base.group_public">
+              <a t-attf-href="/web/login">
+                <b>Sign in</b>
+              </a>
+            </li>
+          </div>
+        </div>
+      </xpath>
+      <!-- Customize javascript -->
+      <xpath expr="//body" position="inside">
+        <script>
+          var margin_value = 50;
+          var logo_max_height = 100;
+          var logo_min_height = 50;
+        </script>
+        <script type="text/javascript" src="/theme_bs_ruma/static/src/js/theme_bs_ruma.js" />
+      </xpath>
+    </template>
+    <!-- Menu Hover Effect -->
+    <template id="menu_hover_effect" inherit_id="website.layout" customize_show="True" active="False" name="Menu Hover Effect" priority="99">
+      <!-- Customize javascript -->
+      <xpath expr="//body/script[last()]" position="after">
+        <script>
+          $("#top_menu > .dropdown").mouseover(function() {
+          $(this).addClass("open");
+          });
+          $("#top_menu > .dropdown").mouseout(function() {
+          $(this).removeClass("open");
+          });
+        </script>
+      </xpath>
+    </template>
+    <!-- bs ruma demo site -->
+    <template id="bs_ruma_demo_site" inherit_id="website.layout" customize_show="True" active="False" name="BS-Ruma Demo Site" priority="99">
+      <xpath expr="//main/t" position="after">
+        <t t-call="theme_bs_ruma.bs_ruma_demo_site_template" />
+      </xpath>
+    </template>
+    <!-- bs ruma demo site template -->
+    <template id="bs_ruma_demo_site_template" name="BS-Ruma demo site template">
+      <section class="s_title">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="text-center">H1 Rubrik-text</h1>
+              <h2 class="text-center">H2 Rubrik-text</h2>
+              <h3 class="text-center">H3 Rubrik-text</h3>
+              <h4 class="text-center">H4 Rubrik-text</h4>
+              <h5 class="text-center">H5 Rubrik-text</h5>
+              <h6 class="text-center">H6 Rubrik-text</h6>
+              <p />
+              <h1 style="text-align: center;">
+                Subsript
+                <sub>2</sub>
+                &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Superscript
+                <sup>
+                  <sub>3</sub>
+                </sup>
+              </h1>
+              <p />
+              <blockquote>
+                <p>Detta är ett citat</p>
+              </blockquote>
+              <table class="table table-bordered table-responsive">
+                <tbody>
+                  <tr>
+                    <td style="text-align: center;">Punkterad lista</td>
+                    <td style="text-align: center;">Numrerad lista</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <ul>
+                        <li style="text-align: center;">Punkt 1</li>
+                        <li style="text-align: center;">Punkt 2</li>
+                        <li style="text-align: center;">Punkt 3</li>
+                      </ul>
+                    </td>
+                    <td>
+                      <ol>
+                        <li style="text-align: center;">Punkt 1</li>
+                        <li style="text-align: center;">Punkt 2</li>
+                        <li style="text-align: center;">Punkt 3</li>
+                      </ol>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              &amp;nbsp;
+              
 
-        <!-- Theme BS-Multipurpose-Ruma -->
-        <template id="theme_bs_multipurpose_ruma" inherit_id="website.layout" customize_show="True" active="False" name="Theme BS-Multipurpose-Ruma" priority="99">
-            <!-- Customize CSS -->
-            <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
-                <link href="/theme_bs_ruma/static/src/css/theme_bs_ruma.css" rel="stylesheet"/>
-                <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700" rel="stylesheet" type="text/css"/>
-                <style>
-                    .bs-body {
-                        font-family: 'PT Sans Caption', sans-serif;
-                        list-style: none;
-                        background-color: #fafaf8;
-                    }
+              <p style="margin-left: 40px;">Indrag</p>
+              <p style="margin-left: 80px;">Indrag mer</p>
+              <p style="margin-left: 120px;">Indrag mer mer</p>
+              <p style="margin-left: 120px;" />
+              <h1>Vänsterjusterat</h1>
+              <p>Lorem ipsum dolor sit amet, class pharetra id elit leo. Massa leo per orci ullamcorper egestas, in diam, fermentum phasellus elit praesent morbi. Volutpat luctus eu nostra ipsum dui pulvinar, eget velit porttitor elit pede. Diam ipsum velit, incididunt commodo eu penatibus. Duis consectetuer, at ultrices sapien2 massa2 a dolor, vitae lectus elementum maecenas, iaculis non elit congue. Fermentum ultricies.</p>
+              <h1 style="text-align: center;">Centererat</h1>
+              <p style="text-align: center;">Lorem ipsum dolor sit amet, class pharetra id elit leo. Massa leo per orci ullamcorper egestas, in diam, fermentum phasellus elit praesent morbi. Volutpat luctus eu nostra ipsum dui pulvinar, eget velit porttitor elit pede. Diam ipsum velit, incididunt commodo eu penatibus. Duis consectetuer, at ultrices sapien2 massa2 a dolor, vitae lectus elementum maecenas, iaculis non elit congue. Fermentum ultricies.</p>
+              <p style="text-align: center;" />
+              <h1 style="text-align: right;">Högerjusterat</h1>
+              <p style="text-align: right;">Lorem ipsum dolor sit amet, class pharetra id elit leo. Massa leo per orci ullamcorper egestas, in diam, fermentum phasellus elit praesent morbi. Volutpat luctus eu nostra ipsum dui pulvinar, eget velit porttitor elit pede. Diam ipsum velit, incididunt commodo eu penatibus. Duis consectetuer, at ultrices sapien2 massa2 a dolor, vitae lectus elementum maecenas, iaculis non elit congue. Fermentum ultricies.</p>
+              <p style="text-align: center;" />
+              <p />
+              <p>
+                <em>Nam cillum. Proin accumsan nam vitae nonummy, ridiculus eu eget consectetuer.</em>
+                <br />
+                <strong>Nunc a at, malesuada quisque ut ac.</strong>
+                <br />
+                <u>Donec sit sodales luctus, bibendum ac rutrum eu luctus libero, mauris nonummy eget facilisi mollis turpis pariatur.</u>
+              </p>
+              <p>
+                <s>Ex mel feugiat dissentias, et eam dicta labore epicuri, iisque pertinax vis ne.</s>
+                <s />
+              </p>
+              <p>
+                <a href="#">Länk</a>
+              </p>
+              <p>
+                <a class="btn btn-primary btn-lg" href="#">Primary Large</a>
+              </p>
+              <p>
+                <a class="btn btn-success " href="#">Success Default</a>
+              </p>
+              <p>
+                <a class="btn btn-warning btn-xs" href="#">Warning Extra small</a>
+              </p>
+              <p>
+                <a class="btn btn-info btn-sm" href="#">Info Small</a>
+              </p>
+              <p>
+                <a class="btn btn-default" href="#">Default</a>
+              </p>
+              <p>
+                <a class="btn btn-danger" href="#">Danger</a>
+              </p>
+              <p />
+              <p />
+              <p>
+                <font class="text-primary">Primary</font>
+                &amp;nbsp;
+                <font class="text-success">Success</font>
+                &amp;nbsp;
+                <font class="text-info">Info</font>
+                &amp;nbsp;
+                <font class="text-warning">Warning</font>
+                &amp;nbsp; Default&amp;nbsp;
+                <font class="bg-danger">Danger</font>
+                &amp;nbsp;
+                <font class="bg-yellow">Colorbackground</font>
+              </p>
+              <p>
+                <u />
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s_2_column_text oe_structure mt32 mb32">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h2>Lorem ipsum dolor sit amet</h2>
+              <p>
+                Lorem ipsum dolor sit amet, mea id tacimates moderatius referrentur, ea vel nisl dissentias. Per dicat ludus eirmod cu, idque reprimique temporibus at per. Vel ex aeque epicuri partiendo. Sonet consulatu vel at. Commune invenire ut mei, cu sed prompta hendrerit.
 
-                    #wrapwrap section ul li {
-                        list-style-image: url(/theme_bs_ruma/static/src/img/arrow_right_red_10.png);
-                    }
+                <br />
+                Ex mel feugiat dissentias, et eam dicta labore epicuri, iisque pertinax vis ne. Ea intellegat voluptatum vis, ei magna consul sea, te his natum oratio. His brute gloriatur cu, et eum ipsum oblique consequat. Justo consulatu ius ei, eu labore possit vim, qui ad essent vocibus. Eu nec delectus oportere vituperatoribus.
 
-                    #wrapwrap {
-                        margin-top: 100px;
-                    }
+              </p>
+            </div>
+            <div class="col-md-6">
+              <h2>Lorem ipsum dolor sit amet</h2>
+              <p>
+                Lorem ipsum dolor sit amet, mea id tacimates moderatius referrentur, ea vel nisl dissentias. Per dicat ludus eirmod cu, idque reprimique temporibus at per. Vel ex aeque epicuri partiendo. Sonet consulatu vel at. Commune invenire ut mei, cu sed prompta hendrerit.
 
-                    h1, h2 {
-                        font-family: 'PT Sans Caption', sans-serif;
-                        font-weight: 700;
-                        color: #333;
-                    }
+                <br />
+                Ex mel feugiat dissentias, et eam dicta labore epicuri, iisque pertinax vis ne. Ea intellegat voluptatum vis, ei magna consul sea, te his natum oratio. His brute gloriatur cu, et eum ipsum oblique consequat. Justo consulatu ius ei, eu labore possit vim, qui ad essent vocibus. Eu nec delectus oportere vituperatoribus.
 
-                    .btn-primary {
-                        background-color: #f00;
-                        border: 1px solid #f00;
-                        opacity: 0.8;
-                    }
-
-                    .btn-primary:hover {
-                        background-color: #f00;
-                        border: 1px solid #f00;
-                        opacity: 1;
-                    }
-
-                    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-                        border-color: #aaa;
-                    }
-
-                    #bs-menu > .container > .navbar-header > .navbar-toggle > .icon-bar {
-                        background-color: #f00;
-                    }
-
-                    #bs-menu > .container > .navbar-header > .navbar-toggle:hover,
-                    #bs-menu > .container > .navbar-header > .navbar-toggle:focus,
-                    #bs-menu > .container > .navbar-header > .navbar-toggle:active{
-                        background-color: #fff;
-                    }
-
-                    /* MENU */
-                    #bs-menu {
-                        z-index: 99;
-                        margin-top: 0px;
-                        background: #fff;
-                        box-shadow: 0px 0px 3px #333;
-                        border-bottom-width: 0px;
-                    }
-
-                    /* COMPANY LOGO */
-                    #bs-menu &gt; div &gt; div &gt; a {
-                        color: #FFF;
-                    }
-
-                    #bs-logo {
-                        transition: all 0.8s ease-in 0s;
-                    }
-
-                    /* MENU TEXT */
-                    #bs-menu &gt; div &gt; div &gt; ul &gt; li &gt; a {
-                        color: #333;
-                        font-family: 'PT Sans Caption', sans-serif;
-                    }
-
-                    /* STYLE WHEN MOUSE HOVER */
-                    #bs-menu &gt; div &gt; div &gt; ul &gt; li &gt; a:hover,
-                    #bs-menu &gt; div &gt; div &gt; ul &gt; li &gt; a:focus {
-                        color: #333;
-                        background-color: #fff;
-                    }
-
-                    /* STYLE WHEN PAGE ACTIVE */
-                    #bs-menu &gt; div &gt; div &gt; ul &gt; .active &gt; a {
-                        color: #000;
-                        background-color: #fff;
-                    }
-
-                    /* FOOTER STYLE*/
-                    .bs-footer {
-                        background: #e8e8e8;
-                        color: #333;
-                        list-style: none;
-                    }
-                </style>
-            </xpath>
-
-            <!-- add company logo -->
-            <xpath expr="//header//ul[@id='top_menu']" position="before">
-                <img id="bs-logo" src="/logo.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name" class="hidden-xs"/>
-            </xpath>
-
-            <!-- define id and class to menu bar -->
-            <xpath expr="//body/div[@id='wrapwrap']/header/div" position="attributes">
-                <attribute name="id">bs-menu</attribute>
-                <attribute name="class">navbar navbar-inverse navbar-fixed-top</attribute>
-            </xpath>
-
-            <!-- define class to menu style -->
-            <xpath expr="//header//ul[@id='top_menu']" position="attributes">
-                <attribute name="class">nav navbar-nav navbar-right</attribute>
-            </xpath>
-
-            <!-- hide company name -->
-            <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div/a" position="attributes">
-                <attribute name="class">navbar-brand hidden-lg hidden-md hidden-sm</attribute>
-                <attribute name="style">padding: 0px 15px</attribute>
-            </xpath>
-
-            <!-- show company logo in mobile version -->
-            <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div/button" position="before">
-                <img class="pull-left hidden" style="max-height: 50px;" src="/logo.png"/>
-            </xpath>
-
-            <!-- hide user login / out -->
-            <xpath expr="//header//ul[@id='top_menu']/li[@class='divider']" position="attributes">
-                <attribute name="class">hidden</attribute>
-            </xpath>
-            <xpath expr="//header//ul[@id='top_menu']/li[@class='dropdown']" position="attributes">
-                <attribute name="class">hidden</attribute>
-            </xpath>
-
-            <!-- define a class to body -->
-            <xpath expr="//body" position="attributes">
-                <attribute name="class">bs-body</attribute>
-            </xpath>
-            <!-- define a class to footer -->
-            <xpath expr="//footer" position="attributes">
-                <attribute name="class">bs-footer</attribute>
-            </xpath>
-            <!-- add log in/out in footer -->
-            <xpath expr="//footer" position="inside">
-                <div class="container">
-                    <div class="dropup pull-right">
-                        <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <b>
-                                    <span t-esc="user_id.name"/>
-                                    <span class="caret"/>
-                                </b>
-                            </a>
-                            <ul class="dropdown-menu js_usermenu" role="menu">
-                                <li><a href="/web" role="menuitem">My Account</a></li>
-                                <li class="divider"/>
-                                <li><a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a></li>
-                            </ul>
-                        </li>
-                    </div>
-                    <div class="pull-right">
-                        <li groups="base.group_public">
-                            <a t-attf-href="/web/login">
-                                <b>Sign in</b>
-                            </a>
-                        </li>
-                    </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="para_large s_image_floating">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 mb16 mt16">
+              <div class="o_image_floating o_margin_l pull-right">
+                <div class="o_container">
+                  <img alt="Odoo Members" class="img img-rounded img-responsive" src="/website/static/src/img/odoo.jpg" />
+                  <mark class="text-center">
+                    <a href="#">
+                      <strong>Click Here</strong>
+                    </a>
+                  </mark>
                 </div>
-            </xpath>
-            <!-- Customize javascript -->
-            <xpath expr="//body" position="inside">
-                <script>
-                    var margin_value = 50;
-                    var logo_max_height = 100;
-                    var logo_min_height = 50;
-                </script>
-                <script type="text/javascript" src="/theme_bs_ruma/static/src/js/theme_bs_ruma.js"/>
-            </xpath>
-        </template>
-
-        <!-- Menu Hover Effect -->
-        <template id="menu_hover_effect" inherit_id="website.layout" customize_show="True" active="False" name="Menu Hover Effect" priority="99">
-            <!-- Customize javascript -->
-            <xpath expr="//body/script[last()]" position="after">
-                <script>
-                    $("#top_menu > .dropdown").mouseover(function() {
-                        $(this).addClass("open");
-                    });
-                    $("#top_menu > .dropdown").mouseout(function() {
-                        $(this).removeClass("open");
-                    });
-                </script>
-            </xpath>
-        </template>
-
-        <!-- bs ruma demo site -->
-        <template id="bs_ruma_demo_site" inherit_id="website.layout" customize_show="True" active="False" name="BS-Ruma Demo Site" priority="99">
-            <xpath expr="//main/t" position="after">
-                <t t-call="theme_bs_ruma.bs_ruma_demo_site_template"/>
-            </xpath>
-        </template>
-
-        <!-- bs ruma demo site template -->
-        <template id="bs_ruma_demo_site_template" name="BS-Ruma demo site template">
-            <section class="s_title">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h1 class="text-center">H1 Rubrik-text</h1>
-                            <h2 class="text-center">H2 Rubrik-text</h2>
-                            <h3 class="text-center">H3 Rubrik-text</h3>
-                            <h4 class="text-center">H4 Rubrik-text</h4>
-                            <h5 class="text-center">H5 Rubrik-text</h5>
-                            <h6 class="text-center">H6 Rubrik-text</h6>
-                            <p/>
-                            <h1 style="text-align: center;">Subsript
-                                <sub>2</sub>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Superscript
-                                <sup>
-                                    <sub>3</sub>
-                                </sup>
-                            </h1>
-                            <p/>
-                            <blockquote>
-                                <p>Detta är ett citat</p>
-                            </blockquote>
-                            <table class="table table-bordered table-responsive">
-                                <tbody>
-                                    <tr>
-                                        <td style="text-align: center;">Punkterad lista</td>
-                                        <td style="text-align: center;">Numrerad lista</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <ul>
-                                                <li style="text-align: center;">Punkt 1</li>
-                                                <li style="text-align: center;">Punkt 2</li>
-                                                <li style="text-align: center;">Punkt 3</li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <ol>
-                                                <li style="text-align: center;">Punkt 1</li>
-                                                <li style="text-align: center;">Punkt 2</li>
-                                                <li style="text-align: center;">Punkt 3</li>
-                                            </ol>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            &amp;nbsp;
-
-
-                            <p style="margin-left: 40px;">Indrag</p>
-                            <p style="margin-left: 80px;">Indrag mer</p>
-                            <p style="margin-left: 120px;">Indrag mer mer</p>
-                            <p style="margin-left: 120px;"/>
-                            <h1>Vänsterjusterat</h1>
-                            <p>Lorem ipsum dolor sit amet, class pharetra id elit leo. Massa leo per orci ullamcorper egestas, in diam, fermentum phasellus elit praesent morbi. Volutpat luctus eu nostra ipsum dui pulvinar, eget velit porttitor elit pede. Diam ipsum velit, incididunt commodo eu penatibus. Duis consectetuer, at ultrices sapien2 massa2 a dolor, vitae lectus elementum maecenas, iaculis non elit congue. Fermentum ultricies.</p>
-                            <h1 style="text-align: center;">Centererat</h1>
-                            <p style="text-align: center;">Lorem ipsum dolor sit amet, class pharetra id elit leo. Massa leo per orci ullamcorper egestas, in diam, fermentum phasellus elit praesent morbi. Volutpat luctus eu nostra ipsum dui pulvinar, eget velit porttitor elit pede. Diam ipsum velit, incididunt commodo eu penatibus. Duis consectetuer, at ultrices sapien2 massa2 a dolor, vitae lectus elementum maecenas, iaculis non elit congue. Fermentum ultricies.</p>
-                            <p style="text-align: center;"/>
-                            <h1 style="text-align: right;">Högerjusterat</h1>
-                            <p style="text-align: right;">Lorem ipsum dolor sit amet, class pharetra id elit leo. Massa leo per orci ullamcorper egestas, in diam, fermentum phasellus elit praesent morbi. Volutpat luctus eu nostra ipsum dui pulvinar, eget velit porttitor elit pede. Diam ipsum velit, incididunt commodo eu penatibus. Duis consectetuer, at ultrices sapien2 massa2 a dolor, vitae lectus elementum maecenas, iaculis non elit congue. Fermentum ultricies.</p>
-                            <p style="text-align: center;"/>
-                            <p/>
-                            <p>
-                                <em>Nam cillum. Proin accumsan nam vitae nonummy, ridiculus eu eget consectetuer.</em>
-                                <br/>
-                                <strong>Nunc a at, malesuada quisque ut ac.</strong>
-                                <br/>
-                                <u>Donec sit sodales luctus, bibendum ac rutrum eu luctus libero, mauris nonummy eget facilisi mollis turpis pariatur.</u>
-                            </p>
-                            <p>
-                                <s>Ex mel feugiat dissentias, et eam dicta labore epicuri, iisque pertinax vis ne.</s>
-                                <s/>
-                            </p>
-                            <p>
-                                <a href="#">Länk</a>
-                            </p>
-                            <p>
-                                <a class="btn btn-primary btn-lg" href="#">Primary Large</a>
-                            </p>
-                            <p>
-                                <a class="btn btn-success " href="#">Success Default</a>
-                            </p>
-                            <p>
-                                <a class="btn btn-warning btn-xs" href="#">Warning Extra small</a>
-                            </p>
-                            <p>
-                                <a class="btn btn-info btn-sm" href="#">Info Small</a>
-                            </p>
-                            <p>
-                                <a class="btn btn-default" href="#">Default</a>
-                            </p>
-                            <p>
-                                <a class="btn btn-danger" href="#">Danger</a>
-                            </p>
-                            <p/>
-                            <p/>
-                            <p>
-                                <font class="text-primary">Primary</font>&amp;nbsp;
-                                <font class="text-success">Success</font>&amp;nbsp;
-                                <font class="text-info">Info</font>&amp;nbsp;
-                                <font class="text-warning">Warning</font>&amp;nbsp; Default&amp;nbsp;
-                                <font class="bg-danger">Danger</font>&amp;nbsp;
-                                <font class="bg-yellow">Colorbackground</font>
-                            </p>
-                            <p>
-                                <u/>
-                            </p>
-                        </div>
-                    </div>
+                <div class="o_footer">
+                  <small class="text-muted">A great way to catch your reader's attention is to tell a story. Everything you consider writing can be told as a story.</small>
                 </div>
-            </section>
-            <section class="s_2_column_text oe_structure mt32 mb32">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h2>Lorem ipsum dolor sit amet</h2>
-                            <p>Lorem ipsum dolor sit amet, mea id tacimates moderatius referrentur, ea vel nisl dissentias. Per dicat ludus eirmod cu, idque reprimique temporibus at per. Vel ex aeque epicuri partiendo. Sonet consulatu vel at. Commune invenire ut mei, cu sed prompta hendrerit.
+              </div>
+              <h3>Floating image (H3)</h3>
+              <p style="text-align: justify;">
+                In case you still feel a bit puzzled about all of our yesterday's announcements, here is a little summary for you.
+                
+                
+                
 
-                                <br/>
-                                Ex mel feugiat dissentias, et eam dicta labore epicuri, iisque pertinax vis ne. Ea intellegat voluptatum vis, ei magna consul sea, te his natum oratio. His brute gloriatur cu, et eum ipsum oblique consequat. Justo consulatu ius ei, eu labore possit vim, qui ad essent vocibus. Eu nec delectus oportere vituperatoribus.
+                <br />
+                We have decided to change the name because
+                
+                
+                
 
-                            </p>
-                        </div>
-                        <div class="col-md-6">
-                            <h2>Lorem ipsum dolor sit amet</h2>
-                            <p>Lorem ipsum dolor sit amet, mea id tacimates moderatius referrentur, ea vel nisl dissentias. Per dicat ludus eirmod cu, idque reprimique temporibus at per. Vel ex aeque epicuri partiendo. Sonet consulatu vel at. Commune invenire ut mei, cu sed prompta hendrerit.
+                <b>"OpenERP"</b>
+                didn't reflect the offering of the company anymore. With our newest apps, such as Website Builder, PoS or eCommerce, we have moved beyond the ERP territory.
+                
+                
+                
 
-                                <br/>
-                                Ex mel feugiat dissentias, et eam dicta labore epicuri, iisque pertinax vis ne. Ea intellegat voluptatum vis, ei magna consul sea, te his natum oratio. His brute gloriatur cu, et eum ipsum oblique consequat. Justo consulatu ius ei, eu labore possit vim, qui ad essent vocibus. Eu nec delectus oportere vituperatoribus.
+                <br />
+                Men
+                
+                
+                
 
-                            </p>
-                        </div>
-                    </div>
+                <u>oroa dig inte</u>
+                ,
+                
+                
+                
+
+                <b>Odoo</b>
+                is and always will be fully open source. You can read more about the new name here. We have also prepared a short FAQ to explain all these changes to all of you.
+                
+                
+                
+
+              </p>
+              <h3>Upptäck mer av Odoo</h3>
+              <p style="text-align: justify;">
+                With Odoo's fully integrated software, you can easily manage your meetings, schedule business calls, create recurring meetings, synchronize your agenda and easily keep in touch with your colleagues, partners and other people involved in projects or business discussions.
+                
+                
+                
+
+                <br />
+                <br />
+                <a href="#">Check now and discover more today!</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s_image_text">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 mt16">
+              <img alt="Odoo image and text block" class="img img-responsive shadow mb16" src="/website/static/src/img/image_text.jpg" />
+            </div>
+            <div class="col-md-6 mt16">
+              <h3>A Section Subtitle</h3>
+              <p>Write one or two paragraphs describing your product, services or a specific feature. To be successful your content needs to be useful to your readers.</p>
+              <p>Start with the customer – find out what they want and give it to them.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s_features mt92" style="height: 280px; overflow: hidden;">
+        <div class="container">
+          <h2 class="text-center">Features (H2)</h2>
+          <div class="row mt16 mb16">
+            <div class="col-md-4 text-center">
+              <span class="fa fa-suitcase fa-5x" />
+              <h3 class="mt8 mb0">First Feature (H3)</h3>
+              <div class="text-muted">Tell what's the value for the</div>
+              <div class="text-muted">customer for this feature.</div>
+            </div>
+            <div class="col-md-4 text-center">
+              <span class="fa fa-lock fa-5x" />
+              <h3 class="mt8 mb0">Second Feature (H3)</h3>
+              <div class="text-muted">Write what the customer would like to know,</div>
+              <div class="text-muted">inte vad du vill visa.</div>
+            </div>
+            <div class="col-md-4 text-center">
+              <span class="fa fa-heart fa-5x" />
+              <h3 class="mt8 mb0">Third Feature (H3)</h3>
+              <div class="text-muted">A small explanation of this great</div>
+              <div class="text-muted">Finess, i klartext.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s_cubes mt32 mb32">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 cube cube-big col-xs-12 col-sm-12 cube-big-bg" style="background-image: url('/website/static/src/img/fields.jpg');" />
+            <div class="cube-big col-md-6 col-xs-12 col-sm-12">
+              <div class="row">
+                <div class="cube cube-text col-md-6 col-sm-6 col-xs-12">
+                  <div class="cube-heading">
+                    <h4 class="text-center">Lorem ipsum dolor sit amet</h4>
+                    <p class="text-center">Lorem ipsum dolor sit amet, class pharetra id elit leo. Massa leo per orci ullamcorper egestas, in diam, fermentum phasellus elit praesent morbi.</p>
+                  </div>
                 </div>
-            </section>
-            <section class="para_large s_image_floating">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 mb16 mt16">
-                            <div class="o_image_floating o_margin_l pull-right">
-                                <div class="o_container">
-                                    <img alt="Odoo Members" class="img img-rounded img-responsive" src="/website/static/src/img/odoo.jpg"/>
-                                    <mark class="text-center">
-                                        <a href="#">
-                                            <strong>Click Here</strong>
-                                        </a>
-                                    </mark>
-                                </div>
-                                <div class="o_footer">
-                                    <small class="text-muted">A great way to catch your reader's attention is to tell a story. Everything you consider writing can be told as a story.</small>
-                                </div>
-                            </div>
-                            <h3>Floating image (H3)</h3>
-                            <p style="text-align: justify;">In case you still feel a bit puzzled about all of our yesterday's announcements, here is a little summary for you.
-
-
-
-
-                                <br/>
-                                We have decided to change the name because
-
-
-
-
-                                <b>"OpenERP"</b> didn't reflect the offering of the company anymore. With our newest apps, such as Website Builder, PoS or eCommerce, we have moved beyond the ERP territory.
-
-
-
-
-                                <br/>
-                                Men
-
-
-
-
-                                <u>oroa dig inte</u>,
-
-
-
-
-                                <b>Odoo</b> is and always will be fully open source. You can read more about the new name here. We have also prepared a short FAQ to explain all these changes to all of you.
-
-
-
-
-                            </p>
-                            <h3>Upptäck mer av Odoo</h3>
-                            <p style="text-align: justify;">With Odoo's fully integrated software, you can easily manage your meetings, schedule business calls, create recurring meetings, synchronize your agenda and easily keep in touch with your colleagues, partners and other people involved in projects or business discussions.
-
-
-
-
-                                <br/>
-                                <br/>
-                                <a href="#">Check now and discover more today!</a>
-                            </p>
-                        </div>
-                    </div>
+                <div class="cube cube-small col-md-6 col-sm-6 col-xs-12 cube-medium-bg" style="background-image: url('/website/static/src/img/volcano.jpg');" />
+              </div>
+              <div class="row">
+                <div class="cube cube-small col-md-6 col-sm-6 col-xs-12 cube-medium-bg" style="background-image: url('/website/static/src/img/volcano.jpg');" />
+                <div class="cube cube-text col-md-6 col-sm-6 col-xs-12 last">
+                  <div class="cube-heading">
+                    <h4 class="text-center">Lorem ipsum dolor sit amet</h4>
+                    <p class="text-center">Lorem ipsum dolor sit amet, class pharetra id elit leo. Massa leo per orci ullamcorper egestas, in diam, fermentum phasellus elit praesent morbi.</p>
+                  </div>
                 </div>
-            </section>
-            <section class="s_image_text">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 mt16">
-                            <img alt="Odoo image and text block" class="img img-responsive shadow mb16" src="/website/static/src/img/image_text.jpg"/>
-                        </div>
-                        <div class="col-md-6 mt16">
-                            <h3>A Section Subtitle</h3>
-                            <p>Write one or two paragraphs describing your product, services or a specific feature. To be successful your content needs to be useful to your readers.</p>
-                            <p>Start with the customer – find out what they want and give it to them.</p>
-                        </div>
-                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="oe_share">
+          <div class="container mt128 mb128">
+            <h3 class="text-center">Round icons (H3)</h3>
+            <div class="col-md-3 col-sm-6" style="padding: 15px;">
+              <div class="round-icon">
+                <div class="text-center">
+                  <a href="#">
+                    <i class="fa fa-phone fa-5x" style="padding-top: 33%;" />
+                  </a>
                 </div>
-            </section>
-            <section class="s_features mt92" style="height: 280px; overflow: hidden;">
-                <div class="container">
-                    <h2 class="text-center">Features (H2)</h2>
-                    <div class="row mt16 mb16">
-                        <div class="col-md-4 text-center">
-                            <span class="fa fa-suitcase fa-5x"/>
-                            <h3 class="mt8 mb0">First Feature (H3)</h3>
-                            <div class="text-muted">Tell what's the value for the</div>
-                            <div class="text-muted">customer for this feature.</div>
-                        </div>
-                        <div class="col-md-4 text-center">
-                            <span class="fa fa-lock fa-5x"/>
-                            <h3 class="mt8 mb0">Second Feature (H3)</h3>
-                            <div class="text-muted">Write what the customer would like to know,</div>
-                            <div class="text-muted">inte vad du vill visa.</div>
-                        </div>
-                        <div class="col-md-4 text-center">
-                            <span class="fa fa-heart fa-5x"/>
-                            <h3 class="mt8 mb0">Third Feature (H3)</h3>
-                            <div class="text-muted">A small explanation of this great</div>
-                            <div class="text-muted">Finess, i klartext.</div>
-                        </div>
-                    </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6" style="padding: 15px;">
+              <div class="round-icon">
+                <div class="text-center">
+                  <a href="#">
+                    <i class="fa fa-mobile fa-5x" style="padding-top: 33%;" />
+                  </a>
                 </div>
-            </section>
-            <section class="s_cubes mt32 mb32">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-6 cube cube-big col-xs-12 col-sm-12 cube-big-bg" style="background-image: url('/website/static/src/img/fields.jpg');"/>
-                        <div class="cube-big col-md-6 col-xs-12 col-sm-12">
-                            <div class="row">
-                                <div class="cube cube-text col-md-6 col-sm-6 col-xs-12">
-                                    <div class="cube-heading">
-                                        <h4 class="text-center">Lorem ipsum dolor sit amet</h4>
-                                        <p class="text-center">Lorem ipsum dolor sit amet, class pharetra id elit leo. Massa leo per orci ullamcorper egestas, in diam, fermentum phasellus elit praesent morbi.</p>
-                                    </div>
-                                </div>
-                                <div class="cube cube-small col-md-6 col-sm-6 col-xs-12 cube-medium-bg" style="background-image: url('/website/static/src/img/volcano.jpg');"/></div>
-                            <div class="row">
-                                <div class="cube cube-small col-md-6 col-sm-6 col-xs-12 cube-medium-bg" style="background-image: url('/website/static/src/img/volcano.jpg');"/>
-                                <div class="cube cube-text col-md-6 col-sm-6 col-xs-12 last">
-                                    <div class="cube-heading">
-                                        <h4 class="text-center">Lorem ipsum dolor sit amet</h4>
-                                        <p class="text-center">Lorem ipsum dolor sit amet, class pharetra id elit leo. Massa leo per orci ullamcorper egestas, in diam, fermentum phasellus elit praesent morbi.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6" style="padding: 15px;">
+              <div class="round-icon">
+                <div class="text-center">
+                  <a href="#">
+                    <i class="fa fa-envelope fa-5x" style="padding-top: 33%;" />
+                  </a>
                 </div>
-            </section>
-            <section>
-                <div class="oe_share">
-                    <div class="container mt128 mb128">
-                        <h3 class="text-center">Round icons (H3)</h3>
-                        <div class="col-md-3 col-sm-6" style="padding: 15px;">
-                            <div class="round-icon">
-                                <div class="text-center">
-                                    <a href="#">
-                                        <i class="fa fa-phone fa-5x" style="padding-top: 33%;"/>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6" style="padding: 15px;">
-                            <div class="round-icon">
-                                <div class="text-center">
-                                    <a href="#">
-                                        <i class="fa fa-mobile fa-5x" style="padding-top: 33%;"/>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6" style="padding: 15px;">
-                            <div class="round-icon">
-                                <div class="text-center">
-                                    <a href="#">
-                                        <i class="fa fa-envelope fa-5x" style="padding-top: 33%;"/>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6" style="padding: 15px;">
-                            <div class="round-icon">
-                                <div class="text-center">
-                                    <a href="#">
-                                        <i class="fa fa-home fa-5x" style="padding-top: 33%;"/>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6" style="padding: 15px;">
+              <div class="round-icon">
+                <div class="text-center">
+                  <a href="#">
+                    <i class="fa fa-home fa-5x" style="padding-top: 33%;" />
+                  </a>
                 </div>
-            </section>
-        </template>
-
-    </data>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </template>
+  </data>
 </openerp>

@@ -4,13 +4,13 @@
     <!-- Dropzone Default Grow Page Full Screen -->
     <template id="default_page" inherit_id="website.default_page">
       <xpath expr="//div[@id='wrap']" position="before">
-        <div id="grow-full-screen" class="oe_structure" />
+        <div id="grow-full-screen-default" class="oe_structure container" />
       </xpath>
     </template>
     <!-- Dropzone Homepage Grow Page Full Screen -->
     <template id="homepage" inherit_id="website.homepage">
       <xpath expr="//div[@id='wrap']" position="before">
-        <div id="grow-full-screen-size" class="oe_structure" />
+        <div id="grow-full-screen-homepage" class="oe_structure container" />
       </xpath>
     </template>
     <!-- Theme Grow-Menu -->
@@ -40,7 +40,7 @@
         <attribute name="class">hidden</attribute>
       </xpath>
       <xpath expr="//div[@class='container hidden-print']" position="inside">
-        <nav class="navbar navbar-fixed-bottom navbar-inverse">
+        <nav class="navbar navbar-fixed-bottom">
           <div class="container-fluid" id="grow-footer-menu">
             <div class="row row-centered">
               <div class="col-xs-12 col-md-6 text-left white" id="social">
@@ -48,7 +48,7 @@
                   <a t-att-href="website.social_facebook" t-if="website.social_facebook">
                     <i class="fa fa-facebook-square" />
                   </a>
-                  <a t-att-href="website.social_twitter" t-if="website.social_twitter">
+                  <a t-att-href="website.social_twitter" t-if="website.social_twitter ">
                     <i class="fa fa-twitter" />
                   </a>
                   <a t-att-href="website.social_linkedin" t-if="website.social_linkedin">
