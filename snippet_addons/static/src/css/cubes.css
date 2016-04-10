@@ -11,14 +11,16 @@
     top: 20%;
 }
 
-.s_cubes .cube-big-bg {
+.s_cubes .cube-big-bg{
     background-size: cover;
     background-position: center center;
+    background-repeat: no-repeat;
     height: 514px;
 }
 
 .s_cubes .cube-medium-bg {
     background-size: cover;
     background-position: center center;
+    background-repeat: no-repeat;
     height: 257px;
 }

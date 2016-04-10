@@ -375,22 +375,43 @@
                         <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/aqua.jpg"/>
                         <span class="oe_snippet_thumbnail_title">Banner Block</span>
                     </div>
-                    <section id="banner_block_section" class="oe_snippet_body" style="background-image: url('/website/static/src/img/banner/color_splash.jpg'); background-size: cover;">
-                        <div id="banner_block_content" class="content">
-                            <div class="container">
-                                <div class="row">
-                                    <a class="col-md-3 col-xs-6 mt16 mb16" href="#">
-                                        <img class="img-responsive md16 img-circle hover" src="/website/static/src/img/parallax/parallax_bg.jpg" alt="Odoo Image"/>
-                                    </a>
-                                    <a class="col-md-3 col-xs-6 mt16 mb16" href="#">
-                                        <img class="img-responsive md16 img-circle hover" src="/website/static/src/img/parallax/parallax_photo1.jpg" alt="Odoo Image"/>
-                                    </a>
-                                    <a class="col-md-3 col-xs-6 mt16 mb16" href="#">
-                                        <img class="img-responsive md16 img-circle hover" src="/website/static/src/img/parallax/parallax_bg.jpg" alt="Odoo Image"/>
-                                    </a>
-                                    <a class="col-md-3 col-xs-6 mt16 mb16" href="#">
-                                        <img class="img-responsive md16 img-circle hover" src="/website/static/src/img/parallax/parallax_photo1.jpg" alt="Odoo Image"/>
-                                    </a>
+                    <section class="oe_snippet_body">
+                        <div class="container banner_block_section">
+                            <div class="row">
+                                <div class="container">
+                                    <section class="col-md-4 col-sm-4 col-xs-12" style="padding: 4px 4px 0px 4px;">
+                                        <section class="banner_block" style="background-image: url('/website/static/src/img/banner/flower_field.jpg');">
+                                            <div class="banner_block_field" style="background: #fff; right: 0px; bottom: 0px; width: 50%;">
+                                                <div class="banner_block_text">
+                                                    <h4 class="text-center"><strong>Title</strong></h4>
+                                                    <p class="text-center">Some subtitle</p>
+                                                    <a href="/"><p class="text-center">&gt; Read more</p></a>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </section>
+                                    <section class="col-md-4 col-sm-4 col-xs-12" style="padding: 4px 4px 0px 4px;">
+                                        <section class="banner_block" style="background-image: url('/website/static/src/img/banner/wood.jpg');">
+                                            <div class="banner_block_field" style="background: #fff; right: 0px; bottom: 0px; width: 50%;">
+                                                <div class="banner_block_text">
+                                                    <h4 class="text-center"><strong>Title</strong></h4>
+                                                    <p class="text-center">Some subtitle</p>
+                                                    <a href="/"><p class="text-center">&gt; Read more</p></a>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </section>
+                                    <section class="col-md-4 col-sm-4 col-xs-12" style="padding: 4px 4px 0px 4px;">
+                                        <section class="banner_block" style="background-image: url('/website/static/src/img/banner/greenfields.jpg');">
+                                            <div class="banner_block_field" style="background: #fff; right: 0px; bottom: 0px; width: 50%;">
+                                                <div class="banner_block_text">
+                                                    <h4 class="text-center"><strong>Title</strong></h4>
+                                                    <p class="text-center">Some subtitle</p>
+                                                    <a href="/"><p class="text-center">&gt; Read more</p></a>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </section>
                                 </div>
                             </div>
                         </div>
@@ -1025,7 +1046,6 @@
                     </li>
                 </div><!-- End of hover button options -->
 
-                <!-- Banner block -->
             </xpath>
 
         </template>
