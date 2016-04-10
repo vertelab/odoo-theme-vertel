@@ -6,9 +6,9 @@
 }
 
 .hover:after {
-  padding-top: 72.4%;
-  display: block;
-  content: '';
+    padding-top: 72.4%;
+    display: block;
+    content: '';
 }
 
 .hover h2 {

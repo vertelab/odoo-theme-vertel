@@ -1,0 +1,33 @@
+.carousel-blurbg .carousel-inner .item {
+    opacity: 0;
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+}
+.carousel-blurbg .carousel-inner .item img{
+    -webkit-filter: blur(7px);
+    -moz-filter: blur(7px);
+    -o-filter: blur(7px);
+    -ms-filter: blur(7px);
+    filter: blur(7px);
+}
+.carousel-blurbg .carousel-inner .active {
+    opacity: 1;
+}
+.carousel-blurbg .carousel-control{
+    font-size: 5em;
+}
+.carousel-blurbg .carousel-inner .active.left,
+.carousel-blurbg .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+.carousel-blurbg .carousel-inner .next.left,
+.carousel-blurbg .carousel-inner .prev.right {
+    opacity: 1;
+}
+.carousel-blurbg .carousel-control {
+    z-index: 2;
+}

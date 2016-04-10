@@ -124,76 +124,129 @@
                 <div id="fade_slide">
                     <div class="oe_snippet_thumbnail">
                         <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_banner.png"/>
-                        <span class="oe_snippet_thumbnail_title">Fade Banner</span>
+                        <span class="oe_snippet_thumbnail_title">Banner Fade</span>
                     </div>
                     <section class="oe_snippet_body">
-                        <div class="carousel slide carousel-fade" data-ride="carousel" id="Carousel" style="height: 640px; overflow: hidden;">
-                        <ol class="carousel-indicators">
-                            <li class="active" data-slide-to="0" data-target="Carousel"/>
-                            <li data-slide-to="1" data-target="Carousel"/>
-                            <li data-slide-to="2" data-target="Carousel"/>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="item active" style="">
-                                <img class="img-responsive" src="/website/static/src/img/fields.jpg" style="position: relative;"/>
-                                 <div class="container" style="position: absolute; top: 20%; left: 20%;">
-                                    <div class="row content">
-                                        <div class="col-md-6 col-sm-12">
-                                            <h2>Your Banner Title</h2>
-                                            <h3>Click here to add text</h3>
-                                            <p>
-                                                <a class="btn btn-success btn-large" href="/page/website.contactus">Contact us</a>
-                                            </p>
+                        <div class="carousel slide carousel-fade" data-ride="carousel" id="fade_carousel" style="height: 640px; overflow: hidden;">
+                            <ol class="carousel-indicators">
+                                <li class="active" data-slide-to="0" data-target="fade_carousel"/>
+                                <li data-slide-to="1" data-target="fade_carousel"/>
+                                <li data-slide-to="2" data-target="fade_carousel"/>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item active" style="">
+                                    <img class="img-responsive" src="/website/static/src/img/fields.jpg" style="position: relative;"/>
+                                     <div class="container" style="position: absolute; top: 20%; left: 20%;">
+                                        <div class="row content">
+                                            <div class="col-md-6 col-sm-12">
+                                                <h2>Your Banner Title</h2>
+                                                <h3>Click here to add text</h3>
+                                                <p>
+                                                    <a class="btn btn-success btn-large" href="/page/website.contactus">Contact us</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img class="img-responsive" src="/website/static/src/img/island.jpg" style="position: relative;"/>
+                                    <div class="container" style="position: absolute; top: 20%; left: 20%;">
+                                        <div class="row content">
+                                            <div class="col-md-6 col-sm-12">
+                                                <h2>Your Banner Title</h2>
+                                                <h3>Click here to add text</h3>
+                                                <p>
+                                                    <a class="btn btn-success btn-large" href="/page/website.contactus">Contact us</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img class="img-responsive" src="/website/static/src/img/volcano.jpg" style="position: relative;"/>
+                                    <div class="container" style="position: absolute; top: 20%; left: 20%;">
+                                        <div class="row content">
+                                            <div class="col-md-6 col-sm-12">
+                                                <h2>Your Banner Title</h2>
+                                                <h3>Click here to add text</h3>
+                                                <p>
+                                                    <a class="btn btn-success btn-large" href="/page/website.contactus">Contact us</a>
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="item">
-                                <img class="img-responsive" src="/website/static/src/img/island.jpg" style="position: relative;"/>
-                                <div class="container" style="position: absolute; top: 20%; left: 20%;">
-                                    <div class="row content">
-                                        <div class="col-md-6 col-sm-12">
-                                            <h2>Your Banner Title</h2>
-                                            <h3>Click here to add text</h3>
-                                            <p>
-                                                <a class="btn btn-success btn-large" href="/page/website.contactus">Contact us</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <img class="img-responsive" src="/website/static/src/img/volcano.jpg" style="position: relative;"/>
-                                <div class="container" style="position: absolute; top: 20%; left: 20%;">
-                                    <div class="row content">
-                                        <div class="col-md-6 col-sm-12">
-                                            <h2>Your Banner Title</h2>
-                                            <h3>Click here to add text</h3>
-                                            <p>
-                                                <a class="btn btn-success btn-large" href="/page/website.contactus">Contact us</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <a class="left carousel-control" data-slide="prev" href="#fade_carousel">
+                                <i class="fa fa-chevron-left"/>
+                            </a>
+                            <a class="right carousel-control" data-slide="next" href="#fade_carousel">
+                                <i class="fa fa-chevron-right"/>
+                            </a>
                         </div>
-                        <a class="left carousel-control" data-slide="prev" href="#Carousel">
-                            <i class="fa fa-chevron-left"/>
-                        </a>
-                        <a class="right carousel-control" data-slide="next" href="#Carousel">
-                            <i class="fa fa-chevron-right"/>
-                        </a>
-                    </div>
                     </section>
                 </div>
                 <!--END OF FADE SLIDER-->
 
+                <!--BLUR BACKGROUND SLIDER-->
+                <div id="blurbg_slide">
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_banner.png"/>
+                        <span class="oe_snippet_thumbnail_title">Banner Blur Background</span>
+                    </div>
+                    <section class="oe_snippet_body">
+                        <div class="carousel slide carousel-blurbg" data-ride="carousel" id="blurbg_arousel" style="height: 640px; overflow: hidden;">
+                            <div class="carousel-inner">
+                                <div class="item active" style="">
+                                    <img class="img-responsive" src="/website/static/src/img/fields.jpg" style="position: relative;"/>
+                                     <div class="container" style="position: absolute; top: 20%; width: 100%;">
+                                        <div class="row content text-center">
+                                            <div class="col-md-12 col-sm-12" style="color: #fff; font-size: 4em;">
+                                                <p><strong>Your Banner Title</strong></p>
+                                                <p><strong>Click here to add text</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img class="img-responsive" src="/website/static/src/img/island.jpg" style="position: relative;"/>
+                                    <div class="container" style="position: absolute; top: 20%; width: 100%;">
+                                        <div class="row content text-center">
+                                            <div class="col-md-12 col-sm-12" style="color: #fff; font-size: 4em;">
+                                                <p><strong>Your Banner Title</strong></p>
+                                                <p><strong>Click here to add text</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img class="img-responsive" src="/website/static/src/img/volcano.jpg" style="position: relative;"/>
+                                    <div class="container" style="position: absolute; top: 20%; width: 100%;">
+                                        <div class="row content text-center">
+                                            <div class="col-md-12 col-sm-12" style="color: #fff; font-size: 4em;">
+                                                <p><strong>Your Banner Title</strong></p>
+                                                <p><strong>Click here to add text</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="left carousel-control" data-slide="prev" href="#blurbg_arousel">
+                                <i class="fa fa-angle-left"/>
+                            </a>
+                            <a class="right carousel-control" data-slide="next" href="#blurbg_arousel">
+                                <i class="fa fa-angle-right"/>
+                            </a>
+                        </div>
+                    </section>
+                </div>
+                <!--END OF BLUR BACKGROUND SLIDER-->
 
                 <!-- Vertical slide -->
                 <div id="vertical_slide">
                     <div class="oe_snippet_thumbnail">
                         <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_banner.png"/>
-                        <span class="oe_snippet_thumbnail_title">Vertical Slide</span>
+                        <span class="oe_snippet_thumbnail_title">Banner Vertical</span>
                     </div>
                     <div id="carousel_vertical" class="oe_snippet_body carousel slide vertical">
                         <!-- Indicators -->
@@ -234,23 +287,25 @@
                     <section class="s_cubes oe_snippet_body">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="col-md-6 cube cube-big col-xs-12 col-sm-12 cube-big-bg" style="background-image: url('/website/static/src/img/fields.jpg');"/>
+                                <section class="col-md-6 cube cube-big col-xs-12 col-sm-12 cube-big-bg" style="background-image: url('/website/static/src/img/fields.jpg');"/>
                                 <div class="cube-big col-md-6 col-xs-12 col-sm-12">
                                     <div class="row">
                                         <div class="cube cube-text col-md-6 col-sm-6 col-xs-12">
                                             <div class="cube-heading">
                                                 <h4 class="text-center">Lorem ipsum dolor sit amet</h4>
                                                 <p class="text-center">Lorem ipsum dolor sit amet, class pharetra id elit leo. Massa leo per orci ullamcorper egestas, in diam, fermentum phasellus elit praesent morbi.</p>
+                                                <a href="/"><p class="text-center">Read more...</p></a>
                                             </div>
                                         </div>
-                                        <div class="cube cube-small col-md-6 col-sm-6 col-xs-12 cube-medium-bg" style="background-image: url('/website/static/src/img/volcano.jpg');"/>
+                                        <section class="cube cube-small col-md-6 col-sm-6 col-xs-12 cube-medium-bg" style="background-image: url('/website/static/src/img/volcano.jpg');"/>
                                     </div>
                                     <div class="row">
-                                        <div class="cube cube-small col-md-6 col-sm-6 col-xs-12 cube-medium-bg" style="background-image: url('website/static/src/img/island.jpg');"/>
+                                        <section class="cube cube-small col-md-6 col-sm-6 col-xs-12 cube-medium-bg" style="background-image: url('website/static/src/img/island.jpg');"/>
                                         <div class="cube cube-text col-md-6 col-sm-6 col-xs-12 last">
                                             <div class="cube-heading">
                                                 <h4 class="text-center">Lorem ipsum dolor sit amet</h4>
                                                 <p class="text-center">Lorem ipsum dolor sit amet, class pharetra id elit leo. Massa leo per orci ullamcorper egestas, in diam, fermentum phasellus elit praesent morbi.</p>
+                                                <a href="/"><p class="text-center">Read more...</p></a>
                                             </div>
                                         </div>
                                     </div>
@@ -260,7 +315,7 @@
                     </section>
                 </div><!-- End of Notes Cubes -->
 
-                <!-- Notes Cubes -->
+                <!-- TWO COLUMN -->
                 <div id="two_column_text">
                     <div class="oe_snippet_thumbnail">
                         <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_text_block.png"/>
@@ -282,7 +337,7 @@
                             </div>
                         </div>
                     </section>
-                </div><!-- End of Notes Cubes -->
+                </div><!-- END OF TWO COLUMN -->
 
                 <!-- Color Blocks -->
                 <div id="color_blocks">

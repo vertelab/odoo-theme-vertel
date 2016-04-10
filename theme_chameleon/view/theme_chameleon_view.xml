@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+    <!-- Theme Chameleon -->
+    <template id="theme_chameleon" inherit_id="website.layout" customize_show="True" active="False" name="Theme Chameleon" priority="99">
+        <!-- Customize CSS -->
+            <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
+                <link href="/theme_chameleon/static/src/css/theme_chameleon.css" rel="stylesheet"/>
+                <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet" type="text/css"/>
+                <style>
+                    :root{
+                        /* blue */
+                        --primary-color: #06c;
+                        --secondary-color: #c60;
+
+                        /* bright orange */
+                        /*
+                        --primary-color: #ff6801;
+                        --secondary-color: #09f;
+                        */
+
+                        /* bright green */
+                        /*
+                        --primary-color: #39ff14;
+                        --secondary-color: #dc14ff;
+                        */
+
+                        /* dark theme */
+                        --theme-menu-background: rgba(0, 0, 0, 0.9);
+                        --theme-menu-text-color: #fff;
+
+                        /* bright theme */
+                        /*
+                        --theme-menu-background: rgba(250, 250, 250, 1);
+                        --theme-menu-text-color: #000;
+                        */
+                    }
+
+                    .chameleon-body {
+                        font-family: 'Raleway', sans-serif;
+                        list-style: none;
+                        background-color: #fafafa;
+                    }
+
+                    #wrapwrap {
+                        margin-top: 50px;
+                    }
+
+                    h1, h2 {
+                        font-family: 'Raleway', sans-serif;
+                        font-weight: 700;
+                        color: var(--primary-color);
+                    }
+
+                    a {
+                        color: var(--secondary-color);
+                        text-decoration: none !important;
+                    }
+
+                    .btn-primary {
+                        background-color: var(--primary-color);
+                        border: 1px solid var(--primary-color);
+                        opacity: 0.8;
+                    }
+
+                    .btn-primary:hover {
+                        background-color: var(--primary-color);
+                        border: 1px solid var(--primary-color);
+                        opacity: 1;
+                    }
+
+/*
+                    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+                        border-color: #aaa;
+                    }
+*/
+                    #chameleon-menu &gt; .container &gt; .navbar-header &gt; .navbar-toggle &gt; .icon-bar {
+                        background-color: var(--primary-color);
+                    }
+
+                    #chameleon-menu &gt; .container &gt; .navbar-header &gt; .navbar-toggle:hover,
+                    #chameleon-menu &gt; .container &gt; .navbar-header &gt; .navbar-toggle:focus,
+                    #chameleon-menu &gt; .container &gt; .navbar-header &gt; .navbar-toggle:active{
+                        background-color: transparent;
+                    }
+
+                    /* MENU */
+                    #chameleon-menu {
+                        z-index: 99;
+                        margin-top: 0px;
+                        background: var(--theme-menu-background);
+                        border-bottom-width: 0px;
+                    }
+
+                    /* COMPANY LOGO */
+                    #chameleon-menu &gt; div &gt; div &gt; a {
+                        color: #fff;
+                    }
+
+                    #chameleon-logo {
+                        max-height: 50px;
+                        transition: all 0.4s ease-in 0s;
+                    }
+
+                    /* MENU TEXT */
+                    #chameleon-menu &gt; div &gt; div &gt; ul &gt; li &gt; a {
+                        color: var(--theme-menu-text-color);
+                        font-family: 'Raleway', sans-serif;
+                    }
+
+                    /* STYLE WHEN MOUSE HOVER */
+                    #chameleon-menu &gt; div &gt; div &gt; ul &gt; li &gt; a:hover,
+                    #chameleon-menu &gt; div &gt; div &gt; ul &gt; li &gt; a:focus {
+                        color: var(--primary-color);
+                        background-color: transparent;
+                    }
+
+                    /* STYLE WHEN PAGE ACTIVE */
+                    #chameleon-menu &gt; div &gt; div &gt; ul &gt; .active &gt; a {
+                        color: var(--theme-menu-text-color);
+                        background-color: transparent;
+                    }
+
+                    /* STYLE WHEN DROPDOWN ACTIVE */
+                    .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+                        text-decoration: none;
+                        outline: 0;
+                    }
+
+                    .dropdown-menu { background: var(--theme-menu-background); }
+
+                    .dropdown-menu > li > a { color: var(--theme-menu-text-color); }
+
+                    .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus
+                    {
+                        color: var(--primary-color);
+                        text-decoration: none;
+                        background-color: transparent;
+                    }
+
+                    /* FOOTER STYLE*/
+                    .chameleon-footer {
+                        background: var(--theme-menu-background);
+                        color: var(--theme-menu-text-color);
+                        list-style: none;
+                    }
+                    .chameleon-footer &gt; .container { padding-top: 15px; }
+
+                </style>
+            </xpath>
+            <!-- add company logo -->
+            <xpath expr="//header//ul[@id='top_menu']" position="before">
+                <img id="chameleon-logo" src="/logo.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name" class="hidden-xs"/>
+            </xpath>
+            <!-- define id and class to menu bar -->
+            <xpath expr="//body/div[@id='wrapwrap']/header/div" position="attributes">
+                <attribute name="id">chameleon-menu</attribute>
+                <attribute name="class">navbar navbar-fixed-top</attribute>
+            </xpath>
+            <!-- define class to menu style -->
+            <xpath expr="//header//ul[@id='top_menu']" position="attributes">
+                <attribute name="class">nav navbar-nav navbar-right</attribute>
+            </xpath>
+            <!-- hide company name -->
+            <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div/a" position="attributes">
+                <attribute name="class">navbar-brand hidden-lg hidden-md hidden-sm</attribute>
+                <attribute name="style">padding: 0px 15px</attribute>
+            </xpath>
+            <!-- show company logo in mobile version -->
+            <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div/button" position="before">
+                <img class="pull-left hidden" style="max-height: 50px;" src="/logo.png"/>
+            </xpath>
+            <!-- hide user login / out -->
+            <xpath expr="//header//ul[@id='top_menu']/li[@class='divider']" position="attributes">
+                <attribute name="class">hidden</attribute>
+            </xpath>
+            <xpath expr="//header//ul[@id='top_menu']/li[@class='dropdown']" position="attributes">
+                <attribute name="class">hidden</attribute>
+            </xpath>
+            <!-- define a class to body -->
+            <xpath expr="//body" position="attributes">
+                <attribute name="class">chameleon-body</attribute>
+            </xpath>
+            <!-- define a class to footer -->
+            <xpath expr="//footer" position="attributes">
+                <attribute name="class">chameleon-footer</attribute>
+            </xpath>
+            <!-- add log in/out in footer -->
+            <xpath expr="//footer" position="inside">
+                <div class="container">
+                    <div class="dropup pull-right">
+                        <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <b>
+                                    <span t-esc="user_id.name"/>
+                                    <span class="caret"/>
+                                </b>
+                            </a>
+                            <ul class="dropdown-menu js_usermenu" role="menu">
+                                <li>
+                                    <a href="/web" role="menuitem">My Account</a>
+                                </li>
+                                <li class="divider"/>
+                                <li>
+                                    <a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </div>
+                    <div class="pull-right">
+                        <li groups="base.group_public">
+                            <a t-attf-href="/web/login">
+                                <b>Sign in</b>
+                            </a>
+                        </li>
+                    </div>
+                </div>
+            </xpath>
+            <!-- Customize javascript -->
+            <xpath expr="//body" position="inside">
+                <script>
+                  var margin_value = 0;
+                  var logo_max_height = 50;
+                  var logo_min_height = 50;
+                </script>
+                <script type="text/javascript" src="/theme_chameleon/static/src/js/theme_chameleon.js"/>
+            </xpath>
+    </template>
+    <!-- Menu Hover Effect -->
+    <template id="menu_hover_effect" inherit_id="website.layout" customize_show="True" active="False" name="Menu Hover Effect" priority="99">
+      <!-- Customize javascript -->
+      <xpath expr="//body/script[last()]" position="after">
+        <script>
+          $("#top_menu > .dropdown").mouseover(function() {
+          $(this).addClass("open");
+          });
+          $("#top_menu > .dropdown").mouseout(function() {
+          $(this).removeClass("open");
+          });
+        </script>
+      </xpath>
+    </template>
+    <!-- chameleon demo site -->
+    <template id="chameleon_demo_site" inherit_id="website.layout" customize_show="True" active="False" name="Chameleon Site" priority="99">
+      <xpath expr="//main/t" position="after">
+        <t t-call="theme_chameleon.chameleon_demo_site_template" />
+      </xpath>
+    </template>
+    <!-- chameleon demo site template -->
+    <template id="chameleon_demo_site_template" name="Chameleon demo site template">
+
+    </template>
+
+  </data>
+</openerp>
