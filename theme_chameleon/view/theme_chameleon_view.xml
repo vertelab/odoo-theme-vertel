@@ -5,7 +5,6 @@
     <template id="theme_chameleon" inherit_id="website.layout" customize_show="True" active="False" name="Theme Chameleon" priority="99">
         <!-- Customize CSS -->
             <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
-                <link href="/theme_chameleon/static/src/css/theme_chameleon.css" rel="stylesheet"/>
                 <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet" type="text/css"/>
                 <style>
                     <!-- Font made from oNline Web Fonts (http://www.onlinewebfonts.com) is licensed by CC BY 3.0 -->
