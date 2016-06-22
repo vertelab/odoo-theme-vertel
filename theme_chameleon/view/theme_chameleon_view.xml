@@ -6,8 +6,8 @@
         <!-- Customize CSS -->
             <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
                 <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet" type="text/css"/>
+                <!-- Font made from oNline Web Fonts (http://www.onlinewebfonts.com) is licensed by CC BY 3.0 -->
                 <style>
-                    <!-- Font made from oNline Web Fonts (http://www.onlinewebfonts.com) is licensed by CC BY 3.0 -->
                     @font-face {
                         font-family: "DidotW01-Italic";
                         src: url("/theme_chameleon/static/src/fonts/Didot W01 Italic.eot");
