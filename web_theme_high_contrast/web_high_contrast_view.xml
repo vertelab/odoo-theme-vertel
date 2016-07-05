@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record model="ir.ui.view" id="assets_backend"> 
+            <field name="inherit_id" ref="web.assets_backend" />
+            <field name="arch" type="xml">
+                <t position="inside">
+                    <link href='/web_theme_high_contrast/static/src/css/high_contrast.css' rel='stylesheet'/>
+                </t>
+            </field>
+        </record>
+
+    </data>
+</openerp>
