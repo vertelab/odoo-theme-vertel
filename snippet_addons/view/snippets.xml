@@ -594,11 +594,11 @@
                     <div class="oe_snippet_body oe_share">
                         <div class="col-md-12 mb16 mt16">
                             <div class="col-md-6">
-                                <img class="img img-responsive" src="/website/image/ir.attachment/185_9dcbbba/datas" style="max-height: 400px; margin: auto;"/>
+                                <img class="img img-responsive" src="/website/static/src/img/banner/wood.jpg" style="max-height: 400px; margin: auto;"/>
                                 <p class="text-center">Image text</p>
                             </div>
                             <div class="col-md-6">
-                                <img class="img img-responsive" src="/website/image/ir.attachment/184_708e552/datas" style="max-height: 400px; margin: auto;"/>
+                                <img class="img img-responsive" src="/website/static/src/img/banner/greenfields.jpg" style="max-height: 400px; margin: auto;"/>
                                 <p class="text-center">Image text</p>
                             </div>
                         </div>
