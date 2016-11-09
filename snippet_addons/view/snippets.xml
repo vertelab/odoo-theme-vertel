@@ -300,7 +300,7 @@
                                         <section class="cube cube-small col-md-6 col-sm-6 col-xs-12 cube-medium-bg" style="background-image: url('/website/static/src/img/volcano.jpg');"/>
                                     </div>
                                     <div class="row">
-                                        <section class="cube cube-small col-md-6 col-sm-6 col-xs-12 cube-medium-bg" style="background-image: url('website/static/src/img/island.jpg');"/>
+                                        <section class="cube cube-small col-md-6 col-sm-6 col-xs-12 cube-medium-bg" style="background-image: url('/website/static/src/img/island.jpg');"/>
                                         <div class="cube cube-text col-md-6 col-sm-6 col-xs-12 last">
                                             <div class="cube-heading">
                                                 <h4 class="text-center">Lorem ipsum dolor sit amet</h4>
