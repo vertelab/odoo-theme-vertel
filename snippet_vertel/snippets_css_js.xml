@@ -12,7 +12,7 @@
         <!-- Custom Snippet Options JS -->
         <template id="vertel_snippet_snippet_js" inherit_id="website.layout" name="Vertel Custom Snippet Custom JS">
             <xpath expr="//body" position="inside">
-                <link href="/snippet_vertel/static/src/js/snippet_vertel.js" rel="stylesheet"/>
+                <script href="/snippet_vertel/static/src/js/snippet_vertel.js" type="text/javascript"/>
             </xpath>
         </template>
 
