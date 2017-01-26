@@ -3,14 +3,14 @@
     <data>
 
         <!-- Custom Snippet Options CSS -->
-        <template id="custom_snippet_options_css" inherit_id="website.layout" name="Custom Snippet Options CSS">
+        <template id="vertel_snippet_snippet_css" inherit_id="website.layout" name="Vertel Custom Snippet Options CSS">
             <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
                 <link href="/snippet_vertel/static/src/css/snippet_vertel.css" rel="stylesheet"/>
             </xpath>
         </template>
 
         <!-- Custom Snippet Options JS -->
-        <template id="vertel_custom_snippet_css_and_js" inherit_id="website.layout" name="Vertel Custom Snippet Custom CSS and JS">
+        <template id="vertel_snippet_snippet_js" inherit_id="website.layout" name="Vertel Custom Snippet Custom JS">
             <xpath expr="//body" position="inside">
                 <link href="/snippet_vertel/static/src/css/snippet_vertel.css" rel="stylesheet"/>
             </xpath>

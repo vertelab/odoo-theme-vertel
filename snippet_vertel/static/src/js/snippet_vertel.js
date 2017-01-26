@@ -1,9 +1,7 @@
 $(window).scroll(function () {
     if ($(window).scrollTop() > 400){
-        $(".round-icon").fadeIn("slow");
+        $("top-side-nav").fadeIn("slow");
     } else {
-        $(".round-icon").fadeOut("fast");
+        $("top-side-nav").fadeOut("fast");
     }
 });
-
-
