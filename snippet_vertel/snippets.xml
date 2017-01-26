@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <!-- Customize Snippets -->
+        <template id="vertel_custom_snippets" inherit_id="website.snippets" name="Vertel Custom Snippets">
+            <!-- Customize Structure -->
+            <xpath expr="//div[@id='snippet_structure']" position="inside">
+
+            </xpath>
+
+            <!-- Customize Content -->
+            <xpath expr="//div[@id='snippet_content']" position="inside">
+
+            </xpath>
+
+        </template>
+
+        <!-- Snippet options -->
+        <template id="vertel_snippet_options" inherit_id="website.snippet_options" name="Vertel Snippet Options">
+
+            <xpath expr="//div[@data-snippet-option-id='transform']" position="after">
+
+            </xpath>
+
+        </template>
+
+    </data>
+</openerp>
+
+
