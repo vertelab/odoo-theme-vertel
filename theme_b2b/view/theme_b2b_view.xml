@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="product_public_category_form_view" model="ir.ui.view">
+            <field name="name">product.public.category.form.inherited.theme_b2b</field>
+            <field name="model">product.public.category</field>
+            <field name="inherit_id" ref="website_sale.product_public_category_form_view"/>
+            <field name="arch" type="xml">
+                <field name="name" position="after">
+                    <field name="mobile_icon"/>
+                </field>
+            </field>
+        </record>
+
+        <!-- Theme B2B -->
+        <template id="theme_b2b" inherit_id="website.layout" customize_show="True" active="False" name="Theme B2B" priority="99">
+            <!-- Customize CSS -->
+            <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
+                <link href="/theme_b2b/static/src/css/theme_b2b.css" rel="stylesheet" type="text/css" />
+                <link href="/theme_b2b/static/src/css/website_sale.css" rel="stylesheet" type="text/css" />
+            </xpath>
+            <!-- add company logo -->
+            <xpath expr="//header//ul[@id='top_menu']" position="before">
+                <img id="b2b-logo" src="/logo.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name" class="hidden-xs" />
+            </xpath>
+            <!-- define id and class to menu bar -->
+            <xpath expr="//body/div[@id='wrapwrap']/header/div" position="attributes">
+                <attribute name="id">b2b-menu</attribute>
+                <attribute name="class">navbar navbar-fixed-top</attribute>
+            </xpath>
+            <!-- define class to menu style -->
+            <xpath expr="//header//ul[@id='top_menu']" position="attributes">
+                <attribute name="class">nav navbar-nav navbar-right</attribute>
+            </xpath>
+            <!-- hide company name -->
+            <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div/a" position="attributes">
+                <attribute name="class">navbar-brand hidden-lg hidden-md hidden-sm</attribute>
+                <attribute name="style">padding: 0px 15px</attribute>
+            </xpath>
+            <!-- show company logo in mobile version -->
+            <xpath expr="//body/div[@id='wrapwrap']/header/div/div/div/button" position="before">
+                <img class="pull-left hidden" style="max-height: 50px;" src="/logo.png" />
+            </xpath>
+            <!-- define a class to body -->
+            <xpath expr="//body" position="attributes">
+                <attribute name="class">b2b-body</attribute>
+            </xpath>
+            <!-- define a class to footer -->
+            <xpath expr="//footer" position="attributes">
+                <attribute name="class">b2b-footer</attribute>
+            </xpath>
+            <!-- footer -->
+            <xpath expr="//footer" position="inside" />
+            <!-- Customize javascript -->
+            <xpath expr="//body" position="inside">
+                <script type="text/javascript" src="/theme_chameleon/static/src/js/theme_b2b.js" />
+            </xpath>
+        </template>
+        <template id="product_categories_tree" inherit_id="website_sale.products" active="False" customize_show="True" name="Product Categories Tree">
+            <xpath expr="//div[@id='products_grid_before']" position="inside">
+                <ul class="nav nav-pills nav-stacked hidden-xs">
+                    <li t-att-class=" '' if category else 'active' ">
+                        <a t-att-href="keep('/shop',category=0)">All Products</a>
+                    </li>
+                    <t t-foreach="categories" t-as="c">
+                        <t t-call="website_sale.categories_recursive" />
+                    </t>
+                </ul>
+                <ul class="nav nav-pills hidden-lg hidden-md hidden-sm">
+                    <li t-att-class=" '' if category else 'active' ">
+                        <a t-att-href="keep('/shop',category=0)">All Products</a>
+                    </li>
+                    <t t-foreach="categories" t-as="c">
+                        <t t-call="theme_b2b.categories_recursive_mobile" />
+                    </t>
+                </ul>
+            </xpath>
+            <xpath expr="//div[@id='products_grid_before']" position="attributes">
+                <attribute name="class">product_categories_tree_div col-md-3 col-xs-12</attribute>
+            </xpath>
+            <xpath expr="//div[@id='products_grid']" position="attributes">
+                <attribute name="class">col-md-9 col-xs-12</attribute>
+            </xpath>
+        </template>
+        <template id="categories_recursive_mobile" name="Category list On Mobile">
+            <li t-att-class="'active' if c.id == int(category or 0) else ''">
+                <t t-if="c.mobile_icon">
+                    <a t-att-href="keep('/shop/category/' + slug(c), category=0)"><i t-att-class="'%s fa-2x' %(c.mobile_icon)"/></a>
+                </t>
+                <t t-if="not c.mobile_icon">
+                    <a t-att-href="keep('/shop/category/' + slug(c), category=0)" t-field="c.name" />
+                </t>
+            </li>
+            <t t-if="c.child_id">
+                <t t-foreach="c.child_id" t-as="c">
+                    <t t-call="theme_b2b.categories_recursive_mobile" />
+                </t>
+            </t>
+        </template>
+    </data>
+</openerp>

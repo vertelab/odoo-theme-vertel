@@ -6,6 +6,95 @@
         <template id="vertel_custom_snippets" inherit_id="website.snippets" name="Vertel Custom Snippets">
             <!-- Customize Structure -->
             <xpath expr="//div[@id='snippet_structure']" position="inside">
+                <!--FADE SLIDER-->
+                <div id="fade_v_slide">
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_banner.png"/>
+                        <span class="oe_snippet_thumbnail_title">Fade Banner</span>
+                    </div>
+                    <section class="oe_snippet_body">
+                        <div class="carousel slide carousel-fade" data-ride="carousel" id="fade_v_carousel" style="height: 320px; overflow: hidden;">
+                            <ol class="carousel-indicators">
+                                <li class="active" data-slide-to="0" data-target="fade_v_carousel"/>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item active" style="background-image: url('/website/static/src/img/banner/color_splash.jpg')">
+                                    <div class="container">
+                                        <div class="row content">
+                                            <div class="carousel-img col-md-6 hidden-sm hidden-xs"/>
+                                            <div class="carousel-content col-md-6 col-sm-12">
+                                                <h2>Your Banner Title</h2>
+                                                <h3>Click to customize this text</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="left carousel-control" data-slide="prev" href="#fade_v_carousel">
+                                <i class="fa fa-chevron-left"/>
+                            </a>
+                            <a class="right carousel-control" data-slide="next" href="#fade_v_carousel">
+                                <i class="fa fa-chevron-right"/>
+                            </a>
+                        </div>
+                    </section>
+                </div>
+                <!--END OF FADE SLIDER-->
+
+                <!-- Image block -->
+                <div id="banner_v_block">
+                    <div class="oe_snippet_thumbnail">
+                        <img class="oe_snippet_thumbnail_img" src="/website/static/src/img/blocks/block_features.png"/>
+                        <span class="oe_snippet_thumbnail_title">Image Blocks</span>
+                    </div>
+                    <section class="oe_snippet_body">
+                        <div class="container img_block_section">
+                            <div class="row">
+                                <div class="container">
+                                    <div class="img_part col-md-4 col-sm-4 col-xs-12">
+                                        <div class="img_block" style="background-image: url('/website/static/src/img/banner/flower_field.jpg');">
+                                            <div class="img_block_field">
+                                                <a href="/" style="text-decoration: none;">
+                                                    <div class="img_block_text">
+                                                      <h4 class="text-center">
+                                                        <strong>Title</strong>
+                                                      </h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="img_part col-md-4 col-sm-4 col-xs-12">
+                                        <div class="img_block" style="background-image: url('/website/static/src/img/banner/wood.jpg');">
+                                            <div class="img_block_field">
+                                                <a href="/" style="text-decoration: none;">
+                                                    <div class="img_block_text">
+                                                      <h4 class="text-center">
+                                                        <strong>Title</strong>
+                                                      </h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="img_part col-md-4 col-sm-4 col-xs-12">
+                                        <div class="img_block" style="background-image: url('/website/static/src/img/banner/greenfields.jpg');">
+                                            <div class="img_block_field">
+                                                <a href="/" style="text-decoration: none;">
+                                                    <div class="img_block_text">
+                                                      <h4 class="text-center">
+                                                        <strong>Title</strong>
+                                                      </h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div><!-- End of Image block -->
 
             </xpath>
 
