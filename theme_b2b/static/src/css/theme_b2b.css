@@ -20,7 +20,7 @@
 }
 
 .b2b-body {
-    font-family: '', sans-serif;
+    font-family: 'Liberation Sans';
     list-style: none;
     background-color: #fafafa;
 }
@@ -36,7 +36,6 @@ h1, h2 {
 }
 
 a {
-    color: var(--secondary-color);
     text-decoration: none !important;
 }
 
