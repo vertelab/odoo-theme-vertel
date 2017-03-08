@@ -94,6 +94,10 @@
   .products_pager .pagination {
     margin: 5px auto !important;
   }
+
+  .product_categories_tree_div {
+    border: none;
+  }
 }
 @media (max-width: 400px) {
   #products_grid .oe_product {
@@ -109,6 +113,10 @@
 
   #products_grid .oe_product.oe_image_full .oe_product_image {
     bottom: 50px;
+  }
+
+  .product_categories_tree_div {
+    border: none;
   }
 }
 @media (min-width: 992px) {
