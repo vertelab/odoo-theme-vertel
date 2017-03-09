@@ -7,7 +7,6 @@
             <!-- Customize CSS -->
             <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
                 <link href="/theme_b2b/static/src/css/theme_b2b.css" rel="stylesheet" type="text/css" />
-                <link href="/theme_b2b/static/src/css/website_sale.css" rel="stylesheet" type="text/css" />
             </xpath>
             <!-- add company logo -->
             <xpath expr="//header//ul[@id='top_menu']" position="before">

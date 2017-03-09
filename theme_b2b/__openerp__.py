@@ -30,10 +30,9 @@ Extra theme
 """,
     'author': 'Vertel AB',
     'website': 'http://www.vertel.se',
-    'depends': ['website_sale'],
+    'depends': ['website'],
     'data': [
         'view/theme_b2b_view.xml',
-        'view/product_view.xml',
         'view/website_overwritten_templates.xml',
 ],
     'application': False,

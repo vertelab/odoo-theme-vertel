@@ -26,13 +26,8 @@ from datetime import datetime
 from lxml import html
 import werkzeug
 
-class product_public_category(models.Model):
-    _inherit = 'product.public.category'
 
-    mobile_icon = fields.Char(string='Mobile Icon', help='This icon will display on smaller devices')
-
-
-class Chameleon(http.Controller):
+class B2B(http.Controller):
     @http.route(['/logo500.png'], type='http', auth="public", cors="*")
     def company_logo500(self):
         user = request.registry['res.users'].browse(request.cr, request.uid, request.uid)
