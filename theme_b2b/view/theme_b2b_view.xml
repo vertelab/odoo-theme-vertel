@@ -7,6 +7,7 @@
             <!-- Customize CSS -->
             <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
                 <link href="/theme_b2b/static/src/css/theme_b2b.css" rel="stylesheet" type="text/css" />
+                <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
             </xpath>
             <!-- add company logo -->
             <xpath expr="//header//ul[@id='top_menu']" position="before">
@@ -67,4 +68,162 @@
         </template>
 
     </data>
+
+    <data noupdate="1">
+
+        <template id="b2b_demo_page" name="B2B Demo Page">
+            <t t-call="website.layout">
+                <div id="wrap">
+                    <div class="oe_structure"/>
+                        <t t-call="website.snippets">
+                            <t t-set="demo_page" t-value="True"/>
+                        </t>
+                    <div class="oe_structure"/>
+                </div>
+            </t>
+        </template>
+
+        <template id="b2b_demo_page_extend" inherit_id="website.snippets">
+            <xpath expr="//ul[@class='nav navbar-nav nav-tabs']" position="replace">
+                <t t-if="demo_page">
+                    <ul class="nav navbar-nav nav-tabs nav-justified">
+                        <li class="active"><a href="#snippet_structure" data-toggle="tab">Structure</a></li>
+                        <li><a href="#snippet_content" data-toggle="tab">Content</a></li>
+                        <li><a href="#snippet_feature" data-toggle="tab">Features</a></li>
+                        <li><a href="#snippet_effect" data-toggle="tab">Effects</a></li>
+                        <li><a href="#fonts" data-toggle="tab">Fonts</a></li>
+                    </ul>
+                </t>
+                <t t-if="not demo_page">
+                    <ul class="nav navbar-nav nav-tabs">
+                        <li class="active"><a href="#snippet_structure" data-toggle="tab">Structure</a></li>
+                        <li><a href="#snippet_content" data-toggle="tab">Content</a></li>
+                        <li><a href="#snippet_feature" data-toggle="tab">Features</a></li>
+                        <li><a href="#snippet_effect" data-toggle="tab">Effects</a></li>
+                    </ul>
+                </t>
+            </xpath>
+            <xpath expr="//div[@class='tab-content']" position="inside">
+                <t t-if="demo_page">
+                    <div id="fonts" class="tab-pane">
+                        <section class="s_title">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h1 class="text-center">H1 Rubrik-text</h1>
+                                        <h2 class="text-center">H2 Rubrik-text</h2>
+                                        <h3 class="text-center">H3 Rubrik-text</h3>
+                                        <h4 class="text-center">H4 Rubrik-text</h4>
+                                        <h5 class="text-center">H5 Rubrik-text</h5>
+                                        <h6 class="text-center">H6 Rubrik-text</h6>
+                                        <p/>
+                                        <h1 style="text-align: center;">
+                                            Subsript
+                                            <sub>2</sub>
+                                            &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Superscript
+                                            <sup>
+                                                <sub>3</sub>
+                                            </sup>
+                                        </h1>
+                                        <p/>
+                                        <blockquote>
+                                            <p>Detta är ett citat</p>
+                                        </blockquote>
+                                        <table class="table table-bordered table-responsive">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="text-align: center;">Punkterad lista</td>
+                                                    <td style="text-align: center;">Numrerad lista</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <ul>
+                                                            <li style="text-align: center;">Punkt 1</li>
+                                                            <li style="text-align: center;">Punkt 2</li>
+                                                            <li style="text-align: center;">Punkt 3</li>
+                                                        </ul>
+                                                    </td>
+                                                    <td>
+                                                        <ol>
+                                                            <li style="text-align: center;">Punkt 1</li>
+                                                            <li style="text-align: center;">Punkt 2</li>
+                                                            <li style="text-align: center;">Punkt 3</li>
+                                                        </ol>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        &amp;nbsp;
+                                        <p style="margin-left: 40px;">Indrag</p>
+                                        <p style="margin-left: 80px;">Indrag mer</p>
+                                        <p style="margin-left: 120px;">Indrag ännu mer</p>
+                                        <p style="margin-left: 120px;"/>
+                                        <h1>Vänsterjusterat</h1>
+                                        <p>Lorem ipsum dolor sit amet, class pharetra id elit leo. Massa leo per orci ullamcorper egestas, in diam, fermentum phasellus elit praesent morbi. Volutpat luctus eu nostra ipsum dui pulvinar, eget velit porttitor elit pede. Diam ipsum velit, incididunt commodo eu penatibus. Duis consectetuer, at ultrices sapien2 massa2 a dolor, vitae lectus elementum maecenas, iaculis non elit congue. Fermentum ultricies.</p>
+                                        <h1 style="text-align: center;">Centererat</h1>
+                                        <p style="text-align: center;">Lorem ipsum dolor sit amet, class pharetra id elit leo. Massa leo per orci ullamcorper egestas, in diam, fermentum phasellus elit praesent morbi. Volutpat luctus eu nostra ipsum dui pulvinar, eget velit porttitor elit pede. Diam ipsum velit, incididunt commodo eu penatibus. Duis consectetuer, at ultrices sapien2 massa2 a dolor, vitae lectus elementum maecenas, iaculis non elit congue. Fermentum ultricies.</p>
+                                        <p style="text-align: center;"/>
+                                        <h1 style="text-align: right;">Högerjusterat</h1>
+                                        <p style="text-align: right;">Lorem ipsum dolor sit amet, class pharetra id elit leo. Massa leo per orci ullamcorper egestas, in diam, fermentum phasellus elit praesent morbi. Volutpat luctus eu nostra ipsum dui pulvinar, eget velit porttitor elit pede. Diam ipsum velit, incididunt commodo eu penatibus. Duis consectetuer, at ultrices sapien2 massa2 a dolor, vitae lectus elementum maecenas, iaculis non elit congue. Fermentum ultricies.</p>
+                                        <p style="text-align: center;"/>
+                                        <p/>
+                                        <p>
+                                            <em>Nam cillum. Proin accumsan nam vitae nonummy, ridiculus eu eget consectetuer.</em>
+                                            <br/>
+                                            <strong>Nunc a at, malesuada quisque ut ac.</strong>
+                                            <br/>
+                                            <u>Donec sit sodales luctus, bibendum ac rutrum eu luctus libero, mauris nonummy eget facilisi mollis turpis pariatur.</u>
+                                        </p>
+                                        <p>
+                                            <s>Ex mel feugiat dissentias, et eam dicta labore epicuri, iisque pertinax vis ne.</s>
+                                            <s/>
+                                        </p>
+                                        <p>
+                                            <a href="#">Länk</a>
+                                        </p>
+                                        <p>
+                                            <a class="btn btn-primary btn-lg" href="#">Primary Large</a>
+                                        </p>
+                                        <p>
+                                            <a class="btn btn-success " href="#">Success Default</a>
+                                        </p>
+                                        <p>
+                                            <a class="btn btn-warning btn-xs" href="#">Warning Extra small</a>
+                                        </p>
+                                        <p>
+                                            <a class="btn btn-info btn-sm" href="#">Info Small</a>
+                                        </p>
+                                        <p>
+                                            <a class="btn btn-default" href="#">Default</a>
+                                        </p>
+                                        <p>
+                                            <a class="btn btn-danger" href="#">Danger</a>
+                                        </p>
+                                        <p/>
+                                        <p/>
+                                        <p>
+                                            <font class="text-primary">Primary</font>
+                                            &amp;nbsp;
+                                            <font class="text-success">Success</font>
+                                            &amp;nbsp;
+                                            <font class="text-info">Info</font>
+                                            &amp;nbsp;
+                                            <font class="text-warning">Warning</font>
+                                            &amp;nbsp; Default&amp;nbsp;
+                                            <font class="bg-danger">Danger</font>
+                                        </p>
+                                        <p>
+                                            <u/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </t>
+            </xpath>
+        </template>
+
+    </data>
+
 </openerp>

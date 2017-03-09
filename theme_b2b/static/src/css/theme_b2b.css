@@ -20,7 +20,7 @@
 }
 
 .b2b-body {
-    font-family: 'Liberation Sans';
+    font-family: 'Roboto', sans-serif;
     list-style: none;
     background-color: #fff;
 }
@@ -30,7 +30,6 @@
 }
 
 h1, h2 {
-    font-family: '', sans-serif;
     font-weight: 700;
     color: var(--primary-color);
 }
@@ -88,7 +87,6 @@ a {
 /* MENU TEXT */
 #b2b-menu > div > div > ul > li > a {
     color: #fff;
-    font-family: '', sans-serif;
 }
 
 /* STYLE WHEN MOUSE HOVER */

@@ -28,6 +28,11 @@ import werkzeug
 
 
 class B2B(http.Controller):
+
+    @http.route(['/page/b2b_demo'], type='http', auth="public", website=True)
+    def b2b_demo(self):
+        return request.website.render('theme_b2b.b2b_demo_page', {})
+
     @http.route(['/logo500.png'], type='http', auth="public", cors="*")
     def company_logo500(self):
         user = request.registry['res.users'].browse(request.cr, request.uid, request.uid)
