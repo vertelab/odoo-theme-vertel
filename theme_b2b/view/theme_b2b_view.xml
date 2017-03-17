@@ -9,9 +9,40 @@
                 <link href="/theme_b2b/static/src/css/theme_b2b.css" rel="stylesheet" type="text/css" />
                 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
             </xpath>
+            <xpath expr="//ul[@class='dropdown-menu js_usermenu']/li[last()]" position="before">
+                <li><a href="/page/b2b_demo">Demo</a></li>
+            </xpath>
             <!-- add company logo -->
             <xpath expr="//header//ul[@id='top_menu']" position="before">
                 <img id="b2b-logo" src="/logo.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name" class="hidden-xs" />
+                <ul class="list-inline js_language_selector navbar-nav navbar-right" t-if="(request.website_multilang and len(languages) &gt; 1) or editable">
+                    <li t-foreach="languages" t-as="lg">
+                        <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang=lg[0])" t-att-data-default-lang="editable and 'true' if lg[0] == website.default_lang_code else None" t-att-data-lang="lg[0]" class="js_change_lang">
+                            <t t-if="lg[0] == 'en_US'">
+                                <img class="img img-responsive lg-flag" src="/theme_b2b/static/src/img/united_kingdom.png"/>
+                            </t>
+                            <t t-if="lg[0] == 'sv_SE'">
+                                <img class="img img-responsive lg-flag" src="/theme_b2b/static/src/img/sweden.png"/>
+                            </t>
+                            <t t-if="lg[0] == 'da_DK'">
+                                <img class="img img-responsive lg-flag" src="/theme_b2b/static/src/img/denmark.png"/>
+                            </t>
+                            <t t-if="lg[0] == 'nb_NO'">
+                                <img class="img img-responsive lg-flag" src="/theme_b2b/static/src/img/norway.png"/>
+                            </t>
+                            <t t-if="lg[0] not in ['en_US', 'sv_SE', 'da_DK', 'nb_NO']">
+                                <t t-esc="lg[1].split('/').pop()"/>
+                            </t>
+                        </a>
+                    </li>
+                    <li groups="base.group_website_publisher">
+                        <t t-set="url_return" t-value="url_for('', '[lang]') + '?' + keep_query()"/>
+                        <a t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id}&amp;url_return=#{url_return}">
+                        <i class="fa fa-plus-circle"/>
+                        Add a language...
+                        </a>
+                    </li>
+                </ul>
             </xpath>
             <!-- define id and class to menu bar -->
             <xpath expr="//body/div[@id='wrapwrap']/header/div" position="attributes">
@@ -48,22 +79,8 @@
         </template>
 
         <template id="footer_default" inherit_id="website.footer_default">
-            <xpath expr="//a[@class='js_change_lang']/t" position="replace">
-                <t t-if="lg[0] == 'en_US'">
-                    <img class="img img-responsive" src="/theme_b2b/static/src/img/united_kingdom.png" style="width: 40px"/>
-                </t>
-                <t t-if="lg[0] == 'sv_SE'">
-                    <img class="img img-responsive" src="/theme_b2b/static/src/img/sweden.png" style="width: 40px"/>
-                </t>
-                <t t-if="lg[0] == 'da_DK'">
-                    <img class="img img-responsive" src="/theme_b2b/static/src/img/denmark.png" style="width: 40px"/>
-                </t>
-                <t t-if="lg[0] == 'nb_NO'">
-                    <img class="img img-responsive" src="/theme_b2b/static/src/img/norway.png" style="width: 40px"/>
-                </t>
-                <t t-if="lg[0] not in ['en_US', 'sv_SE', 'da_DK', 'nb_NO']">
-                    <t t-esc="lg[1].split('/').pop()"/>
-                </t>
+            <xpath expr="//ul[@class='list-inline js_language_selector mt16']" position="attributes">
+                <attribute name="class">list-inline js_language_selector mt16 hidden</attribute>
             </xpath>
         </template>
 
@@ -71,7 +88,7 @@
 
     <data noupdate="1">
 
-        <template id="b2b_demo_page" name="B2B Demo Page">
+        <template id="b2b_demo_page" name="B2B Demo Page" groups="base.group_website_publisher">
             <t t-call="website.layout">
                 <div id="wrap">
                     <div class="oe_structure"/>

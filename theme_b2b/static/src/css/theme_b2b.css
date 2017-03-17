@@ -135,5 +135,14 @@ a {
 
 .b2b-footer > .container { padding-top: 15px; }
 
+.js_language_selector {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.lg-flag {
+    width: 30px;
+}
+
 @media (min-width: 768px) {
 }
