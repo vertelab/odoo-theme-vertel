@@ -10,7 +10,7 @@
                 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
             </xpath>
             <xpath expr="//ul[@class='dropdown-menu js_usermenu']/li[last()]" position="before">
-                <li><a href="/page/b2b_demo">Demo</a></li>
+                <li><a href="/page/b2b_demo">Website Theme</a></li>
             </xpath>
             <!-- add company logo -->
             <xpath expr="//header//ul[@id='top_menu']" position="before">
@@ -74,7 +74,7 @@
             <xpath expr="//footer" position="inside" />
             <!-- Customize javascript -->
             <xpath expr="//body" position="inside">
-                <script type="text/javascript" src="/theme_chameleon/static/src/js/theme_b2b.js" />
+                <script type="text/javascript" src="/theme_b2b/static/src/js/theme_b2b.js" />
             </xpath>
         </template>
 
