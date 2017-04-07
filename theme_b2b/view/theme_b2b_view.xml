@@ -77,7 +77,7 @@
         </template>
 
         <template id="footer_b2b" inherit_id="website.layout" customize_show="True" name="Footer B2B">
-            <xpath expr="//div[@class='footer_container']" position="after">
+            <xpath expr="//footer" position="inside">
                 <div class="container hidden-print">
                     <div class="row">
                         <div class="col-md-4">
