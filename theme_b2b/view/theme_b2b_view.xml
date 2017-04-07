@@ -76,8 +76,8 @@
             </xpath>
         </template>
 
-        <template id="footer_b2b" inherit_id="website.footer_custom" customize_show="True" name="Footer B2B">
-            <xpath expr="//div[@id='footer']" position="replace">
+        <template id="footer_b2b" inherit_id="website.layout" customize_show="True" name="Footer B2B">
+            <xpath expr="//div[@class='footer_container']" position="after">
                 <div class="container hidden-print">
                     <div class="row">
                         <div class="col-md-4">
