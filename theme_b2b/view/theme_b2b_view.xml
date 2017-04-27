@@ -91,9 +91,9 @@
                         <div class="col-md-4" id="info">
                             <ul class="list-unstyled">
                                 <li t-ignore="true"><i class="fa fa-phone"></i> <a t-att-href="'tel:%s' %res_company.phone"><span t-field="res_company.phone"/></a></li>
-                                <li t-ignore="true"><i class="fa fa-phone"></i> <a href="'tel:+4762813355"><span >+47 62 81 33 55</span></a></li>
-                                <li t-ignore="true"><i class="fa fa-phone"></i> <a href="'tel:+4540504093"><span >+45 40 50 40 93</span></a></li>
-                                <li t-ignore="true"><i class="fa fa-phone"></i> <a href="'tel:+441582512222"><span >+44 (0)1582 51 22 22</span></a></li>
+                                <li t-ignore="true"><i class="fa fa-phone"></i> <a href="tel:+4762813355"><span >+47 62 81 33 55</span></a></li>
+                                <li t-ignore="true"><i class="fa fa-phone"></i> <a href="tel:+4540504093"><span >+45 40 50 40 93</span></a></li>
+                                <li t-ignore="true"><i class="fa fa-phone"></i> <a href="tel:+441582512222"><span >+44 (0)1582 51 22 22</span></a></li>
                                 <li t-ignore="true"><i class="fa fa-envelope"></i> <a t-att-href="'mailto:%s' %res_company.email"><span t-field="res_company.email"/></a></li>
                             </ul>
                             <h2>
