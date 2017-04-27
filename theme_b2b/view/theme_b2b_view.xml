@@ -30,7 +30,7 @@
                             <t t-if="lg[0] == 'nb_NO'">
                                 <img class="img img-responsive lg-flag" src="/theme_b2b/static/src/img/norway.png"/>
                             </t>
-                            <t t-if="lg[0] not in ['en_US', 'sv_SE', 'da_DK', 'nb_NO']">
+                            <t t-if="lg[0] not in ['en_US', 'en_GB', 'sv_SE', 'da_DK', 'nb_NO']">
                                 <t t-esc="lg[1].split('/').pop()"/>
                             </t>
                         </a>
