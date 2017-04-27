@@ -18,7 +18,7 @@
                 <ul class="list-inline js_language_selector navbar-nav navbar-right" t-if="(request.website_multilang and len(languages) &gt; 1) or editable">
                     <li t-foreach="languages" t-as="lg">
                         <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang=lg[0])" t-att-data-default-lang="editable and 'true' if lg[0] == website.default_lang_code else None" t-att-data-lang="lg[0]" class="js_change_lang">
-                            <t t-if="lg[0] == 'en_US'">
+                            <t t-if="lg[0] == 'en_US' or 'en_GB'">
                                 <img class="img img-responsive lg-flag" src="/theme_b2b/static/src/img/united_kingdom.png"/>
                             </t>
                             <t t-if="lg[0] == 'sv_SE'">
