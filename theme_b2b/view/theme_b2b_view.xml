@@ -82,6 +82,7 @@
                     <div class="row">
                         <div class="col-md-4">
                             <ul class="list-unstyled">
+                                <li><a href="/">Hem</a></li>
                                 <li><a href="/blog/1">Nyheter</a></li>
                                 <li><a href="/page/aboutus">Om oss</a></li>
                                 <li><a href="/page/website.contactus">Kontakta oss</a></li>
@@ -90,6 +91,9 @@
                         <div class="col-md-4" id="info">
                             <ul class="list-unstyled">
                                 <li t-ignore="true"><i class="fa fa-phone"></i> <a t-att-href="'tel:%s' %res_company.phone"><span t-field="res_company.phone"/></a></li>
+                                <li t-ignore="true"><i class="fa fa-phone"></i> <a href="'tel:+4762813355"><span >+47 62 81 33 55</span></a></li>
+                                <li t-ignore="true"><i class="fa fa-phone"></i> <a href="'tel:+4540504093"><span >+45 40 50 40 93</span></a></li>
+                                <li t-ignore="true"><i class="fa fa-phone"></i> <a href="'tel:+441582512222"><span >+44 (0)1582 51 22 22</span></a></li>
                                 <li t-ignore="true"><i class="fa fa-envelope"></i> <a t-att-href="'mailto:%s' %res_company.email"><span t-field="res_company.email"/></a></li>
                             </ul>
                             <h2>
@@ -103,7 +107,6 @@
                         </div>
                         <div class="col-md-4">
                             <div>
-                                <h4 style="margin-top: 0px;"><span t-esc="res_company.name.split(' ')[0]"/></h4>
                                 <span t-field="res_company.rml_header1"/>
                             </div>
                             <ul class="list-inline js_language_selector mt16 hidden" t-if="(request.website_multilang and len(languages) &gt; 1) or editable">
