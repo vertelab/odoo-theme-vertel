@@ -96,7 +96,7 @@
                                 <li t-ignore="true">UK <i class="fa fa-phone"></i> <a href="tel:+441582512222"><span >+44 1582 51 22 22</span></a></li>
                                 <li t-ignore="true"><i class="fa fa-envelope"></i> <a t-att-href="'mailto:%s' %res_company.email"><span t-field="res_company.email"/></a></li>
                             </ul>
-                            <h2>
+                            <h2 class="hidden">
                                 <a t-att-href="website.social_facebook" t-if="website.social_facebook"><i class="fa fa-facebook-square"/></a>
                                 <a t-att-href="website.social_twitter" t-if="website.social_twitter"><i class="fa fa-twitter"/></a>
                                 <a t-att-href="website.social_linkedin" t-if="website.social_linkedin"><i class="fa fa-linkedin"/></a>
