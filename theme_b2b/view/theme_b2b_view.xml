@@ -109,6 +109,9 @@
                             <div>
                                 <span t-field="res_company.rml_header1"/>
                             </div>
+                            <div class="oe_share">
+                              <h4>Dela &amp;nbsp;<a class="oe_share_facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Frunex.azzar.se%2Fblog%2Fnytt-nyttigt-1%23scrollTop%3D0" target="_Blank"><i class="fa fa-facebook-square"/></a> <a class="oe_share_twitter" href="https://twitter.com/intent/tweet?text=Nytt%20%26%20Nyttigt%20%7C%20runex.com&amp;url=http%3A%2F%2Frunex.azzar.se%2Fblog%2Fnytt-nyttigt-1%23scrollTop%3D0" target="_Blank"><i class="fa fa-twitter"/></a> <a class="oe_share_linkedin" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Frunex.azzar.se%2Fblog%2Fnytt-nyttigt-1%23scrollTop%3D0&amp;title=Nytt%20%26%20Nyttigt%20%7C%20runex.com&amp;" target="_Blank"><i class="fa fa-linkedin"/></a> <a class="oe_share_google" href="https://plus.google.com/share?url=http%3A%2F%2Frunex.azzar.se%2Fblog%2Fnytt-nyttigt-1%23scrollTop%3D0" target="_Blank"><i class="fa fa-google-plus-square"/></a> <a href="mailto:?body=http%3A%2F%2Frunex.azzar.se%2Fblog%2Fnytt-nyttigt-1%23scrollTop%3D0&amp;subject=Nytt%20%26%20Nyttigt%20%7C%20runex.com"><i class="fa fa-envelope-o"/></a></h4>
+                            </div>
                             <ul class="list-inline js_language_selector mt16 hidden" t-if="(request.website_multilang and len(languages) &gt; 1) or editable">
                                 <li t-foreach="languages" t-as="lg">
                                     <a
