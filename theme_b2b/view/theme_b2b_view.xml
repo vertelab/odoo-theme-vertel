@@ -107,10 +107,17 @@
                         </div>
                         <div class="col-md-4">
                             <div>
-                                <span t-field="res_company.rml_header1"/>
+                                <h4 t-field="res_company.rml_header1" style="margin-top: 0px;"/>
                             </div>
                             <div class="oe_share">
-                              <h4>Dela &amp;nbsp;<a class="oe_share_facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Frunex.azzar.se%2Fblog%2Fnytt-nyttigt-1%23scrollTop%3D0" target="_Blank"><i class="fa fa-facebook-square"/></a> <a class="oe_share_twitter" href="https://twitter.com/intent/tweet?text=Nytt%20%26%20Nyttigt%20%7C%20runex.com&amp;url=http%3A%2F%2Frunex.azzar.se%2Fblog%2Fnytt-nyttigt-1%23scrollTop%3D0" target="_Blank"><i class="fa fa-twitter"/></a> <a class="oe_share_linkedin" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Frunex.azzar.se%2Fblog%2Fnytt-nyttigt-1%23scrollTop%3D0&amp;title=Nytt%20%26%20Nyttigt%20%7C%20runex.com&amp;" target="_Blank"><i class="fa fa-linkedin"/></a> <a class="oe_share_google" href="https://plus.google.com/share?url=http%3A%2F%2Frunex.azzar.se%2Fblog%2Fnytt-nyttigt-1%23scrollTop%3D0" target="_Blank"><i class="fa fa-google-plus-square"/></a> <a href="mailto:?body=http%3A%2F%2Frunex.azzar.se%2Fblog%2Fnytt-nyttigt-1%23scrollTop%3D0&amp;subject=Nytt%20%26%20Nyttigt%20%7C%20runex.com"><i class="fa fa-envelope-o"/></a></h4>
+                                <h4>Dela
+                                    <a t-att-href="website.social_facebook" t-if="website.social_facebook"><i class="fa fa-facebook-square"/></a>
+                                    <a t-att-href="website.social_twitter" t-if="website.social_twitter"><i class="fa fa-twitter"/></a>
+                                    <a t-att-href="website.social_linkedin" t-if="website.social_linkedin"><i class="fa fa-linkedin"/></a>
+                                    <a t-att-href="website.social_youtube" t-if="website.social_youtube"><i class="fa fa-youtube-play"/></a>
+                                    <a t-att-href="website.social_googleplus" t-if="website.social_googleplus" rel="publisher"><i class="fa fa-google-plus-square"/></a>
+                                    <a t-att-href="website.social_github" t-if="website.social_github"><i class="fa fa-github"/></a>
+                                </h4>
                             </div>
                             <ul class="list-inline js_language_selector mt16 hidden" t-if="(request.website_multilang and len(languages) &gt; 1) or editable">
                                 <li t-foreach="languages" t-as="lg">
