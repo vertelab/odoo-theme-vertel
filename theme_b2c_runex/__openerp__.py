@@ -32,7 +32,7 @@ Extra theme
     'website': 'http://www.vertel.se',
     'depends': ['website'],
     'data': [
-        'theme_b2c_runex_view.xml',
+        'theme_b2c_view.xml',
         'website_overwritten_templates.xml',
 ],
     'application': False,

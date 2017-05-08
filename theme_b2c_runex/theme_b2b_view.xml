@@ -4,19 +4,19 @@
 
         <!-- Theme B2C -->
         <template id="theme_b2c_runex" inherit_id="website.layout" customize_show="True" active="False" name="Theme B2C" priority="99">
-            <!-- Customize CSS -->
-            <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="after">
-                <link href="/theme_b2c_runex/static/src/css/main.css" rel="stylesheet" type="text/css" />
-                <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
-            </xpath>
-            <!-- Customize javascript -->
-            <xpath expr="//body" position="inside">
-                <script type="text/javascript" src="/theme_b2c_runex/static/src/js/main.js" />
-            </xpath>
             <xpath expr="//ul[@class='dropdown-menu js_usermenu']/li[last()]" position="before">
                 <li><a href="/page/b2c_demo">Website Theme</a></li>
             </xpath>
         </template>
+
+        <template id="assets_frontend" inherit_id="website.assets_frontend" name="Website Sale Social Media Assets Frontend">
+            <xpath expr="." position="inside">
+                <link href="/theme_b2c_runex/static/src/css/main.css" rel="stylesheet" type="text/css" />
+                <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="/theme_b2c_runex/static/src/js/main.js" />
+            </xpath>
+        </template>
+
     </data>
 
     <data noupdate="1">
