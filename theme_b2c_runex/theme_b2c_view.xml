@@ -9,7 +9,7 @@
             </xpath>
         </template>
 
-        <template id="assets_frontend" inherit_id="website.assets_frontend" name="Website Sale Social Media Assets Frontend">
+        <template id="assets_frontend" inherit_id="website.assets_frontend" name="B2C Assets Frontend">
             <xpath expr="." position="inside">
                 <link href="/theme_b2c_runex/static/src/css/main.css" rel="stylesheet" type="text/css" />
                 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
