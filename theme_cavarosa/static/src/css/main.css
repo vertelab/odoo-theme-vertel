@@ -20,7 +20,7 @@ a { text-decoration: none !important; }
 }
 
 @media (min-width: 768px) {
-    .navbar-brand.logo img {
+    .navbar-header, .navbar-brand.logo img {
         display: none;
     }
 }
