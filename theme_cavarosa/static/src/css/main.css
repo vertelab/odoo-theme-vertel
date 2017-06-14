@@ -5,21 +5,20 @@
 h1,h2,h3,h4,p,a { font-family: 'Lato', sans-serif !important; }
 a { text-decoration: none !important; }
 
-#navbar_cavarosa {
-    padding: 0px !important;
-}
-
-#cavarosa_top_menu a {
+#top_menu a {
     color: #fff;
 }
 
-#cavarosa_top_menu a:active, #cavarosa_top_menu a:focus, #cavarosa_top_menu a:hover {
+#top_menu a:active, #top_menu a:focus, #top_menu a:hover {
     background-color: transparent;
 }
 
-#cavarosa_top_menu ul.dropdown-menu.js_usermenu {
+#top_menu ul.dropdown-menu.js_usermenu {
     background-color: #222;
 }
 
 @media (min-width: 768px) {
+    .navbar-brand.logo img {
+        display: none;
+    }
 }
