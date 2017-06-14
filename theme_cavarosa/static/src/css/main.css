@@ -5,6 +5,8 @@
 h1,h2,h3,h4,p,a { font-family: 'Lato', sans-serif !important; }
 a { text-decoration: none !important; }
 
+.navbar-header { width: 100%; }
+
 #top_menu a {
     color: #fff;
 }
