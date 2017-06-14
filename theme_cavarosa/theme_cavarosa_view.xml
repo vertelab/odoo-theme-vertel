@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <!-- Theme Cavarosa -->
+        <template id="theme_cavarosa" inherit_id="website.layout" customize_show="True" active="False" name="Theme Cavarosa" priority="50">
+            <!-- Customize CSS -->
+            <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="before">
+                <link href="/theme_cavarosa/static/src/css/main.css" rel="stylesheet" />
+            </xpath>
+            <xpath expr="//ul[@class='dropdown-menu js_usermenu']" position="attributes">
+                <attribute name="class">dropdown-menu js_usermenu hidden_for_cavarosa</attribute>
+            </xpath>
+            <xpath expr="//div[@class='navbar navbar-default navbar-static-top']" position="after">
+                <a href="/"><img id="cavarosa-logo" src="/logo500.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name" class="hidden-xs" /></a>
+                <div id="navbar_cavarosa" class="collapse navbar-collapse navbar-top-collapse hidden-xs">
+                    <ul class="nav navbar-inverse nav-justified" id="cavarosa_top_menu">
+                        <t t-foreach="website.menu_id.child_id" t-as="submenu">
+                            <t t-call="website.submenu"/>
+                        </t>
+                        <li class="divider" t-ignore="true" t-if="website.user_id != user_id"/>
+                        <li class="dropdown" t-ignore="true" t-if="website.user_id != user_id">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <b>
+                                    <span t-esc="user_id.name"/>
+                                    <span class="caret"></span>
+                                </b>
+                            </a>
+                            <ul class="dropdown-menu js_usermenu" role="menu">
+                                <li><a href="/web" role="menuitem">My Account</a></li>
+                                <li class="divider"/>
+                                <li><a t-attf-href="/web/session/logout?redirect=/" role="menuitem">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </xpath>
+            <xpath expr="//div[@class='navbar navbar-default navbar-static-top']" position="attributes">
+                <attribute name="class">navbar navbar-default navbar-static-top hidden-lg hidden-md hidden-sm</attribute>
+            </xpath>
+        </template>
+
+        <!-- Customize JS -->
+        <template id="assets_frontend_override" inherit_id="website_sale.assets_frontend">
+            <xpath expr="//script[last()]" position="after">
+                <script type="text/javascript" src="/theme_cavarosa/static/src/js/main.js" />
+            </xpath>
+        </template>
+
+    </data>
+</openerp>

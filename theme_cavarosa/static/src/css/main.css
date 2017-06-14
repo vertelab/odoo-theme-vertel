@@ -1,0 +1,22 @@
+﻿/*=============================================================
+                    Theme Cavarosa
+ ============================================================ */
+
+#navbar_cavarosa {
+    padding: 0px !important;
+}
+
+#cavarosa_top_menu a {
+    color: #fff;
+}
+
+#cavarosa_top_menu a:active, #cavarosa_top_menu a:focus, #cavarosa_top_menu a:hover {
+    background-color: transparent;
+}
+
+#cavarosa_top_menu ul.dropdown-menu.js_usermenu {
+    background-color: #222;
+}
+
+@media (min-width: 768px) {
+}
