@@ -13,7 +13,15 @@
                 <attribute name="class">dropdown-menu js_usermenu hidden_for_cavarosa</attribute>
             </xpath>
             <xpath expr="//div[@class='navbar navbar-default navbar-static-top']" position="after">
-                <a href="/"><img id="cavarosa-logo" src="/logo500.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name" class="hidden-xs" /></a>
+                <div class="container hidden-xs" style="width: 100%;">
+                    <div class="col-md-4 col-sm-6">
+                        <a href="/"><img id="cavarosa-logo" src="/logo500.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name" /></a>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <h1 class="text-center" style="text-transform: uppercase;"><t t-raw="additional_title"/></h1>
+                    </div>
+                    <div class="col-md-4 hidden-sm"/>
+                </div>
                 <div id="navbar_cavarosa" class="collapse navbar-collapse navbar-top-collapse hidden-xs">
                     <ul class="nav navbar-inverse nav-justified" id="cavarosa_top_menu">
                         <t t-foreach="website.menu_id.child_id" t-as="submenu">

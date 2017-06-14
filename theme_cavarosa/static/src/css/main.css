@@ -2,7 +2,7 @@
                     Theme Cavarosa
  ============================================================ */
 
-h1,h2,h3,h4,p { font-family: 'Lato', sans-serif; }
+h1,h2,h3,h4,p,a { font-family: 'Lato', sans-serif !important; }
 a { text-decoration: none !important; }
 
 #navbar_cavarosa {
