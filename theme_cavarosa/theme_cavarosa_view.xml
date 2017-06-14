@@ -6,6 +6,7 @@
         <template id="theme_cavarosa" inherit_id="website.layout" customize_show="True" active="False" name="Theme Cavarosa" priority="50">
             <!-- Customize CSS -->
             <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="before">
+                <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet"/>
                 <link href="/theme_cavarosa/static/src/css/main.css" rel="stylesheet" />
             </xpath>
             <xpath expr="//ul[@class='dropdown-menu js_usermenu']" position="attributes">
