@@ -29,6 +29,7 @@ Extra themes made by Robert Frost.
 ====================
 """,
     'author': 'Vertel AB',
+    'license': 'AGPL-3',
     'website': 'http://www.vertel.se',
     'depends': ['website', 'website_less', 'snippet_addons'],
     'data': [

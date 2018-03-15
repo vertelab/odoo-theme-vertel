@@ -29,6 +29,7 @@ Snippets build for Vertel AB
 ============================
 """,
     'author': 'Vertel AB',
+    'license': 'AGPL-3',
     'website': 'http://www.vertel.se',
     'depends': ['website'],
     'data': [
