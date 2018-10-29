@@ -11,12 +11,24 @@ a { text-decoration: none !important; }
     color: #fff;
 }
 
+#top_menu ul.dropdown-menu > li > a {
+    color: #000;
+}
+
 #top_menu a:active, #top_menu a:focus, #top_menu a:hover {
     background-color: transparent;
 }
 
+/*
 #top_menu ul.dropdown-menu.js_usermenu {
     background-color: #222;
+}
+*/
+
+@media (max-width: 767px) {
+    ul.dropdown-menu {
+        background-color: #000 !important;
+    }
 }
 
 @media (min-width: 768px) {
