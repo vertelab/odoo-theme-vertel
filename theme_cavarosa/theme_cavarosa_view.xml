@@ -4,11 +4,6 @@
 
         <!-- Theme Cavarosa -->
         <template id="theme_cavarosa" inherit_id="website.layout" customize_show="True" active="False" name="Theme Cavarosa" priority="50">
-            <!-- Customize CSS -->
-            <xpath expr="//t[@t-call-assets='website.assets_frontend']" position="before">
-                <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet"/>
-                <link href="/theme_cavarosa/static/src/css/main.css" rel="stylesheet" />
-            </xpath>
             <xpath expr="//ul[@id='top_menu']" position="attributes">
                 <attribute name="class">nav navbar-inverse nav-justified</attribute>
             </xpath>
@@ -26,7 +21,12 @@
                     <div class="col-md-4 hidden-sm"/>
                 </div>
             </xpath>
-            <xpath expr="//body" position="inside">
+        </template>
+
+        <template id="theme_cavarosa_assets_frontend" inherit_id="website.assets_frontend" name="Theme Cavarosa Assets Frontend">
+            <xpath expr="." position="inside">
+                <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet"/>
+                <link href="/theme_cavarosa/static/src/css/main.css" rel="stylesheet" />
                 <script type="text/javascript" src="/theme_cavarosa/static/src/js/main.js" />
             </xpath>
         </template>
