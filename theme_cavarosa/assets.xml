@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<!-- Customize header  -->
+<template id="custom_header" inherit_id="website.layout" name="Custom Header">
+
+  <!-- Add an element after the top menu  -->
+ <xpath expr="//t[@t-call-assets='web.assets_frontend']" position="after">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Ubuntu&amp;display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
+    
+    </xpath>
+    </template>
+<template id="mystyle" name="My style" inherit_id="website.assets_frontend">
+    <xpath expr="link[last()]" position="after">
+        <link rel="stylesheet" type="text/less" href="/theme_empty/static/src/less/main.less"/>
+    </xpath>
+</template>
+</odoo>

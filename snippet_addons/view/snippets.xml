@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<openerp>
+<odoo>
     <data>
 
         <!-- Customize Snippets -->
@@ -884,7 +884,7 @@
         <!-- Snippet options -->
         <template id="more_snippet_options" inherit_id="website.snippet_options" name="More Snippet Options">
 
-            <xpath expr="//div[@data-snippet-option-id='transform']" position="after">
+            <xpath expr="//div" position="after">
                 <!-- Hover button options -->
                 <div data-snippet-option-id='hover_button' data-selector="a, .btn, .btn-default, .hover">
                     <li class="dropdown-submenu">
@@ -1051,6 +1051,6 @@
         </template>
 
     </data>
-</openerp>
+</odoo>
 
 

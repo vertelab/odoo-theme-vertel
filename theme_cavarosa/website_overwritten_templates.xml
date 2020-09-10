@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- vim:fdn=3:
--->
-<openerp>
-    <data>
-
-<!-- Error and special pages -->
-
-<template id="website.default_page">
+<odoo>
+ <template id="website_default_page">
     <t t-call="website.layout">
       <div id="wrap" class="oe_structure oe_empty"></div>
     </t>
 </template>
 
-<template id="website.page_404">
-    <t t-call="website.404">
+
+<template id="website_page_404">
+    <t t-call="website_404">
         <div class="container">
             <div class="well mt32">
                 <p>This page does not exists, but you can create it as you are administrator of this site.</p>
@@ -21,26 +16,45 @@
             </div>
             <div class="text-center text-muted">Edit the content below this line to adapt the default "page not found" page.</div>
         </div>
-        <hr/>
     </t>
 </template>
 
-<template id="website.http_error">
+
+<template id="website_http_error">
     <t t-call="website.layout">
         <div id="wrap">
             <div class="oe_structure">
                 <h1 class="container mt32"><t t-esc="status_code"/>: <t t-esc="status_message"/></h1>
             </div>
 
-            <t t-if="editable or request.debug">
+            <t t-if="editable or request.debug">o
                 <t t-call="website.http_error_debug"/>
             </t>
         </div>
     </t>
 </template>
 
+<!--   <template id="cavarosa_header_image" inherit_id="portal.frontend_layout" name=" Header Image">
+    <xpath expr="//header" position="before">
+      <div t-raw="image_top" />
+    </xpath>
+  </template>
 
-<template id="website.403">
+  <record id="website.default_page" model="ir.ui.view">
+    <field name="arch" type="xml">
+      <t t-name="website.default_page">
+        <t t-call="website.layout">
+          <t t-set="image_top">
+            <div class="oe_structure" />
+          </t>
+          <div id="wrap" class="oe_structure oe_empty" />
+        </t>
+      </t>
+    </field>
+  </record> -->
+
+
+<template id="website_403">
     <t t-call="website.layout">
         <div id="wrap">
             <div class="container">
@@ -53,13 +67,15 @@
                 </ul>
             </div>
             <t t-if="editable or request.debug">
-                <t t-call="website.http_error_debug"/>
+                <t t-call="website_http_error_debug"/>
             </t>
         </div>
     </t>
 </template>
 
-<template id="website.404">
+
+
+<template id="website_404">
     <t t-call="website.layout">
         <div id="wrap">
             <t t-raw="0"/>
@@ -86,17 +102,17 @@
     </t>
 </template>
 
-<!-- Actual pages -->
 
-<template id="website.homepage" name="Homepage" page="True" priority="29">
+<template id="website_homepage" name="Homepage">
     <t t-call="website.layout">
       <div id="wrap" class="oe_structure oe_empty"></div>
     </t>
 </template>
 
-<template id="website.company_description" name="Company Description">
+
+<template id="website_company_description" name="Company Description">
     <address itemscope="itemscope" itemtype="http://schema.org/Organization">
-        <!-- TODO widget contact must add itemprop attributes -->
+       
         <div t-field="res_company.partner_id" t-field-options='{
                 "widget": "contact",
                 "fields": ["name", "address", "phone", "mobile", "fax", "email"]}'/>
@@ -106,7 +122,8 @@
     </a>
 </template>
 
-<template id="website.contactus" name="Contact us" page="True">
+
+<template id="website_contactus" name="Contact us">
     <t t-call="website.layout">
       <div id="wrap">
         <div class="oe_structure"/>
@@ -128,7 +145,7 @@
                     <div groups="base.group_website_publisher" t-ignore="true" class="pull-right css_editable_mode_hidden" t-att-style="style or ''">
                         <a class="btn btm-sm btn-default" t-att-href="'/web#return_label=Website&amp;model=%s&amp;id=%s' % (res_company._name, res_company.id)">Change address</a>
                     </div>
-                    <t t-call="website.company_description"/>
+                    <t t-call="website_company_description"/>
                 </div>
             </div>
         </div>
@@ -137,7 +154,8 @@
     </t>
 </template>
 
-<template id="website.aboutus" name="About us" page="True">
+
+<template id="website_aboutus" name="About us">
     <t t-call="website.layout">
         <div id="wrap">
             <div class="oe_structure">
@@ -178,7 +196,6 @@
             <div class="oe_structure"></div>
         </div>
     </t>
-</template>
+</template> 
+</odoo>
 
-     </data>
-</openerp>
