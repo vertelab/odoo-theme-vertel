@@ -40,3 +40,4 @@ class ThemeCavarosa(http.Controller):
         user = request.registry['res.users'].browse(request.cr, request.uid, request.uid)
         response = werkzeug.wrappers.Response()
         return request.registry['website']._image(request.cr, request.uid, 'res.company', user.company_id.id, 'logo', response, max_width=1024, max_height=None, )
+reger

@@ -36,3 +36,8 @@ a { text-decoration: none !important; }
         display: none;
     }
 }
+
+.dropdown-menu.js_usermenu.dropdown-menu-right.show {
+    background-color: black;
+    opacity: 0.7;
+}
