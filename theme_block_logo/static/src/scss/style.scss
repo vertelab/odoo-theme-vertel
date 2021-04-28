@@ -1,0 +1,156 @@
+
+#myCarousel0 {
+    border-bottom: 2px solid #FF4100;
+}
+
+.round-icon {
+    border-radius: 100px;
+    border: 2px solid #FF4100;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.round-icon i {
+    padding-top: 33%;
+    width:200px;
+    height: 200px;
+    color: #fff;
+}
+
+.jumbotron{
+    background-color: #333;
+}
+
+#line-top{
+    margin:auto;
+    width:72%;
+    border: 5px solid #FF4100;
+    border-radius: 7px 7px 0px 0px;
+    box-shadow: 0px 0px 7px #333;
+}
+
+.kg-icon {
+    border: 2px solid #FE4100;
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.bl-body {
+    background: #fff;
+    list-style: none;
+}
+
+/* MENU */
+.bl-navbar {
+    font-family: 'Ubuntu';
+    font-size: 1.5em;
+    background: none;
+    width: 100%;
+}
+
+#bl-menu-bar > div > ul > li > a {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#bl-menu-bar > div {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.bl-navbar-fixed-top {
+    font-family: 'Ubuntu';
+    font-size: 1.5em;
+    z-index: 99;
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    background: #e1e1e1;
+    box-shadow: 0px 0px 20px #333;
+}
+
+/* COMPANY LOGO */
+    #logo-box {
+    padding: 0px;
+}
+
+#bl-logo {
+    width: 100%;
+    display:block;
+}
+
+/* MENU TEXT */
+#bl-menu-bar > ul > li > a {
+    color: #333;
+}
+
+#top_menu > .dropdown > .dropdown-menu {
+    margin: 0px;
+    border-radius: 0px;
+    padding: 0px;
+}
+
+#top_menu > .dropdown > .dropdown-menu span {
+    font-size: 1.2em;
+}
+
+#top_menu > .dropdown > .dropdown-menu > li > a:hover,
+#top_menu > .dropdown > .dropdown-menu > .active > a,
+#top_menu > .dropdown > .dropdown-menu > .active > a:focus,
+#top_menu > .dropdown >.dropdown-menu > .active > a:hover {
+    color: #333;
+    background-color: #fff;
+}
+
+
+/* STYLE WHEN MOUSE HOVER */
+#bl-menu-bar > ul > li > a:hover,
+#bl-menu-bar > ul > li > a:focus {
+    color: #fff;
+    background-color: #333;
+}
+
+/* STYLE WHEN PAGE ACTIVE */
+#bl-menu-bar > ul > .active > a {
+    color: #fff;
+    background-color: #333;
+}
+
+/* FOOTER STYLE*/
+#footer {
+    background-color: #0F1C26;
+    box-shadow: 0px 0px 5px #FF4100;
+}
+
+#footer h5 {
+    color: #FF4100;
+}
+
+@media screen and (max-width: 480px){
+    #iso-img {
+        margin-top: 0px ;
+    }
+}
+
+#bl-menu-bar {
+    width: 100%;
+}
+
+.navbar {
+    background-color: #333;
+}
+
+
+.navbar a {
+    color: #fff !important;
+}
+
+// .li.nav-item.dropdown {
+//     visibility: hidden;
+// }
