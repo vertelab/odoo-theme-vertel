@@ -1,0 +1,59 @@
+/*=============================================================
+                       Block Logo
+  =============================================================*/
+
+.container::before, .container::after, .row::before, .row::after {
+    display: table;
+    content: " ";
+}
+
+.container::after, .row::after {
+    clear: both;
+}
+
+.bl-navbar {
+    width: 100%;
+    margin: 1px 0px 1px 0px;
+    max-height: 40px;
+}
+
+.bl-navbar-fixed-top {
+    transition: all 0.5s ease-in 0s;
+    top: 0px;
+    position: fixed;
+    padding: 5px 0px 2px 0px;
+    width: 100%;
+}
+
+.bl2-menu-bar {
+    margin: auto;
+    padding: 0px;
+    width: 100%;
+}
+.carousel-img > img {
+    max-height: 100% !important;
+    padding: 0;
+}
+.navbar-brand.logo {
+    padding: 0 !important;
+}
+
+.navbar-brand.logo img {
+    height: 50px !important;
+}
+
+.o_brand_promotion {
+    display: none;
+}
+
+footer {
+    box-shadow: 0px 0px 5px #FF4100;
+}
+
+h1, h2, h3 {
+    margin-top: 20px;
+}
+
+h4, h5, h6 {
+    margin-top: 10px;
+}

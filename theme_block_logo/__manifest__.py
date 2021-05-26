@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 ##############################################################################
 #
-#    OpenERP, Open Source Management Solution, third party addon
-#    Copyright (C) 2004-2015 Vertel AB (<http://vertel.se>).
+#    Copyright (C) 2021 Vertel AB
+#    All Rights Reserved
 #
 #    This program is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU Affero General Public License as
-#    published by the Free Software Foundation, either version 3 of the
-#    License, or (at your option) any later version.
+#    it under the terms of the GNU Affero General Public License as published
+#    by the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
 #
 #    This program is distributed in the hope that it will be useful,
 #    but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -18,22 +18,34 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-
+#
+# https://www.odoo.com/documentation/14.0/reference/module.html
+#
 {
-    'name': 'Theme Block Logo',
+    'name': "Theme Block Logo",
     'version': '1.0',
-    'category': 'Theme/Creative',
-    'summary': 'A Theme Style',
-    'description': """asdadadas""",
+    'summary': "Theme for Kastrup & Genberg",
+    'category': 'Theme/Creative', 
+    'description': """
+        Extra themes made by Haojun.
+        ============================
+        """,
     'author': 'Vertel AB',
-    'license': 'AGPL-3',
     'website': 'http://www.vertel.se',
-    'depends': ['theme_common'],
+    'license': 'AGPL-3',
+    'depends': [
+        'crm',
+        'sale_management',
+        'theme_common',
+        'website_blog',
+        'website_sale',
+        ],
     'data': [
-        'view/assets.xml',
-        
-        # 'view/kastrup_genberg.xml'
-],
+        'views/assets.xml',
+        'views/kastrup_genberg.xml',
+        ],
+    'demo': [],
+    'installable': True,
     'application': True,
+    'auto_install': False
 }
-

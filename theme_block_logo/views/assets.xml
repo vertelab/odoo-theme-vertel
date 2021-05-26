@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="_assets_primary_variables" inherit_id="website._assets_primary_variables" priority="1">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/scss" href="/theme_block_logo/static/src/scss/primary_variables.scss" />
+        </xpath>
+    </template>
+    <template id="_assets_frontend_helpers" inherit_id="website._assets_frontend_helpers" priority="1">
+        <xpath expr="//link" position="before">
+            <link rel="stylesheet" type="text/scss" href="/theme_block_logo/static/src/scss/bootstrap_overridden.scss"/>
+        </xpath>
+    </template>
+    <template id="assets_frontend" inherit_id="website.assets_frontend" name="Block Logo Assets Frontend">
+        <xpath expr="//link[last()]" position="after">
+            <link rel="stylesheet" type="text/css" href="/theme_block_logo/static/src/css/hover.css" />
+            <link rel="stylesheet" type="text/css" href="/theme_block_logo/static/src/css/theme_block_logo.css" />
+        </xpath>
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/theme_block_logo/static/src/js/script.js" />
+        </xpath>
+    </template>
+</odoo>

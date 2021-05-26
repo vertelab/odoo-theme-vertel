@@ -26,7 +26,19 @@ from datetime import datetime
 from lxml import html
 import werkzeug
 
-class website(models.Model):
+from odoo import models
+
+
+class ThemeBlockLogo(models.AbstractModel):
+    _inherit = 'theme.utils'
+
+    def _theme_block_logo_post_copy(self, mod):
+        self.enable_view('website.option_ripple_effect')
+        # ~ self.enable_view('website.template_header_default')
+        # ~ self.enable_view('website.footer_custom')
+
+
+class Website(models.Model):
     _inherit = 'website'
        
     def get_news(self, text, length=0):
@@ -52,14 +64,14 @@ class website(models.Model):
 class BlockLogo(http.Controller):
     @http.route(['/logo500.png'], type='http', auth="public", cors="*")
     def company_logo500(self):
-        user = request.registry['res.users'].browse(request.cr, request.uid, request.uid)
+        user = request.env['res.users'].browse(request.cr, request.uid)
         response = werkzeug.wrappers.Response()
-        return request.registry['website']._image(request.cr, request.uid, 'res.company', user.company_id.id, 'logo',
+        return request.env['website']._image(request.cr, request.uid, 'res.company', user.company_id.id, 'logo',
                                                   response, max_width=500, max_height=None, )
 
     @http.route(['/logo1024.png'], type='http', auth="public", cors="*")
     def company_logo1024(self):
-        user = request.registry['res.users'].browse(request.cr, request.uid, request.uid)
+        user = request.env['res.users'].browse(request.cr, request.uid)
         response = werkzeug.wrappers.Response()
-        return request.registry['website']._image(request.cr, request.uid, 'res.company', user.company_id.id, 'logo',
+        return request.env['website']._image(request.cr, request.uid, 'res.company', user.company_id.id, 'logo',
                                                   response, max_width=1024, max_height=None, )

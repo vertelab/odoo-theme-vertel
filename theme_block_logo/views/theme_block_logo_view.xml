@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <!-- Theme Block Logo I-->
+  <template id="theme_block_logo_I" inherit_id="website.layout" customize_show="True" active="False" name="Theme Block Logo I" priority="99">
+    <!-- Customize CSS -->
+    <!--
+         <xpath expr="//t[@t-call-assets='website.assets_editor']" position="after">
+         <link href="/theme_block_logo/static/src/css/theme_block_logo.css" rel="stylesheet" />
+         <style>
+         .bl-body {
+         background: #fff;
+         list-style: none;
+         }
+         
+         /* MENU */
+         .bl-navbar {
+         font-family: 'Ubuntu';
+         font-size: 1.5em;
+         background: none;
+         width: 100%;
+         }
+         
+         #bl-menu-bar > div > ul > li > a {
+         padding-top: 25px;
+         padding-bottom: 25px;
+         }
+         
+         #bl-menu-bar > div {
+         width: 100%;
+         padding: 0px;
+         margin: 0px;
+         }
+         
+         .bl-navbar-fixed-top {
+         font-family: 'Ubuntu';
+         font-size: 1.5em;
+         z-index: 99;
+         top: 0px;
+         position: fixed;
+         width: 100%;
+         background: #e1e1e1;
+         box-shadow: 0px 0px 20px #333;
+         }
+         
+         /* COMPANY LOGO */
+         #logo-box {
+         padding: 0px;
+         }
+         
+         #bl-logo {
+         width: 100%;
+         display:block;
+         }
+         
+         /* MENU TEXT */
+         #bl-menu-bar > ul > li > a {
+         color: #333;
+         }
+         
+         #top_menu &gt; .dropdown &gt; .dropdown-menu {
+         margin: 0px;
+         border-radius: 0px;
+         padding: 0px;
+         }
+         
+         #top_menu &gt; .dropdown &gt; .dropdown-menu span {
+         font-size: 1.2em;
+         }
+         
+         #top_menu &gt; .dropdown &gt; .dropdown-menu &gt; li &gt; a:hover,
+         #top_menu &gt; .dropdown &gt; .dropdown-menu &gt; .active &gt; a,
+         #top_menu &gt; .dropdown &gt; .dropdown-menu &gt; .active &gt; a:focus,
+         #top_menu &gt; .dropdown &gt;.dropdown-menu &gt; .active &gt; a:hover {
+         color: #333;
+         background-color: #fff;
+         }
+         
+         
+         /* STYLE WHEN MOUSE HOVER */
+         #bl-menu-bar > ul > li > a:hover,
+         #bl-menu-bar > ul > li > a:focus {
+         color: #fff;
+         background-color: #333;
+         }
+         
+         /* STYLE WHEN PAGE ACTIVE */
+         #bl-menu-bar > ul > .active > a {
+         color: #fff;
+         background-color: #333;
+         }
+         
+         /* FOOTER STYLE*/
+         .bl-footer {
+         
+         }
+         </style>
+         </xpath>
+    -->
+    <!-- 
+         add company logo 
+    -->
+    <xpath expr="//div[@id='wrapwrap']/header" position="before">
+      <div class="container">
+        <div id="logo-box" class="col-lg-12">
+          <img id="bl-logo" class="img img-fluid" style="width:100%;" src="/theme_block_logo/static/src/img/kastrup_genberg/header.jpg" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name" />
+        </div>
+      </div>
+    </xpath>
+    
+    
+
+  </template>
+</odoo>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--
+         FOOTER
+    -->
+    <template id="layout_footer_copyright24" inherit_id="website.layout" name="Footer Copyright42">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <div id="footer">
+                <div class="pull-right" t-ignore="true" t-if="not editable">
+                    Create a
+                    <a href="http://www.odoo.com/page/website-builder">free website</a>
+                    with
+                    <a class="label label-danger" href="http://www.odoo.com/page/website-builder">Odoo</a>
+                </div>
+                <div class="pull-left text-muted" itemscope="itemscope" itemtype="http://schema.org/Organization">
+                    Copyright &amp;copy;
+                    <span t-field="res_company.name" itemprop="name">Company name</span>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

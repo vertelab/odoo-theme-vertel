@@ -1,0 +1,82 @@
+//------------------------------------------------------------------------------
+// Colors
+//------------------------------------------------------------------------------
+
+$o-color-palettes: (
+    (   // Palette 1
+        'o-color-1':        #984c46,
+        'o-color-2':        #23323b,
+        'o-color-3':        #eceae4,
+        'o-color-4':        #FFFFFF,
+        'o-color-5':        #0F1C26, // Menu, Footer, Copyright bgcolor
+        'o-cc1-text':       #333,
+        'o-cc1-headings':   #f73b0a, // Main headings
+        'o-cc5-headings':   #f73b0a, // Footer headings
+//        'o-cc4-bg':         1 //#b4904f,
+//        'o-cc3-btn-primary':'o-color-4',
+//        'o-cc3-link':       'o-color-4',
+//        'o-cc4-link':       'o-color-4',
+//        'o-cc5-btn-secondary':'o-color-2',
+
+        'menu':             5,
+        'footer':           5,
+        'copyright':        5,
+    ),
+);
+
+//------------------------------------------------------------------------------
+// Fonts
+//------------------------------------------------------------------------------
+
+$o-theme-h1-font-size-multiplier: (48.83 / 16);
+$o-theme-h2-font-size-multiplier: (34.285714286 / 16); // Fixed
+$o-theme-h3-font-size-multiplier: (27.428571429 / 16); // Fixed
+$o-theme-h4-font-size-multiplier: (20.571428571 / 16); // Fixed
+$o-theme-h5-font-size-multiplier: (20.00 / 16);
+$o-theme-h6-font-size-multiplier: 1.1;
+$o-line-height-base: 1.1;
+$o-theme-font-configs: (
+    'Nunito': (
+        'family': ('Nunito', sans-serif),
+        'url': 'Nunito:300,300i,400,400i,700,700i',
+    ),
+    'Roboto': (
+        'family': ('Roboto', sans-serif),
+        'url': 'Roboto:300,300i,400,400i,700,700i',
+    ),
+    'Open Sans': (
+        'family': ('Open Sans', sans-serif),
+        'url': 'Open+Sans:300,300i,400,400i,700,700i',
+    ),
+    'Source Sans Pro': (
+        'family': ('Source Sans Pro', sans-serif),
+        'url': 'Source+Sans+Pro:300,300i,400,400i,700,700i',
+    ),
+);
+
+
+
+//------------------------------------------------------------------------------
+// Website customizations
+//------------------------------------------------------------------------------
+
+$o-website-values-palettes: (
+    (
+        'font':                     'Nunito',
+//        'headings-font':            'Nunito',
+//        'navbar-font':              'Nunito',
+//        'buttons-font':             'Nunito',
+
+        'font-size-base':           (14 / 16) * 1rem,
+        'header-font-size':         (14 / 16) * 1rem,
+
+        'btn-ripple':               true,
+        'btn-primary-outline':      false,
+        'btn-secondary-outline':    false,
+        'btn-border-radius':        6px,
+        'btn-font-size':            (14 / 16) * 1rem,
+        'btn-padding-x':            (12 / 16) * 1rem,
+        'btn-padding-y':            (6 / 16) * 1rem,
+        'btn-padding-y-lg':         (10 / 16) * 1rem,
+    ),
+);
