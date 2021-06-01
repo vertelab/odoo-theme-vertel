@@ -5,7 +5,7 @@
     -->
     <template id="insert_block_logo" inherit_id="website.layout" customize_show="True" active="True" name="Block Logo">
         <xpath expr="//div[@id='wrapwrap']/header" position="before">
-            <div id="block_logo_div" class="oe_structure o_editable o_dirty">
+            <div id="block_logo_div" class="oe_structure o_editable o_dirty d-none d-sm-none d-md-block">
                 <section class="s_picture oe_img_bg">
                     <div class="container">
                         <img class="img-fluid o_we_custom_image mx-auto" style="width:100%; padding-top: 2%;" src="/theme_block_logo/static/src/img/kastrup_genberg/header.jpg" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name" />
@@ -13,28 +13,26 @@
                 </section>
             </div>
         </xpath>
-        <xpath expr="//div[@id='top_menu_container']" position="attributes">
-            <attribute name="style" add="margin: 0;" separator=" " />
-            <attribute name="style" add="min-width: 100%;" separator=" " />
-        </xpath>
     </template>
     <!--
-         EXPAND NAVBAR
+         HIDE SMALL LOGO
     -->
-    <template id="expand_navbar" inherit_id="website.navbar_nav" customize_show="True" active="True" name="Expand Navbar">
-        <xpath expr="//ul[@id='top_menu']" position="attributes">
-            <attribute name="style" add="min-width: 100% !important;" separator=" " />
-            <!--
-                 <attribute name="style" add="justify-content: space-around !important;" separator=" " />
-            -->
-        </xpath>
+    <template id="hide_small_logo" inherit_id="website.option_header_brand_logo" customize_show="True" active="True" name="Hide Small Logo">
+        <a href="/" t-attf-class="navbar-brand logo #{_link_class}" position="replace">
+            <a href="/" class="navbar-brand logo" style="width: 0px;">
+<!--
+            t-attf-class="navbar-brand logo #{_link_class}" 
+-->
+                <span t-field="website.logo" t-options="{'widget': 'image'}" role="img" t-att-aria-label="'Logo of %s' % website.name" t-att-title="website.name"/>
+            </a>
+        </a>
     </template>
     <!--
          HIDE CONTACT US
     -->
     <template id="hide_contact_us" inherit_id="website.template_header_default_oe_structure_header_default_1" customize_show="True" active="True" name="Hide 'Contact Us' in navbar">
         <xpath expr="//div[@id='oe_structure_header_default_1']" position="attributes">
-            <attribute name="class" add="d-none" separator=" " />
+            <attribute name="t-attf-class" add="d-none" separator=" " />
         </xpath>
     </template>
     <!--
@@ -42,106 +40,100 @@
     -->
     <template id="theme_block_logo_footer" inherit_id="website.footer_custom" name="Block Logo Footer" customize_show="True" active="True">
         <xpath expr="//div[@id='footer']" position="replace">
-            <div class="container hidden-print">
-                <div class="row">
-                    <div class="row col-md-8 col-xs-12">
-                        <div class="col-md-4 col-xs-12" id="info">
-                            <h4>Kontakta Oss</h4>
-                            <ul class="list-unstyled">
-                                <li t-ignore="true">
-                                    <i class="fa fa-phone" />
-                                    <span t-field=" res_company.phone" />
-                                </li>
-                                <li t-ignore="true">
-                                    <i class="fa fa-map-marker" />
-                                    <span t-field=" res_company.street" />
-                                    <br />
-                                    <span class="text-center" t-field="res_company.zip" />
-                                    ,
-                                    <span class="text-center" t-field="res_company.city" />
-                                    <br />
-                                    <span class="text-center" t-field="res_company.country_id.name" />
-                                </li>
-                                <li t-ignore="true">
-                                    <i class="fa fa-envelope" />
-                                    <span t-field=" res_company.email" />
-                                </li>
-                            </ul>
-                            <h2>
-                                <a t-att-href="website.social_facebook" t-if="website.social_facebook">
-                                    <i class="fa fa-facebook-square" />
-                                </a>
-                                <a t-att-href="website.social_twitter" t-if="website.social_twitter">
-                                    <i class="fa fa-twitter" />
-                                </a>
-                                <a t-att-href="website.social_linkedin" t-if="website.social_linkedin">
-                                    <i class="fa fa-linkedin" />
-                                </a>
-                                <a t-att-href="website.social_youtube" t-if="website.social_youtube">
-                                    <i class="fa fa-youtube-play" />
-                                </a>
-                                <a t-att-href="website.social_github" t-if="website.social_github">
-                                    <i class="fa fa-github" />
-                                </a>
-                            </h2>
+            <div id="footer" class="oe_structure oe_structure_solo">
+                <section class="s_text_block" data-snippet="s_text_block" data-name="Text">
+                    <div class="container">
+                        <div class="row">
+                            <div class="row col-lg-7">
+                                <div class="col-sm-4 col-12">
+                                    <h4>Kontakta Oss</h4>
+                                    <ul class="list-unstyled mb8">
+                                        <li>
+                                            <a href="/blog/1">Nyheter</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-unstyled">
+                                        <li t-ignore="true">
+                                            <i class="fa fa-phone" />
+                                            <span t-field=" res_company.phone" />
+                                        </li>
+                                        <li t-ignore="true">
+                                            <i class="fa fa-map-marker" />
+                                            <span t-field=" res_company.street" />
+                                            <br />
+                                            <span class="text-center" t-field="res_company.zip" />
+                                            ,
+                                            <span class="text-center" t-field="res_company.city" />
+                                            <br />
+                                            <span class="text-center" t-field="res_company.country_id.name" />
+                                        </li>
+                                        <li t-ignore="true">
+                                            <i class="fa fa-envelope" />
+                                            <span t-field=" res_company.email" />
+                                        </li>
+                                    </ul>
+                                    <h2>
+                                        <a t-att-href="website.social_facebook" t-if="website.social_facebook">
+                                            <i class="fa fa-facebook-square" />
+                                        </a>
+                                        <a t-att-href="website.social_twitter" t-if="website.social_twitter">
+                                            <i class="fa fa-twitter" />
+                                        </a>
+                                        <a t-att-href="website.social_linkedin" t-if="website.social_linkedin">
+                                            <i class="fa fa-linkedin" />
+                                        </a>
+                                        <a t-att-href="website.social_youtube" t-if="website.social_youtube">
+                                            <i class="fa fa-youtube-play" />
+                                        </a>
+                                        <a t-att-href="website.social_github" t-if="website.social_github">
+                                            <i class="fa fa-github" />
+                                        </a>
+                                    </h2>
+                                </div>
+                                <div class="col-sm-4 col-6 mt8">
+                                    <t t-if="request.env.context['lang'] == 'sv_SE'">
+                                        <t t-raw="request.env['ir.config_parameter'].sudo().get_param('img_aaa')" />
+                                    </t>
+                                    <t t-if="not request.env.context['lang'] == 'sv_SE'">
+                                        <t t-raw="request.env['ir.config_parameter'].sudo().get_param('img_aaa_en')" />
+                                    </t>
+                                </div>
+                                <div class="col-sm-3 col-6">
+                                    <a href="https://www.uc.se/risksigill2?showorg=5560454521&amp;language=swe" target=" _ blank" title="Sigillet är utfärdat av UC AB. Klicka på bilden för information om UC:s Riskklasser.">
+                                        <img src="/theme_block_logo/static/src/img/kastrup_genberg/sigill.png" style="margin:auto;" alt="sigill" oncontextmenu="return false" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 offset-lg-1">
+                                <div>
+                                    <h4>
+                                        <span class="oe_editable" t-field="res_company.name" />
+                                    </h4>
+                                    <p style="color: #fff;">Kastrup &amp; Genberg AB grundades 1945 och har sedan dess levererat komponenter till industripannor. Programmet omfattar idag produkter för rengöring och renhållning av värmeytor i industripannor, maskiner för rengöring av rör samt produkter för rökgasanalys.</p>
+                                </div>
+                                <ul class="list-inline js_language_selector mt16" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+                                    <li t-foreach="languages" t-as="lg" class="list-inline-item">
+                                        <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang_code=lg[0])" t-att-data-default-lang="editable and 'true' if lg[0] == website.default_lang_id else None" t-att-data-lang="lg[0]" class="js_change_lang">
+                                            <t t-set="lang_name" t-value="lg[1]" />
+                                            <t t-if="lang_name == 'sv'">
+                                                <img alt="swedish" src="/theme_block_logo/static/src/img/kastrup_genberg/swe.png" />
+                                            </t>
+                                            <t t-if="lang_name == 'fi'">
+                                                <img alt="finnish" src="/theme_block_logo/static/src/img/kastrup_genberg/fin.png" />
+                                            </t>
+                                            <t t-if="lang_name == 'de'">
+                                                <img alt="german" src="/theme_block_logo/static/src/img/kastrup_genberg/ger.png" />
+                                            </t>
+                                            <t t-if="lang_name == 'en'">
+                                                <img alt="english" src="/theme_block_logo/static/src/img/kastrup_genberg/uk.png" />
+                                            </t>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="col-md-4 col-xs-6 mt8">
-                            <t t-if="request.env.context['lang'] == 'sv_SE'">
-                                <t t-raw="request.env['ir.config_parameter'].sudo().get_param('img_aaa')" />
-                            </t>
-                            <t t-if="not request.env.context['lang'] == 'sv_SE'">
-                                <t t-raw="request.env['ir.config_parameter'].sudo().get_param('img_aaa_en')" />
-                            </t>
-                        </div>
-                        <div class="col-md-3 col-xs-6">
-                            <a href="https://www.uc.se/risksigill2?showorg=5560454521&amp;language=swe" target=" _ blank" title="Sigillet är utfärdat av UC AB. Klicka på bilden för information om UC:s Riskklasser.">
-                                <img style="margin:auto; displ3:block;" alt="sigill" src="/theme_block_logo/static/src/img/kastrup_genberg/sigill.png" />
-                            </a>
-                        </div>
-                        <!-- <div class="col-md-6 col-xs-6"><img style="margin:auto; display:block;" src="/theme_teamdoc/static/src/img/kastrup_genberg/SP-Certifierad_swe.jpg"/></div>-->
                     </div>
-                    <div class="col-md-4 col-xs-12 col-lg-offset-1">
-                        <div>
-                            <h4>
-                                <span style="color:#F73B0A;" class="oe_editable" t-field="res_company.name" />
-                                <!--<small>  - <a href="/page/website.aboutus">About us</a></small>-->
-                            </h4>
-                            <p style="color: #fff;">Kastrup &amp; Genberg AB grundades 1945 och har sedan dess levererat komponenter till industripannor. Programmet omfattar idag produkter för rengöring och renhållning av värmeytor i industripannor, maskiner för rengöring av rör samt produkter för rökgasanalys.</p>
-                        </div>
-                        <!--
-                             <ul class="list-inline js_language_selector mt16" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
-                        -->
-                        <ul class="list-inline js_language_selector mt16" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
-                            <!--
-                                 or (website and (editable or translatable))" 
-                            -->
-                            <li t-foreach="languages" t-as="lg" class="list-inline-item">
-                                <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang_code=lg[0])" t-att-data-default-lang="editable and 'true' if lg[0] == website.default_lang_id else None" t-att-data-lang="lg[0]" class="js_change_lang">
-                                    <t t-set="lang_name" t-value="lg[1]" />
-                                    <t t-if="lang_name == 'sv'">
-                                        <img alt="swedish" src="/theme_block_logo/static/src/img/kastrup_genberg/swe.png" />
-                                    </t>
-                                    <t t-if="lang_name == 'fi'">
-                                        <img alt="finnish" src="/theme_block_logo/static/src/img/kastrup_genberg/fin.png" />
-                                    </t>
-                                    <t t-if="lang_name == 'de'">
-                                        <img alt="german" src="/theme_block_logo/static/src/img/kastrup_genberg/ger.png" />
-                                    </t>
-                                    <t t-if="lang_name == 'en'">
-                                        <img alt="english" src="/theme_block_logo/static/src/img/kastrup_genberg/uk.png" />
-                                    </t>
-                                </a>
-                            </li>
-                            <li groups="base.group_website_publisher">
-                                <t t-set="url_return" t-value="url_for('', '[lang]') + '?' + keep_query()" />
-                                <a t-attf-href="/web#action=base.action_view_base_language_install&amp;website_id=#{website.id}&amp;url_return=#{url_return}">
-                                    <i class="fa fa-plus-circle" />
-                                    Add a language...
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                </section>
             </div>
         </xpath>
     </template>

@@ -4,7 +4,7 @@
 
 $o-color-palettes: (
     (   // Palette 1
-        'o-color-1':        #984c46,
+        'o-color-1':        #428bca,
         'o-color-2':        #23323b,
         'o-color-3':        #eceae4,
         'o-color-4':        #FFFFFF,
@@ -28,10 +28,10 @@ $o-color-palettes: (
 // Fonts
 //------------------------------------------------------------------------------
 
-$o-theme-h1-font-size-multiplier: (48.83 / 16);
-$o-theme-h2-font-size-multiplier: (34.285714286 / 16); // Fixed
-$o-theme-h3-font-size-multiplier: (27.428571429 / 16); // Fixed
-$o-theme-h4-font-size-multiplier: (20.571428571 / 16); // Fixed
+$o-theme-h1-font-size-multiplier: (41.142857143 / 16);
+$o-theme-h2-font-size-multiplier: (34.285714286 / 16);
+$o-theme-h3-font-size-multiplier: (27.428571429 / 16);
+$o-theme-h4-font-size-multiplier: (20.571428571 / 16);
 $o-theme-h5-font-size-multiplier: (20.00 / 16);
 $o-theme-h6-font-size-multiplier: 1.1;
 $o-line-height-base: 1.1;

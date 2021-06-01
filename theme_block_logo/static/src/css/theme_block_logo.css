@@ -2,48 +2,82 @@
                        Block Logo
   =============================================================*/
 
+#top_menu_container {
+background-color:   #0F1C26;
+    min-width:      100%;
+    padding-left:   10px;
+    padding-right:  10px;
+}
+
+.bl-navbar {
+    margin:     1px 0px 1px 0px;
+    max-height: 50px;
+    padding:    2px 0px 2px 0px;
+    width:      100%;
+}
+
+.bl-navbar-fixed-top {
+    margin:     0px 0px 1px 0px;
+    padding:    2px 0px 2px 0px;
+    position:   fixed;
+    top:        0px;
+    transition: all 0.5s ease-in 0s;
+    width:      100%;
+}
+
+.carousel-img > img {
+    max-height: 100% !important;
+    padding:    0;
+}
+
 .container::before, .container::after, .row::before, .row::after {
-    display: table;
     content: " ";
+    display: table;
 }
 
 .container::after, .row::after {
     clear: both;
 }
 
-.bl-navbar {
-    width: 100%;
-    margin: 1px 0px 1px 0px;
-    max-height: 40px;
-}
-
-.bl-navbar-fixed-top {
-    transition: all 0.5s ease-in 0s;
-    top: 0px;
-    position: fixed;
-    padding: 5px 0px 2px 0px;
-    width: 100%;
-}
-
-.bl2-menu-bar {
-    margin: auto;
-    padding: 0px;
-    width: 100%;
-}
-.carousel-img > img {
-    max-height: 100% !important;
-    padding: 0;
-}
 .navbar-brand.logo {
     padding: 0 !important;
 }
 
 .navbar-brand.logo img {
-    height: 50px !important;
+    height:     50px !important;
+    max-height: 50px !important;
 }
 
 .o_brand_promotion {
     display: none;
+}
+
+.round-icon {
+    background-color: #fff;
+    border-radius: 100px;
+    border: 2px solid #FF4100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    padding: 5px;
+    overflow: hidden;
+}
+                
+.round-icon:hover {
+    background-color: #fff;
+    transition: all 0s ease-out;
+}
+                
+.round-icon p {
+    margin: 0; 
+}
+                
+.round-icon a {
+    color: #0F1C26; 
+    text-decoration:none;
 }
 
 footer {
