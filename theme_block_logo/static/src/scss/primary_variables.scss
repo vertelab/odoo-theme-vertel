@@ -12,11 +12,6 @@ $o-color-palettes: (
         'o-cc1-text':       #333,
         'o-cc1-headings':   #f73b0a, // Main headings
         'o-cc5-headings':   #f73b0a, // Footer headings
-//        'o-cc4-bg':         1 //#b4904f,
-//        'o-cc3-btn-primary':'o-color-4',
-//        'o-cc3-link':       'o-color-4',
-//        'o-cc4-link':       'o-color-4',
-//        'o-cc5-btn-secondary':'o-color-2',
 
         'menu':             5,
         'footer':           5,
@@ -28,12 +23,14 @@ $o-color-palettes: (
 // Fonts
 //------------------------------------------------------------------------------
 
-$o-theme-h1-font-size-multiplier: (41.142857143 / 16);
-$o-theme-h2-font-size-multiplier: (34.285714286 / 16);
-$o-theme-h3-font-size-multiplier: (27.428571429 / 16);
-$o-theme-h4-font-size-multiplier: (20.571428571 / 16);
-$o-theme-h5-font-size-multiplier: (20.00 / 16);
-$o-theme-h6-font-size-multiplier: 1.1;
+$font-size-custom: 14;
+
+$o-theme-h1-font-size-multiplier: (36 / $font-size-custom);
+$o-theme-h2-font-size-multiplier: (30 / $font-size-custom);
+$o-theme-h3-font-size-multiplier: (24 / $font-size-custom);
+$o-theme-h4-font-size-multiplier: (18 / $font-size-custom);
+$o-theme-h5-font-size-multiplier: (14 / $font-size-custom);
+$o-theme-h6-font-size-multiplier: (12 / $font-size-custom);
 $o-line-height-base: 1.1;
 $o-theme-font-configs: (
     'Nunito': (
@@ -67,14 +64,14 @@ $o-website-values-palettes: (
 //        'navbar-font':              'Nunito',
 //        'buttons-font':             'Nunito',
 
-        'font-size-base':           (14 / 16) * 1rem,
-        'header-font-size':         (14 / 16) * 1rem,
+        'font-size-base':           ($font-size-custom / 16) * 1rem,
+        'header-font-size':         ($font-size-custom / 16) * 1rem,
 
         'btn-ripple':               true,
         'btn-primary-outline':      false,
         'btn-secondary-outline':    false,
         'btn-border-radius':        6px,
-        'btn-font-size':            (14 / 16) * 1rem,
+        'btn-font-size':            ($font-size-custom / 16) * 1rem,
         'btn-padding-x':            (12 / 16) * 1rem,
         'btn-padding-y':            (6 / 16) * 1rem,
         'btn-padding-y-lg':         (10 / 16) * 1rem,
